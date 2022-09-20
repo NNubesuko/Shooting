@@ -42,7 +42,7 @@ MonoBehaviour:
     x: 216
     y: 0
     width: 387
-    height: 529
+    height: 535
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 19}
@@ -70,11 +70,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 603
-    height: 529
+    height: 535
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 113
+  controlID: 117
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -85,23 +85,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 529
+    y: 535
     width: 603
-    height: 418
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+    height: 412
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 16}
   - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 112
+  controlID: 116
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,7 +176,7 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: MyLayout_2 by 3+1
+  m_LastLoadedLayoutName: 
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 153
+  controlID: 69
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 216
+  controlID: 58
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -267,7 +267,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 216
-    height: 529
+    height: 535
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
@@ -374,30 +374,30 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 907
-    y: 602
+    y: 608
     width: 601
-    height: 397
+    height: 391
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 1262
-    splitterInitialOffset: 0
+    ID: 712
+    splitterInitialOffset: 216
     currentActiveSplitter: -1
     realSizes:
-    - 245
-    - 82
+    - 144
+    - 177
     relativeSizes:
-    - 0.75
-    - 0.25
+    - 0.44954127
+    - 0.5504587
     minSizes:
     - 32
     - 32
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 327
+    lastTotalSize: 321
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -405,14 +405,14 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 0
+  m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
     m_Window: {fileID: 15}
     m_NewResultList:
-    - id: 1005
-      uniqueId: '[DDD&TDD][suite]'
-      name: DDD&TDD
-      fullName: DDD&TDD
+    - id: 1000
+      uniqueId: '[ShootingGame][suite]'
+      name: ShootingGame
+      fullName: ShootingGame
       resultStatus: 0
       duration: 0
       messages: 
@@ -425,79 +425,13 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1009
-      uniqueId: '[Tests][D:/Program/Unity/Unity_2021_3_1f1/DDD&TDD/Library/ScriptAssemblies/Tests.dll][suite]'
-      name: Tests.dll
-      fullName: D:/Program/Unity/Unity_2021_3_1f1/DDD&TDD/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1005
-      parentUniqueId: '[DDD&TDD][suite]'
-    - id: 1006
-      uniqueId: Tests.dll/[Tests][NewTestScript][suite]
-      name: NewTestScript
-      fullName: NewTestScript
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1009
-      parentUniqueId: '[Tests][D:/Program/Unity/Unity_2021_3_1f1/DDD&TDD/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1007
-      uniqueId: Tests.dll/NewTestScript/[Tests][NewTestScript.NewTestScriptSimplePasses]
-      name: NewTestScriptSimplePasses
-      fullName: NewTestScript.NewTestScriptSimplePasses
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1006
-      parentUniqueId: Tests.dll/[Tests][NewTestScript][suite]
-    - id: 1008
-      uniqueId: Tests.dll/NewTestScript/[Tests][NewTestScript.NewTestScriptWithEnumeratorPasses]
-      name: NewTestScriptWithEnumeratorPasses
-      fullName: NewTestScript.NewTestScriptWithEnumeratorPasses
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1006
-      parentUniqueId: Tests.dll/[Tests][NewTestScript][suite]
     m_ResultText: 
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: b492650b22524b3a3034ef4effffff7f
+      m_ExpandedIDs: b492650b8bce342422524b3a3034ef4effffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -527,12 +461,12 @@ MonoBehaviour:
   m_EditModeTestListGUI:
     m_Window: {fileID: 15}
     m_NewResultList:
-    - id: 1000
-      uniqueId: '[DDD&TDD][suite]'
-      name: DDD&TDD
-      fullName: DDD&TDD
-      resultStatus: 0
-      duration: 0
+    - id: 1002
+      uniqueId: '[ShootingGame][suite]'
+      name: ShootingGame
+      fullName: ShootingGame
+      resultStatus: 1
+      duration: 0.1186456
       messages: 
       output: 
       stacktrace: 
@@ -543,13 +477,112 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    m_ResultText: 
+    - id: 1004
+      uniqueId: '[EditMode.dll][suite]'
+      name: EditMode.dll
+      fullName: D:/Program/Unity/Unity_2021_3_1f1/ShootingGame/Library/ScriptAssemblies/EditMode.dll
+      resultStatus: 1
+      duration: 0.0406504
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[ShootingGame][suite]'
+    - id: 1005
+      uniqueId: EditMode.dll/[EditMode][Tests][suite]
+      name: Tests
+      fullName: Tests
+      resultStatus: 1
+      duration: 0.0400994
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: '[EditMode.dll][suite]'
+    - id: 1001
+      uniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
+      name: PlayerHPTest
+      fullName: Tests.PlayerHPTest
+      resultStatus: 1
+      duration: 0.0389568
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1005
+      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
+    - id: 1003
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.IncludeZeroWhenValueIsNull]
+      name: IncludeZeroWhenValueIsNull
+      fullName: Tests.PlayerHPTest.IncludeZeroWhenValueIsNull
+      resultStatus: 1
+      duration: 0.0193164
+      messages: 
+      output: "[\u6B63\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304Cnull\u3067\u3042\u308B\u5834\u5408\u306B\u3001\u6700\u5C0F\u5024\u306B\u5909\u63DB\u3057\u683C\u7D0D\u3059\u308B\u3053\u3068\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
+    - id: 1004
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ThrowWhenValueIsOverRange]
+      name: ThrowWhenValueIsOverRange
+      fullName: Tests.PlayerHPTest.ThrowWhenValueIsOverRange
+      resultStatus: 1
+      duration: 0.0039904
+      messages: 
+      output: "[\u7570\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u672A\u6E80\u304B\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
+    - id: 1002
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHP]
+      name: ValidPlayerHP
+      fullName: Tests.PlayerHPTest.ValidPlayerHP
+      resultStatus: 1
+      duration: 0.0007659
+      messages: 
+      output: "[\u6B63\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304Cnull\u3067\u306F\u306A\u304F\u6700\u5C0F\u5024\u4EE5\u4E0A\u6700\u5927\u5024\u4EE5\u4E0B\u3067\u3042\u308B\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
+    m_ResultText: "ValidPlayerHP (0.001s)\n---\n[\u6B63\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304Cnull\u3067\u306F\u306A\u304F\u6700\u5C0F\u5024\u4EE5\u4E0A\u6700\u5927\u5024\u4EE5\u4E0B\u3067\u3042\u308B\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: b492650bffffff7f
+      m_SelectedIDs: 82d752f8
+      m_LastClickedID: -128788606
+      m_ExpandedIDs: 3cdc509ec9c6a3a5b492650b8bce34243cf34728e57d0f684b5ea47cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -596,9 +629,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 907
-    y: 602
+    y: 608
     width: 601
-    height: 397
+    height: 391
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -626,7 +659,7 @@ MonoBehaviour:
     x: 907
     y: 73
     width: 214
-    height: 508
+    height: 514
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -636,23 +669,23 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 94e9ffff1cfbffff30fbffff
+      m_ExpandedIDs: 22abffff16b2ffff64b4ffff9eb6ffffaeb8ffff8cb9ffff98bbffffc4bdffffe8f5fffffaf6ffffaaf7ffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Global Light 2D
+        m_OriginalName: Global Light 2D
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 27644
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 11}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -724,7 +757,7 @@ MonoBehaviour:
     x: 1123
     y: 73
     width: 385
-    height: 508
+    height: 514
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -742,22 +775,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Tests/EditMode/Editor/Domain/ValueObject/Creature
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Tests/EditMode/Editor/Domain/ValueObject/Creature
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Program\Unity\Unity_2021_3_1f1\Shooting\ShootingGame
+  m_LastProjectPath: D:\Program\Unity\Unity_2021_3_1f1\ShootingGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 20710000
-    m_LastClickedID: 28960
-    m_ExpandedIDs: 0000000020710000
+    m_SelectedIDs: 906d0000
+    m_LastClickedID: 28048
+    m_ExpandedIDs: 000000003e6a0000166c00001e6c0000266c0000826c00008e6c0000a06c0000746d0000786d0000886d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -773,7 +806,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 2}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -785,7 +818,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000020710000
+    m_ExpandedIDs: 000000003e6a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -812,7 +845,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1180,9 +1213,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -5.190111, y: -7.376997, z: 9.847556}
+    m_Target: {x: 1.3296273, y: 0.10600747, z: 0.24156152}
     speed: 2
-    m_Value: {x: -5.190111, y: -7.376997, z: 9.847556}
+    m_Value: {x: 1.3296273, y: 0.10600747, z: 0.24156152}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1213,7 +1246,7 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -1233,9 +1266,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 15.466861
+    m_Target: 7.0481787
     speed: 2
-    m_Value: 15.466861
+    m_Value: 7.0481787
   m_Ortho:
     m_Target: 1
     speed: 2
