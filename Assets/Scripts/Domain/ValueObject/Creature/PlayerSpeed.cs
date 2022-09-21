@@ -1,26 +1,26 @@
 using System;
 
-public sealed class PlayerHP {
+public sealed class PlayerSpeed {
 
     private int value;
 
-    public const int MIN = 0;
-    public const int MAX = 100;
+    private int MIN = 0;
+    private int MAX = 10;
 
-    private const string argumentExceptionMessage = "不正な値が渡されました。";
+    private string argumentExceptionMessage = "不正な値が渡されました。";
 
-    private PlayerHP(int value) {
+    public PlayerSpeed(int value) {
         AssignRestrictedIntValueToValue(value);
     }
 
-    public static PlayerHP Of(int value) {
-        return new PlayerHP(value);
+    public static PlayerSpeed Of(int value) {
+        return new PlayerSpeed(value);
     }
 
     private void AssignRestrictedIntValueToValue(int value) {
         if (value < MIN || value > MAX) throw new ArgumentException(argumentExceptionMessage);
 
-        this.value = (int)value;
+        this.value = value;
     }
 
     public int Value {
