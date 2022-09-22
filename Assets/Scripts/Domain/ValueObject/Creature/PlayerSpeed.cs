@@ -1,4 +1,5 @@
 using System;
+using Systemk;
 
 public sealed class PlayerSpeed {
 
@@ -6,8 +7,6 @@ public sealed class PlayerSpeed {
 
     private int MIN = 0;
     private int MAX = 10;
-
-    private string argumentExceptionMessage = "不正な値が渡されました。";
 
     public PlayerSpeed(int value) {
         AssignRestrictedIntValueToValue(value);
@@ -18,7 +17,8 @@ public sealed class PlayerSpeed {
     }
 
     private void AssignRestrictedIntValueToValue(int value) {
-        if (value < MIN || value > MAX) throw new ArgumentException(argumentExceptionMessage);
+        if (value < MIN || value > MAX)
+            throw new ArgumentException(ExceptionMessage.argumentExceptionMessage);
 
         this.value = value;
     }

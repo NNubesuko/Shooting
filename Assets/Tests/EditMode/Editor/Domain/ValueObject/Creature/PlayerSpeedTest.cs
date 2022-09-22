@@ -6,12 +6,6 @@ using UnityEngine;
 using UnityEngine.TestTools;
 
 namespace Tests {
-
-    /**
-    * TODO: 範囲は0~10まで
-    * TODO: nullは許容しない
-    */
-
     
     public class PlayerSpeedTest {
 
