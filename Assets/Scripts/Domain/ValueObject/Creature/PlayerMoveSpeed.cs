@@ -1,19 +1,22 @@
 using System;
 using Systemk;
 
-public sealed class PlayerSpeed {
+/**
+ * * プレイヤーの移動速度を格納するクラス
+ */
+public sealed class PlayerMoveSpeed {
 
     private int value;
 
     public const int MIN = 0;
     public const int MAX = 10;
 
-    public PlayerSpeed(int value) {
+    public PlayerMoveSpeed(int value) {
         AssignRestrictedIntValueToValue(value);
     }
 
-    public static PlayerSpeed Of(int value) {
-        return new PlayerSpeed(value);
+    public static PlayerMoveSpeed Of(int value) {
+        return new PlayerMoveSpeed(value);
     }
 
     public override string ToString() {
@@ -35,7 +38,7 @@ public sealed class PlayerSpeed {
         get { return value; }
     }
 
-    public static PlayerSpeed operator+(PlayerSpeed lhSpeed, PlayerSpeed rhSpeed) {
+    public static PlayerMoveSpeed operator+(PlayerMoveSpeed lhSpeed, PlayerMoveSpeed rhSpeed) {
         int value = lhSpeed.Value + rhSpeed.Value;
 
         ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
@@ -45,10 +48,10 @@ public sealed class PlayerSpeed {
             new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
         );
 
-        return new PlayerSpeed(value);
+        return new PlayerMoveSpeed(value);
     }
 
-    public static PlayerSpeed operator-(PlayerSpeed lhSpeed, PlayerSpeed rhSpeed) {
+    public static PlayerMoveSpeed operator-(PlayerMoveSpeed lhSpeed, PlayerMoveSpeed rhSpeed) {
         int value = lhSpeed.Value - rhSpeed.Value;
 
         ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
@@ -58,10 +61,10 @@ public sealed class PlayerSpeed {
             new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
         );
 
-        return new PlayerSpeed(value);
+        return new PlayerMoveSpeed(value);
     }
 
-    public static PlayerSpeed operator*(PlayerSpeed lhSpeed, PlayerSpeed rhSpeed) {
+    public static PlayerMoveSpeed operator*(PlayerMoveSpeed lhSpeed, PlayerMoveSpeed rhSpeed) {
         int value = lhSpeed.Value * rhSpeed.Value;
 
         ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
@@ -71,15 +74,15 @@ public sealed class PlayerSpeed {
             new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
         );
 
-        return new PlayerSpeed(value);
+        return new PlayerMoveSpeed(value);
     }
 
-    public static PlayerSpeed operator/(PlayerSpeed lhSpeed, PlayerSpeed rhSpeed) {
+    public static PlayerMoveSpeed operator/(PlayerMoveSpeed lhSpeed, PlayerMoveSpeed rhSpeed) {
         if (rhSpeed.Value == 0)
             throw new DivideByZeroException(ExceptionMessage.divideByZeroExceptionMessage);
 
         int value = lhSpeed.Value / rhSpeed.Value;
-        return new PlayerSpeed(value);
+        return new PlayerMoveSpeed(value);
     }
 
 }

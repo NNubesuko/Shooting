@@ -2,16 +2,16 @@ using System;
 using Systemk;
 
 /**
- * * プレイヤーの体力を格納するクラス
+ * * プレイヤーの回避速度を格納するクラス
  */
-public sealed class PlayerHP {
+public class PlayerEvasiveSpeed {
 
     private int value;
 
     public const int MIN = 0;
     public const int MAX = 100;
 
-    private PlayerHP(int value) {
+    private PlayerEvasiveSpeed(int value) {
         ExceptionHandler.ThrowWhenInvalidValue<ArgumentException>(
             value,
             MIN,
@@ -22,8 +22,8 @@ public sealed class PlayerHP {
         this.value = value;
     }
 
-    public static PlayerHP Of(int value) {
-        return new PlayerHP(value);
+    public static PlayerEvasiveSpeed Of(int value) {
+        return new PlayerEvasiveSpeed(value);
     }
 
     public override string ToString() {
@@ -34,7 +34,7 @@ public sealed class PlayerHP {
         get { return value; }
     }
 
-    public static PlayerHP operator+(PlayerHP lhHP, PlayerHP rhHP) {
+    public static PlayerEvasiveSpeed operator+(PlayerEvasiveSpeed lhHP, PlayerEvasiveSpeed rhHP) {
         int value = lhHP.Value + rhHP.Value;
 
         ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
@@ -44,10 +44,10 @@ public sealed class PlayerHP {
             new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
         );
 
-        return new PlayerHP(value);
+        return new PlayerEvasiveSpeed(value);
     }
 
-    public static PlayerHP operator-(PlayerHP lhHP, PlayerHP rhHP) {
+    public static PlayerEvasiveSpeed operator-(PlayerEvasiveSpeed lhHP, PlayerEvasiveSpeed rhHP) {
         int value = lhHP.Value - rhHP.Value;
 
         ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
@@ -57,10 +57,10 @@ public sealed class PlayerHP {
             new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
         );
 
-        return new PlayerHP(value);
+        return new PlayerEvasiveSpeed(value);
     }
 
-    public static PlayerHP operator*(PlayerHP lhHP, PlayerHP rhHP) {
+    public static PlayerEvasiveSpeed operator*(PlayerEvasiveSpeed lhHP, PlayerEvasiveSpeed rhHP) {
         int value = lhHP.Value * rhHP.Value;
 
         ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
@@ -70,15 +70,15 @@ public sealed class PlayerHP {
             new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
         );
 
-        return new PlayerHP(value);
+        return new PlayerEvasiveSpeed(value);
     }
 
-    public static PlayerHP operator/(PlayerHP lhHP, PlayerHP rhHP) {
+    public static PlayerEvasiveSpeed operator/(PlayerEvasiveSpeed lhHP, PlayerEvasiveSpeed rhHP) {
         if (rhHP.Value == 0)
             throw new DivideByZeroException(ExceptionMessage.divideByZeroExceptionMessage);
 
         int value = lhHP.Value / rhHP.Value;
-        return new PlayerHP(value);
+        return new PlayerEvasiveSpeed(value);
     }
 
 }
