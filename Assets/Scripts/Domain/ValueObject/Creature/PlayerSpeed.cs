@@ -5,8 +5,8 @@ public sealed class PlayerSpeed {
 
     private int value;
 
-    private int MIN = 0;
-    private int MAX = 10;
+    public const int MIN = 0;
+    public const int MAX = 10;
 
     public PlayerSpeed(int value) {
         AssignRestrictedIntValueToValue(value);
@@ -16,15 +16,70 @@ public sealed class PlayerSpeed {
         return new PlayerSpeed(value);
     }
 
+    public override string ToString() {
+        return $"{value}";
+    }
+
     private void AssignRestrictedIntValueToValue(int value) {
-        if (value < MIN || value > MAX)
-            throw new ArgumentException(ExceptionMessage.argumentExceptionMessage);
+        ExceptionHandler.ThrowWhenInvalidValue<ArgumentException>(
+            value,
+            MIN,
+            MAX,
+            new ArgumentException(ExceptionMessage.argumentExceptionMessage)
+        );
 
         this.value = value;
     }
 
     public int Value {
         get { return value; }
+    }
+
+    public static PlayerSpeed operator+(PlayerSpeed lhSpeed, PlayerSpeed rhSpeed) {
+        int value = lhSpeed.Value + rhSpeed.Value;
+
+        ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
+            value,
+            MIN,
+            MAX,
+            new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
+        );
+
+        return new PlayerSpeed(value);
+    }
+
+    public static PlayerSpeed operator-(PlayerSpeed lhSpeed, PlayerSpeed rhSpeed) {
+        int value = lhSpeed.Value - rhSpeed.Value;
+
+        ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
+            value,
+            MIN,
+            MAX,
+            new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
+        );
+
+        return new PlayerSpeed(value);
+    }
+
+    public static PlayerSpeed operator*(PlayerSpeed lhSpeed, PlayerSpeed rhSpeed) {
+        int value = lhSpeed.Value * rhSpeed.Value;
+
+        ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
+            value,
+            MIN,
+            MAX,
+            new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
+        );
+
+        return new PlayerSpeed(value);
+    }
+
+    public static PlayerSpeed operator/(PlayerSpeed lhSpeed, PlayerSpeed rhSpeed) {
+        if (rhSpeed.Value == 0)
+            throw new DivideByZeroException(ExceptionMessage.divideByZeroExceptionMessage);
+
+        int value = lhSpeed.Value / rhSpeed.Value;
+        return new PlayerSpeed(value);
     }
 
 }

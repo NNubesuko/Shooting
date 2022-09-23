@@ -9,8 +9,10 @@ public sealed class PlayerHP {
     public const int MAX = 100;
 
     private PlayerHP(int value) {
-        ThrowWhenInvalidValue<ArgumentException>(
+        ExceptionHandler.ThrowWhenInvalidValue<ArgumentException>(
             value,
+            MIN,
+            MAX,
             new ArgumentException(ExceptionMessage.argumentExceptionMessage)
         );
 
@@ -25,10 +27,6 @@ public sealed class PlayerHP {
         return $"{value}";
     }
 
-    private static void ThrowWhenInvalidValue<T>(int value, T exception) where T : Exception {
-        if (value < MIN || value > MAX) throw exception;
-    }
-
     public int Value {
         get { return value; }
     }
@@ -36,8 +34,10 @@ public sealed class PlayerHP {
     public static PlayerHP operator+(PlayerHP lhHP, PlayerHP rhHP) {
         int value = lhHP.Value + rhHP.Value;
 
-        ThrowWhenInvalidValue<ArithmeticException>(
+        ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
             value,
+            MIN,
+            MAX,
             new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
         );
 
@@ -47,8 +47,10 @@ public sealed class PlayerHP {
     public static PlayerHP operator-(PlayerHP lhHP, PlayerHP rhHP) {
         int value = lhHP.Value - rhHP.Value;
 
-        ThrowWhenInvalidValue<ArithmeticException>(
+        ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
             value,
+            MIN,
+            MAX,
             new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
         );
 
@@ -58,8 +60,10 @@ public sealed class PlayerHP {
     public static PlayerHP operator*(PlayerHP lhHP, PlayerHP rhHP) {
         int value = lhHP.Value * rhHP.Value;
 
-        ThrowWhenInvalidValue<ArithmeticException>(
+        ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
             value,
+            MIN,
+            MAX,
             new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
         );
 
