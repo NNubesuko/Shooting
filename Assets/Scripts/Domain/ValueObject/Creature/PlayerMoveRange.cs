@@ -22,8 +22,7 @@ public class PlayerMoveRange {
     }
 
     /**
-     * 範囲を扱うクラスのため、低い値と高い値が同じ値ではおかしい。
-     * そのため、低い値が高い値より大きい（同数は含めない）場合は、スローを投げるようにしている。
+     * 低い値が大きい値より大きい場合に、スローを投げるようにしている
      */
     private void AssignRestrictedIntValueToValue(float lowValue, float highValue) {
         ExceptionHandler.ThrowWhenInvalidValue<ArgumentException>(
@@ -53,66 +52,58 @@ public class PlayerMoveRange {
     }
 
     public static PlayerMoveRange operator+(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
-        PlayerMoveRange value = PlayerMoveRange.Of(
+        ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
+            lhRange.LowValue + rhRange.LowValue,
+            lhRange.HighValue + rhRange.HighValue,
+            MIN,
+            MAX,
+            new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
+        );
+
+        return PlayerMoveRange.Of(
             lhRange.LowValue + rhRange.LowValue,
             lhRange.HighValue + rhRange.HighValue
         );
-
-        ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
-            value.LowValue,
-            value.HighValue,
-            MIN,
-            MAX,
-            new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
-        );
-
-        return value;
     }
 
     public static PlayerMoveRange operator-(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
-        PlayerMoveRange value = PlayerMoveRange.Of(
+        ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
+            lhRange.LowValue - rhRange.LowValue,
+            lhRange.HighValue - rhRange.HighValue,
+            MIN,
+            MAX,
+            new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
+        );
+
+        return PlayerMoveRange.Of(
             lhRange.LowValue - rhRange.LowValue,
             lhRange.HighValue - rhRange.HighValue
         );
-
-        ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
-            value.LowValue,
-            value.HighValue,
-            MIN,
-            MAX,
-            new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
-        );
-
-        return value;
     }
 
     public static PlayerMoveRange operator*(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
-        PlayerMoveRange value = PlayerMoveRange.Of(
-            lhRange.LowValue * rhRange.LowValue,
-            lhRange.HighValue * rhRange.HighValue
-        );
-
         ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
-            value.LowValue,
-            value.HighValue,
+            lhRange.LowValue * rhRange.LowValue,
+            lhRange.HighValue * rhRange.HighValue,
             MIN,
             MAX,
             new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
         );
 
-        return value;
+        return PlayerMoveRange.Of(
+            lhRange.LowValue * rhRange.LowValue,
+            lhRange.HighValue * rhRange.HighValue
+        );
     }
 
     public static PlayerMoveRange operator/(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
         if (rhRange.LowValue == 0f || rhRange.HighValue == 0f)
             throw new DivideByZeroException(ExceptionMessage.divideByZeroExceptionMessage);
 
-        PlayerMoveRange value = PlayerMoveRange.Of(
+        return PlayerMoveRange.Of(
             lhRange.LowValue / rhRange.LowValue,
             lhRange.HighValue / rhRange.HighValue
         );
-
-        return value;
     }
 
 }

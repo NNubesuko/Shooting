@@ -20,7 +20,7 @@ namespace Systemk {
             float MAX,
             T exception
         ) where T : Exception {
-            if (lowValue < MIN || highValue < MAX) throw exception;
+            if (lowValue < MIN || highValue > MAX) throw exception;
         }
 
         public static void ThrowWhenLowValueGiggerThanHighValue<T> (
