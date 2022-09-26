@@ -51,6 +51,9 @@ public class PlayerMoveRange {
         get { return highValue; }
     }
 
+    /**
+     * TODO: すべての演算子はスローを投げるのではなく、MINとMAXで制限をかける
+     */
     public static PlayerMoveRange operator+(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
         ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
             lhRange.LowValue + rhRange.LowValue,

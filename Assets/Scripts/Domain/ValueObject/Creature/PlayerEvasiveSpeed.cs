@@ -1,5 +1,6 @@
 using System;
 using Systemk;
+using UnityEngine;
 
 /**
  * * プレイヤーの回避速度を格納するクラス
@@ -36,39 +37,21 @@ public class PlayerEvasiveSpeed {
 
     public static PlayerEvasiveSpeed operator+(PlayerEvasiveSpeed lhHP, PlayerEvasiveSpeed rhHP) {
         int value = lhHP.Value + rhHP.Value;
-
-        ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
-            value,
-            MIN,
-            MAX,
-            new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
-        );
+        value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new PlayerEvasiveSpeed(value);
     }
 
     public static PlayerEvasiveSpeed operator-(PlayerEvasiveSpeed lhHP, PlayerEvasiveSpeed rhHP) {
         int value = lhHP.Value - rhHP.Value;
-
-        ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
-            value,
-            MIN,
-            MAX,
-            new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
-        );
+        value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new PlayerEvasiveSpeed(value);
     }
 
     public static PlayerEvasiveSpeed operator*(PlayerEvasiveSpeed lhHP, PlayerEvasiveSpeed rhHP) {
         int value = lhHP.Value * rhHP.Value;
-
-        ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
-            value,
-            MIN,
-            MAX,
-            new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
-        );
+        value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new PlayerEvasiveSpeed(value);
     }

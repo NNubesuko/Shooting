@@ -34,6 +34,9 @@ public sealed class PlayerHP {
         get { return value; }
     }
 
+    /**
+     * TODO: すべての演算子はスローを投げるのではなく、MINとMAXで制限をかける
+     */
     public static PlayerHP operator+(PlayerHP lhHP, PlayerHP rhHP) {
         int value = lhHP.Value + rhHP.Value;
 

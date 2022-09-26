@@ -32,7 +32,6 @@ namespace Tests {
          */
         [Test]
         public void ValidPlayerEvasiveSpeedOperatorAdd() {
-
             PlayerEvasiveSpeed PlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(50);
             PlayerEvasiveSpeed addPlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(10);
             int responsePlayerEvasiveSpeed = 60;
@@ -100,54 +99,42 @@ namespace Tests {
         }
 
         /**
-         * [異常] PlayerEvasiveSpeed同士の加算が行われ結果が異常である場合に、スローが投げられること
+         * [正常] 加算した値が最大値より大きい場合に、最大値が格納されていること
          */
         [Test]
-        public void ThrowWhenAddPlayerEvasiveSpeed() {
-            PlayerEvasiveSpeed PlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(100);
+        public void LimitAddPlayerEvasiveSpeed() {
+            PlayerEvasiveSpeed playerEvasiveSpeed = PlayerEvasiveSpeed.Of(100);
             PlayerEvasiveSpeed addPlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(10);
+            int responsePlayerEvasiveSpeed = 100;
 
-            void PlayerEvasiveSpeedMethod() {
-                PlayerEvasiveSpeed newPlayerEvasiveSpeed = PlayerEvasiveSpeed + addPlayerEvasiveSpeed;
-            }
-
-            Assert.Throws<ArithmeticException>(
-                PlayerEvasiveSpeedMethod
-            );
+            PlayerEvasiveSpeed newPlayerEvasiveSpeed = playerEvasiveSpeed + addPlayerEvasiveSpeed;
+            Assert.That(newPlayerEvasiveSpeed.Value, Is.EqualTo(responsePlayerEvasiveSpeed));
         }
 
         /**
-         * [異常] PlayerEvasiveSpeed同士の減算が行われ結果が異常である場合に、スローが投げられること
+         * [正常] 減算した値が最小値より小さい場合に、最小値が格納されていること
          */
         [Test]
         public void ThrowWhenSubPlayerEvasiveSpeed() {
             PlayerEvasiveSpeed PlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(0);
             PlayerEvasiveSpeed addPlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(10);
+            int responsePlayerEvasiveSpeed = 0;
 
-            void PlayerEvasiveSpeedMethod() {
-                PlayerEvasiveSpeed newPlayerEvasiveSpeed = PlayerEvasiveSpeed - addPlayerEvasiveSpeed;
-            }
-
-            Assert.Throws<ArithmeticException>(
-                PlayerEvasiveSpeedMethod
-            );
+            PlayerEvasiveSpeed newPlayerEvasiveSpeed = PlayerEvasiveSpeed - addPlayerEvasiveSpeed;
+            Assert.That(newPlayerEvasiveSpeed.Value, Is.EqualTo(responsePlayerEvasiveSpeed));
         }
 
         /**
-         * [異常] PlayerEvasiveSpeed同士の乗算が行われ結果が異常である場合に、スローが投げられること
+         * [正常] 乗算した値が最大値より大きい場合に、最大値が格納されていること
          */
         [Test]
         public void ThrowWhenMulPlayerEvasiveSpeed() {
             PlayerEvasiveSpeed PlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(100);
             PlayerEvasiveSpeed addPlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(2);
+            int responsePlayerEvasiveSpeed = 100;
 
-            void PlayerEvasiveSpeedMethod() {
-                PlayerEvasiveSpeed newPlayerEvasiveSpeed = PlayerEvasiveSpeed * addPlayerEvasiveSpeed;
-            }
-
-            Assert.Throws<ArithmeticException>(
-                PlayerEvasiveSpeedMethod
-            );
+            PlayerEvasiveSpeed newPlayerEvasiveSpeed = PlayerEvasiveSpeed * addPlayerEvasiveSpeed;
+            Assert.That(newPlayerEvasiveSpeed.Value, Is.EqualTo(responsePlayerEvasiveSpeed));
         }
 
         /**
