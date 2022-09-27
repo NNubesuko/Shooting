@@ -100,54 +100,42 @@ namespace Tests {
         }
 
         /**
-         * [異常] PlayerHP同士の加算が行われ結果が異常である場合に、スローが投げられること
+         * [正常] 加算した値が最大値より大きい場合に、最大値が格納されていること
          */
         [Test]
-        public void ThrowWhenAddPlayerHP() {
+        public void LimitAddPlayerHP() {
             PlayerHP playerHP = PlayerHP.Of(100);
             PlayerHP addPlayerHP = PlayerHP.Of(10);
+            int responsePlayerHP = 100;
 
-            void PlayerHPMethod() {
-                PlayerHP newPlayerHP = playerHP + addPlayerHP;
-            }
-
-            Assert.Throws<ArithmeticException>(
-                PlayerHPMethod
-            );
+            PlayerHP newPlayerHP = playerHP + addPlayerHP;
+            Assert.That(newPlayerHP.Value, Is.EqualTo(responsePlayerHP));
         }
 
         /**
-         * [異常] PlayerHP同士の減算が行われ結果が異常である場合に、スローが投げられること
+         * [正常] 減算した値が最小値より小さい場合に、最小値が格納されていること
          */
         [Test]
-        public void ThrowWhenSubPlayerHP() {
+        public void LimitSubPlayerHP() {
             PlayerHP playerHP = PlayerHP.Of(0);
-            PlayerHP addPlayerHP = PlayerHP.Of(10);
+            PlayerHP subPlayerHP = PlayerHP.Of(10);
+            int responsePlayerHP = 0;
 
-            void PlayerHPMethod() {
-                PlayerHP newPlayerHP = playerHP - addPlayerHP;
-            }
-
-            Assert.Throws<ArithmeticException>(
-                PlayerHPMethod
-            );
+            PlayerHP newPlayerHP = playerHP - subPlayerHP;
+            Assert.That(newPlayerHP.Value, Is.EqualTo(responsePlayerHP));
         }
 
         /**
-         * [異常] PlayerHP同士の乗算が行われ結果が異常である場合に、スローが投げられること
+         * [正常] 乗算した値が最大値より大きい場合に、最大値が格納されていること
          */
         [Test]
-        public void ThrowWhenMulPlayerHP() {
+        public void LimitMulPlayerHP() {
             PlayerHP playerHP = PlayerHP.Of(100);
-            PlayerHP addPlayerHP = PlayerHP.Of(2);
+            PlayerHP mulPlayerHP = PlayerHP.Of(2);
+            int responsePlayerHP = 100;
 
-            void PlayerHPMethod() {
-                PlayerHP newPlayerHP = playerHP * addPlayerHP;
-            }
-
-            Assert.Throws<ArithmeticException>(
-                PlayerHPMethod
-            );
+            PlayerHP newPlayerHP = playerHP * mulPlayerHP;
+            Assert.That(newPlayerHP.Value, Is.EqualTo(responsePlayerHP));
         }
 
         /**

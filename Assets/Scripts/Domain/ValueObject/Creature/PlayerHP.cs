@@ -33,45 +33,24 @@ public sealed class PlayerHP {
     public int Value {
         get { return value; }
     }
-
-    /**
-     * TODO: すべての演算子はスローを投げるのではなく、MINとMAXで制限をかける
-     */
+    
     public static PlayerHP operator+(PlayerHP lhHP, PlayerHP rhHP) {
         int value = lhHP.Value + rhHP.Value;
-
-        ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
-            value,
-            MIN,
-            MAX,
-            new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
-        );
+        value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new PlayerHP(value);
     }
 
     public static PlayerHP operator-(PlayerHP lhHP, PlayerHP rhHP) {
         int value = lhHP.Value - rhHP.Value;
-
-        ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
-            value,
-            MIN,
-            MAX,
-            new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
-        );
+        value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new PlayerHP(value);
     }
 
     public static PlayerHP operator*(PlayerHP lhHP, PlayerHP rhHP) {
         int value = lhHP.Value * rhHP.Value;
-
-        ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
-            value,
-            MIN,
-            MAX,
-            new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
-        );
+        value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new PlayerHP(value);
     }

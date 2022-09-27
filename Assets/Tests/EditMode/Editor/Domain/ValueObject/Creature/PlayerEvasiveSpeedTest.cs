@@ -117,10 +117,10 @@ namespace Tests {
         [Test]
         public void ThrowWhenSubPlayerEvasiveSpeed() {
             PlayerEvasiveSpeed PlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(0);
-            PlayerEvasiveSpeed addPlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(10);
+            PlayerEvasiveSpeed subPlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(10);
             int responsePlayerEvasiveSpeed = 0;
 
-            PlayerEvasiveSpeed newPlayerEvasiveSpeed = PlayerEvasiveSpeed - addPlayerEvasiveSpeed;
+            PlayerEvasiveSpeed newPlayerEvasiveSpeed = PlayerEvasiveSpeed - subPlayerEvasiveSpeed;
             Assert.That(newPlayerEvasiveSpeed.Value, Is.EqualTo(responsePlayerEvasiveSpeed));
         }
 
@@ -130,10 +130,10 @@ namespace Tests {
         [Test]
         public void ThrowWhenMulPlayerEvasiveSpeed() {
             PlayerEvasiveSpeed PlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(100);
-            PlayerEvasiveSpeed addPlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(2);
+            PlayerEvasiveSpeed mulPlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(2);
             int responsePlayerEvasiveSpeed = 100;
 
-            PlayerEvasiveSpeed newPlayerEvasiveSpeed = PlayerEvasiveSpeed * addPlayerEvasiveSpeed;
+            PlayerEvasiveSpeed newPlayerEvasiveSpeed = PlayerEvasiveSpeed * mulPlayerEvasiveSpeed;
             Assert.That(newPlayerEvasiveSpeed.Value, Is.EqualTo(responsePlayerEvasiveSpeed));
         }
 
@@ -143,10 +143,10 @@ namespace Tests {
         [Test]
         public void ThrowWhenDivPlayerEvasiveSpeed() {
             PlayerEvasiveSpeed PlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(1);
-            PlayerEvasiveSpeed addPlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(0);
+            PlayerEvasiveSpeed divPlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(0);
 
             void PlayerEvasiveSpeedMethod() {
-                PlayerEvasiveSpeed newPlayerEvasiveSpeed = PlayerEvasiveSpeed / addPlayerEvasiveSpeed;
+                PlayerEvasiveSpeed newPlayerEvasiveSpeed = PlayerEvasiveSpeed / divPlayerEvasiveSpeed;
             }
 
             Assert.Throws<DivideByZeroException>(
