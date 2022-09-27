@@ -36,7 +36,10 @@ namespace Tests {
             PlayerEvasiveSpeed addPlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(10);
             int responsePlayerEvasiveSpeed = 60;
 
-            Assert.That((PlayerEvasiveSpeed + addPlayerEvasiveSpeed).Value, Is.EqualTo(responsePlayerEvasiveSpeed));
+            Assert.That(
+                (PlayerEvasiveSpeed + addPlayerEvasiveSpeed).Value,
+                Is.EqualTo(responsePlayerEvasiveSpeed)
+            );
         }
 
         /**
@@ -48,7 +51,10 @@ namespace Tests {
             PlayerEvasiveSpeed subPlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(10);
             int responsePlayerEvasiveSpeed = 40;
 
-            Assert.That((PlayerEvasiveSpeed - subPlayerEvasiveSpeed).Value, Is.EqualTo(responsePlayerEvasiveSpeed));
+            Assert.That(
+                (PlayerEvasiveSpeed - subPlayerEvasiveSpeed).Value,
+                Is.EqualTo(responsePlayerEvasiveSpeed)
+            );
         }
 
         /**
@@ -60,7 +66,10 @@ namespace Tests {
             PlayerEvasiveSpeed mulPlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(2);
             int responsePlayerEvasiveSpeed = 40;
 
-            Assert.That((PlayerEvasiveSpeed * mulPlayerEvasiveSpeed).Value, Is.EqualTo(responsePlayerEvasiveSpeed));
+            Assert.That(
+                (PlayerEvasiveSpeed * mulPlayerEvasiveSpeed).Value,
+                Is.EqualTo(responsePlayerEvasiveSpeed)
+            );
         }
 
         /**
@@ -72,7 +81,10 @@ namespace Tests {
             PlayerEvasiveSpeed div = PlayerEvasiveSpeed.Of(2);
             int responsePlayerEvasiveSpeed = 10;
 
-            Assert.That((PlayerEvasiveSpeed / div).Value, Is.EqualTo(responsePlayerEvasiveSpeed));
+            Assert.That(
+                (PlayerEvasiveSpeed / div).Value,
+                Is.EqualTo(responsePlayerEvasiveSpeed)
+            );
         }
 
         /**
@@ -146,7 +158,8 @@ namespace Tests {
             PlayerEvasiveSpeed divPlayerEvasiveSpeed = PlayerEvasiveSpeed.Of(0);
 
             void PlayerEvasiveSpeedMethod() {
-                PlayerEvasiveSpeed newPlayerEvasiveSpeed = PlayerEvasiveSpeed / divPlayerEvasiveSpeed;
+                PlayerEvasiveSpeed newPlayerEvasiveSpeed =
+                    PlayerEvasiveSpeed / divPlayerEvasiveSpeed;
             }
 
             Assert.Throws<DivideByZeroException>(

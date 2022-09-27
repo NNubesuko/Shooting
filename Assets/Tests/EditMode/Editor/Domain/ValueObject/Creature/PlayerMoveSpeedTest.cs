@@ -32,12 +32,14 @@ namespace Tests {
          */
         [Test]
         public void ValidPlayerMoveSpeedOperatorAdd() {
-
-            PlayerMoveSpeed PlayerMoveSpeed = PlayerMoveSpeed.Of(5);
+            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(5);
             PlayerMoveSpeed addPlayerMoveSpeed = PlayerMoveSpeed.Of(1);
             int responsePlayerMoveSpeed = 6;
 
-            Assert.That((PlayerMoveSpeed + addPlayerMoveSpeed).Value, Is.EqualTo(responsePlayerMoveSpeed));
+            Assert.That(
+                (playerMoveSpeed + addPlayerMoveSpeed).Value,
+                Is.EqualTo(responsePlayerMoveSpeed)
+            );
         }
 
         /**
@@ -45,11 +47,14 @@ namespace Tests {
          */
         [Test]
         public void ValidPlayerMoveSpeedOperatorSub() {
-            PlayerMoveSpeed PlayerMoveSpeed = PlayerMoveSpeed.Of(5);
+            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(5);
             PlayerMoveSpeed subPlayerMoveSpeed = PlayerMoveSpeed.Of(1);
             int responsePlayerMoveSpeed = 4;
 
-            Assert.That((PlayerMoveSpeed - subPlayerMoveSpeed).Value, Is.EqualTo(responsePlayerMoveSpeed));
+            Assert.That(
+                (playerMoveSpeed - subPlayerMoveSpeed).Value,
+                Is.EqualTo(responsePlayerMoveSpeed)
+            );
         }
 
         /**
@@ -57,11 +62,14 @@ namespace Tests {
          */
         [Test]
         public void ValidPlayerMoveSpeedOperatorMul() {
-            PlayerMoveSpeed PlayerMoveSpeed = PlayerMoveSpeed.Of(2);
+            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(2);
             PlayerMoveSpeed mulPlayerMoveSpeed = PlayerMoveSpeed.Of(2);
             int responsePlayerMoveSpeed = 4;
 
-            Assert.That((PlayerMoveSpeed * mulPlayerMoveSpeed).Value, Is.EqualTo(responsePlayerMoveSpeed));
+            Assert.That(
+                (playerMoveSpeed * mulPlayerMoveSpeed).Value,
+                Is.EqualTo(responsePlayerMoveSpeed)
+            );
         }
 
         /**
@@ -69,11 +77,14 @@ namespace Tests {
          */
         [Test]
         public void ValidPlayerMoveSpeedOperatorDiv() {
-            PlayerMoveSpeed PlayerMoveSpeed = PlayerMoveSpeed.Of(2);
+            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(2);
             PlayerMoveSpeed div = PlayerMoveSpeed.Of(2);
             int responsePlayerMoveSpeed = 1;
 
-            Assert.That((PlayerMoveSpeed / div).Value, Is.EqualTo(responsePlayerMoveSpeed));
+            Assert.That(
+                (playerMoveSpeed / div).Value,
+                Is.EqualTo(responsePlayerMoveSpeed)
+            );
         }
 
         /**
@@ -100,66 +111,54 @@ namespace Tests {
         }
 
         /**
-         * [異常] PlayerMoveSpeed同士の加算が行われ結果が異常である場合に、スローが投げられること
+         * [正常] 加算した値が最大値より大きい場合に、最大値が格納されていること
          */
         [Test]
-        public void ThrowWhenAddPlayerMoveSpeed() {
-            PlayerMoveSpeed PlayerMoveSpeed = PlayerMoveSpeed.Of(10);
+        public void LimitAddPlayerMoveSpeed() {
+            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(10);
             PlayerMoveSpeed addPlayerMoveSpeed = PlayerMoveSpeed.Of(1);
+            int responsePlayerMoveSpeed = 10;
 
-            void PlayerMoveSpeedMethod() {
-                PlayerMoveSpeed newPlayerMoveSpeed = PlayerMoveSpeed + addPlayerMoveSpeed;
-            }
-
-            Assert.Throws<ArithmeticException>(
-                PlayerMoveSpeedMethod
-            );
+            PlayerMoveSpeed newPlayerMoveSpeed = playerMoveSpeed + addPlayerMoveSpeed;
+            Assert.That(newPlayerMoveSpeed.Value, Is.EqualTo(responsePlayerMoveSpeed));
         }
 
         /**
-         * [異常] PlayerMoveSpeed同士の減算が行われ結果が異常である場合に、スローが投げられること
+         * [正常] 減算した値が最小値より小さい場合に、最小値が格納されていること
          */
         [Test]
-        public void ThrowWhenSubPlayerMoveSpeed() {
-            PlayerMoveSpeed PlayerMoveSpeed = PlayerMoveSpeed.Of(0);
-            PlayerMoveSpeed addPlayerMoveSpeed = PlayerMoveSpeed.Of(1);
+        public void LimitSubPlayerMoveSpeed() {
+            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(0);
+            PlayerMoveSpeed subPlayerMoveSpeed = PlayerMoveSpeed.Of(1);
+            int responsePlayerMoveSpeed = 0;
 
-            void PlayerMoveSpeedMethod() {
-                PlayerMoveSpeed newPlayerMoveSpeed = PlayerMoveSpeed - addPlayerMoveSpeed;
-            }
-
-            Assert.Throws<ArithmeticException>(
-                PlayerMoveSpeedMethod
-            );
+            PlayerMoveSpeed newPlayerMoveSpeed = playerMoveSpeed - subPlayerMoveSpeed;
+            Assert.That(newPlayerMoveSpeed.Value, Is.EqualTo(responsePlayerMoveSpeed));
         }
 
         /**
-         * [異常] PlayerMoveSpeed同士の乗算が行われ結果が異常である場合に、スローが投げられること
+         * [正常] 乗算した値が最大値より大きい場合に、最大値が格納されていること
          */
         [Test]
-        public void ThrowWhenMulPlayerMoveSpeed() {
-            PlayerMoveSpeed PlayerMoveSpeed = PlayerMoveSpeed.Of(10);
-            PlayerMoveSpeed addPlayerMoveSpeed = PlayerMoveSpeed.Of(2);
+        public void LimitMulPlayerMoveSpeed() {
+            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(10);
+            PlayerMoveSpeed mulPlayerMoveSpeed = PlayerMoveSpeed.Of(2);
+            int responsePlayerMoveSpeed = 10;
 
-            void PlayerMoveSpeedMethod() {
-                PlayerMoveSpeed newPlayerMoveSpeed = PlayerMoveSpeed * addPlayerMoveSpeed;
-            }
-
-            Assert.Throws<ArithmeticException>(
-                PlayerMoveSpeedMethod
-            );
+            PlayerMoveSpeed newPlayerMoveSpeed = playerMoveSpeed * mulPlayerMoveSpeed;
+            Assert.That(newPlayerMoveSpeed.Value, Is.EqualTo(responsePlayerMoveSpeed));
         }
 
         /**
-         * [異常] PlayerMoveSpeed同士の除算において0で割っている場合に、スローが投げられること
+         * [異常] 除算において0で割っている場合に、スローが投げられること
          */
         [Test]
         public void ThrowWhenDivPlayerMoveSpeed() {
-            PlayerMoveSpeed PlayerMoveSpeed = PlayerMoveSpeed.Of(1);
+            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(1);
             PlayerMoveSpeed addPlayerMoveSpeed = PlayerMoveSpeed.Of(0);
 
             void PlayerMoveSpeedMethod() {
-                PlayerMoveSpeed newPlayerMoveSpeed = PlayerMoveSpeed / addPlayerMoveSpeed;
+                PlayerMoveSpeed newPlayerMoveSpeed = playerMoveSpeed / addPlayerMoveSpeed;
             }
 
             Assert.Throws<DivideByZeroException>(

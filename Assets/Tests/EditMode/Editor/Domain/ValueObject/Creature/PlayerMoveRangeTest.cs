@@ -132,21 +132,27 @@ namespace Tests {
             );
         }
 
-        /**
-         * [異常] PlayerMoveRange同士の加算が行われ結果が異常である場合に、スローが投げられること
+        /**         
+         * [正常] 加算した値が最大値より大きい場合に、最大値が格納されていること
          */
         [Test]
-        public void ThrowWhenAddPlayerMoveRange() {
+        public void LimitAddPlayerMoveRange() {
             PlayerMoveRange playerMoveRange = PlayerMoveRange.Of(100f, 100f);
-            PlayerMoveRange addPlayerMoveRange = PlayerMoveRange.Of(1f, 1f);
+            List<PlayerMoveRange> addPlayerMoveRangeList = new List<PlayerMoveRange>() {
+                PlayerMoveRange.Of(0f, 1f),
+                PlayerMoveRange.Of(1f, 0f),
+                PlayerMoveRange.Of(2f, 2f)
+            };
+            float responseLowValue = 100f;
+            float responseHighValue = 100f;
 
-            void PlayerMoveRangeMethod() {
+            foreach (PlayerMoveRange addPlayerMoveRange in addPlayerMoveRangeList) {
                 PlayerMoveRange newPlayerMoveRange = playerMoveRange + addPlayerMoveRange;
-            }
+                Assert.That(newPlayerMoveRange.LowValue, Is.EqualTo(responseLowValue));
+                Assert.That(newPlayerMoveRange.HighValue, Is.EqualTo(responseHighValue));
 
-            Assert.Throws<ArithmeticException>(
-                PlayerMoveRangeMethod
-            );
+                Debug.Log(newPlayerMoveRange);
+            }
         }
 
         /**
