@@ -140,7 +140,6 @@ namespace Tests {
             PlayerMoveRange playerMoveRange = PlayerMoveRange.Of(100f, 100f);
             List<PlayerMoveRange> addPlayerMoveRangeList = new List<PlayerMoveRange>() {
                 PlayerMoveRange.Of(0f, 1f),
-                PlayerMoveRange.Of(1f, 0f),
                 PlayerMoveRange.Of(2f, 2f)
             };
             float responseLowValue = 100f;
@@ -150,43 +149,47 @@ namespace Tests {
                 PlayerMoveRange newPlayerMoveRange = playerMoveRange + addPlayerMoveRange;
                 Assert.That(newPlayerMoveRange.LowValue, Is.EqualTo(responseLowValue));
                 Assert.That(newPlayerMoveRange.HighValue, Is.EqualTo(responseHighValue));
-
-                Debug.Log(newPlayerMoveRange);
             }
         }
 
         /**
-         * [異常] PlayerMoveRange同士の減算が行われ結果が異常である場合に、スローが投げられること
+         * [正常] 減算した値が最小値より小さい場合に、最小値が格納されていること
          */
         [Test]
-        public void ThrowWhenSubPlayerMoveRange() {
+        public void LimitSubPlayerMOveRange() {
             PlayerMoveRange playerMoveRange = PlayerMoveRange.Of(-100f, -100f);
-            PlayerMoveRange addPlayerMoveRange = PlayerMoveRange.Of(1f, 1f);
+            List<PlayerMoveRange> subPlayerMoveRangeList = new List<PlayerMoveRange>() {
+                PlayerMoveRange.Of(0f, 1f),
+                PlayerMoveRange.Of(2f, 2f)
+            };
+            float responseLowValue = -100f;
+            float responseHighValue = -100f;
 
-            void PlayerMoveRangeMethod() {
-                PlayerMoveRange newPlayerMoveRange = playerMoveRange - addPlayerMoveRange;
+            foreach (PlayerMoveRange subPlayerMoveRange in subPlayerMoveRangeList) {
+                PlayerMoveRange newPlayerMoveRange = playerMoveRange - subPlayerMoveRange;
+                Assert.That(newPlayerMoveRange.LowValue, Is.EqualTo(responseLowValue));
+                Assert.That(newPlayerMoveRange.HighValue, Is.EqualTo(responseHighValue));
             }
-
-            Assert.Throws<ArithmeticException>(
-                PlayerMoveRangeMethod
-            );
         }
 
         /**
-         * [異常] PlayerMoveRange同士の乗算が行われ結果が異常である場合に、スローが投げられること
+         * [正常] 乗算した値が最大値より大きい場合に、最大値が格納されていること
          */
         [Test]
-        public void ThrowWhenMulPlayerMoveRange() {
+        public void LimitMulPlayerMOveRange() {
             PlayerMoveRange playerMoveRange = PlayerMoveRange.Of(100f, 100f);
-            PlayerMoveRange addPlayerMoveRange = PlayerMoveRange.Of(2f, 2f);
+            List<PlayerMoveRange> mulPlayerMoveRangeList = new List<PlayerMoveRange>() {
+                PlayerMoveRange.Of(1f, 1.5f),
+                PlayerMoveRange.Of(2f, 2f)
+            };
+            float responseLowValue = 100f;
+            float responseHighValue = 100f;
 
-            void PlayerMoveRangeMethod() {
-                PlayerMoveRange newPlayerMoveRange = playerMoveRange * addPlayerMoveRange;
+            foreach (PlayerMoveRange mulPlayerMoveRange in mulPlayerMoveRangeList) {
+                PlayerMoveRange newPlayerMoveRange = playerMoveRange * mulPlayerMoveRange;
+                Assert.That(newPlayerMoveRange.LowValue, Is.EqualTo(responseLowValue));
+                Assert.That(newPlayerMoveRange.HighValue, Is.EqualTo(responseHighValue));
             }
-
-            Assert.Throws<ArithmeticException>(
-                PlayerMoveRangeMethod
-            );
         }
 
         /**

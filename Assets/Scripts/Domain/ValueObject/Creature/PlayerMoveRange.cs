@@ -55,47 +55,44 @@ public class PlayerMoveRange {
      * TODO: すべての演算子はスローを投げるのではなく、MINとMAXで制限をかける
      */
     public static PlayerMoveRange operator+(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
-        ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
+        float[] resultLowValueAndHighValue = Mathk.KeepValueWithinRange(
             lhRange.LowValue + rhRange.LowValue,
             lhRange.HighValue + rhRange.HighValue,
             MIN,
-            MAX,
-            new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
+            MAX
         );
 
         return PlayerMoveRange.Of(
-            lhRange.LowValue + rhRange.LowValue,
-            lhRange.HighValue + rhRange.HighValue
+            resultLowValueAndHighValue[0],
+            resultLowValueAndHighValue[1]
         );
     }
 
     public static PlayerMoveRange operator-(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
-        ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
+        float[] resultLowValueAndHighValue = Mathk.KeepValueWithinRange(
             lhRange.LowValue - rhRange.LowValue,
             lhRange.HighValue - rhRange.HighValue,
             MIN,
-            MAX,
-            new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
+            MAX
         );
 
         return PlayerMoveRange.Of(
-            lhRange.LowValue - rhRange.LowValue,
-            lhRange.HighValue - rhRange.HighValue
+            resultLowValueAndHighValue[0],
+            resultLowValueAndHighValue[1]
         );
     }
 
     public static PlayerMoveRange operator*(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
-        ExceptionHandler.ThrowWhenInvalidValue<ArithmeticException>(
+        float[] resultLowValueAndHighValue = Mathk.KeepValueWithinRange(
             lhRange.LowValue * rhRange.LowValue,
             lhRange.HighValue * rhRange.HighValue,
             MIN,
-            MAX,
-            new ArithmeticException(ExceptionMessage.arithmeticExceptionMessage)
+            MAX
         );
 
         return PlayerMoveRange.Of(
-            lhRange.LowValue * rhRange.LowValue,
-            lhRange.HighValue * rhRange.HighValue
+            resultLowValueAndHighValue[0],
+            resultLowValueAndHighValue[1]
         );
     }
 

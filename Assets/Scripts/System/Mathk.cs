@@ -13,6 +13,21 @@ namespace Systemk {
             return value;
         }
 
+        public static float[] KeepValueWithinRange(
+            float lowValue,
+            float highValue,
+            float MIN,
+            float MAX
+        ) {
+            lowValue = Mathf.Max(lowValue, MIN);
+            lowValue = Mathf.Min(lowValue, MAX);
+
+            highValue = Mathf.Max(highValue, MIN);
+            highValue = Mathf.Min(highValue, MAX);
+            
+            return new float[2] { lowValue, highValue };
+        }
+
     }
 
 }
