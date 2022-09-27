@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
+using Systemk;
 
 namespace Tests {
     
@@ -151,18 +152,19 @@ namespace Tests {
 
         /**
          * [異常] 除算において0で割っている場合に、スローが投げられること
+         * TODO: スローはこのように書くようにする
          */
         [Test]
         public void ThrowWhenDivPlayerMoveSpeed() {
-            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(1);
-            PlayerMoveSpeed addPlayerMoveSpeed = PlayerMoveSpeed.Of(0);
-
-            void PlayerMoveSpeedMethod() {
+            var exception = Assert.Throws<DivideByZeroException>(() => {
+                PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(1);
+                PlayerMoveSpeed addPlayerMoveSpeed = PlayerMoveSpeed.Of(0);
                 PlayerMoveSpeed newPlayerMoveSpeed = playerMoveSpeed / addPlayerMoveSpeed;
-            }
+            });
 
-            Assert.Throws<DivideByZeroException>(
-                PlayerMoveSpeedMethod
+            Assert.That(
+                exception.Message,
+                Is.EqualTo(ExceptionMessage.divideByZeroExceptionMessage)
             );
         }
 
