@@ -8,12 +8,11 @@ using UnityEngine.TestTools;
 
 namespace Tests {
 
+    [Description("プレイヤーの動ける範囲のテスト")]
     public class PlayerMoveRangeTest {
 
-        /**
-         * 低い値が高い値以下で、低い値が最小値以上、高い値が最大値以下である場合に、値が正常に格納されること
-         */
         [Test]
+        [Description("低い値が高い値以下かつ低い値と高い値が範囲内である場合に、値が正常に格納されること")]
         public void ValidPlayerMoveRange() {
             Dictionary<float, float> validNumberDict = new Dictionary<float, float>() {
                 {-100f,  -99f},
@@ -30,10 +29,8 @@ namespace Tests {
             }
         }
 
-        /**
-         * [正常] PlayerMoveRange同士の加算が行われた場合に、値が正常に格納されること
-         */
         [Test]
+        [Description("[正常] PlayerMoveRange同士の加算が行われた場合に、値が正常に格納されること")]
         public void ValidPlayerMoveSpeedOperatorAdd() {
             PlayerMoveRange playerMoveRange = PlayerMoveRange.Of(0f, 10f);
             PlayerMoveRange addPlayerMoveRange = PlayerMoveRange.Of(1f, 1f);
@@ -46,10 +43,8 @@ namespace Tests {
             Assert.That(response.HighValue, Is.EqualTo(responseHighValue));
         }
 
-        /**
-         * [正常] PlayerMoveRange同士の減算が行われた場合に、値が正常に格納されること
-         */
         [Test]
+        [Description("[正常] PlayerMoveRange同士の減算が行われた場合に、値が正常に格納されること")]
         public void ValidPlayerMoveSpeedOperatorSub() {
             PlayerMoveRange playerMoveRange = PlayerMoveRange.Of(0f, 10f);
             PlayerMoveRange subPlayerMoveRange = PlayerMoveRange.Of(1f, 1f);
@@ -62,10 +57,8 @@ namespace Tests {
             Assert.That(response.HighValue, Is.EqualTo(responseHighValue));
         }
 
-        /**
-         * [正常] PlayerMoveRange同士の乗算が行われた場合に、値が正常に格納されること
-         */
         [Test]
+        [Description("[正常] PlayerMoveRange同士の乗算が行われた場合に、値が正常に格納されること")]
         public void ValidPlayerMoveSpeedOperatorMul() {
             PlayerMoveRange playerMoveRange = PlayerMoveRange.Of(2f, 10f);
             PlayerMoveRange mulPlayerMoveRange = PlayerMoveRange.Of(2f, 5f);
@@ -78,10 +71,8 @@ namespace Tests {
             Assert.That(response.HighValue, Is.EqualTo(responseHighValue));
         }
 
-        /**
-         * [正常] PlayerMoveRange同士の除算が行われた場合に、値が正常に格納されること
-         */
         [Test]
+        [Description("[正常] PlayerMoveRange同士の除算が行われた場合に、値が正常に格納されること")]
         public void ValidPlayerMoveSpeedOperatorDiv() {
             PlayerMoveRange playerMoveRange = PlayerMoveRange.Of(4f, 10f);
             PlayerMoveRange divPlayerMoveRange = PlayerMoveRange.Of(2f, 4f);
@@ -94,33 +85,29 @@ namespace Tests {
             Assert.That(response.HighValue, Is.EqualTo(responseHighValue));
         }
 
-        /**
-         * [異常] 低い値が最小値より小さいか、高い値が最大値より大きい場合に、スローを投げること
-         */
         [Test]
+        [Description("[異常] 低い値と高い値が範囲外である場合に、スローを投げること")]
         public void ThrowWhenValueIsOverRange() {
-            var exception = Assert.Throws<ArgumentException>(() => {
-                Dictionary<float, float> invalidNumberDict = new Dictionary<float, float>() {
-                    {-102f, -101f},
-                    {101f, 102f},
-                    {float.MinValue, float.MaxValue},
-                };
+            Dictionary<float, float> invalidNumberDict = new Dictionary<float, float>() {
+                {-102f, -101f},
+                {101f, 102f},
+                {float.MinValue, float.MaxValue}
+            };
 
-                foreach (KeyValuePair<float, float> value in invalidNumberDict) {
+            foreach (KeyValuePair<float, float> value in invalidNumberDict) {
+                var exception = Assert.Throws<ArgumentException>(() => {
                     PlayerMoveRange playerMoveRange = PlayerMoveRange.Of(value.Key, value.Value);
-                }
-            });
+                });
 
-            Assert.That(
-                exception.Message,
-                Is.EqualTo(ExceptionMessage.argumentExceptionMessage)
-            );
+                Assert.That(
+                    exception.Message,
+                    Is.EqualTo(ExceptionMessage.argumentExceptionMessage)
+                );
+            }
         }
 
-        /**
-         * [異常] 低い値が高い値より大きい場合に、スローを投げること
-         */
         [Test]
+        [Description("[異常] 低い値が高い値より大きい場合に、スローを投げること")]
         public void ThrowWhenLowValueGiggerThanHighValue() {
             var exception = Assert.Throws<ArgumentException>(() => {
                 float lowValue = 50f;
@@ -135,10 +122,8 @@ namespace Tests {
             );
         }
 
-        /**         
-         * [正常] 加算した値が最大値より大きい場合に、最大値が格納されていること
-         */
         [Test]
+        [Description("[正常] 加算した値が最大値より大きい場合に、最大値が格納されていること")]
         public void LimitAddPlayerMoveRange() {
             PlayerMoveRange playerMoveRange = PlayerMoveRange.Of(100f, 100f);
             List<PlayerMoveRange> addPlayerMoveRangeList = new List<PlayerMoveRange>() {
@@ -155,10 +140,8 @@ namespace Tests {
             }
         }
 
-        /**
-         * [正常] 減算した値が最小値より小さい場合に、最小値が格納されていること
-         */
         [Test]
+        [Description("[正常] 減算した値が最小値より小さい場合に、最小値が格納されていること")]
         public void LimitSubPlayerMOveRange() {
             PlayerMoveRange playerMoveRange = PlayerMoveRange.Of(-100f, -100f);
             List<PlayerMoveRange> subPlayerMoveRangeList = new List<PlayerMoveRange>() {
@@ -175,10 +158,8 @@ namespace Tests {
             }
         }
 
-        /**
-         * [正常] 乗算した値が最大値より大きい場合に、最大値が格納されていること
-         */
         [Test]
+        [Description("[正常] 乗算した値が最大値より大きい場合に、最大値が格納されていること")]
         public void LimitMulPlayerMOveRange() {
             PlayerMoveRange playerMoveRange = PlayerMoveRange.Of(100f, 100f);
             List<PlayerMoveRange> mulPlayerMoveRangeList = new List<PlayerMoveRange>() {
@@ -195,10 +176,8 @@ namespace Tests {
             }
         }
 
-        /**
-         * [異常] 除算において0で割っている場合に、スローが投げられること
-         */
         [Test]
+        [Description("[異常] 除算において0で割っている場合に、スローが投げられること")]
         public void ThrowWhenDivPlayerMoveRange() {
             var exception = Assert.Throws<DivideByZeroException>(() => {
                 PlayerMoveRange playerMoveRange = PlayerMoveRange.Of(100f, 100f);

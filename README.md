@@ -29,14 +29,38 @@ public void TestMethod() {
 
 * 現在はこちらに変更した
 ```
-public void ThrowsMethod() {
+public void TestMethod() {
     var exception = Assert.Throws<ArgumentException>(() => {
         // スローが発生する処理
     });
 
     Assert.That(
+        // 投げられたスローが投げられるべきスローと合っているか
+
         exception.Message,
         Is.EqualTo(ExceptionMessage.argumentExceptionMessage)
     );
+}
+```
+
+* テストしたい数値などが複数ある場合
+```
+public void TestMethod() {
+    List<int> invalidNumberList = new List<int>() {
+        // int型の数値
+    };
+
+    foreach (int value in invalidNumberList) {
+        var exception = Assert.Throws<ArgumentException>(() => {
+            // スローが投げられる処理
+        });
+
+        Assert.That(
+            // 投げられたスローが投げられるべきスローと合っているか
+
+            exception.Message,
+            Is.EqualTo(ExceptionMessage.argumentExceptionMessage)
+        );
+    }
 }
 ```

@@ -1,4 +1,5 @@
 using System;
+using Systemk;
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
@@ -7,12 +8,11 @@ using UnityEngine.TestTools;
 
 namespace Tests {
 
+    [Description("プレイヤーの体力のテスト")]
     public class PlayerHPTest {
 
-        /**
-         * [正常] 渡された値が最小値以上最大値以下である場合に、値が正常に格納されること
-         */
         [Test]
+        [Description("[正常] 渡された値が最小値以上最大値以下である場合に、値が正常に格納されること")]
         public void ValidPlayerHP() {
             List<int> validNumberList = new List<int>() {
                 0,
@@ -27,10 +27,8 @@ namespace Tests {
             }
         }
 
-        /**
-         * [正常] PlayerHP同士の加算が行われた場合に、値が正常に格納されること
-         */
         [Test]
+        [Description("[正常] PlayerHP同士の加算が行われた場合に、値が正常に格納されること")]
         public void ValidPlayerHPOperatorAdd() {
 
             PlayerHP playerHP = PlayerHP.Of(50);
@@ -40,10 +38,8 @@ namespace Tests {
             Assert.That((playerHP + addPlayerHP).Value, Is.EqualTo(responsePlayerHP));
         }
 
-        /**
-         * [正常] PlayerHP同士の減算が行われた場合に、値が正常に格納されること
-         */
         [Test]
+        [Description("[正常] PlayerHP同士の減算が行われた場合に、値が正常に格納されること")]
         public void ValidPlayerHPOperatorSub() {
             PlayerHP playerHP = PlayerHP.Of(50);
             PlayerHP subPlayerHP = PlayerHP.Of(10);
@@ -52,10 +48,8 @@ namespace Tests {
             Assert.That((playerHP - subPlayerHP).Value, Is.EqualTo(responsePlayerHP));
         }
 
-        /**
-         * [正常] PlayerHP同士の乗算が行われた場合に、値が正常に格納されること
-         */
         [Test]
+        [Description("[正常] PlayerHP同士の乗算が行われた場合に、値が正常に格納されること")]
         public void ValidPlayerHPOperatorMul() {
             PlayerHP playerHP = PlayerHP.Of(20);
             PlayerHP mulPlayerHP = PlayerHP.Of(2);
@@ -64,10 +58,8 @@ namespace Tests {
             Assert.That((playerHP * mulPlayerHP).Value, Is.EqualTo(responsePlayerHP));
         }
 
-        /**
-         * [正常] PlayerHP同士の除算が行われた場合に、値が正常に格納されること
-         */
         [Test]
+        [Description("[正常] PlayerHP同士の除算が行われた場合に、値が正常に格納されること")]
         public void ValidPlayerHPOperatorDiv() {
             PlayerHP playerHP = PlayerHP.Of(20);
             PlayerHP div = PlayerHP.Of(2);
@@ -76,11 +68,8 @@ namespace Tests {
             Assert.That((playerHP / div).Value, Is.EqualTo(responsePlayerHP));
         }
 
-        /**
-         * [異常] 渡された値が最小値未満か最大値より大きい場合に、スローが投げられること
-         * TODO: スローの比較を修正
-         */
         [Test]
+        [Description("[異常] 渡された値が最小値未満か最大値より大きい場合に、スローが投げられること")]
         public void ThrowWhenValueIsOverRange() {
             List<int> invalidNumberList = new List<int>() {
                 int.MinValue,
@@ -90,20 +79,19 @@ namespace Tests {
             };
 
             foreach (int value in invalidNumberList) {
-                void PlayerHPMethod() {
-                    PlayerHP.Of(value);
-                }
+                var exception = Assert.Throws<ArgumentException>(() => {
+                    PlayerHP playerHP = PlayerHP.Of(value);
+                });
 
-                Assert.Throws<ArgumentException>(
-                    PlayerHPMethod
+                Assert.That(
+                    exception.Message,
+                    Is.EqualTo(ExceptionMessage.argumentExceptionMessage)
                 );
             }
         }
 
-        /**
-         * [正常] 加算した値が最大値より大きい場合に、最大値が格納されていること
-         */
         [Test]
+        [Description("[正常] 加算した値が最大値より大きい場合に、最大値が格納されていること")]
         public void LimitAddPlayerHP() {
             PlayerHP playerHP = PlayerHP.Of(100);
             PlayerHP addPlayerHP = PlayerHP.Of(10);
@@ -113,10 +101,8 @@ namespace Tests {
             Assert.That(newPlayerHP.Value, Is.EqualTo(responsePlayerHP));
         }
 
-        /**
-         * [正常] 減算した値が最小値より小さい場合に、最小値が格納されていること
-         */
         [Test]
+        [Description("[正常] 減算した値が最小値より小さい場合に、最小値が格納されていること")]
         public void LimitSubPlayerHP() {
             PlayerHP playerHP = PlayerHP.Of(0);
             PlayerHP subPlayerHP = PlayerHP.Of(10);
@@ -126,10 +112,8 @@ namespace Tests {
             Assert.That(newPlayerHP.Value, Is.EqualTo(responsePlayerHP));
         }
 
-        /**
-         * [正常] 乗算した値が最大値より大きい場合に、最大値が格納されていること
-         */
         [Test]
+        [Description("[正常] 乗算した値が最大値より大きい場合に、最大値が格納されていること")]
         public void LimitMulPlayerHP() {
             PlayerHP playerHP = PlayerHP.Of(100);
             PlayerHP mulPlayerHP = PlayerHP.Of(2);
@@ -139,21 +123,19 @@ namespace Tests {
             Assert.That(newPlayerHP.Value, Is.EqualTo(responsePlayerHP));
         }
 
-        /**
-         * [異常] PlayerHP同士の除算において0で割っている場合に、スローが投げられること
-         * TODO: スローの比較を修正
-         */
         [Test]
+        [Description("[異常] 除算において0で割っている場合に、スローが投げられること")]
         public void ThrowWhenDivPlayerHP() {
-            PlayerHP playerHP = PlayerHP.Of(1);
-            PlayerHP addPlayerHP = PlayerHP.Of(0);
+            var exception = Assert.Throws<DivideByZeroException>(() => {
+                PlayerHP playerHP = PlayerHP.Of(1);
+                PlayerHP divPlayerHP = PlayerHP.Of(0);
 
-            void PlayerHPMethod() {
-                PlayerHP newPlayerHP = playerHP / addPlayerHP;
-            }
+                PlayerHP newPlayerHP = playerHP / divPlayerHP;
+            });
 
-            Assert.Throws<DivideByZeroException>(
-                PlayerHPMethod
+            Assert.That(
+                exception.Message,
+                Is.EqualTo(ExceptionMessage.divideByZeroExceptionMessage)
             );
         }
 
