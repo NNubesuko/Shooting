@@ -11,3 +11,32 @@ Shooting Game
 
 ### メモ
  * 全てのValueObjectは、必ずテストを行う
+
+### スローの比較
+
+* 初めはこの形で記述していたが
+```
+public void TestMethod() {
+    void ThrowsMethod() {
+        // スローが発生する処理
+    }
+
+    Assert.Throws<ArgumentException>(
+        ThrowsMethod
+    );
+}
+```
+
+* 現在はこちらに変更した
+```
+public void ThrowsMethod() {
+    var exception = Assert.Throws<ArgumentException>(() => {
+        // スローが発生する処理
+    });
+
+    Assert.That(
+        exception.Message,
+        Is.EqualTo(ExceptionMessage.argumentExceptionMessage)
+    );
+}
+```

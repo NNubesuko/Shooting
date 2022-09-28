@@ -89,6 +89,7 @@ namespace Tests {
 
         /**
          * [異常] 渡された値が最小値未満か最大値より大きい場合に、スローが投げられること
+         * TODO: スローの比較を修正
          */
         [Test]
         public void ThrowWhenValueIsOverRange() {
@@ -151,6 +152,7 @@ namespace Tests {
 
         /**
          * [異常] PlayerEvasiveSpeed同士の除算において0で割っている場合に、スローが投げられること
+         * TODO: スローの比較を修正
          */
         [Test]
         public void ThrowWhenDivPlayerEvasiveSpeed() {

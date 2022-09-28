@@ -93,22 +93,23 @@ namespace Tests {
          */
         [Test]
         public void ThrowWhenValueIsOverRange() {
-            List<int> invalidNumberList = new List<int>() {
-                int.MinValue,
-                -1,
-                11,
-                int.MaxValue
-            };
+            var exception = Assert.Throws<ArgumentException>(() => {
+                List<int> invalidNumberList = new List<int>() {
+                    int.MinValue,
+                    -1,
+                    11,
+                    int.MaxValue
+                };
 
-            foreach (int value in invalidNumberList) {
-                void PlayerMoveSpeedMethod() {
+                foreach (int value in invalidNumberList) {
                     PlayerMoveSpeed.Of(value);
                 }
+            });
 
-                Assert.Throws<ArgumentException>(
-                    PlayerMoveSpeedMethod
-                );
-            }
+            Assert.That(
+                exception.Message,
+                Is.EqualTo(ExceptionMessage.argumentExceptionMessage)
+            );
         }
 
         /**
@@ -152,7 +153,6 @@ namespace Tests {
 
         /**
          * [異常] 除算において0で割っている場合に、スローが投げられること
-         * TODO: スローはこのように書くようにする
          */
         [Test]
         public void ThrowWhenDivPlayerMoveSpeed() {

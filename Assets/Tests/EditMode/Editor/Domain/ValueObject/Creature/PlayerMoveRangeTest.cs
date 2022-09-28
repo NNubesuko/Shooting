@@ -1,4 +1,5 @@
 using System;
+using Systemk;
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
@@ -98,21 +99,22 @@ namespace Tests {
          */
         [Test]
         public void ThrowWhenValueIsOverRange() {
-            Dictionary<float, float> invalidNumberDict = new Dictionary<float, float>() {
-                {-102f, -101f},
-                { 101f,  102f},
-                {float.MinValue, float.MaxValue}
-            };
+            var exception = Assert.Throws<ArgumentException>(() => {
+                Dictionary<float, float> invalidNumberDict = new Dictionary<float, float>() {
+                    {-102f, -101f},
+                    {101f, 102f},
+                    {float.MinValue, float.MaxValue},
+                };
 
-            foreach (KeyValuePair<float, float> value in invalidNumberDict) {
-                void PlayerMoveRangeMethod() {
+                foreach (KeyValuePair<float, float> value in invalidNumberDict) {
                     PlayerMoveRange playerMoveRange = PlayerMoveRange.Of(value.Key, value.Value);
                 }
+            });
 
-                Assert.Throws<ArgumentException>(
-                    PlayerMoveRangeMethod
-                );
-            }
+            Assert.That(
+                exception.Message,
+                Is.EqualTo(ExceptionMessage.argumentExceptionMessage)
+            );
         }
 
         /**
@@ -120,15 +122,16 @@ namespace Tests {
          */
         [Test]
         public void ThrowWhenLowValueGiggerThanHighValue() {
-            float lowValue = 50f;
-            float highValue = 40f;
+            var exception = Assert.Throws<ArgumentException>(() => {
+                float lowValue = 50f;
+                float highValue = 40f;
 
-            void PlayerMoveRangeMethod() {
                 PlayerMoveRange playerMoveRange = PlayerMoveRange.Of(lowValue, highValue);
-            }
+            });
 
-            Assert.Throws<ArgumentException>(
-                PlayerMoveRangeMethod
+            Assert.That(
+                exception.Message,
+                Is.EqualTo(ExceptionMessage.argumentExceptionMessage)
             );
         }
 
@@ -193,20 +196,19 @@ namespace Tests {
         }
 
         /**
-         * [異常] PlayerMoveRange同士の除算が行われ結果が異常である場合に、スローが投げられること
+         * [異常] 除算において0で割っている場合に、スローが投げられること
          */
         [Test]
         public void ThrowWhenDivPlayerMoveRange() {
-            PlayerMoveRange playerMoveRange = PlayerMoveRange.Of(100f, 100f);
-
-            PlayerMoveRange addPlayerMoveRange = PlayerMoveRange.Of(0f, 1f);
-
-            void PlayerMoveRangeMethod() {
+            var exception = Assert.Throws<DivideByZeroException>(() => {
+                PlayerMoveRange playerMoveRange = PlayerMoveRange.Of(100f, 100f);
+                PlayerMoveRange addPlayerMoveRange = PlayerMoveRange.Of(0f, 1f);
                 PlayerMoveRange newPlayerMoveRange = playerMoveRange / addPlayerMoveRange;
-            }
+            });
 
-            Assert.Throws<DivideByZeroException>(
-                PlayerMoveRangeMethod
+            Assert.That(
+                exception.Message,
+                Is.EqualTo(ExceptionMessage.divideByZeroExceptionMessage)
             );
         }
 
