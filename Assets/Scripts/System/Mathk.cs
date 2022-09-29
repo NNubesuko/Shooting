@@ -28,6 +28,9 @@ namespace Systemk {
             return new float[2] { lowValue, highValue };
         }
 
+        /**
+         * 0に対応したSign
+         */
         public static float Sign(float value) {
             if (value == 0f) {
                 return 0f;
