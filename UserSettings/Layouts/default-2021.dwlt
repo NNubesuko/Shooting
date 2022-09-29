@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Inspector
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -42,7 +42,7 @@ MonoBehaviour:
     x: 216
     y: 0
     width: 387
-    height: 464
+    height: 556
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 19}
@@ -70,11 +70,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 603
-    height: 464
+    height: 556
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 96
+  controlID: 107
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -91,9 +91,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 464
+    y: 556
     width: 603
-    height: 483
+    height: 391
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 95
+  controlID: 106
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 94
+  controlID: 43
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 160
+  controlID: 153
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -267,7 +267,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 216
-    height: 464
+    height: 556
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
@@ -294,8 +294,8 @@ MonoBehaviour:
     y: 0
     width: 410
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -374,30 +374,30 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: -1013
-    y: 537
+    y: 629
     width: 601
-    height: 462
+    height: 370
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 732
-    splitterInitialOffset: 230
+    ID: 176
+    splitterInitialOffset: 434
     currentActiveSplitter: -1
     realSizes:
-    - 198
-    - 194
+    - 151
+    - 149
     relativeSizes:
-    - 0.5046729
-    - 0.49532712
+    - 0.5048544
+    - 0.49514562
     minSizes:
     - 32
     - 32
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 392
+    lastTotalSize: 300
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -466,7 +466,7 @@ MonoBehaviour:
       name: ShootingGame
       fullName: ShootingGame
       resultStatus: 1
-      duration: 0.0771169
+      duration: 0.0774967
       messages: 
       output: 
       stacktrace: 
@@ -482,7 +482,7 @@ MonoBehaviour:
       name: EditMode.dll
       fullName: D:/Program/Unity/Unity_2021_3_1f1/ShootingGame/Library/ScriptAssemblies/EditMode.dll
       resultStatus: 1
-      duration: 0.0575798
+      duration: 0.0574215
       messages: 
       output: 
       stacktrace: 
@@ -498,7 +498,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.0570933
+      duration: 0.0564693
       messages: 
       output: 
       stacktrace: 
@@ -514,7 +514,7 @@ MonoBehaviour:
       name: PlayerEvasiveSpeedTest
       fullName: Tests.PlayerEvasiveSpeedTest
       resultStatus: 1
-      duration: 0.0276994
+      duration: 0.0288667
       messages: 
       output: 
       stacktrace: 
@@ -530,7 +530,7 @@ MonoBehaviour:
       name: LimitAddPlayerEvasiveSpeed
       fullName: Tests.PlayerEvasiveSpeedTest.LimitAddPlayerEvasiveSpeed
       resultStatus: 1
-      duration: 0.0109265
+      duration: 0.012502
       messages: 
       output: 
       stacktrace: 
@@ -547,7 +547,7 @@ MonoBehaviour:
       name: ThrowWhenDivPlayerEvasiveSpeed
       fullName: Tests.PlayerEvasiveSpeedTest.ThrowWhenDivPlayerEvasiveSpeed
       resultStatus: 1
-      duration: 0.0024054
+      duration: 0.0030486
       messages: 
       output: 
       stacktrace: 
@@ -564,11 +564,9 @@ MonoBehaviour:
       name: ThrowWhenMulPlayerEvasiveSpeed
       fullName: Tests.PlayerEvasiveSpeedTest.ThrowWhenMulPlayerEvasiveSpeed
       resultStatus: 1
-      duration: 0.0018686
+      duration: 0.0001622
       messages: 
-      output: '100
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -583,7 +581,7 @@ MonoBehaviour:
       name: ThrowWhenSubPlayerEvasiveSpeed
       fullName: Tests.PlayerEvasiveSpeedTest.ThrowWhenSubPlayerEvasiveSpeed
       resultStatus: 1
-      duration: 0.0001905
+      duration: 0.0001244
       messages: 
       output: 
       stacktrace: 
@@ -600,7 +598,7 @@ MonoBehaviour:
       name: ThrowWhenValueIsOverRange
       fullName: Tests.PlayerEvasiveSpeedTest.ThrowWhenValueIsOverRange
       resultStatus: 1
-      duration: 0.000426
+      duration: 0.0004143
       messages: 
       output: 
       stacktrace: 
@@ -617,7 +615,7 @@ MonoBehaviour:
       name: ValidPlayerEvasiveSpeed
       fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeed
       resultStatus: 1
-      duration: 0.0002556
+      duration: 0.0002359
       messages: 
       output: 
       stacktrace: 
@@ -634,7 +632,7 @@ MonoBehaviour:
       name: ValidPlayerEvasiveSpeedOperatorAdd
       fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorAdd
       resultStatus: 1
-      duration: 0.0001002
+      duration: 0.0001003
       messages: 
       output: 
       stacktrace: 
@@ -651,7 +649,7 @@ MonoBehaviour:
       name: ValidPlayerEvasiveSpeedOperatorDiv
       fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorDiv
       resultStatus: 1
-      duration: 0.0000976
+      duration: 0.0001159
       messages: 
       output: 
       stacktrace: 
@@ -668,7 +666,7 @@ MonoBehaviour:
       name: ValidPlayerEvasiveSpeedOperatorMul
       fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorMul
       resultStatus: 1
-      duration: 0.0000916
+      duration: 0.0001139
       messages: 
       output: 
       stacktrace: 
@@ -685,7 +683,7 @@ MonoBehaviour:
       name: ValidPlayerEvasiveSpeedOperatorSub
       fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorSub
       resultStatus: 1
-      duration: 0.0000918
+      duration: 0.000153
       messages: 
       output: 
       stacktrace: 
@@ -702,7 +700,7 @@ MonoBehaviour:
       name: PlayerHPTest
       fullName: Tests.PlayerHPTest
       resultStatus: 1
-      duration: 0.0093715
+      duration: 0.0081878
       messages: 
       output: 
       stacktrace: 
@@ -713,12 +711,12 @@ MonoBehaviour:
       categories: []
       parentId: 1005
       parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1007
-      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ThrowWhenAddPlayerHP]
-      name: ThrowWhenAddPlayerHP
-      fullName: Tests.PlayerHPTest.ThrowWhenAddPlayerHP
+    - id: 1019
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.LimitAddPlayerHP]
+      name: LimitAddPlayerHP
+      fullName: Tests.PlayerHPTest.LimitAddPlayerHP
       resultStatus: 1
-      duration: 0.0003814
+      duration: 0.0002994
       messages: 
       output: 
       stacktrace: 
@@ -728,48 +726,48 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
+      parentId: 1012
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
+    - id: 1021
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.LimitMulPlayerHP]
+      name: LimitMulPlayerHP
+      fullName: Tests.PlayerHPTest.LimitMulPlayerHP
+      resultStatus: 1
+      duration: 0.0001475
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
+    - id: 1020
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.LimitSubPlayerHP]
+      name: LimitSubPlayerHP
+      fullName: Tests.PlayerHPTest.LimitSubPlayerHP
+      resultStatus: 1
+      duration: 0.0001434
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
       parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
     - id: 1011
       uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ThrowWhenDivPlayerHP]
       name: ThrowWhenDivPlayerHP
       fullName: Tests.PlayerHPTest.ThrowWhenDivPlayerHP
       resultStatus: 1
-      duration: 0.0001997
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
-    - id: 1010
-      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ThrowWhenMulPlayerHP]
-      name: ThrowWhenMulPlayerHP
-      fullName: Tests.PlayerHPTest.ThrowWhenMulPlayerHP
-      resultStatus: 1
-      duration: 0.0001921
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
-    - id: 1009
-      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ThrowWhenSubPlayerHP]
-      name: ThrowWhenSubPlayerHP
-      fullName: Tests.PlayerHPTest.ThrowWhenSubPlayerHP
-      resultStatus: 1
-      duration: 0.0001884
+      duration: 0.0002124
       messages: 
       output: 
       stacktrace: 
@@ -786,7 +784,7 @@ MonoBehaviour:
       name: ThrowWhenValueIsOverRange
       fullName: Tests.PlayerHPTest.ThrowWhenValueIsOverRange
       resultStatus: 1
-      duration: 0.0003498
+      duration: 0.0003847
       messages: 
       output: 
       stacktrace: 
@@ -803,7 +801,7 @@ MonoBehaviour:
       name: ValidPlayerHP
       fullName: Tests.PlayerHPTest.ValidPlayerHP
       resultStatus: 1
-      duration: 0.0002544
+      duration: 0.0002676
       messages: 
       output: 
       stacktrace: 
@@ -820,7 +818,7 @@ MonoBehaviour:
       name: ValidPlayerHPOperatorAdd
       fullName: Tests.PlayerHPTest.ValidPlayerHPOperatorAdd
       resultStatus: 1
-      duration: 0.0001056
+      duration: 0.0001157
       messages: 
       output: 
       stacktrace: 
@@ -837,7 +835,7 @@ MonoBehaviour:
       name: ValidPlayerHPOperatorDiv
       fullName: Tests.PlayerHPTest.ValidPlayerHPOperatorDiv
       resultStatus: 1
-      duration: 0.0000995
+      duration: 0.0001016
       messages: 
       output: 
       stacktrace: 
@@ -854,7 +852,7 @@ MonoBehaviour:
       name: ValidPlayerHPOperatorMul
       fullName: Tests.PlayerHPTest.ValidPlayerHPOperatorMul
       resultStatus: 1
-      duration: 0.0000935
+      duration: 0.0000994
       messages: 
       output: 
       stacktrace: 
@@ -871,7 +869,7 @@ MonoBehaviour:
       name: ValidPlayerHPOperatorSub
       fullName: Tests.PlayerHPTest.ValidPlayerHPOperatorSub
       resultStatus: 1
-      duration: 0.0000924
+      duration: 0.0000972
       messages: 
       output: 
       stacktrace: 
@@ -888,7 +886,7 @@ MonoBehaviour:
       name: PlayerMoveRangeTest
       fullName: Tests.PlayerMoveRangeTest
       resultStatus: 1
-      duration: 0.0112602
+      duration: 0.0104852
       messages: 
       output: 
       stacktrace: 
@@ -900,11 +898,45 @@ MonoBehaviour:
       parentId: 1037
       parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
     - id: 1031
-      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenAddPlayerMoveRange]
-      name: ThrowWhenAddPlayerMoveRange
-      fullName: Tests.PlayerMoveRangeTest.ThrowWhenAddPlayerMoveRange
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.LimitAddPlayerMoveRange]
+      name: LimitAddPlayerMoveRange
+      fullName: Tests.PlayerMoveRangeTest.LimitAddPlayerMoveRange
       resultStatus: 1
-      duration: 0.0006708
+      duration: 0.0016795
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1023
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
+    - id: 1033
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.LimitMulPlayerMOveRange]
+      name: LimitMulPlayerMOveRange
+      fullName: Tests.PlayerMoveRangeTest.LimitMulPlayerMOveRange
+      resultStatus: 1
+      duration: 0.0004448
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1023
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
+    - id: 1032
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.LimitSubPlayerMOveRange]
+      name: LimitSubPlayerMOveRange
+      fullName: Tests.PlayerMoveRangeTest.LimitSubPlayerMOveRange
+      resultStatus: 1
+      duration: 0.0004405
       messages: 
       output: 
       stacktrace: 
@@ -921,7 +953,7 @@ MonoBehaviour:
       name: ThrowWhenDivPlayerMoveRange
       fullName: Tests.PlayerMoveRangeTest.ThrowWhenDivPlayerMoveRange
       resultStatus: 1
-      duration: 0.000235
+      duration: 0.0002865
       messages: 
       output: 
       stacktrace: 
@@ -938,41 +970,7 @@ MonoBehaviour:
       name: ThrowWhenLowValueGiggerThanHighValue
       fullName: Tests.PlayerMoveRangeTest.ThrowWhenLowValueGiggerThanHighValue
       resultStatus: 1
-      duration: 0.0001785
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1023
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
-    - id: 1033
-      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenMulPlayerMoveRange]
-      name: ThrowWhenMulPlayerMoveRange
-      fullName: Tests.PlayerMoveRangeTest.ThrowWhenMulPlayerMoveRange
-      resultStatus: 1
-      duration: 0.0002298
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1023
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
-    - id: 1032
-      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenSubPlayerMoveRange]
-      name: ThrowWhenSubPlayerMoveRange
-      fullName: Tests.PlayerMoveRangeTest.ThrowWhenSubPlayerMoveRange
-      resultStatus: 1
-      duration: 0.0002178
+      duration: 0.0001514
       messages: 
       output: 
       stacktrace: 
@@ -989,7 +987,7 @@ MonoBehaviour:
       name: ThrowWhenValueIsOverRange
       fullName: Tests.PlayerMoveRangeTest.ThrowWhenValueIsOverRange
       resultStatus: 1
-      duration: 0.0011954
+      duration: 0.001085
       messages: 
       output: 
       stacktrace: 
@@ -1006,7 +1004,7 @@ MonoBehaviour:
       name: ValidPlayerMoveRange
       fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveRange
       resultStatus: 1
-      duration: 0.0008778
+      duration: 0.0004751
       messages: 
       output: 
       stacktrace: 
@@ -1023,7 +1021,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedOperatorAdd
       fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorAdd
       resultStatus: 1
-      duration: 0.0001475
+      duration: 0.000159
       messages: 
       output: 
       stacktrace: 
@@ -1040,7 +1038,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedOperatorDiv
       fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorDiv
       resultStatus: 1
-      duration: 0.0001298
+      duration: 0.0001424
       messages: 
       output: 
       stacktrace: 
@@ -1057,7 +1055,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedOperatorMul
       fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorMul
       resultStatus: 1
-      duration: 0.0001303
+      duration: 0.0001355
       messages: 
       output: 
       stacktrace: 
@@ -1074,7 +1072,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedOperatorSub
       fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorSub
       resultStatus: 1
-      duration: 0.0001209
+      duration: 0.0001368
       messages: 
       output: 
       stacktrace: 
@@ -1091,7 +1089,7 @@ MonoBehaviour:
       name: PlayerMoveSpeedTest
       fullName: Tests.PlayerMoveSpeedTest
       resultStatus: 1
-      duration: 0.0075942
+      duration: 0.0076652
       messages: 
       output: 
       stacktrace: 
@@ -1102,12 +1100,12 @@ MonoBehaviour:
       categories: []
       parentId: 1024
       parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1019
-      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ThrowWhenAddPlayerMoveSpeed]
-      name: ThrowWhenAddPlayerMoveSpeed
-      fullName: Tests.PlayerMoveSpeedTest.ThrowWhenAddPlayerMoveSpeed
+    - id: 1042
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.LimitAddPlayerMoveSpeed]
+      name: LimitAddPlayerMoveSpeed
+      fullName: Tests.PlayerMoveSpeedTest.LimitAddPlayerMoveSpeed
       resultStatus: 1
-      duration: 0.0003489
+      duration: 0.0003388
       messages: 
       output: 
       stacktrace: 
@@ -1117,48 +1115,48 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1012
+      parentId: 1035
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
+    - id: 1044
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.LimitMulPlayerMoveSpeed]
+      name: LimitMulPlayerMoveSpeed
+      fullName: Tests.PlayerMoveSpeedTest.LimitMulPlayerMoveSpeed
+      resultStatus: 1
+      duration: 0.0001667
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1035
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
+    - id: 1043
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.LimitSubPlayerMoveSpeed]
+      name: LimitSubPlayerMoveSpeed
+      fullName: Tests.PlayerMoveSpeedTest.LimitSubPlayerMoveSpeed
+      resultStatus: 1
+      duration: 0.0001437
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1035
       parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
     - id: 1022
       uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ThrowWhenDivPlayerMoveSpeed]
       name: ThrowWhenDivPlayerMoveSpeed
       fullName: Tests.PlayerMoveSpeedTest.ThrowWhenDivPlayerMoveSpeed
       resultStatus: 1
-      duration: 0.0002019
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1012
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
-    - id: 1021
-      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ThrowWhenMulPlayerMoveSpeed]
-      name: ThrowWhenMulPlayerMoveSpeed
-      fullName: Tests.PlayerMoveSpeedTest.ThrowWhenMulPlayerMoveSpeed
-      resultStatus: 1
-      duration: 0.0002103
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1012
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
-    - id: 1020
-      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ThrowWhenSubPlayerMoveSpeed]
-      name: ThrowWhenSubPlayerMoveSpeed
-      fullName: Tests.PlayerMoveSpeedTest.ThrowWhenSubPlayerMoveSpeed
-      resultStatus: 1
-      duration: 0.0001842
+      duration: 0.0005574
       messages: 
       output: 
       stacktrace: 
@@ -1175,7 +1173,7 @@ MonoBehaviour:
       name: ThrowWhenValueIsOverRange
       fullName: Tests.PlayerMoveSpeedTest.ThrowWhenValueIsOverRange
       resultStatus: 1
-      duration: 0.0003677
+      duration: 0.0004389
       messages: 
       output: 
       stacktrace: 
@@ -1192,7 +1190,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeed
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed
       resultStatus: 1
-      duration: 0.0003398
+      duration: 0.0002668
       messages: 
       output: 
       stacktrace: 
@@ -1209,7 +1207,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedOperatorAdd
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorAdd
       resultStatus: 1
-      duration: 0.0001367
+      duration: 0.000112
       messages: 
       output: 
       stacktrace: 
@@ -1226,7 +1224,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedOperatorDiv
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorDiv
       resultStatus: 1
-      duration: 0.0001031
+      duration: 0.0001044
       messages: 
       output: 
       stacktrace: 
@@ -1243,7 +1241,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedOperatorMul
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorMul
       resultStatus: 1
-      duration: 0.0001048
+      duration: 0.0000996
       messages: 
       output: 
       stacktrace: 
@@ -1260,7 +1258,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedOperatorSub
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorSub
       resultStatus: 1
-      duration: 0.0000988
+      duration: 0.0001016
       messages: 
       output: 
       stacktrace: 
@@ -1272,17 +1270,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1012
       parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
-    m_ResultText: 'ThrowWhenMulPlayerEvasiveSpeed (0.002s)
-
-      ---
-
-      100'
+    m_ResultText: ThrowWhenDivPlayerMoveSpeed (0.001s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: cc273d23
-      m_LastClickedID: 591210444
-      m_ExpandedIDs: 3cdc509eb492650b61558a1f8bce34243cf34728e57d0f684b5ea47cffffff7f
+      scrollPos: {x: 0, y: 125}
+      m_SelectedIDs: fdc58bff
+      m_LastClickedID: -7617027
+      m_ExpandedIDs: 3cdc509e7b26b7b3b492650b8bce34243cf34728e57d0f684b5ea47cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1329,9 +1323,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: -1013
-    y: 537
+    y: 629
     width: 601
-    height: 462
+    height: 370
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1359,7 +1353,7 @@ MonoBehaviour:
     x: -1013
     y: 73
     width: 214
-    height: 443
+    height: 535
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1369,7 +1363,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 6e8fffff0c92ffffc894ffff8c97ffff4a9bffff429dffff6e9fffffd0a2ffff7ea5ffff16a8fffffcabffff38aeffffacb0ffff
+      m_ExpandedIDs: 9ca9ffffc6afffff56b3ffff0cb6ffffb0baffff20bcffffcabeffff7cc1ffff34c4fffffcc4ffff00c7ffffb4c9ffffc0cbffffd8cdffffe0d0ffffe0d2ffffd2d4ffffe8d6ffff6ed9ffff5cdcffffdce3ffffa2e4fffffee6ffff14e9ffffe0efffff9cf3ffff36f8ffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1457,7 +1451,7 @@ MonoBehaviour:
     x: -797
     y: 73
     width: 385
-    height: 443
+    height: 535
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1475,22 +1469,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Component/Player
+    - Assets/Scripts/System
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 46
   m_LastFolders:
-  - Assets/Scripts/Component/Player
+  - Assets/Scripts/System
   m_LastFoldersGridSize: 46
   m_LastProjectPath: C:\Users\yoshi\Git\Shooting
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 20c50000
-    m_LastClickedID: 50464
-    m_ExpandedIDs: 0000000072c4000076c400007ac40000b8c40000e4c40000eac40000ecc40000eec400001ac5000000ca9a3b
+    scrollPos: {x: 0, y: 1}
+    m_SelectedIDs: 166c0000
+    m_LastClickedID: 27670
+    m_ExpandedIDs: 000000007a6a00007c6a00007e6a0000806a0000826a0000846a0000866a0000886a00008a6a0000146c0000486c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1518,7 +1512,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 000000007a6a00007c6a00007e6a0000806a0000826a0000846a0000866a0000886a00008a6a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

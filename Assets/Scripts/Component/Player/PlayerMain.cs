@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class PlayerMain : PlayerImpl {
 
-    [SerializeField] private int hp;
-    [SerializeField] private int moveSlowSpeed;
-    [SerializeField] private int moveSpeed;
-    [SerializeField] private int moveFastSpeed;
-    [SerializeField] private Vector2 moveHorizontalRange;
-    [SerializeField] private Vector2 moveVerticalRange;
+    [Header("体力"), SerializeField] private int hp;
+    [Header("移動速度（遅い）"), SerializeField] private int moveSlowSpeed;
+    [Header("移動速度（普通）"), SerializeField] private int moveSpeed;
+    [Header("移動速度（速い）"), SerializeField] private int moveFastSpeed;
+    [Header("回避速度"), SerializeField] private int evasiveSpeed;
+
+    [Header("水平方向の移動可能範囲")]
+    [SerializeField] private float horizontalLowValue;
+    [SerializeField] private float horizontalHighValue;
+
+    [Header("垂直方向の移動可能範囲")]
+    [SerializeField] private float verticalLowValue;
+    [SerializeField] private float verticalHighValue;
 
     private void Awake() {
         Init(
@@ -17,13 +24,16 @@ public class PlayerMain : PlayerImpl {
             PlayerMoveSpeed.Of(moveSlowSpeed),
             PlayerMoveSpeed.Of(moveSpeed),
             PlayerMoveSpeed.Of(moveFastSpeed),
-            moveHorizontalRange,
-            moveVerticalRange
+            PlayerEvasiveSpeed.Of(evasiveSpeed),
+            PlayerMoveRange.Of(horizontalLowValue, horizontalHighValue),
+            PlayerMoveRange.Of(verticalLowValue, verticalHighValue)
         );
     }
 
     private void Update() {
         Move();
+        Evasive();
+        Death();
     }
 
 }

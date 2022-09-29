@@ -1,5 +1,6 @@
 using System;
 using Systemk;
+using UnityEngine;
 
 public class PlayerMoveRange {
 
@@ -43,6 +44,21 @@ public class PlayerMoveRange {
         this.highValue = highValue;
     }
 
+    public static float KeepPositionWithinRange(
+        float position,
+        PlayerMoveRange playerMoveRange
+    ) {
+        if (position < playerMoveRange.LowValue) {
+            return playerMoveRange.LowValue;
+        }
+
+        if (position > playerMoveRange.HighValue) {
+            return playerMoveRange.HighValue;
+        }
+
+        return position;
+    }
+
     public float LowValue {
         get { return lowValue; }
     }
@@ -51,9 +67,6 @@ public class PlayerMoveRange {
         get { return highValue; }
     }
 
-    /**
-     * TODO: すべての演算子はスローを投げるのではなく、MINとMAXで制限をかける
-     */
     public static PlayerMoveRange operator+(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
         float[] resultLowValueAndHighValue = Mathk.KeepValueWithinRange(
             lhRange.LowValue + rhRange.LowValue,

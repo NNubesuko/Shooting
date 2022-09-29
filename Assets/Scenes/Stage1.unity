@@ -222,12 +222,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5739cff832ad02b4b8fd235fe44b5ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 100
-  moveSlowSpeed: 3
-  moveSpeed: 11
-  moveFastSpeed: 10
-  moveHorizontalRange: {x: -5, y: 5}
-  moveVerticalRange: {x: -5, y: 5}
+  hp: 10
+  moveSlowSpeed: 0
+  moveSpeed: 5
+  moveFastSpeed: 0
+  evasiveSpeed: 20
+  horizontalLowValue: -8.5
+  horizontalHighValue: 8.5
+  verticalLowValue: -4.5
+  verticalHighValue: 4.5
 --- !u!61 &655611693
 BoxCollider2D:
   m_ObjectHideFlags: 0

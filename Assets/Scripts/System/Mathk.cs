@@ -28,6 +28,16 @@ namespace Systemk {
             return new float[2] { lowValue, highValue };
         }
 
+        public static float Sign(float value) {
+            if (value == 0f) {
+                return 0f;
+            } else if (value > 0f) {
+                return 1f;
+            } else {
+                return -1f;
+            }
+        }
+
     }
 
 }

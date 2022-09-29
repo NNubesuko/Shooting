@@ -1,3 +1,4 @@
+using Systemk;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,21 +9,27 @@ public class PlayerImpl : MonoBehaviour, Player {
     private PlayerMoveSpeed _moveSlowSpeed;
     private PlayerMoveSpeed _moveSpeed;
     private PlayerMoveSpeed _moveFastSpeed;
-    private Vector2 _moveHorizontalRange;
-    private Vector2 _moveVerticalRange;
+    private PlayerEvasiveSpeed _evasiveSpeed;
+    private PlayerMoveRange _moveHorizontalRange;
+    private PlayerMoveRange _moveVerticalRange;
+    private bool canMove = true;
+    private bool isEvasive = false;
+    private float evasiveTime = 0.1f;
 
     public void Init(
         PlayerHP hp,
         PlayerMoveSpeed moveSlowSpeed,
         PlayerMoveSpeed moveSpeed,
         PlayerMoveSpeed moveFastSpeed,
-        Vector2 moveHorizontalRange,
-        Vector2 moveVerticalRange
+        PlayerEvasiveSpeed evasiveSpeed,
+        PlayerMoveRange moveHorizontalRange,
+        PlayerMoveRange moveVerticalRange
     ) {
         this._hp = hp;
         this._moveSlowSpeed = moveSlowSpeed;
         this._moveSpeed = moveSpeed;
         this._moveFastSpeed = moveFastSpeed;
+        this._evasiveSpeed = evasiveSpeed;
         this._moveHorizontalRange = moveHorizontalRange;
         this._moveVerticalRange = moveVerticalRange;
     }
@@ -39,16 +46,70 @@ public class PlayerImpl : MonoBehaviour, Player {
         MoveHandler(_moveFastSpeed);
     }
 
+    /**
+     * todo: a
+     */
+
     public virtual void Evasive() {
+        if (
+            (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f) &&
+            Input.GetKeyDown(KeyCode.Space) &&
+            !isEvasive
+        ) {
+            canMove = false;
+            isEvasive = true;
+            Invoke("ResetEvasive", evasiveTime);
+            StartCoroutine(
+                EvasiveHandler(
+                    Mathk.Sign( Input.GetAxis("Horizontal") ),
+                    Mathk.Sign( Input.GetAxis("Vertical") )
+                )
+            );
+        }
+    }
+
+    private IEnumerator EvasiveHandler(float horizontal, float vertical) {
+        while (isEvasive) {
+            Vector2 currentPosition = transform.position;
+
+            float calculatedPositionX =
+                currentPosition.x + horizontal * _evasiveSpeed.Value * Time.deltaTime;
+            float calculatedPositionY =
+                currentPosition.y + vertical * _evasiveSpeed.Value * Time.deltaTime;
+
+            currentPosition.x = PlayerMoveRange.KeepPositionWithinRange(
+                calculatedPositionX,
+                _moveHorizontalRange
+            );
+
+            currentPosition.y = PlayerMoveRange.KeepPositionWithinRange(
+                calculatedPositionY,
+                _moveVerticalRange
+            );
+
+            transform.position = currentPosition;
+
+            yield return null;
+        }
+    }
+
+    private void ResetEvasive() {
+        canMove = true;
+        isEvasive = false;
     }
 
     public virtual void Attack() {
     }
 
     public virtual void Death() {
+        if (_hp.Value == 0) {
+            Debug.Log("Death");
+        }
     }
 
     private void MoveHandler(PlayerMoveSpeed speed) {
+        if (!canMove) return;
+
         Vector2 currentPosition = transform.position;
 
         float calculatedPositionX =
@@ -56,19 +117,17 @@ public class PlayerImpl : MonoBehaviour, Player {
         float calculatedPositionY =
             currentPosition.y + Input.GetAxis("Vertical") * speed.Value * Time.deltaTime;
 
-        currentPosition.x = CanMoveRangeHandler(calculatedPositionX, _moveHorizontalRange);
-        currentPosition.y = CanMoveRangeHandler(calculatedPositionY, _moveVerticalRange);
+        currentPosition.x = PlayerMoveRange.KeepPositionWithinRange(
+            calculatedPositionX,
+            _moveHorizontalRange
+        );
+
+        currentPosition.y = PlayerMoveRange.KeepPositionWithinRange(
+            calculatedPositionY,
+            _moveVerticalRange
+        );
 
         transform.position = currentPosition;
-    }
-
-    private float CanMoveRangeHandler(float calculatedPosition, Vector2 canMoveRange) {
-        if (calculatedPosition < canMoveRange.x) {
-            return canMoveRange.x;
-        } else if (calculatedPosition > canMoveRange.y) {
-            return canMoveRange.y;
-        }
-        return calculatedPosition;
     }
 
 }
