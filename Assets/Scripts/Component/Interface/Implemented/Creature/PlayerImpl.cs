@@ -35,21 +35,27 @@ public class PlayerImpl : MonoBehaviour, Player {
     }
 
     public virtual void MoveSlow() {
+        if (!canMove) return;
+
         MoveHandler(_moveFastSpeed);
     }
 
     public virtual void Move() {
+        if (!canMove) return;
+        
         MoveHandler(_moveSpeed);
     }
 
     public virtual void MoveFast() {
+        if (!canMove) return;
+        
         MoveHandler(_moveFastSpeed);
     }
 
     /**
-     * todo: a
+     * TODO: 斜め移動した後に横に回避しようとすると、横ではなく斜めに回避してしまう。
+     * * 上記の原因：入力した数値がすぐに0に戻らない
      */
-
     public virtual void Evasive() {
         if (
             (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f) &&
@@ -68,36 +74,9 @@ public class PlayerImpl : MonoBehaviour, Player {
         }
     }
 
-    private IEnumerator EvasiveHandler(float horizontal, float vertical) {
-        while (isEvasive) {
-            Vector2 currentPosition = transform.position;
-
-            float calculatedPositionX =
-                currentPosition.x + horizontal * _evasiveSpeed.Value * Time.deltaTime;
-            float calculatedPositionY =
-                currentPosition.y + vertical * _evasiveSpeed.Value * Time.deltaTime;
-
-            currentPosition.x = PlayerMoveRange.KeepPositionWithinRange(
-                calculatedPositionX,
-                _moveHorizontalRange
-            );
-
-            currentPosition.y = PlayerMoveRange.KeepPositionWithinRange(
-                calculatedPositionY,
-                _moveVerticalRange
-            );
-
-            transform.position = currentPosition;
-
-            yield return null;
-        }
-    }
-
-    private void ResetEvasive() {
-        canMove = true;
-        isEvasive = false;
-    }
-
+    /**
+     * TODO: Bulletを実装した後に実装予定
+     */
     public virtual void Attack() {
     }
 
@@ -108,14 +87,36 @@ public class PlayerImpl : MonoBehaviour, Player {
     }
 
     private void MoveHandler(PlayerMoveSpeed speed) {
-        if (!canMove) return;
+        MoveHelper(
+            Input.GetAxis("Horizontal") * speed.Value * Time.deltaTime,
+            Input.GetAxis("Vertical") * speed.Value * Time.deltaTime
+        );
+    }
 
+    private IEnumerator EvasiveHandler(float horizontal, float vertical) {
+        while (isEvasive) {
+            MoveHelper(
+                horizontal * _evasiveSpeed.Value * Time.deltaTime,
+                vertical * _evasiveSpeed.Value * Time.deltaTime
+            );
+
+            yield return null;
+        }
+    }
+
+    private void ResetEvasive() {
+        canMove = true;
+        isEvasive = false;
+    }
+
+    /**
+     * プレイヤーが移動（通常移動や回避）する際のヘルプメソッド
+     */
+    private void MoveHelper(float addPositionX, float addPositionY) {
         Vector2 currentPosition = transform.position;
 
-        float calculatedPositionX =
-            currentPosition.x + Input.GetAxis("Horizontal") * speed.Value * Time.deltaTime;
-        float calculatedPositionY =
-            currentPosition.y + Input.GetAxis("Vertical") * speed.Value * Time.deltaTime;
+        float calculatedPositionX = currentPosition.x + addPositionX;
+        float calculatedPositionY = currentPosition.y + addPositionY;
 
         currentPosition.x = PlayerMoveRange.KeepPositionWithinRange(
             calculatedPositionX,
