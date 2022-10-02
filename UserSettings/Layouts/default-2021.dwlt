@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: -1920
+    x: 0
     y: 43
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -42,7 +42,7 @@ MonoBehaviour:
     x: 216
     y: 0
     width: 387
-    height: 556
+    height: 464
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 19}
@@ -70,11 +70,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 603
-    height: 556
+    height: 464
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 107
+  controlID: 106
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -85,23 +85,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 556
+    y: 464
     width: 603
-    height: 391
+    height: 483
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
   - {fileID: 15}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 106
+  controlID: 105
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 43
+  controlID: 99
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 153
+  controlID: 62
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -267,7 +267,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 216
-    height: 556
+    height: 464
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
@@ -373,31 +373,31 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1013
-    y: 629
+    x: 907
+    y: 537
     width: 601
-    height: 370
+    height: 462
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 176
-    splitterInitialOffset: 434
+    ID: 177
+    splitterInitialOffset: 230
     currentActiveSplitter: -1
     realSizes:
-    - 151
-    - 149
+    - 198
+    - 194
     relativeSizes:
-    - 0.5048544
-    - 0.49514562
+    - 0.5046729
+    - 0.49532712
     minSizes:
     - 32
     - 32
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 300
+    lastTotalSize: 392
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -466,7 +466,7 @@ MonoBehaviour:
       name: ShootingGame
       fullName: ShootingGame
       resultStatus: 1
-      duration: 0.0774967
+      duration: 0.1326028
       messages: 
       output: 
       stacktrace: 
@@ -482,7 +482,7 @@ MonoBehaviour:
       name: EditMode.dll
       fullName: D:/Program/Unity/Unity_2021_3_1f1/ShootingGame/Library/ScriptAssemblies/EditMode.dll
       resultStatus: 1
-      duration: 0.0574215
+      duration: 0.0731776
       messages: 
       output: 
       stacktrace: 
@@ -498,7 +498,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.0564693
+      duration: 0.0728119
       messages: 
       output: 
       stacktrace: 
@@ -514,13 +514,13 @@ MonoBehaviour:
       name: PlayerEvasiveSpeedTest
       fullName: Tests.PlayerEvasiveSpeedTest
       resultStatus: 1
-      duration: 0.0288667
+      duration: 0.0289848
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "\u30D7\u30EC\u30A4\u30E4\u30FC\u306E\u56DE\u907F\u901F\u5EA6\u306E\u30C6\u30B9\u30C8"
       isSuite: 1
       categories: []
       parentId: 1035
@@ -530,13 +530,47 @@ MonoBehaviour:
       name: LimitAddPlayerEvasiveSpeed
       fullName: Tests.PlayerEvasiveSpeedTest.LimitAddPlayerEvasiveSpeed
       resultStatus: 1
-      duration: 0.012502
+      duration: 0.0123695
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] \u52A0\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
+    - id: 1010
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.LimitMulPlayerEvasiveSpeed]
+      name: LimitMulPlayerEvasiveSpeed
+      fullName: Tests.PlayerEvasiveSpeedTest.LimitMulPlayerEvasiveSpeed
+      resultStatus: 1
+      duration: 0.0001895
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u4E57\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
+    - id: 1009
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.LimitSubPlayerEvasiveSpeed]
+      name: LimitSubPlayerEvasiveSpeed
+      fullName: Tests.PlayerEvasiveSpeedTest.LimitSubPlayerEvasiveSpeed
+      resultStatus: 1
+      duration: 0.0001823
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u6E1B\u7B97\u3057\u305F\u5024\u304C\u6700\u5C0F\u5024\u3088\u308A\u5C0F\u3055\u3044\u5834\u5408\u306B\u3001\u6700\u5C0F\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -547,47 +581,13 @@ MonoBehaviour:
       name: ThrowWhenDivPlayerEvasiveSpeed
       fullName: Tests.PlayerEvasiveSpeedTest.ThrowWhenDivPlayerEvasiveSpeed
       resultStatus: 1
-      duration: 0.0030486
+      duration: 0.0033572
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
-    - id: 1010
-      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ThrowWhenMulPlayerEvasiveSpeed]
-      name: ThrowWhenMulPlayerEvasiveSpeed
-      fullName: Tests.PlayerEvasiveSpeedTest.ThrowWhenMulPlayerEvasiveSpeed
-      resultStatus: 1
-      duration: 0.0001622
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
-    - id: 1009
-      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ThrowWhenSubPlayerEvasiveSpeed]
-      name: ThrowWhenSubPlayerEvasiveSpeed
-      fullName: Tests.PlayerEvasiveSpeedTest.ThrowWhenSubPlayerEvasiveSpeed
-      resultStatus: 1
-      duration: 0.0001244
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
+      description: "[\u7570\u5E38] \u9664\u7B97\u306B\u304A\u3044\u30660\u3067\u5272\u3063\u3066\u3044\u308B\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -598,13 +598,13 @@ MonoBehaviour:
       name: ThrowWhenValueIsOverRange
       fullName: Tests.PlayerEvasiveSpeedTest.ThrowWhenValueIsOverRange
       resultStatus: 1
-      duration: 0.0004143
+      duration: 0.0005801
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u7570\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u672A\u6E80\u304B\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -615,13 +615,13 @@ MonoBehaviour:
       name: ValidPlayerEvasiveSpeed
       fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeed
       resultStatus: 1
-      duration: 0.0002359
+      duration: 0.000292
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u4EE5\u4E0A\u6700\u5927\u5024\u4EE5\u4E0B\u3067\u3042\u308B\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -632,13 +632,13 @@ MonoBehaviour:
       name: ValidPlayerEvasiveSpeedOperatorAdd
       fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorAdd
       resultStatus: 1
-      duration: 0.0001003
+      duration: 0.000123
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] PlayerEvasiveSpeed\u540C\u58EB\u306E\u52A0\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -649,13 +649,13 @@ MonoBehaviour:
       name: ValidPlayerEvasiveSpeedOperatorDiv
       fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorDiv
       resultStatus: 1
-      duration: 0.0001159
+      duration: 0.000118
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] PlayerEvasiveSpeed\u540C\u58EB\u306E\u9664\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -666,13 +666,13 @@ MonoBehaviour:
       name: ValidPlayerEvasiveSpeedOperatorMul
       fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorMul
       resultStatus: 1
-      duration: 0.0001139
+      duration: 0.0001128
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] PlayerEvasiveSpeed\u540C\u58EB\u306E\u4E57\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -683,13 +683,13 @@ MonoBehaviour:
       name: ValidPlayerEvasiveSpeedOperatorSub
       fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorSub
       resultStatus: 1
-      duration: 0.000153
+      duration: 0.0001138
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] PlayerEvasiveSpeed\u540C\u58EB\u306E\u6E1B\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -700,13 +700,13 @@ MonoBehaviour:
       name: PlayerHPTest
       fullName: Tests.PlayerHPTest
       resultStatus: 1
-      duration: 0.0081878
+      duration: 0.0081605
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "\u30D7\u30EC\u30A4\u30E4\u30FC\u306E\u4F53\u529B\u306E\u30C6\u30B9\u30C8"
       isSuite: 1
       categories: []
       parentId: 1005
@@ -716,13 +716,13 @@ MonoBehaviour:
       name: LimitAddPlayerHP
       fullName: Tests.PlayerHPTest.LimitAddPlayerHP
       resultStatus: 1
-      duration: 0.0002994
+      duration: 0.0003052
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] \u52A0\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -733,13 +733,13 @@ MonoBehaviour:
       name: LimitMulPlayerHP
       fullName: Tests.PlayerHPTest.LimitMulPlayerHP
       resultStatus: 1
-      duration: 0.0001475
+      duration: 0.0001595
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] \u4E57\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -750,13 +750,13 @@ MonoBehaviour:
       name: LimitSubPlayerHP
       fullName: Tests.PlayerHPTest.LimitSubPlayerHP
       resultStatus: 1
-      duration: 0.0001434
+      duration: 0.0001532
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] \u6E1B\u7B97\u3057\u305F\u5024\u304C\u6700\u5C0F\u5024\u3088\u308A\u5C0F\u3055\u3044\u5834\u5408\u306B\u3001\u6700\u5C0F\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -767,13 +767,13 @@ MonoBehaviour:
       name: ThrowWhenDivPlayerHP
       fullName: Tests.PlayerHPTest.ThrowWhenDivPlayerHP
       resultStatus: 1
-      duration: 0.0002124
+      duration: 0.0003957
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u7570\u5E38] \u9664\u7B97\u306B\u304A\u3044\u30660\u3067\u5272\u3063\u3066\u3044\u308B\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -784,13 +784,13 @@ MonoBehaviour:
       name: ThrowWhenValueIsOverRange
       fullName: Tests.PlayerHPTest.ThrowWhenValueIsOverRange
       resultStatus: 1
-      duration: 0.0003847
+      duration: 0.0004336
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u7570\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u672A\u6E80\u304B\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -801,13 +801,13 @@ MonoBehaviour:
       name: ValidPlayerHP
       fullName: Tests.PlayerHPTest.ValidPlayerHP
       resultStatus: 1
-      duration: 0.0002676
+      duration: 0.0003014
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u4EE5\u4E0A\u6700\u5927\u5024\u4EE5\u4E0B\u3067\u3042\u308B\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -818,13 +818,13 @@ MonoBehaviour:
       name: ValidPlayerHPOperatorAdd
       fullName: Tests.PlayerHPTest.ValidPlayerHPOperatorAdd
       resultStatus: 1
-      duration: 0.0001157
+      duration: 0.0001242
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] PlayerHP\u540C\u58EB\u306E\u52A0\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -835,13 +835,13 @@ MonoBehaviour:
       name: ValidPlayerHPOperatorDiv
       fullName: Tests.PlayerHPTest.ValidPlayerHPOperatorDiv
       resultStatus: 1
-      duration: 0.0001016
+      duration: 0.0001156
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] PlayerHP\u540C\u58EB\u306E\u9664\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -852,13 +852,13 @@ MonoBehaviour:
       name: ValidPlayerHPOperatorMul
       fullName: Tests.PlayerHPTest.ValidPlayerHPOperatorMul
       resultStatus: 1
-      duration: 0.0000994
+      duration: 0.0001195
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] PlayerHP\u540C\u58EB\u306E\u4E57\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -869,13 +869,13 @@ MonoBehaviour:
       name: ValidPlayerHPOperatorSub
       fullName: Tests.PlayerHPTest.ValidPlayerHPOperatorSub
       resultStatus: 1
-      duration: 0.0000972
+      duration: 0.0001086
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] PlayerHP\u540C\u58EB\u306E\u6E1B\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -886,13 +886,13 @@ MonoBehaviour:
       name: PlayerMoveRangeTest
       fullName: Tests.PlayerMoveRangeTest
       resultStatus: 1
-      duration: 0.0104852
+      duration: 0.0161578
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "\u30D7\u30EC\u30A4\u30E4\u30FC\u306E\u52D5\u3051\u308B\u7BC4\u56F2\u306E\u30C6\u30B9\u30C8"
       isSuite: 1
       categories: []
       parentId: 1037
@@ -902,13 +902,13 @@ MonoBehaviour:
       name: LimitAddPlayerMoveRange
       fullName: Tests.PlayerMoveRangeTest.LimitAddPlayerMoveRange
       resultStatus: 1
-      duration: 0.0016795
+      duration: 0.001638
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] \u52A0\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -919,13 +919,13 @@ MonoBehaviour:
       name: LimitMulPlayerMOveRange
       fullName: Tests.PlayerMoveRangeTest.LimitMulPlayerMOveRange
       resultStatus: 1
-      duration: 0.0004448
+      duration: 0.0004041
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] \u4E57\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -936,13 +936,13 @@ MonoBehaviour:
       name: LimitSubPlayerMOveRange
       fullName: Tests.PlayerMoveRangeTest.LimitSubPlayerMOveRange
       resultStatus: 1
-      duration: 0.0004405
+      duration: 0.0003956
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] \u6E1B\u7B97\u3057\u305F\u5024\u304C\u6700\u5C0F\u5024\u3088\u308A\u5C0F\u3055\u3044\u5834\u5408\u306B\u3001\u6700\u5C0F\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -953,13 +953,13 @@ MonoBehaviour:
       name: ThrowWhenDivPlayerMoveRange
       fullName: Tests.PlayerMoveRangeTest.ThrowWhenDivPlayerMoveRange
       resultStatus: 1
-      duration: 0.0002865
+      duration: 0.0004352
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u7570\u5E38] \u9664\u7B97\u306B\u304A\u3044\u30660\u3067\u5272\u3063\u3066\u3044\u308B\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -970,13 +970,13 @@ MonoBehaviour:
       name: ThrowWhenLowValueGiggerThanHighValue
       fullName: Tests.PlayerMoveRangeTest.ThrowWhenLowValueGiggerThanHighValue
       resultStatus: 1
-      duration: 0.0001514
+      duration: 0.0002064
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u7570\u5E38] \u4F4E\u3044\u5024\u304C\u9AD8\u3044\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u3092\u6295\u3052\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -987,13 +987,13 @@ MonoBehaviour:
       name: ThrowWhenValueIsOverRange
       fullName: Tests.PlayerMoveRangeTest.ThrowWhenValueIsOverRange
       resultStatus: 1
-      duration: 0.001085
+      duration: 0.0012062
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u7570\u5E38] \u4F4E\u3044\u5024\u3068\u9AD8\u3044\u5024\u304C\u7BC4\u56F2\u5916\u3067\u3042\u308B\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u3092\u6295\u3052\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -1004,13 +1004,13 @@ MonoBehaviour:
       name: ValidPlayerMoveRange
       fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveRange
       resultStatus: 1
-      duration: 0.0004751
+      duration: 0.0004489
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "\u4F4E\u3044\u5024\u304C\u9AD8\u3044\u5024\u4EE5\u4E0B\u304B\u3064\u4F4E\u3044\u5024\u3068\u9AD8\u3044\u5024\u304C\u7BC4\u56F2\u5185\u3067\u3042\u308B\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -1021,13 +1021,13 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedOperatorAdd
       fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorAdd
       resultStatus: 1
-      duration: 0.000159
+      duration: 0.0001634
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] PlayerMoveRange\u540C\u58EB\u306E\u52A0\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -1038,13 +1038,13 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedOperatorDiv
       fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorDiv
       resultStatus: 1
-      duration: 0.0001424
+      duration: 0.0001512
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] PlayerMoveRange\u540C\u58EB\u306E\u9664\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -1055,13 +1055,13 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedOperatorMul
       fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorMul
       resultStatus: 1
-      duration: 0.0001355
+      duration: 0.000145
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] PlayerMoveRange\u540C\u58EB\u306E\u4E57\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -1072,13 +1072,13 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedOperatorSub
       fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorSub
       resultStatus: 1
-      duration: 0.0001368
+      duration: 0.0001437
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] PlayerMoveRange\u540C\u58EB\u306E\u6E1B\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -1089,13 +1089,13 @@ MonoBehaviour:
       name: PlayerMoveSpeedTest
       fullName: Tests.PlayerMoveSpeedTest
       resultStatus: 1
-      duration: 0.0076652
+      duration: 0.018244
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "\u30D7\u30EC\u30A4\u30E4\u30FC\u306E\u79FB\u52D5\u901F\u5EA6\u306E\u30C6\u30B9\u30C8"
       isSuite: 1
       categories: []
       parentId: 1024
@@ -1105,13 +1105,13 @@ MonoBehaviour:
       name: LimitAddPlayerMoveSpeed
       fullName: Tests.PlayerMoveSpeedTest.LimitAddPlayerMoveSpeed
       resultStatus: 1
-      duration: 0.0003388
+      duration: 0.0004168
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] \u52A0\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -1122,13 +1122,13 @@ MonoBehaviour:
       name: LimitMulPlayerMoveSpeed
       fullName: Tests.PlayerMoveSpeedTest.LimitMulPlayerMoveSpeed
       resultStatus: 1
-      duration: 0.0001667
+      duration: 0.000173
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] \u4E57\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -1139,13 +1139,13 @@ MonoBehaviour:
       name: LimitSubPlayerMoveSpeed
       fullName: Tests.PlayerMoveSpeedTest.LimitSubPlayerMoveSpeed
       resultStatus: 1
-      duration: 0.0001437
+      duration: 0.0001943
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] \u6E1B\u7B97\u3057\u305F\u5024\u304C\u6700\u5C0F\u5024\u3088\u308A\u5C0F\u3055\u3044\u5834\u5408\u306B\u3001\u6700\u5C0F\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -1156,13 +1156,13 @@ MonoBehaviour:
       name: ThrowWhenDivPlayerMoveSpeed
       fullName: Tests.PlayerMoveSpeedTest.ThrowWhenDivPlayerMoveSpeed
       resultStatus: 1
-      duration: 0.0005574
+      duration: 0.0004633
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u7570\u5E38] \u9664\u7B97\u306B\u304A\u3044\u30660\u3067\u5272\u3063\u3066\u3044\u308B\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -1173,13 +1173,13 @@ MonoBehaviour:
       name: ThrowWhenValueIsOverRange
       fullName: Tests.PlayerMoveSpeedTest.ThrowWhenValueIsOverRange
       resultStatus: 1
-      duration: 0.0004389
+      duration: 0.0004623
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u7570\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u672A\u6E80\u304B\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -1190,13 +1190,13 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeed
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed
       resultStatus: 1
-      duration: 0.0002668
+      duration: 0.0003024
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u4EE5\u4E0A\u6700\u5927\u5024\u4EE5\u4E0B\u3067\u3042\u308B\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -1207,13 +1207,13 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedOperatorAdd
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorAdd
       resultStatus: 1
-      duration: 0.000112
+      duration: 0.0001251
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] PlayerMoveSpeed\u540C\u58EB\u306E\u52A0\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -1224,13 +1224,13 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedOperatorDiv
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorDiv
       resultStatus: 1
-      duration: 0.0001044
+      duration: 0.000124
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] PlayerMoveSpeed\u540C\u58EB\u306E\u9664\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -1241,13 +1241,13 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedOperatorMul
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorMul
       resultStatus: 1
-      duration: 0.0000996
+      duration: 0.0001181
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] PlayerMoveSpeed\u540C\u58EB\u306E\u4E57\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -1258,25 +1258,25 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedOperatorSub
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorSub
       resultStatus: 1
-      duration: 0.0001016
+      duration: 0.000118
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: 
+      description: "[\u6B63\u5E38] PlayerMoveSpeed\u540C\u58EB\u306E\u6E1B\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
       parentId: 1012
       parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
-    m_ResultText: ThrowWhenDivPlayerMoveSpeed (0.001s)
+    m_ResultText: "ValidPlayerMoveSpeedOperatorSub (0.000s)\n[\u6B63\u5E38] PlayerMoveSpeed\u540C\u58EB\u306E\u6E1B\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 125}
-      m_SelectedIDs: fdc58bff
-      m_LastClickedID: -7617027
-      m_ExpandedIDs: 3cdc509e7b26b7b3b492650b8bce34243cf34728e57d0f684b5ea47cffffff7f
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 5a71112d
+      m_LastClickedID: 756117850
+      m_ExpandedIDs: 3cdc509eb492650b8bce34243cf34728e57d0f684b5ea47cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1322,10 +1322,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1013
-    y: 629
+    x: 907
+    y: 537
     width: 601
-    height: 370
+    height: 462
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1350,10 +1350,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1013
+    x: 907
     y: 73
     width: 214
-    height: 535
+    height: 443
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1363,7 +1363,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 9ca9ffffc6afffff56b3ffff0cb6ffffb0baffff20bcffffcabeffff7cc1ffff34c4fffffcc4ffff00c7ffffb4c9ffffc0cbffffd8cdffffe0d0ffffe0d2ffffd2d4ffffe8d6ffff6ed9ffff5cdcffffdce3ffffa2e4fffffee6ffff14e9ffffe0efffff9cf3ffff36f8ffff2afbffff
+      m_ExpandedIDs: e8f8ffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1407,7 +1407,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -410
+    x: 1510
     y: 73
     width: 409
     height: 926
@@ -1448,10 +1448,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -797
+    x: 1123
     y: 73
     width: 385
-    height: 535
+    height: 443
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1469,22 +1469,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/System
+    - Assets/Scripts/Domain/ValueObject/Creature
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 46
   m_LastFolders:
-  - Assets/Scripts/System
+  - Assets/Scripts/Domain/ValueObject/Creature
   m_LastFoldersGridSize: 46
-  m_LastProjectPath: C:\Users\yoshi\Git\Shooting
+  m_LastProjectPath: D:\Program\Unity\Unity_2021_3_1f1\ShootingGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 1}
-    m_SelectedIDs: 166c0000
-    m_LastClickedID: 27670
-    m_ExpandedIDs: 000000007a6a00007c6a00007e6a0000806a0000826a0000846a0000866a0000886a00008a6a0000146c0000486c000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 326c0000
+    m_LastClickedID: 27698
+    m_ExpandedIDs: 000000007a6a00007c6a00007e6a0000806a0000826a0000846a0000866a0000886a00008a6a00008c6a00008e6a0000906a0000926a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1512,7 +1512,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007a6a00007c6a00007e6a0000806a0000826a0000846a0000866a0000886a00008a6a0000
+    m_ExpandedIDs: 000000007a6a00007c6a00007e6a0000806a0000826a0000846a0000866a0000886a00008a6a00008c6a00008e6a0000906a0000926a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1588,7 +1588,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1920
+    x: 0
     y: 559
     width: 906
     height: 440
@@ -1680,7 +1680,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1920
+    x: 0
     y: 73
     width: 906
     height: 465

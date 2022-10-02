@@ -16,6 +16,9 @@ public class PlayerImpl : MonoBehaviour, Player {
     private bool isEvasive = false;
     private float evasiveTime = 0.1f;
 
+    private Vector2 lastPosition;
+    private Vector2 currentDirection;
+
     public void Init(
         PlayerHP hp,
         PlayerMoveSpeed moveSlowSpeed,
@@ -57,18 +60,14 @@ public class PlayerImpl : MonoBehaviour, Player {
      * * 上記の原因：入力した数値がすぐに0に戻らない
      */
     public virtual void Evasive() {
-        if (
-            (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f) &&
-            Input.GetKeyDown(KeyCode.Space) &&
-            !isEvasive
-        ) {
+        if (Input.GetKeyDown(KeyCode.Space) && !isEvasive) {
             canMove = false;
             isEvasive = true;
             Invoke("ResetEvasive", evasiveTime);
             StartCoroutine(
                 EvasiveHandler(
-                    Mathk.Sign( Input.GetAxis("Horizontal") ),
-                    Mathk.Sign( Input.GetAxis("Vertical") )
+                    Mathk.Sign( currentDirection.normalized.x ),
+                    Mathk.Sign( currentDirection.normalized.y )
                 )
             );
         }
@@ -87,10 +86,11 @@ public class PlayerImpl : MonoBehaviour, Player {
     }
 
     private void MoveHandler(PlayerMoveSpeed speed) {
-        MoveHelper(
-            Input.GetAxis("Horizontal") * speed.Value * Time.deltaTime,
-            Input.GetAxis("Vertical") * speed.Value * Time.deltaTime
-        );
+        Vector2 currentPosition = transform.position;
+
+        currentPosition += Inputk.GetAxis() * speed.Value * Time.deltaTime;
+
+        transform.position = currentPosition;
     }
 
     private IEnumerator EvasiveHandler(float horizontal, float vertical) {
@@ -114,6 +114,8 @@ public class PlayerImpl : MonoBehaviour, Player {
      */
     private void MoveHelper(float addPositionX, float addPositionY) {
         Vector2 currentPosition = transform.position;
+        currentDirection = currentPosition - lastPosition;
+        lastPosition = currentPosition;
 
         float calculatedPositionX = currentPosition.x + addPositionX;
         float calculatedPositionY = currentPosition.y + addPositionY;
@@ -130,5 +132,4 @@ public class PlayerImpl : MonoBehaviour, Player {
 
         transform.position = currentPosition;
     }
-
 }

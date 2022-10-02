@@ -1,3 +1,4 @@
+using Systemk;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -34,6 +35,8 @@ public class PlayerMain : PlayerImpl {
         Move();
         Evasive();
         Death();
+
+        Debug.Log(Inputk.GetAxis());
     }
 
 }
