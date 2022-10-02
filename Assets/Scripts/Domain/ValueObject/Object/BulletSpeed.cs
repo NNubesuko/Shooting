@@ -1,14 +1,14 @@
 using System;
 using Systemk;
 
-public sealed class BulletAP {
+public sealed class BulletSpeed {
 
     private int value;
 
-    public const int MIN = 1;
-    public const int MAX = 100;
+    private const int MIN = 0;
+    private const int MAX = 100;
 
-    private BulletAP(int value) {
+    private BulletSpeed(int value) {
         ExceptionHandler.ThrowWhenInvalidValue<ArgumentException>(
             value,
             MIN,
@@ -19,8 +19,8 @@ public sealed class BulletAP {
         this.value = value;
     }
 
-    public static BulletAP Of(int value) {
-        return new BulletAP(value);
+    public static BulletSpeed Of(int value) {
+        return new BulletSpeed(value);
     }
 
     public override string ToString() {
@@ -31,32 +31,32 @@ public sealed class BulletAP {
         get { return value; }
     }
 
-    public static BulletAP operator+(BulletAP lhAP, BulletAP rhAP) {
+    public static BulletSpeed operator+(BulletSpeed lhAP, BulletSpeed rhAP) {
         int value = lhAP.Value + rhAP.Value;
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
-        return new BulletAP(value);
+        return new BulletSpeed(value);
     }
 
-    public static BulletAP operator-(BulletAP lhAP, BulletAP rhAP) {
+    public static BulletSpeed operator-(BulletSpeed lhAP, BulletSpeed rhAP) {
         int value = lhAP.Value - rhAP.Value;
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
-        return new BulletAP(value);
+        return new BulletSpeed(value);
     }
 
-    public static BulletAP operator*(BulletAP lhAP, BulletAP rhAP) {
+    public static BulletSpeed operator*(BulletSpeed lhAP, BulletSpeed rhAP) {
         int value = lhAP.Value * rhAP.Value;
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
-        return new BulletAP(value);
+        return new BulletSpeed(value);
     }
 
-    public static BulletAP operator/(BulletAP lhAP, BulletAP rhAP) {
+    public static BulletSpeed operator/(BulletSpeed lhAP, BulletSpeed rhAP) {
         int value = lhAP.Value / rhAP.Value;
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
-        return new BulletAP(value);
+        return new BulletSpeed(value);
     }
 
 }

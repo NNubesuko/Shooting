@@ -8,7 +8,7 @@ using UnityEngine.TestTools;
 
 namespace Tests {
 
-    [Description("弾丸の攻撃力のテスト")]
+    [Description("弾丸攻撃力のテスト")]
     public class BulletAPTest {
 
         [Test]
@@ -98,6 +98,17 @@ namespace Tests {
             BulletAP bulletAP = BulletAP.Of(100);
             BulletAP mulBulletAP = BulletAP.Of(2);
             int responseBulletAP = 100;
+
+            BulletAP newBulletAP = bulletAP * mulBulletAP;
+            Assert.That(newBulletAP.Value, Is.EqualTo(responseBulletAP));
+        }
+
+        [Test]
+        [Description("[正常] 除算した値が最小値より小さい場合に、最小値が格納されること")]
+        public void LimitDivBulletAP() {
+            BulletAP bulletAP = BulletAP.Of(1);
+            BulletAP mulBulletAP = BulletAP.Of(2);
+            int responseBulletAP = 1;
 
             BulletAP newBulletAP = bulletAP * mulBulletAP;
             Assert.That(newBulletAP.Value, Is.EqualTo(responseBulletAP));

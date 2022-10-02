@@ -64,6 +64,8 @@ public sealed class PlayerMoveSpeed {
             throw new DivideByZeroException(ExceptionMessage.divideByZeroExceptionMessage);
 
         int value = lhSpeed.Value / rhSpeed.Value;
+        value = Mathk.KeepValueWithinRange(value, MIN, MAX);
+        
         return new PlayerMoveSpeed(value);
     }
 

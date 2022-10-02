@@ -60,6 +60,8 @@ public sealed class PlayerHP {
             throw new DivideByZeroException(ExceptionMessage.divideByZeroExceptionMessage);
 
         int value = lhHP.Value / rhHP.Value;
+        value = Mathk.KeepValueWithinRange(value, MIN, MAX);
+        
         return new PlayerHP(value);
     }
 

@@ -61,6 +61,8 @@ public sealed class PlayerEvasiveSpeed {
             throw new DivideByZeroException(ExceptionMessage.divideByZeroExceptionMessage);
 
         int value = lhHP.Value / rhHP.Value;
+        value = Mathk.KeepValueWithinRange(value, MIN, MAX);
+        
         return new PlayerEvasiveSpeed(value);
     }
 

@@ -113,10 +113,24 @@ public sealed class PlayerMoveRange {
         if (rhRange.LowValue == 0f || rhRange.HighValue == 0f)
             throw new DivideByZeroException(ExceptionMessage.divideByZeroExceptionMessage);
 
-        return PlayerMoveRange.Of(
-            lhRange.LowValue / rhRange.LowValue,
-            lhRange.HighValue / rhRange.HighValue
-        );
+        float lowValue = lhRange.LowValue / rhRange.LowValue;
+        float highValue = lhRange.HighValue / rhRange.HighValue;
+
+        lowValue = Mathk.KeepValueWithinRange(
+            lowValue,
+            highValue,
+            MIN,
+            MAX
+        )[0];
+
+        highValue = Mathk.KeepValueWithinRange(
+            lowValue,
+            highValue,
+            MIN,
+            MAX
+        )[1];
+
+        return PlayerMoveRange.Of(lowValue, highValue);
     }
 
 }
