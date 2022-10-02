@@ -35,8 +35,6 @@ public class PlayerMain : PlayerImpl {
         Move();
         Evasive();
         Death();
-
-        Debug.Log(Inputk.GetAxis());
     }
 
 }

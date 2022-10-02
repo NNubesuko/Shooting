@@ -15,8 +15,6 @@ public class PlayerImpl : MonoBehaviour, Player {
     private bool canMove = true;
     private bool isEvasive = false;
     private float evasiveTime = 0.1f;
-
-    private Vector2 lastPosition;
     private Vector2 currentDirection;
 
     public void Init(
@@ -59,11 +57,12 @@ public class PlayerImpl : MonoBehaviour, Player {
         if (Input.GetKeyDown(KeyCode.Space) && !isEvasive) {
             canMove = false;
             isEvasive = true;
+            currentDirection = Inputk.GetAxis();
             Invoke("ResetEvasive", evasiveTime);
             StartCoroutine(
                 EvasiveHandler(
-                    Mathk.Sign( currentDirection.normalized.x ),
-                    Mathk.Sign( currentDirection.normalized.y )
+                    Mathk.Sign( currentDirection.x ),
+                    Mathk.Sign( currentDirection.y )
                 )
             );
         }
@@ -110,8 +109,6 @@ public class PlayerImpl : MonoBehaviour, Player {
      */
     private void MoveHelper(float addPositionX, float addPositionY) {
         Vector2 currentPosition = transform.position;
-        currentDirection = currentPosition - lastPosition;
-        lastPosition = currentPosition;
 
         float calculatedPositionX = currentPosition.x + addPositionX;
         float calculatedPositionY = currentPosition.y + addPositionY;
