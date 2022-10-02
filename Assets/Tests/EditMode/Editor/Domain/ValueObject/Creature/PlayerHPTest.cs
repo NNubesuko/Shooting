@@ -30,7 +30,6 @@ namespace Tests {
         [Test]
         [Description("[正常] PlayerHP同士の加算が行われた場合に、値が正常に格納されること")]
         public void ValidPlayerHPOperatorAdd() {
-
             PlayerHP playerHP = PlayerHP.Of(50);
             PlayerHP addPlayerHP = PlayerHP.Of(10);
             int responsePlayerHP = 60;

@@ -2,7 +2,7 @@ using System;
 using Systemk;
 using UnityEngine;
 
-public class PlayerMoveRange {
+public sealed class PlayerMoveRange {
 
     private float lowValue;
     private float highValue;

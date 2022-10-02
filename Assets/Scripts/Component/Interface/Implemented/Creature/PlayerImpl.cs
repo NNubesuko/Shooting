@@ -55,10 +55,6 @@ public class PlayerImpl : MonoBehaviour, Player {
         MoveHandler(_moveFastSpeed);
     }
 
-    /**
-     * TODO: 斜め移動した後に横に回避しようとすると、横ではなく斜めに回避してしまう。
-     * * 上記の原因：入力した数値がすぐに0に戻らない
-     */
     public virtual void Evasive() {
         if (Input.GetKeyDown(KeyCode.Space) && !isEvasive) {
             canMove = false;

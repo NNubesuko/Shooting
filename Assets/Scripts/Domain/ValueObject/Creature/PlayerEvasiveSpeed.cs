@@ -5,7 +5,7 @@ using UnityEngine;
 /**
  * * プレイヤーの回避速度を格納するクラス
  */
-public class PlayerEvasiveSpeed {
+public sealed class PlayerEvasiveSpeed {
 
     private int value;
 
