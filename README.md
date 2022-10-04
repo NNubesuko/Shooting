@@ -2,15 +2,15 @@
 Shooting Game
 
 ### 目的
- * TDDのようなものをゲーム開発に落とし込みたい<br>
- 　-> ただの興味本位
+ * 簡単なTDDのをゲーム開発に落とし込みたい<br>
+ 　-> TDDはゲーム開発で取り込むには、難しいところが多いと聞いたため、実際に書いて確認する
  * ゲーム開発方法の見直し<br>
  　-> オブジェクト指向を理解できているのか不安であるため
  * Webサイトとゲームの開発の考え方を統一したい<br>
  　-> ゲームのWebAPIを提供するときに、開発方法を同じにしておけば楽になると考えたから
 
 ## メモ
- * 全てのValueObjectは、必ずテストを行う
+ここから全てメモ
 
 ### スローの比較
 
@@ -21,6 +21,7 @@ public void TestMethod() {
         // スローが発生する処理
     }
 
+    // スローが発生していることは確認できる
     Assert.Throws<ArgumentException>(
         ThrowsMethod
     );
@@ -42,6 +43,7 @@ public void TestMethod() {
     );
 }
 ```
+-> 変更した理由は、初めの形だとスローが投げられていることは確認できるが、そのスローが投げられて欲しいスローか判定できていなかったため。
 
 * テストしたい数値などが複数ある場合
 ```
@@ -69,7 +71,7 @@ public void TestMethod() {
 
 * Is.EqualToは便利だが、既存の者以外のオブジェクトは比較できない
 ```
-初期の状態だと以下のメソッドは比較出来ないため、エラーが出る
+// 初期の状態だと以下のメソッドは比較出来ないため、エラーが出る
 public void ValidNormalBullet() {
     BulletType responseBulletType = BulletType.Normal;
     BulletAP responseBulletAP = BulletAP.Of(10);
@@ -86,7 +88,7 @@ public void ValidNormalBullet() {
 
 * 解決策実装例
 ```
-オブジェクト内で以下を追加する
+// オブジェクト内で以下を追加する
 public override int GetHashCode() {
     return new { パラメータ }.GetHashCode();
 }
@@ -95,7 +97,7 @@ public override bool Equals(object obj) {
     if (obj == null) return false;
     if (obj == this) return true;
 
-    キャスト確認と型変換
+    // キャスト確認と型変換
     if (obj is オブジェクト otherObj) {
         if (this.GetHashCode() == otherObj.GetHashCode()) {
             return true;
