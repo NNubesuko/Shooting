@@ -27,6 +27,23 @@ public sealed class BulletSpeed {
         return $"{value}";
     }
 
+    public override int GetHashCode() {
+        return new { value, MIN, MAX }.GetHashCode();
+    }
+
+    public override bool Equals(object obj) {
+        if (obj == null) return false;
+        if (obj == this) return true;
+
+        if (obj is BulletSpeed otherBulletSpeed) {
+            if (this.GetHashCode() == otherBulletSpeed.GetHashCode()) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     public int Value {
         get { return value; }
     }

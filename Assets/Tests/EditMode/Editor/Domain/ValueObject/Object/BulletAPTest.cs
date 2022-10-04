@@ -110,7 +110,7 @@ namespace Tests {
             BulletAP mulBulletAP = BulletAP.Of(2);
             int responseBulletAP = 1;
 
-            BulletAP newBulletAP = bulletAP * mulBulletAP;
+            BulletAP newBulletAP = bulletAP / mulBulletAP;
             Assert.That(newBulletAP.Value, Is.EqualTo(responseBulletAP));
         }
 

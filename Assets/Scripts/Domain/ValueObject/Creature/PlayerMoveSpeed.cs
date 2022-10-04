@@ -23,6 +23,23 @@ public sealed class PlayerMoveSpeed {
         return $"{value}";
     }
 
+    public override int GetHashCode() {
+        return new { value, MIN, MAX }.GetHashCode();
+    }
+
+    public override bool Equals(object obj) {
+        if (obj == null) return false;
+        if (obj == this) return true;
+
+        if (obj is PlayerMoveSpeed otherPlayerMoveSpeed) {
+            if (this.GetHashCode() == otherPlayerMoveSpeed.GetHashCode()) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     private void AssignRestrictedIntValueToValue(int value) {
         ExceptionHandler.ThrowWhenInvalidValue<ArgumentException>(
             value,
