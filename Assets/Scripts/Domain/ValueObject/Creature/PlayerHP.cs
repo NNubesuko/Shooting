@@ -1,5 +1,6 @@
 using System;
 using Systemk;
+using Systemk.Exceptions;
 
 /**
  * * プレイヤーの体力を格納するクラス

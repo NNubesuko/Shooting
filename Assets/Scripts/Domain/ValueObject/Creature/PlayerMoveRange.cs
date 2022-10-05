@@ -1,5 +1,6 @@
 using System;
 using Systemk;
+using Systemk.Exceptions;
 using UnityEngine;
 
 public sealed class PlayerMoveRange {

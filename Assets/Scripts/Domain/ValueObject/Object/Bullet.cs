@@ -1,5 +1,6 @@
 using System;
 using Systemk;
+using Systemk.Exceptions;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -15,8 +16,18 @@ public sealed class Bullet {
         this.speed = speed;
     }
 
+    public override string ToString() {
+        return $"Type: {type}, AP: {ap}, Speed: {speed}";
+    }
+
     public static Bullet Of(BulletType type) {
-        return bulletDict[type];
+        try {
+            return bulletDict[type];
+        } catch (KeyNotFoundException) {
+            throw new BulletTypeNotFoundException(
+                ExceptionMessage.bulletTypeNotFoundExceptionMessage
+            );
+        }
     }
 
     private static Dictionary<BulletType, Bullet> bulletDict = new Dictionary<BulletType, Bullet>() {

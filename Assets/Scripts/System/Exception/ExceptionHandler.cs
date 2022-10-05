@@ -1,6 +1,6 @@
 using System;
 
-namespace Systemk {
+namespace Systemk.Exceptions {
 
     public class ExceptionHandler {
 

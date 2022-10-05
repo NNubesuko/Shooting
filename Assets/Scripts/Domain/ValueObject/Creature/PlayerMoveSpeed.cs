@@ -1,5 +1,6 @@
 using System;
 using Systemk;
+using Systemk.Exceptions;
 
 /**
  * * プレイヤーの移動速度を格納するクラス
