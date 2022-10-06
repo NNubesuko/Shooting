@@ -13,10 +13,19 @@ namespace Tests {
     public class BulletTypeTest {
 
         [Test]
-        [Description("[正常] 弾丸の種類が存在する場合に、値が正常に格納されていること")]
-        public void ValidBulletType() {
+        [Description("[正常] 通常の弾丸が存在する場合に、値が正常に格納されていること")]
+        public void ValidNormalBulletType() {
             BulletType bulletType = BulletType.Normal;
             BulletType responseBulletType = (BulletType)0;
+
+            Assert.That(bulletType.Value, Is.EqualTo(responseBulletType.Value));
+        }
+
+        [Test]
+        [Description("[正常] 強化弾が存在する場合に、値が正常に格納されていること")]
+        public void ValidHeadBulletType() {
+            BulletType bulletType = BulletType.Head;
+            BulletType responseBulletType = (BulletType)1;
 
             Assert.That(bulletType.Value, Is.EqualTo(responseBulletType.Value));
         }
