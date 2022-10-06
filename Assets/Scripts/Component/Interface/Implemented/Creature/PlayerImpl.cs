@@ -84,6 +84,15 @@ public class PlayerImpl : MonoBehaviour, Player {
         Vector2 currentPosition = transform.position;
 
         currentPosition += Inputk.GetAxis() * speed.Value * Time.deltaTime;
+        currentPosition.x = PlayerMoveRange.KeepPositionWithinRange(
+            currentPosition.x,
+            _moveHorizontalRange
+        );
+
+        currentPosition.y = PlayerMoveRange.KeepPositionWithinRange(
+            currentPosition.y,
+            _moveVerticalRange
+        );
 
         transform.position = currentPosition;
     }
