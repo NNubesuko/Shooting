@@ -44,15 +44,20 @@ public sealed class BulletType {
         return false;
     }
 
-    public int Value {
-        get { return value; }
+    public static BulletType Of(int value) {
+        ExceptionHandler.ThrowWhenEnumDoesNotExist<BulletTypeNotFoundException>(
+            MIN,
+            MAX,
+            new BulletTypeNotFoundException(ExceptionMessage.bulletTypeNotFoundExceptionMessage),
+            Normal.Value,
+            Head.Value
+        );
+
+        return new BulletType(value);
     }
 
-    /**
-     * * 意図しない型変換を防ぐため、明示的な型変換のみ実装
-     */
-    public static explicit operator BulletType(int value) {
-        return new BulletType(value);
+    public int Value {
+        get { return value; }
     }
 
 }

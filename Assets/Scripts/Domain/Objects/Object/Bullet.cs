@@ -6,59 +6,70 @@ using System.Collections.Generic;
 
 public sealed class Bullet {
 
-    // private BulletType type;
-    // private BulletAP ap;
-    // private BulletSpeed speed;
+    private BulletType type;
+    private BulletAP ap;
+    private BulletSpeed speed;
 
-    // private Bullet(BulletType type, BulletAP ap, BulletSpeed speed) {
-    //     this.type = type;
-    //     this.ap = ap;
-    //     this.speed = speed;
-    // }
+    private static Dictionary<BulletType, Bullet> bulletDict = new Dictionary<BulletType, Bullet>(){
+        {
+            BulletType.Normal,
+            new Bullet(
+                BulletType.Normal,
+                BulletAP.Of(10),
+                BulletSpeed.Of(25)
+            )
+        },
+        {
+            BulletType.Head,
+            new Bullet(
+                BulletType.Head,
+                BulletAP.Of(50),
+                BulletSpeed.Of(10)
+            )
+        }
+    };
 
-    // public override string ToString() {
-    //     return $"Type: {type}, AP: {ap}, Speed: {speed}";
-    // }
+    private Bullet(BulletType type, BulletAP ap, BulletSpeed speed) {
+        this.type = type;
+        this.ap = ap;
+        this.speed = speed;
+    }
 
-    // public static Bullet Generate(BulletType type) {
-    //     try {
-    //         return bulletDict[type];
-    //     } catch (KeyNotFoundException) {
-    //         throw new BulletTypeNotFoundException(
-    //             ExceptionMessage.bulletTypeNotFoundExceptionMessage
-    //         );
-    //     }
-    // }
+    public override string ToString() {
+        return $"Type: {type}, AP: {ap}, Speed: {speed}";
+    }
 
-    // private static Dictionary<BulletType, Bullet> bulletDict = new Dictionary<BulletType, Bullet>(){
-    //     {
-    //         BulletType.Normal,
-    //         new Bullet(
-    //             BulletType.Normal,
-    //             BulletAP.Of(10),
-    //             BulletSpeed.Of(25)
-    //         )
-    //     },
-    //     {
-    //         BulletType.Head,
-    //         new Bullet(
-    //             BulletType.Head,
-    //             BulletAP.Of(50),
-    //             BulletSpeed.Of(10)
-    //         )
-    //     }
-    // };
+    public override int GetHashCode() {
+        return new { type, ap, speed }.GetHashCode();
+    }
 
-    // public BulletType Type {
-    //     get { return type; }
-    // }
+    public override bool Equals(object obj) {
+        if (obj == null) return false;
+        if (obj == this) return true;
 
-    // public BulletAP AP {
-    //     get { return ap; }
-    // }
+        if (obj is Bullet otherBullet) {
+            if (this.GetHashCode() == otherBullet.GetHashCode()) {
+                return true;
+            }
+        }
 
-    // public BulletSpeed Speed {
-    //     get { return speed; }
-    // }
+        return false;
+    }
 
+    public static Bullet Generate(BulletType type) {
+        return bulletDict[type];
+    }
+
+    public BulletType Type {
+        get { return type; }
+    }
+
+    public BulletAP AP {
+        get { return ap; }
+    }
+
+    public BulletSpeed Speed {
+        get { return speed; }
+    }
+    
 }

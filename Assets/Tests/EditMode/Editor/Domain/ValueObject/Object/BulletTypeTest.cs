@@ -13,28 +13,30 @@ namespace Tests {
     public class BulletTypeTest {
 
         [Test]
+        [TestCase(0)]
         [Description("[正常] 通常の弾丸が存在する場合に、値が正常に格納されていること")]
-        public void ValidNormalBulletType() {
-            BulletType bulletType = BulletType.Normal;
-            BulletType responseBulletType = (BulletType)0;
+        public void ValidNormalBulletType(int bulletType) {
+            BulletType responseBulletType = BulletType.Normal;
 
-            Assert.That(bulletType.Value, Is.EqualTo(responseBulletType.Value));
+            Assert.That(bulletType, Is.EqualTo(responseBulletType.Value));
         }
 
         [Test]
+        [TestCase(1)]
         [Description("[正常] 強化弾が存在する場合に、値が正常に格納されていること")]
-        public void ValidHeadBulletType() {
-            BulletType bulletType = BulletType.Head;
-            BulletType responseBulletType = (BulletType)1;
+        public void ValidHeadBulletType(int bulletType) {
+            BulletType responseBulletType = BulletType.Head;
 
-            Assert.That(bulletType.Value, Is.EqualTo(responseBulletType.Value));
+            Assert.That(bulletType, Is.EqualTo(responseBulletType.Value));
         }
 
         [Test]
+        [TestCase(int.MinValue)]
+        [TestCase(int.MaxValue)]
         [Description("[異常] 弾丸の種類が存在しない場合に、スローが投げられること")]
-        public void NotExistBulletType() {
+        public void NotExistBulletType(int bulletType) {
             var exception = Assert.Throws<BulletTypeNotFoundException>(() => {
-                BulletType bulletType = (BulletType)9999;
+                BulletType bulletTypeInstance = BulletType.Of(bulletType);
             });
 
             Assert.That(
