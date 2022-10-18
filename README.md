@@ -53,12 +53,17 @@ public void TestMethod(引数) {
 * Is.EqualToは便利だが、既存の者以外のオブジェクトは比較できない
 ```
 // 初期の状態だと以下のメソッドは比較出来ないため、エラーが出る
-public void ValidNormalBullet() {
+[Test]
+[TestCase(引数)]
+    :
+    :
+[Description("[正常] テスト内容")]
+public void TestMethod(引数) {
     BulletType responseBulletType = BulletType.Normal;
     BulletAP responseBulletAP = BulletAP.Of(10);
     BulletSpeed responseBulletSpeed = BulletSpeed.Of(25);
 
-    Bullet bullet = Bullet.Of(BulletType.Normal);
+    Bullet bullet = Bullet.Of(引数);
 
     Assert.That(bullet.Type, Is.EqualTo(responseBulletType));
     Assert.That(bullet.AP, Is.EqualTo(responseBulletAP));
