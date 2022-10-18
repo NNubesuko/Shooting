@@ -12,135 +12,116 @@ namespace Tests {
     public class PlayerMoveSpeedTest {
 
         [Test]
+        [TestCase(0)]
+        [TestCase(5)]
+        [TestCase(10)]
         [Description("[正常] 渡された値が最小値以上最大値以下である場合に、値が正常に格納されること")]
-        public void ValidPlayerMoveSpeed() {
-            List<int> validNumberList = new List<int>() {
-                0,
-                5,
-                10
-            };
-
-            foreach (int value in validNumberList) {
-                PlayerMoveSpeed PlayerMoveSpeed = PlayerMoveSpeed.Of(value);
-
-                Assert.That(PlayerMoveSpeed.Value, Is.EqualTo(value));
-            }
+        public void ValidPlayerMoveSpeed(int value) {
+            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(value);
+            Assert.That(playerMoveSpeed.Value, Is.EqualTo(value));
         }
 
         [Test]
-        [Description("[正常] PlayerMoveSpeed同士の加算が行われた場合に、値が正常に格納されること")]
-        public void ValidPlayerMoveSpeedOperatorAdd() {
-            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(5);
-            PlayerMoveSpeed addPlayerMoveSpeed = PlayerMoveSpeed.Of(1);
+        [TestCase(4, 2)]
+        [Description("[正常] 加算が行われた場合に、値が正常に格納されること")]
+        public void ValidPlayerMoveSpeedOperatorAdd(int value, int addValue) {
             int responsePlayerMoveSpeed = 6;
 
-            Assert.That(
-                (playerMoveSpeed + addPlayerMoveSpeed).Value,
-                Is.EqualTo(responsePlayerMoveSpeed)
-            );
+            PlayerMoveSpeed playerMoveSpeed =
+                PlayerMoveSpeed.Of(value) + PlayerMoveSpeed.Of(addValue);
+            Assert.That(playerMoveSpeed.Value, Is.EqualTo(responsePlayerMoveSpeed));
         }
 
         [Test]
-        [Description("[正常] PlayerMoveSpeed同士の減算が行われた場合に、値が正常に格納されること")]
-        public void ValidPlayerMoveSpeedOperatorSub() {
-            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(5);
-            PlayerMoveSpeed subPlayerMoveSpeed = PlayerMoveSpeed.Of(1);
-            int responsePlayerMoveSpeed = 4;
+        [TestCase(4, 2)]
+        [Description("[正常] 減算が行われた場合に、値が正常に格納されること")]
+        public void ValidPlayerMoveSpeedOperatorSub(int value, int subValue) {
+            int responsePlayerMoveSpeed = 2;
 
-            Assert.That(
-                (playerMoveSpeed - subPlayerMoveSpeed).Value,
-                Is.EqualTo(responsePlayerMoveSpeed)
-            );
+            PlayerMoveSpeed playerMoveSpeed =
+                PlayerMoveSpeed.Of(value) - PlayerMoveSpeed.Of(subValue);
+            Assert.That(playerMoveSpeed.Value, Is.EqualTo(responsePlayerMoveSpeed));
         }
 
         [Test]
-        [Description("[正常] PlayerMoveSpeed同士の乗算が行われた場合に、値が正常に格納されること")]
-        public void ValidPlayerMoveSpeedOperatorMul() {
-            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(2);
-            PlayerMoveSpeed mulPlayerMoveSpeed = PlayerMoveSpeed.Of(2);
-            int responsePlayerMoveSpeed = 4;
+        [TestCase(4, 2)]
+        [Description("[正常] 乗算が行われた場合に、値が正常に格納されること")]
+        public void ValidPlayerMoveSpeedOperatorMul(int value, int mulValue) {
+            int responsePlayerMoveSpeed = 8;
 
-            Assert.That(
-                (playerMoveSpeed * mulPlayerMoveSpeed).Value,
-                Is.EqualTo(responsePlayerMoveSpeed)
-            );
+            PlayerMoveSpeed playerMoveSpeed =
+                PlayerMoveSpeed.Of(value) * PlayerMoveSpeed.Of(mulValue);
+            Assert.That(playerMoveSpeed.Value, Is.EqualTo(responsePlayerMoveSpeed));
         }
 
         [Test]
-        [Description("[正常] PlayerMoveSpeed同士の除算が行われた場合に、値が正常に格納されること")]
-        public void ValidPlayerMoveSpeedOperatorDiv() {
-            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(2);
-            PlayerMoveSpeed div = PlayerMoveSpeed.Of(2);
-            int responsePlayerMoveSpeed = 1;
+        [TestCase(4, 2)]
+        [Description("[正常] 除算が行われた場合に、値が正常に格納されること")]
+        public void ValidPlayerMoveSpeedOperatorDiv(int value, int divValue) {
+            int responsePlayerMoveSpeed = 2;
 
-            Assert.That(
-                (playerMoveSpeed / div).Value,
-                Is.EqualTo(responsePlayerMoveSpeed)
-            );
+            PlayerMoveSpeed playerMoveSpeed =
+                PlayerMoveSpeed.Of(value) / PlayerMoveSpeed.Of(divValue);
+            Assert.That(playerMoveSpeed.Value, Is.EqualTo(responsePlayerMoveSpeed));
         }
 
         [Test]
-        [Description("[異常] 渡された値が最小値未満か最大値より大きい場合に、スローが投げられること")]
-        public void ThrowWhenValueIsOverRange() {
-            List<int> invalidNumberList = new List<int>() {
-                int.MinValue,
-                -1,
-                11,
-                int.MaxValue
-            };
-
-            foreach (int value in invalidNumberList) {
-                var exception = Assert.Throws<ArgumentException>(() => {
-                    PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(value);
-                });
-
-                Assert.That(
-                    exception.Message,
-                    Is.EqualTo(ExceptionMessage.argumentExceptionMessage)
-                );
-            }
-        }
-
-        [Test]
+        [TestCase(10, 1)]
         [Description("[正常] 加算した値が最大値より大きい場合に、最大値が格納されていること")]
-        public void LimitAddPlayerMoveSpeed() {
-            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(10);
-            PlayerMoveSpeed addPlayerMoveSpeed = PlayerMoveSpeed.Of(1);
+        public void LimitAddPlayerMoveSpeed(int value, int addValue) {
             int responsePlayerMoveSpeed = 10;
 
-            PlayerMoveSpeed newPlayerMoveSpeed = playerMoveSpeed + addPlayerMoveSpeed;
-            Assert.That(newPlayerMoveSpeed.Value, Is.EqualTo(responsePlayerMoveSpeed));
+            PlayerMoveSpeed playerMoveSpeed =
+                PlayerMoveSpeed.Of(value) + PlayerMoveSpeed.Of(addValue);
+            Assert.That(playerMoveSpeed.Value, Is.EqualTo(responsePlayerMoveSpeed));
         }
 
         [Test]
+        [TestCase(0, 1)]
         [Description("[正常] 減算した値が最小値より小さい場合に、最小値が格納されていること")]
-        public void LimitSubPlayerMoveSpeed() {
-            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(0);
-            PlayerMoveSpeed subPlayerMoveSpeed = PlayerMoveSpeed.Of(1);
+        public void LimitSubPlayerMoveSpeed(int value, int subValue) {
             int responsePlayerMoveSpeed = 0;
 
-            PlayerMoveSpeed newPlayerMoveSpeed = playerMoveSpeed - subPlayerMoveSpeed;
-            Assert.That(newPlayerMoveSpeed.Value, Is.EqualTo(responsePlayerMoveSpeed));
+            PlayerMoveSpeed playerMoveSpeed =
+                PlayerMoveSpeed.Of(value) - PlayerMoveSpeed.Of(subValue);
+            Assert.That(playerMoveSpeed.Value, Is.EqualTo(responsePlayerMoveSpeed));
         }
 
         [Test]
+        [TestCase(10, 2)]
         [Description("[正常] 乗算した値が最大値より大きい場合に、最大値が格納されていること")]
-        public void LimitMulPlayerMoveSpeed() {
-            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(10);
-            PlayerMoveSpeed mulPlayerMoveSpeed = PlayerMoveSpeed.Of(2);
+        public void LimitMulPlayerMoveSpeed(int value, int mulValue) {
             int responsePlayerMoveSpeed = 10;
 
-            PlayerMoveSpeed newPlayerMoveSpeed = playerMoveSpeed * mulPlayerMoveSpeed;
-            Assert.That(newPlayerMoveSpeed.Value, Is.EqualTo(responsePlayerMoveSpeed));
+            PlayerMoveSpeed playerMoveSpeed =
+                PlayerMoveSpeed.Of(value) * PlayerMoveSpeed.Of(mulValue);
+            Assert.That(playerMoveSpeed.Value, Is.EqualTo(responsePlayerMoveSpeed));
         }
 
         [Test]
+        [TestCase(int.MinValue)]
+        [TestCase(-1)]
+        [TestCase(11)]
+        [TestCase(int.MaxValue)]
+        [Description("[異常] 渡された値が最小値未満か最大値より大きい場合に、スローが投げられること")]
+        public void ThrowWhenValueIsOverRange(int value) {
+            var exception = Assert.Throws<ArgumentException>(() => {
+                PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(value);
+            });
+
+            Assert.That(
+                exception.Message,
+                Is.EqualTo(ExceptionMessage.argumentExceptionMessage)
+            );
+        }
+
+        [Test]
+        [TestCase(1, 0)]
         [Description("[異常] 除算において0で割っている場合に、スローが投げられること")]
-        public void ThrowWhenDivPlayerMoveSpeed() {
+        public void ThrowWhenDivPlayerMoveSpeed(int value, int divValue) {
             var exception = Assert.Throws<DivideByZeroException>(() => {
-                PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(1);
-                PlayerMoveSpeed addPlayerMoveSpeed = PlayerMoveSpeed.Of(0);
-                PlayerMoveSpeed newPlayerMoveSpeed = playerMoveSpeed / addPlayerMoveSpeed;
+                PlayerMoveSpeed playerMoveSpeed =
+                    PlayerMoveSpeed.Of(value) / PlayerMoveSpeed.Of(divValue);
             });
 
             Assert.That(
