@@ -49,29 +49,32 @@ public sealed class BulletSpeed {
         get { return value; }
     }
 
-    public static BulletSpeed operator+(BulletSpeed lhAP, BulletSpeed rhAP) {
-        int value = lhAP.Value + rhAP.Value;
+    public static BulletSpeed operator+(BulletSpeed lhSpeed, BulletSpeed rhSpeed) {
+        int value = lhSpeed.Value + rhSpeed.Value;
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new BulletSpeed(value);
     }
 
-    public static BulletSpeed operator-(BulletSpeed lhAP, BulletSpeed rhAP) {
-        int value = lhAP.Value - rhAP.Value;
+    public static BulletSpeed operator-(BulletSpeed lhSpeed, BulletSpeed rhSpeed) {
+        int value = lhSpeed.Value - rhSpeed.Value;
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new BulletSpeed(value);
     }
 
-    public static BulletSpeed operator*(BulletSpeed lhAP, BulletSpeed rhAP) {
-        int value = lhAP.Value * rhAP.Value;
+    public static BulletSpeed operator*(BulletSpeed lhSpeed, BulletSpeed rhSpeed) {
+        int value = lhSpeed.Value * rhSpeed.Value;
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new BulletSpeed(value);
     }
 
-    public static BulletSpeed operator/(BulletSpeed lhAP, BulletSpeed rhAP) {
-        int value = lhAP.Value / rhAP.Value;
+    public static BulletSpeed operator/(BulletSpeed lhSpeed, BulletSpeed rhSpeed) {
+        if (rhSpeed.Value == 0)
+            throw new DivideByZeroException(ExceptionMessage.divideByZeroExceptionMessage);
+
+        int value = lhSpeed.Value / rhSpeed.Value;
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new BulletSpeed(value);

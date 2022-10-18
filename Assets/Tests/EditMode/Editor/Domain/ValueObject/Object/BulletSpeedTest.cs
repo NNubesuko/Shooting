@@ -108,6 +108,20 @@ namespace Tests {
             );
         }
 
+        [Test]
+        [TestCase(1, 0)]
+        [Description("[異常] 除算において0で割っている場合に、スローが投げられること")]
+        public void ThrowWhenDivBulletSpeed(int value, int divValue) {
+            var exception = Assert.Throws<DivideByZeroException>(() => {
+                BulletSpeed bulletSpeed = BulletSpeed.Of(value) / BulletSpeed.Of(divValue);
+            });
+
+            Assert.That(
+                exception.Message,
+                Is.EqualTo(ExceptionMessage.divideByZeroExceptionMessage)
+            );
+        }
+
     }
 
 }
