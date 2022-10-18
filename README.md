@@ -12,58 +12,39 @@ Shooting Game
 ## メモ
 ここから全てメモ
 
-### スローの比較
+### テスト方法
 
-* 初めはこの形で記述していたが
+* 2022/10/18 テスト方法（正常）
 ```
-public void TestMethod() {
-    void ThrowsMethod() {
-        // スローが発生する処理
-    }
+[Test]
+[TestCase(引数)]
+    :
+    :
+[Description("[正常] テスト内容")]
+public void TestMethod(引数) {
+    int responseValue = 10;
 
-    // スローが発生していることは確認できる
-    Assert.Throws<ArgumentException>(
-        ThrowsMethod
-    );
+    TestClass testClass = TestClass.Of(引数);
+    Assert.That(testClass.Value, Is.EqualTo(responseValue));
 }
 ```
 
-* 現在はこちらに変更した
+* 2022/10/18 テスト方法（異常）
 ```
-public void TestMethod() {
+[Test]
+[TestCase(引数)]
+    :
+    :
+[Description("[異常] テスト内容")]
+public void TestMethod(引数) {
     var exception = Assert.Throws<ArgumentException>(() => {
-        // スローが発生する処理
+        TestClass testClass = TestClass.Of(引数);
     });
 
     Assert.That(
-        // 投げられたスローが投げられるべきスローと合っているか
-
         exception.Message,
         Is.EqualTo(ExceptionMessage.argumentExceptionMessage)
     );
-}
-```
--> 変更した理由は、初めの形だとスローが投げられていることは確認できるが、そのスローが投げられて欲しいスローか判定できていなかったため。
-
-* テストしたい数値などが複数ある場合
-```
-public void TestMethod() {
-    List<int> invalidNumberList = new List<int>() {
-        // int型の数値
-    };
-
-    foreach (int value in invalidNumberList) {
-        var exception = Assert.Throws<ArgumentException>(() => {
-            // スローが投げられる処理
-        });
-
-        Assert.That(
-            // 投げられたスローが投げられるべきスローと合っているか
-
-            exception.Message,
-            Is.EqualTo(ExceptionMessage.argumentExceptionMessage)
-        );
-    }
 }
 ```
 
