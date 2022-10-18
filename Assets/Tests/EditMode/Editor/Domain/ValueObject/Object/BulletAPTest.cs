@@ -12,128 +12,110 @@ namespace Tests {
     public class BulletAPTest {
 
         [Test]
+        [TestCase(1)]
+        [TestCase(5)]
+        [TestCase(100)]
         [Description("[正常] 渡された値が最小値以上最大値以下である場合に、値が正常に格納されること")]
-        public void ValidBulletAP() {
-            List<int> validNumberList = new List<int>() {
-                1,
-                5,
-                100,
-            };
-
-            foreach (int value in validNumberList) {
-                BulletAP bulletAP = BulletAP.Of(value);
-                Assert.That(bulletAP.Value, Is.EqualTo(value));
-            }
+        public void ValidBulletAP(int value) {
+            BulletAP bulletAP = BulletAP.Of(value);
+            Assert.That(bulletAP.Value, Is.EqualTo(value));
         }
 
         [Test]
+        [TestCase(10, 2)]
         [Description("[正常] 加算が行われた場合に、値が正常に格納されること")]
-        public void ValidOperatorAddForBulletAP() {
-            BulletAP bulletAP = BulletAP.Of(10);
-            BulletAP addBulletAP = BulletAP.Of(2);
+        public void ValidOperatorAddForBulletAP(int value, int addValue) {
             int responseBulletAP = 12;
 
-            BulletAP newBulletAP = bulletAP + addBulletAP;
+            BulletAP newBulletAP = BulletAP.Of(value) + BulletAP.Of(addValue);
             Assert.That(newBulletAP.Value, Is.EqualTo(responseBulletAP));
         }
 
         [Test]
+        [TestCase(10, 2)]
         [Description("[正常] 減算が行われた場合に、値が正常に格納されること")]
-        public void ValidOperatorSubForBulletAP() {
-            BulletAP bulletAP = BulletAP.Of(10);
-            BulletAP subBulletAP = BulletAP.Of(2);
+        public void ValidOperatorSubForBulletAP(int value, int subValue) {
             int responseBulletAP = 8;
 
-            BulletAP newBulletAP = bulletAP - subBulletAP;
+            BulletAP newBulletAP = BulletAP.Of(value) - BulletAP.Of(subValue);
             Assert.That(newBulletAP.Value, Is.EqualTo(responseBulletAP));
         }
 
         [Test]
+        [TestCase(10, 2)]
         [Description("[正常] 乗算が行われた場合に、値が正常に格納されること")]
-        public void ValidOperatorMulForBulletAP() {
-            BulletAP bulletAP = BulletAP.Of(10);
-            BulletAP mulBulletAP = BulletAP.Of(2);
+        public void ValidOperatorMulForBulletAP(int value, int mulValue) {
             int responseBulletAP = 20;
 
-            BulletAP newBulletAP = bulletAP * mulBulletAP;
+            BulletAP newBulletAP = BulletAP.Of(value) * BulletAP.Of(mulValue);
             Assert.That(newBulletAP.Value, Is.EqualTo(responseBulletAP));
         }
 
         [Test]
+        [TestCase(10, 2)]
         [Description("[正常] 除算が行われた場合に、値が正常に格納されること")]
-        public void ValidOperatorDivForBulletAP() {
-            BulletAP bulletAP = BulletAP.Of(10);
-            BulletAP divBulletAP = BulletAP.Of(2);
+        public void ValidOperatorDivForBulletAP(int value, int divValue) {
             int responseBulletAP = 5;
 
-            BulletAP newBulletAP = bulletAP / divBulletAP;
+            BulletAP newBulletAP = BulletAP.Of(value) / BulletAP.Of(divValue);
             Assert.That(newBulletAP.Value, Is.EqualTo(responseBulletAP));
         }
 
         [Test]
+        [TestCase(100, 1)]
         [Description("[正常] 加算した値が最大値より大きい場合に、最大値が格納されていること")]
-        public void LimitAddBulletAP() {
-            BulletAP bulletAP = BulletAP.Of(100);
-            BulletAP addBulletAP = BulletAP.Of(1);
+        public void LimitAddBulletAP(int value, int addValue) {
             int responseBulletAP = 100;
 
-            BulletAP newBulletAP = bulletAP + addBulletAP;
+            BulletAP newBulletAP = BulletAP.Of(value) + BulletAP.Of(addValue);
             Assert.That(newBulletAP.Value, Is.EqualTo(responseBulletAP));
         }
 
         [Test]
+        [TestCase(1, 1)]
         [Description("[正常] 減算した値が最小値より小さい場合に、最小値が格納されていること")]
-        public void LimitSubBulletAP() {
-            BulletAP bulletAP = BulletAP.Of(1);
-            BulletAP subBulletAP = BulletAP.Of(1);
+        public void LimitSubBulletAP(int value, int subValue) {
             int responseBulletAP = 1;
 
-            BulletAP newBulletAP = bulletAP - subBulletAP;
+            BulletAP newBulletAP = BulletAP.Of(value) - BulletAP.Of(subValue);
             Assert.That(newBulletAP.Value, Is.EqualTo(responseBulletAP));
         }
 
         [Test]
+        [TestCase(100, 2)]
         [Description("[正常] 乗算した値が最大値より大きい場合に、最大値が格納されていること")]
-        public void LimitMulBulletAP() {
-            BulletAP bulletAP = BulletAP.Of(100);
-            BulletAP mulBulletAP = BulletAP.Of(2);
+        public void LimitMulBulletAP(int value, int mulValue) {
             int responseBulletAP = 100;
 
-            BulletAP newBulletAP = bulletAP * mulBulletAP;
+            BulletAP newBulletAP = BulletAP.Of(value) * BulletAP.Of(mulValue);
             Assert.That(newBulletAP.Value, Is.EqualTo(responseBulletAP));
         }
 
         [Test]
+        [TestCase(1, 2)]
         [Description("[正常] 除算した値が最小値より小さい場合に、最小値が格納されること")]
-        public void LimitDivBulletAP() {
-            BulletAP bulletAP = BulletAP.Of(1);
-            BulletAP mulBulletAP = BulletAP.Of(2);
+        public void LimitDivBulletAP(int value, int divValue) {
             int responseBulletAP = 1;
 
-            BulletAP newBulletAP = bulletAP / mulBulletAP;
+            BulletAP newBulletAP = BulletAP.Of(value) / BulletAP.Of(divValue);
             Assert.That(newBulletAP.Value, Is.EqualTo(responseBulletAP));
         }
 
         [Test]
+        [TestCase(int.MinValue)]
+        [TestCase(0)]
+        [TestCase(101)]
+        [TestCase(int.MaxValue)]
         [Description("[異常] 渡された値が最小値未満か最大値より大きい場合に、スローが投げられること")]
-        public void ThrowWhenValueIsOverRange() {
-            List<int> invalidNumberList = new List<int>() {
-                int.MinValue,
-                0,
-                101,
-                int.MaxValue
-            };
+        public void ThrowWhenValueIsOverRange(int value) {
+            var exception = Assert.Throws<ArgumentException>(() => {
+                BulletAP bulletAP = BulletAP.Of(value);
+            });
 
-            foreach (int value in invalidNumberList) {
-                var exception = Assert.Throws<ArgumentException>(() => {
-                    BulletAP bulletAP = BulletAP.Of(value);
-                });
-
-                Assert.That(
-                    exception.Message,
-                    Is.EqualTo(ExceptionMessage.argumentExceptionMessage)
-                );
-            }
+            Assert.That(
+                exception.Message,
+                Is.EqualTo(ExceptionMessage.argumentExceptionMessage)
+            );
         }
 
 

@@ -24,70 +24,70 @@ namespace Tests {
         [Test]
         [TestCase(10, 2)]
         [Description("[正常] 加算が行われた場合に、値が正常に格納されること")]
-        public void ValidOperatorAddForBulletSpeed(int speed, int addSpeed) {
+        public void ValidOperatorAddForBulletSpeed(int value, int addValue) {
             int responseBulletSpeed = 12;
 
-            BulletSpeed bulletSpeed = BulletSpeed.Of(speed) + BulletSpeed.Of(addSpeed);
+            BulletSpeed bulletSpeed = BulletSpeed.Of(value) + BulletSpeed.Of(addValue);
             Assert.That(bulletSpeed.Value, Is.EqualTo(responseBulletSpeed));
         }
 
         [Test]
         [TestCase(10, 2)]
         [Description("[正常] 減算が行われた場合に、値が正常に格納されること")]
-        public void ValidOperatorSubForBulletSpeed(int speed, int subSpeed) {
+        public void ValidOperatorSubForBulletSpeed(int value, int subValue) {
             int responseBulletSpeed = 8;
 
-            BulletSpeed bulletSpeed = BulletSpeed.Of(speed) - BulletSpeed.Of(subSpeed);
+            BulletSpeed bulletSpeed = BulletSpeed.Of(value) - BulletSpeed.Of(subValue);
             Assert.That(bulletSpeed.Value, Is.EqualTo(responseBulletSpeed));
         }
 
         [Test]
         [TestCase(10, 2)]
         [Description("[正常] 乗算が行われた場合に、値が正常に格納されること")]
-        public void ValidOperatorMulForBulletSpeed(int speed, int mulSpeed) {
+        public void ValidOperatorMulForBulletSpeed(int value, int mulValue) {
             int responseBulletSpeed = 20;
 
-            BulletSpeed bulletSpeed = BulletSpeed.Of(speed) * BulletSpeed.Of(mulSpeed);
+            BulletSpeed bulletSpeed = BulletSpeed.Of(value) * BulletSpeed.Of(mulValue);
             Assert.That(bulletSpeed.Value, Is.EqualTo(responseBulletSpeed));
         }
 
         [Test]
         [TestCase(10, 2)]
         [Description("[正常] 除算が行われた場合に、値が正常に格納されること")]
-        public void ValidOperatorDivForBulletSpeed(int speed, int divSpeed) {
+        public void ValidOperatorDivForBulletSpeed(int value, int divValue) {
             int responseBulletSpeed = 5;
 
-            BulletSpeed bulletSpeed = BulletSpeed.Of(speed) / BulletSpeed.Of(divSpeed);
+            BulletSpeed bulletSpeed = BulletSpeed.Of(value) / BulletSpeed.Of(divValue);
             Assert.That(bulletSpeed.Value, Is.EqualTo(responseBulletSpeed));
         }
 
         [Test]
         [TestCase(100, 1)]
         [Description("[正常] 加算した値が最大値より大きい場合に、最大値が格納されていること")]
-        public void LimitAddBulletSpeed(int speed, int addSpeed) {
+        public void LimitAddBulletSpeed(int value, int addValue) {
             int responseBulletSpeed = 100;
 
-            BulletSpeed bulletSpeed = BulletSpeed.Of(speed) + BulletSpeed.Of(addSpeed);
+            BulletSpeed bulletSpeed = BulletSpeed.Of(value) + BulletSpeed.Of(addValue);
             Assert.That(bulletSpeed.Value, Is.EqualTo(responseBulletSpeed));
         }
 
         [Test]
         [TestCase(0, 1)]
         [Description("[正常] 減算した値が最小値より小さい場合に、最小値が格納されていること")]
-        public void LimitSubBulletSpeed(int speed, int subSpeed) {
+        public void LimitSubBulletSpeed(int value, int subValue) {
             int responseBulletSpeed = 0;
 
-            BulletSpeed bulletSpeed = BulletSpeed.Of(speed) - BulletSpeed.Of(subSpeed);
+            BulletSpeed bulletSpeed = BulletSpeed.Of(value) - BulletSpeed.Of(subValue);
             Assert.That(bulletSpeed.Value, Is.EqualTo(responseBulletSpeed));
         }
 
         [Test]
         [TestCase(100, 2)]
         [Description("[正常] 乗算した値が最大値より大きい場合に、最大値が格納されていること")]
-        public void LimitMulBulletSpeed(int speed, int mulSpeed) {
+        public void LimitMulBulletSpeed(int value, int mulValue) {
             int responseBulletSpeed = 100;
 
-            BulletSpeed bulletSpeed = BulletSpeed.Of(speed) * BulletSpeed.Of(mulSpeed);
+            BulletSpeed bulletSpeed = BulletSpeed.Of(value) * BulletSpeed.Of(mulValue);
             Assert.That(bulletSpeed.Value, Is.EqualTo(responseBulletSpeed));
         }
 
