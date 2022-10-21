@@ -1,6 +1,6 @@
 namespace Systemk.Exceptions {
 
-    public class ExceptionMessage {
+    public sealed class ExceptionMessage {
 
         public const string argumentExceptionMessage = "不正な値が渡されました。";
         public const string arithmeticExceptionMessage = "不正な演算が行われました。";
