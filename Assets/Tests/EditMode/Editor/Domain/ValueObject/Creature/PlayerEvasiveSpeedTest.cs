@@ -1,7 +1,9 @@
 using System;
-using Systemk.Exceptions;
+using System.Runtime.InteropServices;
 using System.Collections;
 using System.Collections.Generic;
+using Systemk;
+using Systemk.Exceptions;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
@@ -96,6 +98,18 @@ namespace Tests {
                 PlayerEvasiveSpeed.Of(value) * PlayerEvasiveSpeed.Of(mulValue);
             
             Assert.That(playerEvasiveSpeed.Value, Is.EqualTo(responsePlayerEvasiveSpeed));
+        }
+
+        [Test]
+        [TestCase(10, TestCodeIni.ScriptBytes)]
+        [Description(
+            "[正常] スクリプト自体のサイズとインスタンスのサイズが、スクリプトバイト未満であること"
+        )]
+        public void ValidScriptCapacity(int value, int scriptBytes) {
+            PlayerEvasiveSpeed playerEvasiveSpeed = PlayerEvasiveSpeed.Of(value);
+
+            Assert.That(Marshal.SizeOf(typeof(PlayerEvasiveSpeed)), Is.LessThan(scriptBytes));
+            Assert.That(Marshal.SizeOf(playerEvasiveSpeed), Is.LessThan(scriptBytes));
         }
 
         [Test]

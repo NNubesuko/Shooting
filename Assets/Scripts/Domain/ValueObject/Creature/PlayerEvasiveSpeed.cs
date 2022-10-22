@@ -6,7 +6,7 @@ using UnityEngine;
 /**
  * * プレイヤーの回避速度を格納するクラス
  */
-public sealed class PlayerEvasiveSpeed {
+public struct PlayerEvasiveSpeed {
 
     private int value;
 
@@ -28,60 +28,87 @@ public sealed class PlayerEvasiveSpeed {
         return new PlayerEvasiveSpeed(value);
     }
 
+    public int Value {
+        get { return value; }
+    }
+
     public override string ToString() {
         return $"{value}";
     }
 
     public override int GetHashCode() {
-        return new { value, MIN, MAX }.GetHashCode();
+        return (value, MIN, MAX).GetHashCode();
     }
 
     public override bool Equals(object obj) {
-        if (obj == null) return false;
-        if (obj == this) return true;
-
-        if (obj is PlayerEvasiveSpeed otherPlayerEvasiveSpeed) {
-            if (this.GetHashCode() == otherPlayerEvasiveSpeed.GetHashCode()) {
-                return true;
-            }
-        }
-
-        return false;
+        return obj is PlayerEvasiveSpeed other && this.Equals(other);
     }
 
-    public int Value {
-        get { return value; }
+    public bool Equals(PlayerEvasiveSpeed other) {
+        return this.GetHashCode() == other.GetHashCode();
     }
 
-    public static PlayerEvasiveSpeed operator+(PlayerEvasiveSpeed lhHP, PlayerEvasiveSpeed rhHP) {
-        int value = lhHP.Value + rhHP.Value;
+    public static PlayerEvasiveSpeed operator+(
+        PlayerEvasiveSpeed lhSpeed, PlayerEvasiveSpeed rhSpeed
+    ) {
+        int value = lhSpeed.Value + rhSpeed.Value;
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new PlayerEvasiveSpeed(value);
     }
 
-    public static PlayerEvasiveSpeed operator-(PlayerEvasiveSpeed lhHP, PlayerEvasiveSpeed rhHP) {
-        int value = lhHP.Value - rhHP.Value;
+    public static PlayerEvasiveSpeed operator-(
+        PlayerEvasiveSpeed lhSpeed, PlayerEvasiveSpeed rhSpeed
+    ) {
+        int value = lhSpeed.Value - rhSpeed.Value;
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new PlayerEvasiveSpeed(value);
     }
 
-    public static PlayerEvasiveSpeed operator*(PlayerEvasiveSpeed lhHP, PlayerEvasiveSpeed rhHP) {
-        int value = lhHP.Value * rhHP.Value;
+    public static PlayerEvasiveSpeed operator*(
+        PlayerEvasiveSpeed lhSpeed, PlayerEvasiveSpeed rhSpeed
+    ) {
+        int value = lhSpeed.Value * rhSpeed.Value;
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new PlayerEvasiveSpeed(value);
     }
 
-    public static PlayerEvasiveSpeed operator/(PlayerEvasiveSpeed lhHP, PlayerEvasiveSpeed rhHP) {
-        if (rhHP.Value == 0)
+    public static PlayerEvasiveSpeed operator/(
+        PlayerEvasiveSpeed lhSpeed, PlayerEvasiveSpeed rhSpeed
+    ) {
+        if (rhSpeed.Value == 0)
             throw new DivideByZeroException(ExceptionMessage.divideByZeroExceptionMessage);
 
-        int value = lhHP.Value / rhHP.Value;
+        int value = lhSpeed.Value / rhSpeed.Value;
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
         
         return new PlayerEvasiveSpeed(value);
+    }
+
+    public static bool operator==(PlayerEvasiveSpeed lhSpeed, PlayerEvasiveSpeed rhSpeed) {
+        return lhSpeed.Equals(rhSpeed);
+    }
+
+    public static bool operator!=(PlayerEvasiveSpeed lhSpeed, PlayerEvasiveSpeed rhSpeed) {
+        return !(lhSpeed == rhSpeed);
+    }
+
+    public static bool operator<(PlayerEvasiveSpeed lhSpeed, PlayerEvasiveSpeed rhSpeed) {
+        return lhSpeed.Value < rhSpeed.Value;
+    }
+
+    public static bool operator>(PlayerEvasiveSpeed lhSpeed, PlayerEvasiveSpeed rhSpeed) {
+        return lhSpeed.Value > rhSpeed.Value;
+    }
+
+    public static bool operator<=(PlayerEvasiveSpeed lhSpeed, PlayerEvasiveSpeed rhSpeed) {
+        return lhSpeed.Value <= rhSpeed.Value;
+    }
+
+    public static bool operator>=(PlayerEvasiveSpeed lhSpeed, PlayerEvasiveSpeed rhSpeed) {
+        return lhSpeed.Value >= rhSpeed.Value;
     }
 
 }
