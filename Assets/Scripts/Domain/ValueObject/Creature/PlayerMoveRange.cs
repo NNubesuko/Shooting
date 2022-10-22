@@ -3,7 +3,7 @@ using Systemk;
 using Systemk.Exceptions;
 using UnityEngine;
 
-public sealed class PlayerMoveRange {
+public struct PlayerMoveRange {
 
     private float lowValue;
     private float highValue;
@@ -11,39 +11,10 @@ public sealed class PlayerMoveRange {
     public const float MIN = -100f;
     public const float MAX = 100f;
 
-    public PlayerMoveRange(float lowValue, float highValue) {
-        AssignRestrictedIntValueToValue(lowValue, highValue);
-    }
-
-    public static PlayerMoveRange Of(float lowValue, float highValue) {
-        return new PlayerMoveRange(lowValue, highValue);
-    }
-
-    public override string ToString() {
-        return $"{lowValue}, {highValue}";
-    }
-
-    public override int GetHashCode() {
-        return new { lowValue, highValue, MIN, MAX }.GetHashCode();
-    }
-
-    public override bool Equals(object obj) {
-        if (obj == null) return false;
-        if (obj == this) return true;
-
-        if (obj is PlayerMoveRange otherPlayerMoveRange) {
-            if (this.GetHashCode() == otherPlayerMoveRange.GetHashCode()) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
     /**
      * 低い値が大きい値より大きい場合に、スローを投げるようにしている
      */
-    private void AssignRestrictedIntValueToValue(float lowValue, float highValue) {
+    public PlayerMoveRange(float lowValue, float highValue) {
         ExceptionHandler.ThrowWhenInvalidValue<ArgumentException>(
             lowValue,
             highValue,
@@ -62,6 +33,34 @@ public sealed class PlayerMoveRange {
         this.highValue = highValue;
     }
 
+    public static PlayerMoveRange Of(float lowValue, float highValue) {
+        return new PlayerMoveRange(lowValue, highValue);
+    }
+
+    public float LowValue {
+        get { return lowValue; }
+    }
+
+    public float HighValue {
+        get { return highValue; }
+    }
+
+    public override string ToString() {
+        return $"{lowValue}, {highValue}";
+    }
+
+    public override int GetHashCode() {
+        return (lowValue, highValue, MIN, MAX).GetHashCode();
+    }
+
+    public override bool Equals(object obj) {
+        return obj is PlayerMoveRange other && this.Equals(other);
+    }
+
+    public bool Equals(PlayerMoveRange other) {
+        return this.GetHashCode() == other.GetHashCode();
+    }
+
     public static float KeepPositionWithinRange(
         float position,
         PlayerMoveRange playerMoveRange
@@ -75,14 +74,6 @@ public sealed class PlayerMoveRange {
         }
 
         return position;
-    }
-
-    public float LowValue {
-        get { return lowValue; }
-    }
-
-    public float HighValue {
-        get { return highValue; }
     }
 
     public static PlayerMoveRange operator+(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
@@ -150,5 +141,30 @@ public sealed class PlayerMoveRange {
 
         return PlayerMoveRange.Of(lowValue, highValue);
     }
+
+    public static bool operator==(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
+        return lhRange.Equals(rhRange);
+    }
+
+    public static bool operator!=(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
+        return !(lhRange == rhRange);
+    }
+
+    // public static bool operator<(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
+    //     return lhRange.lowValue < rhRange.lowValue && 
+    //     // return lhRange.Value < rhRange.Value;
+    // }
+
+    // public static bool operator>(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
+    //     // return lhRange.Value > rhRange.Value;
+    // }
+
+    // public static bool operator<=(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
+    //     // return lhRange.Value <= rhRange.Value;
+    // }
+
+    // public static bool operator>=(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
+    //     // return lhRange.Value >= rhRange.Value;
+    // }
 
 }
