@@ -27,29 +27,24 @@ public struct PlayerHP {
         return new PlayerHP(value);
     }
 
+    public int Value {
+        get { return value; }
+    }
+
     public override string ToString() {
         return $"{value}";
     }
 
     public override int GetHashCode() {
-        return new { value, MIN, MAX }.GetHashCode();
+        return (value, MIN, MAX).GetHashCode();
     }
 
     public override bool Equals(object obj) {
-        if (obj == null) return false;
-        // if (obj == this) return true;
-
-        if (obj is PlayerHP otherPlayerHP) {
-            if (this.GetHashCode() == otherPlayerHP.GetHashCode()) {
-                return true;
-            }
-        }
-
-        return false;
+        return obj is PlayerHP other && this.Equals(other);
     }
 
-    public int Value {
-        get { return value; }
+    public bool Equals(PlayerHP other) {
+        return this.GetHashCode() == other.GetHashCode();
     }
     
     public static PlayerHP operator+(PlayerHP lhHP, PlayerHP rhHP) {
@@ -81,6 +76,30 @@ public struct PlayerHP {
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
         
         return new PlayerHP(value);
+    }
+
+    public static bool operator==(PlayerHP lhHP, PlayerHP rhHP) {
+        return lhHP.Equals(rhHP);
+    }
+
+    public static bool operator!=(PlayerHP lhHP, PlayerHP rhHP) {
+        return !(lhHP == rhHP);
+    }
+
+    public static bool operator<(PlayerHP lhHP, PlayerHP rhHP) {
+        return lhHP.Value < rhHP.Value;
+    }
+
+    public static bool operator>(PlayerHP lhHP, PlayerHP rhHP) {
+        return lhHP.Value > rhHP.Value;
+    }
+
+    public static bool operator<=(PlayerHP lhHP, PlayerHP rhHP) {
+        return lhHP.Value <= rhHP.Value;
+    }
+
+    public static bool operator>=(PlayerHP lhHP, PlayerHP rhHP) {
+        return lhHP.Value >= rhHP.Value;
     }
 
 }

@@ -101,10 +101,6 @@ namespace Tests {
         public void ValidScriptCapacity(int value) {
             PlayerHP playerHP = PlayerHP.Of(100);
 
-            Vector3 v = new Vector3(1f, 2f, 3f);
-            Debug.Log(Marshal.SizeOf(typeof(Vector3)));
-            Debug.Log(Marshal.SizeOf(v));
-
             Assert.That(Marshal.SizeOf(typeof(PlayerHP)), Is.LessThan(value));
             Assert.That(Marshal.SizeOf(playerHP), Is.LessThan(value));
         }

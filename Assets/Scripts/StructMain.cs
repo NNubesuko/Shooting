@@ -43,8 +43,8 @@ public struct StructMain {
         return obj is StructMain other && this.Equals(other);
     }
 
-    public bool Equals(StructMain structMain) {
-        return this.GetHashCode() == structMain.GetHashCode();
+    public bool Equals(StructMain other) {
+        return this.GetHashCode() == other.GetHashCode();
     }
 
     public static StructMain operator+(StructMain lhs, StructMain rhs) {

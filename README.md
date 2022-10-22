@@ -77,19 +77,38 @@ public void TestMethod(引数) {
 ```
 // オブジェクト内で以下を追加する
 public override int GetHashCode() {
-    return new { パラメータ }.GetHashCode();
+    return (フィールド１, フィールド２, フィールド３, ...).GetHashCode();
 }
 
 public override bool Equals(object obj) {
-    if (obj == null) return false;
-    if (obj == this) return true;
+    return obj is 構造体名 other && this.Equals(other);
+}
 
-    // キャスト確認と型変換
-    if (obj is オブジェクト otherObj) {
-        if (this.GetHashCode() == otherObj.GetHashCode()) {
-            return true;
-        }
-    }
-    return false;
+public bool Equals(構造体名 other) {
+    return this.GetHashCode() == other.GetHashCode();
+}
+
+public static bool operator==(構造体名 lh, 構造体名 rh) {
+    return lh.Equals(rh);
+}
+
+public static bool operator!=(構造体名 lh, 構造体名 rh) {
+    return !(lh == rh);
+}
+
+public static bool operator<(構造体名 lh, 構造体名 rh) {
+    return lh.Value < rh.Value;
+}
+
+public static bool operator>(構造体名 lh, 構造体名 rh) {
+    return lh.Value > rh.Value;
+}
+
+public static bool operator<=(構造体名 lh, 構造体名 rh) {
+    return lh.Value <= rh.Value;
+}
+
+public static bool operator>=(構造体名 lh, 構造体名 rh) {
+    return lh.Value >= rh.Value;
 }
 ```
