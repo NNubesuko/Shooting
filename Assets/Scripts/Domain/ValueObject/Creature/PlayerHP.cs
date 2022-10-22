@@ -5,7 +5,7 @@ using Systemk.Exceptions;
 /**
  * * プレイヤーの体力を格納するクラス
  */
-public sealed class PlayerHP {
+public struct PlayerHP {
 
     private int value;
 
@@ -37,7 +37,7 @@ public sealed class PlayerHP {
 
     public override bool Equals(object obj) {
         if (obj == null) return false;
-        if (obj == this) return true;
+        // if (obj == this) return true;
 
         if (obj is PlayerHP otherPlayerHP) {
             if (this.GetHashCode() == otherPlayerHP.GetHashCode()) {

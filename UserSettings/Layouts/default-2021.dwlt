@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -41,7 +41,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 216
     y: 0
-    width: 387
+    width: 386
     height: 464
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
@@ -69,12 +69,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 603
+    width: 602
     height: 464
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 32
+  controlID: 94
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -92,7 +92,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 464
-    width: 603
+    width: 602
     height: 483
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
@@ -119,14 +119,14 @@ MonoBehaviour:
   - {fileID: 4}
   m_Position:
     serializedVersion: 2
-    x: 907
+    x: 906
     y: 0
-    width: 603
+    width: 602
     height: 947
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 31
+  controlID: 93
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 19
+  controlID: 17
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,12 +243,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 907
+    width: 906
     height: 947
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 20
+  controlID: 154
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -290,9 +290,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1510
+    x: 1508
     y: 0
-    width: 410
+    width: 412
     height: 947
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
@@ -318,7 +318,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 907
+    width: 906
     height: 486
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -344,7 +344,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 486
-    width: 907
+    width: 906
     height: 461
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -373,24 +373,24 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 907
+    x: 906
     y: 537
-    width: 601
+    width: 600
     height: 462
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 259
-    splitterInitialOffset: 230
+    ID: 176
+    splitterInitialOffset: 345
     currentActiveSplitter: -1
     realSizes:
-    - 198
-    - 194
+    - 276
+    - 116
     relativeSizes:
-    - 0.5046729
-    - 0.49532712
+    - 0.70408165
+    - 0.29591835
     minSizes:
     - 32
     - 32
@@ -466,7 +466,7 @@ MonoBehaviour:
       name: ShootingGame
       fullName: ShootingGame
       resultStatus: 1
-      duration: 0.2107456
+      duration: 0.0946163
       messages: 
       output: 
       stacktrace: 
@@ -477,12 +477,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1004
+    - id: 1176
       uniqueId: '[EditMode.dll][suite]'
       name: EditMode.dll
       fullName: D:/Program/Unity/Unity_2021_3_1f1/ShootingGame/Library/ScriptAssemblies/EditMode.dll
       resultStatus: 1
-      duration: 0.1502493
+      duration: 0.0362272
       messages: 
       output: 
       stacktrace: 
@@ -498,7 +498,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.1493169
+      duration: 0.0353448
       messages: 
       output: 
       stacktrace: 
@@ -514,7 +514,7 @@ MonoBehaviour:
       name: BulletAPTest
       fullName: Tests.BulletAPTest
       resultStatus: 1
-      duration: 0.0283563
+      duration: 0.213375
       messages: 
       output: 
       stacktrace: 
@@ -525,182 +525,427 @@ MonoBehaviour:
       categories: []
       parentId: 1054
       parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1052
-      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.LimitAddBulletAP]
+    - id: 1093
+      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.LimitAddBulletAP][suite]
       name: LimitAddBulletAP
       fullName: Tests.BulletAPTest.LimitAddBulletAP
       resultStatus: 1
-      duration: 0.0123712
+      duration: 0.0255726
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u52A0\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1079
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
+    - id: 1092
+      uniqueId: EditMode.dll/Tests/BulletAPTest/LimitAddBulletAP/[EditMode][Tests.BulletAPTest.LimitAddBulletAP(100,1)]
+      name: LimitAddBulletAP(100,1)
+      fullName: Tests.BulletAPTest.LimitAddBulletAP(100,1)
+      resultStatus: 1
+      duration: 0.0132173
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1046
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
-    - id: 1055
-      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.LimitDivBulletAP]
+      parentId: 1093
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.LimitAddBulletAP][suite]
+    - id: 1099
+      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.LimitDivBulletAP][suite]
       name: LimitDivBulletAP
       fullName: Tests.BulletAPTest.LimitDivBulletAP
       resultStatus: 1
-      duration: 0.0001946
+      duration: 0.0054761
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u9664\u7B97\u3057\u305F\u5024\u304C\u6700\u5C0F\u5024\u3088\u308A\u5C0F\u3055\u3044\u5834\u5408\u306B\u3001\u6700\u5C0F\u5024\u304C\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1079
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
+    - id: 1098
+      uniqueId: EditMode.dll/Tests/BulletAPTest/LimitDivBulletAP/[EditMode][Tests.BulletAPTest.LimitDivBulletAP(1,2)]
+      name: LimitDivBulletAP(1,2)
+      fullName: Tests.BulletAPTest.LimitDivBulletAP(1,2)
+      resultStatus: 1
+      duration: 0.0002235
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1046
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
-    - id: 1054
-      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.LimitMulBulletAP]
+      parentId: 1099
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.LimitDivBulletAP][suite]
+    - id: 1097
+      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.LimitMulBulletAP][suite]
       name: LimitMulBulletAP
       fullName: Tests.BulletAPTest.LimitMulBulletAP
       resultStatus: 1
-      duration: 0.0001635
+      duration: 0.0145716
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u4E57\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1079
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
+    - id: 1096
+      uniqueId: EditMode.dll/Tests/BulletAPTest/LimitMulBulletAP/[EditMode][Tests.BulletAPTest.LimitMulBulletAP(100,2)]
+      name: LimitMulBulletAP(100,2)
+      fullName: Tests.BulletAPTest.LimitMulBulletAP(100,2)
+      resultStatus: 1
+      duration: 0.0003873
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1046
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
-    - id: 1053
-      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.LimitSubBulletAP]
+      parentId: 1097
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.LimitMulBulletAP][suite]
+    - id: 1095
+      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.LimitSubBulletAP][suite]
       name: LimitSubBulletAP
       fullName: Tests.BulletAPTest.LimitSubBulletAP
       resultStatus: 1
-      duration: 0.0001845
+      duration: 0.0236083
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u6E1B\u7B97\u3057\u305F\u5024\u304C\u6700\u5C0F\u5024\u3088\u308A\u5C0F\u3055\u3044\u5834\u5408\u306B\u3001\u6700\u5C0F\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1079
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
+    - id: 1094
+      uniqueId: EditMode.dll/Tests/BulletAPTest/LimitSubBulletAP/[EditMode][Tests.BulletAPTest.LimitSubBulletAP(1,1)]
+      name: LimitSubBulletAP(1,1)
+      fullName: Tests.BulletAPTest.LimitSubBulletAP(1,1)
+      resultStatus: 1
+      duration: 0.0003058
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1046
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
-    - id: 1052
-      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ThrowWhenValueIsOverRange]
+      parentId: 1095
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.LimitSubBulletAP][suite]
+    - id: 1104
+      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ThrowWhenValueIsOverRange][suite]
       name: ThrowWhenValueIsOverRange
       fullName: Tests.BulletAPTest.ThrowWhenValueIsOverRange
       resultStatus: 1
-      duration: 0.0031891
+      duration: 0.0275401
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u7570\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u672A\u6E80\u304B\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1079
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
+    - id: 1100
+      uniqueId: EditMode.dll/Tests/BulletAPTest/ThrowWhenValueIsOverRange/[EditMode][Tests.BulletAPTest.ThrowWhenValueIsOverRange(int.MinValue)]
+      name: ThrowWhenValueIsOverRange(int.MinValue)
+      fullName: Tests.BulletAPTest.ThrowWhenValueIsOverRange(int.MinValue)
+      resultStatus: 1
+      duration: 0.0035763
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1046
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
-    - id: 1047
-      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidBulletAP]
+      parentId: 1104
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1101
+      uniqueId: EditMode.dll/Tests/BulletAPTest/ThrowWhenValueIsOverRange/[EditMode][Tests.BulletAPTest.ThrowWhenValueIsOverRange(0)]
+      name: ThrowWhenValueIsOverRange(0)
+      fullName: Tests.BulletAPTest.ThrowWhenValueIsOverRange(0)
+      resultStatus: 1
+      duration: 0.0000843
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1104
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1102
+      uniqueId: EditMode.dll/Tests/BulletAPTest/ThrowWhenValueIsOverRange/[EditMode][Tests.BulletAPTest.ThrowWhenValueIsOverRange(101)]
+      name: ThrowWhenValueIsOverRange(101)
+      fullName: Tests.BulletAPTest.ThrowWhenValueIsOverRange(101)
+      resultStatus: 1
+      duration: 0.0000618
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1104
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1103
+      uniqueId: EditMode.dll/Tests/BulletAPTest/ThrowWhenValueIsOverRange/[EditMode][Tests.BulletAPTest.ThrowWhenValueIsOverRange(int.MaxValue)]
+      name: ThrowWhenValueIsOverRange(int.MaxValue)
+      fullName: Tests.BulletAPTest.ThrowWhenValueIsOverRange(int.MaxValue)
+      resultStatus: 1
+      duration: 0.000056
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1104
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1083
+      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidBulletAP][suite]
       name: ValidBulletAP
       fullName: Tests.BulletAPTest.ValidBulletAP
       resultStatus: 1
-      duration: 0.0002992
+      duration: 0.0199157
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u4EE5\u4E0A\u6700\u5927\u5024\u4EE5\u4E0B\u3067\u3042\u308B\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1079
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
+    - id: 1080
+      uniqueId: EditMode.dll/Tests/BulletAPTest/ValidBulletAP/[EditMode][Tests.BulletAPTest.ValidBulletAP(1)]
+      name: ValidBulletAP(1)
+      fullName: Tests.BulletAPTest.ValidBulletAP(1)
+      resultStatus: 1
+      duration: 0.0003008
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1046
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
-    - id: 1048
-      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidOperatorAddForBulletAP]
+      parentId: 1083
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidBulletAP][suite]
+    - id: 1081
+      uniqueId: EditMode.dll/Tests/BulletAPTest/ValidBulletAP/[EditMode][Tests.BulletAPTest.ValidBulletAP(5)]
+      name: ValidBulletAP(5)
+      fullName: Tests.BulletAPTest.ValidBulletAP(5)
+      resultStatus: 1
+      duration: 0.0000603
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1083
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidBulletAP][suite]
+    - id: 1082
+      uniqueId: EditMode.dll/Tests/BulletAPTest/ValidBulletAP/[EditMode][Tests.BulletAPTest.ValidBulletAP(100)]
+      name: ValidBulletAP(100)
+      fullName: Tests.BulletAPTest.ValidBulletAP(100)
+      resultStatus: 1
+      duration: 0.0000507
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1083
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidBulletAP][suite]
+    - id: 1085
+      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidOperatorAddForBulletAP][suite]
       name: ValidOperatorAddForBulletAP
       fullName: Tests.BulletAPTest.ValidOperatorAddForBulletAP
       resultStatus: 1
-      duration: 0.0001283
+      duration: 0.0228171
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u52A0\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1079
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
+    - id: 1084
+      uniqueId: EditMode.dll/Tests/BulletAPTest/ValidOperatorAddForBulletAP/[EditMode][Tests.BulletAPTest.ValidOperatorAddForBulletAP(10,2)]
+      name: ValidOperatorAddForBulletAP(10,2)
+      fullName: Tests.BulletAPTest.ValidOperatorAddForBulletAP(10,2)
+      resultStatus: 1
+      duration: 0.0002395
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1046
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
-    - id: 1051
-      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidOperatorDivForBulletAP]
+      parentId: 1085
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidOperatorAddForBulletAP][suite]
+    - id: 1091
+      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidOperatorDivForBulletAP][suite]
       name: ValidOperatorDivForBulletAP
       fullName: Tests.BulletAPTest.ValidOperatorDivForBulletAP
       resultStatus: 1
-      duration: 0.0001202
+      duration: 0.0240846
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u9664\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1079
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
+    - id: 1090
+      uniqueId: EditMode.dll/Tests/BulletAPTest/ValidOperatorDivForBulletAP/[EditMode][Tests.BulletAPTest.ValidOperatorDivForBulletAP(10,2)]
+      name: ValidOperatorDivForBulletAP(10,2)
+      fullName: Tests.BulletAPTest.ValidOperatorDivForBulletAP(10,2)
+      resultStatus: 1
+      duration: 0.0002899
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1046
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
-    - id: 1050
-      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidOperatorMulForBulletAP]
+      parentId: 1091
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidOperatorDivForBulletAP][suite]
+    - id: 1089
+      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidOperatorMulForBulletAP][suite]
       name: ValidOperatorMulForBulletAP
       fullName: Tests.BulletAPTest.ValidOperatorMulForBulletAP
       resultStatus: 1
-      duration: 0.0001153
+      duration: 0.0219989
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u4E57\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1079
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
+    - id: 1088
+      uniqueId: EditMode.dll/Tests/BulletAPTest/ValidOperatorMulForBulletAP/[EditMode][Tests.BulletAPTest.ValidOperatorMulForBulletAP(10,2)]
+      name: ValidOperatorMulForBulletAP(10,2)
+      fullName: Tests.BulletAPTest.ValidOperatorMulForBulletAP(10,2)
+      resultStatus: 1
+      duration: 0.0002686
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1046
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
-    - id: 1049
-      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidOperatorSubForBulletAP]
+      parentId: 1089
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidOperatorMulForBulletAP][suite]
+    - id: 1087
+      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidOperatorSubForBulletAP][suite]
       name: ValidOperatorSubForBulletAP
       fullName: Tests.BulletAPTest.ValidOperatorSubForBulletAP
       resultStatus: 1
-      duration: 0.0001124
+      duration: 0.0218498
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u6E1B\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1079
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
+    - id: 1086
+      uniqueId: EditMode.dll/Tests/BulletAPTest/ValidOperatorSubForBulletAP/[EditMode][Tests.BulletAPTest.ValidOperatorSubForBulletAP(10,2)]
+      name: ValidOperatorSubForBulletAP(10,2)
+      fullName: Tests.BulletAPTest.ValidOperatorSubForBulletAP(10,2)
+      resultStatus: 1
+      duration: 0.0002332
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1046
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
+      parentId: 1087
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidOperatorSubForBulletAP][suite]
     - id: 1057
       uniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletSpeedTest][suite]
       name: BulletSpeedTest
       fullName: Tests.BulletSpeedTest
       resultStatus: 1
-      duration: 0.0080904
+      duration: 0.2089255
       messages: 
       output: 
       stacktrace: 
@@ -711,165 +956,427 @@ MonoBehaviour:
       categories: []
       parentId: 1068
       parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1063
-      uniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.LimitAddBulletSpeed]
+    - id: 1074
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.LimitAddBulletSpeed][suite]
       name: LimitAddBulletSpeed
       fullName: Tests.BulletSpeedTest.LimitAddBulletSpeed
       resultStatus: 1
-      duration: 0.0002961
+      duration: 0.000714
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u52A0\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1060
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletSpeedTest][suite]
+    - id: 1073
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/LimitAddBulletSpeed/[EditMode][Tests.BulletSpeedTest.LimitAddBulletSpeed(100,1)]
+      name: LimitAddBulletSpeed(100,1)
+      fullName: Tests.BulletSpeedTest.LimitAddBulletSpeed(100,1)
+      resultStatus: 1
+      duration: 0.0003252
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1057
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletSpeedTest][suite]
-    - id: 1065
-      uniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.LimitMulBulletSpeed]
+      parentId: 1074
+      parentUniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.LimitAddBulletSpeed][suite]
+    - id: 1078
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.LimitMulBulletSpeed][suite]
       name: LimitMulBulletSpeed
       fullName: Tests.BulletSpeedTest.LimitMulBulletSpeed
       resultStatus: 1
-      duration: 0.0001615
+      duration: 0.0201814
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u4E57\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1060
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletSpeedTest][suite]
+    - id: 1077
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/LimitMulBulletSpeed/[EditMode][Tests.BulletSpeedTest.LimitMulBulletSpeed(100,2)]
+      name: LimitMulBulletSpeed(100,2)
+      fullName: Tests.BulletSpeedTest.LimitMulBulletSpeed(100,2)
+      resultStatus: 1
+      duration: 0.0003982
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1057
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletSpeedTest][suite]
-    - id: 1064
-      uniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.LimitSubBulletSpeed]
+      parentId: 1078
+      parentUniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.LimitMulBulletSpeed][suite]
+    - id: 1076
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.LimitSubBulletSpeed][suite]
       name: LimitSubBulletSpeed
       fullName: Tests.BulletSpeedTest.LimitSubBulletSpeed
       resultStatus: 1
-      duration: 0.0001542
+      duration: 0.0208607
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u6E1B\u7B97\u3057\u305F\u5024\u304C\u6700\u5C0F\u5024\u3088\u308A\u5C0F\u3055\u3044\u5834\u5408\u306B\u3001\u6700\u5C0F\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1060
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletSpeedTest][suite]
+    - id: 1075
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/LimitSubBulletSpeed/[EditMode][Tests.BulletSpeedTest.LimitSubBulletSpeed(0,1)]
+      name: LimitSubBulletSpeed(0,1)
+      fullName: Tests.BulletSpeedTest.LimitSubBulletSpeed(0,1)
+      resultStatus: 1
+      duration: 0.0003332
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1057
+      parentId: 1076
+      parentUniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.LimitSubBulletSpeed][suite]
+    - id: 1130
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ThrowWhenDivBulletSpeed][suite]
+      name: ThrowWhenDivBulletSpeed
+      fullName: Tests.BulletSpeedTest.ThrowWhenDivBulletSpeed
+      resultStatus: 1
+      duration: 0.0215058
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u7570\u5E38] \u9664\u7B97\u306B\u304A\u3044\u30660\u3067\u5272\u3063\u3066\u3044\u308B\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1105
       parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletSpeedTest][suite]
-    - id: 1066
-      uniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ThrowWhenValueIsOverRange]
+    - id: 1129
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/ThrowWhenDivBulletSpeed/[EditMode][Tests.BulletSpeedTest.ThrowWhenDivBulletSpeed(1,0)]
+      name: ThrowWhenDivBulletSpeed(1,0)
+      fullName: Tests.BulletSpeedTest.ThrowWhenDivBulletSpeed(1,0)
+      resultStatus: 1
+      duration: 0.0006568
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1130
+      parentUniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ThrowWhenDivBulletSpeed][suite]
+    - id: 1083
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ThrowWhenValueIsOverRange][suite]
       name: ThrowWhenValueIsOverRange
       fullName: Tests.BulletSpeedTest.ThrowWhenValueIsOverRange
       resultStatus: 1
-      duration: 0.0004466
+      duration: 0.0220705
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u7570\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u672A\u6E80\u304B\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1060
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletSpeedTest][suite]
+    - id: 1079
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/ThrowWhenValueIsOverRange/[EditMode][Tests.BulletSpeedTest.ThrowWhenValueIsOverRange(int.MinValue)]
+      name: ThrowWhenValueIsOverRange(int.MinValue)
+      fullName: Tests.BulletSpeedTest.ThrowWhenValueIsOverRange(int.MinValue)
+      resultStatus: 1
+      duration: 0.0004259
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1057
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletSpeedTest][suite]
-    - id: 1058
-      uniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ValidBulletSpeed]
+      parentId: 1083
+      parentUniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1080
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/ThrowWhenValueIsOverRange/[EditMode][Tests.BulletSpeedTest.ThrowWhenValueIsOverRange(-1)]
+      name: ThrowWhenValueIsOverRange(-1)
+      fullName: Tests.BulletSpeedTest.ThrowWhenValueIsOverRange(-1)
+      resultStatus: 1
+      duration: 0.0001601
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1083
+      parentUniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1081
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/ThrowWhenValueIsOverRange/[EditMode][Tests.BulletSpeedTest.ThrowWhenValueIsOverRange(101)]
+      name: ThrowWhenValueIsOverRange(101)
+      fullName: Tests.BulletSpeedTest.ThrowWhenValueIsOverRange(101)
+      resultStatus: 1
+      duration: 0.0000884
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1083
+      parentUniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1082
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/ThrowWhenValueIsOverRange/[EditMode][Tests.BulletSpeedTest.ThrowWhenValueIsOverRange(int.MaxValue)]
+      name: ThrowWhenValueIsOverRange(int.MaxValue)
+      fullName: Tests.BulletSpeedTest.ThrowWhenValueIsOverRange(int.MaxValue)
+      resultStatus: 1
+      duration: 0.000088
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1083
+      parentUniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1064
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ValidBulletSpeed][suite]
       name: ValidBulletSpeed
       fullName: Tests.BulletSpeedTest.ValidBulletSpeed
       resultStatus: 1
-      duration: 0.0002938
+      duration: 0.0201791
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u4EE5\u4E0A\u6700\u5927\u5024\u4EE5\u4E0B\u3067\u3042\u308B\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1060
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletSpeedTest][suite]
+    - id: 1061
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/ValidBulletSpeed/[EditMode][Tests.BulletSpeedTest.ValidBulletSpeed(0)]
+      name: ValidBulletSpeed(0)
+      fullName: Tests.BulletSpeedTest.ValidBulletSpeed(0)
+      resultStatus: 1
+      duration: 0.0004625
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1057
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletSpeedTest][suite]
-    - id: 1059
-      uniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ValidOperatorAddForBulletSpeed]
+      parentId: 1064
+      parentUniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ValidBulletSpeed][suite]
+    - id: 1062
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/ValidBulletSpeed/[EditMode][Tests.BulletSpeedTest.ValidBulletSpeed(5)]
+      name: ValidBulletSpeed(5)
+      fullName: Tests.BulletSpeedTest.ValidBulletSpeed(5)
+      resultStatus: 1
+      duration: 0.0000823
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1064
+      parentUniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ValidBulletSpeed][suite]
+    - id: 1063
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/ValidBulletSpeed/[EditMode][Tests.BulletSpeedTest.ValidBulletSpeed(100)]
+      name: ValidBulletSpeed(100)
+      fullName: Tests.BulletSpeedTest.ValidBulletSpeed(100)
+      resultStatus: 1
+      duration: 0.0000661
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1064
+      parentUniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ValidBulletSpeed][suite]
+    - id: 1066
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ValidOperatorAddForBulletSpeed][suite]
       name: ValidOperatorAddForBulletSpeed
       fullName: Tests.BulletSpeedTest.ValidOperatorAddForBulletSpeed
       resultStatus: 1
-      duration: 0.0001235
+      duration: 0.0200286
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u52A0\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1060
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletSpeedTest][suite]
+    - id: 1065
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/ValidOperatorAddForBulletSpeed/[EditMode][Tests.BulletSpeedTest.ValidOperatorAddForBulletSpeed(10,2)]
+      name: ValidOperatorAddForBulletSpeed(10,2)
+      fullName: Tests.BulletSpeedTest.ValidOperatorAddForBulletSpeed(10,2)
+      resultStatus: 1
+      duration: 0.0002353
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1057
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletSpeedTest][suite]
-    - id: 1062
-      uniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ValidOperatorDivForBulletSpeed]
+      parentId: 1066
+      parentUniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ValidOperatorAddForBulletSpeed][suite]
+    - id: 1072
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ValidOperatorDivForBulletSpeed][suite]
       name: ValidOperatorDivForBulletSpeed
       fullName: Tests.BulletSpeedTest.ValidOperatorDivForBulletSpeed
       resultStatus: 1
-      duration: 0.0001542
+      duration: 0.0211616
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u9664\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1060
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletSpeedTest][suite]
+    - id: 1071
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/ValidOperatorDivForBulletSpeed/[EditMode][Tests.BulletSpeedTest.ValidOperatorDivForBulletSpeed(10,2)]
+      name: ValidOperatorDivForBulletSpeed(10,2)
+      fullName: Tests.BulletSpeedTest.ValidOperatorDivForBulletSpeed(10,2)
+      resultStatus: 1
+      duration: 0.0004769
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1057
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletSpeedTest][suite]
-    - id: 1061
-      uniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ValidOperatorMulForBulletSpeed]
+      parentId: 1072
+      parentUniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ValidOperatorDivForBulletSpeed][suite]
+    - id: 1070
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ValidOperatorMulForBulletSpeed][suite]
       name: ValidOperatorMulForBulletSpeed
       fullName: Tests.BulletSpeedTest.ValidOperatorMulForBulletSpeed
       resultStatus: 1
-      duration: 0.0001185
+      duration: 0.0204549
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u4E57\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1060
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletSpeedTest][suite]
+    - id: 1069
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/ValidOperatorMulForBulletSpeed/[EditMode][Tests.BulletSpeedTest.ValidOperatorMulForBulletSpeed(10,2)]
+      name: ValidOperatorMulForBulletSpeed(10,2)
+      fullName: Tests.BulletSpeedTest.ValidOperatorMulForBulletSpeed(10,2)
+      resultStatus: 1
+      duration: 0.0002579
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1057
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletSpeedTest][suite]
-    - id: 1060
-      uniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ValidOperatorSubForBulletSpeed]
+      parentId: 1070
+      parentUniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ValidOperatorMulForBulletSpeed][suite]
+    - id: 1068
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ValidOperatorSubForBulletSpeed][suite]
       name: ValidOperatorSubForBulletSpeed
       fullName: Tests.BulletSpeedTest.ValidOperatorSubForBulletSpeed
       resultStatus: 1
-      duration: 0.0001139
+      duration: 0.0208366
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u6E1B\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1060
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletSpeedTest][suite]
+    - id: 1067
+      uniqueId: EditMode.dll/Tests/BulletSpeedTest/ValidOperatorSubForBulletSpeed/[EditMode][Tests.BulletSpeedTest.ValidOperatorSubForBulletSpeed(10,2)]
+      name: ValidOperatorSubForBulletSpeed(10,2)
+      fullName: Tests.BulletSpeedTest.ValidOperatorSubForBulletSpeed(10,2)
+      resultStatus: 1
+      duration: 0.0002342
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1057
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletSpeedTest][suite]
+      parentId: 1068
+      parentUniqueId: EditMode.dll/Tests/BulletSpeedTest/[EditMode][Tests.BulletSpeedTest.ValidOperatorSubForBulletSpeed][suite]
     - id: 1067
       uniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletTest][suite]
       name: BulletTest
       fullName: Tests.BulletTest
       resultStatus: 1
-      duration: 0.020846
+      duration: 0.0237625
       messages: 
       output: 
       stacktrace: 
@@ -885,13 +1392,13 @@ MonoBehaviour:
       name: ValidHeadBullet
       fullName: Tests.BulletTest.ValidHeadBullet
       resultStatus: 1
-      duration: 0.0032854
+      duration: 0.0021373
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: "\u5F37\u5316\u5F3E\u3092\u9078\u629E\u3057\u305F\u5834\u5408\u306B\u3001\u5F37\u5316\u5F3E\u304C\u8FD4\u5374\u3055\u308C\u308B\u3053\u3068"
+      description: "[\u6B63\u5E38] \u5F37\u5316\u5F3E\u3092\u9078\u629E\u3057\u305F\u5834\u5408\u306B\u3001\u5F37\u5316\u5F3E\u304C\u8FD4\u5374\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
@@ -902,24 +1409,156 @@ MonoBehaviour:
       name: ValidNormalBullet
       fullName: Tests.BulletTest.ValidNormalBullet
       resultStatus: 1
-      duration: 0.0001852
+      duration: 0.0002229
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: "\u901A\u5E38\u306E\u5F3E\u4E38\u3092\u9078\u629E\u3057\u305F\u5834\u5408\u306B\u3001\u901A\u5E38\u306E\u5F3E\u4E38\u304C\u8FD4\u5374\u3055\u308C\u308B\u3053\u3068"
+      description: "[\u6B63\u5E38] \u901A\u5E38\u306E\u5F3E\u4E38\u3092\u9078\u629E\u3057\u305F\u5834\u5408\u306B\u3001\u901A\u5E38\u306E\u5F3E\u4E38\u304C\u8FD4\u5374\u3055\u308C\u308B\u3053\u3068"
       isSuite: 0
       categories:
       - Uncategorized
       parentId: 1067
       parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletTest][suite]
+    - id: 1071
+      uniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletTypeTest][suite]
+      name: BulletTypeTest
+      fullName: Tests.BulletTypeTest
+      resultStatus: 1
+      duration: 0.0602494
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "\u5F3E\u4E38\u306E\u7A2E\u985E\u306E\u30C6\u30B9\u30C8"
+      isSuite: 1
+      categories: []
+      parentId: 1076
+      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
+    - id: 1076
+      uniqueId: EditMode.dll/Tests/BulletTypeTest/[EditMode][Tests.BulletTypeTest.NotExistBulletType][suite]
+      name: NotExistBulletType
+      fullName: Tests.BulletTypeTest.NotExistBulletType
+      resultStatus: 1
+      duration: 0.0013207
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u7570\u5E38] \u5F3E\u4E38\u306E\u7A2E\u985E\u304C\u5B58\u5728\u3057\u306A\u3044\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1070
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletTypeTest][suite]
+    - id: 1075
+      uniqueId: EditMode.dll/Tests/BulletTypeTest/NotExistBulletType/[EditMode][Tests.BulletTypeTest.NotExistBulletType(int.MinValue)]
+      name: NotExistBulletType(int.MinValue)
+      fullName: Tests.BulletTypeTest.NotExistBulletType(int.MinValue)
+      resultStatus: 1
+      duration: 0.0006993
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1077
+      parentUniqueId: EditMode.dll/Tests/BulletTypeTest/[EditMode][Tests.BulletTypeTest.NotExistBulletType][suite]
+    - id: 1076
+      uniqueId: EditMode.dll/Tests/BulletTypeTest/NotExistBulletType/[EditMode][Tests.BulletTypeTest.NotExistBulletType(int.MaxValue)]
+      name: NotExistBulletType(int.MaxValue)
+      fullName: Tests.BulletTypeTest.NotExistBulletType(int.MaxValue)
+      resultStatus: 1
+      duration: 0.0000695
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1077
+      parentUniqueId: EditMode.dll/Tests/BulletTypeTest/[EditMode][Tests.BulletTypeTest.NotExistBulletType][suite]
+    - id: 1074
+      uniqueId: EditMode.dll/Tests/BulletTypeTest/[EditMode][Tests.BulletTypeTest.ValidHeadBulletType][suite]
+      name: ValidHeadBulletType
+      fullName: Tests.BulletTypeTest.ValidHeadBulletType
+      resultStatus: 1
+      duration: 0.0191909
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u5F37\u5316\u5F3E\u304C\u5B58\u5728\u3059\u308B\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1070
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletTypeTest][suite]
+    - id: 1073
+      uniqueId: EditMode.dll/Tests/BulletTypeTest/ValidHeadBulletType/[EditMode][Tests.BulletTypeTest.ValidHeadBulletType(1)]
+      name: ValidHeadBulletType(1)
+      fullName: Tests.BulletTypeTest.ValidHeadBulletType(1)
+      resultStatus: 1
+      duration: 0.0002169
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1074
+      parentUniqueId: EditMode.dll/Tests/BulletTypeTest/[EditMode][Tests.BulletTypeTest.ValidHeadBulletType][suite]
+    - id: 1073
+      uniqueId: EditMode.dll/Tests/BulletTypeTest/[EditMode][Tests.BulletTypeTest.ValidNormalBulletType][suite]
+      name: ValidNormalBulletType
+      fullName: Tests.BulletTypeTest.ValidNormalBulletType
+      resultStatus: 1
+      duration: 0.0212617
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u901A\u5E38\u306E\u5F3E\u4E38\u304C\u5B58\u5728\u3059\u308B\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1071
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletTypeTest][suite]
+    - id: 1072
+      uniqueId: EditMode.dll/Tests/BulletTypeTest/ValidNormalBulletType/[EditMode][Tests.BulletTypeTest.ValidNormalBulletType(0)]
+      name: ValidNormalBulletType(0)
+      fullName: Tests.BulletTypeTest.ValidNormalBulletType(0)
+      resultStatus: 1
+      duration: 0.0003387
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1073
+      parentUniqueId: EditMode.dll/Tests/BulletTypeTest/[EditMode][Tests.BulletTypeTest.ValidNormalBulletType][suite]
     - id: 1001
       uniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
       name: PlayerEvasiveSpeedTest
       fullName: Tests.PlayerEvasiveSpeedTest
       resultStatus: 1
-      duration: 0.0213416
+      duration: 0.2095725
       messages: 
       output: 
       stacktrace: 
@@ -930,182 +1569,427 @@ MonoBehaviour:
       categories: []
       parentId: 1035
       parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1008
-      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.LimitAddPlayerEvasiveSpeed]
+    - id: 1018
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.LimitAddPlayerEvasiveSpeed][suite]
       name: LimitAddPlayerEvasiveSpeed
       fullName: Tests.PlayerEvasiveSpeedTest.LimitAddPlayerEvasiveSpeed
       resultStatus: 1
-      duration: 0.0003223
+      duration: 0.0008259
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u52A0\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
+    - id: 1017
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/LimitAddPlayerEvasiveSpeed/[EditMode][Tests.PlayerEvasiveSpeedTest.LimitAddPlayerEvasiveSpeed(100,1)]
+      name: LimitAddPlayerEvasiveSpeed(100,1)
+      fullName: Tests.PlayerEvasiveSpeedTest.LimitAddPlayerEvasiveSpeed(100,1)
+      resultStatus: 1
+      duration: 0.0003778
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
-    - id: 1010
-      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.LimitMulPlayerEvasiveSpeed]
+      parentId: 1018
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.LimitAddPlayerEvasiveSpeed][suite]
+    - id: 1022
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.LimitMulPlayerEvasiveSpeed][suite]
       name: LimitMulPlayerEvasiveSpeed
       fullName: Tests.PlayerEvasiveSpeedTest.LimitMulPlayerEvasiveSpeed
       resultStatus: 1
-      duration: 0.0001675
+      duration: 0.0205807
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u4E57\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
+    - id: 1021
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/LimitMulPlayerEvasiveSpeed/[EditMode][Tests.PlayerEvasiveSpeedTest.LimitMulPlayerEvasiveSpeed(100,2)]
+      name: LimitMulPlayerEvasiveSpeed(100,2)
+      fullName: Tests.PlayerEvasiveSpeedTest.LimitMulPlayerEvasiveSpeed(100,2)
+      resultStatus: 1
+      duration: 0.0002946
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
-    - id: 1009
-      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.LimitSubPlayerEvasiveSpeed]
+      parentId: 1022
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.LimitMulPlayerEvasiveSpeed][suite]
+    - id: 1020
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.LimitSubPlayerEvasiveSpeed][suite]
       name: LimitSubPlayerEvasiveSpeed
       fullName: Tests.PlayerEvasiveSpeedTest.LimitSubPlayerEvasiveSpeed
       resultStatus: 1
-      duration: 0.0001585
+      duration: 0.0212277
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u6E1B\u7B97\u3057\u305F\u5024\u304C\u6700\u5C0F\u5024\u3088\u308A\u5C0F\u3055\u3044\u5834\u5408\u306B\u3001\u6700\u5C0F\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
+    - id: 1019
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/LimitSubPlayerEvasiveSpeed/[EditMode][Tests.PlayerEvasiveSpeedTest.LimitSubPlayerEvasiveSpeed(0,1)]
+      name: LimitSubPlayerEvasiveSpeed(0,1)
+      fullName: Tests.PlayerEvasiveSpeedTest.LimitSubPlayerEvasiveSpeed(0,1)
+      resultStatus: 1
+      duration: 0.000335
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
-    - id: 1011
-      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ThrowWhenDivPlayerEvasiveSpeed]
+      parentId: 1020
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.LimitSubPlayerEvasiveSpeed][suite]
+    - id: 1029
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ThrowWhenDivPlayerEvasiveSpeed][suite]
       name: ThrowWhenDivPlayerEvasiveSpeed
       fullName: Tests.PlayerEvasiveSpeedTest.ThrowWhenDivPlayerEvasiveSpeed
       resultStatus: 1
-      duration: 0.0006287
+      duration: 0.0206201
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u7570\u5E38] \u9664\u7B97\u306B\u304A\u3044\u30660\u3067\u5272\u3063\u3066\u3044\u308B\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
+    - id: 1028
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/ThrowWhenDivPlayerEvasiveSpeed/[EditMode][Tests.PlayerEvasiveSpeedTest.ThrowWhenDivPlayerEvasiveSpeed(1,0)]
+      name: ThrowWhenDivPlayerEvasiveSpeed(1,0)
+      fullName: Tests.PlayerEvasiveSpeedTest.ThrowWhenDivPlayerEvasiveSpeed(1,0)
+      resultStatus: 1
+      duration: 0.0005008
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
-    - id: 1007
-      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ThrowWhenValueIsOverRange]
+      parentId: 1029
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ThrowWhenDivPlayerEvasiveSpeed][suite]
+    - id: 1027
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ThrowWhenValueIsOverRange][suite]
       name: ThrowWhenValueIsOverRange
       fullName: Tests.PlayerEvasiveSpeedTest.ThrowWhenValueIsOverRange
       resultStatus: 1
-      duration: 0.0004449
+      duration: 0.0214405
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u7570\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u672A\u6E80\u304B\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
+    - id: 1023
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/ThrowWhenValueIsOverRange/[EditMode][Tests.PlayerEvasiveSpeedTest.ThrowWhenValueIsOverRange(int.MinValue)]
+      name: ThrowWhenValueIsOverRange(int.MinValue)
+      fullName: Tests.PlayerEvasiveSpeedTest.ThrowWhenValueIsOverRange(int.MinValue)
+      resultStatus: 1
+      duration: 0.0003405
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
-    - id: 1002
-      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeed]
+      parentId: 1027
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1024
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/ThrowWhenValueIsOverRange/[EditMode][Tests.PlayerEvasiveSpeedTest.ThrowWhenValueIsOverRange(-1)]
+      name: ThrowWhenValueIsOverRange(-1)
+      fullName: Tests.PlayerEvasiveSpeedTest.ThrowWhenValueIsOverRange(-1)
+      resultStatus: 1
+      duration: 0.000066
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1027
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1025
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/ThrowWhenValueIsOverRange/[EditMode][Tests.PlayerEvasiveSpeedTest.ThrowWhenValueIsOverRange(101)]
+      name: ThrowWhenValueIsOverRange(101)
+      fullName: Tests.PlayerEvasiveSpeedTest.ThrowWhenValueIsOverRange(101)
+      resultStatus: 1
+      duration: 0.0000575
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1027
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1026
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/ThrowWhenValueIsOverRange/[EditMode][Tests.PlayerEvasiveSpeedTest.ThrowWhenValueIsOverRange(int.MaxValue)]
+      name: ThrowWhenValueIsOverRange(int.MaxValue)
+      fullName: Tests.PlayerEvasiveSpeedTest.ThrowWhenValueIsOverRange(int.MaxValue)
+      resultStatus: 1
+      duration: 0.0000555
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1027
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1008
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeed][suite]
       name: ValidPlayerEvasiveSpeed
       fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeed
       resultStatus: 1
-      duration: 0.0002921
+      duration: 0.0203876
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u4EE5\u4E0A\u6700\u5927\u5024\u4EE5\u4E0B\u3067\u3042\u308B\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
+    - id: 1005
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/ValidPlayerEvasiveSpeed/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeed(0)]
+      name: ValidPlayerEvasiveSpeed(0)
+      fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeed(0)
+      resultStatus: 1
+      duration: 0.0002105
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
-    - id: 1003
-      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorAdd]
+      parentId: 1008
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeed][suite]
+    - id: 1006
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/ValidPlayerEvasiveSpeed/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeed(50)]
+      name: ValidPlayerEvasiveSpeed(50)
+      fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeed(50)
+      resultStatus: 1
+      duration: 0.0000526
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeed][suite]
+    - id: 1007
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/ValidPlayerEvasiveSpeed/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeed(100)]
+      name: ValidPlayerEvasiveSpeed(100)
+      fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeed(100)
+      resultStatus: 1
+      duration: 0.0000486
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeed][suite]
+    - id: 1010
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorAdd][suite]
       name: ValidPlayerEvasiveSpeedOperatorAdd
       fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorAdd
       resultStatus: 1
-      duration: 0.0001275
+      duration: 0.0207063
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] PlayerEvasiveSpeed\u540C\u58EB\u306E\u52A0\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
+    - id: 1009
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/ValidPlayerEvasiveSpeedOperatorAdd/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorAdd(10,2)]
+      name: ValidPlayerEvasiveSpeedOperatorAdd(10,2)
+      fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorAdd(10,2)
+      resultStatus: 1
+      duration: 0.0002729
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
-    - id: 1006
-      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorDiv]
+      parentId: 1010
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorAdd][suite]
+    - id: 1016
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorDiv][suite]
       name: ValidPlayerEvasiveSpeedOperatorDiv
       fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorDiv
       resultStatus: 1
-      duration: 0.000117
+      duration: 0.0209996
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] PlayerEvasiveSpeed\u540C\u58EB\u306E\u9664\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
+    - id: 1015
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/ValidPlayerEvasiveSpeedOperatorDiv/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorDiv(10,2)]
+      name: ValidPlayerEvasiveSpeedOperatorDiv(10,2)
+      fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorDiv(10,2)
+      resultStatus: 1
+      duration: 0.0002253
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
-    - id: 1005
-      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorMul]
+      parentId: 1016
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorDiv][suite]
+    - id: 1014
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorMul][suite]
       name: ValidPlayerEvasiveSpeedOperatorMul
       fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorMul
       resultStatus: 1
-      duration: 0.0001151
+      duration: 0.021129
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] PlayerEvasiveSpeed\u540C\u58EB\u306E\u4E57\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
+    - id: 1013
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/ValidPlayerEvasiveSpeedOperatorMul/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorMul(10,2)]
+      name: ValidPlayerEvasiveSpeedOperatorMul(10,2)
+      fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorMul(10,2)
+      resultStatus: 1
+      duration: 0.00029
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
-    - id: 1004
-      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorSub]
+      parentId: 1014
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorMul][suite]
+    - id: 1012
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorSub][suite]
       name: ValidPlayerEvasiveSpeedOperatorSub
       fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorSub
       resultStatus: 1
-      duration: 0.0001154
+      duration: 0.0205947
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] PlayerEvasiveSpeed\u540C\u58EB\u306E\u6E1B\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
+    - id: 1011
+      uniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/ValidPlayerEvasiveSpeedOperatorSub/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorSub(10,2)]
+      name: ValidPlayerEvasiveSpeedOperatorSub(10,2)
+      fullName: Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorSub(10,2)
+      resultStatus: 1
+      duration: 0.0002507
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasiveSpeedTest][suite]
+      parentId: 1012
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasiveSpeedTest/[EditMode][Tests.PlayerEvasiveSpeedTest.ValidPlayerEvasiveSpeedOperatorSub][suite]
     - id: 1001
       uniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
       name: PlayerHPTest
       fullName: Tests.PlayerHPTest
       resultStatus: 1
-      duration: 0.0281097
+      duration: 0.0342367
       messages: 
       output: 
       stacktrace: 
@@ -1116,182 +2000,439 @@ MonoBehaviour:
       categories: []
       parentId: 1005
       parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1019
-      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.LimitAddPlayerHP]
+    - id: 1029
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.LimitAddPlayerHP][suite]
       name: LimitAddPlayerHP
       fullName: Tests.PlayerHPTest.LimitAddPlayerHP
       resultStatus: 1
-      duration: 0.0003792
+      duration: 0.0010351
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u52A0\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1015
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
+    - id: 1028
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/LimitAddPlayerHP/[EditMode][Tests.PlayerHPTest.LimitAddPlayerHP(100,10)]
+      name: LimitAddPlayerHP(100,10)
+      fullName: Tests.PlayerHPTest.LimitAddPlayerHP(100,10)
+      resultStatus: 1
+      duration: 0.0005475
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1012
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
-    - id: 1021
-      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.LimitMulPlayerHP]
+      parentId: 1029
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.LimitAddPlayerHP][suite]
+    - id: 1033
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.LimitMulPlayerHP][suite]
       name: LimitMulPlayerHP
       fullName: Tests.PlayerHPTest.LimitMulPlayerHP
       resultStatus: 1
-      duration: 0.0001745
+      duration: 0.0201215
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u4E57\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1015
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
+    - id: 1032
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/LimitMulPlayerHP/[EditMode][Tests.PlayerHPTest.LimitMulPlayerHP(100,2)]
+      name: LimitMulPlayerHP(100,2)
+      fullName: Tests.PlayerHPTest.LimitMulPlayerHP(100,2)
+      resultStatus: 1
+      duration: 0.0003057
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1012
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
-    - id: 1020
-      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.LimitSubPlayerHP]
+      parentId: 1033
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.LimitMulPlayerHP][suite]
+    - id: 1031
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.LimitSubPlayerHP][suite]
       name: LimitSubPlayerHP
       fullName: Tests.PlayerHPTest.LimitSubPlayerHP
       resultStatus: 1
-      duration: 0.0001946
+      duration: 0.0212898
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u6E1B\u7B97\u3057\u305F\u5024\u304C\u6700\u5C0F\u5024\u3088\u308A\u5C0F\u3055\u3044\u5834\u5408\u306B\u3001\u6700\u5C0F\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1015
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
+    - id: 1030
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/LimitSubPlayerHP/[EditMode][Tests.PlayerHPTest.LimitSubPlayerHP(0,1)]
+      name: LimitSubPlayerHP(0,1)
+      fullName: Tests.PlayerHPTest.LimitSubPlayerHP(0,1)
+      resultStatus: 1
+      duration: 0.0003364
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1012
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
-    - id: 1011
-      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ThrowWhenDivPlayerHP]
+      parentId: 1031
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.LimitSubPlayerHP][suite]
+    - id: 1040
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ThrowWhenDivPlayerHP][suite]
       name: ThrowWhenDivPlayerHP
       fullName: Tests.PlayerHPTest.ThrowWhenDivPlayerHP
       resultStatus: 1
-      duration: 0.0004447
+      duration: 0.0212399
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u7570\u5E38] \u9664\u7B97\u306B\u304A\u3044\u30660\u3067\u5272\u3063\u3066\u3044\u308B\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1015
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
+    - id: 1039
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/ThrowWhenDivPlayerHP/[EditMode][Tests.PlayerHPTest.ThrowWhenDivPlayerHP(1,0)]
+      name: ThrowWhenDivPlayerHP(1,0)
+      fullName: Tests.PlayerHPTest.ThrowWhenDivPlayerHP(1,0)
+      resultStatus: 1
+      duration: 0.0004132
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
-    - id: 1004
-      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ThrowWhenValueIsOverRange]
+      parentId: 1040
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ThrowWhenDivPlayerHP][suite]
+    - id: 1038
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ThrowWhenValueIsOverRange][suite]
       name: ThrowWhenValueIsOverRange
       fullName: Tests.PlayerHPTest.ThrowWhenValueIsOverRange
       resultStatus: 1
-      duration: 0.0004469
+      duration: 0.0210972
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u7570\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u672A\u6E80\u304B\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1015
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
+    - id: 1034
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/ThrowWhenValueIsOverRange/[EditMode][Tests.PlayerHPTest.ThrowWhenValueIsOverRange(int.MinValue)]
+      name: ThrowWhenValueIsOverRange(int.MinValue)
+      fullName: Tests.PlayerHPTest.ThrowWhenValueIsOverRange(int.MinValue)
+      resultStatus: 1
+      duration: 0.0005417
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
-    - id: 1002
-      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHP]
+      parentId: 1038
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1035
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/ThrowWhenValueIsOverRange/[EditMode][Tests.PlayerHPTest.ThrowWhenValueIsOverRange(-1)]
+      name: ThrowWhenValueIsOverRange(-1)
+      fullName: Tests.PlayerHPTest.ThrowWhenValueIsOverRange(-1)
+      resultStatus: 1
+      duration: 0.0000679
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1038
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1036
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/ThrowWhenValueIsOverRange/[EditMode][Tests.PlayerHPTest.ThrowWhenValueIsOverRange(101)]
+      name: ThrowWhenValueIsOverRange(101)
+      fullName: Tests.PlayerHPTest.ThrowWhenValueIsOverRange(101)
+      resultStatus: 1
+      duration: 0.0000577
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1038
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1037
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/ThrowWhenValueIsOverRange/[EditMode][Tests.PlayerHPTest.ThrowWhenValueIsOverRange(int.MaxValue)]
+      name: ThrowWhenValueIsOverRange(int.MaxValue)
+      fullName: Tests.PlayerHPTest.ThrowWhenValueIsOverRange(int.MaxValue)
+      resultStatus: 1
+      duration: 0.0000563
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1038
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1019
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHP][suite]
       name: ValidPlayerHP
       fullName: Tests.PlayerHPTest.ValidPlayerHP
       resultStatus: 1
-      duration: 0.0003007
+      duration: 0.0287197
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u4EE5\u4E0A\u6700\u5927\u5024\u4EE5\u4E0B\u3067\u3042\u308B\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1015
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
+    - id: 1016
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/ValidPlayerHP/[EditMode][Tests.PlayerHPTest.ValidPlayerHP(0)]
+      name: ValidPlayerHP(0)
+      fullName: Tests.PlayerHPTest.ValidPlayerHP(0)
+      resultStatus: 1
+      duration: 0.0159307
+      messages: 
+      output: 'Type: 4
+
+        Instance: 4
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
-    - id: 1003
-      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPOperatorAdd]
+      parentId: 1019
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHP][suite]
+    - id: 1017
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/ValidPlayerHP/[EditMode][Tests.PlayerHPTest.ValidPlayerHP(50)]
+      name: ValidPlayerHP(50)
+      fullName: Tests.PlayerHPTest.ValidPlayerHP(50)
+      resultStatus: 1
+      duration: 0.0008214
+      messages: 
+      output: 'Type: 4
+
+        Instance: 4
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1019
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHP][suite]
+    - id: 1018
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/ValidPlayerHP/[EditMode][Tests.PlayerHPTest.ValidPlayerHP(100)]
+      name: ValidPlayerHP(100)
+      fullName: Tests.PlayerHPTest.ValidPlayerHP(100)
+      resultStatus: 1
+      duration: 0.0007513
+      messages: 
+      output: 'Type: 4
+
+        Instance: 4
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1019
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHP][suite]
+    - id: 1021
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPOperatorAdd][suite]
       name: ValidPlayerHPOperatorAdd
       fullName: Tests.PlayerHPTest.ValidPlayerHPOperatorAdd
       resultStatus: 1
-      duration: 0.0001266
+      duration: 0.0209862
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] PlayerHP\u540C\u58EB\u306E\u52A0\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1015
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
+    - id: 1020
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/ValidPlayerHPOperatorAdd/[EditMode][Tests.PlayerHPTest.ValidPlayerHPOperatorAdd(10,2)]
+      name: ValidPlayerHPOperatorAdd(10,2)
+      fullName: Tests.PlayerHPTest.ValidPlayerHPOperatorAdd(10,2)
+      resultStatus: 1
+      duration: 0.0002177
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
-    - id: 1006
-      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPOperatorDiv]
+      parentId: 1021
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPOperatorAdd][suite]
+    - id: 1027
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPOperatorDiv][suite]
       name: ValidPlayerHPOperatorDiv
       fullName: Tests.PlayerHPTest.ValidPlayerHPOperatorDiv
       resultStatus: 1
-      duration: 0.0001224
+      duration: 0.0206401
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] PlayerHP\u540C\u58EB\u306E\u9664\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1015
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
+    - id: 1026
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/ValidPlayerHPOperatorDiv/[EditMode][Tests.PlayerHPTest.ValidPlayerHPOperatorDiv(10,2)]
+      name: ValidPlayerHPOperatorDiv(10,2)
+      fullName: Tests.PlayerHPTest.ValidPlayerHPOperatorDiv(10,2)
+      resultStatus: 1
+      duration: 0.0002165
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
-    - id: 1005
-      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPOperatorMul]
+      parentId: 1027
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPOperatorDiv][suite]
+    - id: 1025
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPOperatorMul][suite]
       name: ValidPlayerHPOperatorMul
       fullName: Tests.PlayerHPTest.ValidPlayerHPOperatorMul
       resultStatus: 1
-      duration: 0.0001184
+      duration: 0.0211697
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] PlayerHP\u540C\u58EB\u306E\u4E57\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1015
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
+    - id: 1024
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/ValidPlayerHPOperatorMul/[EditMode][Tests.PlayerHPTest.ValidPlayerHPOperatorMul(10,2)]
+      name: ValidPlayerHPOperatorMul(10,2)
+      fullName: Tests.PlayerHPTest.ValidPlayerHPOperatorMul(10,2)
+      resultStatus: 1
+      duration: 0.0002231
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
-    - id: 1004
-      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPOperatorSub]
+      parentId: 1025
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPOperatorMul][suite]
+    - id: 1023
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPOperatorSub][suite]
       name: ValidPlayerHPOperatorSub
       fullName: Tests.PlayerHPTest.ValidPlayerHPOperatorSub
       resultStatus: 1
-      duration: 0.0001143
+      duration: 0.0206952
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] PlayerHP\u540C\u58EB\u306E\u6E1B\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1015
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
+    - id: 1022
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/ValidPlayerHPOperatorSub/[EditMode][Tests.PlayerHPTest.ValidPlayerHPOperatorSub(10,2)]
+      name: ValidPlayerHPOperatorSub(10,2)
+      fullName: Tests.PlayerHPTest.ValidPlayerHPOperatorSub(10,2)
+      resultStatus: 1
+      duration: 0.0002552
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
+      parentId: 1023
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPOperatorSub][suite]
     - id: 1023
       uniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
       name: PlayerMoveRangeTest
       fullName: Tests.PlayerMoveRangeTest
       resultStatus: 1
-      duration: 0.0245905
+      duration: 0.2306207
       messages: 
       output: 
       stacktrace: 
@@ -1302,199 +2443,562 @@ MonoBehaviour:
       categories: []
       parentId: 1037
       parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1031
-      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.LimitAddPlayerMoveRange]
+    - id: 1072
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.LimitAddPlayerMoveRange][suite]
       name: LimitAddPlayerMoveRange
       fullName: Tests.PlayerMoveRangeTest.LimitAddPlayerMoveRange
       resultStatus: 1
-      duration: 0.001636
+      duration: 0.0025951
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u52A0\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1056
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
+    - id: 1070
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/LimitAddPlayerMoveRange/[EditMode][Tests.PlayerMoveRangeTest.LimitAddPlayerMoveRange(100.0f,100.0f,0.0f,1.0f)]
+      name: LimitAddPlayerMoveRange(100.0f,100.0f,0.0f,1.0f)
+      fullName: Tests.PlayerMoveRangeTest.LimitAddPlayerMoveRange(100.0f,100.0f,0.0f,1.0f)
+      resultStatus: 1
+      duration: 0.0016561
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
-    - id: 1033
-      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.LimitMulPlayerMOveRange]
+      parentId: 1072
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.LimitAddPlayerMoveRange][suite]
+    - id: 1071
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/LimitAddPlayerMoveRange/[EditMode][Tests.PlayerMoveRangeTest.LimitAddPlayerMoveRange(100.0f,100.0f,2.0f,2.0f)]
+      name: LimitAddPlayerMoveRange(100.0f,100.0f,2.0f,2.0f)
+      fullName: Tests.PlayerMoveRangeTest.LimitAddPlayerMoveRange(100.0f,100.0f,2.0f,2.0f)
+      resultStatus: 1
+      duration: 0.0001125
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1072
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.LimitAddPlayerMoveRange][suite]
+    - id: 1078
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.LimitMulPlayerMOveRange][suite]
       name: LimitMulPlayerMOveRange
       fullName: Tests.PlayerMoveRangeTest.LimitMulPlayerMOveRange
       resultStatus: 1
-      duration: 0.00049
+      duration: 0.0181621
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u4E57\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1056
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
+    - id: 1076
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/LimitMulPlayerMOveRange/[EditMode][Tests.PlayerMoveRangeTest.LimitMulPlayerMOveRange(100.0f,100.0f,1.0f,1.5f)]
+      name: LimitMulPlayerMOveRange(100.0f,100.0f,1.0f,1.5f)
+      fullName: Tests.PlayerMoveRangeTest.LimitMulPlayerMOveRange(100.0f,100.0f,1.0f,1.5f)
+      resultStatus: 1
+      duration: 0.0003435
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
-    - id: 1032
-      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.LimitSubPlayerMOveRange]
+      parentId: 1078
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.LimitMulPlayerMOveRange][suite]
+    - id: 1077
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/LimitMulPlayerMOveRange/[EditMode][Tests.PlayerMoveRangeTest.LimitMulPlayerMOveRange(100.0f,100.0f,2.0f,2.0f)]
+      name: LimitMulPlayerMOveRange(100.0f,100.0f,2.0f,2.0f)
+      fullName: Tests.PlayerMoveRangeTest.LimitMulPlayerMOveRange(100.0f,100.0f,2.0f,2.0f)
+      resultStatus: 1
+      duration: 0.0000581
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1078
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.LimitMulPlayerMOveRange][suite]
+    - id: 1075
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.LimitSubPlayerMOveRange][suite]
       name: LimitSubPlayerMOveRange
       fullName: Tests.PlayerMoveRangeTest.LimitSubPlayerMOveRange
       resultStatus: 1
-      duration: 0.0003991
+      duration: 0.0214811
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u6E1B\u7B97\u3057\u305F\u5024\u304C\u6700\u5C0F\u5024\u3088\u308A\u5C0F\u3055\u3044\u5834\u5408\u306B\u3001\u6700\u5C0F\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1056
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
+    - id: 1073
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/LimitSubPlayerMOveRange/[EditMode][Tests.PlayerMoveRangeTest.LimitSubPlayerMOveRange(-100.0f,-100.0f,0.0f,1.0f)]
+      name: LimitSubPlayerMOveRange(-100.0f,-100.0f,0.0f,1.0f)
+      fullName: Tests.PlayerMoveRangeTest.LimitSubPlayerMOveRange(-100.0f,-100.0f,0.0f,1.0f)
+      resultStatus: 1
+      duration: 0.0003955
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
-    - id: 1034
-      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenDivPlayerMoveRange]
+      parentId: 1075
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.LimitSubPlayerMOveRange][suite]
+    - id: 1074
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/LimitSubPlayerMOveRange/[EditMode][Tests.PlayerMoveRangeTest.LimitSubPlayerMOveRange(-100.0f,-100.0f,2.0f,2.0f)]
+      name: LimitSubPlayerMOveRange(-100.0f,-100.0f,2.0f,2.0f)
+      fullName: Tests.PlayerMoveRangeTest.LimitSubPlayerMOveRange(-100.0f,-100.0f,2.0f,2.0f)
+      resultStatus: 1
+      duration: 0.0000638
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1075
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.LimitSubPlayerMOveRange][suite]
+    - id: 1089
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenDivPlayerMoveRange][suite]
       name: ThrowWhenDivPlayerMoveRange
       fullName: Tests.PlayerMoveRangeTest.ThrowWhenDivPlayerMoveRange
       resultStatus: 1
-      duration: 0.0013913
+      duration: 0.0205548
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u7570\u5E38] \u9664\u7B97\u306B\u304A\u3044\u30660\u3067\u5272\u3063\u3066\u3044\u308B\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1056
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
+    - id: 1087
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/ThrowWhenDivPlayerMoveRange/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenDivPlayerMoveRange(100.0f,100.0f,0.0f,1.0f)]
+      name: ThrowWhenDivPlayerMoveRange(100.0f,100.0f,0.0f,1.0f)
+      fullName: Tests.PlayerMoveRangeTest.ThrowWhenDivPlayerMoveRange(100.0f,100.0f,0.0f,1.0f)
+      resultStatus: 1
+      duration: 0.0004235
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
-    - id: 1030
-      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenLowValueGiggerThanHighValue]
+      parentId: 1089
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenDivPlayerMoveRange][suite]
+    - id: 1088
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/ThrowWhenDivPlayerMoveRange/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenDivPlayerMoveRange(100.0f,100.0f,0.0f,0.0f)]
+      name: ThrowWhenDivPlayerMoveRange(100.0f,100.0f,0.0f,0.0f)
+      fullName: Tests.PlayerMoveRangeTest.ThrowWhenDivPlayerMoveRange(100.0f,100.0f,0.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0000694
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1089
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenDivPlayerMoveRange][suite]
+    - id: 1086
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenLowValueGiggerThanHighValue][suite]
       name: ThrowWhenLowValueGiggerThanHighValue
       fullName: Tests.PlayerMoveRangeTest.ThrowWhenLowValueGiggerThanHighValue
       resultStatus: 1
-      duration: 0.0002105
+      duration: 0.0212402
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u7570\u5E38] \u4F4E\u3044\u5024\u304C\u9AD8\u3044\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u3092\u6295\u3052\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1056
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
+    - id: 1083
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/ThrowWhenLowValueGiggerThanHighValue/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenLowValueGiggerThanHighValue(-99.0f,-100.0f)]
+      name: ThrowWhenLowValueGiggerThanHighValue(-99.0f,-100.0f)
+      fullName: Tests.PlayerMoveRangeTest.ThrowWhenLowValueGiggerThanHighValue(-99.0f,-100.0f)
+      resultStatus: 1
+      duration: 0.0004289
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
-    - id: 1029
-      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenValueIsOverRange]
+      parentId: 1086
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenLowValueGiggerThanHighValue][suite]
+    - id: 1084
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/ThrowWhenLowValueGiggerThanHighValue/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenLowValueGiggerThanHighValue(1.0f,0.0f)]
+      name: ThrowWhenLowValueGiggerThanHighValue(1.0f,0.0f)
+      fullName: Tests.PlayerMoveRangeTest.ThrowWhenLowValueGiggerThanHighValue(1.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0000727
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1086
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenLowValueGiggerThanHighValue][suite]
+    - id: 1085
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/ThrowWhenLowValueGiggerThanHighValue/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenLowValueGiggerThanHighValue(100.0f,99.0f)]
+      name: ThrowWhenLowValueGiggerThanHighValue(100.0f,99.0f)
+      fullName: Tests.PlayerMoveRangeTest.ThrowWhenLowValueGiggerThanHighValue(100.0f,99.0f)
+      resultStatus: 1
+      duration: 0.0000628
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1086
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenLowValueGiggerThanHighValue][suite]
+    - id: 1082
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenValueIsOverRange][suite]
       name: ThrowWhenValueIsOverRange
       fullName: Tests.PlayerMoveRangeTest.ThrowWhenValueIsOverRange
       resultStatus: 1
-      duration: 0.0012172
+      duration: 0.0208631
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u7570\u5E38] \u4F4E\u3044\u5024\u3068\u9AD8\u3044\u5024\u304C\u7BC4\u56F2\u5916\u3067\u3042\u308B\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u3092\u6295\u3052\u308B\u3053\u3068"
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1023
+      isSuite: 1
+      categories: []
+      parentId: 1056
       parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
-    - id: 1024
-      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveRange]
-      name: ValidPlayerMoveRange
-      fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveRange
+    - id: 1079
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/ThrowWhenValueIsOverRange/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenValueIsOverRange(-102.0f,-101.0f)]
+      name: ThrowWhenValueIsOverRange(-102.0f,-101.0f)
+      fullName: Tests.PlayerMoveRangeTest.ThrowWhenValueIsOverRange(-102.0f,-101.0f)
       resultStatus: 1
-      duration: 0.0004514
+      duration: 0.0003186
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: "\u4F4E\u3044\u5024\u304C\u9AD8\u3044\u5024\u4EE5\u4E0B\u304B\u3064\u4F4E\u3044\u5024\u3068\u9AD8\u3044\u5024\u304C\u7BC4\u56F2\u5185\u3067\u3042\u308B\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
+      parentId: 1082
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1080
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/ThrowWhenValueIsOverRange/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenValueIsOverRange(101.0f,102.0f)]
+      name: ThrowWhenValueIsOverRange(101.0f,102.0f)
+      fullName: Tests.PlayerMoveRangeTest.ThrowWhenValueIsOverRange(101.0f,102.0f)
+      resultStatus: 1
+      duration: 0.000072
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1082
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1081
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/ThrowWhenValueIsOverRange/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenValueIsOverRange(float.MinValue,float.MaxValue)]
+      name: ThrowWhenValueIsOverRange(float.MinValue,float.MaxValue)
+      fullName: Tests.PlayerMoveRangeTest.ThrowWhenValueIsOverRange(float.MinValue,float.MaxValue)
+      resultStatus: 1
+      duration: 0.0000624
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1082
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1061
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveRange][suite]
+      name: ValidPlayerMoveRange
+      fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveRange
+      resultStatus: 1
+      duration: 0.0206742
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u4F4E\u3044\u5024\u304C\u9AD8\u3044\u5024\u4EE5\u4E0B\u304B\u3064\u4F4E\u3044\u5024\u3068\u9AD8\u3044\u5024\u304C\u7BC4\u56F2\u5185\u3067\u3042\u308B\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1056
       parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
-    - id: 1025
-      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorAdd]
+    - id: 1057
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/ValidPlayerMoveRange/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveRange(-100.0f,-99.0f)]
+      name: ValidPlayerMoveRange(-100.0f,-99.0f)
+      fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveRange(-100.0f,-99.0f)
+      resultStatus: 1
+      duration: 0.0002481
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1061
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveRange][suite]
+    - id: 1058
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/ValidPlayerMoveRange/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveRange(0.0f,1.0f)]
+      name: ValidPlayerMoveRange(0.0f,1.0f)
+      fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveRange(0.0f,1.0f)
+      resultStatus: 1
+      duration: 0.0000596
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1061
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveRange][suite]
+    - id: 1059
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/ValidPlayerMoveRange/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveRange(99.0f,100.0f)]
+      name: ValidPlayerMoveRange(99.0f,100.0f)
+      fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveRange(99.0f,100.0f)
+      resultStatus: 1
+      duration: 0.0000489
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1061
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveRange][suite]
+    - id: 1060
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/ValidPlayerMoveRange/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveRange(100.0f,100.0f)]
+      name: ValidPlayerMoveRange(100.0f,100.0f)
+      fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveRange(100.0f,100.0f)
+      resultStatus: 1
+      duration: 0.0000475
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1061
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveRange][suite]
+    - id: 1063
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorAdd][suite]
       name: ValidPlayerMoveSpeedOperatorAdd
       fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorAdd
       resultStatus: 1
-      duration: 0.0001632
+      duration: 0.0204236
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] PlayerMoveRange\u540C\u58EB\u306E\u52A0\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1056
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
+    - id: 1062
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/ValidPlayerMoveSpeedOperatorAdd/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorAdd(0.0f,10.0f,1.0f,1.0f)]
+      name: ValidPlayerMoveSpeedOperatorAdd(0.0f,10.0f,1.0f,1.0f)
+      fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorAdd(0.0f,10.0f,1.0f,1.0f)
+      resultStatus: 1
+      duration: 0.0002658
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
-    - id: 1028
-      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorDiv]
+      parentId: 1063
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorAdd][suite]
+    - id: 1069
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorDiv][suite]
       name: ValidPlayerMoveSpeedOperatorDiv
       fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorDiv
       resultStatus: 1
-      duration: 0.0001542
+      duration: 0.0211396
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] PlayerMoveRange\u540C\u58EB\u306E\u9664\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1056
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
+    - id: 1068
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/ValidPlayerMoveSpeedOperatorDiv/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorDiv(4.0f,10.0f,2.0f,4.0f)]
+      name: ValidPlayerMoveSpeedOperatorDiv(4.0f,10.0f,2.0f,4.0f)
+      fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorDiv(4.0f,10.0f,2.0f,4.0f)
+      resultStatus: 1
+      duration: 0.0003278
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
-    - id: 1027
-      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorMul]
+      parentId: 1069
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorDiv][suite]
+    - id: 1067
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorMul][suite]
       name: ValidPlayerMoveSpeedOperatorMul
       fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorMul
       resultStatus: 1
-      duration: 0.0001576
+      duration: 0.0207411
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] PlayerMoveRange\u540C\u58EB\u306E\u4E57\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1056
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
+    - id: 1066
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/ValidPlayerMoveSpeedOperatorMul/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorMul(2.0f,10.0f,2.0f,5.0f)]
+      name: ValidPlayerMoveSpeedOperatorMul(2.0f,10.0f,2.0f,5.0f)
+      fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorMul(2.0f,10.0f,2.0f,5.0f)
+      resultStatus: 1
+      duration: 0.000301
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
-    - id: 1026
-      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorSub]
+      parentId: 1067
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorMul][suite]
+    - id: 1065
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorSub][suite]
       name: ValidPlayerMoveSpeedOperatorSub
       fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorSub
       resultStatus: 1
-      duration: 0.0001563
+      duration: 0.0208004
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] PlayerMoveRange\u540C\u58EB\u306E\u6E1B\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1056
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
+    - id: 1064
+      uniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/ValidPlayerMoveSpeedOperatorSub/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorSub(0.0f,10.0f,1.0f,1.0f)]
+      name: ValidPlayerMoveSpeedOperatorSub(0.0f,10.0f,1.0f,1.0f)
+      fullName: Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorSub(0.0f,10.0f,1.0f,1.0f)
+      resultStatus: 1
+      duration: 0.0002795
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1023
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveRangeTest][suite]
+      parentId: 1065
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveRangeTest/[EditMode][Tests.PlayerMoveRangeTest.ValidPlayerMoveSpeedOperatorSub][suite]
     - id: 1012
       uniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
       name: PlayerMoveSpeedTest
       fullName: Tests.PlayerMoveSpeedTest
       resultStatus: 1
-      duration: 0.0164626
+      duration: 0.209353
       messages: 
       output: 
       stacktrace: 
@@ -1505,183 +3009,472 @@ MonoBehaviour:
       categories: []
       parentId: 1024
       parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1042
-      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.LimitAddPlayerMoveSpeed]
+    - id: 1067
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.LimitAddPlayerMoveSpeed][suite]
       name: LimitAddPlayerMoveSpeed
       fullName: Tests.PlayerMoveSpeedTest.LimitAddPlayerMoveSpeed
       resultStatus: 1
-      duration: 0.0003578
+      duration: 0.0007998
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u52A0\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1053
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
+    - id: 1066
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/LimitAddPlayerMoveSpeed/[EditMode][Tests.PlayerMoveSpeedTest.LimitAddPlayerMoveSpeed(10,1)]
+      name: LimitAddPlayerMoveSpeed(10,1)
+      fullName: Tests.PlayerMoveSpeedTest.LimitAddPlayerMoveSpeed(10,1)
+      resultStatus: 1
+      duration: 0.000369
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1035
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
-    - id: 1044
-      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.LimitMulPlayerMoveSpeed]
+      parentId: 1067
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.LimitAddPlayerMoveSpeed][suite]
+    - id: 1071
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.LimitMulPlayerMoveSpeed][suite]
       name: LimitMulPlayerMoveSpeed
       fullName: Tests.PlayerMoveSpeedTest.LimitMulPlayerMoveSpeed
       resultStatus: 1
-      duration: 0.0001714
+      duration: 0.0201777
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u4E57\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1053
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
+    - id: 1070
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/LimitMulPlayerMoveSpeed/[EditMode][Tests.PlayerMoveSpeedTest.LimitMulPlayerMoveSpeed(10,2)]
+      name: LimitMulPlayerMoveSpeed(10,2)
+      fullName: Tests.PlayerMoveSpeedTest.LimitMulPlayerMoveSpeed(10,2)
+      resultStatus: 1
+      duration: 0.0002919
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1035
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
-    - id: 1043
-      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.LimitSubPlayerMoveSpeed]
+      parentId: 1071
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.LimitMulPlayerMoveSpeed][suite]
+    - id: 1069
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.LimitSubPlayerMoveSpeed][suite]
       name: LimitSubPlayerMoveSpeed
       fullName: Tests.PlayerMoveSpeedTest.LimitSubPlayerMoveSpeed
       resultStatus: 1
-      duration: 0.0001615
+      duration: 0.020726
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u6E1B\u7B97\u3057\u305F\u5024\u304C\u6700\u5C0F\u5024\u3088\u308A\u5C0F\u3055\u3044\u5834\u5408\u306B\u3001\u6700\u5C0F\u5024\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1053
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
+    - id: 1068
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/LimitSubPlayerMoveSpeed/[EditMode][Tests.PlayerMoveSpeedTest.LimitSubPlayerMoveSpeed(0,1)]
+      name: LimitSubPlayerMoveSpeed(0,1)
+      fullName: Tests.PlayerMoveSpeedTest.LimitSubPlayerMoveSpeed(0,1)
+      resultStatus: 1
+      duration: 0.0003539
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1035
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
-    - id: 1022
-      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ThrowWhenDivPlayerMoveSpeed]
+      parentId: 1069
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.LimitSubPlayerMoveSpeed][suite]
+    - id: 1078
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ThrowWhenDivPlayerMoveSpeed][suite]
       name: ThrowWhenDivPlayerMoveSpeed
       fullName: Tests.PlayerMoveSpeedTest.ThrowWhenDivPlayerMoveSpeed
       resultStatus: 1
-      duration: 0.0004117
+      duration: 0.0205639
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u7570\u5E38] \u9664\u7B97\u306B\u304A\u3044\u30660\u3067\u5272\u3063\u3066\u3044\u308B\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1053
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
+    - id: 1077
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/ThrowWhenDivPlayerMoveSpeed/[EditMode][Tests.PlayerMoveSpeedTest.ThrowWhenDivPlayerMoveSpeed(1,0)]
+      name: ThrowWhenDivPlayerMoveSpeed(1,0)
+      fullName: Tests.PlayerMoveSpeedTest.ThrowWhenDivPlayerMoveSpeed(1,0)
+      resultStatus: 1
+      duration: 0.0003829
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1012
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
-    - id: 1018
-      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ThrowWhenValueIsOverRange]
+      parentId: 1078
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ThrowWhenDivPlayerMoveSpeed][suite]
+    - id: 1076
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ThrowWhenValueIsOverRange][suite]
       name: ThrowWhenValueIsOverRange
       fullName: Tests.PlayerMoveSpeedTest.ThrowWhenValueIsOverRange
       resultStatus: 1
-      duration: 0.0004454
+      duration: 0.0213207
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u7570\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u672A\u6E80\u304B\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1053
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
+    - id: 1072
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/ThrowWhenValueIsOverRange/[EditMode][Tests.PlayerMoveSpeedTest.ThrowWhenValueIsOverRange(int.MinValue)]
+      name: ThrowWhenValueIsOverRange(int.MinValue)
+      fullName: Tests.PlayerMoveSpeedTest.ThrowWhenValueIsOverRange(int.MinValue)
+      resultStatus: 1
+      duration: 0.0003888
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1012
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
-    - id: 1035
-      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed]
+      parentId: 1076
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1073
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/ThrowWhenValueIsOverRange/[EditMode][Tests.PlayerMoveSpeedTest.ThrowWhenValueIsOverRange(-1)]
+      name: ThrowWhenValueIsOverRange(-1)
+      fullName: Tests.PlayerMoveSpeedTest.ThrowWhenValueIsOverRange(-1)
+      resultStatus: 1
+      duration: 0.0000815
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1076
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1074
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/ThrowWhenValueIsOverRange/[EditMode][Tests.PlayerMoveSpeedTest.ThrowWhenValueIsOverRange(11)]
+      name: ThrowWhenValueIsOverRange(11)
+      fullName: Tests.PlayerMoveSpeedTest.ThrowWhenValueIsOverRange(11)
+      resultStatus: 1
+      duration: 0.0000653
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1076
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1075
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/ThrowWhenValueIsOverRange/[EditMode][Tests.PlayerMoveSpeedTest.ThrowWhenValueIsOverRange(int.MaxValue)]
+      name: ThrowWhenValueIsOverRange(int.MaxValue)
+      fullName: Tests.PlayerMoveSpeedTest.ThrowWhenValueIsOverRange(int.MaxValue)
+      resultStatus: 1
+      duration: 0.0000602
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1076
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ThrowWhenValueIsOverRange][suite]
+    - id: 1057
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed][suite]
       name: ValidPlayerMoveSpeed
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed
       resultStatus: 1
-      duration: 0.0002936
+      duration: 0.0204891
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u4EE5\u4E0A\u6700\u5927\u5024\u4EE5\u4E0B\u3067\u3042\u308B\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1053
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
+    - id: 1054
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/ValidPlayerMoveSpeed/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed(0)]
+      name: ValidPlayerMoveSpeed(0)
+      fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed(0)
+      resultStatus: 1
+      duration: 0.0002411
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1034
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
-    - id: 1014
-      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorAdd]
+      parentId: 1057
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed][suite]
+    - id: 1055
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/ValidPlayerMoveSpeed/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed(5)]
+      name: ValidPlayerMoveSpeed(5)
+      fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed(5)
+      resultStatus: 1
+      duration: 0.0000524
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1057
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed][suite]
+    - id: 1056
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/ValidPlayerMoveSpeed/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed(10)]
+      name: ValidPlayerMoveSpeed(10)
+      fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed(10)
+      resultStatus: 1
+      duration: 0.0000466
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1057
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed][suite]
+    - id: 1059
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorAdd][suite]
       name: ValidPlayerMoveSpeedOperatorAdd
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorAdd
       resultStatus: 1
-      duration: 0.0001259
+      duration: 0.0207366
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: "[\u6B63\u5E38] PlayerMoveSpeed\u540C\u58EB\u306E\u52A0\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      description: "[\u6B63\u5E38] \u52A0\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1053
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
+    - id: 1058
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/ValidPlayerMoveSpeedOperatorAdd/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorAdd(4,2)]
+      name: ValidPlayerMoveSpeedOperatorAdd(4,2)
+      fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorAdd(4,2)
+      resultStatus: 1
+      duration: 0.0002197
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1012
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
-    - id: 1017
-      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorDiv]
+      parentId: 1059
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorAdd][suite]
+    - id: 1065
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorDiv][suite]
       name: ValidPlayerMoveSpeedOperatorDiv
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorDiv
       resultStatus: 1
-      duration: 0.0001299
+      duration: 0.0208643
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: "[\u6B63\u5E38] PlayerMoveSpeed\u540C\u58EB\u306E\u9664\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      description: "[\u6B63\u5E38] \u9664\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1053
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
+    - id: 1064
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/ValidPlayerMoveSpeedOperatorDiv/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorDiv(4,2)]
+      name: ValidPlayerMoveSpeedOperatorDiv(4,2)
+      fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorDiv(4,2)
+      resultStatus: 1
+      duration: 0.0002849
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1012
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
-    - id: 1016
-      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorMul]
+      parentId: 1065
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorDiv][suite]
+    - id: 1063
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorMul][suite]
       name: ValidPlayerMoveSpeedOperatorMul
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorMul
       resultStatus: 1
-      duration: 0.0001205
+      duration: 0.020825
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: "[\u6B63\u5E38] PlayerMoveSpeed\u540C\u58EB\u306E\u4E57\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      description: "[\u6B63\u5E38] \u4E57\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1053
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
+    - id: 1062
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/ValidPlayerMoveSpeedOperatorMul/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorMul(4,2)]
+      name: ValidPlayerMoveSpeedOperatorMul(4,2)
+      fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorMul(4,2)
+      resultStatus: 1
+      duration: 0.0002719
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1012
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
-    - id: 1015
-      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorSub]
+      parentId: 1063
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorMul][suite]
+    - id: 1061
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorSub][suite]
       name: ValidPlayerMoveSpeedOperatorSub
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorSub
       resultStatus: 1
-      duration: 0.0001203
+      duration: 0.0210546
       messages: 
       output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
-      description: "[\u6B63\u5E38] PlayerMoveSpeed\u540C\u58EB\u306E\u6E1B\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      description: "[\u6B63\u5E38] \u6E1B\u7B97\u304C\u884C\u308F\u308C\u305F\u5834\u5408\u306B\u3001\u5024\u304C\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1053
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
+    - id: 1060
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/ValidPlayerMoveSpeedOperatorSub/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorSub(4,2)]
+      name: ValidPlayerMoveSpeedOperatorSub(4,2)
+      fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorSub(4,2)
+      resultStatus: 1
+      duration: 0.0002325
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1012
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
-    m_ResultText: "BulletTest (0.021s)\n\u5F3E\u4E38\u306E\u30C6\u30B9\u30C8"
+      parentId: 1061
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedOperatorSub][suite]
+    - id: 1176
+      uniqueId: EditMode.dll/Tests/[EditMode][Tests.StructTest][suite]
+      name: StructTest
+      fullName: Tests.StructTest
+      resultStatus: 1
+      duration: 0.0243294
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1179
+      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
+    - id: 1177
+      uniqueId: EditMode.dll/Tests/StructTest/[EditMode][Tests.StructTest.TestMethod]
+      name: TestMethod
+      fullName: Tests.StructTest.TestMethod
+      resultStatus: 1
+      duration: 0.0037867
+      messages: 
+      output: 'Type: 4
+
+        Instance: 4
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "\u5BB9\u91CF\u30C6\u30B9\u30C8"
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1176
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.StructTest][suite]
+    m_ResultText: 'ValidPlayerHP(0) (0.016s)
+
+      ---
+
+      Type: 4
+
+      Instance:
+      4'
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 020067f3
-      m_LastClickedID: -211353598
-      m_ExpandedIDs: 3cdc509e020067f3b492650b8bce34243cf34728e57d0f684b5ea47cffffff7f
+      scrollPos: {x: 0, y: 60}
+      m_SelectedIDs: fb38ca8f
+      m_LastClickedID: -1882572549
+      m_ExpandedIDs: 4e5e5887d898d488ffe43c8ede38d8943cdc509e319f829fa3c63ba13316a1a1c9c6a3a57ae2f2b4a8d000b51de956b991f282bee75e21c2fe6bdfd0b15a52dca11615dfb7cadfdfb70143e3db8f0ef235932af92733b0fb2663a4fcbe31c0fd092f8e05b492650bd9c69d1b8bce34243cf347284500742830a1d328105db24bce42cc4e893b8f542a3da05475407857e57d0f68089961688db7157c4b5ea47cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1727,9 +3520,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 907
+    x: 906
     y: 537
-    width: 601
+    width: 600
     height: 462
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1755,7 +3548,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 907
+    x: 906
     y: 73
     width: 214
     height: 443
@@ -1766,9 +3559,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 648a0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: a2dfffffb8e0ffff10e8ffff14f4ffff2af5ffff9cf7ffff2afbffff
+      m_ExpandedIDs: e4b7ffff38bafffffebdffff2ac0ffff2ac6ffff44d3ffff12d4ffffe0d4ffffaad5ffffbcd7ffff86d8ffff50d9ffffe0ddffffe4e1ffffaee2ffff78e3ffff42e4ffff40e6ffff8ee8ffff08ebffff28edffffe8f0ffff1ef3fffff0f7ffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1812,9 +3605,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1510
+    x: 1508
     y: 73
-    width: 409
+    width: 411
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1853,9 +3646,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1123
+    x: 1122
     y: 73
-    width: 385
+    width: 384
     height: 443
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1874,22 +3667,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/System/Exception
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 46
   m_LastFolders:
-  - Assets/Scripts/System/Exception
+  - Assets/Scripts
   m_LastFoldersGridSize: 46
   m_LastProjectPath: D:\Program\Unity\Unity_2021_3_1f1\ShootingGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 77}
-    m_SelectedIDs: 288a0000
-    m_LastClickedID: 35368
-    m_ExpandedIDs: 00000000846a0000866a0000886a00008a6a00008c6a00008e6a0000906a0000926a0000946a0000966a0000986a00009a6a00009c6a0000426c0000
+    scrollPos: {x: 0, y: 17}
+    m_SelectedIDs: 906a0000
+    m_LastClickedID: 27280
+    m_ExpandedIDs: 000000008e6a0000906a0000926a0000946a0000966a0000986a00009a6a00009c6a00009e6a0000a06a0000a26a0000a46a0000a66a0000a86a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1917,7 +3710,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000846a0000866a0000886a00008a6a00008c6a00008e6a0000906a0000926a0000946a0000966a0000986a00009a6a00009c6a0000
+    m_ExpandedIDs: 000000008e6a0000906a0000926a0000946a0000966a0000986a00009a6a00009c6a00009e6a0000a06a0000a26a0000a46a0000a66a0000a86a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1972,7 +3765,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 46
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 192
+  m_DirectoriesAreaWidth: 141
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1995,7 +3788,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 559
-    width: 906
+    width: 905
     height: 440
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -2043,23 +3836,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 906
+      width: 905
       height: 419
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 453, y: 209.5}
+    m_Translation: {x: 452.5, y: 209.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -453
+      x: -452.5
       y: -209.5
-      width: 906
+      width: 905
       height: 419
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 906, y: 440}
+  m_LastWindowPixelSize: {x: 905, y: 440}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -2087,7 +3880,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 906
+    width: 905
     height: 465
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:

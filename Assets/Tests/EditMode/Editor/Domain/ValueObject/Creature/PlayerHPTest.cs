@@ -1,4 +1,6 @@
 using System;
+using System.Runtime.InteropServices;
+using Systemk;
 using Systemk.Exceptions;
 using System.Collections;
 using System.Collections.Generic;
@@ -89,6 +91,22 @@ namespace Tests {
 
             PlayerHP playerHP = PlayerHP.Of(value) * PlayerHP.Of(mulValue);
             Assert.That(playerHP.Value, Is.EqualTo(responsePlayerHP));
+        }
+
+        [Test]
+        [TestCase(TestCodeIni.ScriptBytes)]
+        [Description(
+            "[正常] スクリプト自体のサイズとインスタンスのサイズが、スクリプトバイト未満であること"
+        )]
+        public void ValidScriptCapacity(int value) {
+            PlayerHP playerHP = PlayerHP.Of(100);
+
+            Vector3 v = new Vector3(1f, 2f, 3f);
+            Debug.Log(Marshal.SizeOf(typeof(Vector3)));
+            Debug.Log(Marshal.SizeOf(v));
+
+            Assert.That(Marshal.SizeOf(typeof(PlayerHP)), Is.LessThan(value));
+            Assert.That(Marshal.SizeOf(playerHP), Is.LessThan(value));
         }
 
         [Test]
