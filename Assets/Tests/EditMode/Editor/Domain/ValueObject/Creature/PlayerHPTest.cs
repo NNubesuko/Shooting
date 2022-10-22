@@ -94,15 +94,15 @@ namespace Tests {
         }
 
         [Test]
-        [TestCase(TestCodeIni.ScriptBytes)]
+        [TestCase(100, TestCodeIni.ScriptBytes)]
         [Description(
             "[正常] スクリプト自体のサイズとインスタンスのサイズが、スクリプトバイト未満であること"
         )]
-        public void ValidScriptCapacity(int value) {
-            PlayerHP playerHP = PlayerHP.Of(100);
+        public void ValidScriptCapacity(int value, int scriptBytes) {
+            PlayerHP playerHP = PlayerHP.Of(value);
 
-            Assert.That(Marshal.SizeOf(typeof(PlayerHP)), Is.LessThan(value));
-            Assert.That(Marshal.SizeOf(playerHP), Is.LessThan(value));
+            Assert.That(Marshal.SizeOf(typeof(PlayerHP)), Is.LessThan(scriptBytes));
+            Assert.That(Marshal.SizeOf(playerHP), Is.LessThan(scriptBytes));
         }
 
         [Test]
