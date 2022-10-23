@@ -40,19 +40,6 @@ namespace Tests {
             Assert.That(bullet.Speed, Is.EqualTo(responseBulletSpeed));
         }
 
-        // [Test]
-        // [Description("[異常] 存在しない弾丸を選択した場合に、スローが投げられること")]
-        // public void NotExistBullet() {
-        //     var exception = Assert.Throws<BulletTypeNotFoundException>(() => {
-        //         Bullet bullet = Bullet.Generate((BulletType)999);
-        //     });
-
-        //     Assert.That(
-        //         exception.Message,
-        //         Is.EqualTo(ExceptionMessage.bulletTypeNotFoundExceptionMessage)
-        //     );
-        // }
-
     }
 
 }

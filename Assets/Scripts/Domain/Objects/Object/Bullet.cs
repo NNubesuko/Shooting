@@ -10,7 +10,8 @@ public sealed class Bullet {
     private BulletAP ap;
     private BulletSpeed speed;
 
-    private static Dictionary<BulletType, Bullet> bulletDict = new Dictionary<BulletType, Bullet>(){
+    private static Dictionary<BulletType, Bullet> bulletDict =
+    new Dictionary<BulletType, Bullet>() {
         {
             BulletType.Normal,
             new Bullet(
@@ -40,20 +41,15 @@ public sealed class Bullet {
     }
 
     public override int GetHashCode() {
-        return new { type, ap, speed }.GetHashCode();
+        return (type, ap, speed).GetHashCode();
     }
 
     public override bool Equals(object obj) {
-        if (obj == null) return false;
-        if (obj == this) return true;
+        return obj is Bullet other && this.Equals(other);
+    }
 
-        if (obj is Bullet otherBullet) {
-            if (this.GetHashCode() == otherBullet.GetHashCode()) {
-                return true;
-            }
-        }
-
-        return false;
+    public bool Equals(Bullet other) {
+        return this.GetHashCode() == other.GetHashCode();
     }
 
     public static Bullet Generate(BulletType type) {
