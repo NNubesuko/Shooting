@@ -1,4 +1,6 @@
 using System;
+using System.Runtime.InteropServices;
+using Systemk;
 using Systemk.Exceptions;
 using System.Collections;
 using System.Collections.Generic;
@@ -89,6 +91,18 @@ namespace Tests {
 
             BulletSpeed bulletSpeed = BulletSpeed.Of(value) * BulletSpeed.Of(mulValue);
             Assert.That(bulletSpeed.Value, Is.EqualTo(responseBulletSpeed));
+        }
+
+        [Test]
+        [TestCase(100, TestCodeIni.ScriptBytes)]
+        [Description(
+            "[正常] スクリプト自体のサイズとインスタンスのサイズが、スクリプトバイト以下であること"
+        )]
+        public void ValidScriptCapacity(int value, int scriptBytes) {
+            BulletSpeed bulletSpeed = BulletSpeed.Of(value);
+
+            Assert.That(Marshal.SizeOf(typeof(BulletSpeed)), Is.LessThanOrEqualTo(scriptBytes));
+            Assert.That(Marshal.SizeOf(bulletSpeed), Is.LessThanOrEqualTo(scriptBytes));
         }
 
         [Test]

@@ -2,7 +2,7 @@ using System;
 using Systemk;
 using Systemk.Exceptions;
 
-public sealed class BulletSpeed {
+public struct BulletSpeed {
 
     private int value;
 
@@ -24,29 +24,24 @@ public sealed class BulletSpeed {
         return new BulletSpeed(value);
     }
 
+    public int Value {
+        get { return value; }
+    }
+
     public override string ToString() {
         return $"{value}";
     }
 
     public override int GetHashCode() {
-        return new { value, MIN, MAX }.GetHashCode();
+        return (value, MIN, MAX).GetHashCode();
     }
 
     public override bool Equals(object obj) {
-        if (obj == null) return false;
-        if (obj == this) return true;
-
-        if (obj is BulletSpeed otherBulletSpeed) {
-            if (this.GetHashCode() == otherBulletSpeed.GetHashCode()) {
-                return true;
-            }
-        }
-
-        return false;
+        return obj is BulletSpeed other && this.Equals(other);
     }
 
-    public int Value {
-        get { return value; }
+    public bool Equals(BulletSpeed other) {
+        return this.GetHashCode() == other.GetHashCode();
     }
 
     public static BulletSpeed operator+(BulletSpeed lhSpeed, BulletSpeed rhSpeed) {
@@ -78,6 +73,30 @@ public sealed class BulletSpeed {
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new BulletSpeed(value);
+    }
+
+    public static bool operator==(BulletSpeed lhSpeed, BulletSpeed rhSpeed) {
+        return lhSpeed.Equals(rhSpeed);
+    }
+
+    public static bool operator!=(BulletSpeed lhSpeed, BulletSpeed rhSpeed) {
+        return !(lhSpeed == rhSpeed);
+    }
+
+    public static bool operator<(BulletSpeed lhSpeed, BulletSpeed rhSpeed) {
+        return lhSpeed.Value < rhSpeed.Value;
+    }
+
+    public static bool operator>(BulletSpeed lhSpeed, BulletSpeed rhSpeed) {
+        return lhSpeed.Value > rhSpeed.Value;
+    }
+
+    public static bool operator<=(BulletSpeed lhSpeed, BulletSpeed rhSpeed) {
+        return lhSpeed.Value <= rhSpeed.Value;
+    }
+
+    public static bool operator>=(BulletSpeed lhSpeed, BulletSpeed rhSpeed) {
+        return lhSpeed.Value >= rhSpeed.Value;
     }
 
 }

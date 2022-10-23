@@ -1,4 +1,6 @@
 using System;
+using System.Runtime.InteropServices;
+using Systemk;
 using Systemk.Exceptions;
 using System.Collections;
 using System.Collections.Generic;
@@ -99,6 +101,18 @@ namespace Tests {
 
             BulletAP newBulletAP = BulletAP.Of(value) / BulletAP.Of(divValue);
             Assert.That(newBulletAP.Value, Is.EqualTo(responseBulletAP));
+        }
+
+        [Test]
+        [TestCase(100, TestCodeIni.ScriptBytes)]
+        [Description(
+            "[正常] スクリプト自体のサイズとインスタンスのサイズが、スクリプトバイト以下であること"
+        )]
+        public void ValidScriptCapacity(int value, int scriptBytes) {
+            BulletAP bulletAP = BulletAP.Of(value);
+
+            Assert.That(Marshal.SizeOf(typeof(BulletAP)), Is.LessThanOrEqualTo(scriptBytes));
+            Assert.That(Marshal.SizeOf(bulletAP), Is.LessThanOrEqualTo(scriptBytes));
         }
 
         [Test]

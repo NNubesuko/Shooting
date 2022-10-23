@@ -2,7 +2,7 @@ using System;
 using Systemk;
 using Systemk.Exceptions;
 
-public sealed class BulletAP {
+public struct BulletAP {
 
     private int value;
 
@@ -24,29 +24,24 @@ public sealed class BulletAP {
         return new BulletAP(value);
     }
 
+    public int Value {
+        get { return value; }
+    }
+
     public override string ToString() {
         return $"{value}";
     }
 
     public override int GetHashCode() {
-        return new { value, MIN, MAX }.GetHashCode();
+        return (value, MIN, MAX).GetHashCode();
     }
 
     public override bool Equals(object obj) {
-        if (obj == null) return false;
-        if (obj == this) return true;
-
-        if (obj is BulletAP otherBulletAP) {
-            if (this.GetHashCode() == otherBulletAP.GetHashCode()) {
-                return true;
-            }
-        }
-
-        return false;
+        return obj is BulletAP other && this.Equals(other);
     }
 
-    public int Value {
-        get { return value; }
+    public bool Equals(BulletAP other) {
+        return this.GetHashCode() == other.GetHashCode();
     }
 
     public static BulletAP operator+(BulletAP lhAP, BulletAP rhAP) {
@@ -75,6 +70,30 @@ public sealed class BulletAP {
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new BulletAP(value);
+    }
+
+    public static bool operator==(BulletAP lhAP, BulletAP rhAP) {
+        return lhAP.Equals(rhAP);
+    }
+
+    public static bool operator!=(BulletAP lhAP, BulletAP rhAP) {
+        return !(lhAP == rhAP);
+    }
+
+    public static bool operator<(BulletAP lhAP, BulletAP rhAP) {
+        return lhAP.Value < rhAP.Value;
+    }
+
+    public static bool operator>(BulletAP lhAP, BulletAP rhAP) {
+        return lhAP.Value > rhAP.Value;
+    }
+
+    public static bool operator<=(BulletAP lhAP, BulletAP rhAP) {
+        return lhAP.Value <= rhAP.Value;
+    }
+
+    public static bool operator>=(BulletAP lhAP, BulletAP rhAP) {
+        return lhAP.Value >= rhAP.Value;
     }
 
 }

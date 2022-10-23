@@ -2,7 +2,7 @@ using System;
 using Systemk;
 using Systemk.Exceptions;
 
-public sealed class BulletType {
+public struct BulletType {
 
     private int value;
 
@@ -28,20 +28,15 @@ public sealed class BulletType {
     }
 
     public override int GetHashCode() {
-        return new { value, MIN, MAX }.GetHashCode();
+        return (value, MIN, MAX).GetHashCode();
     }
 
     public override bool Equals(object obj) {
-        if (obj == null) return false;
-        if (obj == this) return true;
+        return obj is BulletType other && this.Equals(other);
+    }
 
-        if (obj is BulletType otherBulletType) {
-            if (this.GetHashCode() == otherBulletType.GetHashCode()) {
-                return true;
-            }
-        }
-
-        return false;
+    public bool Equals(BulletType other) {
+        return this.GetHashCode() == other.GetHashCode();
     }
 
     public static BulletType Of(int value) {
