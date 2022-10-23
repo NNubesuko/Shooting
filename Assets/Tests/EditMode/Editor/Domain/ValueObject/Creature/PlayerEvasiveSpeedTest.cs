@@ -103,13 +103,19 @@ namespace Tests {
         [Test]
         [TestCase(10, TestCodeIni.ScriptBytes)]
         [Description(
-            "[正常] スクリプト自体のサイズとインスタンスのサイズが、スクリプトバイト未満であること"
+            "[正常] スクリプト自体のサイズとインスタンスのサイズが、スクリプトバイト以下であること"
         )]
         public void ValidScriptCapacity(int value, int scriptBytes) {
             PlayerEvasiveSpeed playerEvasiveSpeed = PlayerEvasiveSpeed.Of(value);
 
-            Assert.That(Marshal.SizeOf(typeof(PlayerEvasiveSpeed)), Is.LessThan(scriptBytes));
-            Assert.That(Marshal.SizeOf(playerEvasiveSpeed), Is.LessThan(scriptBytes));
+            Assert.That(
+                Marshal.SizeOf(typeof(PlayerEvasiveSpeed)),
+                Is.LessThanOrEqualTo(scriptBytes)
+            );
+            Assert.That(
+                Marshal.SizeOf(playerEvasiveSpeed),
+                Is.LessThanOrEqualTo(scriptBytes)
+            );
         }
 
         [Test]

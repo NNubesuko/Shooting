@@ -45,6 +45,10 @@ public struct PlayerMoveRange {
         get { return highValue; }
     }
 
+    public float Size {
+        get { return Mathf.Abs(highValue - lowValue); }
+    }
+
     public override string ToString() {
         return $"{lowValue}, {highValue}";
     }
@@ -150,21 +154,20 @@ public struct PlayerMoveRange {
         return !(lhRange == rhRange);
     }
 
-    // public static bool operator<(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
-    //     return lhRange.lowValue < rhRange.lowValue && 
-    //     // return lhRange.Value < rhRange.Value;
-    // }
+    public static bool operator<(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
+        return lhRange.Size < rhRange.Size;
+    }
 
-    // public static bool operator>(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
-    //     // return lhRange.Value > rhRange.Value;
-    // }
+    public static bool operator>(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
+        return lhRange.Size > rhRange.Size;
+    }
 
-    // public static bool operator<=(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
-    //     // return lhRange.Value <= rhRange.Value;
-    // }
+    public static bool operator<=(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
+        return lhRange.Size <= rhRange.Size;
+    }
 
-    // public static bool operator>=(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
-    //     // return lhRange.Value >= rhRange.Value;
-    // }
+    public static bool operator>=(PlayerMoveRange lhRange, PlayerMoveRange rhRange) {
+        return lhRange.Size >= rhRange.Size;
+    }
 
 }
