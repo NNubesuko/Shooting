@@ -17,7 +17,7 @@ public sealed class Bullet {
             new Bullet(
                 BulletType.Normal,
                 BulletAP.Of(10),
-                BulletSpeed.Of(25)
+                BulletSpeed.Of(7)
             )
         },
         {
@@ -25,7 +25,7 @@ public sealed class Bullet {
             new Bullet(
                 BulletType.Head,
                 BulletAP.Of(50),
-                BulletSpeed.Of(10)
+                BulletSpeed.Of(3)
             )
         }
     };
