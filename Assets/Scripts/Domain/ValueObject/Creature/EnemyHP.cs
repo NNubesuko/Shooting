@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Systemk;
 using Systemk.Exceptions;
 using UnityEngine;
 
@@ -44,6 +45,61 @@ public struct EnemyHP {
 
     public bool Equals(EnemyHP other) {
         return this.GetHashCode() == other.GetHashCode();
+    }
+
+    public static EnemyHP operator+(EnemyHP lhHP, EnemyHP rhHP) {
+        int value = lhHP.Value + rhHP.Value;
+        value = Mathk.KeepValueWithinRange(value, MIN, MAX);
+
+        return new EnemyHP(value);
+    }
+
+    public static EnemyHP operator-(EnemyHP lhHP, EnemyHP rhHP) {
+        int value = lhHP.Value - rhHP.Value;
+        value = Mathk.KeepValueWithinRange(value, MIN, MAX);
+
+        return new EnemyHP(value);
+    }
+
+    public static EnemyHP operator*(EnemyHP lhHP, EnemyHP rhHP) {
+        int value = lhHP.Value * rhHP.Value;
+        value = Mathk.KeepValueWithinRange(value, MIN, MAX);
+
+        return new EnemyHP(value);
+    }
+
+    public static EnemyHP operator/(EnemyHP lhHP, EnemyHP rhHP) {
+        if (rhHP.Value == 0)
+            throw new DivideByZeroException(ExceptionMessage.divideByZeroExceptionMessage);
+
+        int value = lhHP.Value / rhHP.Value;
+        value = Mathk.KeepValueWithinRange(value, MIN, MAX);
+
+        return new EnemyHP(value);
+    }
+
+    public static bool operator==(EnemyHP lhHP, EnemyHP rhHP) {
+        return lhHP.Equals(rhHP);
+    }
+
+    public static bool operator!=(EnemyHP lhHP, EnemyHP rhHP) {
+        return !(lhHP == rhHP);
+    }
+
+    public static bool operator<(EnemyHP lhHP, EnemyHP rhHP) {
+        return lhHP.Value < rhHP.Value;
+    }
+
+    public static bool operator>(EnemyHP lhHP, EnemyHP rhHP) {
+        return lhHP.Value > rhHP.Value;
+    }
+
+    public static bool operator<=(EnemyHP lhHP, EnemyHP rhHP) {
+        return lhHP.Value <= rhHP.Value;
+    }
+
+    public static bool operator>=(EnemyHP lhHP, EnemyHP rhHP) {
+        return lhHP.Value >= rhHP.Value;
     }
 
 }
