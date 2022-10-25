@@ -37,22 +37,6 @@ public sealed class Bullet {
         this.speed = speed;
     }
 
-    public override string ToString() {
-        return $"Type: {type}, AP: {ap}, Speed: {speed}";
-    }
-
-    public override int GetHashCode() {
-        return (type, ap, speed).GetHashCode();
-    }
-
-    public override bool Equals(object obj) {
-        return obj is Bullet other && this.Equals(other);
-    }
-
-    public bool Equals(Bullet other) {
-        return this.GetHashCode() == other.GetHashCode();
-    }
-
     public static Bullet Generate(BulletType type) {
         return bulletDict[type];
     }
@@ -67,6 +51,22 @@ public sealed class Bullet {
 
     public BulletSpeed Speed {
         get { return speed; }
+    }
+
+    public override string ToString() {
+        return $"Type: {type}, AP: {ap}, Speed: {speed}";
+    }
+
+    public override int GetHashCode() {
+        return (type, ap, speed).GetHashCode();
+    }
+
+    public override bool Equals(object obj) {
+        return obj is Bullet other && this.Equals(other);
+    }
+
+    public bool Equals(Bullet other) {
+        return this.GetHashCode() == other.GetHashCode();
     }
 
 }
