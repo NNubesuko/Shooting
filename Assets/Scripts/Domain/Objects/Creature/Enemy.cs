@@ -37,4 +37,16 @@ public sealed class Enemy {
         return $"HP: {hp}, AP: {ap}, Speed: {speed}";
     }
 
+    public override int GetHashCode() {
+        return (hp, ap, speed).GetHashCode();
+    }
+
+    public override bool Equals(object obj) {
+        return obj is Enemy other && this.Equals(other);
+    }
+
+    public bool Equals(Enemy other) {
+        return this.GetHashCode() == other.GetHashCode();
+    }
+
 }
