@@ -1,9 +1,5 @@
-namespace Systemk {
+public class TestCodeIni {
 
-    public struct TestCodeIni {
-
-        public const int ScriptBytes = 8;
-
-    }
+    public const int ScriptBytes = 8;
 
 }
