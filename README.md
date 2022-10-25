@@ -13,6 +13,9 @@ Shooting Game
  * ValueObjectのスクリプト自体のサイズとインスタンスのサイズは、8byte以下であること<br>
    -> Unityで2Dゲーム開発に一番使用される構造体であるVector2のスクリプト自体のサイズとインスタンスのサイズが8byteであるため
 
+ * 敵メモ<br>
+   体力(EnemyHP)、攻撃力(EnemyAP)、移動速度(EnemyMoveSpeed)
+
 ### テスト方法
 
 * 2022/10/18 テスト方法（正常）
