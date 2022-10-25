@@ -13,7 +13,7 @@ namespace Tests {
     public class BulletTest {
 
         [Test]
-        [TestCase(10, 25)]
+        [TestCase(10, 7)]
         [Description("[正常] 通常の弾丸を選択した場合に、通常の弾丸が返却されること")]
         public void ValidNormalBullet(int ap, int speed) {
             BulletType responseBulletType = BulletType.Normal;
@@ -28,7 +28,7 @@ namespace Tests {
         }
 
         [Test]
-        [TestCase(50, 10)]
+        [TestCase(50, 3)]
         [Description("[正常] 強化弾を選択した場合に、強化弾が返却されること")]
         public void ValidHeadBullet(int ap, int speed) {
             BulletType responseBulletType = BulletType.Head;
