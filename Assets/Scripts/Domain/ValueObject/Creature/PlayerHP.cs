@@ -3,7 +3,7 @@ using Systemk;
 using Systemk.Exceptions;
 
 /**
- * * プレイヤーの体力を格納するクラス
+ * * プレイヤーの体力を格納する構造体
  */
 public struct PlayerHP {
 

@@ -5,6 +5,9 @@ using Systemk;
 using Systemk.Exceptions;
 using UnityEngine;
 
+/*
+ * * 敵の体力を格納する構造体
+ */
 public struct EnemyHP {
 
     private int value;
