@@ -1,3 +1,4 @@
+using System;
 using Systemk;
 using System.Collections;
 using System.Collections.Generic;
@@ -18,12 +19,19 @@ public class NormalBulletMain : TriggerObject {
     }
 
     protected override void OnTriggerEnterAndStay2DEvent(Collider2D collider) {
-        // TODO: 敵の体力を減らす
-        // hp - bullet.AP.Value
-        Debug.Log(collider);
-        if (collider.gameObject.CompareTag("Wall")) {
-            // Destroy();
+        if (collider.gameObject.CompareTag("Enemy")) {
+            Destroy(collider.gameObject);
+            Destroy(this.gameObject);
         }
+
+        if (collider.gameObject.CompareTag("Wall")) {
+            Destroy(this.gameObject);
+        }
+    }
+
+    private void OnDestroy() {
+        bullet = null;
+        GC.Collect();
     }
 
 }
