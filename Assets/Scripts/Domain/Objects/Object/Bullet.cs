@@ -67,5 +67,5 @@ public sealed class Bullet {
     public BulletSpeed Speed {
         get { return speed; }
     }
-    
+
 }

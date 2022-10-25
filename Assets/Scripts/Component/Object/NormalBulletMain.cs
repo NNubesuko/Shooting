@@ -1,8 +1,9 @@
+using Systemk;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NormalBulletMain : MonoBehaviour {
+public class NormalBulletMain : TriggerObject {
 
     private Bullet bullet;
 
@@ -16,10 +17,12 @@ public class NormalBulletMain : MonoBehaviour {
         transform.position = velocity;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.CompareTag("Enemy")) {
-            // TODO: 敵のHPを減らす
-            // hp - bullet.AP.Value
+    protected override void OnTriggerEnterAndStay2DEvent(Collider2D collider) {
+        // TODO: 敵の体力を減らす
+        // hp - bullet.AP.Value
+        Debug.Log(collider);
+        if (collider.gameObject.CompareTag("Wall")) {
+            // Destroy();
         }
     }
 
