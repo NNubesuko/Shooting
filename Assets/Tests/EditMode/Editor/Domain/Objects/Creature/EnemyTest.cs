@@ -17,13 +17,6 @@ namespace Tests {
         [TestCase(100, 100, 25)]
         [Description("[正常] 生成した敵のパラメータが正常の場合に、敵が格納されること")]
         public void ValidEnemy(int hp, int ap, int speed) {
-            // todo: オブジェクト単位の比較？
-            // 単体テストで比較のテストを行っていないため不安がある
-            // todo: 数値を取り出してプリミティブ型の比較？
-            // 結合テストの段階でプリミティブ型の比較をしていたらきりがない
-            // * -> 単体テストに比較テストを追加し、オブジェクト同士の比較ですむようにすればアクセスする
-            // * 数値の深さを浅くすることができる
-
             EnemyHP enemyHP = EnemyHP.Of(hp);
             EnemyAP enemyAP = EnemyAP.Of(ap);
             EnemyMoveSpeed enemyMoveSpeed = EnemyMoveSpeed.Of(speed);
