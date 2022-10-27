@@ -12,6 +12,10 @@ Shooting Game
 ## メモ
  * ValueObjectのスクリプト自体のサイズとインスタンスのサイズは、8byte以下であること<br>
    -> Unityで2Dゲーム開発に一番使用される構造体であるVector2のスクリプト自体のサイズとインスタンスのサイズが8byteであるため
+ * ValueObjectなどの単独で完結しているオブジェクトを生成する場合は、Ofメソッドを実装し使用する
+ * BulletなどのValueObjectを複数組み合わせたオブジェクトを生成する場合は、Generateメソッドを実装し使用する。<br>
+   -> ①コードとして、ValueObjectと明確な区別をつけるため<br>
+      ②ValueObjectと違いゲームの動きに直接関わるオブジェクトであることが多いため
 
 ### テスト方法
 
@@ -60,15 +64,15 @@ public void TestMethod(引数) {
     :
 [Description("[正常] テスト内容")]
 public void TestMethod(引数) {
-    BulletType responseBulletType = BulletType.Normal;
-    BulletAP responseBulletAP = BulletAP.Of(10);
-    BulletSpeed responseBulletSpeed = BulletSpeed.Of(25);
+    BulletType bulletType = BulletType.Normal;
+    BulletAP bulletAP = BulletAP.Of(10);
+    BulletSpeed bulletSpeed = BulletSpeed.Of(25);
 
-    Bullet bullet = Bullet.Of(引数);
+    Bullet bullet = Bullet.Generate(引数);
 
-    Assert.That(bullet.Type, Is.EqualTo(responseBulletType));
-    Assert.That(bullet.AP, Is.EqualTo(responseBulletAP));
-    Assert.That(bullet.Speed, Is.EqualTo(responseBulletSpeed));
+    Assert.That(bullet.Type, Is.EqualTo(bulletType));
+    Assert.That(bullet.AP, Is.EqualTo(bulletAP));
+    Assert.That(bullet.Speed, Is.EqualTo(bulletSpeed));
 }
 ```
 -> 解決策：GetHashCodeとEqualsをオーバーライドし、比較できる状態にする

@@ -49,4 +49,12 @@ public sealed class Enemy {
         return this.GetHashCode() == other.GetHashCode();
     }
 
+    public static bool operator==(Enemy lhEnemy, Enemy rhEnemy) {
+        return lhEnemy.Equals(rhEnemy);
+    }
+
+    public static bool operator!=(Enemy lhEnemy, Enemy rhEnemy) {
+        return !(lhEnemy == rhEnemy);
+    }
+
 }
