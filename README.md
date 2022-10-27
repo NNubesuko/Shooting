@@ -125,3 +125,17 @@ public static bool operator>=(構造体名 lh, 構造体名 rh) {
     return lh.Value >= rh.Value;
 }
 ```
+
+### スクリプトのサイズテスト
+
+```
+[Test]
+[TestCase(バイト数)]
+[Description("[正常] スクリプト自体のサイズとインスタンスのサイズが、バイト数以下であること")]
+public void ValidScriptBytes(バイト数) {
+    オブジェクトのインスタンスを生成
+
+    Assert.That(Marshal.SizeOf(typeof(スクリプト)), Is.LessThanOrEqualTo(バイト数));
+    Assert.That(Marshal.SizeOf(インスタンス), Is.LessThanOrEqualTo(バイト数));
+}
+```
