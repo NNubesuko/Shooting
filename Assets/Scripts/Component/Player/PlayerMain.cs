@@ -3,38 +3,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMain : PlayerImpl {
+public class PlayerMain : MonoBehaviour {
 
     [Header("体力"), SerializeField] private int hp;
-    [Header("移動速度（遅い）"), SerializeField] private int moveSlowSpeed;
-    [Header("移動速度（普通）"), SerializeField] private int moveSpeed;
-    [Header("移動速度（速い）"), SerializeField] private int moveFastSpeed;
+    [Header("移動速度"), SerializeField] private int moveSpeed;
     [Header("回避速度"), SerializeField] private int evasiveSpeed;
-
+    [Header("回避フレーム"), SerializeField] private int evasiveFrame;
+    
     [Header("水平方向の移動可能範囲")]
-    [SerializeField] private float horizontalLowValue;
-    [SerializeField] private float horizontalHighValue;
+    [SerializeField] private float lowHorizontalValue;
+    [SerializeField] private float highHorizontalValue;
 
     [Header("垂直方向の移動可能範囲")]
-    [SerializeField] private float verticalLowValue;
-    [SerializeField] private float verticalHighValue;
+    [SerializeField] private float lowVerticalValue;
+    [SerializeField] private float highVerticalValue;
+
+    private Player player;
 
     private void Awake() {
-        Init(
+        player = Player.Generate(
             PlayerHP.Of(hp),
-            PlayerMoveSpeed.Of(moveSlowSpeed),
             PlayerMoveSpeed.Of(moveSpeed),
-            PlayerMoveSpeed.Of(moveFastSpeed),
             PlayerEvasiveSpeed.Of(evasiveSpeed),
-            PlayerMoveRange.Of(horizontalLowValue, horizontalHighValue),
-            PlayerMoveRange.Of(verticalLowValue, verticalHighValue)
+            PlayerMoveRange.Of(lowHorizontalValue, highHorizontalValue),
+            PlayerMoveRange.Of(lowVerticalValue, highVerticalValue)
         );
     }
 
     private void Update() {
-        Move();
-        Evasive();
-        Death();
+        player.Move(transform);
+        player.Evasive(transform, evasiveFrame);
+
+        if (player.HP.Value == 0) {
+            Debug.Log("Hello Death");
+        }
     }
 
 }

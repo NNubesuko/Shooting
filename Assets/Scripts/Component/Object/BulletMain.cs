@@ -1,15 +1,16 @@
 using System;
-using Systemk;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NormalBulletMain : TriggerObject {
+public class BulletMain : TriggerObject {
+
+    [SerializeField] private int type;
 
     private Bullet bullet;
 
     private void Awake() {
-        bullet = Bullet.Generate(BulletType.Normal);
+        bullet = Bullet.Generate(BulletType.Of(type));
     }
 
     private void Update() {
@@ -19,8 +20,11 @@ public class NormalBulletMain : TriggerObject {
     }
 
     protected override void OnTriggerEnterAndStay2DEvent(Collider2D collider) {
+        if (transform.parent != null) return;
+
         if (collider.gameObject.CompareTag("Enemy")) {
-            Destroy(collider.gameObject);
+            Enemy enemyScript = collider.GetComponent<EnemyMain>().Enemy;
+            enemyScript.SubHP(EnemyHP.Of(bullet.AP.Value));
             Destroy(this.gameObject);
         }
 

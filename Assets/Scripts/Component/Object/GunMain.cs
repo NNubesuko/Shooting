@@ -6,31 +6,41 @@ public class GunMain : MonoBehaviour {
 
     [SerializeField] private int numberBullets;
     [SerializeField] private GameObject normalBullet;
+    [SerializeField] private int fireRate = 5;
 
     private List<GameObject> bullets = new List<GameObject>();
 
+    private int fireCount = 0;
+
     private void Awake() {
         for (int i = 0; i < numberBullets; i++) {
-            GameObject bullet = Instantiate(normalBullet, this.transform.position, Quaternion.identity);
+            GameObject bullet =
+                Instantiate(normalBullet, this.transform.position, Quaternion.identity);
             bullet.transform.parent = this.gameObject.transform;
             bullets.Add(bullet);
         }
-        StartCoroutine(FireCorutine());
+    }
+
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.Return) && numberBullets != 0) {
+            fireCount = 0;
+            Fire();
+        }
+
+        if (Input.GetKey(KeyCode.Return)) {
+            fireCount++;
+
+            if (fireCount % fireRate == 0 && numberBullets != 0) {
+                fireCount = 0;
+                Fire();
+            }
+        }
     }
 
     private void Fire() {
         numberBullets -= 1;
         bullets[numberBullets].transform.parent = null;
-        bullets[numberBullets].GetComponent<NormalBulletMain>().enabled = true;
-    }
-
-    private IEnumerator FireCorutine() {
-        while (numberBullets != 0) {
-            if (Input.GetKey(KeyCode.Return)) {
-                Fire();
-            }
-            yield return new WaitForSeconds(0.2f);
-        }
+        bullets[numberBullets].GetComponent<BulletMain>().enabled = true;
     }
 
     public int NumberBullets {
