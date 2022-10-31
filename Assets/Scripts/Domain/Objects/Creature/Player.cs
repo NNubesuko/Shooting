@@ -12,7 +12,7 @@ public sealed class Player {
     private PlayerMoveRange moveVerticalRange;
 
     private bool isEvasive = false;
-    private int currentEvasiveFrame = 0;
+    private float currentEvasiveTime = 0;
     private bool canMove = true;
     private Vector2 currentDirection;
 
@@ -85,15 +85,15 @@ public sealed class Player {
         transform.position = currentPosition;
     }
 
-    public void Evasive(Transform transform, int targetEvasiveFrame) {
+    public void Evasive(Transform transform, float targetEvasiveTime) {
         if (Input.GetKeyDown(KeyCode.Space) && Inputk.GetAxis() != Vector2.zero && !isEvasive) {
             canMove = false;
             isEvasive = true;
             currentDirection = Inputk.GetAxis();
         }
 
-        if (isEvasive && currentEvasiveFrame <= targetEvasiveFrame) {
-            currentEvasiveFrame++;
+        if (isEvasive && currentEvasiveTime <= targetEvasiveTime) {
+            currentEvasiveTime += Time.deltaTime;
             MoveHelper(
                 transform,
                 currentDirection.x * evasiveSpeed.Value * Time.deltaTime,
@@ -102,7 +102,7 @@ public sealed class Player {
         } else {
             canMove = true;
             isEvasive = false;
-            currentEvasiveFrame = 0;
+            currentEvasiveTime = 0;
         }
     }
 

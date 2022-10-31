@@ -8,7 +8,7 @@ public class PlayerMain : MonoBehaviour {
     [Header("体力"), SerializeField] private int hp;
     [Header("移動速度"), SerializeField] private int moveSpeed;
     [Header("回避速度"), SerializeField] private int evasiveSpeed;
-    [Header("回避フレーム"), SerializeField] private int evasiveFrame;
+    [Header("回避時間"), SerializeField] private float evasiveTime;
     
     [Header("水平方向の移動可能範囲")]
     [SerializeField] private float lowHorizontalValue;
@@ -32,7 +32,7 @@ public class PlayerMain : MonoBehaviour {
 
     private void Update() {
         player.Move(transform);
-        player.Evasive(transform, evasiveFrame);
+        player.Evasive(transform, evasiveTime);
 
         if (player.HP.Value == 0) {
             Debug.Log("Hello Death");
