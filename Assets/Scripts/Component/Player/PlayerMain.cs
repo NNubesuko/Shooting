@@ -1,6 +1,7 @@
-using Systemk;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Systemk;
 using UnityEngine;
 
 public class PlayerMain : MonoBehaviour {
@@ -35,8 +36,17 @@ public class PlayerMain : MonoBehaviour {
         player.Evasive(transform, evasiveTime);
 
         if (player.HP.Value == 0) {
-            Debug.Log("Hello Death");
+            this.gameObject.SetActive(false);
         }
+    }
+
+    public Player Player {
+        get { return player; }
+    }
+
+    private void OnDisable() {
+        player = null;
+        GC.Collect();
     }
 
 }

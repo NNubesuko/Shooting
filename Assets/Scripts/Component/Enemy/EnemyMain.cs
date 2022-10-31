@@ -26,7 +26,7 @@ public class EnemyMain : TriggerObject {
         enemy.Move(transform, magnification);
 
         if (enemy.HP.Value == 0) {
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
         }
     }
 
@@ -35,11 +35,19 @@ public class EnemyMain : TriggerObject {
     }
 
     protected override void OnTriggerEnter2DEvent(Collider2D collider) {
-        if (collider.gameObject.CompareTag("Player")) {
+        GameObject gameObject = collider.gameObject;
+
+        if (gameObject.name == "DownWall") {
+            this.gameObject.SetActive(false);
+        }
+
+        if (gameObject.CompareTag("Player")) {
+            Player playerScript = gameObject.GetComponent<PlayerMain>().Player;
+            playerScript.SubHP(PlayerHP.Of(enemy.AP.Value));
         }
     }
 
-    private void OnDestroy() {
+    private void OnDisable() {
         enemy = null;
         GC.Collect();
     }

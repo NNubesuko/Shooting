@@ -40,7 +40,7 @@ public class GunMain : MonoBehaviour {
         fireCount = 0f;
         numberBullets -= 1;
         bullets[numberBullets].transform.parent = null;
-        bullets[numberBullets].GetComponent<BulletMain>().enabled = true;
+        bullets[numberBullets].SetActive(true);
     }
 
     public int NumberBullets {

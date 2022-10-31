@@ -25,15 +25,15 @@ public class BulletMain : TriggerObject {
         if (collider.gameObject.CompareTag("Enemy")) {
             Enemy enemyScript = collider.GetComponent<EnemyMain>().Enemy;
             enemyScript.SubHP(EnemyHP.Of(bullet.AP.Value));
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
         }
 
         if (collider.gameObject.CompareTag("Wall")) {
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
         }
     }
 
-    private void OnDestroy() {
+    private void OnDisable() {
         bullet = null;
         GC.Collect();
     }

@@ -106,6 +106,10 @@ public sealed class Player {
         }
     }
 
+    public void SubHP(PlayerHP subHP) {
+        hp -= subHP;
+    }
+
     public PlayerHP HP {
         get { return hp; }
     }
