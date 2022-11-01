@@ -1,5 +1,4 @@
 using System;
-using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,7 +19,7 @@ public class EnemyGenerator : MonoBehaviour {
         jsonPath = Application.dataPath + "/Resouces/Enemy.json";
     }
 
-    // TODO: 敵を複数隊生成できるように対応させる
+    // TODO: 敵を複数体生成できるように対応させる
 
     private void Start() {
         json = ReadJsonFile(jsonPath);
@@ -46,11 +45,11 @@ public class EnemyGenerator : MonoBehaviour {
         string json = "";
 
         try {
-            using (StreamReader sr = new StreamReader(path)) {
+            using (System.IO.StreamReader sr = new System.IO.StreamReader(path)) {
                 json = sr.ReadToEnd();
                 sr.Close();
             }
-        } catch (IOException e) {
+        } catch (System.IO.IOException e) {
             Debug.Log(e.Message);
         }
 

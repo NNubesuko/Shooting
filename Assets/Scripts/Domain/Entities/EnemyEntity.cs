@@ -15,3 +15,10 @@ public class EnemyEntity {
     public Vector2 initPosition;
 
 }
+
+[Serializable]
+public class EnemyEntities {
+
+    public EnemyEntity[] enemyEntities;
+
+}
