@@ -1,0 +1,16 @@
+{
+    "hp": 20,
+    "ap": 10,
+    "moveSpeed": 3,
+    "magnification": 1.5,
+    "moveTargetTable": [
+        { "x": -5, "y": 6 },
+        { "x": -5, "y": 0 },
+        { "x": -5, "y": -4 }
+    ],
+    "generateTime": 1,
+    "initPosition": {
+        "x": -5,
+        "y": 5
+    }
+}

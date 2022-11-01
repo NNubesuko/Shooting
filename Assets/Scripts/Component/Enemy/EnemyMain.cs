@@ -11,14 +11,17 @@ public class EnemyMain : TriggerObject {
     [SerializeField] private float magnification;
     [SerializeField] private Vector2[] moveTargetTable;
 
-    private Enemy enemy;
+    private Enemy enemy = null;
 
-    private void Awake() {
-        enemy = Enemy.Generate(
-            EnemyHP.Of(hp),
-            EnemyAP.Of(ap),
-            EnemyMoveSpeed.Of(moveSpeed)
-        );
+    // private void Awake() {
+    //     // enemy = Enemy.Generate(
+    //     //     EnemyHP.Of(hp),
+    //     //     EnemyAP.Of(ap),
+    //     //     EnemyMoveSpeed.Of(moveSpeed)
+    //     // );
+    // }
+
+    private void OnEnable() {
         StartCoroutine(enemy.TableControl(moveTargetTable, 2f));
     }
 
@@ -30,8 +33,17 @@ public class EnemyMain : TriggerObject {
         }
     }
 
+    public void SetMagnification(float magnification) {
+        this.magnification = magnification;
+    }
+
+    public void SetMoveTargetTable(Vector2[] moveTargetTable) {
+        this.moveTargetTable = moveTargetTable;
+    }
+
     public Enemy Enemy {
         get { return enemy; }
+        set { enemy = value; }
     }
 
     protected override void OnTriggerEnter2DEvent(Collider2D collider) {
