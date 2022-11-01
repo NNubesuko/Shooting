@@ -13,7 +13,7 @@ public class Test : MonoBehaviour {
 
     private void Update() {
         float fps = 1f / Time.deltaTime;
-        fpsText.text = fps.ToString("0.0") + " MB";
+        fpsText.text = fps.ToString("0.0") + " FPS";
 
         float used = ( Profiler.GetTotalAllocatedMemoryLong() >> 10 ) / 1024f;
         float unused = ( Profiler.GetTotalUnusedReservedMemoryLong() >> 10 ) / 1024f;
@@ -22,6 +22,18 @@ public class Test : MonoBehaviour {
         usedText.text = used.ToString("0.0") + " MB";
         unusedText.text = unused.ToString("0.0") + " MB";
         totalText.text = total.ToString("0.0") + " MB";
+
+        EndGame();
+    }
+
+    private void EndGame() {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+            #else
+                Application.Quit();
+            #endif
+        }
     }
 
 }
