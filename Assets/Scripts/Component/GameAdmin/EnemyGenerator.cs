@@ -19,15 +19,14 @@ public class EnemyGenerator : MonoBehaviour {
         jsonPath = Application.dataPath + "/Resouces/Enemy.json";
     }
 
-    // TODO: 敵を複数体生成できるように対応させる
-
     private void Start() {
         json = ReadJsonFile(jsonPath);
-        EnemyEntity enemyEntity = JsonUtility.FromJson<EnemyEntity>(json);
+        EnemyEntities enemyEntities = JsonUtility.FromJson<EnemyEntities>(json);
 
-        GameObject enemyObject = InitEnemyObject(enemyEntity);
-
-        enemyPairs.Add(new EnemyPair(enemyEntity.generateTime, enemyObject));
+        foreach (EnemyEntity enemyEntity in enemyEntities.entities) {
+            GameObject enemyObject = InitEnemyObject(enemyEntity);
+            enemyPairs.Add(new EnemyPair(enemyEntity.generateTime, enemyObject));
+        }
     }
 
     private void Update() {

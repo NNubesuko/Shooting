@@ -1,16 +1,52 @@
 {
-    "hp": 20,
-    "ap": 10,
-    "moveSpeed": 3,
-    "magnification": 1.5,
-    "moveTargetTable": [
-        { "x": -5, "y": 6 },
-        { "x": -5, "y": 0 },
-        { "x": -5, "y": -4 }
-    ],
-    "generateTime": 1,
-    "initPosition": {
-        "x": -5,
-        "y": 5
-    }
+    "entities": [
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 3,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 6 },
+                { "x": -5, "y": 0 },
+                { "x": -5, "y": -4 }
+            ],
+            "generateTime": 1,
+            "initPosition": {
+                "x": -5,
+                "y": 5
+            }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 3,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -4, "y": 6 },
+                { "x": -4, "y": 0 },
+                { "x": -4, "y": -4 }
+            ],
+            "generateTime": 1.5,
+            "initPosition": {
+                "x": -4,
+                "y": 5
+            }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 3,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -3, "y": 6 },
+                { "x": -3, "y": 0 },
+                { "x": -3, "y": -4 }
+            ],
+            "generateTime": 2,
+            "initPosition": {
+                "x": -3,
+                "y": 5
+            }
+        }
+    ]
 }
