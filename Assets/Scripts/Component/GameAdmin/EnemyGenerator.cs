@@ -9,9 +9,7 @@ public class EnemyGenerator : MonoBehaviour {
 
     private string jsonPath;
     private string json;
-
     private List<EnemyPair> enemyPairs = new List<EnemyPair>();
-
     private float currentTime = 0f;
     private int currnetGenerateEnemyIndex = 0;
 

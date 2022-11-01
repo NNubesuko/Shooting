@@ -13,14 +13,6 @@ public class EnemyMain : TriggerObject {
 
     private Enemy enemy = null;
 
-    // private void Awake() {
-    //     // enemy = Enemy.Generate(
-    //     //     EnemyHP.Of(hp),
-    //     //     EnemyAP.Of(ap),
-    //     //     EnemyMoveSpeed.Of(moveSpeed)
-    //     // );
-    // }
-
     private void OnEnable() {
         StartCoroutine(enemy.TableControl(moveTargetTable, 2f));
     }

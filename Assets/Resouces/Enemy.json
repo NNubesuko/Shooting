@@ -6,15 +6,12 @@
             "moveSpeed": 3,
             "magnification": 1.5,
             "moveTargetTable": [
-                { "x": -5, "y": 6 },
-                { "x": -5, "y": 0 },
-                { "x": -5, "y": -4 }
+                { "x": -3, "y": 5 },
+                { "x": -3, "y": 2 },
+                { "x": -3, "y": -7 }
             ],
-            "generateTime": 1,
-            "initPosition": {
-                "x": -5,
-                "y": 5
-            }
+            "generateTime": 3,
+            "initPosition": { "x": -3, "y": 7 }
         },
         {
             "hp": 20,
@@ -22,15 +19,12 @@
             "moveSpeed": 3,
             "magnification": 1.5,
             "moveTargetTable": [
-                { "x": -4, "y": 6 },
-                { "x": -4, "y": 0 },
-                { "x": -4, "y": -4 }
+                { "x": 3, "y": 5 },
+                { "x": 3, "y": 2 },
+                { "x": 3, "y": -7 }
             ],
-            "generateTime": 1.5,
-            "initPosition": {
-                "x": -4,
-                "y": 5
-            }
+            "generateTime": 5,
+            "initPosition": { "x": 3, "y": 7 }
         },
         {
             "hp": 20,
@@ -38,15 +32,369 @@
             "moveSpeed": 3,
             "magnification": 1.5,
             "moveTargetTable": [
-                { "x": -3, "y": 6 },
-                { "x": -3, "y": 0 },
-                { "x": -3, "y": -4 }
+                { "x": -4, "y": 5 },
+                { "x": -4, "y": 2 },
+                { "x": -4, "y": -7 }
             ],
-            "generateTime": 2,
-            "initPosition": {
-                "x": -3,
-                "y": 5
-            }
+            "generateTime": 8,
+            "initPosition": { "x": -4, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 3,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": 4, "y": 5 },
+                { "x": 4, "y": 2 },
+                { "x": 4, "y": -7 }
+            ],
+            "generateTime": 11,
+            "initPosition": { "x": 4, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 3,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": -5, "y": 2 },
+                { "x": -5, "y": -7 }
+            ],
+            "generateTime": 15,
+            "initPosition": { "x": -5, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 3,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": 5, "y": 5 },
+                { "x": 5, "y": 2 },
+                { "x": 5, "y": -7 }
+            ],
+            "generateTime": 19,
+            "initPosition": { "x": 5, "y": 7 }
+        },
+
+
+
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 20,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 20.3,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 20.6,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 20.9,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 21.2,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 21.5,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 21.8,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 22.1,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 22.4,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 22.7,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 23,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 23.3,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 23.6,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 23.9,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 24.2,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 24.5,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 24.8,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 25.1,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 25.4,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 25.7,
+            "initPosition": { "x": -7, "y": 7 }
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 2,
+            "magnification": 1.5,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 5, "y": 2 },
+                { "x": 9, "y": 0 },
+                { "x": 9, "y": -7 }
+            ],
+            "generateTime": 26,
+            "initPosition": { "x": -7, "y": 7 }
         }
     ]
 }
