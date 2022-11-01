@@ -53,13 +53,15 @@ public class EnemyGenerator : MonoBehaviour {
     private GameObject InitEnemyObject(EnemyEntity enemyEntity) {
         GameObject enemyObject = Instantiate(enemy, enemyEntity.initPosition, Quaternion.identity);
         EnemyMain enemyMain = enemyObject.GetComponent<EnemyMain>();
-        enemyMain.Enemy = Enemy.Generate(
+
+        enemyMain.Init(
             EnemyHP.Of(enemyEntity.hp),
             EnemyAP.Of(enemyEntity.ap),
-            EnemyMoveSpeed.Of(enemyEntity.moveSpeed)
+            EnemyMoveSpeed.Of(enemyEntity.moveSpeed),
+            enemyEntity.magnification,
+            enemyEntity.moveTargetSwitchingInterval,
+            enemyEntity.moveTargetTable
         );
-        enemyMain.SetMagnification(enemyEntity.magnification);
-        enemyMain.SetMoveTargetTable(enemyEntity.moveTargetTable);
 
         return enemyObject;
     }

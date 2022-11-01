@@ -20,6 +20,7 @@ public class BulletMain : TriggerObject {
     }
 
     protected override void OnTriggerEnterAndStay2DEvent(Collider2D collider) {
+        if (bullet == null) return;
         if (transform.parent != null) return;
 
         if (collider.gameObject.CompareTag("Enemy")) {

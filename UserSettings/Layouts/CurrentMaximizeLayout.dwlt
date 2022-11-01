@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 164
+  controlID: 9468
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 165
+  controlID: 9469
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,8 +162,8 @@ MonoBehaviour:
     y: 0
     width: 906
     height: 486
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 5}
   m_Panes:
   - {fileID: 5}
@@ -417,9 +417,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.7518868, y: -0.1276528, z: -0.099656746}
+    m_Target: {x: 112.96328, y: 316.18338, z: 0.6879732}
     speed: 2
-    m_Value: {x: -3.7518868, y: -0.1276528, z: -0.099656746}
+    m_Value: {x: 112.96328, y: 316.18338, z: 0.6879732}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -470,9 +470,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10.726671
+    m_Target: 154.13799
     speed: 2
-    m_Value: 10.726671
+    m_Value: 154.13799
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1394,7 +1394,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -1434,7 +1434,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 89
+  controlID: 9409
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1459,7 +1459,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 90
+  controlID: 9410
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1519,7 +1519,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: f4f8ffff2afbffff
+      m_ExpandedIDs: faaaffff36f5ffffdef5ffffd8f7ffff2afbffff14950000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1610,22 +1610,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefab
+    - Assets/Scripts/Component/UI
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 46
   m_LastFolders:
-  - Assets/Prefab
+  - Assets/Scripts/Component/UI
   m_LastFoldersGridSize: 46
   m_LastProjectPath: D:\Program\Unity\Unity_2021_3_1f1\ShootingGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e06c0000
-    m_LastClickedID: 27872
-    m_ExpandedIDs: 000000004c6b00004e6b0000506b0000526b0000546b0000566b0000586b00005a6b00005c6b00005e6b0000606b0000626b0000646b0000666b0000686b0000
+    m_SelectedIDs: 106d0000
+    m_LastClickedID: 27920
+    m_ExpandedIDs: 00000000566b0000586b00005a6b00005c6b00005e6b0000606b0000626b0000646b0000666b0000686b00006a6b00006c6b00006e6b0000706b0000726b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1653,7 +1653,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004c6b00004e6b0000506b0000526b0000546b0000566b0000586b00005a6b00005c6b00005e6b0000606b0000626b0000646b0000666b0000686b0000
+    m_ExpandedIDs: 00000000566b0000586b00005a6b00005c6b00005e6b0000606b0000626b0000646b0000666b0000686b00006a6b00006c6b00006e6b0000706b0000726b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1678,9 +1678,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 6e6d0000
-    m_LastClickedInstanceID: 28014
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1728,8 +1728,8 @@ MonoBehaviour:
     y: 464
     width: 602
     height: 483
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -1793,7 +1793,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 11413
+    ID: 520
     splitterInitialOffset: 345
     currentActiveSplitter: -1
     realSizes:
@@ -6778,46 +6778,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1015
       parentUniqueId: EditMode.dll/Tests/PlayerTest/[EditMode][Tests.PlayerTest.ValidPlayer][suite]
-    - id: 1176
-      uniqueId: EditMode.dll/Tests/[EditMode][Tests.StructTest][suite]
-      name: StructTest
-      fullName: Tests.StructTest
-      resultStatus: 1
-      duration: 0.0194238
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1179
-      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1177
-      uniqueId: EditMode.dll/Tests/StructTest/[EditMode][Tests.StructTest.TestMethod]
-      name: TestMethod
-      fullName: Tests.StructTest.TestMethod
-      resultStatus: 1
-      duration: 0.0004691
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: "\u5BB9\u91CF\u30C6\u30B9\u30C8"
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1176
-      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.StructTest][suite]
-    m_ResultText: "InvalidPlayer (0.001s)\n[\u7570\u5E38] \u751F\u6210\u3057\u305F\u30D7\u30EC\u30A4\u30E4\u30FC\u306E\u30D1\u30E9\u30E1\u30FC\u30BF\u304C\u7570\u5E38\u306E\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
+    m_ResultText: Tests (2.393s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 432}
-      m_SelectedIDs: 773dd3c1
-      m_LastClickedID: -1043120777
-      m_ExpandedIDs: 4e5e5887d898d488ffe43c8ede38d89408d147993cdc509e319f829fa3c63ba13316a1a1c9c6a3a5783a69a67ae2f2b4a8d000b51de956b991f282be773dd3c1e75e21c2d6cd41c5188c80d0fe6bdfd0a11615dfb7cadfdfb70143e3a11cb9eedb8f0ef235932af92733b0fb2663a4fcbe31c0fd092f8e05b492650bb602f50bd9c69d1b8bce34243cf347284500742830a1d328c141672f10bb2a3c26f3073d105db24bce42cc4e893b8f542a3da05475407857e57d0f68089961688db7157c4b5ea47cffffff7f
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 3cdc509e
+      m_LastClickedID: -1638867908
+      m_ExpandedIDs: 4e5e5887d898d488ffe43c8ede38d89408d14799319f829fa3c63ba13316a1a1c9c6a3a5783a69a67ae2f2b4a8d000b51de956b991f282be773dd3c1e75e21c2d6cd41c5188c80d0fe6bdfd0b15a52dca11615dfb7cadfdfb70143e3a11cb9eedb8f0ef235932af92733b0fb2663a4fcbe31c0fd092f8e05b492650bb602f50bd9c69d1b8bce34243cf347284500742830a1d328c141672f10bb2a3c26f3073d105db24bce42cc4e893b8f542a3da05475407857e57d0f68089961688db7157c4b5ea47cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -6903,8 +6870,8 @@ MonoBehaviour:
     m_CachedPref: -160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 28014
-  m_LastVerticalScrollValue: 695
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

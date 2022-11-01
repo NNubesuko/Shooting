@@ -36,11 +36,12 @@ public sealed class Enemy {
         hp -= subHP;
     }
 
-    public IEnumerator TableControl(Vector2[] moveTargetTable, float exchageInterval) {
+    public IEnumerator TableControl(Vector2[] moveTargetTable, float moveTargetSwitchingInterval) {
         int index = 0;
         while (true) {
             target = moveTargetTable[index];
-            yield return new WaitForSeconds(exchageInterval);
+            yield return new WaitForSeconds(moveTargetSwitchingInterval);
+            Debug.Log(moveTargetSwitchingInterval);
             index = (index + 1) % moveTargetTable.Length;
         }
     }

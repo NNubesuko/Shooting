@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Profiling;
 
-public class Test : MonoBehaviour {
+public class ProfilingUI : MonoBehaviour {
 
     [SerializeField] private Text fpsText;
     [SerializeField] private Text usedText;
@@ -22,18 +22,6 @@ public class Test : MonoBehaviour {
         usedText.text = used.ToString("0.0") + " MB";
         unusedText.text = unused.ToString("0.0") + " MB";
         totalText.text = total.ToString("0.0") + " MB";
-
-        EndGame();
-    }
-
-    private void EndGame() {
-        if (Input.GetKeyDown(KeyCode.Escape)) {
-            #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-            #else
-                Application.Quit();
-            #endif
-        }
     }
 
 }

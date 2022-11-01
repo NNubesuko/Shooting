@@ -5,37 +5,52 @@ using UnityEngine;
 
 public class EnemyMain : TriggerObject {
 
-    [SerializeField] private int hp;
-    [SerializeField] private int ap;
-    [SerializeField] private int moveSpeed;
-    [SerializeField] private float magnification;
-    [SerializeField] private Vector2[] moveTargetTable;
+    // TODO: ValueObjectのEnemyPointを実装する
 
-    private Enemy enemy = null;
+    // [SerializeField] private int hp;
+    // [SerializeField] private int ap;
+    // [SerializeField] private int moveSpeed;
+    // [SerializeField] private float magnification;
+    // [SerializeField] private float moveTargetSwitchingInterval;
+    // [SerializeField] private Vector2[] moveTargetTable;
+
+    private float magnification;
+    private float moveTargetSwitchingInterval;
+    private Vector2[] moveTargetTable;
+
+    private Enemy enemy;
+    private PlayerUI playerUI;
 
     private void OnEnable() {
-        StartCoroutine(enemy.TableControl(moveTargetTable, 2f));
+        StartCoroutine(enemy.TableControl(moveTargetTable, moveTargetSwitchingInterval));
+        playerUI = GameObject.Find("GameAdmin").GetComponent<PlayerUI>();
     }
 
     private void Update() {
         enemy.Move(transform, magnification);
 
         if (enemy.HP.Value == 0) {
+            playerUI.AddScore(10);
             this.gameObject.SetActive(false);
         }
     }
 
-    public void SetMagnification(float magnification) {
+    public void Init(
+        EnemyHP enemyHP,
+        EnemyAP enemyAP,
+        EnemyMoveSpeed enemyMoveSpeed,
+        float magnification,
+        float moveTargetSwitchingInterval,
+        Vector2[] moveTargetTable
+    ) {
+        enemy = Enemy.Generate(enemyHP, enemyAP, enemyMoveSpeed);
         this.magnification = magnification;
-    }
-
-    public void SetMoveTargetTable(Vector2[] moveTargetTable) {
+        this.moveTargetSwitchingInterval = moveTargetSwitchingInterval;
         this.moveTargetTable = moveTargetTable;
     }
 
     public Enemy Enemy {
         get { return enemy; }
-        set { enemy = value; }
     }
 
     protected override void OnTriggerEnter2DEvent(Collider2D collider) {
