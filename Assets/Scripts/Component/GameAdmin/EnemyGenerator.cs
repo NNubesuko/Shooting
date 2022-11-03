@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnemyGenerator : MonoBehaviour {
 
     [SerializeField] private GameObject enemy;
+    [SerializeField] private PlayerMain playerMain;
 
     private string jsonName = "Enemy";
     private string json;
@@ -61,7 +62,8 @@ public class EnemyGenerator : MonoBehaviour {
             EnemyPoint.Of(enemyEntity.point),
             enemyEntity.magnification,
             enemyEntity.moveTargetSwitchingInterval,
-            enemyEntity.moveTargetTable
+            enemyEntity.moveTargetTable,
+            playerMain.Player
         );
 
         return enemyObject;
