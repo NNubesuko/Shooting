@@ -8,16 +8,16 @@ public class EnemyGenerator : MonoBehaviour {
     [SerializeField] private GameObject enemy;
     [SerializeField] private PlayerMain playerMain;
 
-    private string jsonName = "Enemy";
-    private string json;
+    private string enemyJsonName = "Enemy";
+    private string enemyJson;
     private List<EnemyPair> enemyPairs = new List<EnemyPair>();
     private float currentTime = 0f;
     private int currnetGenerateEnemyIndex = 0;
 
     private void Awake() {
-        json = Resources.Load<TextAsset>(jsonName).ToString();
+        enemyJson = Resources.Load<TextAsset>(enemyJsonName).ToString();
 
-        EnemyEntities enemyEntities = JsonUtility.FromJson<EnemyEntities>(json);
+        EnemyEntities enemyEntities = JsonUtility.FromJson<EnemyEntities>(enemyJson);
 
         foreach (EnemyEntity enemyEntity in enemyEntities.entities) {
             GameObject enemyObject = InitEnemyObject(enemyEntity);
