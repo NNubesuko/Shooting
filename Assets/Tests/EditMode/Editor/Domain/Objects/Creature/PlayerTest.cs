@@ -14,9 +14,9 @@ namespace Tests {
     public class PlayerTest {
 
         [Test]
-        [TestCase(0, 0, 0, -100, -99, -100, -99)]
-        [TestCase(50, 5, 50, -50, 50, -50, 50)]
-        [TestCase(100, 10, 100, -100, 100, -100, 100)]
+        [TestCase(0, 0, 0, -100, -99, -100, -99, 0)]
+        [TestCase(50, 5, 50, -50, 50, -50, 50, 0)]
+        [TestCase(100, 10, 100, -100, 100, -100, 100, 0)]
         [Description("[正常] 生成したプレイヤーのパラメータが正常の場合に、格納されること")]
         public void ValidPlayer(
             int hp,
@@ -25,7 +25,8 @@ namespace Tests {
             float lowHorizontalRange,
             float highHorizontalRange,
             float lowVerticalRange,
-            float highVerticalRange
+            float highVerticalRange,
+            int score
         ) {
             PlayerHP playerHP = PlayerHP.Of(hp);
             PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(moveSpeed);
@@ -38,12 +39,15 @@ namespace Tests {
                 lowVerticalRange,
                 highVerticalRange
             );
+            PlayerScore playerScore = PlayerScore.Of(score);
+
             Player player = Player.Generate(
                 playerHP,
                 playerMoveSpeed,
                 playerEvasiveSpeed,
                 moveHorizontalRange,
-                moveVerticalRange
+                moveVerticalRange,
+                playerScore
             );
 
             Assert.That(player.HP, Is.EqualTo(playerHP));
@@ -54,11 +58,12 @@ namespace Tests {
         }
 
         [Test]
-        [TestCase(-100, 10, 100, -100, 100, -100, 100)]
-        [TestCase(100, -10, 100, -100, 100, -100, 100)]
-        [TestCase(100, 10, -100, -100, 100, -100, 100)]
-        [TestCase(100, 10, 100, 100, -100, -100, 100)]
-        [TestCase(100, 10, 100, -100, 100, 100, -100)]
+        [TestCase(-100, 10, 100, -100, 100, -100, 100, 0)]
+        [TestCase(100, -10, 100, -100, 100, -100, 100, 0)]
+        [TestCase(100, 10, -100, -100, 100, -100, 100, 0)]
+        [TestCase(100, 10, 100, 100, -100, -100, 100, 0)]
+        [TestCase(100, 10, 100, -100, 100, 100, -100, 0)]
+        [TestCase(100, 10, 100, -100, 100, 100, -100, -1)]
         [Description("[異常] 生成したプレイヤーのパラメータが異常の場合に、スローが投げられること")]
         public void InvalidPlayer(
             int hp,
@@ -67,7 +72,8 @@ namespace Tests {
             float lowHorizontalRange,
             float highHorizontalRange,
             float lowVerticalRange,
-            float highVerticalRange
+            float highVerticalRange,
+            int score
         ) {
             var exception = Assert.Throws<ArgumentException>(() => {
                 PlayerHP playerHP = PlayerHP.Of(hp);
@@ -81,12 +87,15 @@ namespace Tests {
                     lowVerticalRange,
                     highVerticalRange
                 );
+                PlayerScore playerScore = PlayerScore.Of(score);
+
                 Player player = Player.Generate(
                     playerHP,
                     playerMoveSpeed,
                     playerEvasiveSpeed,
                     moveHorizontalRange,
-                    moveVerticalRange
+                    moveVerticalRange,
+                    playerScore
                 );
             });
 

@@ -10,6 +10,7 @@ public sealed class Player {
     private PlayerEvasiveSpeed evasiveSpeed;
     private PlayerMoveRange moveHorizontalRange;
     private PlayerMoveRange moveVerticalRange;
+    private PlayerScore score;
 
     private bool isEvasive = false;
     private float currentEvasiveTime = 0;
@@ -21,13 +22,15 @@ public sealed class Player {
         PlayerMoveSpeed moveSpeed,
         PlayerEvasiveSpeed evasiveSpeed,
         PlayerMoveRange moveHorizontalRange,
-        PlayerMoveRange moveVerticalRange
+        PlayerMoveRange moveVerticalRange,
+        PlayerScore score
     ) {
         this.hp = hp;
         this.moveSpeed = moveSpeed;
         this.evasiveSpeed = evasiveSpeed;
         this.moveHorizontalRange = moveHorizontalRange;
         this.moveVerticalRange = moveVerticalRange;
+        this.score = score;
     }
 
     public static Player Generate(
@@ -35,9 +38,10 @@ public sealed class Player {
         PlayerMoveSpeed moveSpeed,
         PlayerEvasiveSpeed evasiveSpeed,
         PlayerMoveRange horizontalRange,
-        PlayerMoveRange verticalRange
+        PlayerMoveRange verticalRange,
+        PlayerScore score
     ) {
-        return new Player(hp, moveSpeed, evasiveSpeed, horizontalRange, verticalRange);
+        return new Player(hp, moveSpeed, evasiveSpeed, horizontalRange, verticalRange, score);
     }
 
     public void Move(Transform transform) {
@@ -110,6 +114,10 @@ public sealed class Player {
         hp -= subHP;
     }
 
+    public void AddScore(PlayerScore addScore) {
+        score += addScore;
+    }
+
     public PlayerHP HP {
         get { return hp; }
     }
@@ -128,6 +136,10 @@ public sealed class Player {
 
     public PlayerMoveRange MoveVerticalRange {
         get { return moveVerticalRange; }
+    }
+
+    public PlayerScore Score {
+        get { return score; }
     }
 
     public override string ToString() {

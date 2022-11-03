@@ -10,11 +10,13 @@ public class EnemyMain : TriggerObject {
     private Vector2[] moveTargetTable;
 
     private Enemy enemy;
-    private PlayerUI playerUI;
+    // private PlayerUI playerUI;
+    private Player player;
 
     private void OnEnable() {
         StartCoroutine(enemy.TableControl(moveTargetTable, moveTargetSwitchingInterval));
-        playerUI = GameObject.Find("GameAdmin").GetComponent<PlayerUI>();
+        player = GameObject.Find("Player").GetComponent<PlayerMain>().Player;
+        // playerUI = GameObject.Find("GameAdmin").GetComponent<PlayerUI>();
     }
 
     private void Update() {
@@ -22,7 +24,8 @@ public class EnemyMain : TriggerObject {
 
         if (enemy.HP.Value == 0) {
             // プレイヤーから攻撃され体力が０になった場合のみ、スコアを加算する
-            playerUI.AddScore(enemy.Point.Value);
+            // playerUI.AddScore(enemy.Point.Value);
+            player.AddScore(PlayerScore.Of(enemy.Point.Value));
             this.gameObject.SetActive(false);
         }
     }

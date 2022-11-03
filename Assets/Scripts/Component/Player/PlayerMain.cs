@@ -27,7 +27,8 @@ public class PlayerMain : MonoBehaviour {
             PlayerMoveSpeed.Of(moveSpeed),
             PlayerEvasiveSpeed.Of(evasiveSpeed),
             PlayerMoveRange.Of(lowHorizontalValue, highHorizontalValue),
-            PlayerMoveRange.Of(lowVerticalValue, highVerticalValue)
+            PlayerMoveRange.Of(lowVerticalValue, highVerticalValue),
+            PlayerScore.Of(0)
         );
     }
 

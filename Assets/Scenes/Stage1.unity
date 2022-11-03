@@ -1863,6 +1863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ca76c8c49efe3c448e3274dd49acd52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerMain: {fileID: 655611692}
   scoreText: {fileID: 2000180661}
   playerHPBar: {fileID: 435140801}
 --- !u!1 &1912101482
