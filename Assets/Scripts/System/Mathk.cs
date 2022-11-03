@@ -7,6 +7,8 @@ namespace Systemk {
 
     public class Mathk {
 
+        // * 加算、減算、乗算、除算に分けてしまっているため、もっと良い方法を見つける
+
         public static int OverflowControlDuringAddition(int lhValue, int rhValue) {
             int value = 0;
 
@@ -21,6 +23,20 @@ namespace Systemk {
             return value;
         }
 
+        public static int OverflowControlDuringSubtraction(int lhValue, int rhValue) {
+            int value = 0;
+
+            try {
+                checked {
+                    value = lhValue - rhValue;
+                }
+            } catch (OverflowException) {
+                value = int.MinValue;
+            }
+
+            return value;
+        }
+
         public static int OverflowControlDuringMultiplication(int lhValue, int rhValue) {
             int value = 0;
 
@@ -30,6 +46,20 @@ namespace Systemk {
                 }
             } catch (OverflowException) {
                 value = int.MaxValue;
+            }
+
+            return value;
+        }
+        
+        public static int OverflowControlDuringDivision(int lhValue, int rhValue) {
+            int value = 0;
+
+            try {
+                checked {
+                    value = lhValue / rhValue;
+                }
+            } catch (OverflowException) {
+                value = int.MinValue;
             }
 
             return value;
