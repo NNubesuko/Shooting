@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class GameAdmin : MonoBehaviour {
 
+    private void Awake() {
+        Cursor.visible = false;
+    }
+
     private void Update() {
         EndGame();
     }
