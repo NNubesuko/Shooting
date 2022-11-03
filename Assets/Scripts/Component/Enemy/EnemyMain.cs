@@ -11,16 +11,22 @@ public class EnemyMain : TriggerObject {
 
     private Enemy enemy;
     // private PlayerUI playerUI;
+    private GameObject playerObject;
     private Player player;
 
     private void OnEnable() {
         StartCoroutine(enemy.TableControl(moveTargetTable, moveTargetSwitchingInterval));
-        player = GameObject.Find("Player").GetComponent<PlayerMain>().Player;
+        playerObject = GameObject.Find("Player");
+        if (playerObject) {
+            player = playerObject.GetComponent<PlayerMain>().Player;
+        }
         // playerUI = GameObject.Find("GameAdmin").GetComponent<PlayerUI>();
     }
 
     private void Update() {
         enemy.Move(transform, magnification);
+
+        if (!playerObject) return;
 
         if (enemy.HP.Value == 0) {
             // プレイヤーから攻撃され体力が０になった場合のみ、スコアを加算する
