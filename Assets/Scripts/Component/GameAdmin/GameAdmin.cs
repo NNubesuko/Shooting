@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class GameAdmin : MonoBehaviour {
 
+    private void Awake() {
+        PlayerScore playerScore = PlayerScore.Of(int.MaxValue) + PlayerScore.Of(1);
+        Debug.Log(playerScore);
+    }
+
     private void Update() {
         EndGame();
     }

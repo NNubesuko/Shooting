@@ -10,6 +10,7 @@ using UnityEngine.TestTools;
 
 namespace Tests {
 
+    [Description("敵の獲得ポイントのテスト")]
     public class EnemyPointTest {
 
         [Test]

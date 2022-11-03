@@ -5,6 +5,9 @@ using Systemk;
 using Systemk.Exceptions;
 using UnityEngine;
 
+/*
+ * * 敵の獲得ポイントを格納する構造体
+ */
 public struct EnemyPoint {
 
     private int value;
