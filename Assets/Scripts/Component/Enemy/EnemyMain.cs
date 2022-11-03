@@ -5,15 +5,6 @@ using UnityEngine;
 
 public class EnemyMain : TriggerObject {
 
-    // TODO: ValueObjectのEnemyPointを実装する
-
-    // [SerializeField] private int hp;
-    // [SerializeField] private int ap;
-    // [SerializeField] private int moveSpeed;
-    // [SerializeField] private float magnification;
-    // [SerializeField] private float moveTargetSwitchingInterval;
-    // [SerializeField] private Vector2[] moveTargetTable;
-
     private float magnification;
     private float moveTargetSwitchingInterval;
     private Vector2[] moveTargetTable;
@@ -30,6 +21,7 @@ public class EnemyMain : TriggerObject {
         enemy.Move(transform, magnification);
 
         if (enemy.HP.Value == 0) {
+            // プレイヤーから攻撃され体力が０になった場合のみ、スコアを加算する
             playerUI.AddScore(10);
             this.gameObject.SetActive(false);
         }

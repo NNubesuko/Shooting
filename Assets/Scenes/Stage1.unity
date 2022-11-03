@@ -2090,7 +2090,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberBullets: 100
   normalBullet: {fileID: 4639024928798881684, guid: 54a5a4aa302697b4da9e844688857d53, type: 3}
-  fireRate: 0.2
+  fireRate: 0.15
 --- !u!212 &2070290525
 SpriteRenderer:
   m_ObjectHideFlags: 0
