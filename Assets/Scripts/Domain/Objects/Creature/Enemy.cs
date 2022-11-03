@@ -41,7 +41,6 @@ public sealed class Enemy {
         while (true) {
             target = moveTargetTable[index];
             yield return new WaitForSeconds(moveTargetSwitchingInterval);
-            Debug.Log(moveTargetSwitchingInterval);
             index = (index + 1) % moveTargetTable.Length;
         }
     }
