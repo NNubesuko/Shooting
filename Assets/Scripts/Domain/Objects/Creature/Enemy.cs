@@ -10,18 +10,20 @@ public sealed class Enemy {
     private EnemyHP hp;
     private EnemyAP ap;
     private EnemyMoveSpeed speed;
+    private EnemyPoint point;
 
     private Vector2 target;
     private Vector2 p;
 
-    private Enemy(EnemyHP hp, EnemyAP ap, EnemyMoveSpeed speed) {
+    private Enemy(EnemyHP hp, EnemyAP ap, EnemyMoveSpeed speed, EnemyPoint point) {
         this.hp = hp;
         this.ap = ap;
         this.speed = speed;
+        this.point = point;
     }
 
-    public static Enemy Generate(EnemyHP hp, EnemyAP ap, EnemyMoveSpeed speed) {
-        return new Enemy(hp, ap, speed);
+    public static Enemy Generate(EnemyHP hp, EnemyAP ap, EnemyMoveSpeed speed, EnemyPoint point) {
+        return new Enemy(hp, ap, speed, point);
     }
 
     public void Move(Transform transform, float magnification) {
@@ -55,6 +57,10 @@ public sealed class Enemy {
 
     public EnemyMoveSpeed Speed {
         get { return speed; }
+    }
+
+    public EnemyPoint Point {
+        get { return point; }
     }
 
     public override string ToString() {

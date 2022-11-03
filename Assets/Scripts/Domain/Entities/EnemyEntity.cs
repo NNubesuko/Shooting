@@ -16,6 +16,7 @@ public class EnemyEntity {
     public int hp;
     public int ap;
     public int moveSpeed;
+    public int point;
     public float magnification;
     public float moveTargetSwitchingInterval;
     public Vector2[] moveTargetTable;

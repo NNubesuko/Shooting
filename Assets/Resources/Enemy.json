@@ -4,6 +4,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 3,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -18,6 +19,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 3,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -32,6 +34,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 3,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -46,6 +49,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 3,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -60,6 +64,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 3,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -74,6 +79,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 3,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -91,6 +97,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -107,6 +114,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -123,6 +131,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -139,6 +148,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -155,6 +165,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -171,6 +182,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -187,6 +199,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -203,6 +216,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -219,6 +233,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -235,6 +250,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -251,6 +267,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -267,6 +284,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -283,6 +301,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -299,6 +318,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -315,6 +335,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -331,6 +352,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -347,6 +369,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -363,6 +386,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -379,6 +403,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -395,6 +420,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [
@@ -411,6 +437,7 @@
             "hp": 20,
             "ap": 10,
             "moveSpeed": 2,
+            "point": 10,
             "magnification": 1.5,
             "moveTargetSwitchingInterval": 2,
             "moveTargetTable": [

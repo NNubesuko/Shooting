@@ -22,7 +22,7 @@ public class EnemyMain : TriggerObject {
 
         if (enemy.HP.Value == 0) {
             // プレイヤーから攻撃され体力が０になった場合のみ、スコアを加算する
-            playerUI.AddScore(10);
+            playerUI.AddScore(enemy.Point.Value);
             this.gameObject.SetActive(false);
         }
     }
@@ -31,11 +31,12 @@ public class EnemyMain : TriggerObject {
         EnemyHP enemyHP,
         EnemyAP enemyAP,
         EnemyMoveSpeed enemyMoveSpeed,
+        EnemyPoint enemyPoint,
         float magnification,
         float moveTargetSwitchingInterval,
         Vector2[] moveTargetTable
     ) {
-        enemy = Enemy.Generate(enemyHP, enemyAP, enemyMoveSpeed);
+        enemy = Enemy.Generate(enemyHP, enemyAP, enemyMoveSpeed, enemyPoint);
         this.magnification = magnification;
         this.moveTargetSwitchingInterval = moveTargetSwitchingInterval;
         this.moveTargetTable = moveTargetTable;

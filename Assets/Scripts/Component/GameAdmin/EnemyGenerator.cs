@@ -58,6 +58,7 @@ public class EnemyGenerator : MonoBehaviour {
             EnemyHP.Of(enemyEntity.hp),
             EnemyAP.Of(enemyEntity.ap),
             EnemyMoveSpeed.Of(enemyEntity.moveSpeed),
+            EnemyPoint.Of(enemyEntity.point),
             enemyEntity.magnification,
             enemyEntity.moveTargetSwitchingInterval,
             enemyEntity.moveTargetTable
