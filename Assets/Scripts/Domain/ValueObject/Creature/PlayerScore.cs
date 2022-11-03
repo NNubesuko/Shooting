@@ -51,7 +51,7 @@ public struct PlayerScore {
     }
 
     public static PlayerScore operator+(PlayerScore lhScore, PlayerScore rhScore) {
-        int value = lhScore.Value + rhScore.Value;
+        int value = Mathk.OverflowControlDuringAddition(lhScore.Value, rhScore.Value);
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new PlayerScore(value);
@@ -65,7 +65,7 @@ public struct PlayerScore {
     }
 
     public static PlayerScore operator*(PlayerScore lhScore, PlayerScore rhScore) {
-        int value = lhScore.Value * rhScore.Value;
+        int value = Mathk.OverflowControlDuringMultiplication(lhScore.Value, rhScore.Value);
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new PlayerScore(value);

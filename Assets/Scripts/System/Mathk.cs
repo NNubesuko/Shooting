@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,34 @@ using UnityEngine;
 namespace Systemk {
 
     public class Mathk {
+
+        public static int OverflowControlDuringAddition(int lhValue, int rhValue) {
+            int value = 0;
+
+            try {
+                checked {
+                    value = lhValue + rhValue;
+                }
+            } catch (OverflowException) {
+                value = int.MaxValue;
+            }
+
+            return value;
+        }
+
+        public static int OverflowControlDuringMultiplication(int lhValue, int rhValue) {
+            int value = 0;
+
+            try {
+                checked {
+                    value = lhValue * rhValue;
+                }
+            } catch (OverflowException) {
+                value = int.MaxValue;
+            }
+
+            return value;
+        }
 
         public static int KeepValueWithinRange(int value, int MIN, int MAX) {
             value = Mathf.Max(value, MIN);
