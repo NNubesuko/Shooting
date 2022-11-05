@@ -10,7 +10,6 @@ public class EnemyMain : TriggerObject {
     private Vector2[] moveTargetTable;
 
     private Enemy enemy;
-    // private PlayerUI playerUI;
     private Player player;
 
     private void OnEnable() {
