@@ -4,40 +4,30 @@ using System.Collections.Generic;
 using Systemk.Util;
 using UnityEngine;
 
-public class BulletMain : TriggerObject {
+public class BulletMain : BulletImpl {
 
-    [SerializeField] private int type;
-
-    private Bullet bullet;
+    [SerializeField] private int t;
 
     private void Awake() {
-        bullet = Bullet.Generate(BulletType.Of(type));
+        Init(BulletType.Of(t));
     }
 
     private void Update() {
-        Vector3 velocity = transform.position;
-        velocity.y += bullet.Speed.Value * Time.deltaTime;
-        transform.position = velocity;
+        Move();
     }
 
     protected override void OnTriggerEnterAndStay2DEvent(Collider2D collider) {
-        if (bullet == null) return;
         if (transform.parent != null) return;
 
         if (collider.gameObject.CompareTag("Enemy")) {
             Enemy enemyScript = collider.GetComponent<EnemyMain>();
-            enemyScript.SubHP(EnemyHP.Of(bullet.AP.Value));
+            enemyScript.SubHP(EnemyHP.Of(info.ap.Value));
             this.gameObject.SetActive(false);
         }
 
         if (collider.gameObject.CompareTag("Wall")) {
             this.gameObject.SetActive(false);
         }
-    }
-
-    private void OnDisable() {
-        bullet = null;
-        GC.Collect();
     }
 
 }
