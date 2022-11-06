@@ -6,10 +6,10 @@ using UnityEngine;
 
 public class BulletMain : BulletImpl {
 
-    [SerializeField] private int t;
+    [SerializeField] private int type;
 
     private void Awake() {
-        Init(BulletType.Of(t));
+        Init(BulletType.Of(type));
     }
 
     private void Update() {
