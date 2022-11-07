@@ -7,12 +7,12 @@ using Systemk.Exceptions;
  */
 public struct PlayerStamina {
 
-    private int value;
+    private float value;
 
-    public const int MIN = 0;
-    public const int MAX = 100;
+    public const float MIN = 0;
+    public const float MAX = 100;
 
-    private PlayerStamina(int value) {
+    private PlayerStamina(float value) {
         ExceptionHandler.ThrowWhenInvalidValue<ArgumentException>(
             value,
             MIN,
@@ -23,11 +23,11 @@ public struct PlayerStamina {
         this.value = value;
     }
 
-    public static PlayerStamina Of(int value) {
+    public static PlayerStamina Of(float value) {
         return new PlayerStamina(value);
     }
 
-    public int Value {
+    public float Value {
         get { return value; }
     }
 
@@ -48,21 +48,21 @@ public struct PlayerStamina {
     }
     
     public static PlayerStamina operator+(PlayerStamina lhStamina, PlayerStamina rhStamina) {
-        int value = lhStamina.Value + rhStamina.Value;
+        float value = lhStamina.Value + rhStamina.Value;
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new PlayerStamina(value);
     }
 
     public static PlayerStamina operator-(PlayerStamina lhStamina, PlayerStamina rhStamina) {
-        int value = lhStamina.Value - rhStamina.Value;
+        float value = lhStamina.Value - rhStamina.Value;
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new PlayerStamina(value);
     }
 
     public static PlayerStamina operator*(PlayerStamina lhStamina, PlayerStamina rhStamina) {
-        int value = lhStamina.Value * rhStamina.Value;
+        float value = lhStamina.Value * rhStamina.Value;
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
 
         return new PlayerStamina(value);
@@ -72,7 +72,7 @@ public struct PlayerStamina {
         if (rhStamina.Value == 0)
             throw new DivideByZeroException(ExceptionMessage.divideByZeroExceptionMessage);
 
-        int value = lhStamina.Value / rhStamina.Value;
+        float value = lhStamina.Value / rhStamina.Value;
         value = Mathk.KeepValueWithinRange(value, MIN, MAX);
         
         return new PlayerStamina(value);

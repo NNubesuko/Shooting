@@ -2,6 +2,7 @@ public interface Player {
 
     void Init(
         PlayerHP hp,
+        PlayerStamina stamina,
         PlayerMoveSpeed moveSpeed,
         PlayerEvasiveSpeed evasiveSpeed,
         PlayerMoveRange moveHorizontalRange,

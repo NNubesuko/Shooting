@@ -72,6 +72,13 @@ namespace Systemk {
             return value;
         }
 
+        public static float KeepValueWithinRange(float value, float MIN, float MAX) {
+            value = Mathf.Max(value, MIN);
+            value = Mathf.Min(value, MAX);
+
+            return value;
+        }
+
         public static float[] KeepValueWithinRange(
             float lowValue,
             float highValue,

@@ -16,6 +16,15 @@ namespace Systemk.Exceptions {
         }
 
         public static void ThrowWhenInvalidValue<T>(
+            float value,
+            float MIN,
+            float MAX,
+            T exception
+        ) where T : Exception {
+            if (value < MIN || value > MAX) throw exception;
+        }
+
+        public static void ThrowWhenInvalidValue<T>(
             float lowValue,
             float highValue,
             float MIN,

@@ -7,6 +7,7 @@ using UnityEngine;
 public class PlayerImpl : MonoBehaviour, Player {
 
     private PlayerHP hp;
+    private PlayerStamina stamina;
     private PlayerMoveSpeed moveSpeed;
     private PlayerEvasiveSpeed evasiveSpeed;
     private PlayerMoveRange moveHorizontalRange;
@@ -20,12 +21,14 @@ public class PlayerImpl : MonoBehaviour, Player {
 
     public virtual void Init(
         PlayerHP hp,
+        PlayerStamina stamina,
         PlayerMoveSpeed moveSpeed,
         PlayerEvasiveSpeed evasiveSpeed,
         PlayerMoveRange moveHorizontalRange,
         PlayerMoveRange moveVerticalRange
     ) {
         this.hp = hp;
+        this.stamina = stamina;
         this.moveSpeed = moveSpeed;
         this.evasiveSpeed = evasiveSpeed;
         this.moveHorizontalRange = moveHorizontalRange;
@@ -38,12 +41,15 @@ public class PlayerImpl : MonoBehaviour, Player {
         MoveHelper(moveSpeed);
     }
 
-    public void Evasive(float targetEvasiveTime) {
+    public virtual void Evasive(float evasiveStaminaConsumption, float targetEvasiveTime) {
+        if (stamina.Value < evasiveStaminaConsumption) return;
+
         // プレイヤーが移動中かつ回避中ではない場合に、キーを押されたら進行方向を格納し、回避を開始する
         if (Input.GetKeyDown(KeyCode.Space) && Inputk.GetAxis() != Vector2.zero && !isEvasive) {
             canMove = false;
             isEvasive = true;
             currentDirection = Inputk.GetAxis();
+            stamina -= PlayerStamina.Of(evasiveStaminaConsumption);
         }
 
         // 現在の時間が目標の時間以上になるまで回避を続ける

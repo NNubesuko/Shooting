@@ -637,6 +637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 100
+  stamina: 100
   moveSpeed: 5
   evasiveSpeed: 25
   evasiveTime: 0.1

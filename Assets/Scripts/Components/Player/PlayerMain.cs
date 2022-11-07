@@ -7,7 +7,9 @@ using UnityEngine;
 public class PlayerMain : PlayerImpl {
 
     [Header("体力"), SerializeField] private int hp;
+    [Header("スタミナ"), SerializeField] private int stamina;
     [Header("移動速度"), SerializeField] private int moveSpeed;
+    [Header("回避時のスタミナ消費量"), SerializeField] private float evasiveStaminaConsumption;
     [Header("回避速度"), SerializeField] private int evasiveSpeed;
     [Header("回避時間"), SerializeField] private float evasiveTime;
     
@@ -22,6 +24,7 @@ public class PlayerMain : PlayerImpl {
     private void Awake() {
         Init(
             PlayerHP.Of(hp),
+            PlayerStamina.Of(stamina),
             PlayerMoveSpeed.Of(moveSpeed),
             PlayerEvasiveSpeed.Of(evasiveSpeed),
             PlayerMoveRange.Of(lowHorizontalValue, highHorizontalValue),
@@ -31,7 +34,7 @@ public class PlayerMain : PlayerImpl {
 
     private void Update() {
         Move();
-        Evasive(evasiveTime);
+        Evasive(evasiveStaminaConsumption, evasiveTime);
         Death();
     }
 
