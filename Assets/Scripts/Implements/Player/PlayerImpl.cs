@@ -43,16 +43,6 @@ public class PlayerImpl : MonoBehaviour, Player {
     }
 
     public virtual void Evasive(float evasiveStaminaConsumption, float targetEvasiveTime) {
-        if (StaminaHandler(evasiveStaminaConsumption)) return;
-
-        // プレイヤーが移動中かつ回避中ではない場合に、キーを押されたら進行方向を格納し、回避を開始する
-        if (Input.GetKeyDown(KeyCode.Space) && Inputk.GetAxis() != Vector2.zero && !isEvasive) {
-            canMove = false;
-            isEvasive = true;
-            currentDirection = Inputk.GetAxis();
-            // Stamina -= PlayerStamina.Of(evasiveStaminaConsumption);
-        }
-
         // 現在の時間が目標の時間以上になるまで回避を続ける
         // 回避が終わり次第プレイヤーを通常移動に戻し、カウントを初期化する
         if (isEvasive && currentEvasiveTime <= targetEvasiveTime) {
@@ -65,6 +55,16 @@ public class PlayerImpl : MonoBehaviour, Player {
             canMove = true;
             isEvasive = false;
             currentEvasiveTime = 0;
+        }
+
+        if (StaminaHandler(evasiveStaminaConsumption)) return;
+
+        // プレイヤーが移動中かつ回避中ではない場合に、キーを押されたら進行方向を格納し、回避を開始する
+        if (Input.GetKeyDown(KeyCode.Space) && Inputk.GetAxis() != Vector2.zero && !isEvasive) {
+            canMove = false;
+            isEvasive = true;
+            currentDirection = Inputk.GetAxis();
+            Stamina -= PlayerStamina.Of(evasiveStaminaConsumption);
         }
     }
 
