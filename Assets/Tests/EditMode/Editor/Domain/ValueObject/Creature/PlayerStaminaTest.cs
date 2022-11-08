@@ -15,91 +15,91 @@ namespace Tests {
     public class PlayerStaminaTest {
 
         [Test]
-        [TestCase(0)]
-        [TestCase(50)]
-        [TestCase(100)]
+        [TestCase(0f)]
+        [TestCase(50f)]
+        [TestCase(100f)]
         [Description("[正常] 渡された値が最小値以上最大値以下である場合に、値が正常に格納されること")]
-        public void ValidPlayerStamina(int value) {
+        public void ValidPlayerStamina(float value) {
             PlayerStamina playerStamina = PlayerStamina.Of(value);
             Assert.That(playerStamina.Value, Is.EqualTo(value));
         }
 
         [Test]
-        [TestCase(10, 2)]
+        [TestCase(10f, 2f)]
         [Description("[正常] PlayerStamina同士の加算が行われた場合に、値が正常に格納されること")]
-        public void ValidPlayerStaminaOperatorAdd(int value, int addValue) {
-            int responsePlayerStamina = 12;
+        public void ValidPlayerStaminaOperatorAdd(float value, float addValue) {
+            float responsePlayerStamina = 12f;
 
             PlayerStamina playerStamina = PlayerStamina.Of(value) + PlayerStamina.Of(addValue);
             Assert.That(playerStamina.Value, Is.EqualTo(responsePlayerStamina));
         }
 
         [Test]
-        [TestCase(10, 2)]
+        [TestCase(10f, 2f)]
         [Description("[正常] PlayerStamina同士の減算が行われた場合に、値が正常に格納されること")]
-        public void ValidPlayerStaminaOperatorSub(int value, int subValue) {
-            int responsePlayerStamina = 8;
+        public void ValidPlayerStaminaOperatorSub(float value, float subValue) {
+            float responsePlayerStamina = 8f;
 
             PlayerStamina playerStamina = PlayerStamina.Of(value) - PlayerStamina.Of(subValue);
             Assert.That(playerStamina.Value, Is.EqualTo(responsePlayerStamina));
         }
 
         [Test]
-        [TestCase(10, 2)]
+        [TestCase(10f, 2f)]
         [Description("[正常] PlayerStamina同士の乗算が行われた場合に、値が正常に格納されること")]
-        public void ValidPlayerStaminaOperatorMul(int value, int mulValue) {
-            int responsePlayerStamina = 20;
+        public void ValidPlayerStaminaOperatorMul(float value, float mulValue) {
+            float responsePlayerStamina = 20f;
 
             PlayerStamina playerStamina = PlayerStamina.Of(value) * PlayerStamina.Of(mulValue);
             Assert.That(playerStamina.Value, Is.EqualTo(responsePlayerStamina));
         }
 
         [Test]
-        [TestCase(10, 2)]
+        [TestCase(10f, 2f)]
         [Description("[正常] PlayerStamina同士の除算が行われた場合に、値が正常に格納されること")]
-        public void ValidPlayerStaminaOperatorDiv(int value, int divValue) {
-            int responsePlayerStamina = 5;
+        public void ValidPlayerStaminaOperatorDiv(float value, float divValue) {
+            float responsePlayerStamina = 5f;
 
             PlayerStamina playerStamina = PlayerStamina.Of(value) / PlayerStamina.Of(divValue);
             Assert.That(playerStamina.Value, Is.EqualTo(responsePlayerStamina));
         }
 
         [Test]
-        [TestCase(100, 10)]
+        [TestCase(100f, 10f)]
         [Description("[正常] 加算した値が最大値より大きい場合に、最大値が格納されていること")]
-        public void LimitAddPlayerStamina(int value, int addValue) {
-            int responsePlayerStamina = 100;
+        public void LimitAddPlayerStamina(float value, float addValue) {
+            float responsePlayerStamina = 100f;
 
             PlayerStamina playerStamina = PlayerStamina.Of(value) + PlayerStamina.Of(addValue);
             Assert.That(playerStamina.Value, Is.EqualTo(responsePlayerStamina));
         }
 
         [Test]
-        [TestCase(0, 1)]
+        [TestCase(0f, 1f)]
         [Description("[正常] 減算した値が最小値より小さい場合に、最小値が格納されていること")]
-        public void LimitSubPlayerStamina(int value, int subValue) {
-            int responsePlayerStamina = 0;
+        public void LimitSubPlayerStamina(float value, float subValue) {
+            float responsePlayerStamina = 0f;
 
             PlayerStamina playerStamina = PlayerStamina.Of(value) - PlayerStamina.Of(subValue);
             Assert.That(playerStamina.Value, Is.EqualTo(responsePlayerStamina));
         }
 
         [Test]
-        [TestCase(100, 2)]
+        [TestCase(100f, 2f)]
         [Description("[正常] 乗算した値が最大値より大きい場合に、最大値が格納されていること")]
-        public void LimitMulPlayerStamina(int value, int mulValue) {
-            int responsePlayerStamina = 100;
+        public void LimitMulPlayerStamina(float value, float mulValue) {
+            float responsePlayerStamina = 100f;
 
             PlayerStamina playerStamina = PlayerStamina.Of(value) * PlayerStamina.Of(mulValue);
             Assert.That(playerStamina.Value, Is.EqualTo(responsePlayerStamina));
         }
 
         [Test]
-        [TestCase(100, TestCodeIni.ScriptBytes)]
+        [TestCase(100f, TestCodeIni.ScriptBytes)]
         [Description(
             "[正常] スクリプト自体のサイズとインスタンスのサイズが、スクリプトバイト以下であること"
         )]
-        public void ValidScriptCapacity(int value, int scriptBytes) {
+        public void ValidScriptCapacity(float value, float scriptBytes) {
             PlayerStamina playerStamina = PlayerStamina.Of(value);
 
             Assert.That(Marshal.SizeOf(typeof(PlayerStamina)), Is.LessThanOrEqualTo(scriptBytes));
@@ -107,12 +107,12 @@ namespace Tests {
         }
 
         [Test]
-        [TestCase(int.MinValue)]
-        [TestCase(-1)]
-        [TestCase(101)]
-        [TestCase(int.MaxValue)]
+        [TestCase(float.MinValue)]
+        [TestCase(-1f)]
+        [TestCase(101f)]
+        [TestCase(float.MaxValue)]
         [Description("[異常] 渡された値が最小値未満か最大値より大きい場合に、スローが投げられること")]
-        public void ThrowWhenValueIsOverRange(int value) {
+        public void ThrowWhenValueIsOverRange(float value) {
             var exception = Assert.Throws<ArgumentException>(() => {
                 PlayerStamina playerStamina = PlayerStamina.Of(value);
             });
@@ -124,9 +124,9 @@ namespace Tests {
         }
 
         [Test]
-        [TestCase(1, 0)]
+        [TestCase(1f, 0f)]
         [Description("[異常] 除算において0で割っている場合に、スローが投げられること")]
-        public void ThrowWhenDivPlayerStamina(int value, int divValue) {
+        public void ThrowWhenDivPlayerStamina(float value, float divValue) {
             var exception = Assert.Throws<DivideByZeroException>(() => {
                 PlayerStamina playerStamina = PlayerStamina.Of(value) / PlayerStamina.Of(divValue);
             });
