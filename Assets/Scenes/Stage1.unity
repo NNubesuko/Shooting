@@ -639,6 +639,7 @@ MonoBehaviour:
   hp: 100
   stamina: 100
   moveSpeed: 5
+  evasiveStaminaConsumption: 20
   evasiveSpeed: 25
   evasiveTime: 0.1
   lowHorizontalValue: -8.4
@@ -1868,6 +1869,7 @@ MonoBehaviour:
   playerMain: {fileID: 655611692}
   scoreText: {fileID: 2000180661}
   playerHPBar: {fileID: 435140801}
+  playerStaminaBar: {fileID: 2086621935}
 --- !u!1 &1912101482
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,13 +6,13 @@ using UnityEngine;
 
 public class PlayerImpl : MonoBehaviour, Player {
 
-    private PlayerHP hp;
-    private PlayerStamina stamina;
-    private PlayerMoveSpeed moveSpeed;
-    private PlayerEvasiveSpeed evasiveSpeed;
-    private PlayerMoveRange moveHorizontalRange;
-    private PlayerMoveRange moveVerticalRange;
-    private PlayerScore score;
+    public PlayerHP HP { get; private set; }
+    public PlayerStamina Stamina { get; private set; }
+    public PlayerMoveSpeed MoveSpeed { get; private set; }
+    public PlayerEvasiveSpeed EvasiveSpeed { get; private set; }
+    public PlayerMoveRange MoveHorizontalRange { get; private set; }
+    public PlayerMoveRange MoveVerticalRange { get; private set; }
+    public PlayerScore Score { get; private set; }
 
     private bool isEvasive = false;
     private float currentEvasiveTime = 0;
@@ -27,29 +27,30 @@ public class PlayerImpl : MonoBehaviour, Player {
         PlayerMoveRange moveHorizontalRange,
         PlayerMoveRange moveVerticalRange
     ) {
-        this.hp = hp;
-        this.stamina = stamina;
-        this.moveSpeed = moveSpeed;
-        this.evasiveSpeed = evasiveSpeed;
-        this.moveHorizontalRange = moveHorizontalRange;
-        this.moveVerticalRange = moveVerticalRange;
+        HP = hp;
+        Stamina = stamina;
+        MoveSpeed = moveSpeed;
+        EvasiveSpeed = evasiveSpeed;
+        MoveHorizontalRange = moveHorizontalRange;
+        MoveVerticalRange = moveVerticalRange;
+        Score = PlayerScore.Of(0);
     }
 
     public virtual void Move() {
         if (!canMove) return;
 
-        MoveHelper(moveSpeed);
+        MoveHelper(MoveSpeed);
     }
 
     public virtual void Evasive(float evasiveStaminaConsumption, float targetEvasiveTime) {
-        if (stamina.Value < evasiveStaminaConsumption) return;
+        if (StaminaHandler(evasiveStaminaConsumption)) return;
 
         // プレイヤーが移動中かつ回避中ではない場合に、キーを押されたら進行方向を格納し、回避を開始する
         if (Input.GetKeyDown(KeyCode.Space) && Inputk.GetAxis() != Vector2.zero && !isEvasive) {
             canMove = false;
             isEvasive = true;
             currentDirection = Inputk.GetAxis();
-            stamina -= PlayerStamina.Of(evasiveStaminaConsumption);
+            // Stamina -= PlayerStamina.Of(evasiveStaminaConsumption);
         }
 
         // 現在の時間が目標の時間以上になるまで回避を続ける
@@ -57,8 +58,8 @@ public class PlayerImpl : MonoBehaviour, Player {
         if (isEvasive && currentEvasiveTime <= targetEvasiveTime) {
             currentEvasiveTime += Time.deltaTime;
             MoveHelper(
-                currentDirection.x * evasiveSpeed.Value * Time.deltaTime,
-                currentDirection.y * evasiveSpeed.Value * Time.deltaTime
+                currentDirection.x * EvasiveSpeed.Value * Time.deltaTime,
+                currentDirection.y * EvasiveSpeed.Value * Time.deltaTime
             );
         } else {
             canMove = true;
@@ -68,25 +69,17 @@ public class PlayerImpl : MonoBehaviour, Player {
     }
 
     public virtual void Death() {
-        if (hp.Value == 0) {
+        if (HP.Value == 0) {
             this.gameObject.SetActive(false);
         }
     }
 
     public virtual void SubHP(PlayerHP subHP) {
-        hp -= subHP;
+        HP -= subHP;
     }
 
     public virtual void AddScore(PlayerScore addScore) {
-        score += addScore;
-    }
-
-    public PlayerHP HP {
-        get { return hp; }
-    }
-
-    public PlayerScore Score {
-        get { return score; }
+        Score += addScore;
     }
 
     private void MoveHelper(PlayerMoveSpeed moveSpeed) {
@@ -95,8 +88,8 @@ public class PlayerImpl : MonoBehaviour, Player {
         currentPosition += Inputk.GetAxis() * moveSpeed.Value * Time.deltaTime;
         currentPosition = PlayerMoveRange.KeepPositionWithinRange(
             currentPosition,
-            moveHorizontalRange,
-            moveVerticalRange
+            MoveHorizontalRange,
+            MoveVerticalRange
         );
 
         transform.position = currentPosition;
@@ -109,11 +102,16 @@ public class PlayerImpl : MonoBehaviour, Player {
         float calculatedPositionY = currentPosition.y + addPositionY;
         currentPosition = PlayerMoveRange.KeepPositionWithinRange(
             new Vector2(calculatedPositionX,calculatedPositionY),
-            moveHorizontalRange,
-            moveVerticalRange
+            MoveHorizontalRange,
+            MoveVerticalRange
         );
 
         transform.position = currentPosition;
+    }
+
+    private bool StaminaHandler(float evasiveStaminaConsumption) {
+        Stamina += PlayerStamina.Of(Time.deltaTime);
+        return Stamina.Value < evasiveStaminaConsumption;
     }
 
 }
