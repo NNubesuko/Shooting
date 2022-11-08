@@ -4,7 +4,7 @@ using Systemk.Exceptions;
 
 public struct BulletAP {
 
-    private int value;
+    public int Value { get; private set; }
 
     public const int MIN = 1;
     public const int MAX = 100;
@@ -17,23 +17,19 @@ public struct BulletAP {
             new ArgumentException(ExceptionMessage.argumentExceptionMessage)
         );
 
-        this.value = value;
+        Value = value;
     }
 
     public static BulletAP Of(int value) {
         return new BulletAP(value);
     }
 
-    public int Value {
-        get { return value; }
-    }
-
     public override string ToString() {
-        return $"{value}";
+        return $"{Value}";
     }
 
     public override int GetHashCode() {
-        return (value, MIN, MAX).GetHashCode();
+        return (Value, MIN, MAX).GetHashCode();
     }
 
     public override bool Equals(object obj) {

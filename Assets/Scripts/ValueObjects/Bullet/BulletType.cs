@@ -4,7 +4,7 @@ using Systemk.Exceptions;
 
 public struct BulletType {
 
-    private int value;
+    public int Value { get; private set; }
 
     public const int MIN = 0;
     public const int MAX = 1;
@@ -20,15 +20,15 @@ public struct BulletType {
             new BulletTypeNotFoundException(ExceptionMessage.bulletTypeNotFoundExceptionMessage)
         );
 
-        this.value = value;
+        Value = value;
     }
 
     public override string ToString() {
-        return $"{value}";
+        return $"{Value}";
     }
 
     public override int GetHashCode() {
-        return (value, MIN, MAX).GetHashCode();
+        return (Value, MIN, MAX).GetHashCode();
     }
 
     public override bool Equals(object obj) {
@@ -49,10 +49,6 @@ public struct BulletType {
         );
 
         return new BulletType(value);
-    }
-
-    public int Value {
-        get { return value; }
     }
 
 }

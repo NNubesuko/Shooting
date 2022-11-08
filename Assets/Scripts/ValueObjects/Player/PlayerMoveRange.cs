@@ -5,8 +5,8 @@ using UnityEngine;
 
 public struct PlayerMoveRange {
 
-    private float lowValue;
-    private float highValue;
+    public float LowValue { get; private set; }
+    public float HighValue { get; private set; }
 
     public const float MIN = -100f;
     public const float MAX = 100f;
@@ -29,32 +29,24 @@ public struct PlayerMoveRange {
             new ArgumentException(ExceptionMessage.argumentExceptionMessage)
         );
 
-        this.lowValue = lowValue;
-        this.highValue = highValue;
+        LowValue = lowValue;
+        HighValue = highValue;
     }
 
     public static PlayerMoveRange Of(float lowValue, float highValue) {
         return new PlayerMoveRange(lowValue, highValue);
     }
 
-    public float LowValue {
-        get { return lowValue; }
-    }
-
-    public float HighValue {
-        get { return highValue; }
-    }
-
     public float Size {
-        get { return Mathf.Abs(highValue - lowValue); }
+        get { return Mathf.Abs(HighValue - LowValue); }
     }
 
     public override string ToString() {
-        return $"{lowValue}, {highValue}";
+        return $"{LowValue}, {HighValue}";
     }
 
     public override int GetHashCode() {
-        return (lowValue, highValue, MIN, MAX).GetHashCode();
+        return (LowValue, HighValue, MIN, MAX).GetHashCode();
     }
 
     public override bool Equals(object obj) {

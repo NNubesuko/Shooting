@@ -7,7 +7,7 @@ using Systemk.Exceptions;
  */
 public struct PlayerHP {
 
-    private int value;
+    public int Value { get; private set; }
 
     public const int MIN = 0;
     public const int MAX = 100;
@@ -20,23 +20,19 @@ public struct PlayerHP {
             new ArgumentException(ExceptionMessage.argumentExceptionMessage)
         );
 
-        this.value = value;
+        Value = value;
     }
 
     public static PlayerHP Of(int value) {
         return new PlayerHP(value);
     }
 
-    public int Value {
-        get { return value; }
-    }
-
     public override string ToString() {
-        return $"{value}";
+        return $"{Value}";
     }
 
     public override int GetHashCode() {
-        return (value, MIN, MAX).GetHashCode();
+        return (Value, MIN, MAX).GetHashCode();
     }
 
     public override bool Equals(object obj) {

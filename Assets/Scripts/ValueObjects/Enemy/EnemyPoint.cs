@@ -10,7 +10,7 @@ using UnityEngine;
  */
 public struct EnemyPoint {
 
-    private int value;
+    public int Value { get; private set; }
 
     private const int MIN = 0;
     private const int MAX = 100;
@@ -23,23 +23,19 @@ public struct EnemyPoint {
             new ArgumentException(ExceptionMessage.argumentExceptionMessage)
         );
 
-        this.value = value;
+        Value = value;
     }
 
     public static EnemyPoint Of(int value) {
         return new EnemyPoint(value);
     }
 
-    public int Value {
-        get { return value; }
-    }
-
-        public override string ToString() {
-        return $"{value}";
+    public override string ToString() {
+        return $"{Value}";
     }
 
     public override int GetHashCode() {
-        return (value, MIN, MAX).GetHashCode();
+        return (Value, MIN, MAX).GetHashCode();
     }
 
     public override bool Equals(object obj) {

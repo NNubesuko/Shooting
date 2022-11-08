@@ -7,7 +7,7 @@ using Systemk.Exceptions;
  */
 public struct PlayerMoveSpeed {
 
-    private int value;
+    public int Value { get; private set; }
 
     public const int MIN = 0;
     public const int MAX = 10;
@@ -20,23 +20,19 @@ public struct PlayerMoveSpeed {
             new ArgumentException(ExceptionMessage.argumentExceptionMessage)
         );
 
-        this.value = value;
+        Value = value;
     }
 
     public static PlayerMoveSpeed Of(int value) {
         return new PlayerMoveSpeed(value);
     }
 
-    public int Value {
-        get { return value; }
-    }
-
     public override string ToString() {
-        return $"{value}";
+        return $"{Value}";
     }
 
     public override int GetHashCode() {
-        return (value, MIN, MAX).GetHashCode();
+        return (Value, MIN, MAX).GetHashCode();
     }
 
     public override bool Equals(object obj) {

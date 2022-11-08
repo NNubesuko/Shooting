@@ -7,10 +7,10 @@ using Systemk.Exceptions;
  */
 public struct PlayerStamina {
 
-    private float value;
+    public float Value { get; private set; }
 
-    public const float MIN = 0;
-    public const float MAX = 100;
+    public const float MIN = 0f;
+    public const float MAX = 100f;
 
     private PlayerStamina(float value) {
         ExceptionHandler.ThrowWhenInvalidValue<ArgumentException>(
@@ -20,23 +20,19 @@ public struct PlayerStamina {
             new ArgumentException(ExceptionMessage.argumentExceptionMessage)
         );
 
-        this.value = value;
+        Value = value;
     }
 
     public static PlayerStamina Of(float value) {
         return new PlayerStamina(value);
     }
 
-    public float Value {
-        get { return value; }
-    }
-
     public override string ToString() {
-        return $"{value}";
+        return $"{Value}";
     }
 
     public override int GetHashCode() {
-        return (value, MIN, MAX).GetHashCode();
+        return (Value, MIN, MAX).GetHashCode();
     }
 
     public override bool Equals(object obj) {
