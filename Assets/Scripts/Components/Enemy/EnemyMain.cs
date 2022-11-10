@@ -23,7 +23,7 @@ public class EnemyMain : EnemyImpl {
         }
 
         if (gameObject.CompareTag("Player")) {
-            player.SubHP(PlayerHP.Of(ap.Value));
+            Player.SubHP(PlayerHP.Of(AP.Value));
         }
     }
 
