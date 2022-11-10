@@ -33,7 +33,6 @@ public class PlayerMain : PlayerImpl {
     }
 
     private void Update() {
-        Debug.Log(Stamina);
         Move();
         Evasive(evasiveStaminaConsumption, evasiveTime);
         Death();

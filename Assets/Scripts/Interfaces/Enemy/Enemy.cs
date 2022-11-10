@@ -1,6 +1,7 @@
 using UnityEngine;
+using Interfaces.Character;
 
-public interface Enemy {
+public interface Enemy : IDamageable {
 
     EnemyHP HP { get; }
     EnemyAP AP { get; }
@@ -23,9 +24,5 @@ public interface Enemy {
     );
 
     void Move();
-
-    void Death();
-
-    void SubHP(EnemyHP subHP);
 
 }

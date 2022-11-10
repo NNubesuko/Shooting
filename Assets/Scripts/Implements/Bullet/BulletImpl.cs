@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BulletImpl : TriggerObject, Bullet {
 
-    protected BulletInfo info;
+    public BulletInfo Info { get; private set; }
 
     private Dictionary<BulletType, BulletInfo> bulletDict =
     new Dictionary<BulletType, BulletInfo>() {
@@ -28,24 +28,24 @@ public class BulletImpl : TriggerObject, Bullet {
     };
 
     public virtual void Init(BulletType type) {
-        info = bulletDict[type];
+        Info = bulletDict[type];
     }
 
     public virtual void Move() {
         Vector3 velocity = transform.position;
-        velocity.y += info.speed.Value * Time.deltaTime;
+        velocity.y += Info.Speed.Value * Time.deltaTime;
         transform.position = velocity;
     }
 
-    protected struct BulletInfo {
-        public BulletType type;
-        public BulletAP ap;
-        public BulletSpeed speed;
+    public struct BulletInfo {
+        public BulletType Type { get; private set; }
+        public BulletAP AP { get; private set; }
+        public BulletSpeed Speed { get; private set; }
 
         public BulletInfo(BulletType type, BulletAP ap, BulletSpeed speed) {
-            this.type = type;
-            this.ap = ap;
-            this.speed = speed;
+            Type = type;
+            AP = ap;
+            Speed = speed;
         }
     }
 

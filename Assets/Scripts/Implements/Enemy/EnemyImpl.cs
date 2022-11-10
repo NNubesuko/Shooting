@@ -45,15 +45,15 @@ public class EnemyImpl : TriggerObject, Enemy {
         transform.position = velocity;
     }
 
+    public virtual void Damage(int value) {
+        HP -= EnemyHP.Of(value);
+    }
+
     public virtual void Death() {
         if (HP.Value == 0) {
             Player.AddScore(PlayerScore.Of(Point.Value));
             this.gameObject.SetActive(false);
         }
-    }
-
-    public virtual void SubHP(EnemyHP subHP) {
-        HP -= subHP;
     }
 
     protected IEnumerator TableControl() {

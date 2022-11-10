@@ -21,7 +21,9 @@ public class BulletMain : BulletImpl {
 
         if (collider.gameObject.CompareTag("Enemy")) {
             Enemy enemyScript = collider.GetComponent<EnemyMain>();
-            enemyScript.SubHP(EnemyHP.Of(info.ap.Value));
+            
+            // enemyScript.SubHP(EnemyHP.Of(info.ap.Value));
+            enemyScript.Damage(Info.AP.Value);
             this.gameObject.SetActive(false);
         }
 

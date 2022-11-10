@@ -68,14 +68,14 @@ public class PlayerImpl : MonoBehaviour, Player {
         }
     }
 
+    public virtual void Damage(int value) {
+        HP -= PlayerHP.Of(value);
+    }
+
     public virtual void Death() {
         if (HP.Value == 0) {
             this.gameObject.SetActive(false);
         }
-    }
-
-    public virtual void SubHP(PlayerHP subHP) {
-        HP -= subHP;
     }
 
     public virtual void AddScore(PlayerScore addScore) {

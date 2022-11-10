@@ -1,4 +1,6 @@
-public interface Player {
+using Interfaces.Character;
+
+public interface Player : IDamageable {
 
     PlayerHP HP { get; }
     PlayerStamina Stamina { get; }
@@ -18,10 +20,6 @@ public interface Player {
     );
 
     void Move();
-
-    void Death();
-
-    void SubHP(PlayerHP subHP);
 
     void AddScore(PlayerScore addScore);
 
