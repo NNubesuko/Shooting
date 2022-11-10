@@ -1,7 +1,7 @@
 using UnityEngine;
 using Interfaces.Character;
 
-public interface Enemy : IDamageable {
+public interface Enemy : IDamager, IMover {
 
     EnemyHP HP { get; }
     EnemyAP AP { get; }
@@ -22,7 +22,5 @@ public interface Enemy : IDamageable {
         Vector2[] moveTargetTable,
         Player player
     );
-
-    void Move();
 
 }

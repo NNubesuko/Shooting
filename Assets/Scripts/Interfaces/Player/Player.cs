@@ -1,6 +1,6 @@
 using Interfaces.Character;
 
-public interface Player : IDamageable {
+public interface Player : IDamager, IMover {
 
     PlayerHP HP { get; }
     PlayerStamina Stamina { get; }
@@ -18,8 +18,6 @@ public interface Player : IDamageable {
         PlayerMoveRange moveHorizontalRange,
         PlayerMoveRange moveVerticalRange
     );
-
-    void Move();
 
     void AddScore(PlayerScore addScore);
 

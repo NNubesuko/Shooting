@@ -1,6 +1,6 @@
 namespace Interfaces.Character {
 
-    public interface IDamageable {
+    public interface IDamager {
 
         void Damage(int value);
         void Death();
