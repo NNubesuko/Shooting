@@ -41,7 +41,7 @@ namespace Tests {
         //     );
         //     PlayerScore playerScore = PlayerScore.Of(score);
 
-        //     Player player = Player.Generate(
+        //     Player player = Player.Init(
         //         playerHP,
         //         playerMoveSpeed,
         //         playerEvasiveSpeed,
@@ -89,7 +89,7 @@ namespace Tests {
         //         );
         //         PlayerScore playerScore = PlayerScore.Of(score);
 
-        //         Player player = Player.Generate(
+        //         Player player = Player.Init(
         //             playerHP,
         //             playerMoveSpeed,
         //             playerEvasiveSpeed,
