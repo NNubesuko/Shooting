@@ -42,6 +42,10 @@ public class PlayerImpl : MonoBehaviour, Player {
         MoveHelper(MoveSpeed);
     }
 
+    public virtual void ResetPosition() {
+        transform.position = Vector2.zero;
+    }
+
     public virtual void Evasive(float evasiveStaminaConsumption, float targetEvasiveTime) {
         // 現在の時間が目標の時間以上になるまで回避を続ける
         // 回避が終わり次第プレイヤーを通常移動に戻し、カウントを初期化する

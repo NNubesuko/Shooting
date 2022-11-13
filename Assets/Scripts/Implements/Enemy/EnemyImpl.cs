@@ -45,6 +45,10 @@ public class EnemyImpl : TriggerObject, Enemy {
         transform.position = velocity;
     }
 
+    public virtual void ResetPosition() {
+        transform.position = Vector2.zero;
+    }
+
     public virtual void Damage(int value) {
         HP -= EnemyHP.Of(value);
     }
