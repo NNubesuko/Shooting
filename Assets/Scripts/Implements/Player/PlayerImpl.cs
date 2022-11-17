@@ -18,6 +18,7 @@ public class PlayerImpl : MonoBehaviour, Player {
     private float currentEvasiveTime = 0;
     private bool canMove = true;
     private Vector2 currentDirection;
+    public bool IsDeath { get; private set; } = false;
 
     public virtual void Init(
         PlayerHP hp,
@@ -78,6 +79,7 @@ public class PlayerImpl : MonoBehaviour, Player {
 
     public virtual void Death() {
         if (HP.Value == 0) {
+            IsDeath = true;
             this.gameObject.SetActive(false);
         }
     }

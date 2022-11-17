@@ -26,7 +26,7 @@ public class EnemyGenerator : MonoBehaviour {
     }
 
     private void Update() {
-        if (enemyPairs.Count  <= currnetGenerateEnemyIndex) return;
+        if (enemyPairs.Count <= currnetGenerateEnemyIndex) return;
 
         currentTime += Time.deltaTime;
 
