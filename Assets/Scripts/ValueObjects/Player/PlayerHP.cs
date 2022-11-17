@@ -2,9 +2,6 @@ using System;
 using Systemk;
 using Systemk.Exceptions;
 
-public class HP {
-}
-
 /*
  * * プレイヤーの体力を格納する構造体
  */
