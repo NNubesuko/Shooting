@@ -11,6 +11,8 @@ public class GameAdmin : MonoBehaviour {
 
     private void Awake() {
         GameAdministrator.HiddenCursor();
+
+        PlayerHPk hp = new PlayerHPk(100);
     }
 
     private void Update() {
