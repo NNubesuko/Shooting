@@ -7,7 +7,7 @@ public class ExceptionHandlerk {
     }
 
     public static void ThrowsWHenInValidValue<T>(T value, T MIN, T MAX, Exception exception) {
-        if ((dynamic)value < MIN || (dynamic)value > MAX) throw exception;
+        if ((dynamic)value < (dynamic)MIN || (dynamic)value > (dynamic)MAX) throw exception;
     }
 
     public static Exception ArgumentException(string param) {

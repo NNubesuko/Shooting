@@ -13,6 +13,7 @@ public class GameAdmin : MonoBehaviour {
         GameAdministrator.HiddenCursor();
 
         PlayerHPk hp = new PlayerHPk(100);
+        Debug.Log(hp);
     }
 
     private void Update() {
