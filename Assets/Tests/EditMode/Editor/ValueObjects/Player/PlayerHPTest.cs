@@ -34,7 +34,9 @@ namespace Tests {
 
             Assert.That(
                 exception.Message,
-                Is.EqualTo(ValueObjectExceptionHandler.ArgumentException(nameof(value)).Message)
+                Is.EqualTo(
+                    ValueObjectExceptionHandler.ArgumentException(nameof(value)).Message
+                )
             );
         }
 

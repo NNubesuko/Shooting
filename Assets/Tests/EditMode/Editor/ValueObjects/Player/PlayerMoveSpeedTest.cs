@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
+using KataokaLib.ValueObject;
 
 namespace Tests {
 
@@ -17,6 +19,24 @@ namespace Tests {
         public void ValidPlayerMoveSpeed(int value) {
             PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(value);
             Assert.That(playerMoveSpeed, Is.EqualTo(PlayerMoveSpeed.Of(value)));
+        }
+
+        [Test]
+        [TestCase(int.MinValue)]
+        [TestCase(-1)]
+        [TestCase(11)]
+        [TestCase(int.MaxValue)]
+        public void InvalidPlaeyrMoveSpeed(int value) {
+            var exception = Assert.Throws<ArgumentException>(() => {
+                PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(value);
+            });
+
+            Assert.That(
+                exception.Message,
+                Is.EqualTo(
+                    ValueObjectExceptionHandler.ArgumentException(nameof(value)).Message
+                )
+            );
         }
 
     }
