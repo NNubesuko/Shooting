@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnemyGenerator : MonoBehaviour {
 
     [SerializeField] private GameObject enemy;
-    [SerializeField] private PlayerMain playerMain;
+    // [SerializeField] private PlayerMain playerMain;
 
     private string enemyJsonName = "Enemy";
     private string enemyJson;
@@ -15,14 +15,14 @@ public class EnemyGenerator : MonoBehaviour {
     private int currnetGenerateEnemyIndex = 0;
 
     private void Awake() {
-        enemyJson = Resources.Load<TextAsset>(enemyJsonName).ToString();
+        // enemyJson = Resources.Load<TextAsset>(enemyJsonName).ToString();
 
-        EnemyEntities enemyEntities = JsonUtility.FromJson<EnemyEntities>(enemyJson);
+        // EnemyEntities enemyEntities = JsonUtility.FromJson<EnemyEntities>(enemyJson);
 
-        foreach (EnemyEntity enemyEntity in enemyEntities.entities) {
-            GameObject enemyObject = InitEnemyObject(enemyEntity);
-            enemyPairs.Add(new EnemyPair(enemyEntity.generateTime, enemyObject));
-        }
+        // foreach (EnemyEntity enemyEntity in enemyEntities.entities) {
+        //     GameObject enemyObject = InitEnemyObject(enemyEntity);
+        //     enemyPairs.Add(new EnemyPair(enemyEntity.generateTime, enemyObject));
+        // }
     }
 
     private void Update() {
@@ -51,23 +51,23 @@ public class EnemyGenerator : MonoBehaviour {
         return json;
     }
 
-    private GameObject InitEnemyObject(EnemyEntity enemyEntity) {
-        GameObject enemyObject = Instantiate(enemy, enemyEntity.initPosition, Quaternion.identity);
-        Enemy enemyScript = enemyObject.GetComponent<EnemyMain>();
+    // private GameObject InitEnemyObject(EnemyEntity enemyEntity) {
+    //     GameObject enemyObject = Instantiate(enemy, enemyEntity.initPosition, Quaternion.identity);
+    //     Enemy enemyScript = enemyObject.GetComponent<EnemyMain>();
 
-        enemyScript.Init(
-            EnemyHP.Of(enemyEntity.hp),
-            EnemyAP.Of(enemyEntity.ap),
-            EnemyMoveSpeed.Of(enemyEntity.moveSpeed),
-            EnemyPoint.Of(enemyEntity.point),
-            enemyEntity.magnification,
-            enemyEntity.moveTargetSwitchingInterval,
-            enemyEntity.moveTargetTable,
-            playerMain
-        );
+    //     enemyScript.Init(
+    //         EnemyHP.Of(enemyEntity.hp),
+    //         EnemyAP.Of(enemyEntity.ap),
+    //         EnemyMoveSpeed.Of(enemyEntity.moveSpeed),
+    //         EnemyPoint.Of(enemyEntity.point),
+    //         enemyEntity.magnification,
+    //         enemyEntity.moveTargetSwitchingInterval,
+    //         enemyEntity.moveTargetTable,
+    //         playerMain
+    //     );
 
-        return enemyObject;
-    }
+    //     return enemyObject;
+    // }
 
     private class EnemyPair {
         public float generateTime;

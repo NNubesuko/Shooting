@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameAdmin : MonoBehaviour {
 
-    [SerializeField] PlayerMain playerScript;
+    // [SerializeField] PlayerMain playerScript;
 
     private void Awake() {
         GameAdministrator.HiddenCursor();
@@ -18,9 +18,9 @@ public class GameAdmin : MonoBehaviour {
             GameAdministrator.QuitGame();
         }
 
-        if (playerScript.IsDeath) {
-            Invoke(nameof(ReturnTitleScene), 3f);
-        }
+        // if (playerScript.IsDeath) {
+        //     Invoke(nameof(ReturnTitleScene), 3f);
+        // }
     }
 
     private void ReturnTitleScene() {

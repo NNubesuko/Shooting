@@ -547,7 +547,6 @@ GameObject:
   - component: {fileID: 655611691}
   - component: {fileID: 655611690}
   - component: {fileID: 655611693}
-  - component: {fileID: 655611692}
   - component: {fileID: 655611694}
   m_Layer: 0
   m_Name: Player
@@ -624,28 +623,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &655611692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655611689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5739cff832ad02b4b8fd235fe44b5ab9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 100
-  stamina: 100
-  moveSpeed: 5
-  evasiveStaminaConsumption: 20
-  evasiveSpeed: 25
-  evasiveTime: 0.1
-  lowHorizontalValue: -8.4
-  highHorizontalValue: 8.4
-  lowVerticalValue: -4.5
-  highVerticalValue: 4.5
 --- !u!61 &655611693
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1825,7 +1802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7075216694844397810, guid: 5fc53436443f86143a42994b0e3b35be, type: 3}
-  playerMain: {fileID: 655611692}
+  playerMain: {fileID: 0}
 --- !u!114 &1911193813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1838,7 +1815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49fb58564f6d8874cbccec724a58c4ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScript: {fileID: 655611692}
+  playerScript: {fileID: 0}
 --- !u!114 &1911193814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1867,7 +1844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ca76c8c49efe3c448e3274dd49acd52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMain: {fileID: 655611692}
+  playerMain: {fileID: 0}
   scoreText: {fileID: 2000180661}
   playerHPBar: {fileID: 435140801}
   playerStaminaBar: {fileID: 2086621935}

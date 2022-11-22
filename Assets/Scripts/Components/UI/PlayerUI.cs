@@ -5,21 +5,21 @@ using UnityEngine.UI;
 
 public class PlayerUI : MonoBehaviour {
 
-    [SerializeField] private PlayerMain playerMain;
+    // [SerializeField] private PlayerMain playerMain;
     [SerializeField] private Text scoreText;
     [SerializeField] private Slider playerHPBar;
     [SerializeField] private Slider playerStaminaBar;
 
-    private Player player;
+    // private Player player;
 
     private void Start() {
-        player = playerMain;
+        // player = playerMain;
     }
 
     private void Update() {
-        scoreText.text = "Score: " + player.Score;
-        playerHPBar.value = (float)player.HP.Value / PlayerHP.MAX;
-        playerStaminaBar.value = player.Stamina.Value / PlayerStamina.MAX;
+        // scoreText.text = "Score: " + player.Score;
+        // playerHPBar.value = (float)player.HP.Value / PlayerHP.MAX;
+        // playerStaminaBar.value = player.Stamina.Value / PlayerStamina.MAX;
     }
 
 }
