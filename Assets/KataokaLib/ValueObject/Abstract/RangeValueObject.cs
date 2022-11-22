@@ -28,6 +28,71 @@ namespace KataokaLib.ValueObject {
             return $"{Start}, {End}";
         }
 
+        public override int GetHashCode() {
+            return (Start, End, MIN, MAX).GetHashCode();
+        }
+
+        public override bool Equals(object obj) {
+            if (ReferenceEquals(obj, null)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+
+            return obj is RangeValueObject<T> other && Equals(other);
+        }
+
+        public bool Equals(RangeValueObject<T> other) {
+            if (!ClassEquals(this, other))
+                throw ValueObjectExceptionHandler.InvalidOperationExceptionOfClassEquals();
+            return this.GetHashCode() == other.GetHashCode();
+        }
+
+        public static bool ClassEquals(RangeValueObject<T> lh, RangeValueObject<T> rh) {
+            return lh.GetType().Name.Equals(rh.GetType().Name);
+        }
+
+        public static bool operator==(RangeValueObject<T> lh, RangeValueObject<T> rh) {
+            return lh.Equals(rh);
+        }
+
+        public static bool operator!=(RangeValueObject<T> lh, RangeValueObject<T> rh) {
+            return !(lh == rh);
+        }
+
+        public static bool operator<(RangeValueObject<T> lh, RangeValueObject<T> rh) {
+            if (!ClassEquals(lh, rh))
+                throw ValueObjectExceptionHandler.InvalidOperationExceptionOfClassEquals();
+            
+            T lhLength = (dynamic)lh.End - (dynamic)lh.Start;
+            T rhLength = (dynamic)rh.End - (dynamic)rh.Start;
+            return (dynamic)lhLength < (dynamic)rhLength;
+        }
+
+        public static bool operator>(RangeValueObject<T> lh, RangeValueObject<T> rh) {
+            if (!ClassEquals(lh, rh))
+                throw ValueObjectExceptionHandler.InvalidOperationExceptionOfClassEquals();
+
+            T lhLength = (dynamic)lh.End - (dynamic)lh.Start;
+            T rhLength = (dynamic)rh.End - (dynamic)rh.Start;
+            return (dynamic)lhLength > (dynamic)rhLength;
+        }
+
+        public static bool operator<=(RangeValueObject<T> lh, RangeValueObject<T> rh) {
+            if (!ClassEquals(lh, rh))
+                throw ValueObjectExceptionHandler.InvalidOperationExceptionOfClassEquals();
+            
+            T lhLength = (dynamic)lh.End - (dynamic)lh.Start;
+            T rhLength = (dynamic)rh.End - (dynamic)rh.Start;
+            return (dynamic)lhLength <= (dynamic)rhLength;
+        }
+
+        public static bool operator>=(RangeValueObject<T> lh, RangeValueObject<T> rh) {
+            if (!ClassEquals(lh, rh))
+                throw ValueObjectExceptionHandler.InvalidOperationExceptionOfClassEquals();
+            
+            T lhLength = (dynamic)lh.End - (dynamic)lh.Start;
+            T rhLength = (dynamic)rh.End - (dynamic)rh.Start;
+            return (dynamic)lhLength >= (dynamic)rhLength;
+        }
+
     }
 
 }
