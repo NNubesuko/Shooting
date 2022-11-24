@@ -8,28 +8,28 @@ using KataokaLib.ValueObject;
 
 namespace Tests {
 
-    [Description("プレイヤーの移動速度のテスト")]
-    public class PlayerMoveSpeedTest {
+    [Description("プレイヤーの回避速度のテスト")]
+    public class PlayerEvasionSpeedTest {
 
         [Test]
         [TestCase(0f)]
-        [TestCase(5f)]
-        [TestCase(10f)]
+        [TestCase(50f)]
+        [TestCase(100f)]
         [Description("[正常] 渡された値が最小値以上かつ最大値以下である場合に、正常に格納されること")]
-        public void ValidPlayerMoveSpeed(float value) {
-            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(value);
-            Assert.That(playerMoveSpeed, Is.EqualTo(PlayerMoveSpeed.Of(value)));
+        public void ValidPlayerEvasionSpeed(float value) {
+            PlayerEvasionSpeed playerEvasionSpeed = PlayerEvasionSpeed.Of(value);
+            Assert.That(playerEvasionSpeed, Is.EqualTo(PlayerEvasionSpeed.Of(value)));
         }
 
         [Test]
         [TestCase(float.MinValue)]
         [TestCase(-1f)]
-        [TestCase(11f)]
+        [TestCase(101f)]
         [TestCase(float.MaxValue)]
         [Description("[異常] 渡された値が最小値未満または最大値より大きい場合に、スローが投げられること")]
-        public void InvalidPlaeyrMoveSpeed(float value) {
+        public void InvalidPlayerEvasionSpeed(float value) {
             var exception = Assert.Throws<ArgumentException>(() => {
-                PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(value);
+                PlayerEvasionSpeed playerEvasionSpeed = PlayerEvasionSpeed.Of(value);
             });
 
             Assert.That(
@@ -39,7 +39,7 @@ namespace Tests {
                 )
             );
         }
-
+        
     }
 
 }

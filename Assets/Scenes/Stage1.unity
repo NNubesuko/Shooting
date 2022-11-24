@@ -548,6 +548,7 @@ GameObject:
   - component: {fileID: 655611690}
   - component: {fileID: 655611693}
   - component: {fileID: 655611694}
+  - component: {fileID: 655611695}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -670,6 +671,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &655611695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655611689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ea52aeaa6af4d49a1dff881a78c778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  moveSpeed: 0
+  evasionSpeed: 0
+  stamina: 0
 --- !u!1 &729450066
 GameObject:
   m_ObjectHideFlags: 0
@@ -1796,13 +1813,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911193808}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 348380a3503327e47950b49fe95a31a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7075216694844397810, guid: 5fc53436443f86143a42994b0e3b35be, type: 3}
-  playerMain: {fileID: 0}
 --- !u!114 &1911193813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1815,7 +1831,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49fb58564f6d8874cbccec724a58c4ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScript: {fileID: 0}
 --- !u!114 &1911193814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1823,7 +1838,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911193808}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e7a9a243a2f9774b821adeab6982000, type: 3}
   m_Name: 
@@ -1839,12 +1854,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911193808}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ca76c8c49efe3c448e3274dd49acd52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMain: {fileID: 0}
   scoreText: {fileID: 2000180661}
   playerHPBar: {fileID: 435140801}
   playerStaminaBar: {fileID: 2086621935}
@@ -2066,7 +2080,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070290523}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0763de851ff8f334dba05e6acc1cd285, type: 3}
   m_Name: 
