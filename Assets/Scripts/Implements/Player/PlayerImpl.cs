@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Systemk;
 
 public class PlayerImpl : MonoBehaviour, Player {
 
@@ -19,6 +20,13 @@ public class PlayerImpl : MonoBehaviour, Player {
         Stamina = stamina;
         MoveSpeed = moveSpeed;
         EvasionSpeed = evasionSpeed;
+    }
+
+    public void Move() {
+        Vector2 velocity = transform.position;
+        // MoveSpeed * new Inputk() の使用は、MoveSpeedの定義へ移動して確認してください
+        velocity += MoveSpeed * new Inputk() * Time.deltaTime;
+        transform.position = velocity;
     }
 
 }

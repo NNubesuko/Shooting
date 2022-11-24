@@ -1,4 +1,4 @@
-public interface Player {
+public interface Player : IMovable {
 
     PlayerHP HP { get; }
     PlayerStamina Stamina { get; }

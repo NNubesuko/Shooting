@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using Systemk;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.SceneManagement;
+using Systemk;
 
 namespace Tests {
 
@@ -13,6 +13,8 @@ namespace Tests {
 
         private GameObject playerObject = null;
         private Player playerScript = null;
+        private Vector2 lastPosition = default;
+        private Vector2 currentPosition = default;
 
         [OneTimeSetUp]
         public void OneTimeSetUp() {
@@ -54,6 +56,23 @@ namespace Tests {
             Assert.That(playerScript.MoveSpeed, Is.EqualTo(moveSpeed));
             Assert.That(playerScript.EvasionSpeed, Is.EqualTo(evasionSpeed));
             yield return null;
+        }
+
+        [UnityTest]
+        [Order(4)]
+        [Description(
+            "[正常] 上移動するキーを入力した場合に、プレイヤーが単位円上の１に移動する形になること"
+        )]
+        public IEnumerator UpKeyToMovePlayer() {
+            yield return new WaitUntil(() => {
+                lastPosition = playerObject.transform.position;
+                return Inputk.GetAxis() == Vector2.up;
+            });
+            yield return null;
+            currentPosition = playerObject.transform.position;
+            Vector2 diffPosition = currentPosition - lastPosition;
+            
+            Assert.That(diffPosition.normalized, Is.EqualTo(Vector2.up));
         }
 
     }

@@ -19,6 +19,7 @@ public class PlayerMain : PlayerImpl {
     }
 
     private void Update() {
+        Move();
     }
 
 }
