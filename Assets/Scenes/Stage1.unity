@@ -683,10 +683,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3ea52aeaa6af4d49a1dff881a78c778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 0
-  moveSpeed: 0
-  evasionSpeed: 0
-  stamina: 0
+  hp: 100
+  moveSpeed: 5
+  evasionSpeed: 20
+  stamina: 100
 --- !u!1 &729450066
 GameObject:
   m_ObjectHideFlags: 0

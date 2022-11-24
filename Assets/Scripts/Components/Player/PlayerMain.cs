@@ -5,19 +5,17 @@ using UnityEngine;
 public class PlayerMain : PlayerImpl {
 
     [SerializeField] private int hp;
+    [SerializeField] private float stamina;
     [SerializeField] private float moveSpeed;
     [SerializeField] private float evasionSpeed;
-    [SerializeField] private float stamina;
-
-    // TODO: Player Init
-    /*
-     * PlayerHP
-     * PlayerMoveSpeed
-     * PlayerEvasionSpeed
-     * PlayerStamina
-     */
 
     private void Start() {
+        Init(
+            PlayerHP.Of(hp),
+            PlayerStamina.Of(stamina),
+            PlayerMoveSpeed.Of(moveSpeed),
+            PlayerEvasionSpeed.Of(evasionSpeed)
+        );
     }
 
     private void Update() {

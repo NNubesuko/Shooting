@@ -45,9 +45,14 @@ namespace Tests {
         )]
         public IEnumerator ValidPlayerStatus() {
             PlayerHP hp = PlayerHP.Of(100);
+            PlayerStamina stamina = PlayerStamina.Of(100f);
             PlayerMoveSpeed moveSpeed = PlayerMoveSpeed.Of(5f);
             PlayerEvasionSpeed evasionSpeed = PlayerEvasionSpeed.Of(20f);
-            PlayerStamina stamina = PlayerStamina.Of(100f);
+
+            Assert.That(playerScript.HP, Is.EqualTo(hp));
+            Assert.That(playerScript.Stamina, Is.EqualTo(stamina));
+            Assert.That(playerScript.MoveSpeed, Is.EqualTo(moveSpeed));
+            Assert.That(playerScript.EvasionSpeed, Is.EqualTo(evasionSpeed));
             yield return null;
         }
 
