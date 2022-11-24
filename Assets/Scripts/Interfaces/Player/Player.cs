@@ -5,6 +5,9 @@ public interface Player : IMovable {
     PlayerMoveSpeed MoveSpeed { get; }
     PlayerEvasionSpeed EvasionSpeed { get; }
 
+    /*
+     * ステータスの初期化
+     */
     void Init(
         PlayerHP hp,
         PlayerStamina stamina,

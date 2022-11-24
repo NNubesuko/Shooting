@@ -22,6 +22,9 @@ public class PlayerImpl : MonoBehaviour, Player {
         EvasionSpeed = evasionSpeed;
     }
 
+    /*
+     * 通常移動
+     */
     public void Move() {
         Vector2 velocity = transform.position;
         // MoveSpeed * new Inputk() の使用は、MoveSpeedの定義へ移動して確認してください

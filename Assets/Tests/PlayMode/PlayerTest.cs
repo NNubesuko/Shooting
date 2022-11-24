@@ -61,18 +61,70 @@ namespace Tests {
         [UnityTest]
         [Order(4)]
         [Description(
-            "[正常] 上移動するキーを入力した場合に、プレイヤーが単位円上の１に移動する形になること"
+            "[正常] 上移動するキーを入力した場合に、プレイヤーが単位円のY軸の1に移動する形になること"
         )]
         public IEnumerator UpKeyToMovePlayer() {
             yield return new WaitUntil(() => {
                 lastPosition = playerObject.transform.position;
                 return Inputk.GetAxis() == Vector2.up;
             });
+            // 入力された１フレーム後に移動処理が実行されるため、１フレーム待つ
             yield return null;
             currentPosition = playerObject.transform.position;
             Vector2 diffPosition = currentPosition - lastPosition;
             
             Assert.That(diffPosition.normalized, Is.EqualTo(Vector2.up));
+        }
+
+        [UnityTest]
+        [Order(5)]
+        [Description(
+            "[正常] 左移動するキーを入力した場合に、プレイヤーが単位円のX軸の-1に移動する形になること"
+        )]
+        public IEnumerator LeftKeyToMovePlayer() {
+            yield return new WaitUntil(() => {
+                lastPosition = playerObject.transform.position;
+                return Inputk.GetAxis() == Vector2.left;
+            });
+            yield return null;
+            currentPosition = playerObject.transform.position;
+            Vector2 diffPosition = currentPosition - lastPosition;
+            
+            Assert.That(diffPosition.normalized, Is.EqualTo(Vector2.left));
+        }
+
+        [UnityTest]
+        [Order(6)]
+        [Description(
+            "[正常] 下移動するキーを入力した場合に、プレイヤーが単位円のY軸の-1に移動する形になること"
+        )]
+        public IEnumerator DownKeyToMovePlayer() {
+            yield return new WaitUntil(() => {
+                lastPosition = playerObject.transform.position;
+                return Inputk.GetAxis() == Vector2.down;
+            });
+            yield return null;
+            currentPosition = playerObject.transform.position;
+            Vector2 diffPosition = currentPosition - lastPosition;
+            
+            Assert.That(diffPosition.normalized, Is.EqualTo(Vector2.down));
+        }
+
+        [UnityTest]
+        [Order(7)]
+        [Description(
+            "[正常] 右移動するキーを入力した場合に、プレイヤーが単位円のX軸の1に移動する形になること"
+        )]
+        public IEnumerator RightKeyToMovePlayer() {
+            yield return new WaitUntil(() => {
+                lastPosition = playerObject.transform.position;
+                return Inputk.GetAxis() == Vector2.right;
+            });
+            yield return null;
+            currentPosition = playerObject.transform.position;
+            Vector2 diffPosition = currentPosition - lastPosition;
+            
+            Assert.That(diffPosition.normalized, Is.EqualTo(Vector2.right));
         }
 
     }
