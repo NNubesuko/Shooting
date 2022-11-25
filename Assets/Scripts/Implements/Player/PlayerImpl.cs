@@ -9,6 +9,7 @@ public class PlayerImpl : MonoBehaviour, Player {
     public PlayerStamina Stamina { get; private set; }
     public PlayerMoveSpeed MoveSpeed { get; private set; }
     public PlayerEvasionSpeed EvasionSpeed { get; private set; }
+    public PlayerEvasionDistance EvasionDistance { get; private set; }
 
     private Vector2 evasionPosition;
     private bool canMove = true;
@@ -18,12 +19,14 @@ public class PlayerImpl : MonoBehaviour, Player {
         PlayerHP hp,
         PlayerStamina stamina,
         PlayerMoveSpeed moveSpeed,
-        PlayerEvasionSpeed evasionSpeed
+        PlayerEvasionSpeed evasionSpeed,
+        PlayerEvasionDistance evasionDistance
     ) {
         HP = hp;
         Stamina = stamina;
         MoveSpeed = moveSpeed;
         EvasionSpeed = evasionSpeed;
+        EvasionDistance = evasionDistance;
     }
 
     /*
@@ -33,15 +36,13 @@ public class PlayerImpl : MonoBehaviour, Player {
         if (!canMove) return;
 
         Vector2 velocity = transform.position;
-        // MoveSpeed * new Inputk() の使用は、MoveSpeedの定義へ移動して確認してください
-        velocity += MoveSpeed * new Inputk() * Time.deltaTime;
+        velocity += MoveSpeed * Inputk.GetAxis() * Time.deltaTime;
         transform.position = velocity;
     }
 
     public void Evasion() {
         if (Inputk.IsMoving() && Inputk.GetKeyDown(KeyCode.Space) && !isEvading) {
-            // 現在地 + 回避距離 * 方向
-            // evasionPosition = transform.position * Inputk.GetAxis();
+            evasionPosition = (Vector2)transform.position + EvasionDistance * Inputk.GetAxis();
             canMove = false;
             isEvading = true;
         }
@@ -50,7 +51,7 @@ public class PlayerImpl : MonoBehaviour, Player {
             transform.position = Vector2.MoveTowards(
                 transform.position,
                 evasionPosition,
-                EvasionSpeed * new Time()
+                EvasionSpeed * Time.deltaTime
             );
         }
 

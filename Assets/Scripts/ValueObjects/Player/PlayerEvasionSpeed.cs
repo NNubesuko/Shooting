@@ -9,8 +9,11 @@ public class PlayerEvasionSpeed : Speed {
         return new PlayerEvasionSpeed(value);
     }
 
-    public static float operator*(PlayerEvasionSpeed speed, Time time) {
-        return speed.Value * Time.deltaTime;
+    /*
+     * 回避速度とフレーム秒を乗算するメソッド
+     */
+    public static float operator*(PlayerEvasionSpeed speed, float deltaTime) {
+        return speed.Value * deltaTime;
     }
 
 }

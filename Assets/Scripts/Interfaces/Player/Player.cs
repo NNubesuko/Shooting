@@ -7,6 +7,7 @@ public interface Player : IMovable {
     PlayerStamina Stamina { get; }
     PlayerMoveSpeed MoveSpeed { get; }
     PlayerEvasionSpeed EvasionSpeed { get; }
+    PlayerEvasionDistance EvasionDistance { get; }
 
     /*
      * ステータスの初期化
@@ -15,7 +16,8 @@ public interface Player : IMovable {
         PlayerHP hp,
         PlayerStamina stamina,
         PlayerMoveSpeed moveSpeed,
-        PlayerEvasionSpeed evasionSpeed
+        PlayerEvasionSpeed evasionSpeed,
+        PlayerEvasionDistance evasionDistance
     );
 
 }

@@ -11,10 +11,10 @@ public class PlayerMoveSpeed : Speed {
     }
 
     /*
-     * 移動速度と Inputk.GetAxis() をかけ合わせたいため、その判定として Inputk を引数として指定する
+     * 移動速度と入力方向を乗算するメソッド
      */
-    public static Vector2 operator*(PlayerMoveSpeed speed, Inputk input) {
-        return speed.Value * Inputk.GetAxis();
+    public static Vector2 operator*(PlayerMoveSpeed speed, Vector2 axis) {
+        return speed.Value * axis;
     }
 
 }

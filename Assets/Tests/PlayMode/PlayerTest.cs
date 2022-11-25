@@ -52,11 +52,13 @@ namespace Tests {
             PlayerStamina stamina = PlayerStamina.Of(100f);
             PlayerMoveSpeed moveSpeed = PlayerMoveSpeed.Of(5f);
             PlayerEvasionSpeed evasionSpeed = PlayerEvasionSpeed.Of(20f);
+            PlayerEvasionDistance evasionDistance = PlayerEvasionDistance.Of(1.5f);
 
             Assert.That(playerScript.HP, Is.EqualTo(hp));
             Assert.That(playerScript.Stamina, Is.EqualTo(stamina));
             Assert.That(playerScript.MoveSpeed, Is.EqualTo(moveSpeed));
             Assert.That(playerScript.EvasionSpeed, Is.EqualTo(evasionSpeed));
+            Assert.That(playerScript.EvasionDistance, Is.EqualTo(evasionDistance));
             yield return null;
         }
 

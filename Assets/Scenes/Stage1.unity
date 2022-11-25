@@ -687,6 +687,7 @@ MonoBehaviour:
   stamina: 100
   moveSpeed: 5
   evasionSpeed: 20
+  evasionDistance: 1.5
 --- !u!1 &729450066
 GameObject:
   m_ObjectHideFlags: 0
