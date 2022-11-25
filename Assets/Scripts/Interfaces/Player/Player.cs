@@ -1,5 +1,8 @@
 public interface Player : IMovable {
 
+    /*
+     * プレイヤーのステータスプロパティ
+     */
     PlayerHP HP { get; }
     PlayerStamina Stamina { get; }
     PlayerMoveSpeed MoveSpeed { get; }

@@ -29,6 +29,13 @@ namespace Systemk {
             return new Vector2(x, y).normalized;
         }
 
+        public static bool IsMoving() {
+            return GetKey(KeyCode.W) ||
+                    GetKey(KeyCode.S) ||
+                    GetKey(KeyCode.A) ||
+                    GetKey(KeyCode.D);
+        }
+
     }
 
 }

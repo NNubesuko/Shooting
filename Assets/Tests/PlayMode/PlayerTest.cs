@@ -230,6 +230,25 @@ namespace Tests {
             );
         }
 
+        [UnityTest]
+        [Order(12)]
+        [Description("[正常] 上移動中に回避するキーを入力した場合に、プレイヤーが上方向に回避すること")]
+        public IEnumerator EvasionKeyToEvasionPlayer() {
+            yield return new WaitUntil(() => {
+                lastPosition = playerObject.transform.position;
+                return Inputk.GetAxis() == Vector2.up && Inputk.GetKeyDown(KeyCode.Space);
+            });
+            yield return null;
+            currentPosition = playerObject.transform.position;
+            Vector2 diffPosition = currentPosition - lastPosition;
+
+            var comparer = new Vector2EqualityComparer(Vector2Tolerance);
+            Assert.That(
+                diffPosition.normalized,
+                Is.EqualTo(Vector2.up).Using(comparer)
+            );
+        }
+
     }
 
 }
