@@ -13,7 +13,7 @@ namespace Tests {
     public class PlayerTest {
 
         private GameObject playerObject = null;
-        private Player playerScript = null;
+        private PlayerMain playerScript = null;
         private Vector2 lastPosition = default;
         private Vector2 currentPosition = default;
         private const float Vector2Tolerance = 0.001f;
@@ -238,7 +238,7 @@ namespace Tests {
         public IEnumerator EvasionKeyToEvasionPlayer() {
             yield return new WaitUntil(() => {
                 lastPosition = playerObject.transform.position;
-                return Inputk.GetAxis() == Vector2.up && Inputk.GetKeyDown(KeyCode.Space);
+                return playerScript.IsEvading;
             });
             yield return null;
             currentPosition = playerObject.transform.position;
@@ -249,6 +249,17 @@ namespace Tests {
                 diffPosition.normalized,
                 Is.EqualTo(Vector2.up).Using(comparer)
             );
+        }
+
+        [UnityTest]
+        [Order(13)]
+        [Description("[正常] 回避した場合に、スタミナが消費されていること")]
+        public IEnumerator StaminaIsBeingConsumedNormally() {
+            PlayerStamina lastStamina = playerScript.Stamina;
+            yield return new WaitUntil(() => playerScript.IsEvading);
+            PlayerStamina currentStamina = playerScript.Stamina;
+
+            Assert.That(lastPosition, Is.LessThan(currentPosition));
         }
 
     }

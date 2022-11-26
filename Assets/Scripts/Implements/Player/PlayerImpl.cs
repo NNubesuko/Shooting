@@ -12,8 +12,8 @@ public class PlayerImpl : MonoBehaviour, Player {
     public PlayerEvasionDistance EvasionDistance { get; private set; }
 
     private Vector2 evasionPosition;
-    private bool canMove = true;
-    private bool isEvading = false;
+    public bool CanMove { get; private set; } = true;
+    public bool IsEvading { get; private set; } = false;
 
     public void Init(
         PlayerHP hp,
@@ -33,21 +33,15 @@ public class PlayerImpl : MonoBehaviour, Player {
      * 通常移動
      */
     public void Move() {
-        if (!canMove) return;
+        if (!CanMove) return;
 
         Vector2 velocity = transform.position;
         velocity += MoveSpeed * Inputk.GetAxis() * Time.deltaTime;
         transform.position = velocity;
     }
 
-    public void Evasion() {
-        if (Inputk.IsMoving() && Inputk.GetKeyDown(KeyCode.Space) && !isEvading) {
-            evasionPosition = (Vector2)transform.position + EvasionDistance * Inputk.GetAxis();
-            canMove = false;
-            isEvading = true;
-        }
-
-        if (isEvading) {
+    public void Evasion(float staminaConsumption) {
+        if (IsEvading) {
             transform.position = Vector2.MoveTowards(
                 transform.position,
                 evasionPosition,
@@ -56,9 +50,24 @@ public class PlayerImpl : MonoBehaviour, Player {
         }
 
         if ((Vector2)transform.position == evasionPosition) {
-            canMove = true;
-            isEvading = false;
+            CanMove = true;
+            IsEvading = false;
         }
+
+        PlayerStamina staminaSubConsumption = Stamina - PlayerStamina.Of(staminaConsumption);
+        if (staminaSubConsumption == PlayerStamina.Of(0f)) return;
+
+        if (Inputk.IsMoving() && Inputk.GetKeyDown(KeyCode.Space) && !IsEvading) {
+            evasionPosition = (Vector2)transform.position + EvasionDistance * Inputk.GetAxis();
+            CanMove = false;
+            IsEvading = true;
+
+            Stamina = staminaSubConsumption;
+        }
+    }
+
+    protected void RestoreStamina(float recoveryAmount) {
+        Stamina += PlayerStamina.Of(recoveryAmount);
     }
 
 }

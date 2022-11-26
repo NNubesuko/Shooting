@@ -9,6 +9,7 @@ public class PlayerMain : PlayerImpl {
     [SerializeField] private float moveSpeed;
     [SerializeField] private float evasionSpeed;
     [SerializeField] private float evasionDistance;
+    [SerializeField] private float staminaConsumption;
 
     private void Start() {
         Init(
@@ -22,7 +23,8 @@ public class PlayerMain : PlayerImpl {
 
     private void Update() {
         Move();
-        Evasion();
+        Evasion(staminaConsumption);
+        RestoreStamina(Time.deltaTime);
     }
 
 }
