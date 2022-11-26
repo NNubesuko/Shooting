@@ -40,6 +40,29 @@ namespace Tests {
             );
         }
 
+        [Test]
+        [TestCase(0f)]
+        [TestCase(5f)]
+        [TestCase(10f)]
+        [Description("[正常] 方向ベクトルと乗算した場合に、二次元ベクトルが格納されること")]
+        public void ValidPlayerMoveSpeedMul(float value) {
+            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(value);
+
+            for (int directionX = -1; directionX <= 1; directionX++) {
+                for (int directionY = -1; directionY <= 1; directionY++) {
+                    Vector2 moveSpeedMulDirection =
+                        playerMoveSpeed * new Vector2(directionX, directionY).normalized;
+
+                    Assert.That(
+                        moveSpeedMulDirection,
+                        Is.EqualTo(
+                            value * new Vector2(directionX, directionY).normalized
+                        )
+                    );
+                }
+            }
+        }
+
     }
 
 }

@@ -39,6 +39,18 @@ namespace Tests {
                 )
             );
         }
+
+        [Test]
+        [TestCase(0f)]
+        [TestCase(50f)]
+        [TestCase(100f)]
+        [Description("[正常] フレーム秒と乗算をした場合に、float型の実数が格納されること")]
+        public void ValidPlayerEvasionSpeedMul(float value) {
+            PlayerEvasionSpeed playerEvasionSpeed = PlayerEvasionSpeed.Of(value);
+            float evasionSpeedMulDeltaTime = playerEvasionSpeed * Time.deltaTime;
+            
+            Assert.That(evasionSpeedMulDeltaTime, Is.EqualTo(value * Time.deltaTime));
+        }
         
     }
 

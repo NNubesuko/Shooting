@@ -5,6 +5,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using KataokaLib.ValueObject;
+using Systemk;
 
 namespace Tests {
 
@@ -38,6 +39,29 @@ namespace Tests {
                     ValueObjectExceptionHandler.ArgumentException(nameof(value)).Message
                 )
             );
+        }
+
+        [Test]
+        [TestCase(0f)]
+        [TestCase(5f)]
+        [TestCase(10f)]
+        [Description("[正常] 方向ベクトルと乗算した場合に、二次元ベクトルが格納されること")]
+        public void ValidPlayerEvasionDistanceMul(float value) {
+            PlayerEvasionDistance playerEvasionDistance = PlayerEvasionDistance.Of(value);
+
+            for (int directionX = -1; directionX <= 1; directionX++) {
+                for (int directionY = -1; directionY <= 1; directionY++) {
+                    Vector2 distanceMulDirection =
+                        playerEvasionDistance * new Vector2(directionX, directionY).normalized;
+
+                    Assert.That(
+                        distanceMulDirection,
+                        Is.EqualTo(
+                            value * new Vector2(directionX, directionY).normalized
+                        )
+                    );
+                }
+            }
         }
 
     }

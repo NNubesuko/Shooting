@@ -40,6 +40,76 @@ namespace Tests {
             );
         }
 
+        [Test]
+        [TestCase(0f)]
+        [TestCase(10f)]
+        [TestCase(50f)]
+        [TestCase(80f)]
+        [Description("[正常] フレーム秒と加算した場合に、範囲内の数値が格納されること")]
+        public void ValidPlyaerStaminaAddDelatTime(float value) {
+            PlayerStamina playerStamina = PlayerStamina.Of(value);
+            PlayerStamina deltaTime = PlayerStamina.Of(Time.deltaTime);
+            PlayerStamina playerStaminaAddDeltaTime = playerStamina + deltaTime;
+
+            Assert.That(
+                playerStaminaAddDeltaTime,
+                Is.EqualTo(
+                    PlayerStamina.Of(value + Time.deltaTime)
+                )
+            );
+        }
+
+        [Test]
+        [TestCase(100f)]
+        [Description("[正常] フレーム秒と加算した値が最大値を超えた場合に、最大値が格納されること")]
+        public void ValidPlyaerStaminaAddDeltaTimeOverMax(float value) {
+            PlayerStamina playerStamina = PlayerStamina.Of(value);
+            PlayerStamina deltaTime = PlayerStamina.Of(Time.deltaTime);
+            PlayerStamina playerStaminaAddDeltaTime = playerStamina + deltaTime;
+
+            Assert.That(
+                playerStaminaAddDeltaTime,
+                Is.EqualTo(
+                    PlayerStamina.Of(playerStamina.MAX)
+                )
+            );
+        }
+
+        [Test]
+        [TestCase(10f)]
+        [TestCase(50f)]
+        [TestCase(80f)]
+        [TestCase(100f)]
+        [Description("[正常] フレーム秒と減算した場合に、範囲内の数値が格納されること")]
+        public void ValidPlyaerStaminaSubDelatTime(float value) {
+            PlayerStamina playerStamina = PlayerStamina.Of(value);
+            PlayerStamina deltaTime = PlayerStamina.Of(Time.deltaTime);
+            PlayerStamina playerStaminaAddDeltaTime = playerStamina - deltaTime;
+
+            Assert.That(
+                playerStaminaAddDeltaTime,
+                Is.EqualTo(
+                    PlayerStamina.Of(value - Time.deltaTime)
+                )
+            );
+        }
+
+        [Test]
+        [TestCase(0f)]
+        [Description("[正常] フレーム秒と加算した値が最大値を超えた場合に、最大値が格納されること")]
+        public void ValidPlyaerStaminaSubDeltaTimeOverMax(float value) {
+            PlayerStamina playerStamina = PlayerStamina.Of(value);
+            PlayerStamina deltaTime = PlayerStamina.Of(Time.deltaTime);
+            PlayerStamina playerStaminaAddDeltaTime = playerStamina - deltaTime;
+
+            Assert.That(
+                playerStaminaAddDeltaTime,
+                Is.EqualTo(
+                    PlayerStamina.Of(playerStamina.MIN)
+                )
+            );
+        }
+
     }
 
 }
