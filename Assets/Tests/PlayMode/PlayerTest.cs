@@ -45,20 +45,28 @@ namespace Tests {
         [UnityTest]
         [Order(3)]
         [Description(
-            "[正常] プレイヤーのステータスがインスペクターから渡された場合に、正常に初期化されること"
+            "[正常] プレイヤーのステータスが初期化された場合に、正常に初期化されること"
         )]
         public IEnumerator ValidPlayerStatus() {
-            PlayerHP hp = PlayerHP.Of(100);
-            PlayerStamina stamina = PlayerStamina.Of(100f);
-            PlayerMoveSpeed moveSpeed = PlayerMoveSpeed.Of(5f);
-            PlayerEvasionSpeed evasionSpeed = PlayerEvasionSpeed.Of(20f);
-            PlayerEvasionDistance evasionDistance = PlayerEvasionDistance.Of(1.5f);
+            PlayerHP playerHP = PlayerHP.Of(100);
+            PlayerStamina playerStamina = PlayerStamina.Of(100f);
+            PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(5f);
+            PlayerEvasionSpeed playerEvasionSpeed = PlayerEvasionSpeed.Of(20f);
+            PlayerEvasionDistance playerEvasionDistance = PlayerEvasionDistance.Of(1.5f);
 
-            Assert.That(playerScript.HP, Is.EqualTo(hp));
-            Assert.That(playerScript.Stamina, Is.EqualTo(stamina));
-            Assert.That(playerScript.MoveSpeed, Is.EqualTo(moveSpeed));
-            Assert.That(playerScript.EvasionSpeed, Is.EqualTo(evasionSpeed));
-            Assert.That(playerScript.EvasionDistance, Is.EqualTo(evasionDistance));
+            playerScript.Init(
+                playerHP,
+                playerStamina,
+                playerMoveSpeed,
+                playerEvasionSpeed,
+                playerEvasionDistance
+            );
+
+            Assert.That(playerScript.HP, Is.EqualTo(playerHP));
+            Assert.That(playerScript.Stamina, Is.EqualTo(playerStamina));
+            Assert.That(playerScript.MoveSpeed, Is.EqualTo(playerMoveSpeed));
+            Assert.That(playerScript.EvasionSpeed, Is.EqualTo(playerEvasionSpeed));
+            Assert.That(playerScript.EvasionDistance, Is.EqualTo(playerEvasionDistance));
             yield return null;
         }
 
@@ -259,7 +267,7 @@ namespace Tests {
             yield return new WaitUntil(() => playerScript.IsEvading);
             PlayerStamina currentStamina = playerScript.Stamina;
 
-            Assert.That(lastPosition, Is.LessThan(currentPosition));
+            Assert.That(lastStamina, Is.LessThan(currentStamina));
         }
 
     }
