@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 4940
+  controlID: 23
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 4875
+  controlID: 28
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,8 +165,8 @@ MonoBehaviour:
     y: 0
     width: 896
     height: 486
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 486
     width: 896
     height: 461
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 4941
+  controlID: 39
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 4942
+  controlID: 40
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -322,12 +322,12 @@ MonoBehaviour:
     height: 478
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
   - {fileID: 21}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1693,7 +1693,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d688feff7c89fefff68cfeff9e99feff449afeffc09dfeff849efeff2a9ffeffa6a2feff7ca3feff22a4feff46a7feffb6aafeff5cabfeff7caefeffeaaffeffaecefeffe8cefeff36d1feffe0d3feff52e3fefff8e3feff1ae7fefff2e8feff98e9feffbaecfeffbceffeff62f0feff84f3feff780bffff060cffff6a0dffff120effff3a16ffff4618ffffee18ffffda20ffff9021ffff3822ffff102affff022cffffaa2cffff8234ffff3035ffffd835ffffb03dffff7a3effff223ffffffa46ffff2a4affffd24affffbe52ffff7453ffff1c54fffff45bffffda5dffff825effff5a66ffff2a67ffffd267ffffaa6fffffdc71ffff8472ffff5c7affff887cffff307dffff0885ffff7487ffff1c88fffff48fffffb290ffff5a91ffff3299ffff189bffffc09bffff98a3ffffd2a5ffff7aa6ffff52aeffff24afffffccafffffe4b7ffff9ab8ffff42b9ffff1ac1ffff34c3ffffdcc3ffffb4cbffffbacdffff62ceffff7cd6ffff74d8ffff1cd9ffff2ce1ffffe4e1ffff8ce2ffff9ceaffffdcedffff84eeffff8ef6ffff74f7ffffeef8ffff2afbffffc2b50000
+      m_ExpandedIDs: 9872ffff4073ffff6a76ffff6c78ffff1479ffff3e7cffff267effffce7efffff881ffffe083ffff8884ffffb287ffffd294ffff7a95ffffa498ffff9a9affff429bffff6c9effff8aa0ffff32a1ffff5ca4ffff4ca6fffff4a6ffff1eaaffff0aacffffb2acffffdcafffff42b2ffffeab2ffff28b6ffffecbbffff00bffffff6c1ffffc4c2ffff26c5ffff8cc9ffff9acaffffdaccffffaccdffff12d0ffff60d2ffffcad4ffff74d7ffff30dbffffb2ddffff4ae0ffff10e8fffffae8ffff44ebfffff4edffff68f0ffff02f3ffff94f5ffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1771,9 +1771,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 328}
-    m_SelectedIDs: e06b0000
-    m_LastClickedID: 27616
-    m_ExpandedIDs: 00000000746b0000766b0000786b00007a6b00007c6b00007e6b0000806b0000826b0000846b0000866b0000886b00008a6b00008c6b00008e6b0000906b0000926b0000946b0000966b0000986b00009a6b00009c6b00009e6b0000a06b0000
+    m_SelectedIDs: 826d0000
+    m_LastClickedID: 28034
+    m_ExpandedIDs: 00000000906b0000926b0000946b0000966b0000986b00009a6b00009c6b00009e6b0000a06b0000a26b0000a46b0000a66b0000a86b0000aa6b0000ac6b0000ae6b0000b06b0000b26b0000b46b0000b66b0000b86b0000ba6b0000bc6b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1801,7 +1801,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000746b0000766b0000786b00007a6b00007c6b00007e6b0000806b0000826b0000846b0000866b0000886b00008a6b00008c6b00008e6b0000906b0000926b0000946b0000966b0000986b00009a6b00009c6b00009e6b0000a06b0000
+    m_ExpandedIDs: 00000000906b0000926b0000946b0000966b0000986b00009a6b00009c6b00009e6b0000a06b0000a26b0000a46b0000a66b0000a86b0000aa6b0000ac6b0000ae6b0000b06b0000b26b0000b46b0000b66b0000b86b0000ba6b0000bc6b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1828,7 +1828,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1914,7 +1914,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 5022
+    ID: 170
     splitterInitialOffset: 238
     currentActiveSplitter: -1
     realSizes:
@@ -1946,7 +1946,7 @@ MonoBehaviour:
       name: ShootingGame
       fullName: ShootingGame
       resultStatus: 1
-      duration: 5.261125
+      duration: 0.83352
       messages: 
       output: 
       stacktrace: 
@@ -1962,7 +1962,7 @@ MonoBehaviour:
       name: PlayMode.dll
       fullName: D:/Program/Unity/Unity_2021_3_1f1/ShootingGame/Library/ScriptAssemblies/PlayMode.dll
       resultStatus: 1
-      duration: 5.0896673
+      duration: 0.6752863
       messages: 
       output: 
       stacktrace: 
@@ -1978,7 +1978,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 5.078218
+      duration: 0.6573853
       messages: 
       output: 
       stacktrace: 
@@ -1994,7 +1994,7 @@ MonoBehaviour:
       name: PlayerTest
       fullName: Tests.PlayerTest
       resultStatus: 1
-      duration: 5.063247
+      duration: 0.6429792
       messages: 
       output: 
       stacktrace: 
@@ -2044,9 +2044,20 @@ MonoBehaviour:
       name: EvasionKeyToEvasionPlayer
       fullName: Tests.PlayerTest.EvasionKeyToEvasionPlayer
       resultStatus: 1
-      duration: 0.7914149
+      duration: 1.2342865
       messages: 
-      output: 
+      output: 'The referenced script (Unknown) on this Behaviour is missing!
+
+        The
+        referenced script (Unknown) on this Behaviour is missing!
+
+        The referenced
+        script on this Behaviour (Game Object ''Enemy'') is missing!
+
+        The
+        referenced script on this Behaviour (Game Object ''NormalBullet'') is missing!
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -2169,6 +2180,37 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1139
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
+    - id: 1096
+      uniqueId: PlayMode.dll/Tests/PlayerTest/[PlayMode][Tests.PlayerTest.StaminaIsBeingConsumedNormally]
+      name: StaminaIsBeingConsumedNormally
+      fullName: Tests.PlayerTest.StaminaIsBeingConsumedNormally
+      resultStatus: 1
+      duration: 0.6234612
+      messages: 
+      output: 'The referenced script (Unknown) on this Behaviour is missing!
+
+        The
+        referenced script (Unknown) on this Behaviour is missing!
+
+        The referenced
+        script on this Behaviour (Game Object ''Enemy'') is missing!
+
+        The
+        referenced script on this Behaviour (Game Object ''NormalBullet'') is missing!
+
+        last
+        = 100, current = 90
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u56DE\u907F\u3057\u305F\u5834\u5408\u306B\u3001\u30B9\u30BF\u30DF\u30CA\u304C\u6D88\u8CBB\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1083
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
     - id: 1009
       uniqueId: PlayMode.dll/Tests/PlayerTest/[PlayMode][Tests.PlayerTest.UpAndLeftKeyToMovePlayer]
       name: UpAndLeftKeyToMovePlayer
@@ -2220,12 +2262,17 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1139
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
-    m_ResultText: "PlayerTest (5.063s)\n\u30D7\u30EC\u30A4\u30E4\u30FC\u306E\u52D5\u4F5C\u30C6\u30B9\u30C8"
+    m_ResultText: "StaminaIsBeingConsumedNormally (0.623s)\n[\u6B63\u5E38] \u56DE\u907F\u3057\u305F\u5834\u5408\u306B\u3001\u30B9\u30BF\u30DF\u30CA\u304C\u6D88\u8CBB\u3055\u308C\u3066\u3044\u308B\u3053\u3068\n---\nThe
+      referenced script (Unknown) on this Behaviour is missing!\r\nThe referenced
+      script (Unknown) on this Behaviour is missing!\r\nThe referenced script on
+      this Behaviour (Game Object 'Enemy') is missing!\r\nThe referenced script on
+      this Behaviour (Game Object 'NormalBullet') is missing!\r\nlast = 100, current
+      = 90"
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a1b2169d
-      m_LastClickedID: -1659456863
+      scrollPos: {x: 0, y: 108}
+      m_SelectedIDs: 5b3265d8
+      m_LastClickedID: -664456613
       m_ExpandedIDs: a1b2169d9f5c62b6e58676ef2771480bb492650b8bce34246d52402d22524b3a3034ef4ebc805a6dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -2261,7 +2308,7 @@ MonoBehaviour:
       name: ShootingGame
       fullName: ShootingGame
       resultStatus: 1
-      duration: 0.3788116
+      duration: 0.5098874
       messages: 
       output: 
       stacktrace: 
@@ -2277,7 +2324,7 @@ MonoBehaviour:
       name: EditMode.dll
       fullName: D:/Program/Unity/Unity_2021_3_1f1/ShootingGame/Library/ScriptAssemblies/EditMode.dll
       resultStatus: 1
-      duration: 0.311195
+      duration: 0.4538153
       messages: 
       output: 
       stacktrace: 
@@ -2293,7 +2340,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.310659
+      duration: 0.4533208
       messages: 
       output: 
       stacktrace: 
@@ -2309,7 +2356,7 @@ MonoBehaviour:
       name: PlayerEvasionDistanceTest
       fullName: Tests.PlayerEvasionDistanceTest
       resultStatus: 1
-      duration: 0.1511478
+      duration: 0.1487674
       messages: 
       output: 
       stacktrace: 
@@ -2325,7 +2372,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionDistance
       fullName: Tests.PlayerEvasionDistanceTest.InvalidPlayerEvasionDistance
       resultStatus: 1
-      duration: 0.1385345
+      duration: 0.1180803
       messages: 
       output: 
       stacktrace: 
@@ -2341,7 +2388,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionDistance(float.MinValue)
       fullName: Tests.PlayerEvasionDistanceTest.InvalidPlayerEvasionDistance(float.MinValue)
       resultStatus: 1
-      duration: 0.1167183
+      duration: 0.1021165
       messages: 
       output: 
       stacktrace: 
@@ -2358,7 +2405,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionDistance(-1.0f)
       fullName: Tests.PlayerEvasionDistanceTest.InvalidPlayerEvasionDistance(-1.0f)
       resultStatus: 1
-      duration: 0.0001109
+      duration: 0.0001538
       messages: 
       output: 
       stacktrace: 
@@ -2375,7 +2422,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionDistance(11.0f)
       fullName: Tests.PlayerEvasionDistanceTest.InvalidPlayerEvasionDistance(11.0f)
       resultStatus: 1
-      duration: 0.0021336
+      duration: 0.0040955
       messages: 
       output: 
       stacktrace: 
@@ -2392,7 +2439,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionDistance(float.MaxValue)
       fullName: Tests.PlayerEvasionDistanceTest.InvalidPlayerEvasionDistance(float.MaxValue)
       resultStatus: 1
-      duration: 0.000069
+      duration: 0.0001823
       messages: 
       output: 
       stacktrace: 
@@ -2409,7 +2456,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionDistance
       fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistance
       resultStatus: 1
-      duration: 0.0074375
+      duration: 0.0140285
       messages: 
       output: 
       stacktrace: 
@@ -2425,7 +2472,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionDistance(0.0f)
       fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistance(0.0f)
       resultStatus: 1
-      duration: 0.0017506
+      duration: 0.0018047
       messages: 
       output: 
       stacktrace: 
@@ -2442,7 +2489,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionDistance(5.0f)
       fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistance(5.0f)
       resultStatus: 1
-      duration: 0.0000655
+      duration: 0.0000677
       messages: 
       output: 
       stacktrace: 
@@ -2471,12 +2518,79 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1022
       parentUniqueId: EditMode.dll/Tests/PlayerEvasionDistanceTest/[EditMode][Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistance][suite]
+    - id: 1014
+      uniqueId: EditMode.dll/Tests/PlayerEvasionDistanceTest/[EditMode][Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistanceMul][suite]
+      name: ValidPlayerEvasionDistanceMul
+      fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistanceMul
+      resultStatus: 1
+      duration: 0.0113251
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u65B9\u5411\u30D9\u30AF\u30C8\u30EB\u3068\u4E57\u7B97\u3057\u305F\u5834\u5408\u306B\u3001\u4E8C\u6B21\u5143\u30D9\u30AF\u30C8\u30EB\u304C\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasionDistanceTest][suite]
+    - id: 1011
+      uniqueId: EditMode.dll/Tests/PlayerEvasionDistanceTest/ValidPlayerEvasionDistanceMul/[EditMode][Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistanceMul(0.0f)]
+      name: ValidPlayerEvasionDistanceMul(0.0f)
+      fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistanceMul(0.0f)
+      resultStatus: 1
+      duration: 0.0011512
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1014
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasionDistanceTest/[EditMode][Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistanceMul][suite]
+    - id: 1012
+      uniqueId: EditMode.dll/Tests/PlayerEvasionDistanceTest/ValidPlayerEvasionDistanceMul/[EditMode][Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistanceMul(5.0f)]
+      name: ValidPlayerEvasionDistanceMul(5.0f)
+      fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistanceMul(5.0f)
+      resultStatus: 1
+      duration: 0.0001062
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1014
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasionDistanceTest/[EditMode][Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistanceMul][suite]
+    - id: 1013
+      uniqueId: EditMode.dll/Tests/PlayerEvasionDistanceTest/ValidPlayerEvasionDistanceMul/[EditMode][Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistanceMul(10.0f)]
+      name: ValidPlayerEvasionDistanceMul(10.0f)
+      fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistanceMul(10.0f)
+      resultStatus: 1
+      duration: 0.0000903
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1014
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasionDistanceTest/[EditMode][Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistanceMul][suite]
     - id: 1001
       uniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasionSpeedTest][suite]
       name: PlayerEvasionSpeedTest
       fullName: Tests.PlayerEvasionSpeedTest
       resultStatus: 1
-      duration: 0.0325192
+      duration: 0.0628698
       messages: 
       output: 
       stacktrace: 
@@ -2492,7 +2606,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionSpeed
       fullName: Tests.PlayerEvasionSpeedTest.InvalidPlayerEvasionSpeed
       resultStatus: 1
-      duration: 0.0012767
+      duration: 0.0012891
       messages: 
       output: 
       stacktrace: 
@@ -2508,7 +2622,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionSpeed(float.MinValue)
       fullName: Tests.PlayerEvasionSpeedTest.InvalidPlayerEvasionSpeed(float.MinValue)
       resultStatus: 1
-      duration: 0.0003832
+      duration: 0.0004222
       messages: 
       output: 
       stacktrace: 
@@ -2525,7 +2639,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionSpeed(-1.0f)
       fullName: Tests.PlayerEvasionSpeedTest.InvalidPlayerEvasionSpeed(-1.0f)
       resultStatus: 1
-      duration: 0.0000751
+      duration: 0.0000783
       messages: 
       output: 
       stacktrace: 
@@ -2542,7 +2656,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionSpeed(101.0f)
       fullName: Tests.PlayerEvasionSpeedTest.InvalidPlayerEvasionSpeed(101.0f)
       resultStatus: 1
-      duration: 0.0000658
+      duration: 0.0000656
       messages: 
       output: 
       stacktrace: 
@@ -2559,7 +2673,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionSpeed(float.MaxValue)
       fullName: Tests.PlayerEvasionSpeedTest.InvalidPlayerEvasionSpeed(float.MaxValue)
       resultStatus: 1
-      duration: 0.0000629
+      duration: 0.0000624
       messages: 
       output: 
       stacktrace: 
@@ -2576,7 +2690,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeed
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeed
       resultStatus: 1
-      duration: 0.0202547
+      duration: 0.0199038
       messages: 
       output: 
       stacktrace: 
@@ -2592,7 +2706,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeed(0.0f)
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeed(0.0f)
       resultStatus: 1
-      duration: 0.0002667
+      duration: 0.0002404
       messages: 
       output: 
       stacktrace: 
@@ -2609,7 +2723,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeed(50.0f)
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeed(50.0f)
       resultStatus: 1
-      duration: 0.0000609
+      duration: 0.000062
       messages: 
       output: 
       stacktrace: 
@@ -2626,7 +2740,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeed(100.0f)
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeed(100.0f)
       resultStatus: 1
-      duration: 0.0000555
+      duration: 0.0000484
       messages: 
       output: 
       stacktrace: 
@@ -2638,12 +2752,79 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1005
       parentUniqueId: EditMode.dll/Tests/PlayerEvasionSpeedTest/[EditMode][Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeed][suite]
+    - id: 1041
+      uniqueId: EditMode.dll/Tests/PlayerEvasionSpeedTest/[EditMode][Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeedMul][suite]
+      name: ValidPlayerEvasionSpeedMul
+      fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeedMul
+      resultStatus: 1
+      duration: 0.0220354
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u30D5\u30EC\u30FC\u30E0\u79D2\u3068\u4E57\u7B97\u3092\u3057\u305F\u5834\u5408\u306B\u3001float\u578B\u306E\u5B9F\u6570\u304C\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1028
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasionSpeedTest][suite]
+    - id: 1038
+      uniqueId: EditMode.dll/Tests/PlayerEvasionSpeedTest/ValidPlayerEvasionSpeedMul/[EditMode][Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeedMul(0.0f)]
+      name: ValidPlayerEvasionSpeedMul(0.0f)
+      fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeedMul(0.0f)
+      resultStatus: 1
+      duration: 0.0011019
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1041
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasionSpeedTest/[EditMode][Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeedMul][suite]
+    - id: 1039
+      uniqueId: EditMode.dll/Tests/PlayerEvasionSpeedTest/ValidPlayerEvasionSpeedMul/[EditMode][Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeedMul(50.0f)]
+      name: ValidPlayerEvasionSpeedMul(50.0f)
+      fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeedMul(50.0f)
+      resultStatus: 1
+      duration: 0.0000643
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1041
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasionSpeedTest/[EditMode][Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeedMul][suite]
+    - id: 1040
+      uniqueId: EditMode.dll/Tests/PlayerEvasionSpeedTest/ValidPlayerEvasionSpeedMul/[EditMode][Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeedMul(100.0f)]
+      name: ValidPlayerEvasionSpeedMul(100.0f)
+      fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeedMul(100.0f)
+      resultStatus: 1
+      duration: 0.0000471
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1041
+      parentUniqueId: EditMode.dll/Tests/PlayerEvasionSpeedTest/[EditMode][Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeedMul][suite]
     - id: 1001
       uniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
       name: PlayerHPTest
       fullName: Tests.PlayerHPTest
       resultStatus: 1
-      duration: 0.0422404
+      duration: 0.0413413
       messages: 
       output: 
       stacktrace: 
@@ -2659,7 +2840,7 @@ MonoBehaviour:
       name: InvalidPlayerHP
       fullName: Tests.PlayerHPTest.InvalidPlayerHP
       resultStatus: 1
-      duration: 0.0038988
+      duration: 0.0037456
       messages: 
       output: 
       stacktrace: 
@@ -2675,7 +2856,7 @@ MonoBehaviour:
       name: InvalidPlayerHP(int.MinValue)
       fullName: Tests.PlayerHPTest.InvalidPlayerHP(int.MinValue)
       resultStatus: 1
-      duration: 0.0020605
+      duration: 0.0019394
       messages: 
       output: 
       stacktrace: 
@@ -2692,7 +2873,7 @@ MonoBehaviour:
       name: InvalidPlayerHP(-1)
       fullName: Tests.PlayerHPTest.InvalidPlayerHP(-1)
       resultStatus: 1
-      duration: 0.0000763
+      duration: 0.0000758
       messages: 
       output: 
       stacktrace: 
@@ -2709,7 +2890,7 @@ MonoBehaviour:
       name: InvalidPlayerHP(101)
       fullName: Tests.PlayerHPTest.InvalidPlayerHP(101)
       resultStatus: 1
-      duration: 0.0010695
+      duration: 0.0010685
       messages: 
       output: 
       stacktrace: 
@@ -2726,7 +2907,7 @@ MonoBehaviour:
       name: InvalidPlayerHP(int.MaxValue)
       fullName: Tests.PlayerHPTest.InvalidPlayerHP(int.MaxValue)
       resultStatus: 1
-      duration: 0.0000713
+      duration: 0.0000695
       messages: 
       output: 
       stacktrace: 
@@ -2743,7 +2924,7 @@ MonoBehaviour:
       name: ValidPlayerHP
       fullName: Tests.PlayerHPTest.ValidPlayerHP
       resultStatus: 1
-      duration: 0.0179072
+      duration: 0.0181611
       messages: 
       output: 
       stacktrace: 
@@ -2759,7 +2940,7 @@ MonoBehaviour:
       name: ValidPlayerHP(0)
       fullName: Tests.PlayerHPTest.ValidPlayerHP(0)
       resultStatus: 1
-      duration: 0.0006582
+      duration: 0.0006104
       messages: 
       output: 
       stacktrace: 
@@ -2776,7 +2957,7 @@ MonoBehaviour:
       name: ValidPlayerHP(50)
       fullName: Tests.PlayerHPTest.ValidPlayerHP(50)
       resultStatus: 1
-      duration: 0.0000638
+      duration: 0.000064
       messages: 
       output: 
       stacktrace: 
@@ -2793,7 +2974,7 @@ MonoBehaviour:
       name: ValidPlayerHP(100)
       fullName: Tests.PlayerHPTest.ValidPlayerHP(100)
       resultStatus: 1
-      duration: 0.0000514
+      duration: 0.000056
       messages: 
       output: 
       stacktrace: 
@@ -2810,7 +2991,7 @@ MonoBehaviour:
       name: PlayerMoveSpeedTest
       fullName: Tests.PlayerMoveSpeedTest
       resultStatus: 1
-      duration: 0.0416958
+      duration: 0.0628586
       messages: 
       output: 
       stacktrace: 
@@ -2826,7 +3007,7 @@ MonoBehaviour:
       name: InvalidPlaeyrMoveSpeed
       fullName: Tests.PlayerMoveSpeedTest.InvalidPlaeyrMoveSpeed
       resultStatus: 1
-      duration: 0.001186
+      duration: 0.0012173
       messages: 
       output: 
       stacktrace: 
@@ -2842,7 +3023,7 @@ MonoBehaviour:
       name: InvalidPlaeyrMoveSpeed(float.MinValue)
       fullName: Tests.PlayerMoveSpeedTest.InvalidPlaeyrMoveSpeed(float.MinValue)
       resultStatus: 1
-      duration: 0.0004041
+      duration: 0.0004289
       messages: 
       output: 
       stacktrace: 
@@ -2859,7 +3040,7 @@ MonoBehaviour:
       name: InvalidPlaeyrMoveSpeed(-1.0f)
       fullName: Tests.PlayerMoveSpeedTest.InvalidPlaeyrMoveSpeed(-1.0f)
       resultStatus: 1
-      duration: 0.0000727
+      duration: 0.0000773
       messages: 
       output: 
       stacktrace: 
@@ -2876,7 +3057,7 @@ MonoBehaviour:
       name: InvalidPlaeyrMoveSpeed(11.0f)
       fullName: Tests.PlayerMoveSpeedTest.InvalidPlaeyrMoveSpeed(11.0f)
       resultStatus: 1
-      duration: 0.000065
+      duration: 0.0000654
       messages: 
       output: 
       stacktrace: 
@@ -2893,7 +3074,7 @@ MonoBehaviour:
       name: InvalidPlaeyrMoveSpeed(float.MaxValue)
       fullName: Tests.PlayerMoveSpeedTest.InvalidPlaeyrMoveSpeed(float.MaxValue)
       resultStatus: 1
-      duration: 0.0000677
+      duration: 0.0000635
       messages: 
       output: 
       stacktrace: 
@@ -2910,7 +3091,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeed
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed
       resultStatus: 1
-      duration: 0.0203954
+      duration: 0.0200965
       messages: 
       output: 
       stacktrace: 
@@ -2926,7 +3107,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeed(0.0f)
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed(0.0f)
       resultStatus: 1
-      duration: 0.0002349
+      duration: 0.0002363
       messages: 
       output: 
       stacktrace: 
@@ -2943,7 +3124,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeed(5.0f)
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed(5.0f)
       resultStatus: 1
-      duration: 0.0000562
+      duration: 0.0000634
       messages: 
       output: 
       stacktrace: 
@@ -2960,7 +3141,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeed(10.0f)
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed(10.0f)
       resultStatus: 1
-      duration: 0.0000674
+      duration: 0.0000489
       messages: 
       output: 
       stacktrace: 
@@ -2972,12 +3153,79 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1025
       parentUniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed][suite]
+    - id: 1052
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedMul][suite]
+      name: ValidPlayerMoveSpeedMul
+      fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedMul
+      resultStatus: 1
+      duration: 0.0213666
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u65B9\u5411\u30D9\u30AF\u30C8\u30EB\u3068\u4E57\u7B97\u3057\u305F\u5834\u5408\u306B\u3001\u4E8C\u6B21\u5143\u30D9\u30AF\u30C8\u30EB\u304C\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1039
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
+    - id: 1049
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/ValidPlayerMoveSpeedMul/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedMul(0.0f)]
+      name: ValidPlayerMoveSpeedMul(0.0f)
+      fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedMul(0.0f)
+      resultStatus: 1
+      duration: 0.0005601
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1052
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedMul][suite]
+    - id: 1050
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/ValidPlayerMoveSpeedMul/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedMul(5.0f)]
+      name: ValidPlayerMoveSpeedMul(5.0f)
+      fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedMul(5.0f)
+      resultStatus: 1
+      duration: 0.0001119
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1052
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedMul][suite]
+    - id: 1051
+      uniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/ValidPlayerMoveSpeedMul/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedMul(10.0f)]
+      name: ValidPlayerMoveSpeedMul(10.0f)
+      fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedMul(10.0f)
+      resultStatus: 1
+      duration: 0.0000929
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1052
+      parentUniqueId: EditMode.dll/Tests/PlayerMoveSpeedTest/[EditMode][Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedMul][suite]
     - id: 1021
       uniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerStaminaTest][suite]
       name: PlayerStaminaTest
       fullName: Tests.PlayerStaminaTest
       resultStatus: 1
-      duration: 0.0419615
+      duration: 0.1365718
       messages: 
       output: 
       stacktrace: 
@@ -2993,7 +3241,7 @@ MonoBehaviour:
       name: InvalidPlayerStamina
       fullName: Tests.PlayerStaminaTest.InvalidPlayerStamina
       resultStatus: 1
-      duration: 0.0082132
+      duration: 0.0017012
       messages: 
       output: 
       stacktrace: 
@@ -3009,7 +3257,7 @@ MonoBehaviour:
       name: InvalidPlayerStamina(float.MinValue)
       fullName: Tests.PlayerStaminaTest.InvalidPlayerStamina(float.MinValue)
       resultStatus: 1
-      duration: 0.0006233
+      duration: 0.000479
       messages: 
       output: 
       stacktrace: 
@@ -3026,7 +3274,7 @@ MonoBehaviour:
       name: InvalidPlayerStamina(-1.0f)
       fullName: Tests.PlayerStaminaTest.InvalidPlayerStamina(-1.0f)
       resultStatus: 1
-      duration: 0.0001108
+      duration: 0.0000734
       messages: 
       output: 
       stacktrace: 
@@ -3043,7 +3291,7 @@ MonoBehaviour:
       name: InvalidPlayerStamina(101.0f)
       fullName: Tests.PlayerStaminaTest.InvalidPlayerStamina(101.0f)
       resultStatus: 1
-      duration: 0.0001545
+      duration: 0.0001058
       messages: 
       output: 
       stacktrace: 
@@ -3060,7 +3308,7 @@ MonoBehaviour:
       name: InvalidPlayerStamina(float.MaxValue)
       fullName: Tests.PlayerStaminaTest.InvalidPlayerStamina(float.MaxValue)
       resultStatus: 1
-      duration: 0.0001414
+      duration: 0.0000623
       messages: 
       output: 
       stacktrace: 
@@ -3077,7 +3325,7 @@ MonoBehaviour:
       name: ValidPlayerStamina
       fullName: Tests.PlayerStaminaTest.ValidPlayerStamina
       resultStatus: 1
-      duration: 0.0129242
+      duration: 0.0198981
       messages: 
       output: 
       stacktrace: 
@@ -3093,7 +3341,7 @@ MonoBehaviour:
       name: ValidPlayerStamina(0.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlayerStamina(0.0f)
       resultStatus: 1
-      duration: 0.0002443
+      duration: 0.0002541
       messages: 
       output: 
       stacktrace: 
@@ -3110,7 +3358,7 @@ MonoBehaviour:
       name: ValidPlayerStamina(50.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlayerStamina(50.0f)
       resultStatus: 1
-      duration: 0.0000585
+      duration: 0.0000722
       messages: 
       output: 
       stacktrace: 
@@ -3127,7 +3375,7 @@ MonoBehaviour:
       name: ValidPlayerStamina(100.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlayerStamina(100.0f)
       resultStatus: 1
-      duration: 0.0000513
+      duration: 0.0000573
       messages: 
       output: 
       stacktrace: 
@@ -3139,13 +3387,247 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1025
       parentUniqueId: EditMode.dll/Tests/PlayerStaminaTest/[EditMode][Tests.PlayerStaminaTest.ValidPlayerStamina][suite]
-    m_ResultText: "PlayerEvasionDistanceTest (0.151s)\n\u30D7\u30EC\u30A4\u30E4\u30FC\u306E\u56DE\u907F\u8DDD\u96E2\u306E\u30C6\u30B9\u30C8"
+    - id: 1067
+      uniqueId: EditMode.dll/Tests/PlayerStaminaTest/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime][suite]
+      name: ValidPlyaerStaminaAddDelatTime
+      fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime
+      resultStatus: 1
+      duration: 0.0475858
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u30D5\u30EC\u30FC\u30E0\u79D2\u3068\u52A0\u7B97\u3057\u305F\u5834\u5408\u306B\u3001\u7BC4\u56F2\u5185\u306E\u6570\u5024\u304C\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1053
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerStaminaTest][suite]
+    - id: 1063
+      uniqueId: EditMode.dll/Tests/PlayerStaminaTest/ValidPlyaerStaminaAddDelatTime/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime(0.0f)]
+      name: ValidPlyaerStaminaAddDelatTime(0.0f)
+      fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime(0.0f)
+      resultStatus: 1
+      duration: 0.0260859
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1067
+      parentUniqueId: EditMode.dll/Tests/PlayerStaminaTest/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime][suite]
+    - id: 1064
+      uniqueId: EditMode.dll/Tests/PlayerStaminaTest/ValidPlyaerStaminaAddDelatTime/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime(10.0f)]
+      name: ValidPlyaerStaminaAddDelatTime(10.0f)
+      fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime(10.0f)
+      resultStatus: 1
+      duration: 0.0001114
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1067
+      parentUniqueId: EditMode.dll/Tests/PlayerStaminaTest/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime][suite]
+    - id: 1065
+      uniqueId: EditMode.dll/Tests/PlayerStaminaTest/ValidPlyaerStaminaAddDelatTime/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime(50.0f)]
+      name: ValidPlyaerStaminaAddDelatTime(50.0f)
+      fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime(50.0f)
+      resultStatus: 1
+      duration: 0.0000695
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1067
+      parentUniqueId: EditMode.dll/Tests/PlayerStaminaTest/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime][suite]
+    - id: 1066
+      uniqueId: EditMode.dll/Tests/PlayerStaminaTest/ValidPlyaerStaminaAddDelatTime/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime(80.0f)]
+      name: ValidPlyaerStaminaAddDelatTime(80.0f)
+      fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime(80.0f)
+      resultStatus: 1
+      duration: 0.0000709
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1067
+      parentUniqueId: EditMode.dll/Tests/PlayerStaminaTest/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime][suite]
+    - id: 1069
+      uniqueId: EditMode.dll/Tests/PlayerStaminaTest/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDeltaTimeOverMax][suite]
+      name: ValidPlyaerStaminaAddDeltaTimeOverMax
+      fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDeltaTimeOverMax
+      resultStatus: 1
+      duration: 0.0052137
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u30D5\u30EC\u30FC\u30E0\u79D2\u3068\u52A0\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3092\u8D85\u3048\u305F\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1053
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerStaminaTest][suite]
+    - id: 1068
+      uniqueId: EditMode.dll/Tests/PlayerStaminaTest/ValidPlyaerStaminaAddDeltaTimeOverMax/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDeltaTimeOverMax(100.0f)]
+      name: ValidPlyaerStaminaAddDeltaTimeOverMax(100.0f)
+      fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDeltaTimeOverMax(100.0f)
+      resultStatus: 1
+      duration: 0.0002789
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1069
+      parentUniqueId: EditMode.dll/Tests/PlayerStaminaTest/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDeltaTimeOverMax][suite]
+    - id: 1074
+      uniqueId: EditMode.dll/Tests/PlayerStaminaTest/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime][suite]
+      name: ValidPlyaerStaminaSubDelatTime
+      fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime
+      resultStatus: 1
+      duration: 0.0212582
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u30D5\u30EC\u30FC\u30E0\u79D2\u3068\u6E1B\u7B97\u3057\u305F\u5834\u5408\u306B\u3001\u7BC4\u56F2\u5185\u306E\u6570\u5024\u304C\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1053
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerStaminaTest][suite]
+    - id: 1070
+      uniqueId: EditMode.dll/Tests/PlayerStaminaTest/ValidPlyaerStaminaSubDelatTime/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime(10.0f)]
+      name: ValidPlyaerStaminaSubDelatTime(10.0f)
+      fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime(10.0f)
+      resultStatus: 1
+      duration: 0.0003435
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1074
+      parentUniqueId: EditMode.dll/Tests/PlayerStaminaTest/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime][suite]
+    - id: 1071
+      uniqueId: EditMode.dll/Tests/PlayerStaminaTest/ValidPlyaerStaminaSubDelatTime/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime(50.0f)]
+      name: ValidPlyaerStaminaSubDelatTime(50.0f)
+      fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime(50.0f)
+      resultStatus: 1
+      duration: 0.0000633
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1074
+      parentUniqueId: EditMode.dll/Tests/PlayerStaminaTest/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime][suite]
+    - id: 1072
+      uniqueId: EditMode.dll/Tests/PlayerStaminaTest/ValidPlyaerStaminaSubDelatTime/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime(80.0f)]
+      name: ValidPlyaerStaminaSubDelatTime(80.0f)
+      fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime(80.0f)
+      resultStatus: 1
+      duration: 0.0000533
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1074
+      parentUniqueId: EditMode.dll/Tests/PlayerStaminaTest/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime][suite]
+    - id: 1073
+      uniqueId: EditMode.dll/Tests/PlayerStaminaTest/ValidPlyaerStaminaSubDelatTime/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime(100.0f)]
+      name: ValidPlyaerStaminaSubDelatTime(100.0f)
+      fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime(100.0f)
+      resultStatus: 1
+      duration: 0.000066
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1074
+      parentUniqueId: EditMode.dll/Tests/PlayerStaminaTest/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime][suite]
+    - id: 1076
+      uniqueId: EditMode.dll/Tests/PlayerStaminaTest/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDeltaTimeOverMax][suite]
+      name: ValidPlyaerStaminaSubDeltaTimeOverMax
+      fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDeltaTimeOverMax
+      resultStatus: 1
+      duration: 0.0203702
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u30D5\u30EC\u30FC\u30E0\u79D2\u3068\u52A0\u7B97\u3057\u305F\u5024\u304C\u6700\u5927\u5024\u3092\u8D85\u3048\u305F\u5834\u5408\u306B\u3001\u6700\u5927\u5024\u304C\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1053
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerStaminaTest][suite]
+    - id: 1075
+      uniqueId: EditMode.dll/Tests/PlayerStaminaTest/ValidPlyaerStaminaSubDeltaTimeOverMax/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDeltaTimeOverMax(0.0f)]
+      name: ValidPlyaerStaminaSubDeltaTimeOverMax(0.0f)
+      fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDeltaTimeOverMax(0.0f)
+      resultStatus: 1
+      duration: 0.000284
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1076
+      parentUniqueId: EditMode.dll/Tests/PlayerStaminaTest/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDeltaTimeOverMax][suite]
+    m_ResultText: ValidPlyaerStaminaSubDeltaTimeOverMax(0.0f) (0.000s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0f52a79f
-      m_LastClickedID: -1616424433
-      m_ExpandedIDs: 4e5e5887d898d488ffe43c8ed0bc2792de38d89408d147993cdc509e319f829f0f52a79fa3c63ba13316a1a1783a69a67ae2f2b4a8d000b51de956b991f282be773dd3c1e75e21c29f561fc5d6cd41c5188c80d0fe6bdfd0b15a52dca11615dfb7cadfdfb70143e3a11cb9eedb8f0ef235932af92733b0fb2663a4fcbe31c0fd092f8e05b492650bd9c69d1b8bce34243cf3472845007428c141672f680b5d3310bb2a3c26f3073d105db24bce42cc4e893b8f542a3da054754078573ca6395ae57d0f680899616875bd16758db7157c4b5ea47cffffff7f
+      scrollPos: {x: 0, y: 508}
+      m_SelectedIDs: e3cc615d
+      m_LastClickedID: 1566690531
+      m_ExpandedIDs: 4e5e5887d898d488ffe43c8ed0bc2792de38d8946075e79408d147993cdc509e319f829f4c6ea29f0f52a79fa3c63ba13316a1a1783a69a67b26b7b37ae2f2b4a8d000b51de956b991f282be773dd3c1e75e21c29f561fc5d6cd41c5d553f4ce188c80d0fe6bdfd0b15a52dca11615dfb7cadfdfb70143e3a11cb9eebcf832f1db8f0ef235932af92733b0fb2663a4fcbe31c0fd092f8e0573ad3008c3d8440ab492650bd9c69d1b8bce34243cf34728450074289c856d2dc141672f2a49363110bb2a3c26f3073d105db24bce42cc4ec677d153893b8f542a3da05459d84257754078573ca6395ae57d0f68089961688db7157c4b5ea47cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
