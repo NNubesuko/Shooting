@@ -1,9 +1,14 @@
 // ! c# 11 のジェネリクス同士の演算に対応できたら、対応したい
 // * dynamicを使用した演算では、演算結果が未知数なことが多いため
 
+using System;
+
 namespace KataokaLib.ValueObject {
 
-    public abstract class SingleValueObject<T> : ISingleValueObject<T> {
+    public abstract class SingleValueObject<T> :
+        ISingleValueObject<T>,
+        IComparable<SingleValueObject<T>>
+    {
 
         public T Value { get; }
         public T MIN { get; }
@@ -42,6 +47,12 @@ namespace KataokaLib.ValueObject {
             if (!ClassEquals(this, other))
                 throw ValueObjectExceptionHandler.InvalidOperationExceptionOfClassEquals();
             return this.GetHashCode() == other.GetHashCode();
+        }
+
+        public int CompareTo(SingleValueObject<T> other) {
+            if ((dynamic)Value > (dynamic)other.Value) return 1;
+            if ((dynamic)Value < (dynamic)other.Value) return -1;
+            return 0;
         }
 
         public static bool ClassEquals(SingleValueObject<T> lh, SingleValueObject<T> rh) {

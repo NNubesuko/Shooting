@@ -1,9 +1,15 @@
+using System;
+
 namespace KataokaLib.ValueObject {
 
-    public abstract class RangeValueObject<T> : IRangeValueObject<T> {
+    public abstract class RangeValueObject<T> :
+        IRangeValueObject<T>,
+        IComparable<RangeValueObject<T>>
+    {
 
         public T Start { get; }
         public T End { get; }
+        public T Size { get; }
         public T MIN { get; }
         public T MAX { get; }
 
@@ -22,6 +28,7 @@ namespace KataokaLib.ValueObject {
 
             Start = start;
             End = end;
+            Size = (dynamic)End - (dynamic)Start;
         }
 
         public override string ToString() {
@@ -43,6 +50,12 @@ namespace KataokaLib.ValueObject {
             if (!ClassEquals(this, other))
                 throw ValueObjectExceptionHandler.InvalidOperationExceptionOfClassEquals();
             return this.GetHashCode() == other.GetHashCode();
+        }
+
+        public int CompareTo(RangeValueObject<T> other) {
+            if ((dynamic)Size > (dynamic)other.Size) return 1;
+            if ((dynamic)Size < (dynamic)other.Size) return -1;
+            return 0;
         }
 
         public static bool ClassEquals(RangeValueObject<T> lh, RangeValueObject<T> rh) {

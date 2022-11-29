@@ -267,7 +267,7 @@ namespace Tests {
             yield return new WaitUntil(() => playerScript.IsEvading);
             PlayerStamina currentStamina = playerScript.Stamina;
 
-            Assert.That(lastStamina, Is.LessThan(currentStamina));
+            Assert.That(currentStamina, Is.LessThan(lastStamina));
         }
 
     }
