@@ -14,12 +14,18 @@ namespace Tests {
 
         private GameObject enemyObject = null;
         private EnemyMain enemyScript = null;
+        private Vector2[] moveTargetTable = {
+            new Vector2(0f, 3f),
+            new Vector2(5f, -4.5f),
+            new Vector2(-5f, -4.5f)
+        };
 
         [OneTimeSetUp]
         public void OneTimeSetUp() {
             SceneManager.LoadSceneAsync("Stage1").completed += _ => {
                 enemyObject = GameObject.Find("Enemy");
                 enemyScript = enemyObject.GetComponent<EnemyMain>();
+                // enemyObject.transform.position = new Vector2(0f, 0f);
             };
         }
 
@@ -45,17 +51,40 @@ namespace Tests {
         public IEnumerator ValidEnemyStatus() {
             EnemyHP enemyHP = EnemyHP.Of(20);
             EnemyAP enemyAP = EnemyAP.Of(10);
-            EnemyMoveSpeed enemyMoveSpeed = EnemyMoveSpeed.Of(5f);
+            EnemyMoveSpeed enemyMoveSpeed = EnemyMoveSpeed.Of(3f);
+            EnemyMoveSpeedMagnification magnification = EnemyMoveSpeedMagnification.Of(1.5f);
 
             enemyScript.Init(
                 enemyHP,
                 enemyAP,
-                enemyMoveSpeed
+                enemyMoveSpeed,
+                magnification,
+                moveTargetTable
             );
 
             Assert.That(enemyScript.HP, Is.EqualTo(enemyHP));
             Assert.That(enemyScript.AP, Is.EqualTo(enemyAP));
             Assert.That(enemyScript.MoveSpeed, Is.EqualTo(enemyMoveSpeed));
+            Assert.That(enemyScript.MoveTargetTable, Is.EqualTo(moveTargetTable));
+            yield return null;
+        }
+
+        [UnityTest]
+        [Order(4)]
+        [Description("[正常] 順に座標が指定された場合に、座標周辺に移動すること")]
+        public IEnumerator ValidMove() {
+            int tableIndex = 0;
+            var comparer = new Vector2EqualityComparer(1f);
+            
+            while (enemyScript.MoveTargetTable.Length > tableIndex) {
+                yield return new WaitForSeconds(3f);
+                Assert.That(
+                    (Vector2)enemyObject.transform.position,
+                    Is.EqualTo(enemyScript.MoveTargetTable[tableIndex]).Using(comparer)
+                );
+                tableIndex++;
+            }
+
             yield return null;
         }
 

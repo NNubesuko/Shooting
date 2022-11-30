@@ -1,3 +1,6 @@
+/*
+ * プレイヤーの体力のクラス
+ */
 public class PlayerHP : HP {
 
     private PlayerHP(int value) : base(value, 0, 100) {

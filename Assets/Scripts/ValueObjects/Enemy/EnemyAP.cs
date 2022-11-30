@@ -1,6 +1,7 @@
-using KataokaLib.ValueObject;
-
-public class EnemyAP : SingleValueObject<int> {
+/*
+ * 敵の攻撃力のクラス
+ */
+public class EnemyAP : AP {
 
     private EnemyAP(int value) : base(value, 0, 100) {
     }

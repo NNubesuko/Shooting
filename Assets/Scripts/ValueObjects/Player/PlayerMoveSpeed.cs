@@ -1,6 +1,9 @@
 using UnityEngine;
 using Systemk;
 
+/*
+ * プレイヤーの移動速度のクラス
+ */
 public class PlayerMoveSpeed : Speed {
 
     private PlayerMoveSpeed(float value) : base(value, 0f, 10f) {

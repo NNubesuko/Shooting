@@ -11,7 +11,7 @@ public class PlayerMain : PlayerImpl {
     [SerializeField] private float evasionDistance;
     [SerializeField] private float staminaConsumption;
 
-    private void Start() {
+    private void Awake() {
         Init(
             PlayerHP.Of(hp),
             PlayerStamina.Of(stamina),

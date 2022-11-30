@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 77
+  controlID: 156
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 109
+  controlID: 145
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,8 +165,8 @@ MonoBehaviour:
     y: 0
     width: 896
     height: 486
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 19
+  controlID: 70
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 20
+  controlID: 71
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -320,14 +320,14 @@ MonoBehaviour:
     y: 469
     width: 612
     height: 478
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 21}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
   - {fileID: 21}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -347,8 +347,8 @@ MonoBehaviour:
     y: 0
     width: 412
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -1693,7 +1693,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 4478ffffec78ffff1e7cffff167effffbe7efffff081ffffe883ffff9084ffff4e88ffff568afffffe8affff308effff4090ffffe890ffff1a94ffff1296ffffba96ffffec99ffffe49bffff8c9cffffbe9fffff7ca0ffff24a1ffffe2a4ffff18a8ffffc0a8ffff16acffff38b5ffffe0b5ffff1ab9ffff46bdffffeebdffff2cc1ffffb8d6fffffed6fffff0d8ffffbee3ffffaae4ffff1cebffffa6eeffff18f1ffffd8f3ffff2afbffff
+      m_ExpandedIDs: 94ebffff3cecffff6cefffff6af1ffff12f2ffff48f5ffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1758,22 +1758,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Components/Enemy
+    - Assets/Scripts/Components/Player
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 46
   m_LastFolders:
-  - Assets/Scripts/Components/Enemy
+  - Assets/Scripts/Components/Player
   m_LastFoldersGridSize: 46
   m_LastProjectPath: D:\Program\Unity\Unity_2021_3_1f1\ShootingGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d06b0000
-    m_LastClickedID: 27600
-    m_ExpandedIDs: 00000000906b0000926b0000946b0000966b0000986b00009a6b00009c6b00009e6b0000a06b0000a26b0000a46b0000a66b0000a86b0000aa6b0000ac6b0000ae6b0000b06b0000b26b0000b46b0000b66b0000b86b0000ba6b0000
+    m_SelectedIDs: 706d0000
+    m_LastClickedID: 28016
+    m_ExpandedIDs: 00000000ae6b0000b06b0000b26b0000b46b0000b66b0000b86b0000ba6b0000bc6b0000be6b0000c06b0000c26b0000c46b0000c66b0000c86b0000ca6b0000cc6b0000ce6b0000d06b0000d26b0000d46b0000d66b0000d86b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1801,7 +1801,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000906b0000926b0000946b0000966b0000986b00009a6b00009c6b00009e6b0000a06b0000a26b0000a46b0000a66b0000a86b0000aa6b0000ac6b0000ae6b0000b06b0000b26b0000b46b0000b66b0000b86b0000ba6b0000bc6b0000
+    m_ExpandedIDs: 00000000ae6b0000b06b0000b26b0000b46b0000b66b0000b86b0000ba6b0000bc6b0000be6b0000c06b0000c26b0000c46b0000c66b0000c86b0000ca6b0000cc6b0000ce6b0000d06b0000d26b0000d46b0000d66b0000d86b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1914,7 +1914,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 226
+    ID: 165
     splitterInitialOffset: 238
     currentActiveSplitter: -1
     realSizes:
@@ -1945,9 +1945,9 @@ MonoBehaviour:
       uniqueId: '[ShootingGame][suite]'
       name: ShootingGame
       fullName: ShootingGame
-      resultStatus: 2
-      duration: 1.2863897
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 1.509878
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1961,9 +1961,9 @@ MonoBehaviour:
       uniqueId: '[PlayMode.dll][suite]'
       name: PlayMode.dll
       fullName: D:/Program/Unity/Unity_2021_3_1f1/ShootingGame/Library/ScriptAssemblies/PlayMode.dll
-      resultStatus: 2
-      duration: 1.1305132
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 1.359693
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1977,9 +1977,9 @@ MonoBehaviour:
       uniqueId: PlayMode.dll/[PlayMode][Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 2
-      duration: 1.1125411
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 1.342174
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -2074,9 +2074,9 @@ MonoBehaviour:
       uniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
       name: PlayerTest
       fullName: Tests.PlayerTest
-      resultStatus: 2
-      duration: 1.097583
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 1.3258438
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -2245,10 +2245,9 @@ MonoBehaviour:
       uniqueId: PlayMode.dll/Tests/PlayerTest/[PlayMode][Tests.PlayerTest.StaminaIsBeingConsumedNormally]
       name: StaminaIsBeingConsumedNormally
       fullName: Tests.PlayerTest.StaminaIsBeingConsumedNormally
-      resultStatus: 2
-      duration: 1.0776082
-      messages: 'System.ArgumentException : Neither value implements IComparable
-        or IComparable<T>'
+      resultStatus: 1
+      duration: 1.3079811
+      messages: 
       output: 'The referenced script (Unknown) on this Behaviour is missing!
 
         The
@@ -2264,19 +2263,7 @@ MonoBehaviour:
         referenced script (Unknown) on this Behaviour is missing!
 
 '
-      stacktrace: "  at NUnit.Framework.Constraints.NUnitComparer.Compare (System.Object
-        x, System.Object y) [0x00149] in <10b6135e63434fdba4fc6c109928ab3b>:0 \r\n 
-        at NUnit.Framework.Constraints.ComparisonAdapter+ComparerAdapter.Compare
-        (System.Object expected, System.Object actual) [0x00001] in <10b6135e63434fdba4fc6c109928ab3b>:0
-        \r\n  at NUnit.Framework.Constraints.ComparisonConstraint.ApplyTo (System.Object
-        actual) [0x00036] in <10b6135e63434fdba4fc6c109928ab3b>:0 \r\n  at NUnit.Framework.Assert.That[TActual]
-        (TActual actual, NUnit.Framework.Constraints.IResolveConstraint expression,
-        System.String message, System.Object[] args) [0x0000e] in <10b6135e63434fdba4fc6c109928ab3b>:0
-        \r\n  at NUnit.Framework.Assert.That[TActual] (TActual actual, NUnit.Framework.Constraints.IResolveConstraint
-        expression) [0x00001] in <10b6135e63434fdba4fc6c109928ab3b>:0 \r\n  at Tests.PlayerTest+<StaminaIsBeingConsumedNormally>d__18.MoveNext
-        () [0x00062] in D:\\Program\\Unity\\Unity_2021_3_1f1\\ShootingGame\\Assets\\Tests\\PlayMode\\PlayerTest.cs:270
-        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
-        in D:\\Program\\Unity\\Unity_2021_3_1f1\\ShootingGame\\Library\\PackageCache\\com.unity.test-framework@1.1.31\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:46 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: "[\u6B63\u5E38] \u56DE\u907F\u3057\u305F\u5834\u5408\u306B\u3001\u30B9\u30BF\u30DF\u30CA\u304C\u6D88\u8CBB\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
@@ -2336,40 +2323,15 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1139
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
-    m_ResultText: "StaminaIsBeingConsumedNormally (1.078s)\n[\u6B63\u5E38] \u56DE\u907F\u3057\u305F\u5834\u5408\u306B\u3001\u30B9\u30BF\u30DF\u30CA\u304C\u6D88\u8CBB\u3055\u308C\u3066\u3044\u308B\u3053\u3068\n---\nSystem.ArgumentException
-      : Neither value implements IComparable or IComparable<T>\n---\nat NUnit.Framework.Constraints.NUnitComparer.Compare
-      (System.Object x, System.Object y) [0x00149] in <10b6135e63434fdba4fc6c109928ab3b>:0
-      \r\n  at NUnit.Framework.Constraints.ComparisonAdapter+ComparerAdapter.Compare
-      (System.Object expected, System.Object actual) [0x00001] in <10b6135e63434fdba4fc6c109928ab3b>:0
-      \r\n  at NUnit.Framework.Constraints.ComparisonConstraint.ApplyTo (System.Object
-      actual) [0x00036] in <10b6135e63434fdba4fc6c109928ab3b>:0 \r\n  at NUnit.Framework.Assert.That[TActual]
-      (TActual actual, NUnit.Framework.Constraints.IResolveConstraint expression,
-      System.String message, System.Object[] args) [0x0000e] in <10b6135e63434fdba4fc6c109928ab3b>:0
-      \r\n  at NUnit.Framework.Assert.That[TActual] (TActual actual, NUnit.Framework.Constraints.IResolveConstraint
-      expression) [0x00001] in <10b6135e63434fdba4fc6c109928ab3b>:0 \r\n  at Tests.PlayerTest+<StaminaIsBeingConsumedNormally>d__18.MoveNext
-      () [0x00062] in D:\\Program\\Unity\\Unity_2021_3_1f1\\ShootingGame\\Assets\\Tests\\PlayMode\\PlayerTest.cs:270
-      \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
-      in D:\\Program\\Unity\\Unity_2021_3_1f1\\ShootingGame\\Library\\PackageCache\\com.unity.test-framework@1.1.31\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:46\n---\nThe
+    m_ResultText: "StaminaIsBeingConsumedNormally (1.308s)\n[\u6B63\u5E38] \u56DE\u907F\u3057\u305F\u5834\u5408\u306B\u3001\u30B9\u30BF\u30DF\u30CA\u304C\u6D88\u8CBB\u3055\u308C\u3066\u3044\u308B\u3053\u3068\n---\nThe
       referenced script (Unknown) on this Behaviour is missing!\r\nThe referenced
       script on this Behaviour (Game Object 'Enemy') is missing!\r\nThe referenced
       script (Unknown) on this Behaviour is missing!\r\nThe referenced script on
       this Behaviour (Game Object 'NormalBullet') is missing!\r\nThe referenced script
       (Unknown) on this Behaviour is missing!"
-    m_ResultStacktrace: "  at NUnit.Framework.Constraints.NUnitComparer.Compare (System.Object
-      x, System.Object y) [0x00149] in <10b6135e63434fdba4fc6c109928ab3b>:0 \r\n 
-      at NUnit.Framework.Constraints.ComparisonAdapter+ComparerAdapter.Compare (System.Object
-      expected, System.Object actual) [0x00001] in <10b6135e63434fdba4fc6c109928ab3b>:0
-      \r\n  at NUnit.Framework.Constraints.ComparisonConstraint.ApplyTo (System.Object
-      actual) [0x00036] in <10b6135e63434fdba4fc6c109928ab3b>:0 \r\n  at NUnit.Framework.Assert.That[TActual]
-      (TActual actual, NUnit.Framework.Constraints.IResolveConstraint expression,
-      System.String message, System.Object[] args) [0x0000e] in <10b6135e63434fdba4fc6c109928ab3b>:0
-      \r\n  at NUnit.Framework.Assert.That[TActual] (TActual actual, NUnit.Framework.Constraints.IResolveConstraint
-      expression) [0x00001] in <10b6135e63434fdba4fc6c109928ab3b>:0 \r\n  at Tests.PlayerTest+<StaminaIsBeingConsumedNormally>d__18.MoveNext
-      () [0x00062] in D:\\Program\\Unity\\Unity_2021_3_1f1\\ShootingGame\\Assets\\Tests\\PlayMode\\PlayerTest.cs:270
-      \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
-      in D:\\Program\\Unity\\Unity_2021_3_1f1\\ShootingGame\\Library\\PackageCache\\com.unity.test-framework@1.1.31\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:46 "
+    m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 172}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 5b3265d8
       m_LastClickedID: -664456613
       m_ExpandedIDs: a1b2169d9f5c62b6e58676ef2771480bb492650b8bce34246d52402d22524b3a90d2be4d3034ef4ebc805a6dffffff7f

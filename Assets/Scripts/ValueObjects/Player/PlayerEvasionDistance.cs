@@ -1,6 +1,9 @@
 using UnityEngine;
 using Systemk;
 
+/*
+ * プレイヤーの回避距離のクラス
+ */
 public class PlayerEvasionDistance : Distance {
 
     private PlayerEvasionDistance(float value) : base(value, 0f, 10f) {

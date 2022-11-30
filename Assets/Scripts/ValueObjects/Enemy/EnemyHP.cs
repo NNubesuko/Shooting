@@ -1,6 +1,7 @@
-using KataokaLib.ValueObject;
-
-public class EnemyHP : SingleValueObject<int> {
+/*
+ * 敵の体力のクラス
+ */
+public class EnemyHP : HP {
 
     private EnemyHP(int value) : base(value, 0, 1000) {
     }

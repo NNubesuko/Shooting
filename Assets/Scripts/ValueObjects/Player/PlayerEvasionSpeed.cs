@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/*
+ * プレイヤーの回避速度のクラス
+ */
 public class PlayerEvasionSpeed : Speed {
 
     private PlayerEvasionSpeed(float value) : base(value, 0f, 100f) {
