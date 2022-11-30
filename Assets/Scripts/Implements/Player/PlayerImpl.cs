@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -46,8 +47,7 @@ public class PlayerImpl : MonoBehaviour, Player {
 
     public void Death() {
         if (HP == PlayerHP.Of(0)) {
-            Debug.Log("死だよ");
-            // gameObject.SetActive(false);
+            gameObject.SetActive(false);
         }
     }
 
@@ -79,6 +79,16 @@ public class PlayerImpl : MonoBehaviour, Player {
 
     protected void RestoreStamina(float recoveryAmount) {
         Stamina += PlayerStamina.Of(recoveryAmount);
+    }
+
+    private void OnDisable() {
+        HP = null;
+        Stamina = null;
+        MoveSpeed = null;
+        EvasionSpeed = null;
+        EvasionDistance = null;
+
+        GC.Collect();
     }
 
 }

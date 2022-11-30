@@ -26,13 +26,6 @@ public class PlayerMain : PlayerImpl {
         Move();
         Evasion(staminaConsumption);
         RestoreStamina(Time.deltaTime);
-
-        if (Inputk.GetKeyDown(KeyCode.F)) {
-            Damage(EnemyAP.Of(10));
-        }
-
-        Debug.Log(HP);
-
         Death();
     }
 
