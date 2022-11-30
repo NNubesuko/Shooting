@@ -25,7 +25,6 @@ namespace Tests {
             SceneManager.LoadSceneAsync("Stage1").completed += _ => {
                 enemyObject = GameObject.Find("Enemy");
                 enemyScript = enemyObject.GetComponent<EnemyMain>();
-                // enemyObject.transform.position = new Vector2(0f, 0f);
             };
         }
 
@@ -75,7 +74,7 @@ namespace Tests {
         public IEnumerator ValidMove() {
             int tableIndex = 0;
             var comparer = new Vector2EqualityComparer(1f);
-            
+
             while (enemyScript.MoveTargetTable.Length > tableIndex) {
                 yield return new WaitForSeconds(3f);
                 Assert.That(

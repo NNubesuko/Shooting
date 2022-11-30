@@ -40,6 +40,17 @@ public class PlayerImpl : MonoBehaviour, Player {
         transform.position = velocity;
     }
 
+    public void Damage(AP ap) {
+        HP -= ap;
+    }
+
+    public void Death() {
+        if (HP == PlayerHP.Of(0)) {
+            Debug.Log("死だよ");
+            // gameObject.SetActive(false);
+        }
+    }
+
     public void Evasion(float staminaConsumption) {
         if (IsEvading) {
             transform.position = Vector2.MoveTowards(

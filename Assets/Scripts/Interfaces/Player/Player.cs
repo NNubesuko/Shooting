@@ -1,4 +1,4 @@
-public interface Player : IMovable {
+public interface Player : IMovable, IDamagable {
 
     /*
      * プレイヤーのステータスプロパティ
