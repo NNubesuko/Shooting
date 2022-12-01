@@ -46,9 +46,7 @@ namespace Tests {
 
         [UnityTest]
         [Order(3)]
-        [Description(
-            "[正常] プレイヤーのステータスが初期化された場合に、正常に初期化されること"
-        )]
+        [Description("[正常] プレイヤーのステータスが初期化された場合に、正常に初期化されること")]
         public IEnumerator ValidPlayerStatus() {
             PlayerHP playerHP = PlayerHP.Of(100);
             PlayerStamina playerStamina = PlayerStamina.Of(100f);
@@ -265,7 +263,6 @@ namespace Tests {
         [Order(13)]
         [Description("[正常] 回避した場合に、スタミナが消費されていること")]
         public IEnumerator StaminaIsBeingConsumedNormally() {
-            Debug.Log(lastStamina);
             yield return new WaitUntil(() => {
                 return playerScript.IsEvading;
             });

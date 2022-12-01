@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 156
+  controlID: 19
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,12 +140,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 896
+    width: 870
     height: 947
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 145
+  controlID: 80
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,10 +163,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 896
+    width: 870
     height: 486
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -190,10 +190,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 486
-    width: 896
+    width: 870
     height: 461
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -216,14 +216,14 @@ MonoBehaviour:
   - {fileID: 13}
   m_Position:
     serializedVersion: 2
-    x: 896
+    x: 870
     y: 0
-    width: 612
+    width: 638
     height: 947
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 70
+  controlID: 118
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,12 +243,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 612
-    height: 469
+    width: 638
+    height: 476
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 71
+  controlID: 119
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -266,10 +266,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 218
-    height: 469
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+    width: 228
+    height: 476
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -290,10 +290,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 218
+    x: 228
     y: 0
-    width: 394
-    height: 469
+    width: 410
+    height: 476
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 19}
@@ -311,23 +311,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 469
-    width: 612
-    height: 478
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 20}
+    y: 476
+    width: 638
+    height: 471
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 20}
   - {fileID: 21}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -347,8 +347,8 @@ MonoBehaviour:
     y: 0
     width: 412
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -376,7 +376,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 559
-    width: 895
+    width: 869
     height: 440
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -424,23 +424,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 895
+      width: 869
       height: 419
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 447.5, y: 209.5}
+    m_Translation: {x: 434.5, y: 209.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -447.5
+      x: -434.5
       y: -209.5
-      width: 895
+      width: 869
       height: 419
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 895, y: 440}
+  m_LastWindowPixelSize: {x: 869, y: 440}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -468,7 +468,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 895
+    width: 869
     height: 465
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1680,10 +1680,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 896
+    x: 870
     y: 73
-    width: 216
-    height: 448
+    width: 226
+    height: 455
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1693,7 +1693,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 94ebffff3cecffff6cefffff6af1ffff12f2ffff48f5ffff2afbffff
+      m_ExpandedIDs: b6dcffff5eddffff86e0ffff08e2ffffb0e2ffffa4e6ffff5ae7ffff02e8ffffa6ebffff90ecffff38edffffeef0ffff44f4ffff1ef9ffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1737,10 +1737,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1114
+    x: 1098
     y: 73
-    width: 392
-    height: 448
+    width: 408
+    height: 455
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1758,22 +1758,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Components/Player
+    - Assets/Scripts/Components/Bullet
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 46
   m_LastFolders:
-  - Assets/Scripts/Components/Player
+  - Assets/Scripts/Components/Bullet
   m_LastFoldersGridSize: 46
   m_LastProjectPath: D:\Program\Unity\Unity_2021_3_1f1\ShootingGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 706d0000
-    m_LastClickedID: 28016
-    m_ExpandedIDs: 00000000ae6b0000b06b0000b26b0000b46b0000b66b0000b86b0000ba6b0000bc6b0000be6b0000c06b0000c26b0000c46b0000c66b0000c86b0000ca6b0000cc6b0000ce6b0000d06b0000d26b0000d46b0000d66b0000d86b0000
+    scrollPos: {x: 0, y: 180}
+    m_SelectedIDs: 646d0000
+    m_LastClickedID: 28004
+    m_ExpandedIDs: 00000000a06b0000a26b0000a46b0000a66b0000a86b0000aa6b0000ac6b0000ae6b0000b06b0000b26b0000b46b0000b66b0000b86b0000ba6b0000bc6b0000be6b0000c06b0000c26b0000c46b0000c66b0000c86b0000ca6b0000cc6b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1801,7 +1801,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ae6b0000b06b0000b26b0000b46b0000b66b0000b86b0000ba6b0000bc6b0000be6b0000c06b0000c26b0000c46b0000c66b0000c86b0000ca6b0000cc6b0000ce6b0000d06b0000d26b0000d46b0000d66b0000d86b0000
+    m_ExpandedIDs: 00000000a06b0000a26b0000a46b0000a66b0000a86b0000aa6b0000ac6b0000ae6b0000b06b0000b26b0000b46b0000b66b0000b86b0000ba6b0000bc6b0000be6b0000c06b0000c26b0000c46b0000c66b0000c86b0000ca6b0000cc6b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1877,10 +1877,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 896
-    y: 542
-    width: 610
-    height: 457
+    x: 870
+    y: 549
+    width: 636
+    height: 450
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1905,21 +1905,21 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 896
-    y: 542
-    width: 610
-    height: 457
+    x: 870
+    y: 549
+    width: 636
+    height: 450
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 165
+    ID: 488
     splitterInitialOffset: 238
     currentActiveSplitter: -1
     realSizes:
-    - 168
-    - 219
+    - 165
+    - 215
     relativeSizes:
     - 0.43367347
     - 0.5663265
@@ -1929,7 +1929,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 387
+    lastTotalSize: 380
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -1946,7 +1946,7 @@ MonoBehaviour:
       name: ShootingGame
       fullName: ShootingGame
       resultStatus: 1
-      duration: 1.509878
+      duration: 0.470195
       messages: 
       output: 
       stacktrace: 
@@ -1962,7 +1962,7 @@ MonoBehaviour:
       name: PlayMode.dll
       fullName: D:/Program/Unity/Unity_2021_3_1f1/ShootingGame/Library/ScriptAssemblies/PlayMode.dll
       resultStatus: 1
-      duration: 1.359693
+      duration: 0.3082457
       messages: 
       output: 
       stacktrace: 
@@ -1978,7 +1978,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 1.342174
+      duration: 0.2828631
       messages: 
       output: 
       stacktrace: 
@@ -1989,12 +1989,79 @@ MonoBehaviour:
       categories: []
       parentId: 1147
       parentUniqueId: '[PlayMode.dll][suite]'
+    - id: 1643
+      uniqueId: PlayMode.dll/Tests/[PlayMode][Tests.BulletTest][suite]
+      name: BulletTest
+      fullName: Tests.BulletTest
+      resultStatus: 1
+      duration: 0.2687847
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "\u5F3E\u4E38\u306E\u30C6\u30B9\u30C8"
+      isSuite: 1
+      categories: []
+      parentId: 1670
+      parentUniqueId: PlayMode.dll/[PlayMode][Tests][suite]
+    - id: 1644
+      uniqueId: PlayMode.dll/Tests/BulletTest/[PlayMode][Tests.BulletTest.BulletObjectExists]
+      name: BulletObjectExists
+      fullName: Tests.BulletTest.BulletObjectExists
+      resultStatus: 1
+      duration: 0.2577365
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u5F3E\u4E38\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u304C\u5B58\u5728\u3059\u308B\u5834\u5408\u306B\u3001\u5909\u6570\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1643
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.BulletTest][suite]
+    - id: 1645
+      uniqueId: PlayMode.dll/Tests/BulletTest/[PlayMode][Tests.BulletTest.BulletScriptExists]
+      name: BulletScriptExists
+      fullName: Tests.BulletTest.BulletScriptExists
+      resultStatus: 1
+      duration: 0.2492359
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u5F3E\u4E38\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u304C\u5B58\u5728\u3059\u308B\u5834\u5408\u306B\u3001\u5909\u6570\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1643
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.BulletTest][suite]
+    - id: 1004
+      uniqueId: PlayMode.dll/Tests/BulletTest/[PlayMode][Tests.BulletTest.ValidPlayerStatus]
+      name: ValidPlayerStatus
+      fullName: Tests.BulletTest.ValidPlayerStatus
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u6575\u306E\u30B9\u30C6\u30FC\u30BF\u30B9\u304C\u521D\u671F\u5316\u3055\u308C\u305F\u5834\u5408\u306B\u3001\u6B63\u5E38\u306B\u521D\u671F\u5316\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.BulletTest][suite]
     - id: 1113
       uniqueId: PlayMode.dll/Tests/[PlayMode][Tests.EnemyTest][suite]
       name: EnemyTest
       fullName: Tests.EnemyTest
       resultStatus: 1
-      duration: 0.3764355
+      duration: 9.319676
       messages: 
       output: 
       stacktrace: 
@@ -2010,23 +2077,9 @@ MonoBehaviour:
       name: EnemyObjectExists
       fullName: Tests.EnemyTest.EnemyObjectExists
       resultStatus: 1
-      duration: 0.2623123
+      duration: 0.1387664
       messages: 
-      output: 'The referenced script (Unknown) on this Behaviour is missing!
-
-        The
-        referenced script on this Behaviour (Game Object ''Enemy'') is missing!
-
-        The
-        referenced script (Unknown) on this Behaviour is missing!
-
-        The referenced
-        script on this Behaviour (Game Object ''NormalBullet'') is missing!
-
-        The
-        referenced script (Unknown) on this Behaviour is missing!
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -2041,7 +2094,7 @@ MonoBehaviour:
       name: EnemyScriptExists
       fullName: Tests.EnemyTest.EnemyScriptExists
       resultStatus: 1
-      duration: 0.0458921
+      duration: 0.0472922
       messages: 
       output: 
       stacktrace: 
@@ -2058,7 +2111,7 @@ MonoBehaviour:
       name: ValidEnemyStatus
       fullName: Tests.EnemyTest.ValidEnemyStatus
       resultStatus: 1
-      duration: 0.0466786
+      duration: 0.0493304
       messages: 
       output: 
       stacktrace: 
@@ -2070,12 +2123,79 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.EnemyTest][suite]
+    - id: 1005
+      uniqueId: PlayMode.dll/Tests/EnemyTest/[PlayMode][Tests.EnemyTest.ValidMove]
+      name: ValidMove
+      fullName: Tests.EnemyTest.ValidMove
+      resultStatus: 1
+      duration: 9.077879
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u9806\u306B\u5EA7\u6A19\u304C\u6307\u5B9A\u3055\u308C\u305F\u5834\u5408\u306B\u3001\u5EA7\u6A19\u5468\u8FBA\u306B\u79FB\u52D5\u3059\u308B\u3053\u3068"
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.EnemyTest][suite]
+    - id: 1651
+      uniqueId: PlayMode.dll/Tests/[PlayMode][Tests.GunTest][suite]
+      name: GunTest
+      fullName: Tests.GunTest
+      resultStatus: 1
+      duration: 0.2079761
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "\u9283\u306E\u30C6\u30B9\u30C8"
+      isSuite: 1
+      categories: []
+      parentId: 1670
+      parentUniqueId: PlayMode.dll/[PlayMode][Tests][suite]
+    - id: 1652
+      uniqueId: PlayMode.dll/Tests/GunTest/[PlayMode][Tests.GunTest.GunObjectExists]
+      name: GunObjectExists
+      fullName: Tests.GunTest.GunObjectExists
+      resultStatus: 1
+      duration: 0.1323017
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u9283\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u304C\u5B58\u5728\u3059\u308B\u5834\u5408\u306B\u3001\u5909\u6570\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1651
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.GunTest][suite]
+    - id: 1653
+      uniqueId: PlayMode.dll/Tests/GunTest/[PlayMode][Tests.GunTest.GunScriptExists]
+      name: GunScriptExists
+      fullName: Tests.GunTest.GunScriptExists
+      resultStatus: 1
+      duration: 0.0542064
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u9283\u30B9\u30AF\u30EA\u30D7\u30C8\u304C\u5B58\u5728\u3059\u308B\u5834\u5408\u306B\u3001\u5909\u6570\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1651
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.GunTest][suite]
     - id: 1139
       uniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
       name: PlayerTest
       fullName: Tests.PlayerTest
       resultStatus: 1
-      duration: 1.3258438
+      duration: 9.569371
       messages: 
       output: 
       stacktrace: 
@@ -2086,12 +2206,29 @@ MonoBehaviour:
       categories: []
       parentId: 1148
       parentUniqueId: PlayMode.dll/[PlayMode][Tests][suite]
+    - id: 1668
+      uniqueId: PlayMode.dll/Tests/PlayerTest/[PlayMode][Tests.PlayerTest.AttacksFromEnemy]
+      name: AttacksFromEnemy
+      fullName: Tests.PlayerTest.AttacksFromEnemy
+      resultStatus: 1
+      duration: 3.0987046
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u6575\u306B\u653B\u6483\u3055\u308C\u305F\u5834\u5408\u306B\u3001\u4F53\u529B\u304C\u6575\u306E\u653B\u6483\u529B\u5206\u6E1B\u5C11\u3057\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1654
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
     - id: 1011
       uniqueId: PlayMode.dll/Tests/PlayerTest/[PlayMode][Tests.PlayerTest.DownAndRightKeyToMovePlayer]
       name: DownAndRightKeyToMovePlayer
       fullName: Tests.PlayerTest.DownAndRightKeyToMovePlayer
       resultStatus: 1
-      duration: 0.5817916
+      duration: 0.4847561
       messages: 
       output: 
       stacktrace: 
@@ -2108,7 +2245,7 @@ MonoBehaviour:
       name: DownKeyToMovePlayer
       fullName: Tests.PlayerTest.DownKeyToMovePlayer
       resultStatus: 1
-      duration: 0.778754
+      duration: 0.3305366
       messages: 
       output: 
       stacktrace: 
@@ -2125,7 +2262,7 @@ MonoBehaviour:
       name: EvasionKeyToEvasionPlayer
       fullName: Tests.PlayerTest.EvasionKeyToEvasionPlayer
       resultStatus: 1
-      duration: 0.729803
+      duration: 1.1093197
       messages: 
       output: 
       stacktrace: 
@@ -2142,7 +2279,7 @@ MonoBehaviour:
       name: LeftAndDownKeyToMovePlayer
       fullName: Tests.PlayerTest.LeftAndDownKeyToMovePlayer
       resultStatus: 1
-      duration: 0.6021472
+      duration: 0.6115448
       messages: 
       output: 
       stacktrace: 
@@ -2159,7 +2296,7 @@ MonoBehaviour:
       name: LeftKeyToMovePlayer
       fullName: Tests.PlayerTest.LeftKeyToMovePlayer
       resultStatus: 1
-      duration: 2.3890634
+      duration: 0.5404266
       messages: 
       output: 
       stacktrace: 
@@ -2176,11 +2313,9 @@ MonoBehaviour:
       name: PlayerObjectExists
       fullName: Tests.PlayerTest.PlayerObjectExists
       resultStatus: 1
-      duration: 0.1010829
+      duration: 0.129667
       messages: 
-      output: 'The referenced script (Unknown) on this Behaviour is missing!
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -2195,7 +2330,7 @@ MonoBehaviour:
       name: PlayerScriptExists
       fullName: Tests.PlayerTest.PlayerScriptExists
       resultStatus: 1
-      duration: 0.0421619
+      duration: 0.0502505
       messages: 
       output: 
       stacktrace: 
@@ -2212,7 +2347,7 @@ MonoBehaviour:
       name: RightAndUpKeyToMovePlayer
       fullName: Tests.PlayerTest.RightAndUpKeyToMovePlayer
       resultStatus: 1
-      duration: 1.0651796
+      duration: 0.4149137
       messages: 
       output: 
       stacktrace: 
@@ -2229,7 +2364,7 @@ MonoBehaviour:
       name: RightKeyToMovePlayer
       fullName: Tests.PlayerTest.RightKeyToMovePlayer
       resultStatus: 1
-      duration: 0.6799565
+      duration: 0.2459318
       messages: 
       output: 
       stacktrace: 
@@ -2246,21 +2381,9 @@ MonoBehaviour:
       name: StaminaIsBeingConsumedNormally
       fullName: Tests.PlayerTest.StaminaIsBeingConsumedNormally
       resultStatus: 1
-      duration: 1.3079811
+      duration: 0.0523143
       messages: 
-      output: 'The referenced script (Unknown) on this Behaviour is missing!
-
-        The
-        referenced script on this Behaviour (Game Object ''Enemy'') is missing!
-
-        The
-        referenced script (Unknown) on this Behaviour is missing!
-
-        The referenced
-        script on this Behaviour (Game Object ''NormalBullet'') is missing!
-
-        The
-        referenced script (Unknown) on this Behaviour is missing!
+      output: '100
 
 '
       stacktrace: 
@@ -2277,7 +2400,7 @@ MonoBehaviour:
       name: UpAndLeftKeyToMovePlayer
       fullName: Tests.PlayerTest.UpAndLeftKeyToMovePlayer
       resultStatus: 1
-      duration: 0.980589
+      duration: 0.4064663
       messages: 
       output: 
       stacktrace: 
@@ -2294,7 +2417,7 @@ MonoBehaviour:
       name: UpKeyToMovePlayer
       fullName: Tests.PlayerTest.UpKeyToMovePlayer
       resultStatus: 1
-      duration: 0.3237602
+      duration: 2.0227134
       messages: 
       output: 
       stacktrace: 
@@ -2311,7 +2434,7 @@ MonoBehaviour:
       name: ValidPlayerStatus
       fullName: Tests.PlayerTest.ValidPlayerStatus
       resultStatus: 1
-      duration: 0.0622034
+      duration: 0.0491734
       messages: 
       output: 
       stacktrace: 
@@ -2323,18 +2446,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1139
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
-    m_ResultText: "StaminaIsBeingConsumedNormally (1.308s)\n[\u6B63\u5E38] \u56DE\u907F\u3057\u305F\u5834\u5408\u306B\u3001\u30B9\u30BF\u30DF\u30CA\u304C\u6D88\u8CBB\u3055\u308C\u3066\u3044\u308B\u3053\u3068\n---\nThe
-      referenced script (Unknown) on this Behaviour is missing!\r\nThe referenced
-      script on this Behaviour (Game Object 'Enemy') is missing!\r\nThe referenced
-      script (Unknown) on this Behaviour is missing!\r\nThe referenced script on
-      this Behaviour (Game Object 'NormalBullet') is missing!\r\nThe referenced script
-      (Unknown) on this Behaviour is missing!"
+    m_ResultText: "BulletScriptExists (0.249s)\n[\u6B63\u5E38] \u5F3E\u4E38\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u304C\u5B58\u5728\u3059\u308B\u5834\u5408\u306B\u3001\u5909\u6570\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 5b3265d8
-      m_LastClickedID: -664456613
-      m_ExpandedIDs: a1b2169d9f5c62b6e58676ef2771480bb492650b8bce34246d52402d22524b3a90d2be4d3034ef4ebc805a6dffffff7f
+      m_SelectedIDs: 227430ea
+      m_LastClickedID: -365923294
+      m_ExpandedIDs: 9f5c62b6e58676ef025e46f92771480bb492650b8bce34246d52402d22524b3a90d2be4d3034ef4ebc805a6dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2369,7 +2487,7 @@ MonoBehaviour:
       name: ShootingGame
       fullName: ShootingGame
       resultStatus: 1
-      duration: 0.0807189
+      duration: 0.9425031
       messages: 
       output: 
       stacktrace: 
@@ -2385,7 +2503,7 @@ MonoBehaviour:
       name: EditMode.dll
       fullName: D:/Program/Unity/Unity_2021_3_1f1/ShootingGame/Library/ScriptAssemblies/EditMode.dll
       resultStatus: 1
-      duration: 0.0209936
+      duration: 0.8728641
       messages: 
       output: 
       stacktrace: 
@@ -2401,7 +2519,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.0207215
+      duration: 0.8435801
       messages: 
       output: 
       stacktrace: 
@@ -2413,11 +2531,345 @@ MonoBehaviour:
       parentId: 1004
       parentUniqueId: '[EditMode.dll][suite]'
     - id: 1001
+      uniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
+      name: BulletAPTest
+      fullName: Tests.BulletAPTest
+      resultStatus: 1
+      duration: 0.1504063
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "\u5F3E\u4E38\u306E\u653B\u6483\u529B\u306E\u30C6\u30B9\u30C8"
+      isSuite: 1
+      categories: []
+      parentId: 1210
+      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
+    - id: 1010
+      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.InvalidBulletAP][suite]
+      name: InvalidBulletAP
+      fullName: Tests.BulletAPTest.InvalidBulletAP
+      resultStatus: 1
+      duration: 0.1405301
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u7570\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u672A\u6E80\u307E\u305F\u306F\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
+    - id: 1006
+      uniqueId: EditMode.dll/Tests/BulletAPTest/InvalidBulletAP/[EditMode][Tests.BulletAPTest.InvalidBulletAP(int.MinValue)]
+      name: InvalidBulletAP(int.MinValue)
+      fullName: Tests.BulletAPTest.InvalidBulletAP(int.MinValue)
+      resultStatus: 1
+      duration: 0.1287483
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.InvalidBulletAP][suite]
+    - id: 1007
+      uniqueId: EditMode.dll/Tests/BulletAPTest/InvalidBulletAP/[EditMode][Tests.BulletAPTest.InvalidBulletAP(-1)]
+      name: InvalidBulletAP(-1)
+      fullName: Tests.BulletAPTest.InvalidBulletAP(-1)
+      resultStatus: 1
+      duration: 0.0001399
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.InvalidBulletAP][suite]
+    - id: 1008
+      uniqueId: EditMode.dll/Tests/BulletAPTest/InvalidBulletAP/[EditMode][Tests.BulletAPTest.InvalidBulletAP(101)]
+      name: InvalidBulletAP(101)
+      fullName: Tests.BulletAPTest.InvalidBulletAP(101)
+      resultStatus: 1
+      duration: 0.0019933
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.InvalidBulletAP][suite]
+    - id: 1009
+      uniqueId: EditMode.dll/Tests/BulletAPTest/InvalidBulletAP/[EditMode][Tests.BulletAPTest.InvalidBulletAP(int.MaxValue)]
+      name: InvalidBulletAP(int.MaxValue)
+      fullName: Tests.BulletAPTest.InvalidBulletAP(int.MaxValue)
+      resultStatus: 1
+      duration: 0.0000873
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.InvalidBulletAP][suite]
+    - id: 1005
+      uniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidBulletAP][suite]
+      name: ValidBulletAP
+      fullName: Tests.BulletAPTest.ValidBulletAP
+      resultStatus: 1
+      duration: 0.007528
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u4EE5\u4E0A\u304B\u3064\u6700\u5927\u5024\u4EE5\u4E0B\u3067\u3042\u308B\u5834\u5408\u306B\u3001\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletAPTest][suite]
+    - id: 1002
+      uniqueId: EditMode.dll/Tests/BulletAPTest/ValidBulletAP/[EditMode][Tests.BulletAPTest.ValidBulletAP(0)]
+      name: ValidBulletAP(0)
+      fullName: Tests.BulletAPTest.ValidBulletAP(0)
+      resultStatus: 1
+      duration: 0.0018791
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidBulletAP][suite]
+    - id: 1003
+      uniqueId: EditMode.dll/Tests/BulletAPTest/ValidBulletAP/[EditMode][Tests.BulletAPTest.ValidBulletAP(50)]
+      name: ValidBulletAP(50)
+      fullName: Tests.BulletAPTest.ValidBulletAP(50)
+      resultStatus: 1
+      duration: 0.0000993
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidBulletAP][suite]
+    - id: 1004
+      uniqueId: EditMode.dll/Tests/BulletAPTest/ValidBulletAP/[EditMode][Tests.BulletAPTest.ValidBulletAP(100)]
+      name: ValidBulletAP(100)
+      fullName: Tests.BulletAPTest.ValidBulletAP(100)
+      resultStatus: 1
+      duration: 0.0000654
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: EditMode.dll/Tests/BulletAPTest/[EditMode][Tests.BulletAPTest.ValidBulletAP][suite]
+    - id: 1011
+      uniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletMoveSpeedTest][suite]
+      name: BulletMoveSpeedTest
+      fullName: Tests.BulletMoveSpeedTest
+      resultStatus: 1
+      duration: 0.0325881
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "\u5F3E\u4E38\u306E\u653B\u6483\u529B\u306E\u30C6\u30B9\u30C8"
+      isSuite: 1
+      categories: []
+      parentId: 1210
+      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
+    - id: 1020
+      uniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/[EditMode][Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed][suite]
+      name: InvalidBulletMoveSpeed
+      fullName: Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed
+      resultStatus: 1
+      duration: 0.0037757
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u7570\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u672A\u6E80\u307E\u305F\u306F\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1011
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletMoveSpeedTest][suite]
+    - id: 1016
+      uniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/InvalidBulletMoveSpeed/[EditMode][Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed(float.MinValue)]
+      name: InvalidBulletMoveSpeed(float.MinValue)
+      fullName: Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed(float.MinValue)
+      resultStatus: 1
+      duration: 0.0018495
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1020
+      parentUniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/[EditMode][Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed][suite]
+    - id: 1017
+      uniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/InvalidBulletMoveSpeed/[EditMode][Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed(-1.0f)]
+      name: InvalidBulletMoveSpeed(-1.0f)
+      fullName: Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed(-1.0f)
+      resultStatus: 1
+      duration: 0.0001016
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1020
+      parentUniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/[EditMode][Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed][suite]
+    - id: 1018
+      uniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/InvalidBulletMoveSpeed/[EditMode][Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed(101.0f)]
+      name: InvalidBulletMoveSpeed(101.0f)
+      fullName: Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed(101.0f)
+      resultStatus: 1
+      duration: 0.0011041
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1020
+      parentUniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/[EditMode][Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed][suite]
+    - id: 1019
+      uniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/InvalidBulletMoveSpeed/[EditMode][Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed(float.MaxValue)]
+      name: InvalidBulletMoveSpeed(float.MaxValue)
+      fullName: Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed(float.MaxValue)
+      resultStatus: 1
+      duration: 0.0000852
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1020
+      parentUniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/[EditMode][Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed][suite]
+    - id: 1015
+      uniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/[EditMode][Tests.BulletMoveSpeedTest.ValidBulletMoveSpeed][suite]
+      name: ValidBulletMoveSpeed
+      fullName: Tests.BulletMoveSpeedTest.ValidBulletMoveSpeed
+      resultStatus: 1
+      duration: 0.0182127
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u4EE5\u4E0A\u304B\u3064\u6700\u5927\u5024\u4EE5\u4E0B\u3067\u3042\u308B\u5834\u5408\u306B\u3001\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1011
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletMoveSpeedTest][suite]
+    - id: 1012
+      uniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/ValidBulletMoveSpeed/[EditMode][Tests.BulletMoveSpeedTest.ValidBulletMoveSpeed(0.0f)]
+      name: ValidBulletMoveSpeed(0.0f)
+      fullName: Tests.BulletMoveSpeedTest.ValidBulletMoveSpeed(0.0f)
+      resultStatus: 1
+      duration: 0.0006404
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/[EditMode][Tests.BulletMoveSpeedTest.ValidBulletMoveSpeed][suite]
+    - id: 1013
+      uniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/ValidBulletMoveSpeed/[EditMode][Tests.BulletMoveSpeedTest.ValidBulletMoveSpeed(50.0f)]
+      name: ValidBulletMoveSpeed(50.0f)
+      fullName: Tests.BulletMoveSpeedTest.ValidBulletMoveSpeed(50.0f)
+      resultStatus: 1
+      duration: 0.0000921
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/[EditMode][Tests.BulletMoveSpeedTest.ValidBulletMoveSpeed][suite]
+    - id: 1014
+      uniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/ValidBulletMoveSpeed/[EditMode][Tests.BulletMoveSpeedTest.ValidBulletMoveSpeed(100.0f)]
+      name: ValidBulletMoveSpeed(100.0f)
+      fullName: Tests.BulletMoveSpeedTest.ValidBulletMoveSpeed(100.0f)
+      resultStatus: 1
+      duration: 0.0000692
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/[EditMode][Tests.BulletMoveSpeedTest.ValidBulletMoveSpeed][suite]
+    - id: 1001
       uniqueId: EditMode.dll/Tests/[EditMode][Tests.EnemyAPTest][suite]
       name: EnemyAPTest
       fullName: Tests.EnemyAPTest
       resultStatus: 1
-      duration: 0.1199402
+      duration: 0.041826
       messages: 
       output: 
       stacktrace: 
@@ -2433,7 +2885,7 @@ MonoBehaviour:
       name: InvalidEnemyAP
       fullName: Tests.EnemyAPTest.InvalidEnemyAP
       resultStatus: 1
-      duration: 0.1070939
+      duration: 0.0015825
       messages: 
       output: 
       stacktrace: 
@@ -2449,7 +2901,7 @@ MonoBehaviour:
       name: InvalidEnemyAP(int.MinValue)
       fullName: Tests.EnemyAPTest.InvalidEnemyAP(int.MinValue)
       resultStatus: 1
-      duration: 0.0947687
+      duration: 0.0006581
       messages: 
       output: 
       stacktrace: 
@@ -2466,7 +2918,7 @@ MonoBehaviour:
       name: InvalidEnemyAP(-1)
       fullName: Tests.EnemyAPTest.InvalidEnemyAP(-1)
       resultStatus: 1
-      duration: 0.0001177
+      duration: 0.0001146
       messages: 
       output: 
       stacktrace: 
@@ -2483,7 +2935,7 @@ MonoBehaviour:
       name: InvalidEnemyAP(101)
       fullName: Tests.EnemyAPTest.InvalidEnemyAP(101)
       resultStatus: 1
-      duration: 0.0022371
+      duration: 0.0000847
       messages: 
       output: 
       stacktrace: 
@@ -2500,7 +2952,7 @@ MonoBehaviour:
       name: InvalidEnemyAP(int.MaxValue)
       fullName: Tests.EnemyAPTest.InvalidEnemyAP(int.MaxValue)
       resultStatus: 1
-      duration: 0.0000774
+      duration: 0.0000832
       messages: 
       output: 
       stacktrace: 
@@ -2517,7 +2969,7 @@ MonoBehaviour:
       name: ValidEnemyAP
       fullName: Tests.EnemyAPTest.ValidEnemyAP
       resultStatus: 1
-      duration: 0.0076652
+      duration: 0.0200705
       messages: 
       output: 
       stacktrace: 
@@ -2533,7 +2985,7 @@ MonoBehaviour:
       name: ValidEnemyAP(0)
       fullName: Tests.EnemyAPTest.ValidEnemyAP(0)
       resultStatus: 1
-      duration: 0.0017669
+      duration: 0.0002546
       messages: 
       output: 
       stacktrace: 
@@ -2550,7 +3002,7 @@ MonoBehaviour:
       name: ValidEnemyAP(50)
       fullName: Tests.EnemyAPTest.ValidEnemyAP(50)
       resultStatus: 1
-      duration: 0.0000737
+      duration: 0.000085
       messages: 
       output: 
       stacktrace: 
@@ -2567,7 +3019,7 @@ MonoBehaviour:
       name: ValidEnemyAP(100)
       fullName: Tests.EnemyAPTest.ValidEnemyAP(100)
       resultStatus: 1
-      duration: 0.000054
+      duration: 0.0000653
       messages: 
       output: 
       stacktrace: 
@@ -2584,7 +3036,7 @@ MonoBehaviour:
       name: EnemyHPTest
       fullName: Tests.EnemyHPTest
       resultStatus: 1
-      duration: 0.0389397
+      duration: 0.0928457
       messages: 
       output: 
       stacktrace: 
@@ -2600,7 +3052,7 @@ MonoBehaviour:
       name: InvalidEnemyHP
       fullName: Tests.EnemyHPTest.InvalidEnemyHP
       resultStatus: 1
-      duration: 0.0076636
+      duration: 0.0012605
       messages: 
       output: 
       stacktrace: 
@@ -2616,7 +3068,7 @@ MonoBehaviour:
       name: InvalidEnemyHP(int.MinValue)
       fullName: Tests.EnemyHPTest.InvalidEnemyHP(int.MinValue)
       resultStatus: 1
-      duration: 0.0005705
+      duration: 0.000431
       messages: 
       output: 
       stacktrace: 
@@ -2633,7 +3085,7 @@ MonoBehaviour:
       name: InvalidEnemyHP(-1)
       fullName: Tests.EnemyHPTest.InvalidEnemyHP(-1)
       resultStatus: 1
-      duration: 0.0000791
+      duration: 0.000097
       messages: 
       output: 
       stacktrace: 
@@ -2650,7 +3102,7 @@ MonoBehaviour:
       name: InvalidEnemyHP(1001)
       fullName: Tests.EnemyHPTest.InvalidEnemyHP(1001)
       resultStatus: 1
-      duration: 0.0000638
+      duration: 0.0000796
       messages: 
       output: 
       stacktrace: 
@@ -2667,7 +3119,7 @@ MonoBehaviour:
       name: InvalidEnemyHP(int.MaxValue)
       fullName: Tests.EnemyHPTest.InvalidEnemyHP(int.MaxValue)
       resultStatus: 1
-      duration: 0.0000626
+      duration: 0.0000736
       messages: 
       output: 
       stacktrace: 
@@ -2684,7 +3136,7 @@ MonoBehaviour:
       name: ValidEnemyHP
       fullName: Tests.EnemyHPTest.ValidEnemyHP
       resultStatus: 1
-      duration: 0.019884
+      duration: 0.0198359
       messages: 
       output: 
       stacktrace: 
@@ -2700,7 +3152,7 @@ MonoBehaviour:
       name: ValidEnemyHP(0)
       fullName: Tests.EnemyHPTest.ValidEnemyHP(0)
       resultStatus: 1
-      duration: 0.0002293
+      duration: 0.0002492
       messages: 
       output: 
       stacktrace: 
@@ -2717,7 +3169,7 @@ MonoBehaviour:
       name: ValidEnemyHP(500)
       fullName: Tests.EnemyHPTest.ValidEnemyHP(500)
       resultStatus: 1
-      duration: 0.0000606
+      duration: 0.0000889
       messages: 
       output: 
       stacktrace: 
@@ -2734,7 +3186,7 @@ MonoBehaviour:
       name: ValidEnemyHP(1000)
       fullName: Tests.EnemyHPTest.ValidEnemyHP(1000)
       resultStatus: 1
-      duration: 0.000051
+      duration: 0.0000659
       messages: 
       output: 
       stacktrace: 
@@ -2746,12 +3198,788 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1005
       parentUniqueId: EditMode.dll/Tests/EnemyHPTest/[EditMode][Tests.EnemyHPTest.ValidEnemyHP][suite]
+    - id: 1044
+      uniqueId: EditMode.dll/Tests/EnemyHPTest/[EditMode][Tests.EnemyHPTest.ValidEnemyHPSubAP][suite]
+      name: ValidEnemyHPSubAP
+      fullName: Tests.EnemyHPTest.ValidEnemyHPSubAP
+      resultStatus: 1
+      duration: 0.0457209
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u653B\u6483\u529B\u3068\u6E1B\u7B97\u3057\u305F\u5834\u5408\u306B\u3001\u6575\u306E\u4F53\u529B\u304C\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1031
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.EnemyHPTest][suite]
+    - id: 1041
+      uniqueId: EditMode.dll/Tests/EnemyHPTest/ValidEnemyHPSubAP/[EditMode][Tests.EnemyHPTest.ValidEnemyHPSubAP(100,10)]
+      name: ValidEnemyHPSubAP(100,10)
+      fullName: Tests.EnemyHPTest.ValidEnemyHPSubAP(100,10)
+      resultStatus: 1
+      duration: 0.0243322
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1044
+      parentUniqueId: EditMode.dll/Tests/EnemyHPTest/[EditMode][Tests.EnemyHPTest.ValidEnemyHPSubAP][suite]
+    - id: 1042
+      uniqueId: EditMode.dll/Tests/EnemyHPTest/ValidEnemyHPSubAP/[EditMode][Tests.EnemyHPTest.ValidEnemyHPSubAP(50,50)]
+      name: ValidEnemyHPSubAP(50,50)
+      fullName: Tests.EnemyHPTest.ValidEnemyHPSubAP(50,50)
+      resultStatus: 1
+      duration: 0.0001311
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1044
+      parentUniqueId: EditMode.dll/Tests/EnemyHPTest/[EditMode][Tests.EnemyHPTest.ValidEnemyHPSubAP][suite]
+    - id: 1043
+      uniqueId: EditMode.dll/Tests/EnemyHPTest/ValidEnemyHPSubAP/[EditMode][Tests.EnemyHPTest.ValidEnemyHPSubAP(20,10)]
+      name: ValidEnemyHPSubAP(20,10)
+      fullName: Tests.EnemyHPTest.ValidEnemyHPSubAP(20,10)
+      resultStatus: 1
+      duration: 0.000082
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1044
+      parentUniqueId: EditMode.dll/Tests/EnemyHPTest/[EditMode][Tests.EnemyHPTest.ValidEnemyHPSubAP][suite]
+    - id: 1048
+      uniqueId: EditMode.dll/Tests/EnemyHPTest/[EditMode][Tests.EnemyHPTest.ValidEnemyHPSubAPOverMin][suite]
+      name: ValidEnemyHPSubAPOverMin
+      fullName: Tests.EnemyHPTest.ValidEnemyHPSubAPOverMin
+      resultStatus: 1
+      duration: 0.0051015
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u653B\u6483\u529B\u3068\u6E1B\u7B97\u3057\u305F\u7D50\u679C\u304C\u6700\u5C0F\u5024\u3088\u308A\u5C0F\u3055\u3044\u5834\u5408\u306B\u3001\u30D7\u30EC\u30A4\u30E4\u30FC\u4F53\u529B\u306E\u6700\u5C0F\u5024\u304C\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1031
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.EnemyHPTest][suite]
+    - id: 1045
+      uniqueId: EditMode.dll/Tests/EnemyHPTest/ValidEnemyHPSubAPOverMin/[EditMode][Tests.EnemyHPTest.ValidEnemyHPSubAPOverMin(80,100)]
+      name: ValidEnemyHPSubAPOverMin(80,100)
+      fullName: Tests.EnemyHPTest.ValidEnemyHPSubAPOverMin(80,100)
+      resultStatus: 1
+      duration: 0.0002784
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1048
+      parentUniqueId: EditMode.dll/Tests/EnemyHPTest/[EditMode][Tests.EnemyHPTest.ValidEnemyHPSubAPOverMin][suite]
+    - id: 1046
+      uniqueId: EditMode.dll/Tests/EnemyHPTest/ValidEnemyHPSubAPOverMin/[EditMode][Tests.EnemyHPTest.ValidEnemyHPSubAPOverMin(50,100)]
+      name: ValidEnemyHPSubAPOverMin(50,100)
+      fullName: Tests.EnemyHPTest.ValidEnemyHPSubAPOverMin(50,100)
+      resultStatus: 1
+      duration: 0.0000947
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1048
+      parentUniqueId: EditMode.dll/Tests/EnemyHPTest/[EditMode][Tests.EnemyHPTest.ValidEnemyHPSubAPOverMin][suite]
+    - id: 1047
+      uniqueId: EditMode.dll/Tests/EnemyHPTest/ValidEnemyHPSubAPOverMin/[EditMode][Tests.EnemyHPTest.ValidEnemyHPSubAPOverMin(0,100)]
+      name: ValidEnemyHPSubAPOverMin(0,100)
+      fullName: Tests.EnemyHPTest.ValidEnemyHPSubAPOverMin(0,100)
+      resultStatus: 1
+      duration: 0.0000668
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1048
+      parentUniqueId: EditMode.dll/Tests/EnemyHPTest/[EditMode][Tests.EnemyHPTest.ValidEnemyHPSubAPOverMin][suite]
+    - id: 1021
+      uniqueId: EditMode.dll/Tests/[EditMode][Tests.EnemyMoveSpeedMagnificationTest][suite]
+      name: EnemyMoveSpeedMagnificationTest
+      fullName: Tests.EnemyMoveSpeedMagnificationTest
+      resultStatus: 1
+      duration: 0.0596296
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "\u6575\u306E\u79FB\u52D5\u500D\u7387\u306E\u30C6\u30B9\u30C8"
+      isSuite: 1
+      categories: []
+      parentId: 1141
+      parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
+    - id: 1030
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.InvalidEnemyMoveSpeedMagnification][suite]
+      name: InvalidEnemyMoveSpeedMagnification
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.InvalidEnemyMoveSpeedMagnification
+      resultStatus: 1
+      duration: 0.0019116
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u7570\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u672A\u6E80\u307E\u305F\u306F\u6700\u5927\u5024\u3088\u308A\u5927\u304D\u3044\u5834\u5408\u306B\u3001\u30B9\u30ED\u30FC\u304C\u6295\u3052\u3089\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1021
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.EnemyMoveSpeedMagnificationTest][suite]
+    - id: 1026
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/InvalidEnemyMoveSpeedMagnification/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.InvalidEnemyMoveSpeedMagnification(float.MinValue)]
+      name: InvalidEnemyMoveSpeedMagnification(float.MinValue)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.InvalidEnemyMoveSpeedMagnification(float.MinValue)
+      resultStatus: 1
+      duration: 0.0003834
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.InvalidEnemyMoveSpeedMagnification][suite]
+    - id: 1027
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/InvalidEnemyMoveSpeedMagnification/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.InvalidEnemyMoveSpeedMagnification(-1.0f)]
+      name: InvalidEnemyMoveSpeedMagnification(-1.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.InvalidEnemyMoveSpeedMagnification(-1.0f)
+      resultStatus: 1
+      duration: 0.000102
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.InvalidEnemyMoveSpeedMagnification][suite]
+    - id: 1028
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/InvalidEnemyMoveSpeedMagnification/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.InvalidEnemyMoveSpeedMagnification(11.0f)]
+      name: InvalidEnemyMoveSpeedMagnification(11.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.InvalidEnemyMoveSpeedMagnification(11.0f)
+      resultStatus: 1
+      duration: 0.0000784
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.InvalidEnemyMoveSpeedMagnification][suite]
+    - id: 1029
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/InvalidEnemyMoveSpeedMagnification/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.InvalidEnemyMoveSpeedMagnification(float.MaxValue)]
+      name: InvalidEnemyMoveSpeedMagnification(float.MaxValue)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.InvalidEnemyMoveSpeedMagnification(float.MaxValue)
+      resultStatus: 1
+      duration: 0.0000803
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.InvalidEnemyMoveSpeedMagnification][suite]
+    - id: 1025
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMagnification][suite]
+      name: ValidEnemyMoveSpeedMagnification
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMagnification
+      resultStatus: 1
+      duration: 0.0099603
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u6E21\u3055\u308C\u305F\u5024\u304C\u6700\u5C0F\u5024\u4EE5\u4E0A\u304B\u3064\u6700\u5927\u5024\u4EE5\u4E0B\u3067\u3042\u308B\u5834\u5408\u306B\u3001\u6B63\u5E38\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1021
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.EnemyMoveSpeedMagnificationTest][suite]
+    - id: 1022
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMagnification/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMagnification(0.0f)]
+      name: ValidEnemyMoveSpeedMagnification(0.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMagnification(0.0f)
+      resultStatus: 1
+      duration: 0.0002716
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1025
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMagnification][suite]
+    - id: 1023
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMagnification/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMagnification(5.0f)]
+      name: ValidEnemyMoveSpeedMagnification(5.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMagnification(5.0f)
+      resultStatus: 1
+      duration: 0.0000879
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1025
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMagnification][suite]
+    - id: 1024
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMagnification/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMagnification(10.0f)]
+      name: ValidEnemyMoveSpeedMagnification(10.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMagnification(10.0f)
+      resultStatus: 1
+      duration: 0.0000678
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1025
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMagnification][suite]
+    - id: 1058
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+      name: ValidEnemyMoveSpeedMul
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul
+      resultStatus: 1
+      duration: 0.0248214
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u4E8C\u6B21\u5143\u30D9\u30AF\u30C8\u30EB\u3068\u4E57\u7B97\u3057\u305F\u5834\u5408\u306B\u3001\u4E8C\u6B21\u5143\u30D9\u30AF\u30C8\u30EB\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1021
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.EnemyMoveSpeedMagnificationTest][suite]
+    - id: 1031
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,0.0f,0.0f)]
+      name: ValidEnemyMoveSpeedMul(0.0f,0.0f,0.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,0.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0010164
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1032
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,0.0f,1.0f)]
+      name: ValidEnemyMoveSpeedMul(0.0f,0.0f,1.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,0.0f,1.0f)
+      resultStatus: 1
+      duration: 0.0000993
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1033
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,0.0f,5.0f)]
+      name: ValidEnemyMoveSpeedMul(0.0f,0.0f,5.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,0.0f,5.0f)
+      resultStatus: 1
+      duration: 0.0000698
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1034
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,1.0f,0.0f)]
+      name: ValidEnemyMoveSpeedMul(0.0f,1.0f,0.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,1.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0000701
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1035
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,1.0f,1.0f)]
+      name: ValidEnemyMoveSpeedMul(0.0f,1.0f,1.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,1.0f,1.0f)
+      resultStatus: 1
+      duration: 0.000067
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1036
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,1.0f,5.0f)]
+      name: ValidEnemyMoveSpeedMul(0.0f,1.0f,5.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,1.0f,5.0f)
+      resultStatus: 1
+      duration: 0.0000699
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1037
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,5,0.0f)]
+      name: ValidEnemyMoveSpeedMul(0.0f,5,0.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,5,0.0f)
+      resultStatus: 1
+      duration: 0.0000672
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1038
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,5,1.0f)]
+      name: ValidEnemyMoveSpeedMul(0.0f,5,1.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,5,1.0f)
+      resultStatus: 1
+      duration: 0.0000676
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1039
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,5,5.0f)]
+      name: ValidEnemyMoveSpeedMul(0.0f,5,5.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,5,5.0f)
+      resultStatus: 1
+      duration: 0.0000659
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1040
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,0.0f,0.0f)]
+      name: ValidEnemyMoveSpeedMul(5.0f,0.0f,0.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,0.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0000696
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1041
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,0.0f,1.0f)]
+      name: ValidEnemyMoveSpeedMul(5.0f,0.0f,1.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,0.0f,1.0f)
+      resultStatus: 1
+      duration: 0.0000665
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1042
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,0.0f,5.0f)]
+      name: ValidEnemyMoveSpeedMul(5.0f,0.0f,5.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,0.0f,5.0f)
+      resultStatus: 1
+      duration: 0.0000678
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1043
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,1.0f,0.0f)]
+      name: ValidEnemyMoveSpeedMul(5.0f,1.0f,0.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,1.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0000673
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1044
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,1.0f,1.0f)]
+      name: ValidEnemyMoveSpeedMul(5.0f,1.0f,1.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,1.0f,1.0f)
+      resultStatus: 1
+      duration: 0.0000671
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1045
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,1.0f,5.0f)]
+      name: ValidEnemyMoveSpeedMul(5.0f,1.0f,5.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,1.0f,5.0f)
+      resultStatus: 1
+      duration: 0.0000664
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1046
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,5,0.0f)]
+      name: ValidEnemyMoveSpeedMul(5.0f,5,0.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,5,0.0f)
+      resultStatus: 1
+      duration: 0.0000952
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1047
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,5,1.0f)]
+      name: ValidEnemyMoveSpeedMul(5.0f,5,1.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,5,1.0f)
+      resultStatus: 1
+      duration: 0.0000649
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1048
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,5,5.0f)]
+      name: ValidEnemyMoveSpeedMul(5.0f,5,5.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,5,5.0f)
+      resultStatus: 1
+      duration: 0.000069
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1049
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,0.0f,0.0f)]
+      name: ValidEnemyMoveSpeedMul(10.0f,0.0f,0.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,0.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0000654
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1050
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,0.0f,1.0f)]
+      name: ValidEnemyMoveSpeedMul(10.0f,0.0f,1.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,0.0f,1.0f)
+      resultStatus: 1
+      duration: 0.0000687
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1051
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,0.0f,5.0f)]
+      name: ValidEnemyMoveSpeedMul(10.0f,0.0f,5.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,0.0f,5.0f)
+      resultStatus: 1
+      duration: 0.0000662
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1052
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,1.0f,0.0f)]
+      name: ValidEnemyMoveSpeedMul(10.0f,1.0f,0.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,1.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0000692
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1053
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,1.0f,1.0f)]
+      name: ValidEnemyMoveSpeedMul(10.0f,1.0f,1.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,1.0f,1.0f)
+      resultStatus: 1
+      duration: 0.0000676
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1054
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,1.0f,5.0f)]
+      name: ValidEnemyMoveSpeedMul(10.0f,1.0f,5.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,1.0f,5.0f)
+      resultStatus: 1
+      duration: 0.0000682
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1055
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,5,0.0f)]
+      name: ValidEnemyMoveSpeedMul(10.0f,5,0.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,5,0.0f)
+      resultStatus: 1
+      duration: 0.0000663
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1056
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,5,1.0f)]
+      name: ValidEnemyMoveSpeedMul(10.0f,5,1.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,5,1.0f)
+      resultStatus: 1
+      duration: 0.0000676
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1057
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,5,5.0f)]
+      name: ValidEnemyMoveSpeedMul(10.0f,5,5.0f)
+      fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,5,5.0f)
+      resultStatus: 1
+      duration: 0.0000672
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1058
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedMagnificationTest/[EditMode][Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul][suite]
     - id: 1021
       uniqueId: EditMode.dll/Tests/[EditMode][Tests.EnemyMoveSpeedTest][suite]
       name: EnemyMoveSpeedTest
       fullName: Tests.EnemyMoveSpeedTest
       resultStatus: 1
-      duration: 0.0173107
+      duration: 0.0621226
       messages: 
       output: 
       stacktrace: 
@@ -2767,7 +3995,7 @@ MonoBehaviour:
       name: InvalidEnemyMoveSpeed
       fullName: Tests.EnemyMoveSpeedTest.InvalidEnemyMoveSpeed
       resultStatus: 1
-      duration: 0.0045651
+      duration: 0.0014252
       messages: 
       output: 
       stacktrace: 
@@ -2783,7 +4011,7 @@ MonoBehaviour:
       name: InvalidEnemyMoveSpeed(float.MinValue)
       fullName: Tests.EnemyMoveSpeedTest.InvalidEnemyMoveSpeed(float.MinValue)
       resultStatus: 1
-      duration: 0.0001064
+      duration: 0.0003826
       messages: 
       output: 
       stacktrace: 
@@ -2800,7 +4028,7 @@ MonoBehaviour:
       name: InvalidEnemyMoveSpeed(-1.0f)
       fullName: Tests.EnemyMoveSpeedTest.InvalidEnemyMoveSpeed(-1.0f)
       resultStatus: 1
-      duration: 0.0000631
+      duration: 0.0000932
       messages: 
       output: 
       stacktrace: 
@@ -2817,7 +4045,7 @@ MonoBehaviour:
       name: InvalidEnemyMoveSpeed(11.0f)
       fullName: Tests.EnemyMoveSpeedTest.InvalidEnemyMoveSpeed(11.0f)
       resultStatus: 1
-      duration: 0.0000617
+      duration: 0.0000818
       messages: 
       output: 
       stacktrace: 
@@ -2834,7 +4062,7 @@ MonoBehaviour:
       name: InvalidEnemyMoveSpeed(float.MaxValue)
       fullName: Tests.EnemyMoveSpeedTest.InvalidEnemyMoveSpeed(float.MaxValue)
       resultStatus: 1
-      duration: 0.0000599
+      duration: 0.0000765
       messages: 
       output: 
       stacktrace: 
@@ -2851,7 +4079,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeed
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeed
       resultStatus: 1
-      duration: 0.0086476
+      duration: 0.0280684
       messages: 
       output: 
       stacktrace: 
@@ -2867,7 +4095,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeed(0.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeed(0.0f)
       resultStatus: 1
-      duration: 0.0000878
+      duration: 0.0002744
       messages: 
       output: 
       stacktrace: 
@@ -2884,7 +4112,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeed(5.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeed(5.0f)
       resultStatus: 1
-      duration: 0.0000558
+      duration: 0.0000898
       messages: 
       output: 
       stacktrace: 
@@ -2901,7 +4129,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeed(10.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeed(10.0f)
       resultStatus: 1
-      duration: 0.0000527
+      duration: 0.0000648
       messages: 
       output: 
       stacktrace: 
@@ -2913,12 +4141,487 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1025
       parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeed][suite]
+    - id: 1081
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+      name: ValidEnemyMoveSpeedMul
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul
+      resultStatus: 1
+      duration: 0.0161973
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u4E8C\u6B21\u5143\u30D9\u30AF\u30C8\u30EB\u3068\u4E57\u7B97\u3057\u305F\u5834\u5408\u306B\u3001\u4E8C\u6B21\u5143\u30D9\u30AF\u30C8\u30EB\u304C\u683C\u7D0D\u3055\u308C\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1044
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.EnemyMoveSpeedTest][suite]
+    - id: 1054
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,0.0f,0.0f)]
+      name: ValidEnemyMoveSpeedMul(0.0f,0.0f,0.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,0.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0003507
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1055
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,0.0f,1.0f)]
+      name: ValidEnemyMoveSpeedMul(0.0f,0.0f,1.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,0.0f,1.0f)
+      resultStatus: 1
+      duration: 0.0000896
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1056
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,0.0f,5.0f)]
+      name: ValidEnemyMoveSpeedMul(0.0f,0.0f,5.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,0.0f,5.0f)
+      resultStatus: 1
+      duration: 0.0000705
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1057
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,1.0f,0.0f)]
+      name: ValidEnemyMoveSpeedMul(0.0f,1.0f,0.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,1.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0000668
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1058
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,1.0f,1.0f)]
+      name: ValidEnemyMoveSpeedMul(0.0f,1.0f,1.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,1.0f,1.0f)
+      resultStatus: 1
+      duration: 0.0000657
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1059
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,1.0f,5.0f)]
+      name: ValidEnemyMoveSpeedMul(0.0f,1.0f,5.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,1.0f,5.0f)
+      resultStatus: 1
+      duration: 0.0000662
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1060
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,5,0.0f)]
+      name: ValidEnemyMoveSpeedMul(0.0f,5,0.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,5,0.0f)
+      resultStatus: 1
+      duration: 0.0000665
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1061
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,5,1.0f)]
+      name: ValidEnemyMoveSpeedMul(0.0f,5,1.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,5,1.0f)
+      resultStatus: 1
+      duration: 0.0000667
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1062
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,5,5.0f)]
+      name: ValidEnemyMoveSpeedMul(0.0f,5,5.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,5,5.0f)
+      resultStatus: 1
+      duration: 0.0000643
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1063
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,0.0f,0.0f)]
+      name: ValidEnemyMoveSpeedMul(5.0f,0.0f,0.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,0.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0000652
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1064
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,0.0f,1.0f)]
+      name: ValidEnemyMoveSpeedMul(5.0f,0.0f,1.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,0.0f,1.0f)
+      resultStatus: 1
+      duration: 0.000067
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1065
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,0.0f,5.0f)]
+      name: ValidEnemyMoveSpeedMul(5.0f,0.0f,5.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,0.0f,5.0f)
+      resultStatus: 1
+      duration: 0.000064
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1066
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,1.0f,0.0f)]
+      name: ValidEnemyMoveSpeedMul(5.0f,1.0f,0.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,1.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0000659
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1067
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,1.0f,1.0f)]
+      name: ValidEnemyMoveSpeedMul(5.0f,1.0f,1.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,1.0f,1.0f)
+      resultStatus: 1
+      duration: 0.000065
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1068
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,1.0f,5.0f)]
+      name: ValidEnemyMoveSpeedMul(5.0f,1.0f,5.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,1.0f,5.0f)
+      resultStatus: 1
+      duration: 0.0000647
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1069
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,5,0.0f)]
+      name: ValidEnemyMoveSpeedMul(5.0f,5,0.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,5,0.0f)
+      resultStatus: 1
+      duration: 0.0000653
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1070
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,5,1.0f)]
+      name: ValidEnemyMoveSpeedMul(5.0f,5,1.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,5,1.0f)
+      resultStatus: 1
+      duration: 0.0000655
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1071
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,5,5.0f)]
+      name: ValidEnemyMoveSpeedMul(5.0f,5,5.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,5,5.0f)
+      resultStatus: 1
+      duration: 0.0000651
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1072
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,0.0f,0.0f)]
+      name: ValidEnemyMoveSpeedMul(10.0f,0.0f,0.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,0.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0000655
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1073
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,0.0f,1.0f)]
+      name: ValidEnemyMoveSpeedMul(10.0f,0.0f,1.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,0.0f,1.0f)
+      resultStatus: 1
+      duration: 0.0000658
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1074
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,0.0f,5.0f)]
+      name: ValidEnemyMoveSpeedMul(10.0f,0.0f,5.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,0.0f,5.0f)
+      resultStatus: 1
+      duration: 0.0000659
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1075
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,1.0f,0.0f)]
+      name: ValidEnemyMoveSpeedMul(10.0f,1.0f,0.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,1.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0000664
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1076
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,1.0f,1.0f)]
+      name: ValidEnemyMoveSpeedMul(10.0f,1.0f,1.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,1.0f,1.0f)
+      resultStatus: 1
+      duration: 0.0000653
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1077
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,1.0f,5.0f)]
+      name: ValidEnemyMoveSpeedMul(10.0f,1.0f,5.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,1.0f,5.0f)
+      resultStatus: 1
+      duration: 0.0000731
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1078
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,5,0.0f)]
+      name: ValidEnemyMoveSpeedMul(10.0f,5,0.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,5,0.0f)
+      resultStatus: 1
+      duration: 0.0000649
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1079
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,5,1.0f)]
+      name: ValidEnemyMoveSpeedMul(10.0f,5,1.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,5,1.0f)
+      resultStatus: 1
+      duration: 0.0000673
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
+    - id: 1080
+      uniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/ValidEnemyMoveSpeedMul/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,5,5.0f)]
+      name: ValidEnemyMoveSpeedMul(10.0f,5,5.0f)
+      fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,5,5.0f)
+      resultStatus: 1
+      duration: 0.0000698
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: EditMode.dll/Tests/EnemyMoveSpeedTest/[EditMode][Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul][suite]
     - id: 1018
       uniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerEvasionDistanceTest][suite]
       name: PlayerEvasionDistanceTest
       fullName: Tests.PlayerEvasionDistanceTest
       resultStatus: 1
-      duration: 0.0638137
+      duration: 0.0605511
       messages: 
       output: 
       stacktrace: 
@@ -2934,7 +4637,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionDistance
       fullName: Tests.PlayerEvasionDistanceTest.InvalidPlayerEvasionDistance
       resultStatus: 1
-      duration: 0.0011565
+      duration: 0.0012246
       messages: 
       output: 
       stacktrace: 
@@ -2950,7 +4653,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionDistance(float.MinValue)
       fullName: Tests.PlayerEvasionDistanceTest.InvalidPlayerEvasionDistance(float.MinValue)
       resultStatus: 1
-      duration: 0.0003875
+      duration: 0.0004092
       messages: 
       output: 
       stacktrace: 
@@ -2967,7 +4670,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionDistance(-1.0f)
       fullName: Tests.PlayerEvasionDistanceTest.InvalidPlayerEvasionDistance(-1.0f)
       resultStatus: 1
-      duration: 0.0000698
+      duration: 0.0000954
       messages: 
       output: 
       stacktrace: 
@@ -2984,7 +4687,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionDistance(11.0f)
       fullName: Tests.PlayerEvasionDistanceTest.InvalidPlayerEvasionDistance(11.0f)
       resultStatus: 1
-      duration: 0.0000624
+      duration: 0.0000789
       messages: 
       output: 
       stacktrace: 
@@ -3001,7 +4704,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionDistance(float.MaxValue)
       fullName: Tests.PlayerEvasionDistanceTest.InvalidPlayerEvasionDistance(float.MaxValue)
       resultStatus: 1
-      duration: 0.0000599
+      duration: 0.0000746
       messages: 
       output: 
       stacktrace: 
@@ -3018,7 +4721,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionDistance
       fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistance
       resultStatus: 1
-      duration: 0.0203569
+      duration: 0.0202734
       messages: 
       output: 
       stacktrace: 
@@ -3034,7 +4737,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionDistance(0.0f)
       fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistance(0.0f)
       resultStatus: 1
-      duration: 0.0002313
+      duration: 0.0002617
       messages: 
       output: 
       stacktrace: 
@@ -3051,7 +4754,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionDistance(5.0f)
       fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistance(5.0f)
       resultStatus: 1
-      duration: 0.0000571
+      duration: 0.0000874
       messages: 
       output: 
       stacktrace: 
@@ -3068,7 +4771,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionDistance(10.0f)
       fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistance(10.0f)
       resultStatus: 1
-      duration: 0.0000531
+      duration: 0.0000664
       messages: 
       output: 
       stacktrace: 
@@ -3085,7 +4788,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionDistanceMul
       fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistanceMul
       resultStatus: 1
-      duration: 0.0219593
+      duration: 0.0214884
       messages: 
       output: 
       stacktrace: 
@@ -3101,7 +4804,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionDistanceMul(0.0f)
       fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistanceMul(0.0f)
       resultStatus: 1
-      duration: 0.0011308
+      duration: 0.0006086
       messages: 
       output: 
       stacktrace: 
@@ -3118,7 +4821,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionDistanceMul(5.0f)
       fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistanceMul(5.0f)
       resultStatus: 1
-      duration: 0.0001133
+      duration: 0.0001343
       messages: 
       output: 
       stacktrace: 
@@ -3135,7 +4838,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionDistanceMul(10.0f)
       fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistanceMul(10.0f)
       resultStatus: 1
-      duration: 0.000095
+      duration: 0.0001074
       messages: 
       output: 
       stacktrace: 
@@ -3152,7 +4855,7 @@ MonoBehaviour:
       name: PlayerEvasionSpeedTest
       fullName: Tests.PlayerEvasionSpeedTest
       resultStatus: 1
-      duration: 0.0628155
+      duration: 0.0632286
       messages: 
       output: 
       stacktrace: 
@@ -3168,7 +4871,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionSpeed
       fullName: Tests.PlayerEvasionSpeedTest.InvalidPlayerEvasionSpeed
       resultStatus: 1
-      duration: 0.0011819
+      duration: 0.0012169
       messages: 
       output: 
       stacktrace: 
@@ -3184,7 +4887,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionSpeed(float.MinValue)
       fullName: Tests.PlayerEvasionSpeedTest.InvalidPlayerEvasionSpeed(float.MinValue)
       resultStatus: 1
-      duration: 0.0004095
+      duration: 0.0003863
       messages: 
       output: 
       stacktrace: 
@@ -3201,7 +4904,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionSpeed(-1.0f)
       fullName: Tests.PlayerEvasionSpeedTest.InvalidPlayerEvasionSpeed(-1.0f)
       resultStatus: 1
-      duration: 0.0000699
+      duration: 0.0000981
       messages: 
       output: 
       stacktrace: 
@@ -3218,7 +4921,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionSpeed(101.0f)
       fullName: Tests.PlayerEvasionSpeedTest.InvalidPlayerEvasionSpeed(101.0f)
       resultStatus: 1
-      duration: 0.000068
+      duration: 0.000078
       messages: 
       output: 
       stacktrace: 
@@ -3235,7 +4938,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionSpeed(float.MaxValue)
       fullName: Tests.PlayerEvasionSpeedTest.InvalidPlayerEvasionSpeed(float.MaxValue)
       resultStatus: 1
-      duration: 0.0000604
+      duration: 0.0000753
       messages: 
       output: 
       stacktrace: 
@@ -3252,7 +4955,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeed
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeed
       resultStatus: 1
-      duration: 0.0196522
+      duration: 0.0203788
       messages: 
       output: 
       stacktrace: 
@@ -3268,7 +4971,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeed(0.0f)
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeed(0.0f)
       resultStatus: 1
-      duration: 0.000221
+      duration: 0.0002842
       messages: 
       output: 
       stacktrace: 
@@ -3285,7 +4988,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeed(50.0f)
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeed(50.0f)
       resultStatus: 1
-      duration: 0.000058
+      duration: 0.0000957
       messages: 
       output: 
       stacktrace: 
@@ -3302,7 +5005,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeed(100.0f)
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeed(100.0f)
       resultStatus: 1
-      duration: 0.0000492
+      duration: 0.0000675
       messages: 
       output: 
       stacktrace: 
@@ -3319,7 +5022,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeedMul
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeedMul
       resultStatus: 1
-      duration: 0.0219237
+      duration: 0.0215807
       messages: 
       output: 
       stacktrace: 
@@ -3335,7 +5038,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeedMul(0.0f)
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeedMul(0.0f)
       resultStatus: 1
-      duration: 0.0010908
+      duration: 0.0011196
       messages: 
       output: 
       stacktrace: 
@@ -3352,7 +5055,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeedMul(50.0f)
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeedMul(50.0f)
       resultStatus: 1
-      duration: 0.0000564
+      duration: 0.0000926
       messages: 
       output: 
       stacktrace: 
@@ -3369,7 +5072,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeedMul(100.0f)
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeedMul(100.0f)
       resultStatus: 1
-      duration: 0.0000474
+      duration: 0.0000659
       messages: 
       output: 
       stacktrace: 
@@ -3386,7 +5089,7 @@ MonoBehaviour:
       name: PlayerHPTest
       fullName: Tests.PlayerHPTest
       resultStatus: 1
-      duration: 0.041901
+      duration: 0.0838
       messages: 
       output: 
       stacktrace: 
@@ -3402,7 +5105,7 @@ MonoBehaviour:
       name: InvalidPlayerHP
       fullName: Tests.PlayerHPTest.InvalidPlayerHP
       resultStatus: 1
-      duration: 0.001344
+      duration: 0.0023181
       messages: 
       output: 
       stacktrace: 
@@ -3418,7 +5121,7 @@ MonoBehaviour:
       name: InvalidPlayerHP(int.MinValue)
       fullName: Tests.PlayerHPTest.InvalidPlayerHP(int.MinValue)
       resultStatus: 1
-      duration: 0.0003996
+      duration: 0.0005497
       messages: 
       output: 
       stacktrace: 
@@ -3435,7 +5138,7 @@ MonoBehaviour:
       name: InvalidPlayerHP(-1)
       fullName: Tests.PlayerHPTest.InvalidPlayerHP(-1)
       resultStatus: 1
-      duration: 0.0000716
+      duration: 0.0001115
       messages: 
       output: 
       stacktrace: 
@@ -3452,7 +5155,7 @@ MonoBehaviour:
       name: InvalidPlayerHP(101)
       fullName: Tests.PlayerHPTest.InvalidPlayerHP(101)
       resultStatus: 1
-      duration: 0.0000665
+      duration: 0.0000807
       messages: 
       output: 
       stacktrace: 
@@ -3469,7 +5172,7 @@ MonoBehaviour:
       name: InvalidPlayerHP(int.MaxValue)
       fullName: Tests.PlayerHPTest.InvalidPlayerHP(int.MaxValue)
       resultStatus: 1
-      duration: 0.0000956
+      duration: 0.0000932
       messages: 
       output: 
       stacktrace: 
@@ -3486,7 +5189,7 @@ MonoBehaviour:
       name: ValidPlayerHP
       fullName: Tests.PlayerHPTest.ValidPlayerHP
       resultStatus: 1
-      duration: 0.020429
+      duration: 0.0178703
       messages: 
       output: 
       stacktrace: 
@@ -3502,7 +5205,7 @@ MonoBehaviour:
       name: ValidPlayerHP(0)
       fullName: Tests.PlayerHPTest.ValidPlayerHP(0)
       resultStatus: 1
-      duration: 0.0003187
+      duration: 0.0002583
       messages: 
       output: 
       stacktrace: 
@@ -3519,7 +5222,7 @@ MonoBehaviour:
       name: ValidPlayerHP(50)
       fullName: Tests.PlayerHPTest.ValidPlayerHP(50)
       resultStatus: 1
-      duration: 0.000059
+      duration: 0.0000846
       messages: 
       output: 
       stacktrace: 
@@ -3536,7 +5239,7 @@ MonoBehaviour:
       name: ValidPlayerHP(100)
       fullName: Tests.PlayerHPTest.ValidPlayerHP(100)
       resultStatus: 1
-      duration: 0.0000645
+      duration: 0.0000638
       messages: 
       output: 
       stacktrace: 
@@ -3548,12 +5251,146 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1019
       parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHP][suite]
+    - id: 1161
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPSubAP][suite]
+      name: ValidPlayerHPSubAP
+      fullName: Tests.PlayerHPTest.ValidPlayerHPSubAP
+      resultStatus: 1
+      duration: 0.0213577
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u653B\u6483\u529B\u3068\u6E1B\u7B97\u3057\u305F\u5834\u5408\u306B\u3001\u30D7\u30EC\u30A4\u30E4\u30FC\u306E\u4F53\u529B\u304C\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1148
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
+    - id: 1158
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/ValidPlayerHPSubAP/[EditMode][Tests.PlayerHPTest.ValidPlayerHPSubAP(100,10)]
+      name: ValidPlayerHPSubAP(100,10)
+      fullName: Tests.PlayerHPTest.ValidPlayerHPSubAP(100,10)
+      resultStatus: 1
+      duration: 0.0003773
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1161
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPSubAP][suite]
+    - id: 1159
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/ValidPlayerHPSubAP/[EditMode][Tests.PlayerHPTest.ValidPlayerHPSubAP(50,50)]
+      name: ValidPlayerHPSubAP(50,50)
+      fullName: Tests.PlayerHPTest.ValidPlayerHPSubAP(50,50)
+      resultStatus: 1
+      duration: 0.0000958
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1161
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPSubAP][suite]
+    - id: 1160
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/ValidPlayerHPSubAP/[EditMode][Tests.PlayerHPTest.ValidPlayerHPSubAP(20,10)]
+      name: ValidPlayerHPSubAP(20,10)
+      fullName: Tests.PlayerHPTest.ValidPlayerHPSubAP(20,10)
+      resultStatus: 1
+      duration: 0.0000703
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1161
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPSubAP][suite]
+    - id: 1142
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPSubAPOverMin][suite]
+      name: ValidPlayerHPSubAPOverMin
+      fullName: Tests.PlayerHPTest.ValidPlayerHPSubAPOverMin
+      resultStatus: 1
+      duration: 0.0208297
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u653B\u6483\u529B\u3068\u6E1B\u7B97\u3057\u305F\u7D50\u679C\u304C\u6700\u5C0F\u5024\u3088\u308A\u5C0F\u3055\u3044\u5834\u5408\u306B\u3001\u30D7\u30EC\u30A4\u30E4\u30FC\u4F53\u529B\u306E\u6700\u5C0F\u5024\u304C\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1125
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerHPTest][suite]
+    - id: 1139
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/ValidPlayerHPSubAPOverMin/[EditMode][Tests.PlayerHPTest.ValidPlayerHPSubAPOverMin(80,100)]
+      name: ValidPlayerHPSubAPOverMin(80,100)
+      fullName: Tests.PlayerHPTest.ValidPlayerHPSubAPOverMin(80,100)
+      resultStatus: 1
+      duration: 0.0003052
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1142
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPSubAPOverMin][suite]
+    - id: 1140
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/ValidPlayerHPSubAPOverMin/[EditMode][Tests.PlayerHPTest.ValidPlayerHPSubAPOverMin(50,100)]
+      name: ValidPlayerHPSubAPOverMin(50,100)
+      fullName: Tests.PlayerHPTest.ValidPlayerHPSubAPOverMin(50,100)
+      resultStatus: 1
+      duration: 0.0000949
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1142
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPSubAPOverMin][suite]
+    - id: 1141
+      uniqueId: EditMode.dll/Tests/PlayerHPTest/ValidPlayerHPSubAPOverMin/[EditMode][Tests.PlayerHPTest.ValidPlayerHPSubAPOverMin(0,100)]
+      name: ValidPlayerHPSubAPOverMin(0,100)
+      fullName: Tests.PlayerHPTest.ValidPlayerHPSubAPOverMin(0,100)
+      resultStatus: 1
+      duration: 0.000072
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1142
+      parentUniqueId: EditMode.dll/Tests/PlayerHPTest/[EditMode][Tests.PlayerHPTest.ValidPlayerHPSubAPOverMin][suite]
     - id: 1012
       uniqueId: EditMode.dll/Tests/[EditMode][Tests.PlayerMoveSpeedTest][suite]
       name: PlayerMoveSpeedTest
       fullName: Tests.PlayerMoveSpeedTest
       resultStatus: 1
-      duration: 0.0631459
+      duration: 0.0635856
       messages: 
       output: 
       stacktrace: 
@@ -3569,7 +5406,7 @@ MonoBehaviour:
       name: InvalidPlaeyrMoveSpeed
       fullName: Tests.PlayerMoveSpeedTest.InvalidPlaeyrMoveSpeed
       resultStatus: 1
-      duration: 0.0013535
+      duration: 0.0012211
       messages: 
       output: 
       stacktrace: 
@@ -3585,7 +5422,7 @@ MonoBehaviour:
       name: InvalidPlaeyrMoveSpeed(float.MinValue)
       fullName: Tests.PlayerMoveSpeedTest.InvalidPlaeyrMoveSpeed(float.MinValue)
       resultStatus: 1
-      duration: 0.0004532
+      duration: 0.0003831
       messages: 
       output: 
       stacktrace: 
@@ -3602,7 +5439,7 @@ MonoBehaviour:
       name: InvalidPlaeyrMoveSpeed(-1.0f)
       fullName: Tests.PlayerMoveSpeedTest.InvalidPlaeyrMoveSpeed(-1.0f)
       resultStatus: 1
-      duration: 0.0000721
+      duration: 0.0001005
       messages: 
       output: 
       stacktrace: 
@@ -3619,7 +5456,7 @@ MonoBehaviour:
       name: InvalidPlaeyrMoveSpeed(11.0f)
       fullName: Tests.PlayerMoveSpeedTest.InvalidPlaeyrMoveSpeed(11.0f)
       resultStatus: 1
-      duration: 0.0000649
+      duration: 0.000078
       messages: 
       output: 
       stacktrace: 
@@ -3636,7 +5473,7 @@ MonoBehaviour:
       name: InvalidPlaeyrMoveSpeed(float.MaxValue)
       fullName: Tests.PlayerMoveSpeedTest.InvalidPlaeyrMoveSpeed(float.MaxValue)
       resultStatus: 1
-      duration: 0.0000636
+      duration: 0.0000759
       messages: 
       output: 
       stacktrace: 
@@ -3653,7 +5490,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeed
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed
       resultStatus: 1
-      duration: 0.0197891
+      duration: 0.0206281
       messages: 
       output: 
       stacktrace: 
@@ -3669,7 +5506,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeed(0.0f)
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed(0.0f)
       resultStatus: 1
-      duration: 0.0002317
+      duration: 0.0002875
       messages: 
       output: 
       stacktrace: 
@@ -3686,7 +5523,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeed(5.0f)
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed(5.0f)
       resultStatus: 1
-      duration: 0.0000622
+      duration: 0.0000881
       messages: 
       output: 
       stacktrace: 
@@ -3703,7 +5540,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeed(10.0f)
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed(10.0f)
       resultStatus: 1
-      duration: 0.0000488
+      duration: 0.0000657
       messages: 
       output: 
       stacktrace: 
@@ -3720,7 +5557,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedMul
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedMul
       resultStatus: 1
-      duration: 0.0220245
+      duration: 0.0213382
       messages: 
       output: 
       stacktrace: 
@@ -3736,7 +5573,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedMul(0.0f)
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedMul(0.0f)
       resultStatus: 1
-      duration: 0.0006147
+      duration: 0.0005911
       messages: 
       output: 
       stacktrace: 
@@ -3753,7 +5590,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedMul(5.0f)
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedMul(5.0f)
       resultStatus: 1
-      duration: 0.0001444
+      duration: 0.0001377
       messages: 
       output: 
       stacktrace: 
@@ -3770,7 +5607,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedMul(10.0f)
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedMul(10.0f)
       resultStatus: 1
-      duration: 0.0001094
+      duration: 0.0001139
       messages: 
       output: 
       stacktrace: 
@@ -3787,7 +5624,7 @@ MonoBehaviour:
       name: PlayerStaminaTest
       fullName: Tests.PlayerStaminaTest
       resultStatus: 1
-      duration: 0.126985
+      duration: 0.1254703
       messages: 
       output: 
       stacktrace: 
@@ -3803,7 +5640,7 @@ MonoBehaviour:
       name: InvalidPlayerStamina
       fullName: Tests.PlayerStaminaTest.InvalidPlayerStamina
       resultStatus: 1
-      duration: 0.0011811
+      duration: 0.0012721
       messages: 
       output: 
       stacktrace: 
@@ -3819,7 +5656,7 @@ MonoBehaviour:
       name: InvalidPlayerStamina(float.MinValue)
       fullName: Tests.PlayerStaminaTest.InvalidPlayerStamina(float.MinValue)
       resultStatus: 1
-      duration: 0.0004
+      duration: 0.000418
       messages: 
       output: 
       stacktrace: 
@@ -3836,7 +5673,7 @@ MonoBehaviour:
       name: InvalidPlayerStamina(-1.0f)
       fullName: Tests.PlayerStaminaTest.InvalidPlayerStamina(-1.0f)
       resultStatus: 1
-      duration: 0.0000685
+      duration: 0.0001046
       messages: 
       output: 
       stacktrace: 
@@ -3853,7 +5690,7 @@ MonoBehaviour:
       name: InvalidPlayerStamina(101.0f)
       fullName: Tests.PlayerStaminaTest.InvalidPlayerStamina(101.0f)
       resultStatus: 1
-      duration: 0.0000623
+      duration: 0.0000815
       messages: 
       output: 
       stacktrace: 
@@ -3870,7 +5707,7 @@ MonoBehaviour:
       name: InvalidPlayerStamina(float.MaxValue)
       fullName: Tests.PlayerStaminaTest.InvalidPlayerStamina(float.MaxValue)
       resultStatus: 1
-      duration: 0.0000644
+      duration: 0.0000753
       messages: 
       output: 
       stacktrace: 
@@ -3887,7 +5724,7 @@ MonoBehaviour:
       name: ValidPlayerStamina
       fullName: Tests.PlayerStaminaTest.ValidPlayerStamina
       resultStatus: 1
-      duration: 0.0198151
+      duration: 0.0203708
       messages: 
       output: 
       stacktrace: 
@@ -3903,7 +5740,7 @@ MonoBehaviour:
       name: ValidPlayerStamina(0.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlayerStamina(0.0f)
       resultStatus: 1
-      duration: 0.0002473
+      duration: 0.0002591
       messages: 
       output: 
       stacktrace: 
@@ -3920,7 +5757,7 @@ MonoBehaviour:
       name: ValidPlayerStamina(50.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlayerStamina(50.0f)
       resultStatus: 1
-      duration: 0.0000587
+      duration: 0.0000867
       messages: 
       output: 
       stacktrace: 
@@ -3937,7 +5774,7 @@ MonoBehaviour:
       name: ValidPlayerStamina(100.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlayerStamina(100.0f)
       resultStatus: 1
-      duration: 0.0000543
+      duration: 0.0000654
       messages: 
       output: 
       stacktrace: 
@@ -3954,7 +5791,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaAddDelatTime
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime
       resultStatus: 1
-      duration: 0.046064
+      duration: 0.0246778
       messages: 
       output: 
       stacktrace: 
@@ -3970,7 +5807,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaAddDelatTime(0.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime(0.0f)
       resultStatus: 1
-      duration: 0.0251739
+      duration: 0.0036024
       messages: 
       output: 
       stacktrace: 
@@ -3987,7 +5824,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaAddDelatTime(10.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime(10.0f)
       resultStatus: 1
-      duration: 0.000088
+      duration: 0.0000985
       messages: 
       output: 
       stacktrace: 
@@ -4004,7 +5841,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaAddDelatTime(50.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime(50.0f)
       resultStatus: 1
-      duration: 0.0000575
+      duration: 0.0000683
       messages: 
       output: 
       stacktrace: 
@@ -4021,7 +5858,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaAddDelatTime(80.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime(80.0f)
       resultStatus: 1
-      duration: 0.0000535
+      duration: 0.0000694
       messages: 
       output: 
       stacktrace: 
@@ -4038,7 +5875,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaAddDeltaTimeOverMax
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDeltaTimeOverMax
       resultStatus: 1
-      duration: 0.0045166
+      duration: 0.0179606
       messages: 
       output: 
       stacktrace: 
@@ -4054,7 +5891,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaAddDeltaTimeOverMax(100.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDeltaTimeOverMax(100.0f)
       resultStatus: 1
-      duration: 0.0002938
+      duration: 0.0003394
       messages: 
       output: 
       stacktrace: 
@@ -4071,7 +5908,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaSubDelatTime
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime
       resultStatus: 1
-      duration: 0.0143547
+      duration: 0.0207098
       messages: 
       output: 
       stacktrace: 
@@ -4087,7 +5924,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaSubDelatTime(10.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime(10.0f)
       resultStatus: 1
-      duration: 0.0003507
+      duration: 0.0003987
       messages: 
       output: 
       stacktrace: 
@@ -4104,7 +5941,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaSubDelatTime(50.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime(50.0f)
       resultStatus: 1
-      duration: 0.0000626
+      duration: 0.0000966
       messages: 
       output: 
       stacktrace: 
@@ -4121,7 +5958,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaSubDelatTime(80.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime(80.0f)
       resultStatus: 1
-      duration: 0.0000516
+      duration: 0.000071
       messages: 
       output: 
       stacktrace: 
@@ -4138,7 +5975,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaSubDelatTime(100.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime(100.0f)
       resultStatus: 1
-      duration: 0.0000521
+      duration: 0.000069
       messages: 
       output: 
       stacktrace: 
@@ -4155,7 +5992,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaSubDeltaTimeOverMax
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDeltaTimeOverMax
       resultStatus: 1
-      duration: 0.0204076
+      duration: 0.0202763
       messages: 
       output: 
       stacktrace: 
@@ -4171,7 +6008,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaSubDeltaTimeOverMax(0.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDeltaTimeOverMax(0.0f)
       resultStatus: 1
-      duration: 0.0002698
+      duration: 0.0003122
       messages: 
       output: 
       stacktrace: 
@@ -4183,13 +6020,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1076
       parentUniqueId: EditMode.dll/Tests/PlayerStaminaTest/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDeltaTimeOverMax][suite]
-    m_ResultText: "EnemyMoveSpeedTest (0.017s)\n\u6575\u306E\u79FB\u52D5\u901F\u5EA6\u306E\u30C6\u30B9\u30C8"
+    m_ResultText: "ValidPlayerHPSubAPOverMin (0.021s)\n[\u6B63\u5E38] \u653B\u6483\u529B\u3068\u6E1B\u7B97\u3057\u305F\u7D50\u679C\u304C\u6700\u5C0F\u5024\u3088\u308A\u5C0F\u3055\u3044\u5834\u5408\u306B\u3001\u30D7\u30EC\u30A4\u30E4\u30FC\u4F53\u529B\u306E\u6700\u5C0F\u5024\u304C\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 12}
-      m_SelectedIDs: ded9c814
-      m_LastClickedID: 348707294
-      m_ExpandedIDs: 4e5e5887d898d488ffe43c8ed0bc2792de38d8946075e79408d147993cdc509e319f829f4c6ea29fa3c63ba13316a1a1783a69a67ae2f2b4a8d000b51de956b991f282be773dd3c1e75e21c29f561fc5d6cd41c5d553f4ce188c80d0fe6bdfd0b15a52dc55e08edea11615dfb7cadfdfb70143e3a11cb9eebcf832f1db8f0ef235932af92733b0fb2663a4fcbe31c0fdfe985fff092f8e0573ad3008b492650bded9c814d9c69d1b8bce34243cf34728450074289c856d2dc141672f2a49363110bb2a3c26f3073d105db24bce42cc4e893b8f542a3da05459d84257754078573ca6395acb38cc5f1277ec67e57d0f68089961688db7157c4b5ea47cffffff7f
+      scrollPos: {x: 0, y: 63}
+      m_SelectedIDs: e9f35cf4
+      m_LastClickedID: -195234839
+      m_ExpandedIDs: 4e5e5887d898d488ffe43c8ed0bc2792de38d8946075e79408d147993cdc509e319f829f4c6ea29fa3c63ba13316a1a1783a69a67ae2f2b4a8d000b51de956b991f282be773dd3c1e75e21c29f561fc5d6cd41c5d553f4ce188c80d0fe6bdfd0b15a52dc55e08edea11615dfb7cadfdfb70143e3a11cb9eebcf832f1db8f0ef235932af92733b0fb2663a4fcbe31c0fdfe985fff092f8e0573ad3008b492650bd9c69d1b8bce34243cf34728450074289c856d2dc141672f2a49363110bb2a3c26f3073d105db24bce42cc4e893b8f542a3da05459d84257754078573ca6395acb38cc5f1277ec67e57d0f68089961688db7157c4b5ea47cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
