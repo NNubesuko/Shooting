@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Systemk;
+using Systemk.Util;
 
-public class EnemyImpl : MonoBehaviour, Enemy {
+public class EnemyImpl : TriggerObject, Enemy {
 
     public EnemyHP HP { get; private set; }
     public EnemyAP AP { get; private set; }
     public EnemyMoveSpeed MoveSpeed { get; private set; }
     public EnemyMoveSpeedMagnification Magnification { get; private set; }
     public Vector2[] MoveTargetTable { get; private set; }
+
+    public bool wasAttacked { get; protected set; }
 
     private Timer tableChangeTimer;
     private Vector2 target;

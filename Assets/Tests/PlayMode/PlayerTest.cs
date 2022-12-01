@@ -270,6 +270,19 @@ namespace Tests {
             Assert.That(currentStamina, Is.LessThan(lastStamina));
         }
 
+        // [UnityTest]
+        // [Order(14)]
+        // [Description("[正常] 敵に攻撃された場合に、体力が敵の攻撃力分減少していること")]
+        // public IEnumerator AttacksFromEnemy() {
+        //     PlayerHP lastHP = playerScript.HP;
+        //     yield return new WaitUntil(() => {
+        //         return playerScript.wasAttacked;
+        //     });
+        //     PlayerHP currentHP = playerScript.HP;
+            
+        //     Assert.That(currentHP, Is.LessThan(lastHP));
+        // }
+
     }
 
 }
