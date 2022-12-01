@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,6 +20,9 @@ public class EnemyImpl : TriggerObject, Enemy {
     private Vector2 p;
     private int index = 0;
 
+    /*
+     * ステータスを初期化するメソッド
+     */
     public void Init(
         EnemyHP hp,
         EnemyAP ap,
@@ -34,6 +38,9 @@ public class EnemyImpl : TriggerObject, Enemy {
         tableChangeTimer = new Timer(3f);
     }
 
+    /*
+     * 通常移動のメソッド
+     */
     public void Move() {
         target = MoveTargetTable[index];
 
@@ -49,8 +56,42 @@ public class EnemyImpl : TriggerObject, Enemy {
         });
     }
 
+    /*
+     * ダメージのメソッド, IDamagableより実装
+     */
+    public void Damage(AP ap) {
+        HP -= ap;
+    }
+    
+    /*
+     * 死亡時のメソッド, IDamagableより実装
+     */
+    public void Death() {
+        if (HP == EnemyHP.Of(0)) {
+            gameObject.SetActive(false);
+        }
+    }
+
+    /*
+     * 通常攻撃のメソッド
+     */
     public void Attack(Player player) {
         player.Damage(AP);
+    }
+
+    /*
+     * 敵オブジェクトが非アクティブになった場合のメソッド
+     */
+    private void OnDisable() {
+        HP = null;
+        AP = null;
+        MoveSpeed = null;
+        Magnification = null;
+        MoveTargetTable = null;
+
+        tableChangeTimer = null;
+
+        GC.Collect();
     }
 
 }

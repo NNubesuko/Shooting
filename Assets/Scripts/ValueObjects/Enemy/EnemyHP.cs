@@ -10,4 +10,8 @@ public class EnemyHP : HP {
         return new EnemyHP(value);
     }
 
+    public static EnemyHP operator-(EnemyHP hp, AP ap) {
+        return new EnemyHP(hp.Value - ap.Value);
+    }
+
 }

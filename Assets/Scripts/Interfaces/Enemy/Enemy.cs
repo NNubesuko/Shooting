@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public interface Enemy : IMovable {
+public interface Enemy : IMovable, IDamagable {
 
     EnemyHP HP { get; }
     EnemyAP AP { get; }

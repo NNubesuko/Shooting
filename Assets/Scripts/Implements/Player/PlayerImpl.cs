@@ -16,6 +16,9 @@ public class PlayerImpl : MonoBehaviour, Player {
     public bool CanMove { get; private set; } = true;
     public bool IsEvading { get; private set; } = false;
 
+    /*
+     * ステータスを初期化するメソッド
+     */
     public void Init(
         PlayerHP hp,
         PlayerStamina stamina,
@@ -31,7 +34,7 @@ public class PlayerImpl : MonoBehaviour, Player {
     }
 
     /*
-     * 通常移動
+     * 通常移動のメソッド, IMovableより実装
      */
     public void Move() {
         if (!CanMove) return;
@@ -41,16 +44,25 @@ public class PlayerImpl : MonoBehaviour, Player {
         transform.position = velocity;
     }
 
+    /*
+     * ダメージのメソッド, IDamagableより実装
+     */
     public void Damage(AP ap) {
         HP -= ap;
     }
 
+    /*
+     * 死亡時のメソッド, IDamagableより実装
+     */
     public void Death() {
         if (HP == PlayerHP.Of(0)) {
             gameObject.SetActive(false);
         }
     }
 
+    /*
+     * 通常回避のメソッド
+     */
     public void Evasion(float staminaConsumption) {
         if (IsEvading) {
             transform.position = Vector2.MoveTowards(
@@ -77,10 +89,16 @@ public class PlayerImpl : MonoBehaviour, Player {
         }
     }
 
+    /*
+     * スタミナを回復させるヘルプメソッド
+     */
     protected void RestoreStamina(float recoveryAmount) {
         Stamina += PlayerStamina.Of(recoveryAmount);
     }
 
+    /*
+     * プレイヤーオブジェクトが非アクティブになった場合のメソッド
+     */
     private void OnDisable() {
         HP = null;
         Stamina = null;
