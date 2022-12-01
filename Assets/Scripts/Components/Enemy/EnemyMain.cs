@@ -25,9 +25,10 @@ public class EnemyMain : EnemyImpl {
     }
 
     protected override void OnTriggerEnter2DEvent(Collider2D collider) {
-        wasAttacked = collider.gameObject.name.Equals("Player");
-        if (wasAttacked) {
-        }
+        GameObject gameObject = collider.gameObject;
+        wasAttacked = gameObject.name.Equals("Player");
+        
+        Attack(gameObject.GetComponent<PlayerMain>());
     }
 
 }

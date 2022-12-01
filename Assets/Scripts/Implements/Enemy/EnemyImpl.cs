@@ -49,4 +49,8 @@ public class EnemyImpl : TriggerObject, Enemy {
         });
     }
 
+    public void Attack(Player player) {
+        player.Damage(AP);
+    }
+
 }
