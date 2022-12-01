@@ -87,6 +87,21 @@ namespace Tests {
             yield return null;
         }
 
+        [UnityTest]
+        [Order(5)]
+        [Description("[正常] プレイヤーに攻撃された場合に、体力が攻撃力分減少していること")]
+        public IEnumerator AttacksFromPlayer() {
+            BulletMain bulletScript = GameObject.Find("Bullet").GetComponent<BulletMain>();
+
+            EnemyHP lastHP = enemyScript.HP;
+            yield return new WaitUntil(() => {
+                return bulletScript.wasAttacked;
+            });
+            EnemyHP currentHP = enemyScript.HP;
+
+            Assert.That(currentHP, Is.LessThan(lastHP));
+        }
+
     }
 
 }

@@ -7,4 +7,8 @@ public class BulletMoveSpeed : Speed {
         return new BulletMoveSpeed(value);
     }
 
+    public static float operator*(BulletMoveSpeed speed, float deltaTime) {
+        return speed.Value * deltaTime;
+    }
+
 }

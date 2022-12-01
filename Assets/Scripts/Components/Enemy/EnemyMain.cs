@@ -5,9 +5,10 @@ using UnityEngine;
 public class EnemyMain : EnemyImpl {
 
     private Vector2[] moveTargetTable = {
-        new Vector2(0f, 3f),
-        new Vector2(3f, -3f),
-        new Vector2(-3f, -3f)
+        new Vector2(0f, 0f)
+        // new Vector2(0f, 3f),
+        // new Vector2(3f, -3f),
+        // new Vector2(-3f, -3f)
     };
 
     private void Awake() {
@@ -28,7 +29,9 @@ public class EnemyMain : EnemyImpl {
         GameObject gameObject = collider.gameObject;
         wasAttacked = gameObject.name.Equals("Player");
         
-        Attack(gameObject.GetComponent<PlayerMain>());
+        if (wasAttacked) {
+            Attack(gameObject.GetComponent<PlayerMain>());
+        }
     }
 
 }

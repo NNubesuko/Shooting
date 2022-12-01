@@ -22,6 +22,7 @@ namespace Tests {
         }
 
         [UnityTest]
+        [Order(1)]
         [Description("[正常] 弾丸オブジェクトが存在する場合に、変数に格納されること")]
         public IEnumerator BulletObjectExists() {
             Assert.That(bulletObject, Is.Not.Null);
@@ -29,6 +30,7 @@ namespace Tests {
         }
 
         [UnityTest]
+        [Order(2)]
         [Description("[正常] 弾丸オブジェクトが存在する場合に、変数に格納されること")]
         public IEnumerator BulletScriptExists() {
             Assert.That(bulletScript, Is.Not.Null);
@@ -36,6 +38,7 @@ namespace Tests {
         }
 
         [UnityTest]
+        [Order(3)]
         [Description("[正常] 敵のステータスが初期化された場合に、正常に初期化されること")]
         public IEnumerator ValidPlayerStatus() {
             BulletAP bulletAP = BulletAP.Of(10);
@@ -49,6 +52,17 @@ namespace Tests {
             Assert.That(bulletScript.AP, Is.EqualTo(bulletAP));
             Assert.That(bulletScript.MoveSpeed, Is.EqualTo(bulletMoveSpeed));
             yield return null;
+        }
+
+        [UnityTest]
+        [Order(4)]
+        [Description("[正常] 常時上方向に移動していること")]
+        public IEnumerator ValidMove() {
+            Vector2 lastPosition = bulletObject.transform.position;
+            yield return null;
+            Vector2 currentPosition = bulletObject.transform.position;
+
+            Assert.That(currentPosition.y, Is.GreaterThan(lastPosition.y));
         }
 
     }

@@ -1,4 +1,4 @@
-public interface Bullet {
+public interface Bullet : IMovable {
 
     BulletAP AP { get; }
     BulletMoveSpeed MoveSpeed { get; }
@@ -7,7 +7,5 @@ public interface Bullet {
         BulletAP ap,
         BulletMoveSpeed moveSpeed
     );
-
-    void Fire();
 
 }

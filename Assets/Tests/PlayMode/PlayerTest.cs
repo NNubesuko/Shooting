@@ -273,7 +273,7 @@ namespace Tests {
 
         [UnityTest]
         [Order(14)]
-        [Description("[正常] 敵に攻撃された場合に、体力が敵の攻撃力分減少していること")]
+        [Description("[正常] 敵に攻撃された場合に、体力が攻撃力分減少していること")]
         public IEnumerator AttacksFromEnemy() {
             EnemyMain enemyScript = GameObject.Find("Enemy").GetComponent<EnemyMain>();
 

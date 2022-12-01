@@ -40,6 +40,21 @@ namespace Tests {
             );
         }
 
+        [Test]
+        [TestCase(0f)]
+        [TestCase(10f)]
+        [TestCase(50f)]
+        [Description("[正常] フレーム秒と乗算した場合に、float型の実数が格納されること")]
+        public void BulletMoveSpeedMulDeltaTime(float value) {
+            BulletMoveSpeed bulletMoveSpeed = BulletMoveSpeed.Of(value);
+            float bulletMoveSpeedMulDeltaTime = bulletMoveSpeed * Time.deltaTime;
+
+            Assert.That(
+                bulletMoveSpeedMulDeltaTime,
+                Is.EqualTo(value * Time.deltaTime)
+            );
+        }
+
     }
 
 }
