@@ -17,12 +17,14 @@ namespace Tests {
         private Vector2 lastPosition = default;
         private Vector2 currentPosition = default;
         private const float Vector2Tolerance = 0.001f;
+        private PlayerStamina lastStamina = null;
 
         [OneTimeSetUp]
         public void OneTimeSetUp() {
             SceneManager.LoadSceneAsync("Stage1").completed += _ => {
                 playerObject = GameObject.Find("Player");
                 playerScript = playerObject.GetComponent<PlayerMain>();
+                lastStamina = playerScript.Stamina;
             };
         }
 
@@ -263,8 +265,10 @@ namespace Tests {
         [Order(13)]
         [Description("[正常] 回避した場合に、スタミナが消費されていること")]
         public IEnumerator StaminaIsBeingConsumedNormally() {
-            PlayerStamina lastStamina = playerScript.Stamina;
-            yield return new WaitUntil(() => playerScript.IsEvading);
+            Debug.Log(lastStamina);
+            yield return new WaitUntil(() => {
+                return playerScript.IsEvading;
+            });
             PlayerStamina currentStamina = playerScript.Stamina;
 
             Assert.That(currentStamina, Is.LessThan(lastStamina));

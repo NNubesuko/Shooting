@@ -23,6 +23,8 @@ public class PlayerMain : PlayerImpl {
     }
 
     private void Update() {
+        Debug.Log($"HP: {HP}");
+        Debug.Log($"Stamina: {Stamina}");
         Move();
         Evasion(staminaConsumption);
         RestoreStamina(Time.deltaTime);
