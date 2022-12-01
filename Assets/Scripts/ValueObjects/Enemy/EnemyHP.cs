@@ -1,3 +1,5 @@
+using Systemk;
+
 /*
  * 敵の体力のクラス
  */
@@ -11,7 +13,13 @@ public class EnemyHP : HP {
     }
 
     public static EnemyHP operator-(EnemyHP hp, AP ap) {
-        return new EnemyHP(hp.Value - ap.Value);
+        int value = Mathk.KeepValueWithinRange<int>(
+            hp.Value - ap.Value,
+            hp.MIN,
+            hp.MAX
+        );
+        
+        return new EnemyHP(value);
     }
 
 }
