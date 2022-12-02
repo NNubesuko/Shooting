@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 19
+  controlID: 112
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,12 +140,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 870
+    width: 869
     height: 947
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 80
+  controlID: 79
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,10 +163,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 870
+    width: 869
     height: 486
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -190,10 +190,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 486
-    width: 870
+    width: 869
     height: 461
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -216,14 +216,14 @@ MonoBehaviour:
   - {fileID: 13}
   m_Position:
     serializedVersion: 2
-    x: 870
+    x: 869
     y: 0
     width: 638
     height: 947
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 118
+  controlID: 113
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 119
+  controlID: 114
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -268,8 +268,8 @@ MonoBehaviour:
     y: 0
     width: 228
     height: 476
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -320,8 +320,8 @@ MonoBehaviour:
     y: 476
     width: 638
     height: 471
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 20}
@@ -343,12 +343,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1508
+    x: 1507
     y: 0
-    width: 412
+    width: 413
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -376,7 +376,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 559
-    width: 869
+    width: 868
     height: 440
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -424,23 +424,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 869
+      width: 868
       height: 419
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 434.5, y: 209.5}
+    m_Translation: {x: 434, y: 209.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -434.5
+      x: -434
       y: -209.5
-      width: 869
+      width: 868
       height: 419
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 869, y: 440}
+  m_LastWindowPixelSize: {x: 868, y: 440}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -468,7 +468,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 869
+    width: 868
     height: 465
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -693,9 +693,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.4027865, y: 2.0787735, z: -0.087920256}
+    m_Target: {x: 1.5535252, y: 4.490525, z: -0.0936423}
     speed: 2
-    m_Value: {x: 1.4027865, y: 2.0787735, z: -0.087920256}
+    m_Value: {x: 1.5535252, y: 4.490525, z: -0.0936423}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1680,7 +1680,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 870
+    x: 869
     y: 73
     width: 226
     height: 455
@@ -1693,7 +1693,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: b6dcffff5eddffff86e0ffff08e2ffffb0e2ffffa4e6ffff5ae7ffff02e8ffffa6ebffff90ecffff38edffffeef0ffff44f4ffff1ef9ffff2afbffff
+      m_ExpandedIDs: 5859ffff005affff3e5dffffd895ffff8096ffff129affffe89affff909bffff969fffffe2a7ffff8aa8ffffccabfffff2adffff9aaeffffdcb1ffff1ab4ffffc2b4fffffcb7ffffecb9ffff94baffffbabdffffc0beffff68bfffffa2c2ffff88c4ffff30c5ffff7ec8ffff34cbffffdccbffff2acfffff88d1ffff30d2ffff7ed5ffffd4d6ffff7cd7ffff8edaffff8adcffff32ddffff58e0ffff4ce4ffff74e9ffff1ceaffff2eedffffe8f3ffff90f4ffffcef7ffff22fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1737,7 +1737,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1098
+    x: 1097
     y: 73
     width: 408
     height: 455
@@ -1771,9 +1771,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 180}
-    m_SelectedIDs: 646d0000
-    m_LastClickedID: 28004
-    m_ExpandedIDs: 00000000a06b0000a26b0000a46b0000a66b0000a86b0000aa6b0000ac6b0000ae6b0000b06b0000b26b0000b46b0000b66b0000b86b0000ba6b0000bc6b0000be6b0000c06b0000c26b0000c46b0000c66b0000c86b0000ca6b0000cc6b0000
+    m_SelectedIDs: 7a6d0000
+    m_LastClickedID: 28026
+    m_ExpandedIDs: 00000000b46b0000b66b0000b86b0000ba6b0000bc6b0000be6b0000c06b0000c26b0000c46b0000c66b0000c86b0000ca6b0000cc6b0000ce6b0000d06b0000d26b0000d46b0000d66b0000d86b0000da6b0000dc6b0000de6b0000e06b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1801,7 +1801,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a06b0000a26b0000a46b0000a66b0000a86b0000aa6b0000ac6b0000ae6b0000b06b0000b26b0000b46b0000b66b0000b86b0000ba6b0000bc6b0000be6b0000c06b0000c26b0000c46b0000c66b0000c86b0000ca6b0000cc6b0000
+    m_ExpandedIDs: 00000000b46b0000b66b0000b86b0000ba6b0000bc6b0000be6b0000c06b0000c26b0000c46b0000c66b0000c86b0000ca6b0000cc6b0000ce6b0000d06b0000d26b0000d46b0000d66b0000d86b0000da6b0000dc6b0000de6b0000e06b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1877,7 +1877,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 870
+    x: 869
     y: 549
     width: 636
     height: 450
@@ -1905,7 +1905,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 870
+    x: 869
     y: 549
     width: 636
     height: 450
@@ -1914,7 +1914,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 488
+    ID: 165
     splitterInitialOffset: 238
     currentActiveSplitter: -1
     realSizes:
@@ -1937,7 +1937,7 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 0
+  m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
     m_Window: {fileID: 21}
     m_NewResultList:
@@ -1946,7 +1946,7 @@ MonoBehaviour:
       name: ShootingGame
       fullName: ShootingGame
       resultStatus: 1
-      duration: 0.470195
+      duration: 1.0160362
       messages: 
       output: 
       stacktrace: 
@@ -1957,12 +1957,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1147
+    - id: 1028
       uniqueId: '[PlayMode.dll][suite]'
       name: PlayMode.dll
       fullName: D:/Program/Unity/Unity_2021_3_1f1/ShootingGame/Library/ScriptAssemblies/PlayMode.dll
       resultStatus: 1
-      duration: 0.3082457
+      duration: 0.8459651
       messages: 
       output: 
       stacktrace: 
@@ -1971,14 +1971,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1138
+      parentId: 1000
       parentUniqueId: '[ShootingGame][suite]'
-    - id: 1148
+    - id: 1029
       uniqueId: PlayMode.dll/[PlayMode][Tests][suite]
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.2828631
+      duration: 0.8283005
       messages: 
       output: 
       stacktrace: 
@@ -1987,14 +1987,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1147
+      parentId: 1028
       parentUniqueId: '[PlayMode.dll][suite]'
-    - id: 1643
+    - id: 1001
       uniqueId: PlayMode.dll/Tests/[PlayMode][Tests.BulletTest][suite]
       name: BulletTest
       fullName: Tests.BulletTest
       resultStatus: 1
-      duration: 0.2687847
+      duration: 0.3998053
       messages: 
       output: 
       stacktrace: 
@@ -2003,14 +2003,14 @@ MonoBehaviour:
       description: "\u5F3E\u4E38\u306E\u30C6\u30B9\u30C8"
       isSuite: 1
       categories: []
-      parentId: 1670
+      parentId: 1029
       parentUniqueId: PlayMode.dll/[PlayMode][Tests][suite]
-    - id: 1644
+    - id: 1002
       uniqueId: PlayMode.dll/Tests/BulletTest/[PlayMode][Tests.BulletTest.BulletObjectExists]
       name: BulletObjectExists
       fullName: Tests.BulletTest.BulletObjectExists
       resultStatus: 1
-      duration: 0.2577365
+      duration: 0.2508509
       messages: 
       output: 
       stacktrace: 
@@ -2020,14 +2020,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1643
+      parentId: 1001
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.BulletTest][suite]
-    - id: 1645
+    - id: 1003
       uniqueId: PlayMode.dll/Tests/BulletTest/[PlayMode][Tests.BulletTest.BulletScriptExists]
       name: BulletScriptExists
       fullName: Tests.BulletTest.BulletScriptExists
       resultStatus: 1
-      duration: 0.2492359
+      duration: 0.0357416
       messages: 
       output: 
       stacktrace: 
@@ -2037,14 +2037,31 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1643
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.BulletTest][suite]
+    - id: 1005
+      uniqueId: PlayMode.dll/Tests/BulletTest/[PlayMode][Tests.BulletTest.ValidMove]
+      name: ValidMove
+      fullName: Tests.BulletTest.ValidMove
+      resultStatus: 1
+      duration: 0.046151
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u5E38\u6642\u4E0A\u65B9\u5411\u306B\u79FB\u52D5\u3057\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.BulletTest][suite]
     - id: 1004
       uniqueId: PlayMode.dll/Tests/BulletTest/[PlayMode][Tests.BulletTest.ValidPlayerStatus]
       name: ValidPlayerStatus
       fullName: Tests.BulletTest.ValidPlayerStatus
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.04718
       messages: 
       output: 
       stacktrace: 
@@ -2056,12 +2073,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.BulletTest][suite]
-    - id: 1113
+    - id: 1005
       uniqueId: PlayMode.dll/Tests/[PlayMode][Tests.EnemyTest][suite]
       name: EnemyTest
       fullName: Tests.EnemyTest
       resultStatus: 1
-      duration: 9.319676
+      duration: 0.813757
       messages: 
       output: 
       stacktrace: 
@@ -2070,14 +2087,107 @@ MonoBehaviour:
       description: "\u6575\u306E\u52D5\u4F5C\u30C6\u30B9\u30C8"
       isSuite: 1
       categories: []
-      parentId: 1131
+      parentId: 1029
       parentUniqueId: PlayMode.dll/[PlayMode][Tests][suite]
-    - id: 1114
+    - id: 1011
+      uniqueId: PlayMode.dll/Tests/EnemyTest/[PlayMode][Tests.EnemyTest.AttacksFromPlayer]
+      name: AttacksFromPlayer
+      fullName: Tests.EnemyTest.AttacksFromPlayer
+      resultStatus: 1
+      duration: 0.7945593
+      messages: 
+      output: '20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        20
+
+        10
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u30D7\u30EC\u30A4\u30E4\u30FC\u306B\u653B\u6483\u3055\u308C\u305F\u5834\u5408\u306B\u3001\u4F53\u529B\u304C\u653B\u6483\u529B\u5206\u6E1B\u5C11\u3057\u3066\u3044\u308B\u3053\u3068"
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.EnemyTest][suite]
+    - id: 1006
       uniqueId: PlayMode.dll/Tests/EnemyTest/[PlayMode][Tests.EnemyTest.EnemyObjectExists]
       name: EnemyObjectExists
       fullName: Tests.EnemyTest.EnemyObjectExists
       resultStatus: 1
-      duration: 0.1387664
+      duration: 0.1247589
       messages: 
       output: 
       stacktrace: 
@@ -2087,14 +2197,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1113
+      parentId: 1005
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.EnemyTest][suite]
-    - id: 1115
+    - id: 1007
       uniqueId: PlayMode.dll/Tests/EnemyTest/[PlayMode][Tests.EnemyTest.EnemyScriptExists]
       name: EnemyScriptExists
       fullName: Tests.EnemyTest.EnemyScriptExists
       resultStatus: 1
-      duration: 0.0472922
+      duration: 0.0468443
       messages: 
       output: 
       stacktrace: 
@@ -2104,14 +2214,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1113
+      parentId: 1005
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.EnemyTest][suite]
-    - id: 1004
+    - id: 1008
       uniqueId: PlayMode.dll/Tests/EnemyTest/[PlayMode][Tests.EnemyTest.ValidEnemyStatus]
       name: ValidEnemyStatus
       fullName: Tests.EnemyTest.ValidEnemyStatus
       resultStatus: 1
-      duration: 0.0493304
+      duration: 0.0568548
       messages: 
       output: 
       stacktrace: 
@@ -2121,14 +2231,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
+      parentId: 1005
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.EnemyTest][suite]
-    - id: 1005
+    - id: 1009
       uniqueId: PlayMode.dll/Tests/EnemyTest/[PlayMode][Tests.EnemyTest.ValidMove]
       name: ValidMove
       fullName: Tests.EnemyTest.ValidMove
       resultStatus: 1
-      duration: 9.077879
+      duration: 9.079173
       messages: 
       output: 
       stacktrace: 
@@ -2138,14 +2248,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
+      parentId: 1005
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.EnemyTest][suite]
-    - id: 1651
+    - id: 1010
       uniqueId: PlayMode.dll/Tests/[PlayMode][Tests.GunTest][suite]
       name: GunTest
       fullName: Tests.GunTest
       resultStatus: 1
-      duration: 0.2079761
+      duration: 0.1951336
       messages: 
       output: 
       stacktrace: 
@@ -2154,14 +2264,14 @@ MonoBehaviour:
       description: "\u9283\u306E\u30C6\u30B9\u30C8"
       isSuite: 1
       categories: []
-      parentId: 1670
+      parentId: 1029
       parentUniqueId: PlayMode.dll/[PlayMode][Tests][suite]
-    - id: 1652
+    - id: 1011
       uniqueId: PlayMode.dll/Tests/GunTest/[PlayMode][Tests.GunTest.GunObjectExists]
       name: GunObjectExists
       fullName: Tests.GunTest.GunObjectExists
       resultStatus: 1
-      duration: 0.1323017
+      duration: 0.11962
       messages: 
       output: 
       stacktrace: 
@@ -2171,14 +2281,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1651
+      parentId: 1010
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.GunTest][suite]
-    - id: 1653
+    - id: 1012
       uniqueId: PlayMode.dll/Tests/GunTest/[PlayMode][Tests.GunTest.GunScriptExists]
       name: GunScriptExists
       fullName: Tests.GunTest.GunScriptExists
       resultStatus: 1
-      duration: 0.0542064
+      duration: 0.0545914
       messages: 
       output: 
       stacktrace: 
@@ -2188,14 +2298,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1651
+      parentId: 1010
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.GunTest][suite]
-    - id: 1139
+    - id: 1013
       uniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
       name: PlayerTest
       fullName: Tests.PlayerTest
       resultStatus: 1
-      duration: 9.569371
+      duration: 7.610264
       messages: 
       output: 
       stacktrace: 
@@ -2204,14 +2314,14 @@ MonoBehaviour:
       description: "\u30D7\u30EC\u30A4\u30E4\u30FC\u306E\u52D5\u4F5C\u30C6\u30B9\u30C8"
       isSuite: 1
       categories: []
-      parentId: 1148
+      parentId: 1029
       parentUniqueId: PlayMode.dll/[PlayMode][Tests][suite]
-    - id: 1668
+    - id: 1027
       uniqueId: PlayMode.dll/Tests/PlayerTest/[PlayMode][Tests.PlayerTest.AttacksFromEnemy]
       name: AttacksFromEnemy
       fullName: Tests.PlayerTest.AttacksFromEnemy
       resultStatus: 1
-      duration: 3.0987046
+      duration: 2.3978086
       messages: 
       output: 
       stacktrace: 
@@ -2221,14 +2331,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1654
+      parentId: 1013
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
-    - id: 1011
+    - id: 1023
       uniqueId: PlayMode.dll/Tests/PlayerTest/[PlayMode][Tests.PlayerTest.DownAndRightKeyToMovePlayer]
       name: DownAndRightKeyToMovePlayer
       fullName: Tests.PlayerTest.DownAndRightKeyToMovePlayer
       resultStatus: 1
-      duration: 0.4847561
+      duration: 0.5882338
       messages: 
       output: 
       stacktrace: 
@@ -2238,14 +2348,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
+      parentId: 1013
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
-    - id: 1145
+    - id: 1019
       uniqueId: PlayMode.dll/Tests/PlayerTest/[PlayMode][Tests.PlayerTest.DownKeyToMovePlayer]
       name: DownKeyToMovePlayer
       fullName: Tests.PlayerTest.DownKeyToMovePlayer
       resultStatus: 1
-      duration: 0.3305366
+      duration: 0.2865124
       messages: 
       output: 
       stacktrace: 
@@ -2255,14 +2365,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1139
+      parentId: 1013
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
-    - id: 1059
+    - id: 1025
       uniqueId: PlayMode.dll/Tests/PlayerTest/[PlayMode][Tests.PlayerTest.EvasionKeyToEvasionPlayer]
       name: EvasionKeyToEvasionPlayer
       fullName: Tests.PlayerTest.EvasionKeyToEvasionPlayer
       resultStatus: 1
-      duration: 1.1093197
+      duration: 0.8278663
       messages: 
       output: 
       stacktrace: 
@@ -2272,14 +2382,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1047
+      parentId: 1013
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
-    - id: 1010
+    - id: 1022
       uniqueId: PlayMode.dll/Tests/PlayerTest/[PlayMode][Tests.PlayerTest.LeftAndDownKeyToMovePlayer]
       name: LeftAndDownKeyToMovePlayer
       fullName: Tests.PlayerTest.LeftAndDownKeyToMovePlayer
       resultStatus: 1
-      duration: 0.6115448
+      duration: 0.721462
       messages: 
       output: 
       stacktrace: 
@@ -2289,14 +2399,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
+      parentId: 1013
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
-    - id: 1144
+    - id: 1018
       uniqueId: PlayMode.dll/Tests/PlayerTest/[PlayMode][Tests.PlayerTest.LeftKeyToMovePlayer]
       name: LeftKeyToMovePlayer
       fullName: Tests.PlayerTest.LeftKeyToMovePlayer
       resultStatus: 1
-      duration: 0.5404266
+      duration: 0.698688
       messages: 
       output: 
       stacktrace: 
@@ -2306,14 +2416,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1139
+      parentId: 1013
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
-    - id: 1140
+    - id: 1014
       uniqueId: PlayMode.dll/Tests/PlayerTest/[PlayMode][Tests.PlayerTest.PlayerObjectExists]
       name: PlayerObjectExists
       fullName: Tests.PlayerTest.PlayerObjectExists
       resultStatus: 1
-      duration: 0.129667
+      duration: 0.2425184
       messages: 
       output: 
       stacktrace: 
@@ -2323,14 +2433,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1139
+      parentId: 1013
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
-    - id: 1141
+    - id: 1015
       uniqueId: PlayMode.dll/Tests/PlayerTest/[PlayMode][Tests.PlayerTest.PlayerScriptExists]
       name: PlayerScriptExists
       fullName: Tests.PlayerTest.PlayerScriptExists
       resultStatus: 1
-      duration: 0.0502505
+      duration: 0.0348016
       messages: 
       output: 
       stacktrace: 
@@ -2340,14 +2450,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1139
+      parentId: 1013
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
-    - id: 1012
+    - id: 1024
       uniqueId: PlayMode.dll/Tests/PlayerTest/[PlayMode][Tests.PlayerTest.RightAndUpKeyToMovePlayer]
       name: RightAndUpKeyToMovePlayer
       fullName: Tests.PlayerTest.RightAndUpKeyToMovePlayer
       resultStatus: 1
-      duration: 0.4149137
+      duration: 0.3924951
       messages: 
       output: 
       stacktrace: 
@@ -2357,14 +2467,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
+      parentId: 1013
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
-    - id: 1146
+    - id: 1020
       uniqueId: PlayMode.dll/Tests/PlayerTest/[PlayMode][Tests.PlayerTest.RightKeyToMovePlayer]
       name: RightKeyToMovePlayer
       fullName: Tests.PlayerTest.RightKeyToMovePlayer
       resultStatus: 1
-      duration: 0.2459318
+      duration: 0.2597349
       messages: 
       output: 
       stacktrace: 
@@ -2374,18 +2484,16 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1139
+      parentId: 1013
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
-    - id: 1096
+    - id: 1026
       uniqueId: PlayMode.dll/Tests/PlayerTest/[PlayMode][Tests.PlayerTest.StaminaIsBeingConsumedNormally]
       name: StaminaIsBeingConsumedNormally
       fullName: Tests.PlayerTest.StaminaIsBeingConsumedNormally
       resultStatus: 1
-      duration: 0.0523143
+      duration: 0.0519631
       messages: 
-      output: '100
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -2393,14 +2501,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1083
+      parentId: 1013
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
-    - id: 1009
+    - id: 1021
       uniqueId: PlayMode.dll/Tests/PlayerTest/[PlayMode][Tests.PlayerTest.UpAndLeftKeyToMovePlayer]
       name: UpAndLeftKeyToMovePlayer
       fullName: Tests.PlayerTest.UpAndLeftKeyToMovePlayer
       resultStatus: 1
-      duration: 0.4064663
+      duration: 0.4901802
       messages: 
       output: 
       stacktrace: 
@@ -2410,14 +2518,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
+      parentId: 1013
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
-    - id: 1143
+    - id: 1017
       uniqueId: PlayMode.dll/Tests/PlayerTest/[PlayMode][Tests.PlayerTest.UpKeyToMovePlayer]
       name: UpKeyToMovePlayer
       fullName: Tests.PlayerTest.UpKeyToMovePlayer
       resultStatus: 1
-      duration: 2.0227134
+      duration: 0.5505533
       messages: 
       output: 
       stacktrace: 
@@ -2427,14 +2535,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1139
+      parentId: 1013
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
-    - id: 1142
+    - id: 1016
       uniqueId: PlayMode.dll/Tests/PlayerTest/[PlayMode][Tests.PlayerTest.ValidPlayerStatus]
       name: ValidPlayerStatus
       fullName: Tests.PlayerTest.ValidPlayerStatus
       resultStatus: 1
-      duration: 0.0491734
+      duration: 0.0462887
       messages: 
       output: 
       stacktrace: 
@@ -2444,15 +2552,15 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1139
+      parentId: 1013
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.PlayerTest][suite]
-    m_ResultText: "BulletScriptExists (0.249s)\n[\u6B63\u5E38] \u5F3E\u4E38\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u304C\u5B58\u5728\u3059\u308B\u5834\u5408\u306B\u3001\u5909\u6570\u306B\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+    m_ResultText: "AttacksFromPlayer (0.795s)\n[\u6B63\u5E38] \u30D7\u30EC\u30A4\u30E4\u30FC\u306B\u653B\u6483\u3055\u308C\u305F\u5834\u5408\u306B\u3001\u4F53\u529B\u304C\u653B\u6483\u529B\u5206\u6E1B\u5C11\u3057\u3066\u3044\u308B\u3053\u3068\n---\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n20\r\n10"
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 227430ea
-      m_LastClickedID: -365923294
-      m_ExpandedIDs: 9f5c62b6e58676ef025e46f92771480bb492650b8bce34246d52402d22524b3a90d2be4d3034ef4ebc805a6dffffff7f
+      m_SelectedIDs: 63f9bf76
+      m_LastClickedID: 1992292707
+      m_ExpandedIDs: 9f5c62b6e58676ef2771480bb492650b8bce34246d52402d22524b3a3034ef4ebc805a6dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2487,7 +2595,7 @@ MonoBehaviour:
       name: ShootingGame
       fullName: ShootingGame
       resultStatus: 1
-      duration: 0.9425031
+      duration: 0.8864924
       messages: 
       output: 
       stacktrace: 
@@ -2503,7 +2611,7 @@ MonoBehaviour:
       name: EditMode.dll
       fullName: D:/Program/Unity/Unity_2021_3_1f1/ShootingGame/Library/ScriptAssemblies/EditMode.dll
       resultStatus: 1
-      duration: 0.8728641
+      duration: 0.8244351
       messages: 
       output: 
       stacktrace: 
@@ -2519,7 +2627,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.8435801
+      duration: 0.8240134
       messages: 
       output: 
       stacktrace: 
@@ -2535,7 +2643,7 @@ MonoBehaviour:
       name: BulletAPTest
       fullName: Tests.BulletAPTest
       resultStatus: 1
-      duration: 0.1504063
+      duration: 0.1186653
       messages: 
       output: 
       stacktrace: 
@@ -2551,7 +2659,7 @@ MonoBehaviour:
       name: InvalidBulletAP
       fullName: Tests.BulletAPTest.InvalidBulletAP
       resultStatus: 1
-      duration: 0.1405301
+      duration: 0.1048287
       messages: 
       output: 
       stacktrace: 
@@ -2567,7 +2675,7 @@ MonoBehaviour:
       name: InvalidBulletAP(int.MinValue)
       fullName: Tests.BulletAPTest.InvalidBulletAP(int.MinValue)
       resultStatus: 1
-      duration: 0.1287483
+      duration: 0.0931293
       messages: 
       output: 
       stacktrace: 
@@ -2584,7 +2692,7 @@ MonoBehaviour:
       name: InvalidBulletAP(-1)
       fullName: Tests.BulletAPTest.InvalidBulletAP(-1)
       resultStatus: 1
-      duration: 0.0001399
+      duration: 0.0001482
       messages: 
       output: 
       stacktrace: 
@@ -2601,7 +2709,7 @@ MonoBehaviour:
       name: InvalidBulletAP(101)
       fullName: Tests.BulletAPTest.InvalidBulletAP(101)
       resultStatus: 1
-      duration: 0.0019933
+      duration: 0.0022224
       messages: 
       output: 
       stacktrace: 
@@ -2618,7 +2726,7 @@ MonoBehaviour:
       name: InvalidBulletAP(int.MaxValue)
       fullName: Tests.BulletAPTest.InvalidBulletAP(int.MaxValue)
       resultStatus: 1
-      duration: 0.0000873
+      duration: 0.0001079
       messages: 
       output: 
       stacktrace: 
@@ -2635,7 +2743,7 @@ MonoBehaviour:
       name: ValidBulletAP
       fullName: Tests.BulletAPTest.ValidBulletAP
       resultStatus: 1
-      duration: 0.007528
+      duration: 0.0083511
       messages: 
       output: 
       stacktrace: 
@@ -2651,7 +2759,7 @@ MonoBehaviour:
       name: ValidBulletAP(0)
       fullName: Tests.BulletAPTest.ValidBulletAP(0)
       resultStatus: 1
-      duration: 0.0018791
+      duration: 0.0019935
       messages: 
       output: 
       stacktrace: 
@@ -2668,7 +2776,7 @@ MonoBehaviour:
       name: ValidBulletAP(50)
       fullName: Tests.BulletAPTest.ValidBulletAP(50)
       resultStatus: 1
-      duration: 0.0000993
+      duration: 0.000108
       messages: 
       output: 
       stacktrace: 
@@ -2685,7 +2793,7 @@ MonoBehaviour:
       name: ValidBulletAP(100)
       fullName: Tests.BulletAPTest.ValidBulletAP(100)
       resultStatus: 1
-      duration: 0.0000654
+      duration: 0.0001092
       messages: 
       output: 
       stacktrace: 
@@ -2702,7 +2810,7 @@ MonoBehaviour:
       name: BulletMoveSpeedTest
       fullName: Tests.BulletMoveSpeedTest
       resultStatus: 1
-      duration: 0.0325881
+      duration: 0.0503723
       messages: 
       output: 
       stacktrace: 
@@ -2713,12 +2821,79 @@ MonoBehaviour:
       categories: []
       parentId: 1210
       parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
+    - id: 1056
+      uniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/[EditMode][Tests.BulletMoveSpeedTest.BulletMoveSpeedMulDeltaTime][suite]
+      name: BulletMoveSpeedMulDeltaTime
+      fullName: Tests.BulletMoveSpeedTest.BulletMoveSpeedMulDeltaTime
+      resultStatus: 1
+      duration: 0.0045865
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: "[\u6B63\u5E38] \u30D5\u30EC\u30FC\u30E0\u79D2\u3068\u4E57\u7B97\u3057\u305F\u5834\u5408\u306B\u3001float\u578B\u306E\u5B9F\u6570\u304C\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+      isSuite: 1
+      categories: []
+      parentId: 1043
+      parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.BulletMoveSpeedTest][suite]
+    - id: 1053
+      uniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/BulletMoveSpeedMulDeltaTime/[EditMode][Tests.BulletMoveSpeedTest.BulletMoveSpeedMulDeltaTime(0.0f)]
+      name: BulletMoveSpeedMulDeltaTime(0.0f)
+      fullName: Tests.BulletMoveSpeedTest.BulletMoveSpeedMulDeltaTime(0.0f)
+      resultStatus: 1
+      duration: 0.0037904
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1056
+      parentUniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/[EditMode][Tests.BulletMoveSpeedTest.BulletMoveSpeedMulDeltaTime][suite]
+    - id: 1054
+      uniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/BulletMoveSpeedMulDeltaTime/[EditMode][Tests.BulletMoveSpeedTest.BulletMoveSpeedMulDeltaTime(10.0f)]
+      name: BulletMoveSpeedMulDeltaTime(10.0f)
+      fullName: Tests.BulletMoveSpeedTest.BulletMoveSpeedMulDeltaTime(10.0f)
+      resultStatus: 1
+      duration: 0.0001227
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1056
+      parentUniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/[EditMode][Tests.BulletMoveSpeedTest.BulletMoveSpeedMulDeltaTime][suite]
+    - id: 1055
+      uniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/BulletMoveSpeedMulDeltaTime/[EditMode][Tests.BulletMoveSpeedTest.BulletMoveSpeedMulDeltaTime(50.0f)]
+      name: BulletMoveSpeedMulDeltaTime(50.0f)
+      fullName: Tests.BulletMoveSpeedTest.BulletMoveSpeedMulDeltaTime(50.0f)
+      resultStatus: 1
+      duration: 0.0000745
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1056
+      parentUniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/[EditMode][Tests.BulletMoveSpeedTest.BulletMoveSpeedMulDeltaTime][suite]
     - id: 1020
       uniqueId: EditMode.dll/Tests/BulletMoveSpeedTest/[EditMode][Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed][suite]
       name: InvalidBulletMoveSpeed
       fullName: Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed
       resultStatus: 1
-      duration: 0.0037757
+      duration: 0.0172095
       messages: 
       output: 
       stacktrace: 
@@ -2734,7 +2909,7 @@ MonoBehaviour:
       name: InvalidBulletMoveSpeed(float.MinValue)
       fullName: Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed(float.MinValue)
       resultStatus: 1
-      duration: 0.0018495
+      duration: 0.0003713
       messages: 
       output: 
       stacktrace: 
@@ -2751,7 +2926,7 @@ MonoBehaviour:
       name: InvalidBulletMoveSpeed(-1.0f)
       fullName: Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed(-1.0f)
       resultStatus: 1
-      duration: 0.0001016
+      duration: 0.0001119
       messages: 
       output: 
       stacktrace: 
@@ -2768,7 +2943,7 @@ MonoBehaviour:
       name: InvalidBulletMoveSpeed(101.0f)
       fullName: Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed(101.0f)
       resultStatus: 1
-      duration: 0.0011041
+      duration: 0.0000876
       messages: 
       output: 
       stacktrace: 
@@ -2785,7 +2960,7 @@ MonoBehaviour:
       name: InvalidBulletMoveSpeed(float.MaxValue)
       fullName: Tests.BulletMoveSpeedTest.InvalidBulletMoveSpeed(float.MaxValue)
       resultStatus: 1
-      duration: 0.0000852
+      duration: 0.0000799
       messages: 
       output: 
       stacktrace: 
@@ -2802,7 +2977,7 @@ MonoBehaviour:
       name: ValidBulletMoveSpeed
       fullName: Tests.BulletMoveSpeedTest.ValidBulletMoveSpeed
       resultStatus: 1
-      duration: 0.0182127
+      duration: 0.0209825
       messages: 
       output: 
       stacktrace: 
@@ -2818,7 +2993,7 @@ MonoBehaviour:
       name: ValidBulletMoveSpeed(0.0f)
       fullName: Tests.BulletMoveSpeedTest.ValidBulletMoveSpeed(0.0f)
       resultStatus: 1
-      duration: 0.0006404
+      duration: 0.0006478
       messages: 
       output: 
       stacktrace: 
@@ -2835,7 +3010,7 @@ MonoBehaviour:
       name: ValidBulletMoveSpeed(50.0f)
       fullName: Tests.BulletMoveSpeedTest.ValidBulletMoveSpeed(50.0f)
       resultStatus: 1
-      duration: 0.0000921
+      duration: 0.0001211
       messages: 
       output: 
       stacktrace: 
@@ -2852,7 +3027,7 @@ MonoBehaviour:
       name: ValidBulletMoveSpeed(100.0f)
       fullName: Tests.BulletMoveSpeedTest.ValidBulletMoveSpeed(100.0f)
       resultStatus: 1
-      duration: 0.0000692
+      duration: 0.0000949
       messages: 
       output: 
       stacktrace: 
@@ -2869,7 +3044,7 @@ MonoBehaviour:
       name: EnemyAPTest
       fullName: Tests.EnemyAPTest
       resultStatus: 1
-      duration: 0.041826
+      duration: 0.0415646
       messages: 
       output: 
       stacktrace: 
@@ -2885,7 +3060,7 @@ MonoBehaviour:
       name: InvalidEnemyAP
       fullName: Tests.EnemyAPTest.InvalidEnemyAP
       resultStatus: 1
-      duration: 0.0015825
+      duration: 0.0014427
       messages: 
       output: 
       stacktrace: 
@@ -2901,7 +3076,7 @@ MonoBehaviour:
       name: InvalidEnemyAP(int.MinValue)
       fullName: Tests.EnemyAPTest.InvalidEnemyAP(int.MinValue)
       resultStatus: 1
-      duration: 0.0006581
+      duration: 0.000585
       messages: 
       output: 
       stacktrace: 
@@ -2918,7 +3093,7 @@ MonoBehaviour:
       name: InvalidEnemyAP(-1)
       fullName: Tests.EnemyAPTest.InvalidEnemyAP(-1)
       resultStatus: 1
-      duration: 0.0001146
+      duration: 0.0001072
       messages: 
       output: 
       stacktrace: 
@@ -2935,7 +3110,7 @@ MonoBehaviour:
       name: InvalidEnemyAP(101)
       fullName: Tests.EnemyAPTest.InvalidEnemyAP(101)
       resultStatus: 1
-      duration: 0.0000847
+      duration: 0.0000841
       messages: 
       output: 
       stacktrace: 
@@ -2952,7 +3127,7 @@ MonoBehaviour:
       name: InvalidEnemyAP(int.MaxValue)
       fullName: Tests.EnemyAPTest.InvalidEnemyAP(int.MaxValue)
       resultStatus: 1
-      duration: 0.0000832
+      duration: 0.0000777
       messages: 
       output: 
       stacktrace: 
@@ -2969,7 +3144,7 @@ MonoBehaviour:
       name: ValidEnemyAP
       fullName: Tests.EnemyAPTest.ValidEnemyAP
       resultStatus: 1
-      duration: 0.0200705
+      duration: 0.0198881
       messages: 
       output: 
       stacktrace: 
@@ -2985,7 +3160,7 @@ MonoBehaviour:
       name: ValidEnemyAP(0)
       fullName: Tests.EnemyAPTest.ValidEnemyAP(0)
       resultStatus: 1
-      duration: 0.0002546
+      duration: 0.0002868
       messages: 
       output: 
       stacktrace: 
@@ -3002,7 +3177,7 @@ MonoBehaviour:
       name: ValidEnemyAP(50)
       fullName: Tests.EnemyAPTest.ValidEnemyAP(50)
       resultStatus: 1
-      duration: 0.000085
+      duration: 0.0001141
       messages: 
       output: 
       stacktrace: 
@@ -3019,7 +3194,7 @@ MonoBehaviour:
       name: ValidEnemyAP(100)
       fullName: Tests.EnemyAPTest.ValidEnemyAP(100)
       resultStatus: 1
-      duration: 0.0000653
+      duration: 0.0000677
       messages: 
       output: 
       stacktrace: 
@@ -3036,7 +3211,7 @@ MonoBehaviour:
       name: EnemyHPTest
       fullName: Tests.EnemyHPTest
       resultStatus: 1
-      duration: 0.0928457
+      duration: 0.0952943
       messages: 
       output: 
       stacktrace: 
@@ -3052,7 +3227,7 @@ MonoBehaviour:
       name: InvalidEnemyHP
       fullName: Tests.EnemyHPTest.InvalidEnemyHP
       resultStatus: 1
-      duration: 0.0012605
+      duration: 0.001447
       messages: 
       output: 
       stacktrace: 
@@ -3068,7 +3243,7 @@ MonoBehaviour:
       name: InvalidEnemyHP(int.MinValue)
       fullName: Tests.EnemyHPTest.InvalidEnemyHP(int.MinValue)
       resultStatus: 1
-      duration: 0.000431
+      duration: 0.0004782
       messages: 
       output: 
       stacktrace: 
@@ -3085,7 +3260,7 @@ MonoBehaviour:
       name: InvalidEnemyHP(-1)
       fullName: Tests.EnemyHPTest.InvalidEnemyHP(-1)
       resultStatus: 1
-      duration: 0.000097
+      duration: 0.00015
       messages: 
       output: 
       stacktrace: 
@@ -3102,7 +3277,7 @@ MonoBehaviour:
       name: InvalidEnemyHP(1001)
       fullName: Tests.EnemyHPTest.InvalidEnemyHP(1001)
       resultStatus: 1
-      duration: 0.0000796
+      duration: 0.0000845
       messages: 
       output: 
       stacktrace: 
@@ -3119,7 +3294,7 @@ MonoBehaviour:
       name: InvalidEnemyHP(int.MaxValue)
       fullName: Tests.EnemyHPTest.InvalidEnemyHP(int.MaxValue)
       resultStatus: 1
-      duration: 0.0000736
+      duration: 0.0000796
       messages: 
       output: 
       stacktrace: 
@@ -3136,7 +3311,7 @@ MonoBehaviour:
       name: ValidEnemyHP
       fullName: Tests.EnemyHPTest.ValidEnemyHP
       resultStatus: 1
-      duration: 0.0198359
+      duration: 0.0210641
       messages: 
       output: 
       stacktrace: 
@@ -3152,7 +3327,7 @@ MonoBehaviour:
       name: ValidEnemyHP(0)
       fullName: Tests.EnemyHPTest.ValidEnemyHP(0)
       resultStatus: 1
-      duration: 0.0002492
+      duration: 0.0003049
       messages: 
       output: 
       stacktrace: 
@@ -3169,7 +3344,7 @@ MonoBehaviour:
       name: ValidEnemyHP(500)
       fullName: Tests.EnemyHPTest.ValidEnemyHP(500)
       resultStatus: 1
-      duration: 0.0000889
+      duration: 0.0001563
       messages: 
       output: 
       stacktrace: 
@@ -3186,7 +3361,7 @@ MonoBehaviour:
       name: ValidEnemyHP(1000)
       fullName: Tests.EnemyHPTest.ValidEnemyHP(1000)
       resultStatus: 1
-      duration: 0.0000659
+      duration: 0.0000712
       messages: 
       output: 
       stacktrace: 
@@ -3203,7 +3378,7 @@ MonoBehaviour:
       name: ValidEnemyHPSubAP
       fullName: Tests.EnemyHPTest.ValidEnemyHPSubAP
       resultStatus: 1
-      duration: 0.0457209
+      duration: 0.0464156
       messages: 
       output: 
       stacktrace: 
@@ -3219,7 +3394,7 @@ MonoBehaviour:
       name: ValidEnemyHPSubAP(100,10)
       fullName: Tests.EnemyHPTest.ValidEnemyHPSubAP(100,10)
       resultStatus: 1
-      duration: 0.0243322
+      duration: 0.0262781
       messages: 
       output: 
       stacktrace: 
@@ -3236,7 +3411,7 @@ MonoBehaviour:
       name: ValidEnemyHPSubAP(50,50)
       fullName: Tests.EnemyHPTest.ValidEnemyHPSubAP(50,50)
       resultStatus: 1
-      duration: 0.0001311
+      duration: 0.0001428
       messages: 
       output: 
       stacktrace: 
@@ -3253,7 +3428,7 @@ MonoBehaviour:
       name: ValidEnemyHPSubAP(20,10)
       fullName: Tests.EnemyHPTest.ValidEnemyHPSubAP(20,10)
       resultStatus: 1
-      duration: 0.000082
+      duration: 0.0000826
       messages: 
       output: 
       stacktrace: 
@@ -3270,7 +3445,7 @@ MonoBehaviour:
       name: ValidEnemyHPSubAPOverMin
       fullName: Tests.EnemyHPTest.ValidEnemyHPSubAPOverMin
       resultStatus: 1
-      duration: 0.0051015
+      duration: 0.0059043
       messages: 
       output: 
       stacktrace: 
@@ -3286,7 +3461,7 @@ MonoBehaviour:
       name: ValidEnemyHPSubAPOverMin(80,100)
       fullName: Tests.EnemyHPTest.ValidEnemyHPSubAPOverMin(80,100)
       resultStatus: 1
-      duration: 0.0002784
+      duration: 0.0003526
       messages: 
       output: 
       stacktrace: 
@@ -3303,7 +3478,7 @@ MonoBehaviour:
       name: ValidEnemyHPSubAPOverMin(50,100)
       fullName: Tests.EnemyHPTest.ValidEnemyHPSubAPOverMin(50,100)
       resultStatus: 1
-      duration: 0.0000947
+      duration: 0.0001173
       messages: 
       output: 
       stacktrace: 
@@ -3320,7 +3495,7 @@ MonoBehaviour:
       name: ValidEnemyHPSubAPOverMin(0,100)
       fullName: Tests.EnemyHPTest.ValidEnemyHPSubAPOverMin(0,100)
       resultStatus: 1
-      duration: 0.0000668
+      duration: 0.0000741
       messages: 
       output: 
       stacktrace: 
@@ -3337,7 +3512,7 @@ MonoBehaviour:
       name: EnemyMoveSpeedMagnificationTest
       fullName: Tests.EnemyMoveSpeedMagnificationTest
       resultStatus: 1
-      duration: 0.0596296
+      duration: 0.0587954
       messages: 
       output: 
       stacktrace: 
@@ -3353,7 +3528,7 @@ MonoBehaviour:
       name: InvalidEnemyMoveSpeedMagnification
       fullName: Tests.EnemyMoveSpeedMagnificationTest.InvalidEnemyMoveSpeedMagnification
       resultStatus: 1
-      duration: 0.0019116
+      duration: 0.0025662
       messages: 
       output: 
       stacktrace: 
@@ -3369,7 +3544,7 @@ MonoBehaviour:
       name: InvalidEnemyMoveSpeedMagnification(float.MinValue)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.InvalidEnemyMoveSpeedMagnification(float.MinValue)
       resultStatus: 1
-      duration: 0.0003834
+      duration: 0.0004813
       messages: 
       output: 
       stacktrace: 
@@ -3386,7 +3561,7 @@ MonoBehaviour:
       name: InvalidEnemyMoveSpeedMagnification(-1.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.InvalidEnemyMoveSpeedMagnification(-1.0f)
       resultStatus: 1
-      duration: 0.000102
+      duration: 0.0001126
       messages: 
       output: 
       stacktrace: 
@@ -3403,7 +3578,7 @@ MonoBehaviour:
       name: InvalidEnemyMoveSpeedMagnification(11.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.InvalidEnemyMoveSpeedMagnification(11.0f)
       resultStatus: 1
-      duration: 0.0000784
+      duration: 0.0001443
       messages: 
       output: 
       stacktrace: 
@@ -3420,7 +3595,7 @@ MonoBehaviour:
       name: InvalidEnemyMoveSpeedMagnification(float.MaxValue)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.InvalidEnemyMoveSpeedMagnification(float.MaxValue)
       resultStatus: 1
-      duration: 0.0000803
+      duration: 0.0001713
       messages: 
       output: 
       stacktrace: 
@@ -3437,7 +3612,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMagnification
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMagnification
       resultStatus: 1
-      duration: 0.0099603
+      duration: 0.0183198
       messages: 
       output: 
       stacktrace: 
@@ -3453,7 +3628,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMagnification(0.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMagnification(0.0f)
       resultStatus: 1
-      duration: 0.0002716
+      duration: 0.0002816
       messages: 
       output: 
       stacktrace: 
@@ -3470,7 +3645,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMagnification(5.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMagnification(5.0f)
       resultStatus: 1
-      duration: 0.0000879
+      duration: 0.0000932
       messages: 
       output: 
       stacktrace: 
@@ -3487,7 +3662,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMagnification(10.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMagnification(10.0f)
       resultStatus: 1
-      duration: 0.0000678
+      duration: 0.0000664
       messages: 
       output: 
       stacktrace: 
@@ -3504,7 +3679,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul
       resultStatus: 1
-      duration: 0.0248214
+      duration: 0.023901
       messages: 
       output: 
       stacktrace: 
@@ -3520,7 +3695,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(0.0f,0.0f,0.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,0.0f,0.0f)
       resultStatus: 1
-      duration: 0.0010164
+      duration: 0.0010587
       messages: 
       output: 
       stacktrace: 
@@ -3537,7 +3712,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(0.0f,0.0f,1.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,0.0f,1.0f)
       resultStatus: 1
-      duration: 0.0000993
+      duration: 0.0001022
       messages: 
       output: 
       stacktrace: 
@@ -3554,7 +3729,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(0.0f,0.0f,5.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,0.0f,5.0f)
       resultStatus: 1
-      duration: 0.0000698
+      duration: 0.000073
       messages: 
       output: 
       stacktrace: 
@@ -3571,7 +3746,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(0.0f,1.0f,0.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,1.0f,0.0f)
       resultStatus: 1
-      duration: 0.0000701
+      duration: 0.0000699
       messages: 
       output: 
       stacktrace: 
@@ -3588,7 +3763,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(0.0f,1.0f,1.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,1.0f,1.0f)
       resultStatus: 1
-      duration: 0.000067
+      duration: 0.0000684
       messages: 
       output: 
       stacktrace: 
@@ -3605,7 +3780,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(0.0f,1.0f,5.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,1.0f,5.0f)
       resultStatus: 1
-      duration: 0.0000699
+      duration: 0.0000683
       messages: 
       output: 
       stacktrace: 
@@ -3622,7 +3797,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(0.0f,5,0.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,5,0.0f)
       resultStatus: 1
-      duration: 0.0000672
+      duration: 0.0000685
       messages: 
       output: 
       stacktrace: 
@@ -3639,7 +3814,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(0.0f,5,1.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,5,1.0f)
       resultStatus: 1
-      duration: 0.0000676
+      duration: 0.000068
       messages: 
       output: 
       stacktrace: 
@@ -3656,7 +3831,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(0.0f,5,5.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(0.0f,5,5.0f)
       resultStatus: 1
-      duration: 0.0000659
+      duration: 0.0000686
       messages: 
       output: 
       stacktrace: 
@@ -3673,7 +3848,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(5.0f,0.0f,0.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,0.0f,0.0f)
       resultStatus: 1
-      duration: 0.0000696
+      duration: 0.0000668
       messages: 
       output: 
       stacktrace: 
@@ -3690,7 +3865,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(5.0f,0.0f,1.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,0.0f,1.0f)
       resultStatus: 1
-      duration: 0.0000665
+      duration: 0.000066
       messages: 
       output: 
       stacktrace: 
@@ -3707,7 +3882,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(5.0f,0.0f,5.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,0.0f,5.0f)
       resultStatus: 1
-      duration: 0.0000678
+      duration: 0.0000701
       messages: 
       output: 
       stacktrace: 
@@ -3724,7 +3899,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(5.0f,1.0f,0.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,1.0f,0.0f)
       resultStatus: 1
-      duration: 0.0000673
+      duration: 0.0000677
       messages: 
       output: 
       stacktrace: 
@@ -3741,7 +3916,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(5.0f,1.0f,1.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,1.0f,1.0f)
       resultStatus: 1
-      duration: 0.0000671
+      duration: 0.0000677
       messages: 
       output: 
       stacktrace: 
@@ -3758,7 +3933,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(5.0f,1.0f,5.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,1.0f,5.0f)
       resultStatus: 1
-      duration: 0.0000664
+      duration: 0.0000672
       messages: 
       output: 
       stacktrace: 
@@ -3775,7 +3950,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(5.0f,5,0.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,5,0.0f)
       resultStatus: 1
-      duration: 0.0000952
+      duration: 0.0000673
       messages: 
       output: 
       stacktrace: 
@@ -3792,7 +3967,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(5.0f,5,1.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,5,1.0f)
       resultStatus: 1
-      duration: 0.0000649
+      duration: 0.0000705
       messages: 
       output: 
       stacktrace: 
@@ -3809,7 +3984,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(5.0f,5,5.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(5.0f,5,5.0f)
       resultStatus: 1
-      duration: 0.000069
+      duration: 0.0000682
       messages: 
       output: 
       stacktrace: 
@@ -3826,7 +4001,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(10.0f,0.0f,0.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,0.0f,0.0f)
       resultStatus: 1
-      duration: 0.0000654
+      duration: 0.0000698
       messages: 
       output: 
       stacktrace: 
@@ -3843,7 +4018,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(10.0f,0.0f,1.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,0.0f,1.0f)
       resultStatus: 1
-      duration: 0.0000687
+      duration: 0.000067
       messages: 
       output: 
       stacktrace: 
@@ -3860,7 +4035,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(10.0f,0.0f,5.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,0.0f,5.0f)
       resultStatus: 1
-      duration: 0.0000662
+      duration: 0.0000682
       messages: 
       output: 
       stacktrace: 
@@ -3877,7 +4052,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(10.0f,1.0f,0.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,1.0f,0.0f)
       resultStatus: 1
-      duration: 0.0000692
+      duration: 0.0000707
       messages: 
       output: 
       stacktrace: 
@@ -3894,7 +4069,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(10.0f,1.0f,1.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,1.0f,1.0f)
       resultStatus: 1
-      duration: 0.0000676
+      duration: 0.0000671
       messages: 
       output: 
       stacktrace: 
@@ -3911,7 +4086,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(10.0f,1.0f,5.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,1.0f,5.0f)
       resultStatus: 1
-      duration: 0.0000682
+      duration: 0.000069
       messages: 
       output: 
       stacktrace: 
@@ -3928,7 +4103,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(10.0f,5,0.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,5,0.0f)
       resultStatus: 1
-      duration: 0.0000663
+      duration: 0.0000697
       messages: 
       output: 
       stacktrace: 
@@ -3945,7 +4120,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(10.0f,5,1.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,5,1.0f)
       resultStatus: 1
-      duration: 0.0000676
+      duration: 0.00007
       messages: 
       output: 
       stacktrace: 
@@ -3962,7 +4137,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(10.0f,5,5.0f)
       fullName: Tests.EnemyMoveSpeedMagnificationTest.ValidEnemyMoveSpeedMul(10.0f,5,5.0f)
       resultStatus: 1
-      duration: 0.0000672
+      duration: 0.0000686
       messages: 
       output: 
       stacktrace: 
@@ -3979,7 +4154,7 @@ MonoBehaviour:
       name: EnemyMoveSpeedTest
       fullName: Tests.EnemyMoveSpeedTest
       resultStatus: 1
-      duration: 0.0621226
+      duration: 0.0622869
       messages: 
       output: 
       stacktrace: 
@@ -3995,7 +4170,7 @@ MonoBehaviour:
       name: InvalidEnemyMoveSpeed
       fullName: Tests.EnemyMoveSpeedTest.InvalidEnemyMoveSpeed
       resultStatus: 1
-      duration: 0.0014252
+      duration: 0.0013438
       messages: 
       output: 
       stacktrace: 
@@ -4011,7 +4186,7 @@ MonoBehaviour:
       name: InvalidEnemyMoveSpeed(float.MinValue)
       fullName: Tests.EnemyMoveSpeedTest.InvalidEnemyMoveSpeed(float.MinValue)
       resultStatus: 1
-      duration: 0.0003826
+      duration: 0.0004225
       messages: 
       output: 
       stacktrace: 
@@ -4028,7 +4203,7 @@ MonoBehaviour:
       name: InvalidEnemyMoveSpeed(-1.0f)
       fullName: Tests.EnemyMoveSpeedTest.InvalidEnemyMoveSpeed(-1.0f)
       resultStatus: 1
-      duration: 0.0000932
+      duration: 0.000115
       messages: 
       output: 
       stacktrace: 
@@ -4045,7 +4220,7 @@ MonoBehaviour:
       name: InvalidEnemyMoveSpeed(11.0f)
       fullName: Tests.EnemyMoveSpeedTest.InvalidEnemyMoveSpeed(11.0f)
       resultStatus: 1
-      duration: 0.0000818
+      duration: 0.0000849
       messages: 
       output: 
       stacktrace: 
@@ -4062,7 +4237,7 @@ MonoBehaviour:
       name: InvalidEnemyMoveSpeed(float.MaxValue)
       fullName: Tests.EnemyMoveSpeedTest.InvalidEnemyMoveSpeed(float.MaxValue)
       resultStatus: 1
-      duration: 0.0000765
+      duration: 0.0000817
       messages: 
       output: 
       stacktrace: 
@@ -4079,7 +4254,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeed
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeed
       resultStatus: 1
-      duration: 0.0280684
+      duration: 0.0203477
       messages: 
       output: 
       stacktrace: 
@@ -4095,7 +4270,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeed(0.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeed(0.0f)
       resultStatus: 1
-      duration: 0.0002744
+      duration: 0.0004713
       messages: 
       output: 
       stacktrace: 
@@ -4112,7 +4287,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeed(5.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeed(5.0f)
       resultStatus: 1
-      duration: 0.0000898
+      duration: 0.0001196
       messages: 
       output: 
       stacktrace: 
@@ -4129,7 +4304,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeed(10.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeed(10.0f)
       resultStatus: 1
-      duration: 0.0000648
+      duration: 0.0000767
       messages: 
       output: 
       stacktrace: 
@@ -4146,7 +4321,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul
       resultStatus: 1
-      duration: 0.0161973
+      duration: 0.0238534
       messages: 
       output: 
       stacktrace: 
@@ -4162,7 +4337,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(0.0f,0.0f,0.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,0.0f,0.0f)
       resultStatus: 1
-      duration: 0.0003507
+      duration: 0.0004091
       messages: 
       output: 
       stacktrace: 
@@ -4179,7 +4354,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(0.0f,0.0f,1.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,0.0f,1.0f)
       resultStatus: 1
-      duration: 0.0000896
+      duration: 0.0001026
       messages: 
       output: 
       stacktrace: 
@@ -4196,7 +4371,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(0.0f,0.0f,5.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,0.0f,5.0f)
       resultStatus: 1
-      duration: 0.0000705
+      duration: 0.0000738
       messages: 
       output: 
       stacktrace: 
@@ -4213,7 +4388,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(0.0f,1.0f,0.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,1.0f,0.0f)
       resultStatus: 1
-      duration: 0.0000668
+      duration: 0.0000714
       messages: 
       output: 
       stacktrace: 
@@ -4230,7 +4405,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(0.0f,1.0f,1.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,1.0f,1.0f)
       resultStatus: 1
-      duration: 0.0000657
+      duration: 0.0000714
       messages: 
       output: 
       stacktrace: 
@@ -4247,7 +4422,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(0.0f,1.0f,5.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,1.0f,5.0f)
       resultStatus: 1
-      duration: 0.0000662
+      duration: 0.0000702
       messages: 
       output: 
       stacktrace: 
@@ -4264,7 +4439,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(0.0f,5,0.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,5,0.0f)
       resultStatus: 1
-      duration: 0.0000665
+      duration: 0.0000762
       messages: 
       output: 
       stacktrace: 
@@ -4281,7 +4456,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(0.0f,5,1.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,5,1.0f)
       resultStatus: 1
-      duration: 0.0000667
+      duration: 0.0000712
       messages: 
       output: 
       stacktrace: 
@@ -4298,7 +4473,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(0.0f,5,5.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(0.0f,5,5.0f)
       resultStatus: 1
-      duration: 0.0000643
+      duration: 0.0000732
       messages: 
       output: 
       stacktrace: 
@@ -4315,7 +4490,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(5.0f,0.0f,0.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,0.0f,0.0f)
       resultStatus: 1
-      duration: 0.0000652
+      duration: 0.0000672
       messages: 
       output: 
       stacktrace: 
@@ -4332,7 +4507,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(5.0f,0.0f,1.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,0.0f,1.0f)
       resultStatus: 1
-      duration: 0.000067
+      duration: 0.0000695
       messages: 
       output: 
       stacktrace: 
@@ -4349,7 +4524,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(5.0f,0.0f,5.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,0.0f,5.0f)
       resultStatus: 1
-      duration: 0.000064
+      duration: 0.0000674
       messages: 
       output: 
       stacktrace: 
@@ -4366,7 +4541,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(5.0f,1.0f,0.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,1.0f,0.0f)
       resultStatus: 1
-      duration: 0.0000659
+      duration: 0.0000734
       messages: 
       output: 
       stacktrace: 
@@ -4383,7 +4558,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(5.0f,1.0f,1.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,1.0f,1.0f)
       resultStatus: 1
-      duration: 0.000065
+      duration: 0.0000689
       messages: 
       output: 
       stacktrace: 
@@ -4400,7 +4575,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(5.0f,1.0f,5.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,1.0f,5.0f)
       resultStatus: 1
-      duration: 0.0000647
+      duration: 0.0000685
       messages: 
       output: 
       stacktrace: 
@@ -4417,7 +4592,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(5.0f,5,0.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,5,0.0f)
       resultStatus: 1
-      duration: 0.0000653
+      duration: 0.0000679
       messages: 
       output: 
       stacktrace: 
@@ -4434,7 +4609,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(5.0f,5,1.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,5,1.0f)
       resultStatus: 1
-      duration: 0.0000655
+      duration: 0.0000683
       messages: 
       output: 
       stacktrace: 
@@ -4451,7 +4626,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(5.0f,5,5.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(5.0f,5,5.0f)
       resultStatus: 1
-      duration: 0.0000651
+      duration: 0.0000689
       messages: 
       output: 
       stacktrace: 
@@ -4468,7 +4643,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(10.0f,0.0f,0.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,0.0f,0.0f)
       resultStatus: 1
-      duration: 0.0000655
+      duration: 0.0000668
       messages: 
       output: 
       stacktrace: 
@@ -4485,7 +4660,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(10.0f,0.0f,1.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,0.0f,1.0f)
       resultStatus: 1
-      duration: 0.0000658
+      duration: 0.0000685
       messages: 
       output: 
       stacktrace: 
@@ -4502,7 +4677,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(10.0f,0.0f,5.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,0.0f,5.0f)
       resultStatus: 1
-      duration: 0.0000659
+      duration: 0.0000688
       messages: 
       output: 
       stacktrace: 
@@ -4519,7 +4694,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(10.0f,1.0f,0.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,1.0f,0.0f)
       resultStatus: 1
-      duration: 0.0000664
+      duration: 0.000071
       messages: 
       output: 
       stacktrace: 
@@ -4536,7 +4711,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(10.0f,1.0f,1.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,1.0f,1.0f)
       resultStatus: 1
-      duration: 0.0000653
+      duration: 0.0000674
       messages: 
       output: 
       stacktrace: 
@@ -4553,7 +4728,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(10.0f,1.0f,5.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,1.0f,5.0f)
       resultStatus: 1
-      duration: 0.0000731
+      duration: 0.0000678
       messages: 
       output: 
       stacktrace: 
@@ -4570,7 +4745,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(10.0f,5,0.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,5,0.0f)
       resultStatus: 1
-      duration: 0.0000649
+      duration: 0.0000696
       messages: 
       output: 
       stacktrace: 
@@ -4587,7 +4762,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(10.0f,5,1.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,5,1.0f)
       resultStatus: 1
-      duration: 0.0000673
+      duration: 0.0000683
       messages: 
       output: 
       stacktrace: 
@@ -4604,7 +4779,7 @@ MonoBehaviour:
       name: ValidEnemyMoveSpeedMul(10.0f,5,5.0f)
       fullName: Tests.EnemyMoveSpeedTest.ValidEnemyMoveSpeedMul(10.0f,5,5.0f)
       resultStatus: 1
-      duration: 0.0000698
+      duration: 0.0000695
       messages: 
       output: 
       stacktrace: 
@@ -4621,7 +4796,7 @@ MonoBehaviour:
       name: PlayerEvasionDistanceTest
       fullName: Tests.PlayerEvasionDistanceTest
       resultStatus: 1
-      duration: 0.0605511
+      duration: 0.0597974
       messages: 
       output: 
       stacktrace: 
@@ -4637,7 +4812,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionDistance
       fullName: Tests.PlayerEvasionDistanceTest.InvalidPlayerEvasionDistance
       resultStatus: 1
-      duration: 0.0012246
+      duration: 0.0013019
       messages: 
       output: 
       stacktrace: 
@@ -4653,7 +4828,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionDistance(float.MinValue)
       fullName: Tests.PlayerEvasionDistanceTest.InvalidPlayerEvasionDistance(float.MinValue)
       resultStatus: 1
-      duration: 0.0004092
+      duration: 0.0004423
       messages: 
       output: 
       stacktrace: 
@@ -4670,7 +4845,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionDistance(-1.0f)
       fullName: Tests.PlayerEvasionDistanceTest.InvalidPlayerEvasionDistance(-1.0f)
       resultStatus: 1
-      duration: 0.0000954
+      duration: 0.0001044
       messages: 
       output: 
       stacktrace: 
@@ -4687,7 +4862,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionDistance(11.0f)
       fullName: Tests.PlayerEvasionDistanceTest.InvalidPlayerEvasionDistance(11.0f)
       resultStatus: 1
-      duration: 0.0000789
+      duration: 0.0000801
       messages: 
       output: 
       stacktrace: 
@@ -4704,7 +4879,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionDistance(float.MaxValue)
       fullName: Tests.PlayerEvasionDistanceTest.InvalidPlayerEvasionDistance(float.MaxValue)
       resultStatus: 1
-      duration: 0.0000746
+      duration: 0.0000794
       messages: 
       output: 
       stacktrace: 
@@ -4721,7 +4896,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionDistance
       fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistance
       resultStatus: 1
-      duration: 0.0202734
+      duration: 0.0203152
       messages: 
       output: 
       stacktrace: 
@@ -4737,7 +4912,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionDistance(0.0f)
       fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistance(0.0f)
       resultStatus: 1
-      duration: 0.0002617
+      duration: 0.0002973
       messages: 
       output: 
       stacktrace: 
@@ -4754,7 +4929,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionDistance(5.0f)
       fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistance(5.0f)
       resultStatus: 1
-      duration: 0.0000874
+      duration: 0.0000944
       messages: 
       output: 
       stacktrace: 
@@ -4771,7 +4946,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionDistance(10.0f)
       fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistance(10.0f)
       resultStatus: 1
-      duration: 0.0000664
+      duration: 0.0000839
       messages: 
       output: 
       stacktrace: 
@@ -4788,7 +4963,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionDistanceMul
       fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistanceMul
       resultStatus: 1
-      duration: 0.0214884
+      duration: 0.0213238
       messages: 
       output: 
       stacktrace: 
@@ -4804,7 +4979,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionDistanceMul(0.0f)
       fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistanceMul(0.0f)
       resultStatus: 1
-      duration: 0.0006086
+      duration: 0.0006344
       messages: 
       output: 
       stacktrace: 
@@ -4821,7 +4996,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionDistanceMul(5.0f)
       fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistanceMul(5.0f)
       resultStatus: 1
-      duration: 0.0001343
+      duration: 0.0001457
       messages: 
       output: 
       stacktrace: 
@@ -4838,7 +5013,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionDistanceMul(10.0f)
       fullName: Tests.PlayerEvasionDistanceTest.ValidPlayerEvasionDistanceMul(10.0f)
       resultStatus: 1
-      duration: 0.0001074
+      duration: 0.0001166
       messages: 
       output: 
       stacktrace: 
@@ -4855,7 +5030,7 @@ MonoBehaviour:
       name: PlayerEvasionSpeedTest
       fullName: Tests.PlayerEvasionSpeedTest
       resultStatus: 1
-      duration: 0.0632286
+      duration: 0.062812
       messages: 
       output: 
       stacktrace: 
@@ -4871,7 +5046,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionSpeed
       fullName: Tests.PlayerEvasionSpeedTest.InvalidPlayerEvasionSpeed
       resultStatus: 1
-      duration: 0.0012169
+      duration: 0.0013294
       messages: 
       output: 
       stacktrace: 
@@ -4887,7 +5062,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionSpeed(float.MinValue)
       fullName: Tests.PlayerEvasionSpeedTest.InvalidPlayerEvasionSpeed(float.MinValue)
       resultStatus: 1
-      duration: 0.0003863
+      duration: 0.0004637
       messages: 
       output: 
       stacktrace: 
@@ -4904,7 +5079,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionSpeed(-1.0f)
       fullName: Tests.PlayerEvasionSpeedTest.InvalidPlayerEvasionSpeed(-1.0f)
       resultStatus: 1
-      duration: 0.0000981
+      duration: 0.000116
       messages: 
       output: 
       stacktrace: 
@@ -4921,7 +5096,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionSpeed(101.0f)
       fullName: Tests.PlayerEvasionSpeedTest.InvalidPlayerEvasionSpeed(101.0f)
       resultStatus: 1
-      duration: 0.000078
+      duration: 0.0000807
       messages: 
       output: 
       stacktrace: 
@@ -4938,7 +5113,7 @@ MonoBehaviour:
       name: InvalidPlayerEvasionSpeed(float.MaxValue)
       fullName: Tests.PlayerEvasionSpeedTest.InvalidPlayerEvasionSpeed(float.MaxValue)
       resultStatus: 1
-      duration: 0.0000753
+      duration: 0.0000765
       messages: 
       output: 
       stacktrace: 
@@ -4955,7 +5130,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeed
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeed
       resultStatus: 1
-      duration: 0.0203788
+      duration: 0.0204903
       messages: 
       output: 
       stacktrace: 
@@ -4971,7 +5146,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeed(0.0f)
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeed(0.0f)
       resultStatus: 1
-      duration: 0.0002842
+      duration: 0.0002881
       messages: 
       output: 
       stacktrace: 
@@ -4988,7 +5163,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeed(50.0f)
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeed(50.0f)
       resultStatus: 1
-      duration: 0.0000957
+      duration: 0.0000959
       messages: 
       output: 
       stacktrace: 
@@ -5005,7 +5180,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeed(100.0f)
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeed(100.0f)
       resultStatus: 1
-      duration: 0.0000675
+      duration: 0.0000701
       messages: 
       output: 
       stacktrace: 
@@ -5022,7 +5197,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeedMul
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeedMul
       resultStatus: 1
-      duration: 0.0215807
+      duration: 0.0210778
       messages: 
       output: 
       stacktrace: 
@@ -5038,7 +5213,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeedMul(0.0f)
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeedMul(0.0f)
       resultStatus: 1
-      duration: 0.0011196
+      duration: 0.0003247
       messages: 
       output: 
       stacktrace: 
@@ -5055,7 +5230,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeedMul(50.0f)
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeedMul(50.0f)
       resultStatus: 1
-      duration: 0.0000926
+      duration: 0.0001086
       messages: 
       output: 
       stacktrace: 
@@ -5072,7 +5247,7 @@ MonoBehaviour:
       name: ValidPlayerEvasionSpeedMul(100.0f)
       fullName: Tests.PlayerEvasionSpeedTest.ValidPlayerEvasionSpeedMul(100.0f)
       resultStatus: 1
-      duration: 0.0000659
+      duration: 0.0000673
       messages: 
       output: 
       stacktrace: 
@@ -5089,7 +5264,7 @@ MonoBehaviour:
       name: PlayerHPTest
       fullName: Tests.PlayerHPTest
       resultStatus: 1
-      duration: 0.0838
+      duration: 0.0839708
       messages: 
       output: 
       stacktrace: 
@@ -5105,7 +5280,7 @@ MonoBehaviour:
       name: InvalidPlayerHP
       fullName: Tests.PlayerHPTest.InvalidPlayerHP
       resultStatus: 1
-      duration: 0.0023181
+      duration: 0.0013283
       messages: 
       output: 
       stacktrace: 
@@ -5121,7 +5296,7 @@ MonoBehaviour:
       name: InvalidPlayerHP(int.MinValue)
       fullName: Tests.PlayerHPTest.InvalidPlayerHP(int.MinValue)
       resultStatus: 1
-      duration: 0.0005497
+      duration: 0.0004041
       messages: 
       output: 
       stacktrace: 
@@ -5138,7 +5313,7 @@ MonoBehaviour:
       name: InvalidPlayerHP(-1)
       fullName: Tests.PlayerHPTest.InvalidPlayerHP(-1)
       resultStatus: 1
-      duration: 0.0001115
+      duration: 0.0001071
       messages: 
       output: 
       stacktrace: 
@@ -5155,7 +5330,7 @@ MonoBehaviour:
       name: InvalidPlayerHP(101)
       fullName: Tests.PlayerHPTest.InvalidPlayerHP(101)
       resultStatus: 1
-      duration: 0.0000807
+      duration: 0.000087
       messages: 
       output: 
       stacktrace: 
@@ -5172,7 +5347,7 @@ MonoBehaviour:
       name: InvalidPlayerHP(int.MaxValue)
       fullName: Tests.PlayerHPTest.InvalidPlayerHP(int.MaxValue)
       resultStatus: 1
-      duration: 0.0000932
+      duration: 0.000093
       messages: 
       output: 
       stacktrace: 
@@ -5189,7 +5364,7 @@ MonoBehaviour:
       name: ValidPlayerHP
       fullName: Tests.PlayerHPTest.ValidPlayerHP
       resultStatus: 1
-      duration: 0.0178703
+      duration: 0.0203438
       messages: 
       output: 
       stacktrace: 
@@ -5205,7 +5380,7 @@ MonoBehaviour:
       name: ValidPlayerHP(0)
       fullName: Tests.PlayerHPTest.ValidPlayerHP(0)
       resultStatus: 1
-      duration: 0.0002583
+      duration: 0.00032
       messages: 
       output: 
       stacktrace: 
@@ -5222,7 +5397,7 @@ MonoBehaviour:
       name: ValidPlayerHP(50)
       fullName: Tests.PlayerHPTest.ValidPlayerHP(50)
       resultStatus: 1
-      duration: 0.0000846
+      duration: 0.0000935
       messages: 
       output: 
       stacktrace: 
@@ -5239,7 +5414,7 @@ MonoBehaviour:
       name: ValidPlayerHP(100)
       fullName: Tests.PlayerHPTest.ValidPlayerHP(100)
       resultStatus: 1
-      duration: 0.0000638
+      duration: 0.0000692
       messages: 
       output: 
       stacktrace: 
@@ -5256,7 +5431,7 @@ MonoBehaviour:
       name: ValidPlayerHPSubAP
       fullName: Tests.PlayerHPTest.ValidPlayerHPSubAP
       resultStatus: 1
-      duration: 0.0213577
+      duration: 0.0211226
       messages: 
       output: 
       stacktrace: 
@@ -5272,7 +5447,7 @@ MonoBehaviour:
       name: ValidPlayerHPSubAP(100,10)
       fullName: Tests.PlayerHPTest.ValidPlayerHPSubAP(100,10)
       resultStatus: 1
-      duration: 0.0003773
+      duration: 0.000377
       messages: 
       output: 
       stacktrace: 
@@ -5289,7 +5464,7 @@ MonoBehaviour:
       name: ValidPlayerHPSubAP(50,50)
       fullName: Tests.PlayerHPTest.ValidPlayerHPSubAP(50,50)
       resultStatus: 1
-      duration: 0.0000958
+      duration: 0.000097
       messages: 
       output: 
       stacktrace: 
@@ -5306,7 +5481,7 @@ MonoBehaviour:
       name: ValidPlayerHPSubAP(20,10)
       fullName: Tests.PlayerHPTest.ValidPlayerHPSubAP(20,10)
       resultStatus: 1
-      duration: 0.0000703
+      duration: 0.0000712
       messages: 
       output: 
       stacktrace: 
@@ -5323,7 +5498,7 @@ MonoBehaviour:
       name: ValidPlayerHPSubAPOverMin
       fullName: Tests.PlayerHPTest.ValidPlayerHPSubAPOverMin
       resultStatus: 1
-      duration: 0.0208297
+      duration: 0.0207278
       messages: 
       output: 
       stacktrace: 
@@ -5339,7 +5514,7 @@ MonoBehaviour:
       name: ValidPlayerHPSubAPOverMin(80,100)
       fullName: Tests.PlayerHPTest.ValidPlayerHPSubAPOverMin(80,100)
       resultStatus: 1
-      duration: 0.0003052
+      duration: 0.0003158
       messages: 
       output: 
       stacktrace: 
@@ -5356,7 +5531,7 @@ MonoBehaviour:
       name: ValidPlayerHPSubAPOverMin(50,100)
       fullName: Tests.PlayerHPTest.ValidPlayerHPSubAPOverMin(50,100)
       resultStatus: 1
-      duration: 0.0000949
+      duration: 0.0000943
       messages: 
       output: 
       stacktrace: 
@@ -5373,7 +5548,7 @@ MonoBehaviour:
       name: ValidPlayerHPSubAPOverMin(0,100)
       fullName: Tests.PlayerHPTest.ValidPlayerHPSubAPOverMin(0,100)
       resultStatus: 1
-      duration: 0.000072
+      duration: 0.0000754
       messages: 
       output: 
       stacktrace: 
@@ -5390,7 +5565,7 @@ MonoBehaviour:
       name: PlayerMoveSpeedTest
       fullName: Tests.PlayerMoveSpeedTest
       resultStatus: 1
-      duration: 0.0635856
+      duration: 0.0636838
       messages: 
       output: 
       stacktrace: 
@@ -5406,7 +5581,7 @@ MonoBehaviour:
       name: InvalidPlaeyrMoveSpeed
       fullName: Tests.PlayerMoveSpeedTest.InvalidPlaeyrMoveSpeed
       resultStatus: 1
-      duration: 0.0012211
+      duration: 0.0013776
       messages: 
       output: 
       stacktrace: 
@@ -5422,7 +5597,7 @@ MonoBehaviour:
       name: InvalidPlaeyrMoveSpeed(float.MinValue)
       fullName: Tests.PlayerMoveSpeedTest.InvalidPlaeyrMoveSpeed(float.MinValue)
       resultStatus: 1
-      duration: 0.0003831
+      duration: 0.0004234
       messages: 
       output: 
       stacktrace: 
@@ -5439,7 +5614,7 @@ MonoBehaviour:
       name: InvalidPlaeyrMoveSpeed(-1.0f)
       fullName: Tests.PlayerMoveSpeedTest.InvalidPlaeyrMoveSpeed(-1.0f)
       resultStatus: 1
-      duration: 0.0001005
+      duration: 0.0001447
       messages: 
       output: 
       stacktrace: 
@@ -5456,7 +5631,7 @@ MonoBehaviour:
       name: InvalidPlaeyrMoveSpeed(11.0f)
       fullName: Tests.PlayerMoveSpeedTest.InvalidPlaeyrMoveSpeed(11.0f)
       resultStatus: 1
-      duration: 0.000078
+      duration: 0.0000845
       messages: 
       output: 
       stacktrace: 
@@ -5473,7 +5648,7 @@ MonoBehaviour:
       name: InvalidPlaeyrMoveSpeed(float.MaxValue)
       fullName: Tests.PlayerMoveSpeedTest.InvalidPlaeyrMoveSpeed(float.MaxValue)
       resultStatus: 1
-      duration: 0.0000759
+      duration: 0.0000907
       messages: 
       output: 
       stacktrace: 
@@ -5490,7 +5665,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeed
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed
       resultStatus: 1
-      duration: 0.0206281
+      duration: 0.0204195
       messages: 
       output: 
       stacktrace: 
@@ -5506,7 +5681,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeed(0.0f)
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed(0.0f)
       resultStatus: 1
-      duration: 0.0002875
+      duration: 0.0002959
       messages: 
       output: 
       stacktrace: 
@@ -5523,7 +5698,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeed(5.0f)
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed(5.0f)
       resultStatus: 1
-      duration: 0.0000881
+      duration: 0.0000915
       messages: 
       output: 
       stacktrace: 
@@ -5540,7 +5715,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeed(10.0f)
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeed(10.0f)
       resultStatus: 1
-      duration: 0.0000657
+      duration: 0.0000678
       messages: 
       output: 
       stacktrace: 
@@ -5557,7 +5732,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedMul
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedMul
       resultStatus: 1
-      duration: 0.0213382
+      duration: 0.0214409
       messages: 
       output: 
       stacktrace: 
@@ -5573,7 +5748,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedMul(0.0f)
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedMul(0.0f)
       resultStatus: 1
-      duration: 0.0005911
+      duration: 0.0006244
       messages: 
       output: 
       stacktrace: 
@@ -5590,7 +5765,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedMul(5.0f)
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedMul(5.0f)
       resultStatus: 1
-      duration: 0.0001377
+      duration: 0.0001428
       messages: 
       output: 
       stacktrace: 
@@ -5607,7 +5782,7 @@ MonoBehaviour:
       name: ValidPlayerMoveSpeedMul(10.0f)
       fullName: Tests.PlayerMoveSpeedTest.ValidPlayerMoveSpeedMul(10.0f)
       resultStatus: 1
-      duration: 0.0001139
+      duration: 0.0001082
       messages: 
       output: 
       stacktrace: 
@@ -5624,7 +5799,7 @@ MonoBehaviour:
       name: PlayerStaminaTest
       fullName: Tests.PlayerStaminaTest
       resultStatus: 1
-      duration: 0.1254703
+      duration: 0.1253776
       messages: 
       output: 
       stacktrace: 
@@ -5640,7 +5815,7 @@ MonoBehaviour:
       name: InvalidPlayerStamina
       fullName: Tests.PlayerStaminaTest.InvalidPlayerStamina
       resultStatus: 1
-      duration: 0.0012721
+      duration: 0.0013911
       messages: 
       output: 
       stacktrace: 
@@ -5656,7 +5831,7 @@ MonoBehaviour:
       name: InvalidPlayerStamina(float.MinValue)
       fullName: Tests.PlayerStaminaTest.InvalidPlayerStamina(float.MinValue)
       resultStatus: 1
-      duration: 0.000418
+      duration: 0.0004555
       messages: 
       output: 
       stacktrace: 
@@ -5673,7 +5848,7 @@ MonoBehaviour:
       name: InvalidPlayerStamina(-1.0f)
       fullName: Tests.PlayerStaminaTest.InvalidPlayerStamina(-1.0f)
       resultStatus: 1
-      duration: 0.0001046
+      duration: 0.0001201
       messages: 
       output: 
       stacktrace: 
@@ -5690,7 +5865,7 @@ MonoBehaviour:
       name: InvalidPlayerStamina(101.0f)
       fullName: Tests.PlayerStaminaTest.InvalidPlayerStamina(101.0f)
       resultStatus: 1
-      duration: 0.0000815
+      duration: 0.0000818
       messages: 
       output: 
       stacktrace: 
@@ -5707,7 +5882,7 @@ MonoBehaviour:
       name: InvalidPlayerStamina(float.MaxValue)
       fullName: Tests.PlayerStaminaTest.InvalidPlayerStamina(float.MaxValue)
       resultStatus: 1
-      duration: 0.0000753
+      duration: 0.0000841
       messages: 
       output: 
       stacktrace: 
@@ -5724,7 +5899,7 @@ MonoBehaviour:
       name: ValidPlayerStamina
       fullName: Tests.PlayerStaminaTest.ValidPlayerStamina
       resultStatus: 1
-      duration: 0.0203708
+      duration: 0.0211201
       messages: 
       output: 
       stacktrace: 
@@ -5740,7 +5915,7 @@ MonoBehaviour:
       name: ValidPlayerStamina(0.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlayerStamina(0.0f)
       resultStatus: 1
-      duration: 0.0002591
+      duration: 0.0003166
       messages: 
       output: 
       stacktrace: 
@@ -5757,7 +5932,7 @@ MonoBehaviour:
       name: ValidPlayerStamina(50.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlayerStamina(50.0f)
       resultStatus: 1
-      duration: 0.0000867
+      duration: 0.0001032
       messages: 
       output: 
       stacktrace: 
@@ -5774,7 +5949,7 @@ MonoBehaviour:
       name: ValidPlayerStamina(100.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlayerStamina(100.0f)
       resultStatus: 1
-      duration: 0.0000654
+      duration: 0.0000696
       messages: 
       output: 
       stacktrace: 
@@ -5791,7 +5966,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaAddDelatTime
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime
       resultStatus: 1
-      duration: 0.0246778
+      duration: 0.0233887
       messages: 
       output: 
       stacktrace: 
@@ -5807,7 +5982,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaAddDelatTime(0.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime(0.0f)
       resultStatus: 1
-      duration: 0.0036024
+      duration: 0.0034795
       messages: 
       output: 
       stacktrace: 
@@ -5824,7 +5999,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaAddDelatTime(10.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime(10.0f)
       resultStatus: 1
-      duration: 0.0000985
+      duration: 0.0001037
       messages: 
       output: 
       stacktrace: 
@@ -5841,7 +6016,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaAddDelatTime(50.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime(50.0f)
       resultStatus: 1
-      duration: 0.0000683
+      duration: 0.0000713
       messages: 
       output: 
       stacktrace: 
@@ -5858,7 +6033,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaAddDelatTime(80.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDelatTime(80.0f)
       resultStatus: 1
-      duration: 0.0000694
+      duration: 0.0000743
       messages: 
       output: 
       stacktrace: 
@@ -5875,7 +6050,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaAddDeltaTimeOverMax
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDeltaTimeOverMax
       resultStatus: 1
-      duration: 0.0179606
+      duration: 0.0169764
       messages: 
       output: 
       stacktrace: 
@@ -5891,7 +6066,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaAddDeltaTimeOverMax(100.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaAddDeltaTimeOverMax(100.0f)
       resultStatus: 1
-      duration: 0.0003394
+      duration: 0.0003191
       messages: 
       output: 
       stacktrace: 
@@ -5908,7 +6083,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaSubDelatTime
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime
       resultStatus: 1
-      duration: 0.0207098
+      duration: 0.0217886
       messages: 
       output: 
       stacktrace: 
@@ -5924,7 +6099,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaSubDelatTime(10.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime(10.0f)
       resultStatus: 1
-      duration: 0.0003987
+      duration: 0.000395
       messages: 
       output: 
       stacktrace: 
@@ -5941,7 +6116,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaSubDelatTime(50.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime(50.0f)
       resultStatus: 1
-      duration: 0.0000966
+      duration: 0.0001014
       messages: 
       output: 
       stacktrace: 
@@ -5958,7 +6133,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaSubDelatTime(80.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime(80.0f)
       resultStatus: 1
-      duration: 0.000071
+      duration: 0.0001018
       messages: 
       output: 
       stacktrace: 
@@ -5975,7 +6150,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaSubDelatTime(100.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDelatTime(100.0f)
       resultStatus: 1
-      duration: 0.000069
+      duration: 0.0000733
       messages: 
       output: 
       stacktrace: 
@@ -5992,7 +6167,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaSubDeltaTimeOverMax
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDeltaTimeOverMax
       resultStatus: 1
-      duration: 0.0202763
+      duration: 0.0204645
       messages: 
       output: 
       stacktrace: 
@@ -6008,7 +6183,7 @@ MonoBehaviour:
       name: ValidPlyaerStaminaSubDeltaTimeOverMax(0.0f)
       fullName: Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDeltaTimeOverMax(0.0f)
       resultStatus: 1
-      duration: 0.0003122
+      duration: 0.0003193
       messages: 
       output: 
       stacktrace: 
@@ -6020,12 +6195,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1076
       parentUniqueId: EditMode.dll/Tests/PlayerStaminaTest/[EditMode][Tests.PlayerStaminaTest.ValidPlyaerStaminaSubDeltaTimeOverMax][suite]
-    m_ResultText: "ValidPlayerHPSubAPOverMin (0.021s)\n[\u6B63\u5E38] \u653B\u6483\u529B\u3068\u6E1B\u7B97\u3057\u305F\u7D50\u679C\u304C\u6700\u5C0F\u5024\u3088\u308A\u5C0F\u3055\u3044\u5834\u5408\u306B\u3001\u30D7\u30EC\u30A4\u30E4\u30FC\u4F53\u529B\u306E\u6700\u5C0F\u5024\u304C\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
+    m_ResultText: "BulletMoveSpeedMulDeltaTime (0.005s)\n[\u6B63\u5E38] \u30D5\u30EC\u30FC\u30E0\u79D2\u3068\u4E57\u7B97\u3057\u305F\u5834\u5408\u306B\u3001float\u578B\u306E\u5B9F\u6570\u304C\u683C\u7D0D\u3055\u308C\u308B\u3053\u3068"
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 63}
-      m_SelectedIDs: e9f35cf4
-      m_LastClickedID: -195234839
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 769344a1
+      m_LastClickedID: -1589341322
       m_ExpandedIDs: 4e5e5887d898d488ffe43c8ed0bc2792de38d8946075e79408d147993cdc509e319f829f4c6ea29fa3c63ba13316a1a1783a69a67ae2f2b4a8d000b51de956b991f282be773dd3c1e75e21c29f561fc5d6cd41c5d553f4ce188c80d0fe6bdfd0b15a52dc55e08edea11615dfb7cadfdfb70143e3a11cb9eebcf832f1db8f0ef235932af92733b0fb2663a4fcbe31c0fdfe985fff092f8e0573ad3008b492650bd9c69d1b8bce34243cf34728450074289c856d2dc141672f2a49363110bb2a3c26f3073d105db24bce42cc4e893b8f542a3da05459d84257754078573ca6395acb38cc5f1277ec67e57d0f68089961688db7157c4b5ea47cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -6072,9 +6247,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1508
+    x: 1507
     y: 73
-    width: 411
+    width: 412
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:

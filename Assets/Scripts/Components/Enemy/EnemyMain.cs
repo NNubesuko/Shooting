@@ -5,10 +5,9 @@ using UnityEngine;
 public class EnemyMain : EnemyImpl {
 
     private Vector2[] moveTargetTable = {
-        new Vector2(0f, 0f)
-        // new Vector2(0f, 3f),
-        // new Vector2(3f, -3f),
-        // new Vector2(-3f, -3f)
+        new Vector2(0f, 3f),
+        new Vector2(3f, -3f),
+        new Vector2(-3f, -3f)
     };
 
     private void Awake() {
@@ -23,6 +22,7 @@ public class EnemyMain : EnemyImpl {
 
     private void Update() {
         Move();
+        Death();
     }
 
     protected override void OnTriggerEnter2DEvent(Collider2D collider) {

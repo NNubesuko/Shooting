@@ -6,7 +6,7 @@ public class BulletMain : BulletImpl {
 
     private void Awake() {
         Init(
-            BulletAP.Of(10),
+            BulletAP.Of(20),
             BulletMoveSpeed.Of(7f)
         );
     }
