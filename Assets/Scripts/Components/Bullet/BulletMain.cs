@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class BulletMain : BulletImpl {
 
+    [SerializeField] private int ap;
+    [SerializeField] private float moveSpeed;
+
     private void Awake() {
         Init(
-            BulletAP.Of(20),
-            BulletMoveSpeed.Of(7f)
+            BulletAP.Of(ap),
+            BulletMoveSpeed.Of(moveSpeed)
         );
     }
 
@@ -17,13 +20,18 @@ public class BulletMain : BulletImpl {
 
     protected override void OnTriggerEnterAndStay2DEvent(Collider2D collider) {
         GameObject gameObject = collider.gameObject;
-        wasAttacked = gameObject.CompareTag("Enemy");
 
-        if (wasAttacked) {
+        if (gameObject.CompareTag("Enemy")) {
+            wasAttacked = gameObject.CompareTag("Enemy");
             Attack(gameObject.GetComponent<EnemyMain>());
+            GCHelper();
+            this.gameObject.SetActive(false);
         }
 
-        this.gameObject.SetActive(false);
+        if (gameObject.CompareTag("Wall")) {
+            GCHelper();
+            this.gameObject.SetActive(false);
+        }
     }
 
 }

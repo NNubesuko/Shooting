@@ -7,4 +7,12 @@ public class GunFiringRate : Rate {
         return new GunFiringRate(value);
     }
 
+    public static bool operator<=(GunFiringRate rate, float time) {
+        return rate.Value <= time;
+    }
+
+    public static bool operator>=(GunFiringRate rate, float time) {
+        return rate.Value >= time;
+    }
+
 }

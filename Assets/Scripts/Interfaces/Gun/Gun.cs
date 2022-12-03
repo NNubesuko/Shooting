@@ -3,6 +3,7 @@ using UnityEngine;
 
 public interface Gun {
 
+    GameObject BulletObject { get; }
     BulletsCount Count { get; }
     List<GameObject> Bullets { get; }
     GunFiringRate Rate { get; }
