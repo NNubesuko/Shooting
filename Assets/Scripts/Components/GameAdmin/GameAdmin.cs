@@ -23,12 +23,13 @@ public class GameAdmin : MonoBehaviour {
             GameAdministrator.QuitGame();
         }
 
-        // if (playerScript.IsDeath) {
-        //     Invoke(nameof(ReturnTitleScene), 3f);
-        // }
+        if (PlayerScript.IsDeath) {
+            Invoke(nameof(ReturnTitleScene), 3f);
+        }
     }
 
     private void ReturnTitleScene() {
+        PlayerScript.WhenGameOver();
         SceneManager.LoadScene("Title");
     }
 

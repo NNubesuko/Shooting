@@ -15,6 +15,7 @@ public class PlayerImpl : MonoBehaviour, Player {
     private Vector2 evasionPosition;
     public bool CanMove { get; private set; } = true;
     public bool IsEvading { get; private set; } = false;
+    public bool IsDeath { get; private set; } = false;
 
     /*
      * ステータスを初期化するメソッド
@@ -56,6 +57,7 @@ public class PlayerImpl : MonoBehaviour, Player {
      */
     public void Death() {
         if (HP == PlayerHP.Of(0)) {
+            IsDeath = true;
             gameObject.SetActive(false);
         }
     }
@@ -98,15 +100,16 @@ public class PlayerImpl : MonoBehaviour, Player {
 
     /*
      * プレイヤーオブジェクトが非アクティブになった場合のメソッド
+     ! GameAdmin専用
      */
-    // private void OnDisable() {
-    //     HP = null;
-    //     Stamina = null;
-    //     MoveSpeed = null;
-    //     EvasionSpeed = null;
-    //     EvasionDistance = null;
+    public void WhenGameOver() {
+        HP = null;
+        Stamina = null;
+        MoveSpeed = null;
+        EvasionSpeed = null;
+        EvasionDistance = null;
 
-    //     GC.Collect();
-    // }
+        GC.Collect();
+    }
 
 }
