@@ -24,3 +24,10 @@ public class EnemyEntity {
     public Vector2 initPosition;
 
 }
+
+// hp
+// ap
+// moveSpeed
+// magnification
+// moveTargetTable
+// time

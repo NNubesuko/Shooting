@@ -8,6 +8,7 @@ public interface Player : IMovable, IDamagable {
     PlayerMoveSpeed MoveSpeed { get; }
     PlayerEvasionSpeed EvasionSpeed { get; }
     PlayerEvasionDistance EvasionDistance { get; }
+    PlayerScore Score { get; }
 
     /*
      * ステータスの初期化
@@ -19,5 +20,7 @@ public interface Player : IMovable, IDamagable {
         PlayerEvasionSpeed evasionSpeed,
         PlayerEvasionDistance evasionDistance
     );
+
+    void AddScore(Point point);
 
 }

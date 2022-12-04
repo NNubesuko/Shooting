@@ -52,19 +52,22 @@ namespace Tests {
             EnemyAP enemyAP = EnemyAP.Of(10);
             EnemyMoveSpeed enemyMoveSpeed = EnemyMoveSpeed.Of(3f);
             EnemyMoveSpeedMagnification magnification = EnemyMoveSpeedMagnification.Of(1.5f);
+            EnemyPoint enemyPoint = EnemyPoint.Of(10);
 
             enemyScript.Init(
                 enemyHP,
                 enemyAP,
                 enemyMoveSpeed,
                 magnification,
-                moveTargetTable
+                moveTargetTable,
+                enemyPoint
             );
 
             Assert.That(enemyScript.HP, Is.EqualTo(enemyHP));
             Assert.That(enemyScript.AP, Is.EqualTo(enemyAP));
             Assert.That(enemyScript.MoveSpeed, Is.EqualTo(enemyMoveSpeed));
             Assert.That(enemyScript.MoveTargetTable, Is.EqualTo(moveTargetTable));
+            Assert.That(enemyScript.Point, Is.EqualTo(enemyPoint));
             yield return null;
         }
 

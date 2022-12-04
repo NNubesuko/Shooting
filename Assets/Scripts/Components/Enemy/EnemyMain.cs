@@ -10,13 +10,14 @@ public class EnemyMain : EnemyImpl {
         new Vector2(-3f, -3f)
     };
 
-    private void Awake() {
+    private void Start() {
         Init(
             EnemyHP.Of(20),
             EnemyAP.Of(10),
             EnemyMoveSpeed.Of(3f),
             EnemyMoveSpeedMagnification.Of(2f),
-            moveTargetTable
+            moveTargetTable,
+            EnemyPoint.Of(10)
         );
     }
 

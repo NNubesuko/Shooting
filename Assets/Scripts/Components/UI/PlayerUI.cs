@@ -18,6 +18,7 @@ public class PlayerUI : MonoBehaviour {
     }
 
     private void Update() {
+        scoreText.text = $"Score: {playerMain.Score}";
         playerHPBar.value = (float)playerMain.HP.Value / playerMain.HP.MAX;
         playerStaminaBar.value = (float)playerMain.Stamina.Value / playerMain.Stamina.MAX;
 

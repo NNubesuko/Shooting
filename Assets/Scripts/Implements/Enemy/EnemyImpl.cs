@@ -12,6 +12,7 @@ public class EnemyImpl : TriggerObject, Enemy {
     public EnemyMoveSpeed MoveSpeed { get; private set; }
     public EnemyMoveSpeedMagnification Magnification { get; private set; }
     public Vector2[] MoveTargetTable { get; private set; }
+    public EnemyPoint Point { get; private set; }
 
     public bool wasAttacked { get; protected set; }
 
@@ -19,6 +20,8 @@ public class EnemyImpl : TriggerObject, Enemy {
     private Vector2 target;
     private Vector2 p;
     private int index = 0;
+    private GameAdmin gameAdmin;
+    private PlayerMain playerMain;
 
     /*
      * ステータスを初期化するメソッド
@@ -28,14 +31,19 @@ public class EnemyImpl : TriggerObject, Enemy {
         EnemyAP ap,
         EnemyMoveSpeed moveSpeed,
         EnemyMoveSpeedMagnification magnification,
-        Vector2[] moveTargetTable
+        Vector2[] moveTargetTable,
+        EnemyPoint point
     ) {
         HP = hp;
         AP = ap;
         MoveSpeed = moveSpeed;
         Magnification = magnification;
         MoveTargetTable = moveTargetTable;
+        Point = point;
+
         tableChangeTimer = new Timer(3f);
+        gameAdmin = GameObject.Find("GameAdmin").GetComponent<GameAdmin>();
+        playerMain = gameAdmin.PlayerScript;
     }
 
     /*
@@ -68,6 +76,7 @@ public class EnemyImpl : TriggerObject, Enemy {
      */
     public void Death() {
         if (HP == EnemyHP.Of(0)) {
+            playerMain.AddScore(Point);
             gameObject.SetActive(false);
         }
     }

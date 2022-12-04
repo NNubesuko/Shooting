@@ -11,6 +11,7 @@ public class PlayerImpl : MonoBehaviour, Player {
     public PlayerMoveSpeed MoveSpeed { get; private set; }
     public PlayerEvasionSpeed EvasionSpeed { get; private set; }
     public PlayerEvasionDistance EvasionDistance { get; private set; }
+    public PlayerScore Score { get; private set; } = PlayerScore.Of(0);
 
     private Vector2 evasionPosition;
     public bool CanMove { get; private set; } = true;
@@ -89,6 +90,13 @@ public class PlayerImpl : MonoBehaviour, Player {
 
             Stamina = staminaSubConsumption;
         }
+    }
+
+    /*
+     * スコアを加算するメソッド
+     */
+    public void AddScore(Point point) {
+        Score += point;
     }
 
     /*
