@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,33 +7,25 @@ using Systemk;
 public class GunImpl : MonoBehaviour, Gun {
 
     public GameObject BulletObject { get; private set; }
-    public BulletsCount Count { get; private set; }
-    public List<GameObject> Bullets { get; private set; } = new List<GameObject>();
+    public BulletsMaxCount MaxCount { get; private set; }
+    public BulletsCount Count { get; private set; } = BulletsCount.Of(0);
     public GunFiringRate Rate { get; private set; }
 
     private float currentTime = 0f;
+    private Quaternion identity = Quaternion.identity;
 
     public void Init(
         GameObject bulletObject,
-        BulletsCount count,
+        BulletsMaxCount maxCount,
         GunFiringRate rate
     ) {
         BulletObject = bulletObject;
-        Count = count;
-
-        for (int i = 0; Count > i; i++) {
-            GameObject bullet =
-                Instantiate(BulletObject, this.transform.position, Quaternion.identity);
-            bullet.transform.parent = this.gameObject.transform;
-            bullet.SetActive(false);
-            Bullets.Add(bullet);
-        }
-
+        MaxCount = maxCount;
         Rate = rate;
     }
 
     public void Fire() {
-        if (Bullets.Count == 0) return;
+        if (Count >= MaxCount) return;
 
         currentTime += Time.deltaTime;
 
@@ -46,10 +39,18 @@ public class GunImpl : MonoBehaviour, Gun {
     }
 
     private void FireHelper() {
-        currentTime = 0f;
-        Bullets[0].transform.parent = null;
-        Bullets[0].SetActive(true);
-        Bullets.Remove(Bullets[0]);
+        Count++;
+        currentTime = 0;
+        Instantiate(BulletObject, transform.position, identity);
+    }
+
+    private void OnDisable() {
+        BulletObject = null;
+        MaxCount = null;
+        Count = null;
+        Rate = null;
+
+        GC.Collect();
     }
 
 }

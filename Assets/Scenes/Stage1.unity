@@ -373,7 +373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletObject: {fileID: 7179762951441495275, guid: 8cefd63cb4eda464f996e3b94b1f8c77, type: 3}
-  bulletsCount: 10
+  bulletsMaxCount: 10
   firingRate: 0.15
 --- !u!1 &412160882
 GameObject:

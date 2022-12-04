@@ -4,13 +4,13 @@ using UnityEngine;
 public interface Gun {
 
     GameObject BulletObject { get; }
+    BulletsMaxCount MaxCount { get; }
     BulletsCount Count { get; }
-    List<GameObject> Bullets { get; }
     GunFiringRate Rate { get; }
 
     void Init(
         GameObject bulletObject,
-        BulletsCount count,
+        BulletsMaxCount maxCount,
         GunFiringRate rate
     );
 

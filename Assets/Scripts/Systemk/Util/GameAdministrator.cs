@@ -4,6 +4,10 @@ namespace Systemk {
 
     public class GameAdministrator {
 
+        public static void SetFPS(int fps) {
+            Application.targetFrameRate = fps;
+        }
+
         public static void DisplayCursor() {
             Cursor.visible = true;
         }

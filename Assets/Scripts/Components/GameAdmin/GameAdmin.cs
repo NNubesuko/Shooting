@@ -10,6 +10,7 @@ public class GameAdmin : MonoBehaviour {
     // [SerializeField] PlayerMain playerScript;
 
     private void Awake() {
+        GameAdministrator.SetFPS(60);
         GameAdministrator.HiddenCursor();
     }
 
