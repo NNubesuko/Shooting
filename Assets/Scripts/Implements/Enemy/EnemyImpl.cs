@@ -21,7 +21,7 @@ public class EnemyImpl : TriggerObject, Enemy {
     private Vector2 p;
     private int index = 0;
     private GameAdmin gameAdmin;
-    private PlayerMain playerMain;
+    private Player playerMain;
 
     /*
      * ステータスを初期化するメソッド

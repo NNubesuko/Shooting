@@ -9,9 +9,8 @@ public class PlayerUI : MonoBehaviour {
     [SerializeField] private Text scoreText;
     [SerializeField] private Slider playerHPBar;
     [SerializeField] private Slider playerStaminaBar;
-    [SerializeField] private GameObject gameOverPanel;
 
-    private PlayerMain playerMain;
+    private Player playerMain;
 
     private void Start() {
         playerMain = gameAdmin.PlayerScript;
@@ -21,10 +20,6 @@ public class PlayerUI : MonoBehaviour {
         scoreText.text = $"Score: {playerMain.Score}";
         playerHPBar.value = (float)playerMain.HP.Value / playerMain.HP.MAX;
         playerStaminaBar.value = (float)playerMain.Stamina.Value / playerMain.Stamina.MAX;
-
-        if (playerMain.IsDeath) {
-            gameOverPanel.SetActive(true);
-        }
     }
 
 }

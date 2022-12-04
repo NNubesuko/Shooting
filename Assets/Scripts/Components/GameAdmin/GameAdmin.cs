@@ -8,6 +8,9 @@ using UnityEngine.SceneManagement;
 public class GameAdmin : MonoBehaviour {
 
     [SerializeField] private GameObject player;
+    [SerializeField] private EnemyGenerator enemyAdmin;
+    [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private GameObject gameClearPanel;
 
     public PlayerMain PlayerScript { get; private set; }
 
@@ -24,6 +27,12 @@ public class GameAdmin : MonoBehaviour {
         }
 
         if (PlayerScript.IsDeath) {
+            gameOverPanel.SetActive(true);
+            Invoke(nameof(ReturnTitleScene), 3f);
+        }
+
+        if (enemyAdmin.WasLastEnemyDefeated) {
+            gameClearPanel.SetActive(true);
             Invoke(nameof(ReturnTitleScene), 3f);
         }
     }

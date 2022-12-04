@@ -15,19 +15,11 @@ public class EnemyEntity {
 
     public int hp;
     public int ap;
-    public int moveSpeed;
-    public int point;
+    public float moveSpeed;
     public float magnification;
-    public float moveTargetSwitchingInterval;
     public Vector2[] moveTargetTable;
-    public float generateTime;
+    public int point;
     public Vector2 initPosition;
+    public float generateTime;
 
 }
-
-// hp
-// ap
-// moveSpeed
-// magnification
-// moveTargetTable
-// time

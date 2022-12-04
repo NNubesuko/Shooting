@@ -9,6 +9,7 @@ public interface Player : IMovable, IDamagable {
     PlayerEvasionSpeed EvasionSpeed { get; }
     PlayerEvasionDistance EvasionDistance { get; }
     PlayerScore Score { get; }
+    bool IsDeath { get; }
 
     /*
      * ステータスの初期化
