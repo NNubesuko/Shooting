@@ -2057,6 +2057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49fb58564f6d8874cbccec724a58c4ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 655611689}
 --- !u!114 &1911193814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2080,11 +2081,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911193808}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ca76c8c49efe3c448e3274dd49acd52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameAdmin: {fileID: 1911193813}
   scoreText: {fileID: 2000180661}
   playerHPBar: {fileID: 435140801}
   playerStaminaBar: {fileID: 2086621935}

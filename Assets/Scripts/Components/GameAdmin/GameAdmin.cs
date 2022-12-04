@@ -7,11 +7,15 @@ using UnityEngine.SceneManagement;
 
 public class GameAdmin : MonoBehaviour {
 
-    // [SerializeField] PlayerMain playerScript;
+    [SerializeField] private GameObject player;
+
+    public PlayerMain PlayerScript { get; private set; }
 
     private void Awake() {
         GameAdministrator.SetFPS(60);
         GameAdministrator.HiddenCursor();
+
+        PlayerScript = player.GetComponent<PlayerMain>();
     }
 
     private void Update() {

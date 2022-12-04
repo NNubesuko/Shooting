@@ -99,14 +99,14 @@ public class PlayerImpl : MonoBehaviour, Player {
     /*
      * プレイヤーオブジェクトが非アクティブになった場合のメソッド
      */
-    private void OnDisable() {
-        HP = null;
-        Stamina = null;
-        MoveSpeed = null;
-        EvasionSpeed = null;
-        EvasionDistance = null;
+    // private void OnDisable() {
+    //     HP = null;
+    //     Stamina = null;
+    //     MoveSpeed = null;
+    //     EvasionSpeed = null;
+    //     EvasionDistance = null;
 
-        GC.Collect();
-    }
+    //     GC.Collect();
+    // }
 
 }
