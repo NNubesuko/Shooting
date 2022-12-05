@@ -29,11 +29,18 @@ public class BulletImpl : TriggerObject, Bullet {
         enemy.Damage(AP);
     }
 
-    protected void GCHelper() {
+    private void OnDisable() {
         AP = null;
         MoveSpeed = null;
 
         GC.Collect();
     }
+
+    // protected void GCHelper() {
+    //     AP = null;
+    //     MoveSpeed = null;
+
+    //     GC.Collect();
+    // }
 
 }

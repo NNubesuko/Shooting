@@ -126,6 +126,17 @@ public static bool operator>=(構造体名 lh, 構造体名 rh) {
 }
 ```
 
+### 値オブジェクトのnull判定
+
+```
+PlayerHP hp = PlayerHP.Of(100);
+if (ReferenceEquals(hp, null)) {
+    Debug.Log("null");
+} else {
+    Debug.Log($"HP: {hp}");
+}
+```
+
 ### スクリプトのサイズテスト
 
 ```

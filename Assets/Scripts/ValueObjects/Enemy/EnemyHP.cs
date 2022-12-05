@@ -1,4 +1,5 @@
 using Systemk;
+using UnityEngine;
 
 /*
  * 敵の体力のクラス
@@ -13,6 +14,8 @@ public class EnemyHP : HP {
     }
 
     public static EnemyHP operator-(EnemyHP hp, AP ap) {
+        if (ReferenceEquals(ap, null)) return hp;
+
         int value = Mathk.KeepValueWithinRange<int>(
             hp.Value - ap.Value,
             hp.MIN,

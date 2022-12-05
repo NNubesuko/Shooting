@@ -24,12 +24,10 @@ public class BulletMain : BulletImpl {
         if (gameObject.CompareTag("Enemy")) {
             wasAttacked = gameObject.CompareTag("Enemy");
             Attack(gameObject.GetComponent<EnemyMain>());
-            GCHelper();
             this.gameObject.SetActive(false);
         }
 
         if (gameObject.CompareTag("Wall")) {
-            GCHelper();
             this.gameObject.SetActive(false);
         }
     }
