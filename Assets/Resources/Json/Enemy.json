@@ -26,7 +26,7 @@
             ],
             "point": 10,
             "initPosition": { "x": 3, "y": 7 },
-            "generateTime": 3.5
+            "generateTime": 4
         },
         {
             "hp": 20,
@@ -40,7 +40,7 @@
             ],
             "point": 10,
             "initPosition": { "x": -4, "y": 7 },
-            "generateTime": 4
+            "generateTime": 5
         },
         {
             "hp": 20,
@@ -54,7 +54,7 @@
             ],
             "point": 10,
             "initPosition": { "x": 4, "y": 7 },
-            "generateTime": 4.5
+            "generateTime": 6
         },
         {
             "hp": 20,
@@ -62,13 +62,195 @@
             "moveSpeed": 3,
             "magnification": 2,
             "moveTargetTable": [
-                { "x": 4, "y": 5 },
-                { "x": 4, "y": 2 },
-                { "x": 4, "y": -7 }
+                { "x": -5, "y": 5 },
+                { "x": -5, "y": 2 },
+                { "x": -5, "y": -7 }
             ],
             "point": 10,
-            "initPosition": { "x": 4, "y": 7 },
-            "generateTime": 15
+            "initPosition": { "x": -5, "y": 7 },
+            "generateTime": 7
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 3,
+            "magnification": 2,
+            "moveTargetTable": [
+                { "x": 5, "y": 5 },
+                { "x": 5, "y": 2 },
+                { "x": 5, "y": -7 }
+            ],
+            "point": 10,
+            "initPosition": { "x": 5, "y": 7 },
+            "generateTime": 8
+        },
+
+
+
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 3,
+            "magnification": 2,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 3, "y": 0 },
+                { "x": 7, "y": -7 }
+            ],
+            "point": 10,
+            "initPosition": { "x": -5, "y": 7 },
+            "generateTime": 10
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 3,
+            "magnification": 2,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 3, "y": 0 },
+                { "x": 7, "y": -7 }
+            ],
+            "point": 10,
+            "initPosition": { "x": -5, "y": 7 },
+            "generateTime": 10.2
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 3,
+            "magnification": 2,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 3, "y": 0 },
+                { "x": 7, "y": -7 }
+            ],
+            "point": 10,
+            "initPosition": { "x": -5, "y": 7 },
+            "generateTime": 10.4
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 3,
+            "magnification": 2,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 3, "y": 0 },
+                { "x": 7, "y": -7 }
+            ],
+            "point": 10,
+            "initPosition": { "x": -5, "y": 7 },
+            "generateTime": 10.6
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 3,
+            "magnification": 2,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 3, "y": 0 },
+                { "x": 7, "y": -7 }
+            ],
+            "point": 10,
+            "initPosition": { "x": -5, "y": 7 },
+            "generateTime": 10.8
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 3,
+            "magnification": 2,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 3, "y": 0 },
+                { "x": 7, "y": -7 }
+            ],
+            "point": 10,
+            "initPosition": { "x": -5, "y": 7 },
+            "generateTime": 11
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 3,
+            "magnification": 2,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 3, "y": 0 },
+                { "x": 7, "y": -7 }
+            ],
+            "point": 10,
+            "initPosition": { "x": -5, "y": 7 },
+            "generateTime": 11.2
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 3,
+            "magnification": 2,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 3, "y": 0 },
+                { "x": 7, "y": -7 }
+            ],
+            "point": 10,
+            "initPosition": { "x": -5, "y": 7 },
+            "generateTime": 11.4
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 3,
+            "magnification": 2,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 3, "y": 0 },
+                { "x": 7, "y": -7 }
+            ],
+            "point": 10,
+            "initPosition": { "x": -5, "y": 7 },
+            "generateTime": 11.6
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 3,
+            "magnification": 2,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 3, "y": 0 },
+                { "x": 7, "y": -7 }
+            ],
+            "point": 10,
+            "initPosition": { "x": -5, "y": 7 },
+            "generateTime": 11.8
+        },
+        {
+            "hp": 20,
+            "ap": 10,
+            "moveSpeed": 3,
+            "magnification": 2,
+            "moveTargetTable": [
+                { "x": -5, "y": 5 },
+                { "x": 0, "y": 3 },
+                { "x": 3, "y": 0 },
+                { "x": 7, "y": -7 }
+            ],
+            "point": 10,
+            "initPosition": { "x": -5, "y": 7 },
+            "generateTime": 12
         }
     ]
 }
