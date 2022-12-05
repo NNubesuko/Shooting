@@ -21,8 +21,9 @@ public class PlayerUI : MonoBehaviour {
 
     private void Update() {
         int currnetBullets = gunScript.MaxCount.Value - gunScript.Count.Value;
-        scoreText.text = $"Score: {playerScript.Score}";
-        bulletsCountText.text = $"Bullets : {currnetBullets} / {gunScript.MaxCount.Value}";
+        int maxBullets = gunScript.MaxCount.Value;
+        scoreText.text = $"スコア: {playerScript.Score}";
+        bulletsCountText.text = "残弾数: " + currnetBullets + " / " + maxBullets;
         playerHPBar.value = (float)playerScript.HP.Value / playerScript.HP.MAX;
         playerStaminaBar.value = (float)playerScript.Stamina.Value / playerScript.Stamina.MAX;
     }
