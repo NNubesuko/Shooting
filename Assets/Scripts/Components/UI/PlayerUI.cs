@@ -7,19 +7,24 @@ public class PlayerUI : MonoBehaviour {
 
     [SerializeField] private GameAdmin gameAdmin;
     [SerializeField] private Text scoreText;
+    [SerializeField] private Text bulletsCountText;
     [SerializeField] private Slider playerHPBar;
     [SerializeField] private Slider playerStaminaBar;
 
-    private Player playerMain;
+    private Player playerScript;
+    private Gun gunScript;
 
     private void Start() {
-        playerMain = gameAdmin.PlayerScript;
+        playerScript = gameAdmin.PlayerScript;
+        gunScript = gameAdmin.GunScript;
     }
 
     private void Update() {
-        scoreText.text = $"Score: {playerMain.Score}";
-        playerHPBar.value = (float)playerMain.HP.Value / playerMain.HP.MAX;
-        playerStaminaBar.value = (float)playerMain.Stamina.Value / playerMain.Stamina.MAX;
+        int currnetBullets = gunScript.MaxCount.Value - gunScript.Count.Value;
+        scoreText.text = $"Score: {playerScript.Score}";
+        bulletsCountText.text = $"Bullets : {currnetBullets} / {gunScript.MaxCount.Value}";
+        playerHPBar.value = (float)playerScript.HP.Value / playerScript.HP.MAX;
+        playerStaminaBar.value = (float)playerScript.Stamina.Value / playerScript.Stamina.MAX;
     }
 
 }
