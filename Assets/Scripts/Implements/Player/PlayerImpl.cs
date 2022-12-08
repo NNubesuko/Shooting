@@ -11,6 +11,8 @@ public class PlayerImpl : MonoBehaviour, Player {
     public PlayerMoveSpeed MoveSpeed { get; private set; }
     public PlayerEvasionSpeed EvasionSpeed { get; private set; }
     public PlayerEvasionDistance EvasionDistance { get; private set; }
+    public PlayerHorizontalMoveRange HorizontalMoveRange { get; private set; }
+    public PlayerVerticalMoveRange VerticalMoveRange { get; private set; }
     public PlayerScore Score { get; private set; } = PlayerScore.Of(0);
 
     private Vector2 evasionPosition;
@@ -26,13 +28,17 @@ public class PlayerImpl : MonoBehaviour, Player {
         PlayerStamina stamina,
         PlayerMoveSpeed moveSpeed,
         PlayerEvasionSpeed evasionSpeed,
-        PlayerEvasionDistance evasionDistance
+        PlayerEvasionDistance evasionDistance,
+        PlayerHorizontalMoveRange horizontalMoveRange,
+        PlayerVerticalMoveRange verticalMoveRange
     ) {
         HP = hp;
         Stamina = stamina;
         MoveSpeed = moveSpeed;
         EvasionSpeed = evasionSpeed;
         EvasionDistance = evasionDistance;
+        HorizontalMoveRange = horizontalMoveRange;
+        VerticalMoveRange = verticalMoveRange;
     }
 
     /*

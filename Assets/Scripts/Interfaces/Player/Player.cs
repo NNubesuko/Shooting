@@ -8,6 +8,8 @@ public interface Player : IMovable, IDamagable {
     PlayerMoveSpeed MoveSpeed { get; }
     PlayerEvasionSpeed EvasionSpeed { get; }
     PlayerEvasionDistance EvasionDistance { get; }
+    PlayerHorizontalMoveRange HorizontalMoveRange { get; }
+    PlayerVerticalMoveRange VerticalMoveRange { get; }
     PlayerScore Score { get; }
     bool IsDeath { get; }
 
@@ -19,7 +21,9 @@ public interface Player : IMovable, IDamagable {
         PlayerStamina stamina,
         PlayerMoveSpeed moveSpeed,
         PlayerEvasionSpeed evasionSpeed,
-        PlayerEvasionDistance evasionDistance
+        PlayerEvasionDistance evasionDistance,
+        PlayerHorizontalMoveRange horizontalMoveRange,
+        PlayerVerticalMoveRange verticalMoveRange
     );
 
     void AddScore(Point point);

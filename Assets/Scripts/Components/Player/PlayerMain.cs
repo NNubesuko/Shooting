@@ -11,6 +11,10 @@ public class PlayerMain : PlayerImpl {
     [SerializeField] private float evasionSpeed;
     [SerializeField] private float evasionDistance;
     [SerializeField] private float staminaConsumption;
+    [SerializeField] private float horizontalStart;
+    [SerializeField] private float horizontalEnd;
+    [SerializeField] private float verticalStart;
+    [SerializeField] private float verticalEnd;
 
     private void Awake() {
         Init(
@@ -18,7 +22,9 @@ public class PlayerMain : PlayerImpl {
             PlayerStamina.Of(stamina),
             PlayerMoveSpeed.Of(moveSpeed),
             PlayerEvasionSpeed.Of(evasionSpeed),
-            PlayerEvasionDistance.Of(evasionDistance)
+            PlayerEvasionDistance.Of(evasionDistance),
+            PlayerHorizontalMoveRange.Of(horizontalStart, horizontalEnd),
+            PlayerVerticalMoveRange.Of(verticalStart, verticalEnd)
         );
     }
 
