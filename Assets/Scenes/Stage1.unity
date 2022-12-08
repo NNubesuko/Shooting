@@ -869,6 +869,10 @@ MonoBehaviour:
   evasionSpeed: 20
   evasionDistance: 1.5
   staminaConsumption: 10
+  horizontalStart: -8.38
+  horizontalEnd: 8.38
+  verticalStart: -4.49
+  verticalEnd: 4.49
 --- !u!1 &729450066
 GameObject:
   m_ObjectHideFlags: 0
