@@ -53,13 +53,19 @@ namespace Tests {
             PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(5f);
             PlayerEvasionSpeed playerEvasionSpeed = PlayerEvasionSpeed.Of(20f);
             PlayerEvasionDistance playerEvasionDistance = PlayerEvasionDistance.Of(1.5f);
+            PlayerHorizontalMoveRange playerHorizontalMoveRange =
+                PlayerHorizontalMoveRange.Of(-10f, 10f);
+            PlayerVerticalMoveRange playerVerticalMoveRange =
+                PlayerVerticalMoveRange.Of(-10f, 10f);
 
             playerScript.Init(
                 playerHP,
                 playerStamina,
                 playerMoveSpeed,
                 playerEvasionSpeed,
-                playerEvasionDistance
+                playerEvasionDistance,
+                playerHorizontalMoveRange,
+                playerVerticalMoveRange
             );
 
             Assert.That(playerScript.HP, Is.EqualTo(playerHP));
@@ -67,6 +73,8 @@ namespace Tests {
             Assert.That(playerScript.MoveSpeed, Is.EqualTo(playerMoveSpeed));
             Assert.That(playerScript.EvasionSpeed, Is.EqualTo(playerEvasionSpeed));
             Assert.That(playerScript.EvasionDistance, Is.EqualTo(playerEvasionDistance));
+            Assert.That(playerScript.HorizontalMoveRange, Is.EqualTo(playerHorizontalMoveRange));
+            Assert.That(playerScript.VerticalMoveRange, Is.EqualTo(playerVerticalMoveRange));
             yield return null;
         }
 
