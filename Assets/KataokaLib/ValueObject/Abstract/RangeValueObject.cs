@@ -22,8 +22,7 @@ namespace KataokaLib.ValueObject {
                 end,
                 MIN,
                 MAX,
-                ValueObjectExceptionHandler.ArgumentException(nameof(start)),
-                ValueObjectExceptionHandler.ArgumentException(nameof(end))
+                ValueObjectExceptionHandler.ArgumentException(nameof(start) + ", " + nameof(end))
             );
 
             Start = start;

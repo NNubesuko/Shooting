@@ -18,11 +18,9 @@ namespace KataokaLib.ValueObject {
             T end,
             T MIN,
             T MAX,
-            Exception startException,
-            Exception endException
+            Exception exception
         ) {
-            if ((dynamic)start < (dynamic)MIN) throw startException;
-            if ((dynamic)end > (dynamic)MAX) throw endException;
+            if ((dynamic)start < (dynamic)MIN || (dynamic)end > (dynamic)MAX) throw exception;
         }
 
         public static Exception ArgumentException(string param) {
