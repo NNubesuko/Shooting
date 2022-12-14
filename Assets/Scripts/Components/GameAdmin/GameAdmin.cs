@@ -1,9 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using Systemk;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Systemk;
 
 public class GameAdmin : MonoBehaviour {
 
@@ -41,8 +42,23 @@ public class GameAdmin : MonoBehaviour {
     }
 
     private void ReturnTitleScene() {
-        PlayerScript.WhenGameOver();
+        PlayerScript.OnGameOver();
+        GunScript.OnGameOver();
+        OnGameEnd();
         SceneManager.LoadScene("Title");
+    }
+
+    private void OnGameEnd() {
+        player = null;
+        gun = null;
+        enemyAdmin = null;
+        gameOverPanel = null;
+        gameClearPanel = null;
+
+        PlayerScript = null;
+        GunScript = null;
+
+        GC.Collect();
     }
 
 }

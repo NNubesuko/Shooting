@@ -44,7 +44,11 @@ public class GunImpl : MonoBehaviour, Gun {
         Instantiate(BulletObject, transform.position, identity);
     }
 
-    private void OnDisable() {
+    /*
+     * 銃オブジェクトが非アクティブになった場合のメソッド
+     ! GameAdmin専用
+     */
+    public void OnGameOver() {
         BulletObject = null;
         MaxCount = null;
         Count = null;

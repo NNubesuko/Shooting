@@ -121,7 +121,7 @@ public class PlayerImpl : MonoBehaviour, Player {
      * プレイヤーオブジェクトが非アクティブになった場合のメソッド
      ! GameAdmin専用
      */
-    public void WhenGameOver() {
+    public void OnGameOver() {
         HP = null;
         Stamina = null;
         MoveSpeed = null;
