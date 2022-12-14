@@ -49,6 +49,11 @@ public class PlayerImpl : MonoBehaviour, Player {
 
         Vector2 velocity = transform.position;
         velocity += MoveSpeed * Inputk.GetAxis() * Time.deltaTime;
+
+        // 演算された位置が移動範囲外であれば、それぞれの最小値または最大値を格納し、位置を移動範囲に制限する
+        velocity.x = HorizontalMoveRange.WithinRange(velocity.x);
+        velocity.y = VerticalMoveRange.WithinRange(velocity.y);
+
         transform.position = velocity;
     }
 

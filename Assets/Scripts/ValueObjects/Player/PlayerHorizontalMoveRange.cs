@@ -7,4 +7,10 @@ public class PlayerHorizontalMoveRange : Range {
         return new PlayerHorizontalMoveRange(start, end);
     }
 
+    public float WithinRange(float horizontalPosition) {
+        if (horizontalPosition < Start) return Start;
+        if (horizontalPosition > End) return End;
+        return horizontalPosition;
+    }
+
 }

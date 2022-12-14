@@ -7,4 +7,10 @@ public class PlayerVerticalMoveRange : Range {
         return new PlayerVerticalMoveRange(start, end);
     }
 
+    public float WithinRange(float verticalPosition) {
+        if (verticalPosition < Start) return Start;
+        if (verticalPosition > End) return End;
+        return verticalPosition;
+    }
+
 }

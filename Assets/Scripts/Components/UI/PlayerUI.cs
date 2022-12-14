@@ -20,6 +20,7 @@ public class PlayerUI : MonoBehaviour {
     }
 
     private void Update() {
+
         int currnetBullets = gunScript.MaxCount.Value - gunScript.Count.Value;
         int maxBullets = gunScript.MaxCount.Value;
         scoreText.text = $"スコア: {playerScript.Score}";
