@@ -79,6 +79,9 @@ public class PlayerImpl : MonoBehaviour, Player {
      */
     public void Evasion(float staminaConsumption) {
         if (IsEvading) {
+            evasionPosition.x = HorizontalMoveRange.WithinRange(evasionPosition.x);
+            evasionPosition.y = VerticalMoveRange.WithinRange(evasionPosition.y);
+
             transform.position = Vector2.MoveTowards(
                 transform.position,
                 evasionPosition,
