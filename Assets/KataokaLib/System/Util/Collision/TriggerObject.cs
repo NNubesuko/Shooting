@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Systemk.Util {
+namespace KataokaLib.System {
 
     public abstract class TriggerObject : MonoBehaviour {
 

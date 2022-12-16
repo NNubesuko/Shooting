@@ -1,4 +1,4 @@
-using Systemk;
+using KataokaLib.System;
 
 /*
  * プレイヤーの体力のクラス

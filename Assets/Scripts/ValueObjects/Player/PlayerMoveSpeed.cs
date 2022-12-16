@@ -1,5 +1,4 @@
 using UnityEngine;
-using Systemk;
 
 /*
  * プレイヤーの移動速度のクラス

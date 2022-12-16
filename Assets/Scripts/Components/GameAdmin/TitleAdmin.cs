@@ -1,6 +1,6 @@
-using Systemk;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using KataokaLib.System;
 
 public class TitleAdmin : MonoBehaviour {
 

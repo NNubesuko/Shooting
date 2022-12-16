@@ -1,5 +1,4 @@
-using Systemk;
-using UnityEngine;
+using KataokaLib.System;
 
 /*
  * 敵の体力のクラス

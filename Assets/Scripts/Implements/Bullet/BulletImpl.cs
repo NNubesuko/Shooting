@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Systemk.Util;
+using KataokaLib.System;
 
 public class BulletImpl : TriggerObject, Bullet {
 

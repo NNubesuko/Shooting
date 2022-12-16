@@ -1,5 +1,4 @@
 using UnityEngine;
-using Systemk;
 
 /*
  * プレイヤーの回避距離のクラス

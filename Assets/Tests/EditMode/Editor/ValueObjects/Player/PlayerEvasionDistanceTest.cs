@@ -5,7 +5,6 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using KataokaLib.ValueObject;
-using Systemk;
 
 namespace Tests {
 

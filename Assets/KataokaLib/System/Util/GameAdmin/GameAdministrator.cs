@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Systemk {
+namespace KataokaLib.System {
 
     public class GameAdministrator {
 

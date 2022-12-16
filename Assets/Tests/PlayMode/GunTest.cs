@@ -4,7 +4,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.SceneManagement;
-using Systemk;
+using KataokaLib.System;
 
 namespace Tests {
 

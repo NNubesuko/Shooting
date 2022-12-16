@@ -2,8 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Systemk;
-using Systemk.Util;
+using KataokaLib.System;
 
 public class EnemyImpl : TriggerObject, Enemy {
 
