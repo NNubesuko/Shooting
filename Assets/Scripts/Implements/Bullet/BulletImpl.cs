@@ -36,11 +36,4 @@ public class BulletImpl : TriggerObject, Bullet {
         GC.Collect();
     }
 
-    // protected void GCHelper() {
-    //     AP = null;
-    //     MoveSpeed = null;
-
-    //     GC.Collect();
-    // }
-
 }
