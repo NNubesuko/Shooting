@@ -3,8 +3,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": -3, "y": 5 },
                 { "x": -3, "y": 2 },
@@ -17,8 +17,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 3, "y": 5 },
                 { "x": 3, "y": 2 },
@@ -31,8 +31,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": -4, "y": 5 },
                 { "x": -4, "y": 2 },
@@ -45,8 +45,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 4, "y": 5 },
                 { "x": 4, "y": 2 },
@@ -59,8 +59,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": -5, "y": 5 },
                 { "x": -5, "y": 2 },
@@ -73,8 +73,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 5, "y": 5 },
                 { "x": 5, "y": 2 },
@@ -90,8 +90,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": -5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -105,8 +105,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": -5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -120,8 +120,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": -5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -135,8 +135,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": -5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -150,8 +150,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": -5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -165,8 +165,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": -5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -180,8 +180,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": -5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -195,8 +195,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": -5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -210,8 +210,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": -5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -225,8 +225,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": -5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -240,8 +240,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": -5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -255,8 +255,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": -5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -270,8 +270,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": -5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -285,8 +285,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": -5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -300,8 +300,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": -5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -318,8 +318,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -333,8 +333,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -348,8 +348,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -363,8 +363,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -378,8 +378,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -393,8 +393,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -408,8 +408,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -423,8 +423,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -438,8 +438,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -453,8 +453,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -468,8 +468,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -483,8 +483,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -498,8 +498,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -513,8 +513,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -528,8 +528,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 5, "y": 5 },
                 { "x": 0, "y": 3 },
@@ -545,8 +545,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 0, "y": 3 },
                 { "x": -10, "y": -7 }
@@ -558,8 +558,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 0, "y": 3 },
                 { "x": 10, "y": -7 }
@@ -571,8 +571,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 0, "y": 3 },
                 { "x": -10, "y": -7 }
@@ -584,8 +584,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 0, "y": 3 },
                 { "x": 10, "y": -7 }
@@ -597,8 +597,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 0, "y": 3 },
                 { "x": -10, "y": -7 }
@@ -610,8 +610,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 0, "y": 3 },
                 { "x": 10, "y": -7 }
@@ -626,8 +626,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 0, "y": 5 },
                 { "x": -5, "y": 0 },
@@ -642,8 +642,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 0, "y": 5 },
                 { "x": 5, "y": 0 },
@@ -658,8 +658,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 0, "y": 5 },
                 { "x": -5, "y": 0 },
@@ -674,8 +674,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 0, "y": 5 },
                 { "x": 5, "y": 0 },
@@ -690,8 +690,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 0, "y": 5 },
                 { "x": -5, "y": 0 },
@@ -706,8 +706,8 @@
         {
             "hp": 20,
             "ap": 10,
-            "moveSpeed": 3,
-            "magnification": 2,
+            "moveSpeed": 4,
+            "magnification": 1,
             "moveTargetTable": [
                 { "x": 0, "y": 5 },
                 { "x": 5, "y": 0 },

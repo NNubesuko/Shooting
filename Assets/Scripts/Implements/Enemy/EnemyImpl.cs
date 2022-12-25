@@ -22,6 +22,8 @@ public class EnemyImpl : TriggerObject, Enemy {
     private GameAdmin gameAdmin;
     private Player playerMain;
 
+    private Vector2 lastPosition;
+
     /*
      * ステータスを初期化するメソッド
      */
@@ -51,11 +53,16 @@ public class EnemyImpl : TriggerObject, Enemy {
     public void Move() {
         target = MoveTargetTable[index];
 
-        Vector2 velocity = transform.position;
+        Vector2 velocity = lastPosition = transform.position;
         p += MoveSpeed * (target - velocity) * Time.deltaTime;
         p -= Magnification * p * Time.deltaTime;
         velocity += p * Time.deltaTime;
         transform.position = velocity;
+
+        Vector2 diff = velocity - lastPosition;
+        if (diff != Vector2.zero) {
+            transform.rotation = Quaternion.FromToRotation(Vector2.down, diff);
+        }
 
         tableChangeTimer.Update(() => {
             tableChangeTimer.Reset();
