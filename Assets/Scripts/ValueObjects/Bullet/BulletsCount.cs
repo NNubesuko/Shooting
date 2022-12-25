@@ -7,6 +7,10 @@ public class BulletsCount : Count {
         return new BulletsCount(value);
     }
 
+    public static BulletsCount operator-(BulletsMaxCount maxCount, BulletsCount count) {
+        return new BulletsCount(maxCount.Value - count.Value);
+    }
+
     public static BulletsCount operator++(BulletsCount count) {
         return new BulletsCount(count.Value + 1);
     }
