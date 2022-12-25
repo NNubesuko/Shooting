@@ -34,6 +34,10 @@ namespace KataokaLib.ValueObject {
             return $"{Start}, {End}";
         }
 
+        public (T start, T end) ToValue() {
+            return (Start, End);
+        }
+
         public override int GetHashCode() {
             return (Start, End, MIN, MAX).GetHashCode();
         }
