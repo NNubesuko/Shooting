@@ -22,7 +22,7 @@ public class PlayerUI : MonoBehaviour {
     private void Update() {
         int currnetBullets = (gunScript.MaxCount - gunScript.Count).ToValue();
         int maxBullets = gunScript.MaxCount.ToValue();
-        scoreText.text = $"スコア: {playerScript.Score}";
+        scoreText.text = "スコア: " + playerScript.Score;
         bulletsCountText.text = "残弾数: " + currnetBullets + " / " + maxBullets;
         playerHPBar.value = (float)playerScript.HP.ToValue() / playerScript.HP.MAX;
         playerStaminaBar.value = (float)playerScript.Stamina.ToValue() / playerScript.Stamina.MAX;
