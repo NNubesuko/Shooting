@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1691608029}
-  f: 1
+  f: 0.5
   z: 1
   r: 0
   curve:
