@@ -5,6 +5,7 @@ using KataokaLib.System;
 public class TitleAdmin : MonoBehaviour {
 
     private void Awake() {
+        GameAdministrator.DisableDebugLog();
         GameAdministrator.DisplayCursor();
     }
 

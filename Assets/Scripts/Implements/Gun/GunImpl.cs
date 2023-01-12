@@ -54,7 +54,7 @@ public class GunImpl : MonoBehaviour, Gun {
         Count = null;
         Rate = null;
 
-        GC.Collect();
+        GameAdministrator.GarbageCollect();
     }
 
 }

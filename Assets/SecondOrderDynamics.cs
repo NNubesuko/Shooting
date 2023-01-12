@@ -5,7 +5,9 @@ using UnityEngine;
 // semi-implicit euler method
 // y + k1y. + k2y.. = x + k3x.
 // y(t) + k1y'(t) + k2y"(t) = x(t) + k3x'(t)
+
 // y + k1 (dy/dt) + k2 (d^2y/dt^2) = x + k3 (dx/dt)
+
 // (dy/dt), (dx/dt) -> 角速度などで使用される微分
 
 // y -> playerResultPosition

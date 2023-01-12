@@ -24,7 +24,7 @@ public class Test : MonoBehaviour {
             f,
             z,
             r,
-            Time.deltaTime * moveSpeed,
+            moveSpeed * Time.deltaTime,
             target.position
         );
 

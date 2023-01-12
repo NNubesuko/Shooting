@@ -131,7 +131,7 @@ public class PlayerImpl : MonoBehaviour, Player {
         EvasionSpeed = null;
         EvasionDistance = null;
 
-        GC.Collect();
+        GameAdministrator.GarbageCollect();
     }
 
 }

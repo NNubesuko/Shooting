@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.Scripting;
 
 namespace KataokaLib.System {
 
@@ -14,6 +16,18 @@ namespace KataokaLib.System {
 
         public static void HiddenCursor() {
             Cursor.visible = false;
+        }
+
+        public static void EableDebugLog() {
+            Debug.unityLogger.logEnabled = true;
+        }
+
+        public static void DisableDebugLog() {
+            Debug.unityLogger.logEnabled = false;
+        }
+
+        public static void GarbageCollect() {
+            GC.Collect();
         }
 
         public static void QuitGame() {

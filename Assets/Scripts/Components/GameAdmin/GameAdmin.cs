@@ -19,6 +19,7 @@ public class GameAdmin : MonoBehaviour {
 
     private void Awake() {
         GameAdministrator.SetFPS(60);
+        GameAdministrator.DisableDebugLog();
         GameAdministrator.HiddenCursor();
 
         PlayerScript = player.GetComponent<PlayerMain>();
@@ -58,7 +59,7 @@ public class GameAdmin : MonoBehaviour {
         PlayerScript = null;
         GunScript = null;
 
-        GC.Collect();
+        GameAdministrator.GarbageCollect();
     }
 
 }

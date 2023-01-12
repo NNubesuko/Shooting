@@ -106,7 +106,7 @@ public class EnemyImpl : TriggerObject, Enemy {
 
         tableChangeTimer = null;
 
-        GC.Collect();
+        GameAdministrator.GarbageCollect();
     }
 
 }

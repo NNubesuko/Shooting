@@ -33,7 +33,7 @@ public class BulletImpl : TriggerObject, Bullet {
         AP = null;
         MoveSpeed = null;
 
-        GC.Collect();
+        GameAdministrator.GarbageCollect();
     }
 
 }
