@@ -46,7 +46,9 @@ public class GameAdmin : MonoBehaviour {
         PlayerScript.OnGameOver();
         GunScript.OnGameOver();
         OnGameEnd();
-        SceneManager.LoadScene("Title");
+
+        Resources.UnloadUnusedAssets();
+        SceneManager.LoadSceneAsync("Title");
     }
 
     private void OnGameEnd() {

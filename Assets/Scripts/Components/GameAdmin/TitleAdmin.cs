@@ -10,6 +10,8 @@ public class TitleAdmin : MonoBehaviour {
     }
 
     public void OnClickStage1Button() {
+        GameAdministrator.GarbageCollect();
+        Resources.UnloadUnusedAssets();
         SceneManager.LoadScene("Stage1");
     }
 
