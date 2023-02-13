@@ -1,6 +1,11 @@
 // ! c# 11 のジェネリクス同士の演算に対応できたら、対応したい
 // * dynamicを使用した演算では、演算結果が未知数なことが多いため
 
+/*
+.NET7.0をインストールし、Visual Studioでインターフェースと抽象クラスをdllファイルで
+提供したが、System.Runtime.dllのバージョンによる互換性がなく、動かなかった
+*/
+
 using System;
 
 namespace KataokaLib.ValueObject {
