@@ -28,7 +28,8 @@ public class GameAdmin : MonoBehaviour {
 
     private void Update() {
         if (Input.GetKeyDown(KeyCode.Escape)) {
-            GameAdministrator.QuitGame();
+            Resources.UnloadUnusedAssets();
+            SceneManager.LoadSceneAsync("Title");
         }
 
         if (PlayerScript.IsDeath) {
