@@ -66,11 +66,6 @@ namespace KataokaLib.Extension
             {
                 moved?.Invoke(movedAsset);
             }
-            
-            imported = null;
-            updated = null;
-            deleted = null;
-            moved = null;
         }
         
         private static void OnApplicationFocused()
