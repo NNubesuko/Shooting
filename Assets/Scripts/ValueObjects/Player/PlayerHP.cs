@@ -1,8 +1,10 @@
+using KataokaLib.AutoTest;
 using KataokaLib.System;
 
 /*
  * プレイヤーの体力のクラス
  */
+[ValueObject("Player")]
 public class PlayerHP : HP {
 
     private PlayerHP(int value) : base(value, 0, 100) {

@@ -1,4 +1,5 @@
 ﻿using System;
+using KataokaLib.AutoTest;
 using NUnit.Framework;
 
 namespace Tests.Editor.ValueObjects

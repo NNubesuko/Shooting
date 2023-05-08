@@ -50,11 +50,9 @@ namespace KataokaLib.Extension
                 // Unity外から戻ってきた場合には、delayCallまでの間に_needReloadingにtrueが代入される
                 _needReloading = false;
                 EditorApplication.delayCall += OnAssetImported;
-            }
-
-            foreach (var updatedAsset in importedAssets)
-            {
-                updated?.Invoke(updatedAsset);
+                
+                // importedとUpdatedは、同じパスを使用するため同じループ内で処理する
+                updated?.Invoke(importedAsset);
             }
 
             foreach (var deletedAsset in deletedAssets)
