@@ -1,6 +1,6 @@
-﻿namespace KataokaLib.AutoTest.ReplaceObjects
+﻿namespace KataokaLib.AutoTest
 {
-    public sealed class ClassName : IReplaceObject
+    public class ClassName
     {
         public string Value { get; private set; }
 

@@ -1,46 +1,19 @@
 ﻿using System.Text;
+using System.Text.RegularExpressions;
+using UnityEngine;
 
 /*
 
-ClassName = PlayerHp
- - value: string
-
-TestCases = { [TestCase(0)], [TestCase(50)], [TestCase(100)] }
- - cases: List
-
-DescriptionText = [正常] 渡された値が最小値以上かつ最大値以下である場合に、値が格納されること
-- value: string
-
-Argument = int value
- - type: string
- - value: string
-
-FieldName = playerHp
- - value: string
-
-public class <ClassName>
+[Description("<Description>")]
+public class <ClassName>Test
 {
-    * GetOnValidArgument
     [Test]
     <TestCases>
-    [Description("<DescriptionText>")]
-    public void OnValidArgument(<Argument>)
+    [Description("<Description>")]
+    public void <MethodName>(<ArgumentType>)
     {
-        <ClassName> <FieldName> = <ClassName>.Of(<Argument.value>);
-        Assert.That(<FieldName>, Is.Equals(<ClassName>.Of(<Argument.value>)));
-    }
-    
-    * GetOnInvalidArgument
-    [Test]
-    <TestCases>
-    [Description("<DescriptionText>")]
-    public void OnInvalidArgument(<Argument.type> <Argument.value>)
-    {
-        Assert.That(() =>
-            {
-                <ClassName> <FieldName> = <ClassName>.Of(<Argument.value>);
-            },
-            Throws.Type<ArgumentException>());
+        <ClassName> fieldName = <ClassName>.Of(value);
+        Assert.That(fieldName, Is.Equals(<ClassName>.Of(value)));
     }
 }
 
@@ -50,10 +23,57 @@ namespace KataokaLib.AutoTest
 {
     public class ValueObjectTestFormat
     {
+        private string _className;
+        
+        public ValueObjectTestFormat(string className)
+        {
+            _className = className;
+        }
+        
+        public string GetClass()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("[Description(\"<ClassName>のテスト\")]").Append("\n");
+            sb.Append("public class <ClassName>Test").Append("\n");
+            sb.Append("{").Append("\n");
+            sb.Append("<Tests>").Append("\n");
+            sb.Append("}").Append("\n");
+
+            string res = Regex.Match(sb.ToString(), "<.*>", RegexOptions.Multiline).Value;
+            Debug.Log(res);
+
+            return sb.ToString();
+        }
+        
         public string GetOnValidArgument()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("");
+            sb.Append("\t[Test]").Append("\n");
+            sb.Append("\t<TestCases>").Append("\n");
+            sb.Append("\t[Description(\"<Description>\")]").Append("\n");
+            sb.Append("\tpublic void OnValidArgument(<Argument>)").Append("\n");
+            sb.Append("\t{").Append("\n");
+            sb.Append("\t\t<ClassName> <FieldName> = <ClassName>.Of(<Argument.value>);").Append("\n");
+            sb.Append("\t\tAssert.That(<FieldName>, Is.Equals(<ClassName>.Of(<Argument.value>)));").Append("\n");
+            sb.Append("\t}").Append("\n");
+
+            return sb.ToString();
+        }
+
+        public string GetOnInvalidArgument()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("\t[Test]").Append("\n");
+            sb.Append("\t<TestCases>").Append("\n");
+            sb.Append("\t[Description(\"<Description>\")]").Append("\n");
+            sb.Append("\tpublic void OnInvalidArgument(<Argument>)").Append("\n");
+            sb.Append("\t{").Append("\n");
+            sb.Append("\t\tAssert.That(() =>").Append("\n");
+            sb.Append("\t\t\t{").Append("\n");
+            sb.Append("\t\t\t\t<ClassName> <FieldName> = <ClassName>.Of(<Argument.value>);").Append("\n");
+            sb.Append("\t\t\t},").Append("\n");
+            sb.Append("\t\t\tThrows.Type<ArgumentException>());").Append("\n");
+            sb.Append("\t}").Append("\n");
 
             return sb.ToString();
         }
