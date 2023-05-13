@@ -56,13 +56,11 @@ public void TestMethod(引数) {
     :
 [Description("[異常] テスト内容")]
 public void TestMethod(引数) {
-    var exception = Assert.Throws<ArgumentException>(() => {
-        TestClass testClass = TestClass.Of(引数);
-    });
-
-    Assert.That(
-        exception.Message,
-        Is.EqualTo(ExceptionMessage.argumentExceptionMessage)
+    Assert.That(() =>
+        {
+            TestClass testClass = TestClass.Of(引数);
+        },
+        Throws.Type<ArgumentException>()
     );
 }
 ```
