@@ -20,7 +20,7 @@ namespace Tests.Editor.ValueObjects
                 playerHp,
                 Is.EqualTo(PlayerHP.Of(value)));
         }
-
+        
         [Test]
         [TestCase(int.MinValue)]
         [TestCase(-1)]
