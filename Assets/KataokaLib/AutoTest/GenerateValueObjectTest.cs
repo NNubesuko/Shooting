@@ -55,14 +55,9 @@ namespace KataokaLib.AutoTest
                 program,
                 $"static {type.Name} Of *\\(",
                 RegexOptions.Multiline);
-            
+
             return existConstructor & existOfMethod;
         }
-
-        private static bool ExistAddOperator(string program) => ExistOperator(program, "+");
-        private static bool ExistSubOperator(string program) => ExistOperator(program, "-");
-        private static bool ExistMulOperator(string program) => ExistOperator(program, "*");
-        private static bool ExistDivOperator(string program) => ExistOperator(program, "/");
 
         private static bool ExistOperator(string program, string operatorType)
         {
@@ -71,5 +66,10 @@ namespace KataokaLib.AutoTest
                 $"operator *\\{operatorType} *\\(",
                 RegexOptions.Multiline);
         }
+        
+        private static bool ExistAddOperator(string program) => ExistOperator(program, "+");
+        private static bool ExistSubOperator(string program) => ExistOperator(program, "-");
+        private static bool ExistMulOperator(string program) => ExistOperator(program, "*");
+        private static bool ExistDivOperator(string program) => ExistOperator(program, "/");
     }
 }
