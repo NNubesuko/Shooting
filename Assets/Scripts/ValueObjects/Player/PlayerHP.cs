@@ -4,7 +4,7 @@ using KataokaLib.System;
 /*
  * プレイヤーの体力のクラス
  */
-[ValueObject("Player")]
+[ValueObject("Player", 0, 100)]
 public class PlayerHP : HP {
 
     private PlayerHP(int value) : base(value, 0, 100) {

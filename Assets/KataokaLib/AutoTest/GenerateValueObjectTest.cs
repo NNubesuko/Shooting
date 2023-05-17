@@ -1,102 +1,75 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Text;
-using KataokaLib.Extension;
+using System.Text.RegularExpressions;
 using UnityEditor;
 using UnityEngine;
-
-/*
- * TypeCacheより、ValueObjectAttributeがついているオブジェクトを取得できた
- * テストを作成する場所のパスを持ってくる（Player●●やEnemy●●と統一すれば、フォルダも自動作成）
- *
- * 
- * オブジェクトのテストがあるか確認
- * 無ければ生成する
- */
 
 namespace KataokaLib.AutoTest
 {
     [InitializeOnLoad]
     public class GenerateValueObjectTest
     {
-        private static string path = Application.dataPath + "/KataokaLib/AutoTest/";
-
         static GenerateValueObjectTest()
         {
-            var typeCollection = TypeCache.GetTypesWithAttribute<ValueObjectAttribute>();
-            foreach (var type in typeCollection)
+            // 値オブジェクト用のアトリビュートがついている型（クラス）を取得する
+            TypeCache.TypeCollection typeCollection = TypeCache.GetTypesWithAttribute<ValueObjectAttribute>();
+            foreach (Type type in typeCollection)
             {
                 ValueObjectAttribute valueObjectAttribute = type.GetCustomAttribute<ValueObjectAttribute>();
+                
+                // Assets/Scripts/ValueObjects/{DirectoryName}/{ClassName}.cs
+                // 値オブジェクトのアトリビュートがついているクラスまでのパスを作成する
                 StringBuilder filePath = new StringBuilder();
                 filePath.Append(Application.dataPath)
                     .Append("/Scripts/ValueObjects/")
                     .Append(valueObjectAttribute.directoryName).Append("/")
                     .Append(type.Name).Append(".cs");
 
+                // クラスのcsファイルを読み込む
                 using (StreamReader sr = new StreamReader(filePath.ToString(), Encoding.UTF8))
                 {
                     string program = sr.ReadToEnd();
-                    Debug.Log(program);
+                    // クラス名
+                    Debug.Log(type.Name);
+                    // クラスのプログラム
+                    Debug.Log(program);//
+
+                    Debug.Log("Exist Constructor: " + ExistConstructor(program, type));
+                    Debug.Log("Exist Add Operator: " + ExistAddOperator(program));
+                    Debug.Log("Exist Sub Operator: " + ExistSubOperator(program));
+                    Debug.Log("Exist Mul Operator: " + ExistMulOperator(program));
+                    Debug.Log("Exist Div Operator: " + ExistDivOperator(program));
                 }
-
-                // ValueObjectTestFormat valueFormat = new ValueObjectTestFormat(type.Name);
-
-                // string directoryPath = CreateDirectory(type);
-                // string filePath = CreateTestFile(type, directoryPath);
             }
-
-            // string className = "PlayerHp";
-            // string fieldName = className.Replace(className[0..1], className[0..1].ToLower());
-            //
-            // StringBuilder sb = new StringBuilder();
-            // sb.Append("public class <ClassName>\n");
-            // sb.Append("{\n");
-            // sb.Append("\t[Test]\n");
-            // sb.Append("\t[Description(\"[正常] 渡された値が最小値以上かつ最大値以下である場合に、正常に格納されること\")]\n");
-            // sb.Append("\tpublic void OnValidArgument(int value)\n");
-            // sb.Append("\t{\n");
-            // sb.Append("\t\t<ClassName> <FieldName> = <ClassName>.Of(value);\n");
-            // sb.Append("\t\tAssert.That(<FieldName>, Is.Equals(<ClassName>.Of(value)));\n");
-            // sb.Append("\t}\n");
-            // sb.Append("}");
-            //
-            // string program = sb.ToString()
-            //     .Replace("<ClassName>", className)
-            //     .Replace("<FieldName>", fieldName);
-            // Debug.Log(program);
-
-            // AssetPostprocessBase.imported += OnImported;
         }
 
-        private static string CreateDirectory(Type type)
+        private static bool ExistConstructor(string program, Type type)
         {
-            ValueObjectAttribute valueObjectAttribute = type.GetCustomAttribute<ValueObjectAttribute>();
-            string directoryPath = path + valueObjectAttribute.directoryName;
+            bool existConstructor = Regex.IsMatch(
+                program,
+                $".* {type.Name} *\\(",
+                RegexOptions.Multiline);
+            bool existOfMethod = Regex.IsMatch(
+                program,
+                $"static {type.Name} Of *\\(",
+                RegexOptions.Multiline);
             
-            if (!Directory.Exists(directoryPath))
-            {
-                Directory.CreateDirectory(directoryPath);
-            }
-
-            return directoryPath;
+            return existConstructor & existOfMethod;
         }
 
-        private static string CreateTestFile(Type type, string directoryPath)
-        {
-            string filePath = directoryPath + "/" + type.Name + "Test.cs";
-            if (!File.Exists(filePath))
-            {
-                File.Create(filePath);
-            }
+        private static bool ExistAddOperator(string program) => ExistOperator(program, "+");
+        private static bool ExistSubOperator(string program) => ExistOperator(program, "-");
+        private static bool ExistMulOperator(string program) => ExistOperator(program, "*");
+        private static bool ExistDivOperator(string program) => ExistOperator(program, "/");
 
-            return filePath;
-        }
-
-        private static void OnImported(string importedAsset)
+        private static bool ExistOperator(string program, string operatorType)
         {
-            Debug.Log(importedAsset);
+            return Regex.IsMatch(
+                program,
+                $"operator *\\{operatorType} *\\(",
+                RegexOptions.Multiline);
         }
     }
 }
