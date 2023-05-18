@@ -1,18 +1,25 @@
 ﻿using System;
-using System.DirectoryServices.Protocols;
 using System.IO;
 using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using KataokaLib.Extension.Directory;
 using KataokaLib.Extension.File;
-using log4net.Appender;
 using UnityEditor;
 using UnityEngine;
-using Object = System.Object;
 
 namespace KataokaLib.AutoTest
 {
+    [Flags]
+    public enum ValueObjectsTestType : byte
+    {
+        Constructor     = 1 << 0,
+        Add             = 1 << 1,
+        Sub             = 1 << 2,
+        Mul             = 1 << 3,
+        Div             = 1 << 4,
+    }
+    
     [InitializeOnLoad]
     public class GenerateValueObjectTest
     {
@@ -57,27 +64,50 @@ namespace KataokaLib.AutoTest
                     DirectoryExtension.Create(testDirectoryPath);
                     FileExtension.Create(testFilePath);
 
-                    string classProgram = ValueObjectTestTemplate.CreateTestClass(className);
-                    Debug.Log(classProgram);
-                    
-                    string validMethod = ValueObjectTestTemplate.CreateOnValidArgumentTest(
-                        valueObjectAttribute.min,
-                        valueObjectAttribute.max,
-                        valueObjectAttribute.valueType,
-                        className);
-                    Debug.Log(validMethod);
+                    byte insertPrograms = 0b0000_0000;
+                    insertPrograms |= ExistConstructor(program, type);
+                    insertPrograms |= ExistAddOperator(program);
+                    insertPrograms |= ExistSubOperator(program);
+                    insertPrograms |= ExistMulOperator(program);
+                    insertPrograms |= ExistDivOperator(program);
 
-                    string invalidMethod = ValueObjectTestTemplate.CreateOnInvalidArgumentTest(
-                        valueObjectAttribute.min,
-                        valueObjectAttribute.max,
-                        valueObjectAttribute.valueType,
-                        className);
-                    Debug.Log(invalidMethod);
+                    Array valueObjectsTestType = typeof(ValueObjectsTestType).GetEnumValues();
+                    for (int i = 0; i < valueObjectsTestType.Length; i++)
+                    {
+                        if ( (insertPrograms & (byte)valueObjectsTestType.GetValue(i)) != 0 )
+                        {
+                            
+                        }
+                    }
+
+                    // string classProgram = ValueObjectTestTemplate.CreateTestClass(className);
+                    // Debug.Log(classProgram);
+
+                    // string validMethod = ValueObjectTestTemplate.CreateOnValidArgumentTest(
+                    //     valueObjectAttribute.min,
+                    //     valueObjectAttribute.max,
+                    //     valueObjectAttribute.valueType,
+                    //     className);
+                    // // Debug.Log(validMethod);
+                    //
+                    // string invalidMethod = ValueObjectTestTemplate.CreateOnInvalidArgumentTest(
+                    //     valueObjectAttribute.min,
+                    //     valueObjectAttribute.max,
+                    //     valueObjectAttribute.valueType,
+                    //     className);
+                    // // Debug.Log(invalidMethod);
+                    //
+                    // // テストメソッドを挿入する位置を取得する
+                    // int insertIndex = classProgram.LastIndexOf("\t}\n");
+                    // Debug.Log(classProgram.Substring(0, insertIndex - 1));
+                    // Debug.Log(classProgram.Substring(insertIndex));
+
+
                 }
             }
         }
 
-        private static bool ExistConstructor(string program, Type type)
+        private static byte ExistConstructor(string program, Type type)
         {
             bool existConstructor = Regex.IsMatch(
                 program,
@@ -88,20 +118,35 @@ namespace KataokaLib.AutoTest
                 $"static {type.Name} Of *\\(",
                 RegexOptions.Multiline);
 
-            return existConstructor & existOfMethod;
+            if (existConstructor & existOfMethod)
+            {
+                return (byte)ValueObjectsTestType.Constructor;
+            }
+
+            return 1 >> 1;
         }
 
-        private static bool ExistOperator(string program, string operatorType)
+        private static byte ExistOperator(
+            string program,
+            string operatorType,
+            ValueObjectsTestType valueObjectsTestType)
         {
-            return Regex.IsMatch(
+            bool existOperator = Regex.IsMatch(
                 program,
                 $"operator *\\{operatorType} *\\(",
                 RegexOptions.Multiline);
+
+            if (existOperator)
+            {
+                return (byte)valueObjectsTestType;
+            }
+
+            return 1 >> 1;
         }
         
-        private static bool ExistAddOperator(string program) => ExistOperator(program, "+");
-        private static bool ExistSubOperator(string program) => ExistOperator(program, "-");
-        private static bool ExistMulOperator(string program) => ExistOperator(program, "*");
-        private static bool ExistDivOperator(string program) => ExistOperator(program, "/");
+        private static byte ExistAddOperator(string program) => ExistOperator(program, "+", ValueObjectsTestType.Add);
+        private static byte ExistSubOperator(string program) => ExistOperator(program, "-", ValueObjectsTestType.Sub);
+        private static byte ExistMulOperator(string program) => ExistOperator(program, "*", ValueObjectsTestType.Mul);
+        private static byte ExistDivOperator(string program) => ExistOperator(program, "/", ValueObjectsTestType.Div);
     }
 }
