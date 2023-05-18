@@ -57,54 +57,24 @@ namespace KataokaLib.AutoTest
                     DirectoryExtension.Create(testDirectoryPath);
                     FileExtension.Create(testFilePath);
 
-                    string classProgram = CreateTestClass(className);
+                    string classProgram = ValueObjectTestTemplate.CreateTestClass(className);
                     Debug.Log(classProgram);
-                    string me = CreateOnValidArgumentTest(
+                    
+                    string validMethod = ValueObjectTestTemplate.CreateOnValidArgumentTest(
                         valueObjectAttribute.min,
                         valueObjectAttribute.max,
                         valueObjectAttribute.valueType,
                         className);
-                    Debug.Log(me);
+                    Debug.Log(validMethod);
+
+                    string invalidMethod = ValueObjectTestTemplate.CreateOnInvalidArgumentTest(
+                        valueObjectAttribute.min,
+                        valueObjectAttribute.max,
+                        valueObjectAttribute.valueType,
+                        className);
+                    Debug.Log(invalidMethod);
                 }
             }
-        }
-
-        private static string CreateTestClass(string className)
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.Append("using System;").Append("\n")
-                .Append("using NUnit.Framework;").Append("\n")
-                .Append("using KataokaLib.ValueObject;").Append("\n")
-                .Append("\n")
-                .Append("namespace Tests {").Append("\n")
-                .Append("\n")
-                .Append("\t[Description(\"").Append(className).Append("のテスト\")]\n")
-                .Append("\tpublic class ").Append(className).Append("Test {\n")
-                .Append("\t}").Append("\n")
-                .Append("\n")
-                .Append("}");
-
-            return sb.ToString();
-        }
-
-        private static string CreateOnValidArgumentTest(Object min, Object max, Type valueType, string className)
-        {
-            string fieldName = className.Substring(0, 1).ToLower() + className.Substring(1);
-            Object ave = ((dynamic)min + (dynamic)max) / 2;
-            
-            StringBuilder sb = new StringBuilder();
-            sb.Append("\t\t[Test]").Append("\n")
-                .Append($"\t\t[TestCase({min})]").Append("\n")
-                .Append($"\t\t[TestCase({ave})]").Append("\n")
-                .Append($"\t\t[TestCase({max})]").Append("\n")
-                .Append("\t\t[Description(\"[正常] 渡された値が最小値以上かつ最大値以下である場合に、正常に格納されること\")]").Append("\n")
-                .Append($"\t\tpublic void OnValidArgument({valueType.Name} value)").Append("\n")
-                .Append("\t\t{").Append("\n")
-                .Append($"\t\t\t{className} {fieldName} = {className}.Of(value);").Append("\n")
-                .Append($"\t\t\tAssert.That({fieldName}, Is.EqualTo({className}.Of(value)));").Append("\n")
-                .Append("\t\t}").Append("\n");
-
-            return sb.ToString();
         }
 
         private static bool ExistConstructor(string program, Type type)
