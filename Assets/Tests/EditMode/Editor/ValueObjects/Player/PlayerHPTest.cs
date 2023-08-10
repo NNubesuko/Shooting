@@ -13,8 +13,8 @@ namespace Tests {
         [TestCase(100)]
         [Description("[正常] 渡された値が最小値以上かつ最大値以下である場合に、正常に格納されること")]
         public void ValidPlayerHP(int value) {
-            PlayerHP playerHP = PlayerHP.Of(value);
-            Assert.That(playerHP, Is.EqualTo(PlayerHP.Of(value)));
+            PlayerHp playerHP = PlayerHp.Of(value);
+            Assert.That(playerHP, Is.EqualTo(PlayerHp.Of(value)));
         }
 
         [Test]
@@ -25,7 +25,7 @@ namespace Tests {
         [Description("[異常] 渡された値が最小値未満または最大値より大きい場合に、スローが投げられること")]
         public void InvalidPlayerHP(int value) {
             var exception = Assert.Throws<ArgumentException>(() => {
-                PlayerHP playerHP = PlayerHP.Of(value);
+                PlayerHp playerHP = PlayerHp.Of(value);
             });
 
             Assert.That(
@@ -42,14 +42,14 @@ namespace Tests {
         [TestCase(20, 10)]
         [Description("[正常] 攻撃力と減算した場合に、プレイヤーの体力が格納されること")]
         public void ValidPlayerHPSubAP(int hp, int ap) {
-            PlayerHP playerHP = PlayerHP.Of(hp);
+            PlayerHp playerHP = PlayerHp.Of(hp);
             EnemyAP enemyAP = EnemyAP.Of(ap);
-            PlayerHP plyaerHPSubAp = playerHP - enemyAP;
+            PlayerHp plyaerHPSubAp = playerHP - enemyAP;
 
             Assert.That(
                 plyaerHPSubAp,
                 Is.EqualTo(
-                    PlayerHP.Of(hp - ap)
+                    PlayerHp.Of(hp - ap)
                 )
             );
         }
@@ -62,13 +62,13 @@ namespace Tests {
             "[正常] 攻撃力と減算した結果が最小値より小さい場合に、プレイヤー体力の最小値が格納されること"
         )]
         public void ValidPlayerHPSubAPOverMin(int hp, int ap) {
-            PlayerHP playerHP = PlayerHP.Of(hp);
+            PlayerHp playerHP = PlayerHp.Of(hp);
             EnemyAP enemyAP = EnemyAP.Of(ap);
-            PlayerHP playerHPSubAp = playerHP - enemyAP;
+            PlayerHp playerHPSubAp = playerHP - enemyAP;
 
             Assert.That(
                 playerHPSubAp,
-                Is.EqualTo(PlayerHP.Of(playerHPSubAp.MIN))
+                Is.EqualTo(PlayerHp.Of(playerHPSubAp.MIN))
             );
         }
 

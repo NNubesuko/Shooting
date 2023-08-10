@@ -3,7 +3,7 @@ public interface Player : IMovable, IDamagable {
     /*
      * プレイヤーのステータスプロパティ
      */
-    PlayerHP HP { get; }
+    PlayerHp HP { get; }
     PlayerStamina Stamina { get; }
     PlayerMoveSpeed MoveSpeed { get; }
     PlayerEvasionSpeed EvasionSpeed { get; }
@@ -17,7 +17,7 @@ public interface Player : IMovable, IDamagable {
      * ステータスの初期化
      */
     void Init(
-        PlayerHP hp,
+        PlayerHp hp,
         PlayerStamina stamina,
         PlayerMoveSpeed moveSpeed,
         PlayerEvasionSpeed evasionSpeed,

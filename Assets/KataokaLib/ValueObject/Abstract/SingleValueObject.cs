@@ -7,14 +7,14 @@
 */
 
 using System;
+using UnityEngine;
 
 namespace KataokaLib.ValueObject {
-
+    
     public abstract class SingleValueObject<T> :
         ISingleValueObject<T>,
         IComparable<SingleValueObject<T>>
     {
-
         public T Value { get; }
         public T MIN { get; }
         public T MAX { get; }

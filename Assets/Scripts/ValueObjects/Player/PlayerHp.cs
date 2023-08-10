@@ -1,3 +1,4 @@
+using System;
 using KataokaLib.AutoTest;
 using KataokaLib.System;
 
@@ -5,23 +6,23 @@ using KataokaLib.System;
  * プレイヤーの体力のクラス
  */
 [ValueObject("Player", 0, 100)]
-public class PlayerHP : HP {
+public class PlayerHp : HP {
 
-    private PlayerHP(int value) : base(value, 0, 100) {
+    private PlayerHp(int value) : base(value, 0, 100) {
     }
 
-    public static PlayerHP Of(int value) {
-        return new PlayerHP(value);
+    public static PlayerHp Of(int value) {
+        return new PlayerHp(value);
     }
 
-    public static PlayerHP operator-(PlayerHP hp, AP ap) {
+    public static PlayerHp operator-(PlayerHp hp, AP ap) {
         int value = Mathk.KeepValueWithinRange<int>(
             hp.Value - ap.Value,
             hp.MIN,
             hp.MAX
         );
 
-        return new PlayerHP(value);
+        return new PlayerHp(value);
     }
 
 }

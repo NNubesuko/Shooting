@@ -1,3 +1,4 @@
+using System;
 using KataokaLib.ValueObject;
 
 public abstract class HP : SingleValueObject<int> {

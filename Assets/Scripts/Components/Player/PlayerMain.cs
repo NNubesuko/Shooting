@@ -17,7 +17,7 @@ public class PlayerMain : PlayerImpl {
 
     private void Awake() {
         Init(
-            PlayerHP.Of(hp),
+            PlayerHp.Of(hp),
             PlayerStamina.Of(stamina),
             PlayerMoveSpeed.Of(moveSpeed),
             PlayerEvasionSpeed.Of(evasionSpeed),

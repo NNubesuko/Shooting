@@ -4,7 +4,7 @@ using NUnit.Framework;
 
 namespace Tests.Editor.ValueObjects
 {
-    // テストする大元は、PlayerHP.cs
+    // テストする大元は、PlayerHp.cs
     [Description("値オブジェクトのテストを自動生成させる")]
     public class ValueObjectTest
     {
@@ -15,10 +15,10 @@ namespace Tests.Editor.ValueObjects
         [Description("[正常] 渡された値が最小値以上かつ最大値以下である場合に、正常に格納されること")]
         public void OnValidArgument(int value)
         {
-            PlayerHP playerHp = PlayerHP.Of(value);
+            PlayerHp playerHp = PlayerHp.Of(value);
             Assert.That(
                 playerHp,
-                Is.EqualTo(PlayerHP.Of(value)));
+                Is.EqualTo(PlayerHp.Of(value)));
         }
         
         [Test]
@@ -32,7 +32,7 @@ namespace Tests.Editor.ValueObjects
             Assert.That(
                 () =>
                 {
-                    PlayerHP playerHp = PlayerHP.Of(value);
+                    PlayerHp playerHp = PlayerHp.Of(value);
                 },
                 Throws.TypeOf<ArgumentException>());
         }

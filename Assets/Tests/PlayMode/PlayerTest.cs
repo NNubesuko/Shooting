@@ -48,7 +48,7 @@ namespace Tests {
         [Order(3)]
         [Description("[正常] プレイヤーのステータスが初期化された場合に、正常に初期化されること")]
         public IEnumerator ValidPlayerStatus() {
-            PlayerHP playerHP = PlayerHP.Of(100);
+            PlayerHp playerHP = PlayerHp.Of(100);
             PlayerStamina playerStamina = PlayerStamina.Of(100f);
             PlayerMoveSpeed playerMoveSpeed = PlayerMoveSpeed.Of(5f);
             PlayerEvasionSpeed playerEvasionSpeed = PlayerEvasionSpeed.Of(20f);
@@ -285,11 +285,11 @@ namespace Tests {
         public IEnumerator AttacksFromEnemy() {
             EnemyMain enemyScript = GameObject.Find("Enemy").GetComponent<EnemyMain>();
 
-            PlayerHP lastHP = playerScript.HP;
+            PlayerHp lastHP = playerScript.HP;
             yield return new WaitUntil(() => {
                 return enemyScript.wasAttacked;
             });
-            PlayerHP currentHP = playerScript.HP;
+            PlayerHp currentHP = playerScript.HP;
             
             Assert.That(currentHP, Is.LessThan(lastHP));
         }

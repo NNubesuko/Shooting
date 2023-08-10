@@ -1,7 +1,9 @@
 ﻿using System;
 using Microsoft.Extensions.DependencyInjection;
+using ShootingGame.Components.Player;
 using ShootingGame.MoveEnemy;
 using ShootingGame.MovePlayer;
+using ShootingGame.Player.DeathPlayer;
 using UnityEngine;
 
 namespace ShootingGame
@@ -30,12 +32,14 @@ namespace ShootingGame
         private static void SetupProduct()
         {
             _serviceCollection.AddTransient<IMovePlayerUseCase, MovePlayerUseCaseImpl>();
+            _serviceCollection.AddTransient<IDeathPlayerUseCase, DeathPlayerUseCaseImpl>();
             _serviceCollection.AddTransient<IMoveEnemyUseCase, MoveEnemyUseCaseImpl>();
         }
         
         private static void SetupDebug()
         {
             _serviceCollection.AddTransient<IMovePlayerUseCase, MovePlayerUseCaseImpl>();
+            _serviceCollection.AddTransient<IDeathPlayerUseCase, DeathPlayerUseCaseImpl>();
             _serviceCollection.AddTransient<IMoveEnemyUseCase, MoveEnemyUseCaseImpl>();
         }
     }

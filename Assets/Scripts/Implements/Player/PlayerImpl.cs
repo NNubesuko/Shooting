@@ -6,7 +6,7 @@ using KataokaLib.System;
 
 public class PlayerImpl : MonoBehaviour, Player {
 
-    public PlayerHP HP { get; private set; }
+    public PlayerHp HP { get; private set; }
     public PlayerStamina Stamina { get; private set; }
     public PlayerMoveSpeed MoveSpeed { get; private set; }
     public PlayerEvasionSpeed EvasionSpeed { get; private set; }
@@ -24,7 +24,7 @@ public class PlayerImpl : MonoBehaviour, Player {
      * ステータスを初期化するメソッド
      */
     public void Init(
-        PlayerHP hp,
+        PlayerHp hp,
         PlayerStamina stamina,
         PlayerMoveSpeed moveSpeed,
         PlayerEvasionSpeed evasionSpeed,
@@ -68,7 +68,7 @@ public class PlayerImpl : MonoBehaviour, Player {
      * 死亡時のメソッド, IDamagableより実装
      */
     public void Death() {
-        if (HP == PlayerHP.Of(0)) {
+        if (HP == PlayerHp.Of(0)) {
             IsDeath = true;
             gameObject.SetActive(false);
         }

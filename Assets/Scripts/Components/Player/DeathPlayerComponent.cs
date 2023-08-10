@@ -2,21 +2,21 @@
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
-using ShootingGame.MovePlayer;
+using ShootingGame.Player.DeathPlayer;
 using UnityEngine;
 
 namespace ShootingGame.Components.Player
 {
-    public class MovePlayerComponent : MonoBehaviour
+    public class DeathPlayerComponent : MonoBehaviour
     {
         [SerializeField] private PlayerStatusComponent _playerStatus;
 
-        private IMovePlayerUseCase _movePlayerUseCase;
+        private IDeathPlayerUseCase _deathPlayerUseCase;
         private CancellationTokenSource _cancellation;
 
         private async void Start()
         {
-            _movePlayerUseCase = SetUpDiContainer.ServiceProvider.GetService<IMovePlayerUseCase>();
+            _deathPlayerUseCase = SetUpDiContainer.ServiceProvider.GetService<IDeathPlayerUseCase>();
             _cancellation = new CancellationTokenSource();
             
             try
@@ -27,24 +27,20 @@ namespace ShootingGame.Components.Player
             {
             }
         }
-
+        
         private async UniTask UniTaskUpdate(CancellationToken token)
         {
             while (true)
             {
-                // プレイヤーの移動に使用するデータを作成する
-                MovePlayerInputData inputData = MovePlayerInputData.Of(
-                    transform.position,
-                    _playerStatus.MoveSpeed,
-                    _playerStatus.HorizontalMoveRange,
-                    _playerStatus.VerticalMoveRange);
-                // プレイヤーの処理を実行し、プレイヤーを移動させる
-                transform.position = _movePlayerUseCase.Handle(inputData);
-                
+                // プレイヤーの死亡判定に使用するデータを作成
+                DeathPlayerInputData inputData = DeathPlayerInputData.Of(gameObject, _playerStatus.Hp);
+                // プレイヤーの死亡判定処理を実行し、判定を格納する
+                _playerStatus.IsDeath = _deathPlayerUseCase.Handle(inputData);
+        
                 await UniTask.Yield(PlayerLoopTiming.Update, token);
             }
         }
-
+        
         private void OnDestroy()
         {
             _cancellation.Cancel();
