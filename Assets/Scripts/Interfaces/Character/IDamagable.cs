@@ -1,6 +1,6 @@
 public interface IDamagable {
 
-    void Damage(AP ap);
+    void Damage(Ap ap);
     void Death();
 
 }

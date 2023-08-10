@@ -73,7 +73,7 @@ public class EnemyImpl : TriggerObject, Enemy {
     /*
      * ダメージのメソッド, IDamagableより実装
      */
-    public void Damage(AP ap) {
+    public void Damage(Ap ap) {
         HP -= ap;
     }
     

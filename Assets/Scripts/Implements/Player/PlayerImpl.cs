@@ -60,7 +60,7 @@ public class PlayerImpl : MonoBehaviour, Player {
     /*
      * ダメージのメソッド, IDamagableより実装
      */
-    public void Damage(AP ap) {
+    public void Damage(Ap ap) {
         HP -= ap;
     }
 

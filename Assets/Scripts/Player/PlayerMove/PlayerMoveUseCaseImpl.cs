@@ -1,18 +1,19 @@
 ﻿using KataokaLib.System;
 using UnityEngine;
 
-namespace ShootingGame.MovePlayer
+namespace ShootingGame.PlayerMove
 {
-    public class MovePlayerUseCaseImpl : IMovePlayerUseCase
+    public class PlayerMoveUseCaseImpl : IPlayerMoveUseCase
     {
-        public Vector2 Handle(MovePlayerInputData inputData)
+        public Vector2 Handle(PlayerMoveInputData inputData)
         {
             var position = inputData.Position;
+            var deltaTime = inputData.DeltaTime;
             var moveSpeed = inputData.MoveSpeed;
             var horizontalMoveRange = inputData.HorizontalMoveRange;
             var verticalMoveRange = inputData.VerticalMoveRange;
             
-            Vector2 velocity = position + moveSpeed * Inputk.GetAxis() * Time.deltaTime;
+            Vector2 velocity = position + moveSpeed * Inputk.GetAxis() * deltaTime;
 
             velocity.x = horizontalMoveRange.WithinRange(velocity.x);
             velocity.y = verticalMoveRange.WithinRange(velocity.y);

@@ -1,4 +1,4 @@
-public class BulletAP : AP {
+public class BulletAP : Ap {
 
     private BulletAP(int value) : base(value, 0, 100) {
     }

@@ -1,33 +1,37 @@
 ﻿using UnityEngine;
 
-namespace ShootingGame.MovePlayer
+namespace ShootingGame.PlayerMove
 {
-    public class MovePlayerInputData
+    public class PlayerMoveInputData
     {
         internal Vector2 Position { get; }
+        internal float DeltaTime { get; }
         internal PlayerMoveSpeed MoveSpeed { get; }
         internal PlayerHorizontalMoveRange HorizontalMoveRange { get; }
         internal PlayerVerticalMoveRange VerticalMoveRange { get; }
 
-        private MovePlayerInputData(
+        private PlayerMoveInputData(
             Vector2 position,
+            float deltaTime,
             PlayerMoveSpeed moveSpeed,
             PlayerHorizontalMoveRange horizontalMoveRange,
             PlayerVerticalMoveRange verticalMoveRange)
         {
             Position = position;
+            DeltaTime = deltaTime;
             MoveSpeed = moveSpeed;
             HorizontalMoveRange = horizontalMoveRange;
             VerticalMoveRange = verticalMoveRange;
         }
 
-        public static MovePlayerInputData Of(
+        public static PlayerMoveInputData Of(
             Vector2 position,
+            float deltaTime,
             PlayerMoveSpeed moveSpeed,
             PlayerHorizontalMoveRange horizontalMoveRange,
             PlayerVerticalMoveRange verticalMoveRange)
         {
-            return new MovePlayerInputData(position, moveSpeed, horizontalMoveRange, verticalMoveRange);
+            return new PlayerMoveInputData(position, deltaTime, moveSpeed, horizontalMoveRange, verticalMoveRange);
         }
     }
 }

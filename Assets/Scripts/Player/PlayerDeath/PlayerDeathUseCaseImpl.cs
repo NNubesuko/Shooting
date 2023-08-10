@@ -1,8 +1,8 @@
-﻿namespace ShootingGame.Player.DeathPlayer
+﻿namespace ShootingGame.Player.PlayerDeath
 {
-    public class DeathPlayerUseCaseImpl : IDeathPlayerUseCase
+    public class PlayerDeathUseCaseImpl : IPlayerDeathUseCase
     {
-        public bool Handle(DeathPlayerInputData inputData)
+        public bool Handle(PlayerDeathInputData inputData)
         {
             var gameObject = inputData.GameObject;
             var hp = inputData.Hp;

@@ -15,7 +15,7 @@ public class PlayerHp : HP {
         return new PlayerHp(value);
     }
 
-    public static PlayerHp operator-(PlayerHp hp, AP ap) {
+    public static PlayerHp operator-(PlayerHp hp, Ap ap) {
         int value = Mathk.KeepValueWithinRange<int>(
             hp.Value - ap.Value,
             hp.MIN,

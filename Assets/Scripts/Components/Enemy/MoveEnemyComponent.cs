@@ -9,7 +9,7 @@ public class MoveEnemyComponent : MonoBehaviour
 
     private void Start()
     {
-        _moveEnemyUseCase = SetUpDiContainer.ServiceProvider.GetService<IMoveEnemyUseCase>();
+        _moveEnemyUseCase = DiContainer.ServiceProvider.GetService<IMoveEnemyUseCase>();
     }
 
     private void Update()

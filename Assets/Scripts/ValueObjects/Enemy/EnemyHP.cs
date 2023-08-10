@@ -12,7 +12,7 @@ public class EnemyHP : HP {
         return new EnemyHP(value);
     }
 
-    public static EnemyHP operator-(EnemyHP hp, AP ap) {
+    public static EnemyHP operator-(EnemyHP hp, Ap ap) {
         if (ReferenceEquals(ap, null)) return hp;
 
         int value = Mathk.KeepValueWithinRange<int>(
