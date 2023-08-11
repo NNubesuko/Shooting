@@ -2,18 +2,16 @@
 {
     public class PlayerDamageInputData
     {
-        internal PlayerHp Hp { get; }
-        internal Ap Ap { get; }
+        public Ap Ap { get; }
 
-        private PlayerDamageInputData(PlayerHp hp, Ap ap)
+        private PlayerDamageInputData(Ap ap)
         {
-            Hp = hp;
             Ap = ap;
         }
 
-        public static PlayerDamageInputData Of(PlayerHp hp, Ap ap)
+        public static PlayerDamageInputData Of(Ap ap)
         {
-            return new PlayerDamageInputData(hp, ap);
+            return new PlayerDamageInputData(ap);
         }
     }
 }

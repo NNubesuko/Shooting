@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.Extensions.DependencyInjection;
 using ShootingGame.Player.DamagePlayerComponent;
 using ShootingGame.Player.PlayerAvoids;
 using ShootingGame.Player.PlayerDeath;
+using ShootingGame.Player.PlayerRepository;
 using ShootingGame.PlayerMove;
 using UnityEngine;
 
@@ -31,18 +33,24 @@ namespace ShootingGame
         
         private static void SetupProduct()
         {
+            // Player UseCase
             _serviceCollection.AddTransient<IPlayerMoveUseCase, PlayerMoveUseCaseImpl>();
             _serviceCollection.AddTransient<IPlayerAvoidsUseCase, PlayerAvoidsUseCaseImpl>();
             _serviceCollection.AddTransient<IPlayerDamageUseCase, PlayerDamageUseCaseImpl>();
             _serviceCollection.AddTransient<IPlayerDeathUseCase, PlayerDeathUseCaseImpl>();
+            // Player Repository
+            _serviceCollection.AddTransient<IPlayerRepository, PlayerRepositoryImpl>();
         }
         
         private static void SetupDebug()
         {
+            // Player UseCase
             _serviceCollection.AddTransient<IPlayerMoveUseCase, PlayerMoveUseCaseImpl>();
             _serviceCollection.AddTransient<IPlayerAvoidsUseCase, PlayerAvoidsUseCaseImpl>();
             _serviceCollection.AddTransient<IPlayerDamageUseCase, PlayerDamageUseCaseImpl>();
             _serviceCollection.AddTransient<IPlayerDeathUseCase, PlayerDeathUseCaseImpl>();
+            // Player Repository
+            _serviceCollection.AddTransient<IPlayerRepository, PlayerRepositoryImpl>();
         }
     }
 }

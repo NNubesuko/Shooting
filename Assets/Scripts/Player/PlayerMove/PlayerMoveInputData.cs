@@ -5,33 +5,25 @@ namespace ShootingGame.PlayerMove
     public class PlayerMoveInputData
     {
         internal Vector2 Position { get; }
+        internal Vector2 Axis { get; }
         internal float DeltaTime { get; }
-        internal PlayerMoveSpeed MoveSpeed { get; }
-        internal PlayerHorizontalMoveRange HorizontalMoveRange { get; }
-        internal PlayerVerticalMoveRange VerticalMoveRange { get; }
 
         private PlayerMoveInputData(
             Vector2 position,
-            float deltaTime,
-            PlayerMoveSpeed moveSpeed,
-            PlayerHorizontalMoveRange horizontalMoveRange,
-            PlayerVerticalMoveRange verticalMoveRange)
+            Vector2 axis,
+            float deltaTime)
         {
             Position = position;
+            Axis = axis;
             DeltaTime = deltaTime;
-            MoveSpeed = moveSpeed;
-            HorizontalMoveRange = horizontalMoveRange;
-            VerticalMoveRange = verticalMoveRange;
         }
 
         public static PlayerMoveInputData Of(
             Vector2 position,
-            float deltaTime,
-            PlayerMoveSpeed moveSpeed,
-            PlayerHorizontalMoveRange horizontalMoveRange,
-            PlayerVerticalMoveRange verticalMoveRange)
+            Vector2 axis,
+            float deltaTime)
         {
-            return new PlayerMoveInputData(position, deltaTime, moveSpeed, horizontalMoveRange, verticalMoveRange);
+            return new PlayerMoveInputData(position, axis, deltaTime);
         }
     }
 }
