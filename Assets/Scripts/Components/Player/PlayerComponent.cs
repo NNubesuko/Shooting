@@ -38,6 +38,7 @@ namespace ShootingGame.Components.Player
             }
             catch (OperationCanceledException)
             {
+                Debug.Log("Death");
             }
         }
 
@@ -75,8 +76,12 @@ namespace ShootingGame.Components.Player
 
         public void Death()
         {
-            PlayerDeathInputData inputData = PlayerDeathInputData.Of(gameObject);
-            _deathUseCase.Handle(inputData);
+            bool isDeath = _deathUseCase.Handle();
+
+            if (isDeath)
+            {
+                gameObject.SetActive(false);
+            }
         }
 
         // public void Avoids()
@@ -97,6 +102,6 @@ namespace ShootingGame.Components.Player
         //     }
         // }
 
-        private void OnDestroy() => _cancellation.Cancel();
+        private void OnDisable() => _cancellation.Cancel();
     }
 }

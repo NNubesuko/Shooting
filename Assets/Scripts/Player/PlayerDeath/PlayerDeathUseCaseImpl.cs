@@ -13,15 +13,10 @@ namespace ShootingGame.Player.PlayerDeath
             _repository = DiContainer.ServiceProvider.GetService<IPlayerRepository>();
         }
         
-        public void Handle(PlayerDeathInputData inputData)
+        public bool Handle()
         {
-            GameObject gameObject = inputData.GameObject;
             PlayerHp hp = _repository.GetHp();
-
-            if (hp == PlayerHp.Of(0))
-            {
-                gameObject.SetActive(false);
-            }
+            return hp == PlayerHp.Of(0);
         }
     }
 }
