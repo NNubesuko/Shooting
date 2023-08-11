@@ -1,4 +1,5 @@
-﻿using ShootingGame.Components.Player;
+﻿using System;
+using ShootingGame.Components.Player;
 using UnityEngine;
 
 namespace ShootingGame.Player.PlayerRepository
@@ -22,6 +23,21 @@ namespace ShootingGame.Player.PlayerRepository
             return _status.MoveSpeed;
         }
 
+        public PlayerStamina GetStamina()
+        {
+            return _status.Stamina;
+        }
+
+        public PlayerStamina GetHealStamina()
+        {
+            return _status.HealStamina;
+        }
+
+        public TimeSpan GetHealStaminaInterval()
+        {
+            return _status.HealStaminaInterval;
+        }
+
         public PlayerHorizontalMoveRange GetHorizontalMoveRange()
         {
             return _status.HorizontalMoveRange;
@@ -35,6 +51,11 @@ namespace ShootingGame.Player.PlayerRepository
         public void UpdateHp(PlayerHp hp)
         {
             _status.Hp = hp;
+        }
+
+        public void UpdateStamina(PlayerStamina stamina)
+        {
+            _status.Stamina = stamina;
         }
     }
 }

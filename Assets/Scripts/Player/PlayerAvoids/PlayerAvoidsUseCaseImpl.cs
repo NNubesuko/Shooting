@@ -18,7 +18,7 @@ namespace ShootingGame.Player.PlayerAvoids
             // 回避の入力があり
             // 移動していて
             // 回避していない状態であれば、回避する
-            if (Inputk.GetKeyDown(KeyCode.Space) && Inputk.IsMoving() && !isAvoiding && true)
+            if (Inputk.GetKeyDown(KeyCode.Space) && Inputk.IsMoving() && !isAvoiding)
             {
                 _target = position + avoidsDistance * Inputk.GetAxis();
                 isAvoiding = true;

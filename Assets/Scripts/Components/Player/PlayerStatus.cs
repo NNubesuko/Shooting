@@ -8,6 +8,8 @@ namespace ShootingGame.Components.Player
         [SerializeField] private int hp;
         [SerializeField] private float moveSpeed;
         [SerializeField] private float stamina;
+        [SerializeField] private float healStamina;
+        [SerializeField] private float healStaminaInterval;
         [SerializeField] private float avoidsSpeed;
         [SerializeField] private float avoidsDistance;
         [SerializeField] private float startHorizontalRange;
@@ -38,6 +40,18 @@ namespace ShootingGame.Components.Player
         {
             get => PlayerStamina.Of(stamina);
             set => stamina = value.Value;
+        }
+
+        public PlayerStamina HealStamina
+        {
+            get => PlayerStamina.Of(healStamina);
+            set => healStamina = value.Value;
+        }
+
+        public TimeSpan HealStaminaInterval
+        {
+            get => TimeSpan.FromSeconds(healStaminaInterval);
+            set => healStaminaInterval = value.Seconds;
         }
 
         public PlayerAvoidsSpeed AvoidsSpeed

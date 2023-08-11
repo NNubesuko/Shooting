@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using ShootingGame.Player.DamagePlayerComponent;
 using ShootingGame.Player.PlayerAvoids;
 using ShootingGame.Player.PlayerDeath;
+using ShootingGame.Player.PlayerHealStamina;
 using ShootingGame.Player.PlayerRepository;
 using ShootingGame.PlayerMove;
 using UnityEngine;
@@ -35,6 +36,7 @@ namespace ShootingGame
         {
             // Player UseCase
             _serviceCollection.AddTransient<IPlayerMoveUseCase, PlayerMoveUseCaseImpl>();
+            _serviceCollection.AddTransient<IPlayerHealStaminaUseCase, PlayerHealStaminaUseCaseImpl>();
             _serviceCollection.AddTransient<IPlayerAvoidsUseCase, PlayerAvoidsUseCaseImpl>();
             _serviceCollection.AddTransient<IPlayerDamageUseCase, PlayerDamageUseCaseImpl>();
             _serviceCollection.AddTransient<IPlayerDeathUseCase, PlayerDeathUseCaseImpl>();
@@ -46,6 +48,7 @@ namespace ShootingGame
         {
             // Player UseCase
             _serviceCollection.AddTransient<IPlayerMoveUseCase, PlayerMoveUseCaseImpl>();
+            _serviceCollection.AddTransient<IPlayerHealStaminaUseCase, PlayerHealStaminaUseCaseImpl>();
             _serviceCollection.AddTransient<IPlayerAvoidsUseCase, PlayerAvoidsUseCaseImpl>();
             _serviceCollection.AddTransient<IPlayerDamageUseCase, PlayerDamageUseCaseImpl>();
             _serviceCollection.AddTransient<IPlayerDeathUseCase, PlayerDeathUseCaseImpl>();

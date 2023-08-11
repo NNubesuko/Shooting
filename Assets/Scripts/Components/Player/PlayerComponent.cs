@@ -1,12 +1,13 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 using Cysharp.Threading.Tasks;
 using KataokaLib.System;
 using Microsoft.Extensions.DependencyInjection;
 using ShootingGame.Player.DamagePlayerComponent;
 using ShootingGame.Player.PlayerAvoids;
 using ShootingGame.Player.PlayerDeath;
+using ShootingGame.Player.PlayerHealStamina;
 using ShootingGame.PlayerMove;
+using UniRx;
 using UnityEngine;
 
 namespace ShootingGame.Components.Player
@@ -15,6 +16,7 @@ namespace ShootingGame.Components.Player
     {
         private CancellationTokenSource _cancellation;
         private IPlayerMoveUseCase _moveUseCase;
+        private IPlayerHealStaminaUseCase _healStaminaUseCase;
         // private IPlayerAvoidsUseCase _avoidsUseCase;
         private IPlayerDamageUseCase _damageUseCase;
         private IPlayerDeathUseCase _deathUseCase;
@@ -28,15 +30,17 @@ namespace ShootingGame.Components.Player
         {
             var serviceProvider = DiContainer.ServiceProvider;
             _moveUseCase = serviceProvider.GetService<IPlayerMoveUseCase>();
+            _healStaminaUseCase = serviceProvider.GetService<IPlayerHealStaminaUseCase>();
             // _avoidsUseCase = serviceProvider.GetService<IPlayerAvoidsUseCase>();
             _damageUseCase = serviceProvider.GetService<IPlayerDamageUseCase>();
             _deathUseCase = serviceProvider.GetService<IPlayerDeathUseCase>();
 
             try
             {
+                HealStamina();
                 await UniTaskUpdate(_cancellation.Token);
             }
-            catch (OperationCanceledException)
+            catch (System.OperationCanceledException)
             {
                 Debug.Log("Death");
             }
@@ -66,6 +70,12 @@ namespace ShootingGame.Components.Player
                 Time.deltaTime);
             
             transform.position = _moveUseCase.Handle(inputData);
+        }
+
+        private void HealStamina()
+        {
+            PlayerHealStaminaInputData inputData = PlayerHealStaminaInputData.Of(this);
+            _healStaminaUseCase.Handle(inputData);
         }
 
         public void Damage(Ap ap)
