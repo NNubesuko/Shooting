@@ -5,17 +5,15 @@ namespace ShootingGame.Player.PlayerDeath
     public class PlayerDeathInputData
     {
         internal GameObject GameObject { get; }
-        internal PlayerHp Hp { get; }
 
-        private PlayerDeathInputData(GameObject gameObject, PlayerHp hp)
+        private PlayerDeathInputData(GameObject gameObject)
         {
             GameObject = gameObject;
-            Hp = hp;
         }
 
-        public static PlayerDeathInputData Of(GameObject gameObject, PlayerHp hp)
+        public static PlayerDeathInputData Of(GameObject gameObject)
         {
-            return new PlayerDeathInputData(gameObject, hp);
+            return new PlayerDeathInputData(gameObject);
         }
     }
 }

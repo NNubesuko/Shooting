@@ -17,7 +17,7 @@ namespace ShootingGame.Components.Player
         private IPlayerMoveUseCase _moveUseCase;
         // private IPlayerAvoidsUseCase _avoidsUseCase;
         private IPlayerDamageUseCase _damageUseCase;
-        // private IPlayerDeathUseCase _deathUseCase;
+        private IPlayerDeathUseCase _deathUseCase;
 
         private void Awake()
         {
@@ -30,7 +30,7 @@ namespace ShootingGame.Components.Player
             _moveUseCase = serviceProvider.GetService<IPlayerMoveUseCase>();
             // _avoidsUseCase = serviceProvider.GetService<IPlayerAvoidsUseCase>();
             _damageUseCase = serviceProvider.GetService<IPlayerDamageUseCase>();
-            // _deathUseCase = serviceProvider.GetService<IPlayerDeathUseCase>();
+            _deathUseCase = serviceProvider.GetService<IPlayerDeathUseCase>();
 
             try
             {
@@ -46,6 +46,13 @@ namespace ShootingGame.Components.Player
             while (true)
             {
                 Move();
+                Death();
+
+                if (Inputk.GetKeyDown(KeyCode.L))
+                {
+                    EnemyAP ap = EnemyAP.Of(10);
+                    Damage(ap);
+                }
                 await UniTask.Yield(PlayerLoopTiming.Update, token);
             }
         }
@@ -68,24 +75,10 @@ namespace ShootingGame.Components.Player
 
         public void Death()
         {
+            PlayerDeathInputData inputData = PlayerDeathInputData.Of(gameObject);
+            _deathUseCase.Handle(inputData);
         }
 
-        // private void Move()
-        // {
-        //     // 回避中は移動禁止にする
-        //     if (_isAvoiding)
-        //         return;
-        //     
-        //     PlayerMoveInputData inputData = PlayerMoveInputData.Of(
-        //         transform.position,
-        //         Time.deltaTime,
-        //         _moveSpeed,
-        //         _horizontalMoveRange,
-        //         _verticalMoveRange);
-        //     
-        //     transform.position = _moveUseCase.Handle(inputData);
-        // }
-        //
         // public void Avoids()
         // {
         //     PlayerAvoidsInputData inputData = PlayerAvoidsInputData.Of(
@@ -102,18 +95,6 @@ namespace ShootingGame.Components.Player
         //     {
         //         transform.position = updatePosition;
         //     }
-        // }
-        //
-        // public void Damage(Ap ap)
-        // {
-        //     PlayerDamageInputData inputData = PlayerDamageInputData.Of(_hp, ap);
-        //     _hp = _damageUseCase.Handle(inputData);
-        // }
-        //
-        // public void Death()
-        // {
-        //     PlayerDeathInputData input = PlayerDeathInputData.Of(gameObject, _hp);
-        //     _deathUseCase.Handle(input);
         // }
 
         private void OnDestroy() => _cancellation.Cancel();

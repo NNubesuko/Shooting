@@ -7,6 +7,6 @@
         /// </summary>
         /// <param name="inputData">プレイヤーの死亡判定に使用するデータ群</param>
         /// <returns>死亡していたらtrue 死亡していないならfalse</returns>
-        bool Handle(PlayerDeathInputData inputData);
+        void Handle(PlayerDeathInputData inputData);
     }
 }
