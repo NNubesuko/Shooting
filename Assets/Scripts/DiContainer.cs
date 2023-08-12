@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.Extensions.DependencyInjection;
+using ShootingGame.Components.Player;
 using ShootingGame.Player.DamagePlayerComponent;
 using ShootingGame.Player.PlayerAvoids;
 using ShootingGame.Player.PlayerDeath;

@@ -17,6 +17,9 @@ namespace ShootingGame.Components.Player
         [SerializeField] private float startVerticalRange;
         [SerializeField] private float endVerticalRange;
 
+        [SerializeField] private bool canMove = true;
+        [SerializeField] private bool isAvoiding = false;
+
         public static PlayerStatus Status { get; private set; }
 
         private void Awake()
@@ -84,6 +87,18 @@ namespace ShootingGame.Components.Player
                 startVerticalRange = value.Start;
                 endVerticalRange = value.End;
             }
+        }
+
+        public bool CanMove
+        {
+            get => canMove;
+            set => canMove = value;
+        }
+
+        public bool IsAvoiding
+        {
+            get => isAvoiding;
+            set => isAvoiding = value;
         }
     }
 }

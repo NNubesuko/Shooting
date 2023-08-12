@@ -1,9 +1,6 @@
-﻿using Cysharp.Threading.Tasks;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using ShootingGame.Player.PlayerRepository;
 using UniRx;
-using UnityEngine;
-using ObservableExtensions = UniRx.ObservableExtensions;
 
 namespace ShootingGame.Player.PlayerHealStamina
 {

@@ -5,29 +5,29 @@ namespace ShootingGame.Player.PlayerAvoids
     public class PlayerAvoidsInputData
     {
         internal Vector2 Position { get; }
+        internal Vector2 MoveDirection { get; }
         internal float DeltaTime { get; }
-        internal PlayerAvoidsSpeed AvoidsSpeed { get; }
-        internal PlayerAvoidsDistance AvoidsDistance { get; }
-        
+        internal bool InitiateAvoids { get; }
+
         private PlayerAvoidsInputData(
             Vector2 position,
+            Vector2 moveDirection,
             float deltaTime,
-            PlayerAvoidsSpeed avoidsSpeed,
-            PlayerAvoidsDistance avoidsDistance)
+            bool initiateAvoids)
         {
             Position = position;
+            MoveDirection = moveDirection;
             DeltaTime = deltaTime;
-            AvoidsSpeed = avoidsSpeed;
-            AvoidsDistance = avoidsDistance;
+            InitiateAvoids = initiateAvoids;
         }
 
         public static PlayerAvoidsInputData Of(
             Vector2 position,
+            Vector2 moveDirection,
             float deltaTime,
-            PlayerAvoidsSpeed avoidsSpeed,
-            PlayerAvoidsDistance avoidsDistance)
+            bool initiateAvoids)
         {
-            return new PlayerAvoidsInputData(position, deltaTime, avoidsSpeed, avoidsDistance);
+            return new PlayerAvoidsInputData(position, moveDirection, deltaTime, initiateAvoids);
         }
     }
 }

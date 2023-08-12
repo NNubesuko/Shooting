@@ -15,9 +15,11 @@ namespace ShootingGame.Components.Player
     public class PlayerComponent : MonoBehaviour, IDamage
     {
         private CancellationTokenSource _cancellation;
+
+        private PlayerInputProvider _input;
         private IPlayerMoveUseCase _moveUseCase;
         private IPlayerHealStaminaUseCase _healStaminaUseCase;
-        // private IPlayerAvoidsUseCase _avoidsUseCase;
+        private IPlayerAvoidsUseCase _avoidsUseCase;
         private IPlayerDamageUseCase _damageUseCase;
         private IPlayerDeathUseCase _deathUseCase;
 
@@ -29,9 +31,11 @@ namespace ShootingGame.Components.Player
         private async void Start()
         {
             var serviceProvider = DiContainer.ServiceProvider;
+
+            _input = PlayerInputProvider.PlayerInput;
             _moveUseCase = serviceProvider.GetService<IPlayerMoveUseCase>();
             _healStaminaUseCase = serviceProvider.GetService<IPlayerHealStaminaUseCase>();
-            // _avoidsUseCase = serviceProvider.GetService<IPlayerAvoidsUseCase>();
+            _avoidsUseCase = serviceProvider.GetService<IPlayerAvoidsUseCase>();
             _damageUseCase = serviceProvider.GetService<IPlayerDamageUseCase>();
             _deathUseCase = serviceProvider.GetService<IPlayerDeathUseCase>();
 
@@ -51,13 +55,8 @@ namespace ShootingGame.Components.Player
             while (true)
             {
                 Move();
+                Avoids();
                 Death();
-
-                if (Inputk.GetKeyDown(KeyCode.L))
-                {
-                    EnemyAP ap = EnemyAP.Of(10);
-                    Damage(ap);
-                }
                 await UniTask.Yield(PlayerLoopTiming.Update, token);
             }
         }
@@ -66,7 +65,7 @@ namespace ShootingGame.Components.Player
         {
             PlayerMoveInputData inputData = PlayerMoveInputData.Of(
                 transform.position,
-                Inputk.GetAxis(),
+                _input.MoveDirection.Value,
                 Time.deltaTime);
             
             transform.position = _moveUseCase.Handle(inputData);
@@ -76,6 +75,17 @@ namespace ShootingGame.Components.Player
         {
             PlayerHealStaminaInputData inputData = PlayerHealStaminaInputData.Of(this);
             _healStaminaUseCase.Handle(inputData);
+        }
+
+        private void Avoids()
+        {
+            PlayerAvoidsInputData inputData = PlayerAvoidsInputData.Of(
+                transform.position,
+                _input.MoveDirection.Value,
+                Time.deltaTime,
+                _input.Avoids.Value);
+            
+            transform.position = _avoidsUseCase.Handle(inputData);
         }
 
         public void Damage(Ap ap)
@@ -93,24 +103,6 @@ namespace ShootingGame.Components.Player
                 gameObject.SetActive(false);
             }
         }
-
-        // public void Avoids()
-        // {
-        //     PlayerAvoidsInputData inputData = PlayerAvoidsInputData.Of(
-        //         transform.position,
-        //         Time.deltaTime,
-        //         _avoidsSpeed,
-        //         _avoidsDistance);
-        //
-        //     var (updatePosition, isAvoiding) = _avoidsUseCase.Handle(inputData);
-        //     _isAvoiding = isAvoiding;
-        //     
-        //     // 回避していたら位置を更新する
-        //     if (_isAvoiding)
-        //     {
-        //         transform.position = updatePosition;
-        //     }
-        // }
 
         private void OnDisable() => _cancellation.Cancel();
     }

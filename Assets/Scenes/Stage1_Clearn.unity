@@ -296,6 +296,7 @@ GameObject:
   - component: {fileID: 519888474}
   - component: {fileID: 519888473}
   - component: {fileID: 519888476}
+  - component: {fileID: 519888477}
   - component: {fileID: 519888475}
   m_Layer: 0
   m_Name: Player
@@ -398,9 +399,25 @@ MonoBehaviour:
   hp: 100
   moveSpeed: 5
   stamina: 100
+  healStamina: 10
+  healStaminaInterval: 5
   avoidsSpeed: 20
   avoidsDistance: 1.5
   startHorizontalRange: -8.38
   endHorizontalRange: 8.38
   startVerticalRange: -4.49
   endVerticalRange: 4.49
+  canMove: 1
+  isAvoiding: 0
+--- !u!114 &519888477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519888472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 805e26d166e94058adeb33a45872e16d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

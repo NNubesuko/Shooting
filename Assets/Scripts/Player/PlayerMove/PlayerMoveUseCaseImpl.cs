@@ -16,6 +16,11 @@ namespace ShootingGame.PlayerMove
         public Vector2 Handle(PlayerMoveInputData inputData)
         {
             Vector2 position = inputData.Position;
+            
+            bool canMove = _repository.GetCanMove();
+            if (!canMove)
+                return position;
+            
             Vector2 axis = inputData.Axis;
             float deltaTime = inputData.DeltaTime;
             
