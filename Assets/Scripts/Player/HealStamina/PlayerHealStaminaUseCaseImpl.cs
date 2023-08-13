@@ -1,16 +1,15 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using ShootingGame.Player.PlayerRepository;
 using UniRx;
 
-namespace ShootingGame.Player.PlayerHealStamina
+namespace ShootingGame.Player.HealStamina
 {
     public class PlayerHealStaminaUseCaseImpl : IPlayerHealStaminaUseCase
     {
-        private readonly IPlayerRepository _repository;
+        private readonly IPlayerHealStaminaRepository _repository;
 
         public PlayerHealStaminaUseCaseImpl()
         {
-            _repository = DiContainer.ServiceProvider.GetService<IPlayerRepository>();
+            _repository = DiContainer.ServiceProvider.GetService<IPlayerHealStaminaRepository>();
         }
         
         public void Handle(PlayerHealStaminaInputData inputData)

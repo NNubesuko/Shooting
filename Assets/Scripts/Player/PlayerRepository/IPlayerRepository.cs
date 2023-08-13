@@ -5,24 +5,6 @@ namespace ShootingGame.Player.PlayerRepository
     public interface IPlayerRepository
     {
         /// <summary>
-        /// プレイヤーのスタミナを取得する
-        /// </summary>
-        /// <returns>プレイヤーのスタミナ</returns>
-        PlayerStamina GetStamina();
-
-        /// <summary>
-        /// プレイヤーの一定時間に回復するスタミナを取得する
-        /// </summary>
-        /// <returns>プレイヤーの一定時間に回復するスタミナ</returns>
-        PlayerStamina GetHealStamina();
-
-        /// <summary>
-        /// プレイヤーのスタミナが回復する間隔を取得する
-        /// </summary>
-        /// <returns>プレイヤーのスタミナが回復する間隔</returns>
-        TimeSpan GetHealStaminaInterval();
-
-        /// <summary>
         /// プレイヤーの回避速度を取得する
         /// </summary>
         /// <returns>プレイヤーの回避速度</returns>
@@ -33,12 +15,6 @@ namespace ShootingGame.Player.PlayerRepository
         /// </summary>
         /// <returns>プレイヤーの回避距離</returns>
         PlayerAvoidsDistance GetAvoidsDistance();
-
-        /// <summary>
-        /// プレイヤーのスタミナを更新する
-        /// </summary>
-        /// <param name="stamina">更新するプレイヤーのスタミナ</param>
-        void UpdateStamina(PlayerStamina stamina);
 
         /// <summary>
         /// プレイヤーが移動可能であるかの判定を取得する
@@ -57,7 +33,7 @@ namespace ShootingGame.Player.PlayerRepository
         /// </summary>
         /// <returns>プレイヤーが回避しているかの判定</returns>
         bool GetIsAvoiding();
-
+        
         /// <summary>
         /// プレイヤーの回避しているかの判定を更新する
         /// </summary>

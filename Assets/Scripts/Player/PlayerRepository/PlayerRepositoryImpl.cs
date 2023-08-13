@@ -12,21 +12,6 @@ namespace ShootingGame.Player.PlayerRepository
             _status = PlayerStatus.Status;
         }
 
-        public PlayerStamina GetStamina()
-        {
-            return _status.Stamina;
-        }
-
-        public PlayerStamina GetHealStamina()
-        {
-            return _status.HealStamina;
-        }
-
-        public TimeSpan GetHealStaminaInterval()
-        {
-            return _status.HealStaminaInterval;
-        }
-
         public PlayerAvoidsSpeed GetAvoidsSpeed()
         {
             return _status.AvoidsSpeed;
@@ -35,11 +20,6 @@ namespace ShootingGame.Player.PlayerRepository
         public PlayerAvoidsDistance GetAvoidsDistance()
         {
             return _status.AvoidsDistance;
-        }
-
-        public void UpdateStamina(PlayerStamina stamina)
-        {
-            _status.Stamina = stamina;
         }
 
         public bool GetCanMove()

@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using Microsoft.Extensions.DependencyInjection;
-using ShootingGame.Components.Player;
 using ShootingGame.Player.Damage;
 using ShootingGame.Player.PlayerAvoids;
 using ShootingGame.Player.Death;
-using ShootingGame.Player.PlayerHealStamina;
+using ShootingGame.Player.HealStamina;
 using ShootingGame.Player.PlayerRepository;
 using ShootingGame.Player.Move;
 using UnityEngine;
@@ -43,6 +41,7 @@ namespace ShootingGame
             _serviceCollection.AddTransient<IPlayerDeathUseCase, PlayerDeathUseCaseImpl>();
             // Player Repository
             _serviceCollection.AddTransient<IPlayerRepository, PlayerRepositoryImpl>();
+            _serviceCollection.AddTransient<IPlayerHealStaminaRepository, PlayerHealStaminaRepositoryImpl>();
             _serviceCollection.AddTransient<IPlayerMoveRepository, PlayerMoveRepositoryImpl>();
             _serviceCollection.AddTransient<IPlayerDamageRepository, PlayerDamageRepositoryImpl>();
             _serviceCollection.AddTransient<IPlayerDeathRepository, PlayerDeathRepositoryImpl>();
@@ -58,6 +57,7 @@ namespace ShootingGame
             _serviceCollection.AddTransient<IPlayerDeathUseCase, PlayerDeathUseCaseImpl>();
             // Player Repository
             _serviceCollection.AddTransient<IPlayerRepository, PlayerRepositoryImpl>();
+            _serviceCollection.AddTransient<IPlayerHealStaminaRepository, PlayerHealStaminaRepositoryImpl>();
             _serviceCollection.AddTransient<IPlayerMoveRepository, PlayerMoveRepositoryImpl>();
             _serviceCollection.AddTransient<IPlayerDamageRepository, PlayerDamageRepositoryImpl>();
             _serviceCollection.AddTransient<IPlayerDeathRepository, PlayerDeathRepositoryImpl>();

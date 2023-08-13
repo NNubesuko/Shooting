@@ -1,14 +1,11 @@
-﻿using System.ComponentModel;
-using System.Threading;
+﻿using System.Threading;
 using Cysharp.Threading.Tasks;
-using KataokaLib.System;
 using Microsoft.Extensions.DependencyInjection;
 using ShootingGame.Player.Damage;
 using ShootingGame.Player.PlayerAvoids;
 using ShootingGame.Player.Death;
-using ShootingGame.Player.PlayerHealStamina;
+using ShootingGame.Player.HealStamina;
 using ShootingGame.Player.Move;
-using UniRx;
 using UnityEngine;
 
 namespace ShootingGame.Components.Player

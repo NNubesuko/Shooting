@@ -39,22 +39,22 @@ namespace ShootingGame.Components.Player
             set => moveSpeed = value;
         }
 
-        public PlayerStamina Stamina
+        public float Stamina
         {
-            get => PlayerStamina.Of(stamina);
-            set => stamina = value.Value;
+            get => stamina;
+            set => stamina = value;
         }
 
-        public PlayerStamina HealStamina
+        public float HealStamina
         {
-            get => PlayerStamina.Of(healStamina);
-            set => healStamina = value.Value;
+            get => healStamina;
+            set => healStamina = value;
         }
 
-        public TimeSpan HealStaminaInterval
+        public float HealStaminaInterval
         {
-            get => TimeSpan.FromSeconds(healStaminaInterval);
-            set => healStaminaInterval = value.Seconds;
+            get => healStaminaInterval;
+            set => healStaminaInterval = value;
         }
 
         public PlayerAvoidsSpeed AvoidsSpeed

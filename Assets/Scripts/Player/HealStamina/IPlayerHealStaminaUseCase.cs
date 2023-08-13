@@ -1,4 +1,4 @@
-﻿namespace ShootingGame.Player.PlayerHealStamina
+﻿namespace ShootingGame.Player.HealStamina
 {
     public interface IPlayerHealStaminaUseCase
     {

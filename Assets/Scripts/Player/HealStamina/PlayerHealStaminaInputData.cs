@@ -1,6 +1,6 @@
 ﻿using ShootingGame.Components.Player;
 
-namespace ShootingGame.Player.PlayerHealStamina
+namespace ShootingGame.Player.HealStamina
 {
     public class PlayerHealStaminaInputData
     {
