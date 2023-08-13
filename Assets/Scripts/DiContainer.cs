@@ -1,5 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.DependencyInjection;
+using ShootingGame.Enemy.Damage;
+using ShootingGame.Enemy.Death;
 using ShootingGame.Enemy.Move;
 using ShootingGame.Enemy.UpdateTableIndex;
 using ShootingGame.Player.Damage;
@@ -50,9 +52,13 @@ namespace ShootingGame
             // Enemy UseCase
             _serviceCollection.AddTransient<IEnemyMoveUseCase, EnemyMoveUseCaseImpl>();
             _serviceCollection.AddTransient<IEnemyUpdateTableIndexUseCase, EnemyUpdateTableIndexUseCaseImpl>();
+            _serviceCollection.AddTransient<IEnemyDamageUseCase, EnemyDamageUseCaseImpl>();
+            _serviceCollection.AddTransient<IEnemyDeathUseCase, EnemyDeathUseCaseImpl>();
             // Enemy Repository
             _serviceCollection.AddTransient<IEnemyMoveRepository, EnemyMoveRepositoryImpl>();
             _serviceCollection.AddTransient<IEnemyUpdateTableIndexRepository, EnemyUpdateTableIndexRepositoryImpl>();
+            _serviceCollection.AddTransient<IEnemyDamageRepository, EnemyDamageRepositoryImpl>();
+            _serviceCollection.AddTransient<IEnemyDeathRepository, EnemyDeathRepositoryImpl>();
         }
         
         private static void SetupDebug()
@@ -73,9 +79,13 @@ namespace ShootingGame
             // Enemy UseCase
             _serviceCollection.AddTransient<IEnemyMoveUseCase, EnemyMoveUseCaseImpl>();
             _serviceCollection.AddTransient<IEnemyUpdateTableIndexUseCase, EnemyUpdateTableIndexUseCaseImpl>();
+            _serviceCollection.AddTransient<IEnemyDamageUseCase, EnemyDamageUseCaseImpl>();
+            _serviceCollection.AddTransient<IEnemyDeathUseCase, EnemyDeathUseCaseImpl>();
             // Enemy Repository
             _serviceCollection.AddTransient<IEnemyMoveRepository, EnemyMoveRepositoryImpl>();
             _serviceCollection.AddTransient<IEnemyUpdateTableIndexRepository, EnemyUpdateTableIndexRepositoryImpl>();
+            _serviceCollection.AddTransient<IEnemyDamageRepository, EnemyDamageRepositoryImpl>();
+            _serviceCollection.AddTransient<IEnemyDeathRepository, EnemyDeathRepositoryImpl>();
         }
     }
 }

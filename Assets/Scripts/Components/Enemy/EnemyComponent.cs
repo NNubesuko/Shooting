@@ -1,7 +1,9 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 using Cysharp.Threading.Tasks;
+using KataokaLib.System;
 using Microsoft.Extensions.DependencyInjection;
+using ShootingGame.Enemy.Damage;
+using ShootingGame.Enemy.Death;
 using ShootingGame.Enemy.Move;
 using ShootingGame.Enemy.UpdateTableIndex;
 using UnityEngine;
@@ -15,6 +17,8 @@ namespace ShootingGame.Components.Enemy
         private CancellationTokenSource _cancellation;
         private IEnemyMoveUseCase _moveUseCase;
         private IEnemyUpdateTableIndexUseCase _updateTableIndexUseCase;
+        private IEnemyDamageUseCase _damageUseCase;
+        private IEnemyDeathUseCase _deathUseCase;
 
         private void Awake()
         {
@@ -26,6 +30,8 @@ namespace ShootingGame.Components.Enemy
             var serviceProvider = DiContainer.ServiceProvider;
             _moveUseCase = serviceProvider.GetService<IEnemyMoveUseCase>();
             _updateTableIndexUseCase = serviceProvider.GetService<IEnemyUpdateTableIndexUseCase>();
+            _damageUseCase = serviceProvider.GetService<IEnemyDamageUseCase>();
+            _deathUseCase = serviceProvider.GetService<IEnemyDeathUseCase>();
             
             try
             {
@@ -42,6 +48,12 @@ namespace ShootingGame.Components.Enemy
             while (true)
             {
                 Move();
+                Death();
+                if (Inputk.GetKeyDown(KeyCode.L))
+                {
+                    EnemyAP ap = EnemyAP.Of(5);
+                    Damage(ap);
+                }
                 await UniTask.Yield(PlayerLoopTiming.Update, token);
             }
         }
@@ -67,10 +79,14 @@ namespace ShootingGame.Components.Enemy
 
         public void Damage(Ap ap)
         {
+            EnemyDamageInputData inputData = EnemyDamageInputData.Of(status, ap);
+            _damageUseCase.Handle(inputData);
         }
 
         public void Death()
         {
+            EnemyDeathInputData inputData = EnemyDeathInputData.Of(status);
+            bool isDeath = _deathUseCase.Handle(inputData);
         }
 
         private void OnDisable()
