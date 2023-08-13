@@ -1,4 +1,4 @@
-﻿namespace ShootingGame.Player.PlayerDeath
+﻿namespace ShootingGame.Player.Death
 {
     public interface IPlayerDeathUseCase
     {

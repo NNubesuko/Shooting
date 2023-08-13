@@ -5,7 +5,7 @@ using KataokaLib.System;
 using Microsoft.Extensions.DependencyInjection;
 using ShootingGame.Player.Damage;
 using ShootingGame.Player.PlayerAvoids;
-using ShootingGame.Player.PlayerDeath;
+using ShootingGame.Player.Death;
 using ShootingGame.Player.PlayerHealStamina;
 using ShootingGame.Player.Move;
 using UniRx;

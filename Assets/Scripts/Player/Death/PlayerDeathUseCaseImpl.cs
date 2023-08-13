@@ -1,16 +1,14 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using ShootingGame.Player.PlayerRepository;
-using UnityEngine;
 
-namespace ShootingGame.Player.PlayerDeath
+namespace ShootingGame.Player.Death
 {
     public class PlayerDeathUseCaseImpl : IPlayerDeathUseCase
     {
-        private readonly IPlayerRepository _repository;
+        private readonly IPlayerDeathRepository _repository;
 
         public PlayerDeathUseCaseImpl()
         {
-            _repository = DiContainer.ServiceProvider.GetService<IPlayerRepository>();
+            _repository = DiContainer.ServiceProvider.GetService<IPlayerDeathRepository>();
         }
         
         public bool Handle()

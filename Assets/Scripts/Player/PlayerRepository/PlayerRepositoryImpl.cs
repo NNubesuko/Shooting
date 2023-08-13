@@ -12,11 +12,6 @@ namespace ShootingGame.Player.PlayerRepository
             _status = PlayerStatus.Status;
         }
 
-        public PlayerHp GetHp()
-        {
-            return _status.Hp;
-        }
-
         public PlayerStamina GetStamina()
         {
             return _status.Stamina;
@@ -40,11 +35,6 @@ namespace ShootingGame.Player.PlayerRepository
         public PlayerAvoidsDistance GetAvoidsDistance()
         {
             return _status.AvoidsDistance;
-        }
-
-        public void UpdateHp(PlayerHp hp)
-        {
-            _status.Hp = hp;
         }
 
         public void UpdateStamina(PlayerStamina stamina)
