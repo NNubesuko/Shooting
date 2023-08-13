@@ -1,18 +1,17 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using ShootingGame.Player.PlayerRepository;
 using UnityEngine;
 
-namespace ShootingGame.Player.PlayerAvoids
+namespace ShootingGame.Player.Avoids
 {
     public class PlayerAvoidsUseCaseImpl : IPlayerAvoidsUseCase
     {
-        private readonly IPlayerRepository _repository;
+        private readonly IPlayerAvoidsRepository _repository;
 
         private Vector2 _target;
 
         public PlayerAvoidsUseCaseImpl()
         {
-            _repository = DiContainer.ServiceProvider.GetService<IPlayerRepository>();
+            _repository = DiContainer.ServiceProvider.GetService<IPlayerAvoidsRepository>();
         }
 
         public Vector2 Handle(PlayerAvoidsInputData inputData)

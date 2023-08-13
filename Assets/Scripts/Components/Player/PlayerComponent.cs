@@ -2,7 +2,7 @@
 using Cysharp.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using ShootingGame.Player.Damage;
-using ShootingGame.Player.PlayerAvoids;
+using ShootingGame.Player.Avoids;
 using ShootingGame.Player.Death;
 using ShootingGame.Player.HealStamina;
 using ShootingGame.Player.Move;

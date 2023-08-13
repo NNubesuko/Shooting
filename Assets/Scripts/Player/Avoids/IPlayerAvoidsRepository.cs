@@ -1,9 +1,19 @@
-﻿using System;
-
-namespace ShootingGame.Player.PlayerRepository
+﻿namespace ShootingGame.Player.Avoids
 {
-    public interface IPlayerRepository
+    public interface IPlayerAvoidsRepository
     {
+        /// <summary>
+        /// プレイヤーのスタミナを取得する
+        /// </summary>
+        /// <returns>プレイヤーのスタミナ</returns>
+        PlayerStamina GetStamina();
+
+        /// <summary>
+        /// プレイヤーのスタミナ消費量を取得する
+        /// </summary>
+        /// <returns>プレイヤーのスタミナ消費量</returns>
+        PlayerStamina GetConsumptionStamina();
+
         /// <summary>
         /// プレイヤーの回避速度を取得する
         /// </summary>
@@ -15,13 +25,13 @@ namespace ShootingGame.Player.PlayerRepository
         /// </summary>
         /// <returns>プレイヤーの回避距離</returns>
         PlayerAvoidsDistance GetAvoidsDistance();
-
+        
         /// <summary>
-        /// プレイヤーが移動可能であるかの判定を取得する
+        /// プレイヤーが回避しているかの判定を取得する
         /// </summary>
-        /// <returns>プレイヤーが移動可能であるかの判定</returns>
-        bool GetCanMove();
-
+        /// <returns>プレイヤーが回避しているかの判定</returns>
+        bool GetIsAvoiding();
+        
         /// <summary>
         /// プレイヤーが移動可能であるかの判定を更新する
         /// </summary>
@@ -29,10 +39,10 @@ namespace ShootingGame.Player.PlayerRepository
         void UpdateCanMove(bool canMove);
 
         /// <summary>
-        /// プレイヤーが回避しているかの判定を取得する
+        /// プレイヤーのスタミナを更新する
         /// </summary>
-        /// <returns>プレイヤーが回避しているかの判定</returns>
-        bool GetIsAvoiding();
+        /// <param name="stamina">更新するプレイヤーのスタミナ</param>
+        void UpdateStamina(PlayerStamina stamina);
         
         /// <summary>
         /// プレイヤーの回避しているかの判定を更新する

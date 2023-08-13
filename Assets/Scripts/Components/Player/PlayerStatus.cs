@@ -5,18 +5,29 @@ namespace ShootingGame.Components.Player
 {
     public class PlayerStatus : MonoBehaviour
     {
+        [Header("体力")]
         [SerializeField] private int hp;
+        
+        [Header("移動速度")]
         [SerializeField] private float moveSpeed;
+        
+        [Header("スタミナ")]
         [SerializeField] private float stamina;
         [SerializeField] private float healStamina;
         [SerializeField] private float healStaminaInterval;
+        [SerializeField] private float consumptionStamina;
+        
+        [Header("回避")]
         [SerializeField] private float avoidsSpeed;
         [SerializeField] private float avoidsDistance;
+        
+        [Header("移動範囲")]
         [SerializeField] private float startHorizontalRange;
         [SerializeField] private float endHorizontalRange;
         [SerializeField] private float startVerticalRange;
         [SerializeField] private float endVerticalRange;
 
+        [Header("判定")]
         [SerializeField] private bool canMove = true;
         [SerializeField] private bool isAvoiding = false;
 
@@ -57,16 +68,22 @@ namespace ShootingGame.Components.Player
             set => healStaminaInterval = value;
         }
 
-        public PlayerAvoidsSpeed AvoidsSpeed
+        public float ConsumptionStamina
         {
-            get => PlayerAvoidsSpeed.Of(avoidsSpeed);
-            set => avoidsSpeed = value.Value;
+            get => consumptionStamina;
+            set => consumptionStamina = value;
         }
 
-        public PlayerAvoidsDistance AvoidsDistance
+        public float AvoidsSpeed
         {
-            get => PlayerAvoidsDistance.Of(avoidsDistance);
-            set => avoidsDistance = value.Value;
+            get => avoidsSpeed;
+            set => avoidsSpeed = value;
+        }
+
+        public float AvoidsDistance
+        {
+            get => avoidsDistance;
+            set => avoidsDistance = value;
         }
 
         public float StartHorizontalMoveRange

@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using ShootingGame.Player.PlayerRepository;
 using UnityEngine;
 
 namespace ShootingGame.Player.Move

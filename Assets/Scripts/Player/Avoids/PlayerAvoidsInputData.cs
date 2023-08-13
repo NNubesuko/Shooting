@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ShootingGame.Player.PlayerAvoids
+namespace ShootingGame.Player.Avoids
 {
     public class PlayerAvoidsInputData
     {
