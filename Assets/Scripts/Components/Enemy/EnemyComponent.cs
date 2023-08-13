@@ -1,7 +1,10 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using Cysharp.Threading.Tasks;
 using KataokaLib.System;
 using Microsoft.Extensions.DependencyInjection;
+using ShootingGame.Components.Player;
+using ShootingGame.Enemy.Attack;
 using ShootingGame.Enemy.Damage;
 using ShootingGame.Enemy.Death;
 using ShootingGame.Enemy.Move;
@@ -19,6 +22,7 @@ namespace ShootingGame.Components.Enemy
         private IEnemyUpdateTableIndexUseCase _updateTableIndexUseCase;
         private IEnemyDamageUseCase _damageUseCase;
         private IEnemyDeathUseCase _deathUseCase;
+        private IEnemyAttackUseCase _attackUseCase;
 
         private void Awake()
         {
@@ -32,6 +36,7 @@ namespace ShootingGame.Components.Enemy
             _updateTableIndexUseCase = serviceProvider.GetService<IEnemyUpdateTableIndexUseCase>();
             _damageUseCase = serviceProvider.GetService<IEnemyDamageUseCase>();
             _deathUseCase = serviceProvider.GetService<IEnemyDeathUseCase>();
+            _attackUseCase = serviceProvider.GetService<IEnemyAttackUseCase>();
             
             try
             {
@@ -77,6 +82,15 @@ namespace ShootingGame.Components.Enemy
             _updateTableIndexUseCase.Handle(inputData);
         }
 
+        private void Attack(IDamage player)
+        {
+            EnemyAttackInputData inputData = EnemyAttackInputData.Of(
+                status,
+                player);
+
+            _attackUseCase.Handle(inputData);
+        }
+
         public void Damage(Ap ap)
         {
             EnemyDamageInputData inputData = EnemyDamageInputData.Of(status, ap);
@@ -87,6 +101,15 @@ namespace ShootingGame.Components.Enemy
         {
             EnemyDeathInputData inputData = EnemyDeathInputData.Of(status);
             bool isDeath = _deathUseCase.Handle(inputData);
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            GameObject gameObject = other.gameObject;
+            if (gameObject.name.Equals("Player"))
+            {
+                Attack(gameObject.GetComponent<PlayerComponent>());
+            }
         }
 
         private void OnDisable()
