@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.Extensions.DependencyInjection;
+using ShootingGame.Bullet.Move;
 using ShootingGame.Enemy.Attack;
 using ShootingGame.Enemy.Damage;
 using ShootingGame.Enemy.Death;
@@ -62,6 +63,11 @@ namespace ShootingGame
             _serviceCollection.AddTransient<IEnemyDamageRepository, EnemyDamageRepositoryImpl>();
             _serviceCollection.AddTransient<IEnemyDeathRepository, EnemyDeathRepositoryImpl>();
             _serviceCollection.AddTransient<IEnemyAttackRepository, EnemyAttackRepositoryImpl>();
+            
+            // Bullet UseCase
+            _serviceCollection.AddTransient<IBulletMoveUseCase, BulletMoveUseCaseImpl>();
+            // Bullet Repository
+            _serviceCollection.AddTransient<IBulletMoveRepository, BulletMoveRepositoryImpl>();
         }
         
         private static void SetupDebug()
@@ -91,6 +97,11 @@ namespace ShootingGame
             _serviceCollection.AddTransient<IEnemyDamageRepository, EnemyDamageRepositoryImpl>();
             _serviceCollection.AddTransient<IEnemyDeathRepository, EnemyDeathRepositoryImpl>();
             _serviceCollection.AddTransient<IEnemyAttackRepository, EnemyAttackRepositoryImpl>();
+            
+            // Bullet UseCase
+            _serviceCollection.AddTransient<IBulletMoveUseCase, BulletMoveUseCaseImpl>();
+            // Bullet Repository
+            _serviceCollection.AddTransient<IBulletMoveRepository, BulletMoveRepositoryImpl>();
         }
     }
 }
