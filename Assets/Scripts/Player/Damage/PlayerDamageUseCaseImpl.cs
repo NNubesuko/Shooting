@@ -1,16 +1,14 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using ShootingGame.Components.Player;
-using ShootingGame.Player.PlayerRepository;
 
-namespace ShootingGame.Player.DamagePlayerComponent
+namespace ShootingGame.Player.Damage
 {
     public class PlayerDamageUseCaseImpl : IPlayerDamageUseCase
     {
-        private readonly IPlayerRepository _repository;
-
+        private readonly IPlayerDamageRepository _repository;
+        
         public PlayerDamageUseCaseImpl()
         {
-            _repository = DiContainer.ServiceProvider.GetService<IPlayerRepository>();
+            _repository = DiContainer.ServiceProvider.GetService<IPlayerDamageRepository>();
         }
         
         public void Handle(PlayerDamageInputData inputData)

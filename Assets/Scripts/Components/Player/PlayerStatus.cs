@@ -27,10 +27,10 @@ namespace ShootingGame.Components.Player
             Status = this;
         }
 
-        public PlayerHp Hp
+        public int Hp
         {
-            get => PlayerHp.Of(hp);
-            set => hp = value.Value;
+            get => hp;
+            set => hp = value;
         }
 
         public float MoveSpeed

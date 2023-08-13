@@ -3,7 +3,7 @@ using System.Threading;
 using Cysharp.Threading.Tasks;
 using KataokaLib.System;
 using Microsoft.Extensions.DependencyInjection;
-using ShootingGame.Player.DamagePlayerComponent;
+using ShootingGame.Player.Damage;
 using ShootingGame.Player.PlayerAvoids;
 using ShootingGame.Player.PlayerDeath;
 using ShootingGame.Player.PlayerHealStamina;

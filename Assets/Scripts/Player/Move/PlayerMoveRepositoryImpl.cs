@@ -4,7 +4,7 @@ namespace ShootingGame.Player.Move
 {
     public class PlayerMoveRepositoryImpl : IPlayerMoveRepository
     {
-        private PlayerStatus _status;
+        private readonly PlayerStatus _status;
 
         public PlayerMoveRepositoryImpl()
         {

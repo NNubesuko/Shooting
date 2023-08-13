@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.Extensions.DependencyInjection;
 using ShootingGame.Components.Player;
-using ShootingGame.Player.DamagePlayerComponent;
+using ShootingGame.Player.Damage;
 using ShootingGame.Player.PlayerAvoids;
 using ShootingGame.Player.PlayerDeath;
 using ShootingGame.Player.PlayerHealStamina;

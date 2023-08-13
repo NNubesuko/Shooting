@@ -1,4 +1,4 @@
-﻿namespace ShootingGame.Player.DamagePlayerComponent
+﻿namespace ShootingGame.Player.Damage
 {
     public interface IPlayerDamageUseCase
     {
