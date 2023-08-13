@@ -1,5 +1,6 @@
 ﻿using System.Threading;
 using Cysharp.Threading.Tasks;
+using KataokaLib.System;
 using Microsoft.Extensions.DependencyInjection;
 using ShootingGame.Player.Damage;
 using ShootingGame.Player.Avoids;

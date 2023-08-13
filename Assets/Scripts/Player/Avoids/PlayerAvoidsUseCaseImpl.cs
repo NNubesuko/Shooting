@@ -24,7 +24,7 @@ namespace ShootingGame.Player.Avoids
             bool isAvoiding = _repository.GetIsAvoiding();
             PlayerAvoidsSpeed avoidsSpeed = _repository.GetAvoidsSpeed();
             PlayerAvoidsDistance avoidsDistance = _repository.GetAvoidsDistance();
-            PlayerStamina consumptionStamina = PlayerStamina.Of(10);
+            PlayerStamina consumptionStamina = _repository.GetConsumptionStamina();
             PlayerStamina stamina = _repository.GetStamina();
 
             // 回避の入力があり

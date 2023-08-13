@@ -1,5 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.DependencyInjection;
+using ShootingGame.Enemy.Move;
+using ShootingGame.Enemy.UpdateTableIndex;
 using ShootingGame.Player.Damage;
 using ShootingGame.Player.Avoids;
 using ShootingGame.Player.Death;
@@ -44,6 +46,13 @@ namespace ShootingGame
             _serviceCollection.AddTransient<IPlayerAvoidsRepository, PlayerAvoidsRepositoryImpl>();
             _serviceCollection.AddTransient<IPlayerDamageRepository, PlayerDamageRepositoryImpl>();
             _serviceCollection.AddTransient<IPlayerDeathRepository, PlayerDeathRepositoryImpl>();
+            
+            // Enemy UseCase
+            _serviceCollection.AddTransient<IEnemyMoveUseCase, EnemyMoveUseCaseImpl>();
+            _serviceCollection.AddTransient<IEnemyUpdateTableIndexUseCase, EnemyUpdateTableIndexUseCaseImpl>();
+            // Enemy Repository
+            _serviceCollection.AddTransient<IEnemyMoveRepository, EnemyMoveRepositoryImpl>();
+            _serviceCollection.AddTransient<IEnemyUpdateTableIndexRepository, EnemyUpdateTableIndexRepositoryImpl>();
         }
         
         private static void SetupDebug()
@@ -60,6 +69,13 @@ namespace ShootingGame
             _serviceCollection.AddTransient<IPlayerAvoidsRepository, PlayerAvoidsRepositoryImpl>();
             _serviceCollection.AddTransient<IPlayerDamageRepository, PlayerDamageRepositoryImpl>();
             _serviceCollection.AddTransient<IPlayerDeathRepository, PlayerDeathRepositoryImpl>();
+            
+            // Enemy UseCase
+            _serviceCollection.AddTransient<IEnemyMoveUseCase, EnemyMoveUseCaseImpl>();
+            _serviceCollection.AddTransient<IEnemyUpdateTableIndexUseCase, EnemyUpdateTableIndexUseCaseImpl>();
+            // Enemy Repository
+            _serviceCollection.AddTransient<IEnemyMoveRepository, EnemyMoveRepositoryImpl>();
+            _serviceCollection.AddTransient<IEnemyUpdateTableIndexRepository, EnemyUpdateTableIndexRepositoryImpl>();
         }
     }
 }

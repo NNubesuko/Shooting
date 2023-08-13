@@ -14,7 +14,13 @@ namespace ShootingGame.Player.Death
         public bool Handle()
         {
             PlayerHp hp = _repository.GetHp();
-            return hp == PlayerHp.Of(0);
+            if (hp == PlayerHp.Of(0))
+            {
+                _repository.UpdateIsDeath(true);
+                return true;
+            }
+
+            return false;
         }
     }
 }

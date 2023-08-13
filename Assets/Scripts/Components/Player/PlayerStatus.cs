@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace ShootingGame.Components.Player
 {
@@ -30,6 +29,7 @@ namespace ShootingGame.Components.Player
         [Header("判定")]
         [SerializeField] private bool canMove = true;
         [SerializeField] private bool isAvoiding = false;
+        [SerializeField] private bool isDeath = false;
 
         public static PlayerStatus Status { get; private set; }
 
@@ -118,6 +118,12 @@ namespace ShootingGame.Components.Player
         {
             get => isAvoiding;
             set => isAvoiding = value;
+        }
+
+        public bool IsDeath
+        {
+            get => isDeath;
+            set => isDeath = value;
         }
     }
 }

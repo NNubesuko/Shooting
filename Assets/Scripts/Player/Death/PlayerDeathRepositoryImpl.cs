@@ -15,5 +15,10 @@ namespace ShootingGame.Player.Death
         {
             return PlayerHp.Of(_status.Hp);
         }
+
+        public void UpdateIsDeath(bool isDeath)
+        {
+            _status.IsDeath = isDeath;
+        }
     }
 }
