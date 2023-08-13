@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ShootingGame.PlayerMove
+namespace ShootingGame.Player.Move
 {
     public class PlayerMoveInputData
     {

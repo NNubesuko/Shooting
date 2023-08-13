@@ -7,7 +7,7 @@ using ShootingGame.Player.PlayerAvoids;
 using ShootingGame.Player.PlayerDeath;
 using ShootingGame.Player.PlayerHealStamina;
 using ShootingGame.Player.PlayerRepository;
-using ShootingGame.PlayerMove;
+using ShootingGame.Player.Move;
 using UnityEngine;
 
 namespace ShootingGame
@@ -43,6 +43,7 @@ namespace ShootingGame
             _serviceCollection.AddTransient<IPlayerDeathUseCase, PlayerDeathUseCaseImpl>();
             // Player Repository
             _serviceCollection.AddTransient<IPlayerRepository, PlayerRepositoryImpl>();
+            _serviceCollection.AddTransient<IPlayerMoveRepository, PlayerMoveRepositoryImpl>();
         }
         
         private static void SetupDebug()
@@ -55,6 +56,7 @@ namespace ShootingGame
             _serviceCollection.AddTransient<IPlayerDeathUseCase, PlayerDeathUseCaseImpl>();
             // Player Repository
             _serviceCollection.AddTransient<IPlayerRepository, PlayerRepositoryImpl>();
+            _serviceCollection.AddTransient<IPlayerMoveRepository, PlayerMoveRepositoryImpl>();
         }
     }
 }

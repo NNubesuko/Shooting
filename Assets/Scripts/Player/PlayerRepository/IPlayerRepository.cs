@@ -11,12 +11,6 @@ namespace ShootingGame.Player.PlayerRepository
         PlayerHp GetHp();
 
         /// <summary>
-        /// プレイヤーの移動速度を取得する
-        /// </summary>
-        /// <returns>プレイヤーの移動速度</returns>
-        PlayerMoveSpeed GetMoveSpeed();
-
-        /// <summary>
         /// プレイヤーのスタミナを取得する
         /// </summary>
         /// <returns>プレイヤーのスタミナ</returns>

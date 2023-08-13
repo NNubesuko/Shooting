@@ -16,11 +16,6 @@ namespace ShootingGame.Player.PlayerRepository
         {
             return _status.Hp;
         }
-        
-        public PlayerMoveSpeed GetMoveSpeed()
-        {
-            return _status.MoveSpeed;
-        }
 
         public PlayerStamina GetStamina()
         {

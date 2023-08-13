@@ -33,10 +33,10 @@ namespace ShootingGame.Components.Player
             set => hp = value.Value;
         }
 
-        public PlayerMoveSpeed MoveSpeed
+        public float MoveSpeed
         {
-            get => PlayerMoveSpeed.Of(moveSpeed);
-            set => moveSpeed = value.Value;
+            get => moveSpeed;
+            set => moveSpeed = value;
         }
 
         public PlayerStamina Stamina
