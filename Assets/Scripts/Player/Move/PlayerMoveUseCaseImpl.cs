@@ -6,12 +6,10 @@ namespace ShootingGame.Player.Move
 {
     public class PlayerMoveUseCaseImpl : IPlayerMoveUseCase
     {
-        // private readonly IPlayerRepository _repository;
         private readonly IPlayerMoveRepository _repository;
 
         public PlayerMoveUseCaseImpl()
         {
-            // _repository = DiContainer.ServiceProvider.GetService<IPlayerRepository>();
             _repository = DiContainer.ServiceProvider.GetService<IPlayerMoveRepository>();
         }
 
@@ -19,20 +17,20 @@ namespace ShootingGame.Player.Move
         {
             Vector2 position = inputData.Position;
             
-            // bool canMove = _repository.GetCanMove();
-            // if (!canMove)
-            //     return position;
+            bool canMove = _repository.GetCanMove();
+            if (!canMove)
+                return position;
             
             Vector2 axis = inputData.Axis;
             float deltaTime = inputData.DeltaTime;
             
             PlayerMoveSpeed moveSpeed = _repository.GetMoveSpeed();
-            // PlayerHorizontalMoveRange horizontalMoveRange = _repository.GetHorizontalMoveRange();
-            // PlayerVerticalMoveRange verticalMoveRange = _repository.GetVerticalMoveRange();
+            PlayerHorizontalMoveRange horizontalMoveRange = _repository.GetHorizontalMoveRange();
+            PlayerVerticalMoveRange verticalMoveRange = _repository.GetVerticalMoveRange();
 
             Vector2 velocity = position + moveSpeed * axis * deltaTime;
-            // velocity.x = horizontalMoveRange.WithinRange(velocity.x);
-            // velocity.y = verticalMoveRange.WithinRange(velocity.y);
+            velocity.x = horizontalMoveRange.WithinRange(velocity.x);
+            velocity.y = verticalMoveRange.WithinRange(velocity.y);
 
             return velocity;
         }

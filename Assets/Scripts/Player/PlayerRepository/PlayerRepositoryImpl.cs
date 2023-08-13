@@ -42,16 +42,6 @@ namespace ShootingGame.Player.PlayerRepository
             return _status.AvoidsDistance;
         }
 
-        public PlayerHorizontalMoveRange GetHorizontalMoveRange()
-        {
-            return _status.HorizontalMoveRange;
-        }
-
-        public PlayerVerticalMoveRange GetVerticalMoveRange()
-        {
-            return _status.VerticalMoveRange;
-        }
-
         public void UpdateHp(PlayerHp hp)
         {
             _status.Hp = hp;

@@ -15,5 +15,24 @@ namespace ShootingGame.Player.Move
         {
             return PlayerMoveSpeed.Of(_status.MoveSpeed);
         }
+
+        public PlayerHorizontalMoveRange GetHorizontalMoveRange()
+        {
+            return PlayerHorizontalMoveRange.Of(
+                _status.StartHorizontalMoveRange,
+                _status.EndHorizontalRange);
+        }
+
+        public PlayerVerticalMoveRange GetVerticalMoveRange()
+        {
+            return PlayerVerticalMoveRange.Of(
+                _status.StartVerticalMoveRange,
+                _status.EndVerticalRange);
+        }
+
+        public bool GetCanMove()
+        {
+            return _status.CanMove;
+        }
     }
 }

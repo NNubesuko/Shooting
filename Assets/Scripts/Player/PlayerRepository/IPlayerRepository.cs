@@ -39,18 +39,6 @@ namespace ShootingGame.Player.PlayerRepository
         /// </summary>
         /// <returns>プレイヤーの回避距離</returns>
         PlayerAvoidsDistance GetAvoidsDistance();
-        
-        /// <summary>
-        /// プレイヤーの横の移動可能範囲を取得する
-        /// </summary>
-        /// <returns>プレイヤーの横の移動可能範囲</returns>
-        PlayerHorizontalMoveRange GetHorizontalMoveRange();
-        
-        /// <summary>
-        /// プレイヤーの縦の移動可能範囲を取得する
-        /// </summary>
-        /// <returns>プレイヤーの縦の移動可能範囲</returns>
-        PlayerVerticalMoveRange GetVerticalMoveRange();
 
         /// <summary>
         /// プレイヤーの体力を更新する

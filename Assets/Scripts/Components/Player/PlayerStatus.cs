@@ -69,24 +69,26 @@ namespace ShootingGame.Components.Player
             set => avoidsDistance = value.Value;
         }
 
-        public PlayerHorizontalMoveRange HorizontalMoveRange
+        public float StartHorizontalMoveRange
         {
-            get => PlayerHorizontalMoveRange.Of(startHorizontalRange, endHorizontalRange);
-            set
-            {
-                startHorizontalRange = value.Start;
-                endHorizontalRange = value.End;
-            }
+            get => startHorizontalRange;
+            set => startHorizontalRange = value;
+        }
+        public float EndHorizontalRange
+        {
+            get => endHorizontalRange;
+            set => endHorizontalRange = value;
         }
 
-        public PlayerVerticalMoveRange VerticalMoveRange
+        public float StartVerticalMoveRange
         {
-            get => PlayerVerticalMoveRange.Of(startVerticalRange, endVerticalRange);
-            set
-            {
-                startVerticalRange = value.Start;
-                endVerticalRange = value.End;
-            }
+            get => startVerticalRange;
+            set => startVerticalRange = value;
+        }
+        public float EndVerticalRange
+        {
+            get => endVerticalRange;
+            set => endVerticalRange = value;
         }
 
         public bool CanMove
