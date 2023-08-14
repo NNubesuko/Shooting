@@ -96,6 +96,11 @@ namespace ShootingGame.Components.Enemy
         {
             EnemyDeathInputData inputData = EnemyDeathInputData.Of(status);
             bool isDeath = _deathUseCase.Handle(inputData);
+
+            if (isDeath)
+            {
+                gameObject.SetActive(false);
+            }
         }
 
         private void OnTriggerEnter2D(Collider2D other)

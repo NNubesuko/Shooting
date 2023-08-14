@@ -70,6 +70,11 @@ namespace ShootingGame.Components.Bullet
                 Attack(gameObject.GetComponent<EnemyComponent>());
                 this.gameObject.SetActive(false);
             }
+
+            if (gameObject.CompareTag("Wall"))
+            {
+                this.gameObject.SetActive(false);
+            }
         }
 
         private void OnDisable()

@@ -1,6 +1,6 @@
 public class GunFiringRate : Rate {
 
-    private GunFiringRate(float value) : base(value, 0f, 10f) {
+    private GunFiringRate(float value) : base(value, 0f, float.MaxValue) {
     }
 
     public static GunFiringRate Of(float value) {
