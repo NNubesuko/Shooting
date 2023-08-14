@@ -22,15 +22,11 @@ namespace ShootingGame.Components.Player
         private IPlayerDamageUseCase _damageUseCase;
         private IPlayerDeathUseCase _deathUseCase;
 
-        private void Awake()
-        {
-            _cancellation = new CancellationTokenSource();
-        }
-
         private async void Start()
         {
             var serviceProvider = DiContainer.ServiceProvider;
 
+            _cancellation = new CancellationTokenSource();
             _input = PlayerInputProvider.PlayerInput;
             _moveUseCase = serviceProvider.GetService<IPlayerMoveUseCase>();
             _healStaminaUseCase = serviceProvider.GetService<IPlayerHealStaminaUseCase>();

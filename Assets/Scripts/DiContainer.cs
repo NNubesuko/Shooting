@@ -7,6 +7,7 @@ using ShootingGame.Enemy.Damage;
 using ShootingGame.Enemy.Death;
 using ShootingGame.Enemy.Move;
 using ShootingGame.Enemy.UpdateTableIndex;
+using ShootingGame.Gun;
 using ShootingGame.Player.Damage;
 using ShootingGame.Player.Avoids;
 using ShootingGame.Player.Death;
@@ -71,6 +72,11 @@ namespace ShootingGame
             // Bullet Repository
             _serviceCollection.AddTransient<IBulletMoveRepository, BulletMoveRepositoryImpl>();
             _serviceCollection.AddTransient<IBulletAttackRepository, BulletAttackRepositoryImpl>();
+            
+            // Gun UseCase
+            _serviceCollection.AddTransient<IGunFireUseCase, GunFireUseCaseImpl>();
+            // Gun Repository
+            _serviceCollection.AddTransient<IGunFireRepository, GunFireRepositoryImpl>();
         }
         
         private static void SetupDebug()
@@ -107,6 +113,11 @@ namespace ShootingGame
             // Bullet Repository
             _serviceCollection.AddTransient<IBulletMoveRepository, BulletMoveRepositoryImpl>();
             _serviceCollection.AddTransient<IBulletAttackRepository, BulletAttackRepositoryImpl>();
+            
+            // Gun UseCase
+            _serviceCollection.AddTransient<IGunFireUseCase, GunFireUseCaseImpl>();
+            // Gun Repository
+            _serviceCollection.AddTransient<IGunFireRepository, GunFireRepositoryImpl>();
         }
     }
 }

@@ -1,8 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using KataokaLib.System;
+using UnityEngine.Events;
 
 public class GunImpl : MonoBehaviour, Gun {
 
@@ -44,7 +42,7 @@ public class GunImpl : MonoBehaviour, Gun {
         Instantiate(BulletObject, transform.position, identity);
     }
 
-    /*
+    /**
      * 銃オブジェクトが非アクティブになった場合のメソッド
      ! GameAdmin専用
      */

@@ -23,14 +23,10 @@ namespace ShootingGame.Components.Enemy
         private IEnemyDeathUseCase _deathUseCase;
         private IEnemyAttackUseCase _attackUseCase;
 
-        private void Awake()
-        {
-            _cancellation = new CancellationTokenSource();
-        }
-
         private async void Start()
         {
             var serviceProvider = DiContainer.ServiceProvider;
+            _cancellation = new CancellationTokenSource();
             _moveUseCase = serviceProvider.GetService<IEnemyMoveUseCase>();
             _updateTableIndexUseCase = serviceProvider.GetService<IEnemyUpdateTableIndexUseCase>();
             _damageUseCase = serviceProvider.GetService<IEnemyDamageUseCase>();

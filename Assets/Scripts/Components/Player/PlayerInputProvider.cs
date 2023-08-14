@@ -44,13 +44,13 @@ namespace ShootingGame.Components.Player
             {
                 _moveDirection.Value = Inputk.GetAxis();
                 _avoids.Value = Inputk.GetKeyDown(KeyCode.Space) && Inputk.IsMoving();
-                _fire.Value = Inputk.GetKeyDown(KeyCode.Return);
+                _fire.Value = Inputk.GetKey(KeyCode.Return) || Inputk.GetKeyDown(KeyCode.Return);
                 
                 await UniTask.Yield(PlayerLoopTiming.Update, token);
             }
         }
 
-        private void OnDestroy()
+        private void OnDisable()
         {
             _moveDirection.Dispose();
             _avoids.Dispose();
